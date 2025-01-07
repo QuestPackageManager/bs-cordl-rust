@@ -180,6 +180,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Type = Self;
@@ -190,6 +191,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Actual = Self;
@@ -203,6 +205,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
         self
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Type = Self;
@@ -217,6 +220,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
         }
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+CameraView")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ObjectsMovementRecorder_CameraView {
     type Actual = Self;
@@ -431,6 +435,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Type = Self;
@@ -441,6 +446,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Actual = Self;
@@ -454,6 +460,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
         self
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Type = Self;
@@ -468,6 +475,7 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
         }
     }
 }
+#[cfg(feature = "ObjectsMovementRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ObjectsMovementRecorder_Mode {
     type Actual = Self;

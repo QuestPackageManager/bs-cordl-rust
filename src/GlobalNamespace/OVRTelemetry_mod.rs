@@ -129,6 +129,7 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTelemetry+MarkerPoint")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Type = Self;
@@ -139,6 +140,7 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTelemetry+MarkerPoint")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Actual = Self;
@@ -152,6 +154,7 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
         self
     }
 }
+#[cfg(feature = "OVRTelemetry+MarkerPoint")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Type = Self;
@@ -166,6 +169,7 @@ for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
         }
     }
 }
+#[cfg(feature = "OVRTelemetry+MarkerPoint")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     type Actual = Self;

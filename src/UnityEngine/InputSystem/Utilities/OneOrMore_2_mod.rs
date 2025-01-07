@@ -60,6 +60,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -73,6 +74,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -89,6 +91,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,
@@ -106,6 +109,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2<TValue, TList> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+OneOrMore_2")]
 unsafe impl<
     TValue: quest_hook::libil2cpp::Type,
     TList: quest_hook::libil2cpp::Type,

@@ -660,6 +660,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Type = Self;
@@ -670,6 +671,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Actual = Self;
@@ -683,6 +685,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
         self
     }
 }
+#[cfg(feature = "OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Type = Self;
@@ -697,6 +700,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
         }
     }
 }
+#[cfg(feature = "OVROverlay+LayerTexture")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Actual = Self;
@@ -769,6 +773,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Type = Self;
@@ -779,6 +784,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Actual = Self;
@@ -792,6 +798,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
         self
     }
 }
+#[cfg(feature = "OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Type = Self;
@@ -806,6 +813,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
         }
     }
 }
+#[cfg(feature = "OVROverlay+OverlayShape")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Actual = Self;
@@ -858,6 +866,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Type = Self;
@@ -868,6 +877,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Actual = Self;
@@ -881,6 +891,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
         self
     }
 }
+#[cfg(feature = "OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Type = Self;
@@ -895,6 +906,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
         }
     }
 }
+#[cfg(feature = "OVROverlay+OverlayType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Actual = Self;

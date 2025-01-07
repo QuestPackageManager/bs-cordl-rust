@@ -198,6 +198,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Type = Self;
@@ -208,6 +209,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Actual = Self;
@@ -221,6 +223,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
         self
     }
 }
+#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Type = Self;
@@ -235,6 +238,7 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
         }
     }
 }
+#[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group {
     type Actual = Self;

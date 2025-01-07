@@ -323,6 +323,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Type = Self;
@@ -333,6 +334,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Actual = Self;
@@ -346,6 +348,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
         self
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Type = Self;
@@ -360,6 +363,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
         }
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+InputNodeState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Actual = Self;
@@ -427,6 +431,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Type = Self;
@@ -437,6 +442,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Actual = Self;
@@ -450,6 +456,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
         self
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Type = Self;
@@ -464,6 +471,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
         }
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Actual = Self;
@@ -517,6 +525,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Type = Self;
@@ -527,6 +536,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Actual = Self;
@@ -540,6 +550,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
         self
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Type = Self;
@@ -554,6 +565,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
         }
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Actual = Self;
@@ -612,6 +624,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Type = Self;
@@ -622,6 +635,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Actual = Self;
@@ -635,6 +649,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
         self
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Type = Self;
@@ -649,6 +664,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
         }
     }
 }
+#[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Actual = Self;

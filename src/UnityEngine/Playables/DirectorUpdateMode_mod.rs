@@ -38,6 +38,7 @@ for crate::UnityEngine::Playables::DirectorUpdateMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Playables+DirectorUpdateMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::DirectorUpdateMode {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::Playables::DirectorUpdateMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Playables+DirectorUpdateMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::DirectorUpdateMode {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::Playables::DirectorUpdateMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Playables+DirectorUpdateMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::DirectorUpdateMode {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::Playables::DirectorUpdateMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Playables+DirectorUpdateMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Playables::DirectorUpdateMode {
     type Actual = Self;

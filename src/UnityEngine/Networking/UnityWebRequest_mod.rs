@@ -849,6 +849,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Type = Self;
@@ -859,6 +860,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Actual = Self;
@@ -872,6 +874,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Type = Self;
@@ -886,6 +889,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Actual = Self;
@@ -976,6 +980,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Type = Self;
@@ -986,6 +991,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Actual = Self;
@@ -999,6 +1005,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Type = Self;
@@ -1013,6 +1020,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Actual = Self;
@@ -1067,6 +1075,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Type = Self;
@@ -1077,6 +1086,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Actual = Self;
@@ -1090,6 +1100,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Type = Self;
@@ -1104,6 +1115,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Actual = Self;

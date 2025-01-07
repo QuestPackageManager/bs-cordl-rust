@@ -324,6 +324,7 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Type = Self;
@@ -334,6 +335,7 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Actual = Self;
@@ -347,6 +349,7 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Type = Self;
@@ -361,6 +364,7 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+TrackedDeviceRaycaster+RaycastHitData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Actual = Self;

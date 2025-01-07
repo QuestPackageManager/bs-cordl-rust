@@ -39,6 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RotationOrder {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RotationOrder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,6 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RotationOrde
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RotationOrder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,6 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RotationOrd
         self
     }
 }
+#[cfg(feature = "UnityEngine+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RotationOrder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,6 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RotationOrde
         }
     }
 }
+#[cfg(feature = "UnityEngine+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RotationOrder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

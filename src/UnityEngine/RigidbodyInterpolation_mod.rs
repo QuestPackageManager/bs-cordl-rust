@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RigidbodyInterpo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RigidbodyInterpolation {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::RigidbodyInterpolation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RigidbodyInterpolation {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::RigidbodyInterpolation {
         self
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RigidbodyInterpolation {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::RigidbodyInterpolation {
         }
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyInterpolation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RigidbodyInterpolation {
     type Actual = Self;

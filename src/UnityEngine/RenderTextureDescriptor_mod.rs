@@ -45,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RenderTextureDes
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RenderTextureDescriptor {
     type Type = Self;
@@ -55,6 +56,7 @@ for crate::UnityEngine::RenderTextureDescriptor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderTextureDescriptor {
     type Actual = Self;
@@ -68,6 +70,7 @@ for crate::UnityEngine::RenderTextureDescriptor {
         self
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RenderTextureDescriptor {
     type Type = Self;
@@ -82,6 +85,7 @@ for crate::UnityEngine::RenderTextureDescriptor {
         }
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureDescriptor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RenderTextureDescriptor {
     type Actual = Self;

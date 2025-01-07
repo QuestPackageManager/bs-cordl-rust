@@ -187,6 +187,7 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Type = Self;
@@ -197,6 +198,7 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Actual = Self;
@@ -210,6 +212,7 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Type = Self;
@@ -224,6 +227,7 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::CompiledIdentityConstraint_ConstraintRole {
     type Actual = Self;

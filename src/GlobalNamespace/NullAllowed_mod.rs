@@ -118,6 +118,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NullAllowed_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NullAllowed_Context {
     type Type = Self;
@@ -128,6 +129,7 @@ for crate::GlobalNamespace::NullAllowed_Context {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NullAllowed_Context {
     type Actual = Self;
@@ -141,6 +143,7 @@ for crate::GlobalNamespace::NullAllowed_Context {
         self
     }
 }
+#[cfg(feature = "NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NullAllowed_Context {
     type Type = Self;
@@ -155,6 +158,7 @@ for crate::GlobalNamespace::NullAllowed_Context {
         }
     }
 }
+#[cfg(feature = "NullAllowed+Context")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NullAllowed_Context {
     type Actual = Self;

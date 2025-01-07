@@ -46,6 +46,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::RestrictionFlags {
     type Type = Self;
@@ -56,6 +57,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::RestrictionFlags {
     type Actual = Self;
@@ -69,6 +71,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::RestrictionFlags {
     type Type = Self;
@@ -83,6 +86,7 @@ for crate::System::Xml::Schema::RestrictionFlags {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::RestrictionFlags {
     type Actual = Self;

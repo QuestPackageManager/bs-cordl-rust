@@ -252,6 +252,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Type = Self;
@@ -262,6 +263,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Actual = Self;
@@ -275,6 +277,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Type = Self;
@@ -289,6 +292,7 @@ for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     type Actual = Self;

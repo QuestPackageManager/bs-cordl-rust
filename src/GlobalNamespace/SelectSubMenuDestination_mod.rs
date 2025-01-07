@@ -116,6 +116,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Type = Self;
@@ -126,6 +127,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Actual = Self;
@@ -139,6 +141,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
         self
     }
 }
+#[cfg(feature = "SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Type = Self;
@@ -153,6 +156,7 @@ for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
         }
     }
 }
+#[cfg(feature = "SelectSubMenuDestination+Destination")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SelectSubMenuDestination_Destination {
     type Actual = Self;

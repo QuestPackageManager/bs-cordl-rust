@@ -92,6 +92,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
     type Type = Self;
@@ -102,6 +103,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
     type Actual = Self;
@@ -115,6 +117,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
         self
     }
 }
+#[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
     type Type = Self;
@@ -129,6 +132,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
         }
     }
 }
+#[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_ConsentOrigins {
     type Actual = Self;

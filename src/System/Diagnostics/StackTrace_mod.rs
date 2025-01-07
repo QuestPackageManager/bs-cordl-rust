@@ -357,6 +357,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Type = Self;
@@ -367,6 +368,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Actual = Self;
@@ -380,6 +382,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Type = Self;
@@ -394,6 +397,7 @@ for crate::System::Diagnostics::StackTrace_TraceFormat {
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::StackTrace_TraceFormat {
     type Actual = Self;

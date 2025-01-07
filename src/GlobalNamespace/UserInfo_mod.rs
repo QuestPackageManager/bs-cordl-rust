@@ -117,6 +117,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UserInfo_Pla
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UserInfo_Platform {
     type Type = Self;
@@ -127,6 +128,7 @@ for crate::GlobalNamespace::UserInfo_Platform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UserInfo_Platform {
     type Actual = Self;
@@ -140,6 +142,7 @@ for crate::GlobalNamespace::UserInfo_Platform {
         self
     }
 }
+#[cfg(feature = "UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UserInfo_Platform {
     type Type = Self;
@@ -154,6 +157,7 @@ for crate::GlobalNamespace::UserInfo_Platform {
         }
     }
 }
+#[cfg(feature = "UserInfo+Platform")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::UserInfo_Platform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

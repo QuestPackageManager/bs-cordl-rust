@@ -51,6 +51,7 @@ for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
     type Type = Self;
@@ -61,6 +62,7 @@ for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
     type Actual = Self;
@@ -74,6 +76,7 @@ for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
         self
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
     type Type = Self;
@@ -88,6 +91,7 @@ for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
         }
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Runtime::CompilerServices::ValueTaskAwaiter_1<TResult> {
     type Actual = Self;

@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::UInt16 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+UInt16")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::UInt16 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::UInt16 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+UInt16")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::UInt16 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::UInt16 {
         self
     }
 }
+#[cfg(feature = "System+UInt16")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::UInt16 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::UInt16 {
         }
     }
 }
+#[cfg(feature = "System+UInt16")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::UInt16 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

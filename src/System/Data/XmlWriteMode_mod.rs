@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XmlWriteMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+XmlWriteMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::XmlWriteMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::XmlWriteMod
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+XmlWriteMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::XmlWriteMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::XmlWriteMo
         self
     }
 }
+#[cfg(feature = "System+Data+XmlWriteMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::XmlWriteMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::XmlWriteMod
         }
     }
 }
+#[cfg(feature = "System+Data+XmlWriteMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::XmlWriteMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

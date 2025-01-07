@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceClien
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::IgnoranceCore::IgnoranceClientStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::IgnoranceCore::IgnoranceClientStats {
         self
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::IgnoranceCore::IgnoranceClientStats {
         }
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceClientStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceClientStats {
     type Actual = Self;

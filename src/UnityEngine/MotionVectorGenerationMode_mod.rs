@@ -37,6 +37,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::MotionVectorGenerationMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::MotionVectorGenerationMode {
     type Actual = Self;

@@ -117,6 +117,7 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
     type Type = Self;
@@ -127,6 +128,7 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
     type Actual = Self;
@@ -140,6 +142,7 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
         self
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
     type Type = Self;
@@ -154,6 +157,7 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
         }
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
     type Actual = Self;

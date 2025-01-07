@@ -105,6 +105,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Type = Self;
@@ -115,6 +116,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Actual = Self;
@@ -128,6 +130,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Type = Self;
@@ -142,6 +145,7 @@ for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode {
     type Actual = Self;

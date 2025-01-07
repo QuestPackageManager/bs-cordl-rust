@@ -831,6 +831,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
     type Type = Self;
@@ -841,6 +842,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
     type Actual = Self;
@@ -854,6 +856,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
         self
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
     type Type = Self;
@@ -868,6 +871,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
         }
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
     type Actual = Self;
@@ -921,6 +925,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
     type Type = Self;
@@ -931,6 +936,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
     type Actual = Self;
@@ -944,6 +950,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
         self
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
     type Type = Self;
@@ -958,6 +965,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
         }
     }
 }
+#[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
     type Actual = Self;

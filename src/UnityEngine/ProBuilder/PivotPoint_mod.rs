@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Pivo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PivotPoint")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::PivotPoint {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::ProBuilder::PivotPoint {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PivotPoint")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::PivotPoint {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::ProBuilder::PivotPoint {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PivotPoint")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::PivotPoint {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::ProBuilder::PivotPoint {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PivotPoint")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::PivotPoint {
     type Actual = Self;

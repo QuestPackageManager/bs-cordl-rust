@@ -885,6 +885,7 @@ for crate::GlobalNamespace::SliderController_LengthType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SliderController+LengthType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SliderController_LengthType {
     type Type = Self;
@@ -895,6 +896,7 @@ for crate::GlobalNamespace::SliderController_LengthType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SliderController+LengthType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SliderController_LengthType {
     type Actual = Self;
@@ -908,6 +910,7 @@ for crate::GlobalNamespace::SliderController_LengthType {
         self
     }
 }
+#[cfg(feature = "SliderController+LengthType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SliderController_LengthType {
     type Type = Self;
@@ -922,6 +925,7 @@ for crate::GlobalNamespace::SliderController_LengthType {
         }
     }
 }
+#[cfg(feature = "SliderController+LengthType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SliderController_LengthType {
     type Actual = Self;

@@ -135,6 +135,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Type = Self;
@@ -145,6 +146,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Actual = Self;
@@ -158,6 +160,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
         self
     }
 }
+#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Type = Self;
@@ -172,6 +175,7 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
         }
     }
 }
+#[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout_Condition {
     type Actual = Self;

@@ -220,6 +220,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VertexPath_V
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::VertexPath_Vertex {
     type Type = Self;
@@ -230,6 +231,7 @@ for crate::GlobalNamespace::VertexPath_Vertex {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::VertexPath_Vertex {
     type Actual = Self;
@@ -243,6 +245,7 @@ for crate::GlobalNamespace::VertexPath_Vertex {
         self
     }
 }
+#[cfg(feature = "VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::VertexPath_Vertex {
     type Type = Self;
@@ -257,6 +260,7 @@ for crate::GlobalNamespace::VertexPath_Vertex {
         }
     }
 }
+#[cfg(feature = "VertexPath+Vertex")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::VertexPath_Vertex {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GradientColorKey
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+GradientColorKey")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::GradientColorKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::GradientColo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+GradientColorKey")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::GradientColorKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -55,6 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::GradientCol
         self
     }
 }
+#[cfg(feature = "UnityEngine+GradientColorKey")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::GradientColorKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::GradientColo
         }
     }
 }
+#[cfg(feature = "UnityEngine+GradientColorKey")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::GradientColorKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

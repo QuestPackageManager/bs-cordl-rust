@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Index
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+IndexFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::IndexFormat {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::UnityEngine::Rendering::IndexFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+IndexFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::IndexFormat {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::UnityEngine::Rendering::IndexFormat {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+IndexFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::IndexFormat {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::UnityEngine::Rendering::IndexFormat {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+IndexFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::IndexFormat {
     type Actual = Self;

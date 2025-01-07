@@ -48,6 +48,7 @@ for crate::UnityEngine::InputSystem::InputBinding {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputBinding {
     type Type = Self;
@@ -58,6 +59,7 @@ for crate::UnityEngine::InputSystem::InputBinding {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputBinding {
     type Actual = Self;
@@ -71,6 +73,7 @@ for crate::UnityEngine::InputSystem::InputBinding {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputBinding {
     type Type = Self;
@@ -85,6 +88,7 @@ for crate::UnityEngine::InputSystem::InputBinding {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputBinding {
     type Actual = Self;
@@ -682,6 +686,7 @@ for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
     type Type = Self;
@@ -692,6 +697,7 @@ for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
     type Actual = Self;
@@ -705,6 +711,7 @@ for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
     type Type = Self;
@@ -719,6 +726,7 @@ for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions {
     type Actual = Self;
@@ -771,6 +779,7 @@ for crate::UnityEngine::InputSystem::InputBinding_Flags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputBinding_Flags {
     type Type = Self;
@@ -781,6 +790,7 @@ for crate::UnityEngine::InputSystem::InputBinding_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputBinding_Flags {
     type Actual = Self;
@@ -794,6 +804,7 @@ for crate::UnityEngine::InputSystem::InputBinding_Flags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputBinding_Flags {
     type Type = Self;
@@ -808,6 +819,7 @@ for crate::UnityEngine::InputSystem::InputBinding_Flags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputBinding_Flags {
     type Actual = Self;
@@ -858,6 +870,7 @@ for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
     type Type = Self;
@@ -868,6 +881,7 @@ for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
     type Actual = Self;
@@ -881,6 +895,7 @@ for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
     type Type = Self;
@@ -895,6 +910,7 @@ for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputBinding_MatchOptions {
     type Actual = Self;

@@ -82,6 +82,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RuntimePlatform 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RuntimePlatform {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,6 +92,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RuntimePlatf
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RuntimePlatform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -103,6 +105,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RuntimePlat
         self
     }
 }
+#[cfg(feature = "UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RuntimePlatform {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -116,6 +119,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RuntimePlatf
         }
     }
 }
+#[cfg(feature = "UnityEngine+RuntimePlatform")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RuntimePlatform {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

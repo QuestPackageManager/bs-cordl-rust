@@ -31,6 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::Earl
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate {
     type Type = Self;
@@ -41,6 +42,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate {
     type Actual = Self;
@@ -54,6 +56,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate {
     type Type = Self;
@@ -68,6 +71,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate {
     type Actual = Self;
@@ -199,6 +203,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ARCoreUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
     type Type = Self;
@@ -209,6 +214,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ARCoreUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
     type Actual = Self;
@@ -222,6 +228,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ARCoreUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
     type Type = Self;
@@ -236,6 +243,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ARCoreUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ARCoreUpdate {
     type Actual = Self;
@@ -296,6 +304,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+AnalyticsCoreStatsUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
     type Type = Self;
@@ -306,6 +315,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+AnalyticsCoreStatsUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
     type Actual = Self;
@@ -319,6 +329,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+AnalyticsCoreStatsUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
     type Type = Self;
@@ -333,6 +344,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+AnalyticsCoreStatsUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_AnalyticsCoreStatsUpdate {
     type Actual = Self;
@@ -393,6 +405,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearIntermediateRenderers")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
     type Type = Self;
@@ -403,6 +416,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearIntermediateRenderers")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
     type Actual = Self;
@@ -416,6 +430,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearIntermediateRenderers")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
     type Type = Self;
@@ -430,6 +445,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearIntermediateRenderers")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearIntermediateRenderers {
     type Actual = Self;
@@ -490,6 +506,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
     type Type = Self;
@@ -500,6 +517,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
     type Actual = Self;
@@ -513,6 +531,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
     type Type = Self;
@@ -527,6 +546,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ClearLines {
     type Actual = Self;
@@ -587,6 +607,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DeliverIosPlatformEvents")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
     type Type = Self;
@@ -597,6 +618,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DeliverIosPlatformEvents")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
     type Actual = Self;
@@ -610,6 +632,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DeliverIosPlatformEvents")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
     type Type = Self;
@@ -624,6 +647,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DeliverIosPlatformEvents")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DeliverIosPlatformEvents {
     type Actual = Self;
@@ -684,6 +708,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DispatchEventQueueEvents")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
     type Type = Self;
@@ -694,6 +719,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DispatchEventQueueEvents")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
     type Actual = Self;
@@ -707,6 +733,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DispatchEventQueueEvents")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
     type Type = Self;
@@ -721,6 +748,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+DispatchEventQueueEvents")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_DispatchEventQueueEvents {
     type Actual = Self;
@@ -781,6 +809,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ExecuteMainThreadJobs")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
     type Type = Self;
@@ -791,6 +820,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ExecuteMainThreadJobs")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
     type Actual = Self;
@@ -804,6 +834,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ExecuteMainThreadJobs")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
     type Type = Self;
@@ -818,6 +849,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ExecuteMainThreadJobs")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ExecuteMainThreadJobs {
     type Actual = Self;
@@ -878,6 +910,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+GpuTimestamp")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
     type Type = Self;
@@ -888,6 +921,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+GpuTimestamp")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
     type Actual = Self;
@@ -901,6 +935,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+GpuTimestamp")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
     type Type = Self;
@@ -915,6 +950,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+GpuTimestamp")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_GpuTimestamp {
     type Actual = Self;
@@ -975,6 +1011,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PerformanceAnalyticsUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
     type Type = Self;
@@ -985,6 +1022,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PerformanceAnalyticsUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
     type Actual = Self;
@@ -998,6 +1036,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PerformanceAnalyticsUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
     type Type = Self;
@@ -1012,6 +1051,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PerformanceAnalyticsUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PerformanceAnalyticsUpdate {
     type Actual = Self;
@@ -1072,6 +1112,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+Physics2DEarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
     type Type = Self;
@@ -1082,6 +1123,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+Physics2DEarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
     type Actual = Self;
@@ -1095,6 +1137,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+Physics2DEarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
     type Type = Self;
@@ -1109,6 +1152,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+Physics2DEarlyUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_Physics2DEarlyUpdate {
     type Actual = Self;
@@ -1173,6 +1217,9 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransfor
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+PlayerLoop+EarlyUpdate+PhysicsResetInterpolatedTransformPosition"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransformPosition {
     type Type = Self;
@@ -1183,6 +1230,9 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransfor
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+PlayerLoop+EarlyUpdate+PhysicsResetInterpolatedTransformPosition"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransformPosition {
     type Actual = Self;
@@ -1196,6 +1246,9 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransfor
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+PlayerLoop+EarlyUpdate+PhysicsResetInterpolatedTransformPosition"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransformPosition {
     type Type = Self;
@@ -1210,6 +1263,9 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransfor
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+PlayerLoop+EarlyUpdate+PhysicsResetInterpolatedTransformPosition"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PhysicsResetInterpolatedTransformPosition {
     type Actual = Self;
@@ -1274,6 +1330,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PlayerCleanupCachedData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
     type Type = Self;
@@ -1284,6 +1341,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PlayerCleanupCachedData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
     type Actual = Self;
@@ -1297,6 +1355,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PlayerCleanupCachedData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
     type Type = Self;
@@ -1311,6 +1370,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PlayerCleanupCachedData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PlayerCleanupCachedData {
     type Actual = Self;
@@ -1371,6 +1431,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollHtcsPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
     type Type = Self;
@@ -1381,6 +1442,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollHtcsPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
     type Actual = Self;
@@ -1394,6 +1456,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollHtcsPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
     type Type = Self;
@@ -1408,6 +1471,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollHtcsPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollHtcsPlayerConnection {
     type Actual = Self;
@@ -1468,6 +1532,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
     type Type = Self;
@@ -1478,6 +1543,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
     type Actual = Self;
@@ -1491,6 +1557,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
     type Type = Self;
@@ -1505,6 +1572,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PollPlayerConnection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PollPlayerConnection {
     type Actual = Self;
@@ -1565,6 +1633,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PresentBeforeUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
     type Type = Self;
@@ -1575,6 +1644,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PresentBeforeUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
     type Actual = Self;
@@ -1588,6 +1658,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PresentBeforeUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
     type Type = Self;
@@ -1602,6 +1673,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+PresentBeforeUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_PresentBeforeUpdate {
     type Actual = Self;
@@ -1662,6 +1734,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessMouseInWindow")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
     type Type = Self;
@@ -1672,6 +1745,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessMouseInWindow")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
     type Actual = Self;
@@ -1685,6 +1759,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessMouseInWindow")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
     type Type = Self;
@@ -1699,6 +1774,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessMouseInWindow")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessMouseInWindow {
     type Actual = Self;
@@ -1759,6 +1835,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessRemoteInput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
     type Type = Self;
@@ -1769,6 +1846,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessRemoteInput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
     type Actual = Self;
@@ -1782,6 +1860,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessRemoteInput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
     type Type = Self;
@@ -1796,6 +1875,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ProcessRemoteInput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ProcessRemoteInput {
     type Actual = Self;
@@ -1856,6 +1936,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+RendererNotifyInvisible")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
     type Type = Self;
@@ -1866,6 +1947,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+RendererNotifyInvisible")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
     type Actual = Self;
@@ -1879,6 +1961,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+RendererNotifyInvisible")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
     type Type = Self;
@@ -1893,6 +1976,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+RendererNotifyInvisible")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_RendererNotifyInvisible {
     type Actual = Self;
@@ -1953,6 +2037,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ResetFrameStatsAfterPresent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
     type Type = Self;
@@ -1963,6 +2048,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ResetFrameStatsAfterPresent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
     type Actual = Self;
@@ -1976,6 +2062,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ResetFrameStatsAfterPresent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
     type Type = Self;
@@ -1990,6 +2077,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ResetFrameStatsAfterPresent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ResetFrameStatsAfterPresent {
     type Actual = Self;
@@ -2050,6 +2138,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ScriptRunDelayedStartupFrame")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
     type Type = Self;
@@ -2060,6 +2149,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ScriptRunDelayedStartupFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
     type Actual = Self;
@@ -2073,6 +2163,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ScriptRunDelayedStartupFrame")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
     type Type = Self;
@@ -2087,6 +2178,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+ScriptRunDelayedStartupFrame")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_ScriptRunDelayedStartupFrame {
     type Actual = Self;
@@ -2147,6 +2239,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+SpriteAtlasManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
     type Type = Self;
@@ -2157,6 +2250,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+SpriteAtlasManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
     type Actual = Self;
@@ -2170,6 +2264,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+SpriteAtlasManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
     type Type = Self;
@@ -2184,6 +2279,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+SpriteAtlasManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_SpriteAtlasManagerUpdate {
     type Actual = Self;
@@ -2244,6 +2340,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+TangoUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
     type Type = Self;
@@ -2254,6 +2351,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+TangoUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
     type Actual = Self;
@@ -2267,6 +2365,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+TangoUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
     type Type = Self;
@@ -2281,6 +2380,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+TangoUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_TangoUpdate {
     type Actual = Self;
@@ -2341,6 +2441,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UnityWebRequestUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
     type Type = Self;
@@ -2351,6 +2452,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UnityWebRequestUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
     type Actual = Self;
@@ -2364,6 +2466,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UnityWebRequestUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
     type Type = Self;
@@ -2378,6 +2481,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UnityWebRequestUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UnityWebRequestUpdate {
     type Actual = Self;
@@ -2438,6 +2542,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncInstantiate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
     type Type = Self;
@@ -2448,6 +2553,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncInstantiate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
     type Actual = Self;
@@ -2461,6 +2567,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncInstantiate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
     type Type = Self;
@@ -2475,6 +2582,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncInstantiate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncInstantiate {
     type Actual = Self;
@@ -2535,6 +2643,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncReadbackManager")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
     type Type = Self;
@@ -2545,6 +2654,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncReadbackManager")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
     type Actual = Self;
@@ -2558,6 +2668,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncReadbackManager")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
     type Type = Self;
@@ -2572,6 +2683,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateAsyncReadbackManager")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateAsyncReadbackManager {
     type Actual = Self;
@@ -2632,6 +2744,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateCanvasRectTransform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
     type Type = Self;
@@ -2642,6 +2755,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateCanvasRectTransform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
     type Actual = Self;
@@ -2655,6 +2769,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateCanvasRectTransform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
     type Type = Self;
@@ -2669,6 +2784,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateCanvasRectTransform")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateCanvasRectTransform {
     type Actual = Self;
@@ -2729,6 +2845,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateContentLoading")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
     type Type = Self;
@@ -2739,6 +2856,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateContentLoading")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
     type Actual = Self;
@@ -2752,6 +2870,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateContentLoading")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
     type Type = Self;
@@ -2766,6 +2885,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateContentLoading")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateContentLoading {
     type Actual = Self;
@@ -2826,6 +2946,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateInputManager")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
     type Type = Self;
@@ -2836,6 +2957,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateInputManager")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
     type Actual = Self;
@@ -2849,6 +2971,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateInputManager")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
     type Type = Self;
@@ -2863,6 +2986,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateInputManager")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateInputManager {
     type Actual = Self;
@@ -2923,6 +3047,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateKinect")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
     type Type = Self;
@@ -2933,6 +3058,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateKinect")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
     type Actual = Self;
@@ -2946,6 +3072,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateKinect")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
     type Type = Self;
@@ -2960,6 +3087,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateKinect")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateKinect {
     type Actual = Self;
@@ -3020,6 +3148,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateMainGameViewRect")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
     type Type = Self;
@@ -3030,6 +3159,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateMainGameViewRect")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
     type Actual = Self;
@@ -3043,6 +3173,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateMainGameViewRect")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
     type Type = Self;
@@ -3057,6 +3188,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateMainGameViewRect")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateMainGameViewRect {
     type Actual = Self;
@@ -3117,6 +3249,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdatePreloading")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
     type Type = Self;
@@ -3127,6 +3260,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdatePreloading")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
     type Actual = Self;
@@ -3140,6 +3274,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdatePreloading")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
     type Type = Self;
@@ -3154,6 +3289,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdatePreloading")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdatePreloading {
     type Actual = Self;
@@ -3214,6 +3350,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
     type Type = Self;
@@ -3224,6 +3361,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
     type Actual = Self;
@@ -3237,6 +3375,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
     type Type = Self;
@@ -3251,6 +3390,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateStreamingManager {
     type Actual = Self;
@@ -3311,6 +3451,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateTextureStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
     type Type = Self;
@@ -3321,6 +3462,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateTextureStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
     type Actual = Self;
@@ -3334,6 +3476,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateTextureStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
     type Type = Self;
@@ -3348,6 +3491,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+UpdateTextureStreamingManager")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_UpdateTextureStreamingManager {
     type Actual = Self;
@@ -3408,6 +3552,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+XRUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
     type Type = Self;
@@ -3418,6 +3563,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+XRUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
     type Actual = Self;
@@ -3431,6 +3577,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+XRUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
     type Type = Self;
@@ -3445,6 +3592,7 @@ for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+EarlyUpdate+XRUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::EarlyUpdate_XRUpdate {
     type Actual = Self;

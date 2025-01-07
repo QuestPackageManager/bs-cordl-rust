@@ -403,6 +403,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::CookieCollection
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::CookieCollection_Stamp {
     type Type = Self;
@@ -413,6 +414,7 @@ for crate::System::Net::CookieCollection_Stamp {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::CookieCollection_Stamp {
     type Actual = Self;
@@ -426,6 +428,7 @@ for crate::System::Net::CookieCollection_Stamp {
         self
     }
 }
+#[cfg(feature = "System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::CookieCollection_Stamp {
     type Type = Self;
@@ -440,6 +443,7 @@ for crate::System::Net::CookieCollection_Stamp {
         }
     }
 }
+#[cfg(feature = "System+Net+CookieCollection+Stamp")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::CookieCollection_Stamp {
     type Actual = Self;

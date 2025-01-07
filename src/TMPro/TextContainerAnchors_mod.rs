@@ -43,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextContainerAnchors {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TextContainerAnchors")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextContainerAnchors {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -52,6 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextContainerAncho
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TextContainerAnchors")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextContainerAnchors {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,6 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextContainerAnch
         self
     }
 }
+#[cfg(feature = "TMPro+TextContainerAnchors")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextContainerAnchors {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,6 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextContainerAncho
         }
     }
 }
+#[cfg(feature = "TMPro+TextContainerAnchors")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TextContainerAnchors {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

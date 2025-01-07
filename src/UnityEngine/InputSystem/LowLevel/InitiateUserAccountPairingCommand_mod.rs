@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand {
     type Actual = Self;
@@ -190,6 +194,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
     type Type = Self;
@@ -200,6 +207,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
     type Actual = Self;
@@ -213,6 +223,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
     type Type = Self;
@@ -227,6 +240,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result {
     type Actual = Self;

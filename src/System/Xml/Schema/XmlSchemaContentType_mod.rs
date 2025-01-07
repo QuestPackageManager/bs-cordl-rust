@@ -38,6 +38,7 @@ for crate::System::Xml::Schema::XmlSchemaContentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaContentType {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Xml::Schema::XmlSchemaContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaContentType {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Xml::Schema::XmlSchemaContentType {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaContentType {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Xml::Schema::XmlSchemaContentType {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaContentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaContentType {
     type Actual = Self;

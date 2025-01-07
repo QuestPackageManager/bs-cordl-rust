@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::FontFeatureLookupFlags
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+FontFeatureLookupFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FontFeatureLookupFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::FontFeatureLookupF
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+FontFeatureLookupFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::FontFeatureLookupFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::FontFeatureLookup
         self
     }
 }
+#[cfg(feature = "TMPro+FontFeatureLookupFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FontFeatureLookupFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::FontFeatureLookupF
         }
     }
 }
+#[cfg(feature = "TMPro+FontFeatureLookupFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::FontFeatureLookupFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

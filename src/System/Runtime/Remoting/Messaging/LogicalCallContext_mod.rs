@@ -280,6 +280,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Type = Self;
@@ -290,6 +291,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Actual = Self;
@@ -303,6 +305,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         self
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Type = Self;
@@ -317,6 +320,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
         }
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Actual = Self;

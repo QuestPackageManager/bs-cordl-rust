@@ -37,6 +37,7 @@ for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags 
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags 
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags {
     type Actual = Self;
@@ -129,6 +133,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlScheme {
     type Type = Self;
@@ -139,6 +144,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlScheme {
     type Actual = Self;
@@ -152,6 +158,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlScheme {
     type Type = Self;
@@ -166,6 +173,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlScheme {
     type Actual = Self;
@@ -501,6 +509,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     type Type = Self;
@@ -511,6 +520,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     type Actual = Self;
@@ -524,6 +534,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     type Type = Self;
@@ -538,6 +549,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     type Actual = Self;
@@ -779,6 +791,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     type Type = Self;
@@ -789,6 +802,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     type Actual = Self;
@@ -802,6 +816,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     type Type = Self;
@@ -816,6 +831,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     type Actual = Self;
@@ -1048,6 +1064,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     type Type = Self;
@@ -1058,6 +1075,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     type Actual = Self;
@@ -1071,6 +1089,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     type Type = Self;
@@ -1085,6 +1104,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     type Actual = Self;
@@ -1220,6 +1240,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     type Type = Self;
@@ -1230,6 +1251,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     type Actual = Self;
@@ -1243,6 +1265,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     type Type = Self;
@@ -1257,6 +1280,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     type Actual = Self;
@@ -1438,6 +1462,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     type Type = Self;
@@ -1448,6 +1473,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     type Actual = Self;
@@ -1461,6 +1487,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     type Type = Self;
@@ -1475,6 +1502,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Match")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     type Actual = Self;
@@ -1589,6 +1617,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
     type Type = Self;
@@ -1599,6 +1628,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
     type Actual = Self;
@@ -1612,6 +1642,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
     type Type = Self;
@@ -1626,6 +1657,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
     type Actual = Self;
@@ -1677,6 +1709,7 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
     type Type = Self;
@@ -1687,6 +1720,7 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
     type Actual = Self;
@@ -1700,6 +1734,7 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
     type Type = Self;
@@ -1714,6 +1749,7 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
     type Actual = Self;

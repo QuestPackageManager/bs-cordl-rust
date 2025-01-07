@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::Hand
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+HandleAxis")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::HandleAxis {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::ProBuilder::HandleAxis {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+HandleAxis")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::HandleAxis {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::ProBuilder::HandleAxis {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+HandleAxis")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::HandleAxis {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::ProBuilder::HandleAxis {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+HandleAxis")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::HandleAxis {
     type Actual = Self;

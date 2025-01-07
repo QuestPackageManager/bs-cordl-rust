@@ -739,6 +739,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Type = Self;
@@ -749,6 +750,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Actual = Self;
@@ -762,6 +764,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Type = Self;
@@ -776,6 +779,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+DeviceInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Actual = Self;
@@ -1113,6 +1117,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Type = Self;
@@ -1123,6 +1128,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Actual = Self;
@@ -1136,6 +1142,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Type = Self;
@@ -1150,6 +1157,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Actual = Self;

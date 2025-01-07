@@ -851,6 +851,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Cont
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ContentHeightCacheInfo"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
     T,
@@ -863,6 +866,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Cont
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ContentHeightCacheInfo"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
     T,
@@ -878,6 +884,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Cont
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ContentHeightCacheInfo"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
     T,
@@ -894,6 +903,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Cont
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ContentHeightCacheInfo"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
     T,
@@ -992,6 +1004,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Scro
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ScrollDirection"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ScrollDirection {
     type Type = Self;
@@ -1002,6 +1017,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Scro
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ScrollDirection"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ScrollDirection {
     type Actual = Self;
@@ -1015,6 +1033,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Scro
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ScrollDirection"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ScrollDirection {
     type Type = Self;
@@ -1029,6 +1050,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Scro
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ScrollDirection"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ScrollDirection {
     type Actual = Self;
@@ -1086,6 +1110,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Virt
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_VirtualizationChange {
     type Type = Self;
@@ -1096,6 +1123,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Virt
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_VirtualizationChange {
     type Actual = Self;
@@ -1109,6 +1139,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Virt
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_VirtualizationChange {
     type Type = Self;
@@ -1123,6 +1156,9 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Virt
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_VirtualizationChange {
     type Actual = Self;

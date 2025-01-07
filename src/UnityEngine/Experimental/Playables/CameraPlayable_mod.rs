@@ -34,6 +34,7 @@ for crate::UnityEngine::Experimental::Playables::CameraPlayable {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Playables::CameraPlayable {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::Experimental::Playables::CameraPlayable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Playables::CameraPlayable {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::Experimental::Playables::CameraPlayable {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Playables::CameraPlayable {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::Experimental::Playables::CameraPlayable {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+CameraPlayable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Playables::CameraPlayable {
     type Actual = Self;

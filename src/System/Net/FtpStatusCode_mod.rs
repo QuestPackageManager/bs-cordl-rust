@@ -70,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::FtpStatusCode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+FtpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::FtpStatusCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,6 +80,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Net::FtpStatusCod
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+FtpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::FtpStatusCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,6 +93,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Net::FtpStatusCo
         self
     }
 }
+#[cfg(feature = "System+Net+FtpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::FtpStatusCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -104,6 +107,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Net::FtpStatusCod
         }
     }
 }
+#[cfg(feature = "System+Net+FtpStatusCode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::FtpStatusCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

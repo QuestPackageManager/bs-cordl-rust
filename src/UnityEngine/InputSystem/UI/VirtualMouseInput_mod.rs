@@ -505,6 +505,7 @@ for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
     type Type = Self;
@@ -515,6 +516,7 @@ for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
     type Actual = Self;
@@ -528,6 +530,7 @@ for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
     type Type = Self;
@@ -542,6 +545,7 @@ for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
     type Actual = Self;

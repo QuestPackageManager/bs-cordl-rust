@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand {
     type Actual = Self;
@@ -198,6 +202,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__F
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand+_idBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__FixedBuffer {
     type Type = Self;
@@ -208,6 +215,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__F
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand+_idBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__FixedBuffer {
     type Actual = Self;
@@ -221,6 +231,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__F
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand+_idBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__FixedBuffer {
     type Type = Self;
@@ -235,6 +248,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__F
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+QueryUserIdCommand+_idBuffer_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::QueryUserIdCommand__idBuffer_e__FixedBuffer {
     type Actual = Self;

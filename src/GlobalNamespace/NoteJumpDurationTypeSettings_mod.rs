@@ -36,6 +36,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
         self
     }
 }
+#[cfg(feature = "NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
         }
     }
 }
+#[cfg(feature = "NoteJumpDurationTypeSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteJumpDurationTypeSettings {
     type Actual = Self;

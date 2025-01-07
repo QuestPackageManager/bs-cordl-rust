@@ -2733,6 +2733,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Type = Self;
@@ -2743,6 +2744,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Actual = Self;
@@ -2756,6 +2758,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Type = Self;
@@ -2770,6 +2773,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_InputField_CharacterValidation {
     type Actual = Self;
@@ -2828,6 +2832,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_Content
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_InputField_ContentType {
     type Type = Self;
@@ -2838,6 +2843,7 @@ for crate::TMPro::TMP_InputField_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_InputField_ContentType {
     type Actual = Self;
@@ -2851,6 +2857,7 @@ for crate::TMPro::TMP_InputField_ContentType {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_InputField_ContentType {
     type Type = Self;
@@ -2865,6 +2872,7 @@ for crate::TMPro::TMP_InputField_ContentType {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_ContentType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2914,6 +2922,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_EditSta
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_EditState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2923,6 +2932,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_Edi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_EditState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2935,6 +2945,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_Ed
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_EditState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2948,6 +2959,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_Edi
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_EditState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2998,6 +3010,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_InputTy
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_InputType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3007,6 +3020,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_Inp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_InputType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3019,6 +3033,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_In
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_InputType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3032,6 +3047,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_Inp
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_InputType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3082,6 +3098,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_LineTyp
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_LineType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3091,6 +3108,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_InputField_Lin
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_LineType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3103,6 +3121,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_InputField_Li
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_LineType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3116,6 +3135,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_InputField_Lin
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_LineType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

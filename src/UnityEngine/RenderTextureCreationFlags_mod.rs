@@ -44,6 +44,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::UnityEngine::RenderTextureCreationFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RenderTextureCreationFlags {
     type Actual = Self;

@@ -37,6 +37,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+SliderMidAnchorMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::SliderMidAnchorMode {
     type Actual = Self;

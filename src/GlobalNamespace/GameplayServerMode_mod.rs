@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayServ
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayServerMode {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::GlobalNamespace::GameplayServerMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayServerMode {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::GlobalNamespace::GameplayServerMode {
         self
     }
 }
+#[cfg(feature = "GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayServerMode {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::GlobalNamespace::GameplayServerMode {
         }
     }
 }
+#[cfg(feature = "GameplayServerMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayServerMode {
     type Actual = Self;

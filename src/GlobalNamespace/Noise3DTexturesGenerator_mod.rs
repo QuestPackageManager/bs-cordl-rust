@@ -146,6 +146,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
     type Type = Self;
@@ -156,6 +157,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
     type Actual = Self;
@@ -169,6 +171,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
         self
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
     type Type = Self;
@@ -183,6 +186,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
         }
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple {
     type Actual = Self;
@@ -252,6 +256,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
     type Type = Self;
@@ -262,6 +267,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
     type Actual = Self;
@@ -275,6 +281,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
         self
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
     type Type = Self;
@@ -289,6 +296,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
         }
     }
 }
+#[cfg(feature = "Noise3DTexturesGenerator+MaterialTextureParamsCouple")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple {
     type Actual = Self;

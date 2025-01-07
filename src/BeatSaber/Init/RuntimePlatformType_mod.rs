@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::RuntimePlatf
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::BeatSaber::Init::RuntimePlatformType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::BeatSaber::Init::RuntimePlatformType {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::BeatSaber::Init::RuntimePlatformType {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Init::RuntimePlatformType {
     type Actual = Self;

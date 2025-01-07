@@ -442,6 +442,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
     type Type = Self;
@@ -452,6 +455,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
     type Actual = Self;
@@ -465,6 +471,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
     type Type = Self;
@@ -479,6 +488,9 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_Bucket {
     type Actual = Self;

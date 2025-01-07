@@ -165,6 +165,7 @@ for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputTracking+TrackingStateEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
     type Type = Self;
@@ -175,6 +176,7 @@ for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputTracking+TrackingStateEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
     type Actual = Self;
@@ -188,6 +190,7 @@ for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputTracking+TrackingStateEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
     type Type = Self;
@@ -202,6 +205,7 @@ for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputTracking+TrackingStateEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
     type Actual = Self;

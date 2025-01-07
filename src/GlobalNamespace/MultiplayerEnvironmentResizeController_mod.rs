@@ -363,6 +363,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Type = Self;
@@ -373,6 +374,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Actual = Self;
@@ -386,6 +388,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
         self
     }
 }
+#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Type = Self;
@@ -400,6 +403,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
         }
     }
 }
+#[cfg(feature = "MultiplayerEnvironmentResizeController+ResizeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Actual = Self;

@@ -251,6 +251,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Type = Self;
@@ -261,6 +262,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Actual = Self;
@@ -274,6 +276,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Type = Self;
@@ -288,6 +291,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Actual = Self;
@@ -799,6 +803,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Type = Self;
@@ -809,6 +814,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Actual = Self;
@@ -822,6 +828,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Type = Self;
@@ -836,6 +843,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XmlSchemaObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Actual = Self;

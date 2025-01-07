@@ -162,6 +162,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Type = Self;
@@ -172,6 +173,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Actual = Self;
@@ -185,6 +187,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         self
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Type = Self;
@@ -199,6 +202,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
         }
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Actual = Self;
@@ -307,6 +311,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Type = Self;
@@ -317,6 +322,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Actual = Self;
@@ -330,6 +336,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
         self
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Type = Self;
@@ -344,6 +351,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
         }
     }
 }
+#[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList {
     type Actual = Self;

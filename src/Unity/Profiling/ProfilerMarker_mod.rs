@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Profiling::ProfilerMar
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Profiling::ProfilerMarker {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Profiling::Profile
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::ProfilerMarker {
     type Actual = Self;
@@ -55,6 +57,7 @@ for crate::Unity::Profiling::ProfilerMarker {
         self
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Profiling::ProfilerMarker {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Profiling::Profile
         }
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Profiling::ProfilerMarker {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -167,6 +171,7 @@ for crate::Unity::Profiling::ProfilerMarker_AutoScope {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::ProfilerMarker_AutoScope {
     type Type = Self;
@@ -177,6 +182,7 @@ for crate::Unity::Profiling::ProfilerMarker_AutoScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::ProfilerMarker_AutoScope {
     type Actual = Self;
@@ -190,6 +196,7 @@ for crate::Unity::Profiling::ProfilerMarker_AutoScope {
         self
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::ProfilerMarker_AutoScope {
     type Type = Self;
@@ -204,6 +211,7 @@ for crate::Unity::Profiling::ProfilerMarker_AutoScope {
         }
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerMarker+AutoScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::ProfilerMarker_AutoScope {
     type Actual = Self;

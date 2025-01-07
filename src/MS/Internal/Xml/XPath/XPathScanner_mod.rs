@@ -298,6 +298,7 @@ for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
     type Type = Self;
@@ -308,6 +309,7 @@ for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
     type Actual = Self;
@@ -321,6 +323,7 @@ for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
         self
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
     type Type = Self;
@@ -335,6 +338,7 @@ for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
         }
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
     type Actual = Self;

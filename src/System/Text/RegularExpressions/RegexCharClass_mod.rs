@@ -532,6 +532,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Type = Self;
@@ -542,6 +543,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Actual = Self;
@@ -555,6 +557,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         self
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Type = Self;
@@ -569,6 +572,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
         }
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+LowerCaseMapping")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Actual = Self;
@@ -647,6 +651,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Type = Self;
@@ -657,6 +662,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Actual = Self;
@@ -670,6 +676,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         self
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Type = Self;
@@ -684,6 +691,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
         }
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Actual = Self;

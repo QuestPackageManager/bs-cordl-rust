@@ -512,6 +512,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Type = Self;
@@ -522,6 +523,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Actual = Self;
@@ -535,6 +537,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Type = Self;
@@ -549,6 +552,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions {
     type Actual = Self;
@@ -603,6 +607,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Type = Self;
@@ -613,6 +618,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Actual = Self;
@@ -626,6 +632,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Type = Self;
@@ -640,6 +647,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Actual = Self;
@@ -830,6 +838,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Type = Self;
@@ -840,6 +849,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Actual = Self;
@@ -853,6 +863,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Type = Self;
@@ -867,6 +878,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Actual = Self;
@@ -920,6 +932,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Type = Self;
@@ -930,6 +943,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Actual = Self;
@@ -943,6 +957,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Type = Self;
@@ -957,6 +972,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Actual = Self;

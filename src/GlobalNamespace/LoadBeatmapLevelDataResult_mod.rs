@@ -37,6 +37,7 @@ for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LoadBeatmapLevelDataResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LoadBeatmapLevelDataResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
         self
     }
 }
+#[cfg(feature = "LoadBeatmapLevelDataResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
         }
     }
 }
+#[cfg(feature = "LoadBeatmapLevelDataResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     type Actual = Self;

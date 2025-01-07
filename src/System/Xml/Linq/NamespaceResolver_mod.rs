@@ -39,6 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::NamespaceR
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Linq::NamespaceResolver {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::System::Xml::Linq::NamespaceResolver {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Linq::NamespaceResolver {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::System::Xml::Linq::NamespaceResolver {
         self
     }
 }
+#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Linq::NamespaceResolver {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::System::Xml::Linq::NamespaceResolver {
         }
     }
 }
+#[cfg(feature = "System+Xml+Linq+NamespaceResolver")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Linq::NamespaceResolver {
     type Actual = Self;

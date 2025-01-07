@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::bool2 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Mathematics+bool2")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::bool2 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Mathematics::bool2
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Mathematics+bool2")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::bool2 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -55,6 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Mathematics::bool
         self
     }
 }
+#[cfg(feature = "Unity+Mathematics+bool2")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::bool2 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Mathematics::bool2
         }
     }
 }
+#[cfg(feature = "Unity+Mathematics+bool2")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Mathematics::bool2 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

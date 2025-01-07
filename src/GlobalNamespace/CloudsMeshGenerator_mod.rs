@@ -169,6 +169,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Type = Self;
@@ -179,6 +180,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Actual = Self;
@@ -192,6 +194,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
         self
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Type = Self;
@@ -206,6 +209,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
         }
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Cloud")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Actual = Self;
@@ -270,6 +274,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
     type Type = Self;
@@ -280,6 +285,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
     type Actual = Self;
@@ -293,6 +299,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
         self
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
     type Type = Self;
@@ -307,6 +314,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
         }
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+ProhibitedRadius")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
     type Actual = Self;
@@ -372,6 +380,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
     type Type = Self;
@@ -382,6 +391,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
     type Actual = Self;
@@ -395,6 +405,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
         self
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
     type Type = Self;
@@ -409,6 +420,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
         }
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+RadiusChunk")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
     type Actual = Self;
@@ -475,6 +487,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Ring")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Type = Self;
@@ -485,6 +498,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Ring")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Actual = Self;
@@ -498,6 +512,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
         self
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Ring")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Type = Self;
@@ -512,6 +527,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
         }
     }
 }
+#[cfg(feature = "CloudsMeshGenerator+Ring")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Actual = Self;

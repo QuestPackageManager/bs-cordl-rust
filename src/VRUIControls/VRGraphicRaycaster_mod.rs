@@ -178,6 +178,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Type = Self;
@@ -188,6 +189,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Actual = Self;
@@ -201,6 +203,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         self
     }
 }
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Type = Self;
@@ -215,6 +218,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
         }
     }
 }
+#[cfg(feature = "VRUIControls+VRGraphicRaycaster+VRGraphicRaycastResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Actual = Self;

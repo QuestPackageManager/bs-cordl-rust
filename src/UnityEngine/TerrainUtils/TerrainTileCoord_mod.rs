@@ -35,6 +35,7 @@ for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TerrainUtils+TerrainTileCoord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TerrainUtils+TerrainTileCoord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TerrainUtils+TerrainTileCoord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TerrainUtils+TerrainTileCoord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TerrainUtils::TerrainTileCoord {
     type Actual = Self;

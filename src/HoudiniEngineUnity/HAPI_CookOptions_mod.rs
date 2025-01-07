@@ -47,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Cook
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Type = Self;
@@ -57,6 +58,7 @@ for crate::HoudiniEngineUnity::HAPI_CookOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Actual = Self;
@@ -70,6 +72,7 @@ for crate::HoudiniEngineUnity::HAPI_CookOptions {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Type = Self;
@@ -84,6 +87,7 @@ for crate::HoudiniEngineUnity::HAPI_CookOptions {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_CookOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_CookOptions {
     type Actual = Self;

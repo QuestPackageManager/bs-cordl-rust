@@ -192,6 +192,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Type = Self;
@@ -202,6 +203,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Actual = Self;
@@ -215,6 +217,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
         self
     }
 }
+#[cfg(feature = "OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Type = Self;
@@ -229,6 +232,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
         }
     }
 }
+#[cfg(feature = "OptionsViewController+OptionsButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Actual = Self;

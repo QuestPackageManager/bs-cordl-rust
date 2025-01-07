@@ -40,6 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Collections::Allocator
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Collections+Allocator")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Collections::Allocator {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -49,6 +50,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Collections::Alloc
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Collections+Allocator")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Collections::Allocator {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -61,6 +63,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Collections::Allo
         self
     }
 }
+#[cfg(feature = "Unity+Collections+Allocator")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Collections::Allocator {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,6 +77,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Collections::Alloc
         }
     }
 }
+#[cfg(feature = "Unity+Collections+Allocator")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Collections::Allocator {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

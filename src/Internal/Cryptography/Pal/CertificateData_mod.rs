@@ -67,6 +67,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Type = Self;
@@ -77,6 +78,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Actual = Self;
@@ -90,6 +92,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
         self
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Type = Self;
@@ -104,6 +107,7 @@ for crate::Internal::Cryptography::Pal::CertificateData {
         }
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Internal::Cryptography::Pal::CertificateData {
     type Actual = Self;
@@ -250,6 +254,7 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Type = Self;
@@ -260,6 +265,7 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Actual = Self;
@@ -273,6 +279,7 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
         self
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Type = Self;
@@ -287,6 +294,7 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
         }
     }
 }
+#[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Actual = Self;

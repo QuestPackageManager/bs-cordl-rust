@@ -37,6 +37,7 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase {
     type Actual = Self;

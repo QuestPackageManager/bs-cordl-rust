@@ -35,6 +35,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionSyncInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionSyncInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionSyncInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_SessionSyncInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_SessionSyncInfo {
     type Actual = Self;

@@ -751,6 +751,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Type = Self;
@@ -761,6 +762,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Actual = Self;
@@ -774,6 +776,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
         self
     }
 }
+#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Type = Self;
@@ -788,6 +791,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
         }
     }
 }
+#[cfg(feature = "System+Threading+ThreadLocal_1+LinkedSlotVolatile")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Actual = Self;

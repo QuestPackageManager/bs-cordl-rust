@@ -42,6 +42,7 @@ for crate::System::Reflection::GenericParameterAttributes {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::GenericParameterAttributes {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::System::Reflection::GenericParameterAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::GenericParameterAttributes {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::System::Reflection::GenericParameterAttributes {
         self
     }
 }
+#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::GenericParameterAttributes {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::System::Reflection::GenericParameterAttributes {
         }
     }
 }
+#[cfg(feature = "System+Reflection+GenericParameterAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::GenericParameterAttributes {
     type Actual = Self;

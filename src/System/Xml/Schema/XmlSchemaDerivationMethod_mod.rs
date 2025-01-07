@@ -42,6 +42,7 @@ for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaDerivationMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaDerivationMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaDerivationMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaDerivationMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaDerivationMethod {
     type Actual = Self;

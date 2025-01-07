@@ -34,6 +34,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Playables::ScriptPlayableOutput {
     type Actual = Self;

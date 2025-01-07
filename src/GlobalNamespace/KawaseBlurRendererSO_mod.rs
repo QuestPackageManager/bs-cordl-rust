@@ -416,6 +416,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Type = Self;
@@ -426,6 +427,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Actual = Self;
@@ -439,6 +441,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
         self
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Type = Self;
@@ -453,6 +456,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
         }
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Actual = Self;
@@ -509,6 +513,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Type = Self;
@@ -519,6 +524,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Actual = Self;
@@ -532,6 +538,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
         self
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Type = Self;
@@ -546,6 +553,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
         }
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+Pass")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Actual = Self;
@@ -598,6 +606,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Type = Self;
@@ -608,6 +617,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Actual = Self;
@@ -621,6 +631,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
         self
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Type = Self;
@@ -635,6 +646,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
         }
     }
 }
+#[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Actual = Self;

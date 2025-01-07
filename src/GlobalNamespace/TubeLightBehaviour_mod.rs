@@ -147,6 +147,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Type = Self;
@@ -157,6 +158,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Actual = Self;
@@ -170,6 +172,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
         self
     }
 }
+#[cfg(feature = "TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Type = Self;
@@ -184,6 +187,7 @@ for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
         }
     }
 }
+#[cfg(feature = "TubeLightBehaviour+ParameterType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TubeLightBehaviour_ParameterType {
     type Actual = Self;

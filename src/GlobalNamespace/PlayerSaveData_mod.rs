@@ -37,6 +37,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
         self
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
         }
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType {
     type Actual = Self;
@@ -125,6 +129,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Type = Self;
@@ -135,6 +140,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Actual = Self;
@@ -148,6 +154,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
         self
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Type = Self;
@@ -162,6 +169,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
         }
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Actual = Self;
@@ -214,6 +222,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Type = Self;
@@ -224,6 +233,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Actual = Self;
@@ -237,6 +247,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
         self
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Type = Self;
@@ -251,6 +262,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
         }
     }
 }
+#[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Actual = Self;
@@ -414,6 +426,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Type = Self;
@@ -424,6 +437,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Actual = Self;
@@ -437,6 +451,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
         self
     }
 }
+#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Type = Self;
@@ -451,6 +466,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
         }
     }
 }
+#[cfg(feature = "PlayerSaveData+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Actual = Self;
@@ -1717,6 +1733,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Type = Self;
@@ -1727,6 +1744,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Actual = Self;
@@ -1740,6 +1758,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
         self
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Type = Self;
@@ -1754,6 +1773,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
         }
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Actual = Self;
@@ -1979,6 +1999,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Type = Self;
@@ -1989,6 +2010,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Actual = Self;
@@ -2002,6 +2024,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
         self
     }
 }
+#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Type = Self;
@@ -2016,6 +2039,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
         }
     }
 }
+#[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Actual = Self;
@@ -2069,6 +2093,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Type = Self;
@@ -2079,6 +2104,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Actual = Self;
@@ -2092,6 +2118,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
         self
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Type = Self;
@@ -2106,6 +2133,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
         }
     }
 }
+#[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
     type Actual = Self;
@@ -2162,6 +2190,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
     type Type = Self;
@@ -2172,6 +2203,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
     type Actual = Self;
@@ -2185,6 +2219,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
         self
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
     type Type = Self;
@@ -2199,6 +2236,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
         }
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
     type Actual = Self;
@@ -2254,6 +2294,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
     type Type = Self;
@@ -2264,6 +2307,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
     type Actual = Self;
@@ -2277,6 +2323,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
         self
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
     type Type = Self;
@@ -2291,6 +2340,9 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
         }
     }
 }
+#[cfg(
+    feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
     type Actual = Self;

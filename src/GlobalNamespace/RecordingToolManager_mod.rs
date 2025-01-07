@@ -212,6 +212,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Type = Self;
@@ -222,6 +223,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Actual = Self;
@@ -235,6 +237,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
         self
     }
 }
+#[cfg(feature = "RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Type = Self;
@@ -249,6 +252,7 @@ for crate::GlobalNamespace::RecordingToolManager_SetupData {
         }
     }
 }
+#[cfg(feature = "RecordingToolManager+SetupData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::RecordingToolManager_SetupData {
     type Actual = Self;

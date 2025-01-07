@@ -203,6 +203,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpookyHash_U {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpookyHash_U {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -212,6 +213,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SpookyHash_U
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpookyHash_U {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -224,6 +226,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SpookyHash_
         self
     }
 }
+#[cfg(feature = "UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpookyHash_U {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -237,6 +240,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SpookyHash_U
         }
     }
 }
+#[cfg(feature = "UnityEngine+SpookyHash+U")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpookyHash_U {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

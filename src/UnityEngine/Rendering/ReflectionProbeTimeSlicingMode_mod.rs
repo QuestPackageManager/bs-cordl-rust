@@ -37,6 +37,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeTimeSlicingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeTimeSlicingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeTimeSlicingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ReflectionProbeTimeSlicingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ReflectionProbeTimeSlicingMode {
     type Actual = Self;

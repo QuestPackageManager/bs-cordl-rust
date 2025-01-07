@@ -1308,6 +1308,9 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
     type Type = Self;
@@ -1318,6 +1321,9 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
     type Actual = Self;
@@ -1331,6 +1337,9 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
         self
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
     type Type = Self;
@@ -1345,6 +1354,9 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
         }
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence {
     type Actual = Self;

@@ -34,6 +34,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
         self
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
         }
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu {
     type Actual = Self;
@@ -142,6 +146,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
     type Type = Self;
@@ -152,6 +159,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
     type Actual = Self;
@@ -165,6 +175,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
         self
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
     type Type = Self;
@@ -179,6 +192,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__F
         }
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq_mtu+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu__ifr_name_e__FixedBuffer {
     type Actual = Self;

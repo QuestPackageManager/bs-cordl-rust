@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XsdDateT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Schema::XsdDateTime {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Schema::XsdD
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDateTime {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::System::Xml::Schema::XsdDateTime {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Schema::XsdDateTime {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Schema::XsdD
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Schema::XsdDateTime {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -404,6 +408,7 @@ for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
     type Type = Self;
@@ -414,6 +419,7 @@ for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
     type Actual = Self;
@@ -427,6 +433,7 @@ for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
     type Type = Self;
@@ -441,6 +448,7 @@ for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
     type Actual = Self;
@@ -502,6 +510,7 @@ for crate::System::Xml::Schema::XsdDateTime_Parser {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+Parser")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdDateTime_Parser {
     type Type = Self;
@@ -512,6 +521,7 @@ for crate::System::Xml::Schema::XsdDateTime_Parser {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+Parser")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDateTime_Parser {
     type Actual = Self;
@@ -525,6 +535,7 @@ for crate::System::Xml::Schema::XsdDateTime_Parser {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+Parser")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdDateTime_Parser {
     type Type = Self;
@@ -539,6 +550,7 @@ for crate::System::Xml::Schema::XsdDateTime_Parser {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+Parser")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdDateTime_Parser {
     type Actual = Self;
@@ -714,6 +726,7 @@ for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
     type Type = Self;
@@ -724,6 +737,7 @@ for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
     type Actual = Self;
@@ -737,6 +751,7 @@ for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
     type Type = Self;
@@ -751,6 +766,7 @@ for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
     type Actual = Self;

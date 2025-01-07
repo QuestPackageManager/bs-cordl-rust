@@ -278,6 +278,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Type = Self;
@@ -288,6 +289,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Actual = Self;
@@ -301,6 +303,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
         self
     }
 }
+#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Type = Self;
@@ -315,6 +318,7 @@ for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
         }
     }
 }
+#[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric {
     type Actual = Self;

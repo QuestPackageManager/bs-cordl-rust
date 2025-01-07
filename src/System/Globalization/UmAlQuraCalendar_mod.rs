@@ -396,6 +396,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Type = Self;
@@ -406,6 +407,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Actual = Self;
@@ -419,6 +421,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
         self
     }
 }
+#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Type = Self;
@@ -433,6 +436,7 @@ for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
         }
     }
 }
+#[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::UmAlQuraCalendar_DateMapping {
     type Actual = Self;

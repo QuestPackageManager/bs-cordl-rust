@@ -42,6 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TransformDispatc
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TransformDispatchData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TransformDispatchData {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::UnityEngine::TransformDispatchData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TransformDispatchData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TransformDispatchData {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::UnityEngine::TransformDispatchData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TransformDispatchData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TransformDispatchData {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::UnityEngine::TransformDispatchData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TransformDispatchData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TransformDispatchData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

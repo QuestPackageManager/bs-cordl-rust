@@ -808,6 +808,7 @@ for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
     type Type = Self;
@@ -818,6 +819,7 @@ for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
     type Actual = Self;
@@ -831,6 +833,7 @@ for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
     type Type = Self;
@@ -845,6 +848,7 @@ for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+ControlBitRangeNode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
     type Actual = Self;
@@ -933,6 +937,7 @@ for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
     type Type = Self;
@@ -943,6 +948,7 @@ for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
     type Actual = Self;
@@ -956,6 +962,7 @@ for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
     type Type = Self;
@@ -970,6 +977,7 @@ for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
     type Actual = Self;

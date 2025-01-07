@@ -36,6 +36,7 @@ for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_HeightFieldSampling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_HeightFieldSampling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_HeightFieldSampling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_HeightFieldSampling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_HeightFieldSampling {
     type Actual = Self;

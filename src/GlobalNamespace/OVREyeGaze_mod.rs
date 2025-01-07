@@ -245,6 +245,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVREyeGaze_E
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Type = Self;
@@ -255,6 +256,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeId {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Actual = Self;
@@ -268,6 +270,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeId {
         self
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Type = Self;
@@ -282,6 +285,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeId {
         }
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeId")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVREyeGaze_EyeId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -333,6 +337,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Type = Self;
@@ -343,6 +348,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Actual = Self;
@@ -356,6 +362,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
         self
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Type = Self;
@@ -370,6 +377,7 @@ for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
         }
     }
 }
+#[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode {
     type Actual = Self;

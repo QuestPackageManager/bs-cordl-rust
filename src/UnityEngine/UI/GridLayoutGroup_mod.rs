@@ -291,6 +291,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Axis {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::GridLayoutGroup_Axis {
     type Type = Self;
@@ -301,6 +302,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Axis {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::GridLayoutGroup_Axis {
     type Actual = Self;
@@ -314,6 +316,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Axis {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::GridLayoutGroup_Axis {
     type Type = Self;
@@ -328,6 +331,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Axis {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Axis")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::GridLayoutGroup_Axis {
     type Actual = Self;
@@ -380,6 +384,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
     type Type = Self;
@@ -390,6 +395,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
     type Actual = Self;
@@ -403,6 +409,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
     type Type = Self;
@@ -417,6 +424,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Constraint")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
     type Actual = Self;
@@ -470,6 +478,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Corner {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::GridLayoutGroup_Corner {
     type Type = Self;
@@ -480,6 +489,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Corner {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::GridLayoutGroup_Corner {
     type Actual = Self;
@@ -493,6 +503,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Corner {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::GridLayoutGroup_Corner {
     type Type = Self;
@@ -507,6 +518,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Corner {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+GridLayoutGroup+Corner")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::GridLayoutGroup_Corner {
     type Actual = Self;

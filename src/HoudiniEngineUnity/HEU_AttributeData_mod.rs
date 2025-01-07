@@ -178,6 +178,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Type = Self;
@@ -188,6 +189,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Actual = Self;
@@ -201,6 +203,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Type = Self;
@@ -215,6 +218,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Actual = Self;
@@ -270,6 +274,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Type = Self;
@@ -280,6 +285,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Actual = Self;
@@ -293,6 +299,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Type = Self;
@@ -307,6 +314,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Actual = Self;

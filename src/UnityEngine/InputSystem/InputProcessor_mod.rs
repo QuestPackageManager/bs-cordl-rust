@@ -154,6 +154,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Type = Self;
@@ -164,6 +165,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Actual = Self;
@@ -177,6 +179,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Type = Self;
@@ -191,6 +194,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Actual = Self;

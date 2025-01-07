@@ -42,6 +42,7 @@ for crate::Unity::Profiling::ProfilerRecorderOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerRecorderOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::ProfilerRecorderOptions {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::Unity::Profiling::ProfilerRecorderOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerRecorderOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::ProfilerRecorderOptions {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::Unity::Profiling::ProfilerRecorderOptions {
         self
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerRecorderOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::ProfilerRecorderOptions {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::Unity::Profiling::ProfilerRecorderOptions {
         }
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerRecorderOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::ProfilerRecorderOptions {
     type Actual = Self;

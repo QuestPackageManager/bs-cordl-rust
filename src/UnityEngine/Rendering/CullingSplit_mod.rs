@@ -39,6 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Culli
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+CullingSplit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::CullingSplit {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngine::Rendering::CullingSplit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+CullingSplit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::CullingSplit {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngine::Rendering::CullingSplit {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+CullingSplit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::CullingSplit {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngine::Rendering::CullingSplit {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+CullingSplit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::CullingSplit {
     type Actual = Self;

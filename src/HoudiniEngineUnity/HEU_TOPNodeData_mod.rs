@@ -155,6 +155,7 @@ for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_TOPNodeData+PDGState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
     type Type = Self;
@@ -165,6 +166,7 @@ for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_TOPNodeData+PDGState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
     type Actual = Self;
@@ -178,6 +180,7 @@ for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_TOPNodeData+PDGState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
     type Type = Self;
@@ -192,6 +195,7 @@ for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_TOPNodeData+PDGState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_TOPNodeData_PDGState {
     type Actual = Self;

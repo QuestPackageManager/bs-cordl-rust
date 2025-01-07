@@ -1028,6 +1028,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Type = Self;
@@ -1038,6 +1039,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Actual = Self;
@@ -1051,6 +1053,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Type = Self;
@@ -1065,6 +1068,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Actual = Self;
@@ -1117,6 +1121,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Type = Self;
@@ -1127,6 +1132,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Actual = Self;
@@ -1140,6 +1146,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Type = Self;
@@ -1154,6 +1161,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Actual = Self;
@@ -1206,6 +1214,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Type = Self;
@@ -1216,6 +1225,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Actual = Self;
@@ -1229,6 +1239,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Type = Self;
@@ -1243,6 +1254,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Actual = Self;

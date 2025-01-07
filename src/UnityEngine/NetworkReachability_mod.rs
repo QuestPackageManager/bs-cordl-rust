@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::NetworkReachabil
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+NetworkReachability")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::NetworkReachability {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::NetworkReach
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+NetworkReachability")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::NetworkReachability {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::UnityEngine::NetworkReachability {
         self
     }
 }
+#[cfg(feature = "UnityEngine+NetworkReachability")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::NetworkReachability {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::NetworkReach
         }
     }
 }
+#[cfg(feature = "UnityEngine+NetworkReachability")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::NetworkReachability {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

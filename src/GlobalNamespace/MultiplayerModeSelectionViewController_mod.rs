@@ -247,6 +247,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Type = Self;
@@ -257,6 +258,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Actual = Self;
@@ -270,6 +272,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
         self
     }
 }
+#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Type = Self;
@@ -284,6 +287,7 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
         }
     }
 }
+#[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton {
     type Actual = Self;

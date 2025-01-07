@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Time
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TimeUnit {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::UnityEngine::UIElements::TimeUnit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TimeUnit {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::UnityEngine::UIElements::TimeUnit {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TimeUnit {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::UnityEngine::UIElements::TimeUnit {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::TimeUnit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

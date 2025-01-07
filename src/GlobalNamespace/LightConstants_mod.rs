@@ -116,6 +116,7 @@ for crate::GlobalNamespace::LightConstants_BakeId {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LightConstants+BakeId")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LightConstants_BakeId {
     type Type = Self;
@@ -126,6 +127,7 @@ for crate::GlobalNamespace::LightConstants_BakeId {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LightConstants+BakeId")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LightConstants_BakeId {
     type Actual = Self;
@@ -139,6 +141,7 @@ for crate::GlobalNamespace::LightConstants_BakeId {
         self
     }
 }
+#[cfg(feature = "LightConstants+BakeId")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LightConstants_BakeId {
     type Type = Self;
@@ -153,6 +156,7 @@ for crate::GlobalNamespace::LightConstants_BakeId {
         }
     }
 }
+#[cfg(feature = "LightConstants+BakeId")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LightConstants_BakeId {
     type Actual = Self;

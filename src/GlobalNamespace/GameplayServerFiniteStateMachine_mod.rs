@@ -330,6 +330,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Type = Self;
@@ -340,6 +341,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Actual = Self;
@@ -353,6 +355,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         self
     }
 }
+#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Type = Self;
@@ -367,6 +370,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         }
     }
 }
+#[cfg(feature = "GameplayServerFiniteStateMachine+InitParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
     type Actual = Self;

@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::IgnoranceLogTy
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceLogType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::IgnoranceCore::IgnoranceLogType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::IgnoranceCore::IgnoranceL
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceLogType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::IgnoranceCore::IgnoranceLogType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::IgnoranceCore::Ignorance
         self
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceLogType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::IgnoranceCore::IgnoranceLogType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::IgnoranceCore::IgnoranceL
         }
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceLogType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::IgnoranceCore::IgnoranceLogType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

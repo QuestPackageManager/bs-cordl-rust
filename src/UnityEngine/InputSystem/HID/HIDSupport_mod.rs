@@ -114,6 +114,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Type = Self;
@@ -124,6 +125,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Actual = Self;
@@ -137,6 +139,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Type = Self;
@@ -151,6 +154,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Actual = Self;

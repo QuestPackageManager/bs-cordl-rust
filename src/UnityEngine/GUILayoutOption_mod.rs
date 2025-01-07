@@ -123,6 +123,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutOption_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::GUILayoutOption_Type {
     type Type = Self;
@@ -133,6 +134,7 @@ for crate::UnityEngine::GUILayoutOption_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::GUILayoutOption_Type {
     type Actual = Self;
@@ -146,6 +148,7 @@ for crate::UnityEngine::GUILayoutOption_Type {
         self
     }
 }
+#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::GUILayoutOption_Type {
     type Type = Self;
@@ -160,6 +163,7 @@ for crate::UnityEngine::GUILayoutOption_Type {
         }
     }
 }
+#[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::GUILayoutOption_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

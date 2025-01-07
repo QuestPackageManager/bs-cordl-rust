@@ -70,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextAlignmentOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextAlignmentOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,6 +80,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextAlignmentOptio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextAlignmentOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -91,6 +93,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextAlignmentOpti
         self
     }
 }
+#[cfg(feature = "TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextAlignmentOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -104,6 +107,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextAlignmentOptio
         }
     }
 }
+#[cfg(feature = "TMPro+TextAlignmentOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TextAlignmentOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

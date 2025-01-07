@@ -42,6 +42,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
         self
     }
 }
+#[cfg(feature = "MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
         }
     }
 }
+#[cfg(feature = "MultiplayerPlacementErrorCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerPlacementErrorCode {
     type Actual = Self;

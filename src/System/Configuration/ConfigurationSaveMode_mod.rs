@@ -37,6 +37,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Configuration::ConfigurationSaveMode {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Configuration::ConfigurationSaveMode {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
         self
     }
 }
+#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Configuration::ConfigurationSaveMode {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::Configuration::ConfigurationSaveMode {
         }
     }
 }
+#[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Configuration::ConfigurationSaveMode {
     type Actual = Self;

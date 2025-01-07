@@ -1066,6 +1066,7 @@ for crate::System::Data::RBTree_1_Node<K> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Data::RBTree_1_Node<K> {
     type Type = Self;
@@ -1076,6 +1077,7 @@ for crate::System::Data::RBTree_1_Node<K> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_Node<K> {
     type Actual = Self;
@@ -1089,6 +1091,7 @@ for crate::System::Data::RBTree_1_Node<K> {
         self
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Data::RBTree_1_Node<K> {
     type Type = Self;
@@ -1103,6 +1106,7 @@ for crate::System::Data::RBTree_1_Node<K> {
         }
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+Node")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Data::RBTree_1_Node<K> {
     type Actual = Self;
@@ -1166,6 +1170,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::RBTree_1_NodeCo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::RBTree_1_NodeColor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1175,6 +1180,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::RBTree_1_No
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_NodeColor {
     type Actual = Self;
@@ -1188,6 +1194,7 @@ for crate::System::Data::RBTree_1_NodeColor {
         self
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::RBTree_1_NodeColor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1201,6 +1208,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::RBTree_1_No
         }
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::RBTree_1_NodeColor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1264,6 +1272,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Type = Self;
@@ -1274,6 +1283,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Actual = Self;
@@ -1287,6 +1297,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
         self
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Type = Self;
@@ -1301,6 +1312,7 @@ for crate::System::Data::RBTree_1_NodePath<K> {
         }
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+NodePath")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Data::RBTree_1_NodePath<K> {
     type Actual = Self;
@@ -1401,6 +1413,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Type = Self;
@@ -1411,6 +1424,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Actual = Self;
@@ -1424,6 +1438,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         self
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Type = Self;
@@ -1438,6 +1453,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
         }
     }
 }
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 unsafe impl<K: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Actual = Self;

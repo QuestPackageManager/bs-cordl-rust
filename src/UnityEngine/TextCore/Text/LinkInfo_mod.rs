@@ -41,6 +41,7 @@ for crate::UnityEngine::TextCore::Text::LinkInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::LinkInfo {
     type Type = Self;
@@ -51,6 +52,7 @@ for crate::UnityEngine::TextCore::Text::LinkInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::LinkInfo {
     type Actual = Self;
@@ -64,6 +66,7 @@ for crate::UnityEngine::TextCore::Text::LinkInfo {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::LinkInfo {
     type Type = Self;
@@ -78,6 +81,7 @@ for crate::UnityEngine::TextCore::Text::LinkInfo {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::LinkInfo {
     type Actual = Self;

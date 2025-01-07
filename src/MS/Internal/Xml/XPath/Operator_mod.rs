@@ -150,6 +150,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Type = Self;
@@ -160,6 +161,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Actual = Self;
@@ -173,6 +175,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
         self
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Type = Self;
@@ -187,6 +190,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
         }
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Actual = Self;

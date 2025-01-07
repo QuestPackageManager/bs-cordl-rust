@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Stat
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_State")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::HAPI_State {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::HAPI_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_State")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HoudiniEngineUnity::HAPI_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HoudiniEngineUnity::HAPI
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_State")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::HAPI_State {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::HAPI_
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::HAPI_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

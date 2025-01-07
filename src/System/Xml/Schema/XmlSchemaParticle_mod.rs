@@ -236,6 +236,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Type = Self;
@@ -246,6 +247,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Actual = Self;
@@ -259,6 +261,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Type = Self;
@@ -273,6 +276,7 @@ for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaParticle_Occurs {
     type Actual = Self;

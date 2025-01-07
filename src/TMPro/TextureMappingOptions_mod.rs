@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextureMappingOptions 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TextureMappingOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextureMappingOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TextureMappingOpti
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TextureMappingOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextureMappingOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,6 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TextureMappingOpt
         self
     }
 }
+#[cfg(feature = "TMPro+TextureMappingOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextureMappingOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TextureMappingOpti
         }
     }
 }
+#[cfg(feature = "TMPro+TextureMappingOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TextureMappingOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

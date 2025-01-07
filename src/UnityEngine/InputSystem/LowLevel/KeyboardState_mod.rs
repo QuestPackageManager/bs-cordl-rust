@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState {
     type Actual = Self;
@@ -222,6 +226,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState+_keys_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffer {
     type Type = Self;
@@ -232,6 +237,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState+_keys_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffer {
     type Actual = Self;
@@ -245,6 +251,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffe
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState+_keys_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffer {
     type Type = Self;
@@ -259,6 +266,7 @@ for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffe
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+KeyboardState+_keys_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::KeyboardState__keys_e__FixedBuffer {
     type Actual = Self;

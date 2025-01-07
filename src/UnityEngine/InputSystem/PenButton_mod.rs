@@ -40,6 +40,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Pen
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PenButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::PenButton {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::InputSystem::PenButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PenButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::PenButton {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::InputSystem::PenButton {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PenButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::PenButton {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::InputSystem::PenButton {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PenButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::PenButton {
     type Actual = Self;

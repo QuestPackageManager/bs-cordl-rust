@@ -346,6 +346,7 @@ for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
     type Type = Self;
@@ -356,6 +357,7 @@ for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
     type Actual = Self;
@@ -369,6 +371,7 @@ for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
         self
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
     type Type = Self;
@@ -383,6 +386,7 @@ for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
         }
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern {
     type Actual = Self;

@@ -183,6 +183,9 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
     type Type = Self;
@@ -193,6 +196,9 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
     type Actual = Self;
@@ -206,6 +212,9 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
         self
     }
 }
+#[cfg(
+    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
     type Type = Self;
@@ -220,6 +229,9 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTok
         }
     }
 }
+#[cfg(
+    feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
     type Actual = Self;

@@ -36,6 +36,7 @@ for crate::Unity::IO::LowLevel::Unsafe::Priority {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+Priority")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::LowLevel::Unsafe::Priority {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Unity::IO::LowLevel::Unsafe::Priority {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+Priority")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::LowLevel::Unsafe::Priority {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Unity::IO::LowLevel::Unsafe::Priority {
         self
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+Priority")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::LowLevel::Unsafe::Priority {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Unity::IO::LowLevel::Unsafe::Priority {
         }
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+Priority")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IO::LowLevel::Unsafe::Priority {
     type Actual = Self;

@@ -1754,6 +1754,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
     type Type = Self;
@@ -1764,6 +1767,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
     type Actual = Self;
@@ -1777,6 +1783,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
     type Type = Self;
@@ -1791,6 +1800,9 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceManager+DeferredCallbackRegisterRequest"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegisterRequest {
     type Actual = Self;
@@ -1868,6 +1880,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Type = Self;
@@ -1878,6 +1891,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Actual = Self;
@@ -1891,6 +1905,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
         self
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Type = Self;
@@ -1905,6 +1920,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
         }
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext {
     type Actual = Self;
@@ -2053,6 +2069,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Type = Self;
@@ -2063,6 +2080,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Actual = Self;
@@ -2076,6 +2094,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
         self
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Type = Self;
@@ -2090,6 +2109,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
         }
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType {
     type Actual = Self;

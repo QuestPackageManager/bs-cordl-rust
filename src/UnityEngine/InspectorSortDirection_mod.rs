@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InspectorSortDir
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InspectorSortDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InspectorSortDirection {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::UnityEngine::InspectorSortDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InspectorSortDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InspectorSortDirection {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::UnityEngine::InspectorSortDirection {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InspectorSortDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InspectorSortDirection {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::UnityEngine::InspectorSortDirection {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InspectorSortDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InspectorSortDirection {
     type Actual = Self;

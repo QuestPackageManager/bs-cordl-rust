@@ -37,6 +37,7 @@ for crate::GlobalNamespace::LightRotationDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LightRotationDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LightRotationDirection {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::LightRotationDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LightRotationDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LightRotationDirection {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::LightRotationDirection {
         self
     }
 }
+#[cfg(feature = "LightRotationDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LightRotationDirection {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::LightRotationDirection {
         }
     }
 }
+#[cfg(feature = "LightRotationDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LightRotationDirection {
     type Actual = Self;

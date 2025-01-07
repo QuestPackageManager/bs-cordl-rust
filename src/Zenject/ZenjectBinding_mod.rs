@@ -212,6 +212,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectBinding_BindT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::ZenjectBinding_BindTypes {
     type Type = Self;
@@ -222,6 +223,7 @@ for crate::Zenject::ZenjectBinding_BindTypes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::ZenjectBinding_BindTypes {
     type Actual = Self;
@@ -235,6 +237,7 @@ for crate::Zenject::ZenjectBinding_BindTypes {
         self
     }
 }
+#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::ZenjectBinding_BindTypes {
     type Type = Self;
@@ -249,6 +252,7 @@ for crate::Zenject::ZenjectBinding_BindTypes {
         }
     }
 }
+#[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Zenject::ZenjectBinding_BindTypes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -36,6 +36,7 @@ for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BlendShapeBufferLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BlendShapeBufferLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BlendShapeBufferLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BlendShapeBufferLayout")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::BlendShapeBufferLayout {
     type Actual = Self;

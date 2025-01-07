@@ -37,6 +37,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+BufferedRumble")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+BufferedRumble")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+BufferedRumble")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+BufferedRumble")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::Haptics::BufferedRumble {
     type Actual = Self;

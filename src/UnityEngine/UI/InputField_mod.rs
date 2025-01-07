@@ -2025,6 +2025,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Type = Self;
@@ -2035,6 +2036,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Actual = Self;
@@ -2048,6 +2050,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Type = Self;
@@ -2062,6 +2065,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Actual = Self;
@@ -2121,6 +2125,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_ContentType {
     type Type = Self;
@@ -2131,6 +2136,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_ContentType {
     type Actual = Self;
@@ -2144,6 +2150,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_ContentType {
     type Type = Self;
@@ -2158,6 +2165,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_ContentType {
     type Actual = Self;
@@ -2209,6 +2217,7 @@ for crate::UnityEngine::UI::InputField_EditState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_EditState {
     type Type = Self;
@@ -2219,6 +2228,7 @@ for crate::UnityEngine::UI::InputField_EditState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_EditState {
     type Actual = Self;
@@ -2232,6 +2242,7 @@ for crate::UnityEngine::UI::InputField_EditState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_EditState {
     type Type = Self;
@@ -2246,6 +2257,7 @@ for crate::UnityEngine::UI::InputField_EditState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+EditState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_EditState {
     type Actual = Self;
@@ -2371,6 +2383,7 @@ for crate::UnityEngine::UI::InputField_InputType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_InputType {
     type Type = Self;
@@ -2381,6 +2394,7 @@ for crate::UnityEngine::UI::InputField_InputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_InputType {
     type Actual = Self;
@@ -2394,6 +2408,7 @@ for crate::UnityEngine::UI::InputField_InputType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_InputType {
     type Type = Self;
@@ -2408,6 +2423,7 @@ for crate::UnityEngine::UI::InputField_InputType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+InputType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_InputType {
     type Actual = Self;
@@ -2459,6 +2475,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::InputField_L
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::InputField_LineType {
     type Type = Self;
@@ -2469,6 +2486,7 @@ for crate::UnityEngine::UI::InputField_LineType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::InputField_LineType {
     type Actual = Self;
@@ -2482,6 +2500,7 @@ for crate::UnityEngine::UI::InputField_LineType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::InputField_LineType {
     type Type = Self;
@@ -2496,6 +2515,7 @@ for crate::UnityEngine::UI::InputField_LineType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+InputField+LineType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::InputField_LineType {
     type Actual = Self;

@@ -145,6 +145,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Key
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Key")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::InputSystem::Key {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -154,6 +155,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::InputSystem:
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Key")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::InputSystem::Key {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -166,6 +168,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::InputSystem
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Key")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::InputSystem::Key {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -179,6 +182,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::InputSystem:
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Key")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::InputSystem::Key {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

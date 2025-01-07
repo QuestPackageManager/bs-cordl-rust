@@ -34,6 +34,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerCategoryDescription")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerCategoryDescription")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
         self
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerCategoryDescription")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
         }
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+Unsafe+ProfilerCategoryDescription")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::LowLevel::Unsafe::ProfilerCategoryDescription {
     type Actual = Self;

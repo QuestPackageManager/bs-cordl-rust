@@ -113,6 +113,7 @@ for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LightGroupCircularLayouter+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
     type Type = Self;
@@ -123,6 +124,7 @@ for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LightGroupCircularLayouter+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
     type Actual = Self;
@@ -136,6 +138,7 @@ for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
         self
     }
 }
+#[cfg(feature = "LightGroupCircularLayouter+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
     type Type = Self;
@@ -150,6 +153,7 @@ for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
         }
     }
 }
+#[cfg(feature = "LightGroupCircularLayouter+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LightGroupCircularLayouter_RotationDirection {
     type Actual = Self;

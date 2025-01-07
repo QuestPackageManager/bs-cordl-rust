@@ -526,6 +526,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHand_Hand
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRHand+Hand")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRHand_Hand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -535,6 +536,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRHand_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRHand+Hand")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRHand_Hand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -547,6 +549,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRHand
         self
     }
 }
+#[cfg(feature = "OVRHand+Hand")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRHand_Hand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -560,6 +563,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRHand_
         }
     }
 }
+#[cfg(feature = "OVRHand+Hand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRHand_Hand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -613,6 +617,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHand_Hand
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRHand+HandFinger")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRHand_HandFinger {
     type Type = Self;
@@ -623,6 +628,7 @@ for crate::GlobalNamespace::OVRHand_HandFinger {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRHand+HandFinger")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRHand_HandFinger {
     type Actual = Self;
@@ -636,6 +642,7 @@ for crate::GlobalNamespace::OVRHand_HandFinger {
         self
     }
 }
+#[cfg(feature = "OVRHand+HandFinger")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRHand_HandFinger {
     type Type = Self;
@@ -650,6 +657,7 @@ for crate::GlobalNamespace::OVRHand_HandFinger {
         }
     }
 }
+#[cfg(feature = "OVRHand+HandFinger")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRHand_HandFinger {
     type Actual = Self;
@@ -701,6 +709,7 @@ for crate::GlobalNamespace::OVRHand_TrackingConfidence {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRHand+TrackingConfidence")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRHand_TrackingConfidence {
     type Type = Self;
@@ -711,6 +720,7 @@ for crate::GlobalNamespace::OVRHand_TrackingConfidence {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRHand+TrackingConfidence")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRHand_TrackingConfidence {
     type Actual = Self;
@@ -724,6 +734,7 @@ for crate::GlobalNamespace::OVRHand_TrackingConfidence {
         self
     }
 }
+#[cfg(feature = "OVRHand+TrackingConfidence")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRHand_TrackingConfidence {
     type Type = Self;
@@ -738,6 +749,7 @@ for crate::GlobalNamespace::OVRHand_TrackingConfidence {
         }
     }
 }
+#[cfg(feature = "OVRHand+TrackingConfidence")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRHand_TrackingConfidence {
     type Actual = Self;

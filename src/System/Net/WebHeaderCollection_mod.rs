@@ -526,6 +526,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Type = Self;
@@ -536,6 +537,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Actual = Self;
@@ -549,6 +551,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
         self
     }
 }
+#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Type = Self;
@@ -563,6 +566,7 @@ for crate::System::Net::WebHeaderCollection_RfcChar {
         }
     }
 }
+#[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::WebHeaderCollection_RfcChar {
     type Actual = Self;

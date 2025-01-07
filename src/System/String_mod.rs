@@ -2959,6 +2959,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::String_ProbabilisticM
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_ProbabilisticMap {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2968,6 +2969,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_Probabilis
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_ProbabilisticMap {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2980,6 +2982,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_Probabili
         self
     }
 }
+#[cfg(feature = "System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_ProbabilisticMap {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2993,6 +2996,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_Probabilis
         }
     }
 }
+#[cfg(feature = "System+String+ProbabilisticMap")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::String_ProbabilisticMap {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3056,6 +3060,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::String_TrimType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_TrimType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3065,6 +3070,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::String_TrimType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_TrimType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3077,6 +3083,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::String_TrimType 
         self
     }
 }
+#[cfg(feature = "System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_TrimType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3090,6 +3097,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::String_TrimType {
         }
     }
 }
+#[cfg(feature = "System+String+TrimType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::String_TrimType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

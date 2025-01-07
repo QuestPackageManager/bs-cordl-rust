@@ -40,6 +40,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::ParticleSystemRenderMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemRenderMode {
     type Actual = Self;

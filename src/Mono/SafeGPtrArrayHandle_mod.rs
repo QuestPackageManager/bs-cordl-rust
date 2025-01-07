@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::SafeGPtrArrayHandle {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+SafeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::SafeGPtrArrayHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::SafeGPtrArrayHandle
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+SafeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::SafeGPtrArrayHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::SafeGPtrArrayHandl
         self
     }
 }
+#[cfg(feature = "Mono+SafeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::SafeGPtrArrayHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::SafeGPtrArrayHandle
         }
     }
 }
+#[cfg(feature = "Mono+SafeGPtrArrayHandle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::SafeGPtrArrayHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

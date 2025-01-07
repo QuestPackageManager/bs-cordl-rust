@@ -31,6 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::PlayerLoop::Fixe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate {
     type Type = Self;
@@ -41,6 +42,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate {
     type Actual = Self;
@@ -54,6 +56,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate {
     type Type = Self;
@@ -68,6 +71,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate {
     type Actual = Self;
@@ -155,6 +159,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
     type Type = Self;
@@ -165,6 +170,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
     type Actual = Self;
@@ -178,6 +184,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
     type Type = Self;
@@ -192,6 +199,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+AudioFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
     type Actual = Self;
@@ -252,6 +260,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
     type Type = Self;
@@ -262,6 +271,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
     type Actual = Self;
@@ -275,6 +285,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
     type Type = Self;
@@ -289,6 +300,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ClearLines")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
     type Actual = Self;
@@ -349,6 +361,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
     type Type = Self;
@@ -359,6 +372,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
     type Actual = Self;
@@ -372,6 +386,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
     type Type = Self;
@@ -386,6 +401,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedSampleTime")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
     type Actual = Self;
@@ -446,6 +462,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
     type Type = Self;
@@ -456,6 +473,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
     type Actual = Self;
@@ -469,6 +487,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
     type Type = Self;
@@ -483,6 +502,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
     type Actual = Self;
@@ -543,6 +563,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
     type Type = Self;
@@ -553,6 +574,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
     type Actual = Self;
@@ -566,6 +588,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
     type Type = Self;
@@ -580,6 +603,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+DirectorFixedUpdatePostPhysics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
     type Actual = Self;
@@ -640,6 +664,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
     type Type = Self;
@@ -650,6 +675,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
     type Actual = Self;
@@ -663,6 +689,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
     type Type = Self;
@@ -677,6 +704,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+LegacyFixedAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
     type Actual = Self;
@@ -737,6 +765,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
     type Type = Self;
@@ -747,6 +776,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
     type Actual = Self;
@@ -760,6 +790,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
     type Type = Self;
@@ -774,6 +805,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+NewInputFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
     type Actual = Self;
@@ -834,6 +866,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
     type Type = Self;
@@ -844,6 +877,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
     type Actual = Self;
@@ -857,6 +891,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
     type Type = Self;
@@ -871,6 +906,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+Physics2DFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
     type Actual = Self;
@@ -931,6 +967,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
     type Type = Self;
@@ -941,6 +978,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
     type Actual = Self;
@@ -954,6 +992,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
     type Type = Self;
@@ -968,6 +1007,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsClothFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
     type Actual = Self;
@@ -1028,6 +1068,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
     type Type = Self;
@@ -1038,6 +1079,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
     type Actual = Self;
@@ -1051,6 +1093,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
     type Type = Self;
@@ -1065,6 +1108,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+PhysicsFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
     type Actual = Self;
@@ -1125,6 +1169,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
     type Type = Self;
@@ -1135,6 +1180,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
     type Actual = Self;
@@ -1148,6 +1194,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
     type Type = Self;
@@ -1162,6 +1209,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunBehaviourFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
     type Actual = Self;
@@ -1222,6 +1270,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
     type Type = Self;
@@ -1232,6 +1281,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
     type Actual = Self;
@@ -1245,6 +1295,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
     type Type = Self;
@@ -1259,6 +1310,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+ScriptRunDelayedFixedFrameRate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
     type Actual = Self;
@@ -1319,6 +1371,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
     type Type = Self;
@@ -1329,6 +1382,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
     type Actual = Self;
@@ -1342,6 +1396,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
     type Type = Self;
@@ -1356,6 +1411,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+FixedUpdate+XRFixedUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
     type Actual = Self;

@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::AbuseReport
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::AbuseReportType {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Oculus::Platform::AbuseReportType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::AbuseReportType {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Oculus::Platform::AbuseReportType {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::AbuseReportType {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Oculus::Platform::AbuseReportType {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+AbuseReportType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::AbuseReportType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

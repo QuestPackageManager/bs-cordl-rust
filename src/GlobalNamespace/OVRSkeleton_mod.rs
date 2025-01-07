@@ -629,6 +629,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeleton_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Type = Self;
@@ -639,6 +640,7 @@ for crate::GlobalNamespace::OVRSkeleton_BoneId {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Actual = Self;
@@ -652,6 +654,7 @@ for crate::GlobalNamespace::OVRSkeleton_BoneId {
         self
     }
 }
+#[cfg(feature = "OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Type = Self;
@@ -666,6 +669,7 @@ for crate::GlobalNamespace::OVRSkeleton_BoneId {
         }
     }
 }
+#[cfg(feature = "OVRSkeleton+BoneId")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeleton_BoneId {
     type Actual = Self;
@@ -814,6 +818,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Type = Self;
@@ -824,6 +829,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Actual = Self;
@@ -837,6 +843,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         self
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Type = Self;
@@ -851,6 +858,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
         }
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonPoseData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Actual = Self;
@@ -1075,6 +1083,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Type = Self;
@@ -1085,6 +1094,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Actual = Self;
@@ -1098,6 +1108,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
         self
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Type = Self;
@@ -1112,6 +1123,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
         }
     }
 }
+#[cfg(feature = "OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Actual = Self;

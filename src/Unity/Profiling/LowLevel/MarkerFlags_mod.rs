@@ -43,6 +43,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
         self
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::Unity::Profiling::LowLevel::MarkerFlags {
         }
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::LowLevel::MarkerFlags {
     type Actual = Self;

@@ -66,6 +66,7 @@ for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
     type Type = Self;
@@ -76,6 +77,7 @@ for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
     type Actual = Self;
@@ -89,6 +91,7 @@ for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
     type Type = Self;
@@ -103,6 +106,7 @@ for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
     type Actual = Self;
@@ -152,6 +156,7 @@ for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
     type Type = Self;
@@ -162,6 +167,7 @@ for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
     type Actual = Self;
@@ -175,6 +181,7 @@ for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
     type Type = Self;
@@ -189,6 +196,7 @@ for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Fma+Union")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
     type Actual = Self;
@@ -262,6 +270,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
     type Type = Self;
@@ -272,6 +281,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
     type Actual = Self;
@@ -285,6 +295,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
     type Type = Self;
@@ -299,6 +310,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
     type Actual = Self;
@@ -348,6 +360,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
     type Type = Self;
@@ -358,6 +371,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
     type Actual = Self;
@@ -371,6 +385,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
     type Type = Self;
@@ -385,6 +400,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
     type Actual = Self;
@@ -477,6 +493,7 @@ for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     type Type = Self;
@@ -487,6 +504,7 @@ for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     type Actual = Self;
@@ -500,6 +518,7 @@ for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffe
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     type Type = Self;
@@ -514,6 +533,7 @@ for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffe
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+StrBoolArray+_Bits_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffer {
     type Actual = Self;
@@ -4953,6 +4973,7 @@ for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
     type Type = Self;
@@ -4963,6 +4984,7 @@ for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
     type Actual = Self;
@@ -4976,6 +4998,7 @@ for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
     type Type = Self;
@@ -4990,6 +5013,7 @@ for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
     type Actual = Self;
@@ -5114,6 +5138,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
     type Type = Self;
@@ -5124,6 +5149,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
     type Actual = Self;
@@ -5137,6 +5163,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
     type Type = Self;
@@ -5151,6 +5178,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
     type Actual = Self;
@@ -5200,6 +5228,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
     type Type = Self;
@@ -5210,6 +5239,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
     type Actual = Self;
@@ -5223,6 +5253,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
     type Type = Self;
@@ -5237,6 +5268,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
     type Actual = Self;

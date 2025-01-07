@@ -1952,6 +1952,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2D_EXRFla
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Texture2D_EXRFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1961,6 +1962,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Texture2D_EX
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Texture2D_EXRFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1973,6 +1975,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Texture2D_E
         self
     }
 }
+#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Texture2D_EXRFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1986,6 +1989,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Texture2D_EX
         }
     }
 }
+#[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Texture2D_EXRFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

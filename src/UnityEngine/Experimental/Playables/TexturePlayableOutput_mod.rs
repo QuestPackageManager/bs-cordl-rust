@@ -34,6 +34,7 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+TexturePlayableOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Playables::TexturePlayableOutput {
     type Actual = Self;

@@ -659,6 +659,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Type = Self;
@@ -669,6 +670,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Actual = Self;
@@ -682,6 +684,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Type = Self;
@@ -696,6 +699,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Actual = Self;
@@ -760,6 +764,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Type = Self;
@@ -770,6 +775,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Actual = Self;
@@ -783,6 +789,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Type = Self;
@@ -797,6 +804,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Actual = Self;

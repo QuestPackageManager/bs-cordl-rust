@@ -35,6 +35,7 @@ for crate::Unity::Collections::NativeArrayDispose {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayDispose")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::NativeArrayDispose {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::Unity::Collections::NativeArrayDispose {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayDispose")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::NativeArrayDispose {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::Unity::Collections::NativeArrayDispose {
         self
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayDispose")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::NativeArrayDispose {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::Unity::Collections::NativeArrayDispose {
         }
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayDispose")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Collections::NativeArrayDispose {
     type Actual = Self;

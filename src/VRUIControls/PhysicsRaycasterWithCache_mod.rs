@@ -129,6 +129,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Type = Self;
@@ -139,6 +140,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Actual = Self;
@@ -152,6 +154,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
         self
     }
 }
+#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Type = Self;
@@ -166,6 +169,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
         }
     }
 }
+#[cfg(feature = "VRUIControls+PhysicsRaycasterWithCache+CachedRaycast")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Actual = Self;

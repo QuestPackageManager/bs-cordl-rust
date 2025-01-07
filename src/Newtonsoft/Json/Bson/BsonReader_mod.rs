@@ -495,6 +495,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Type = Self;
@@ -505,6 +506,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Actual = Self;
@@ -518,6 +520,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Type = Self;
@@ -532,6 +535,7 @@ for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonReader+BsonReaderState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Bson::BsonReader_BsonReaderState {
     type Actual = Self;

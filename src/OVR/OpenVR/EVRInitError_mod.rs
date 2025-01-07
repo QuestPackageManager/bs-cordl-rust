@@ -121,6 +121,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVRInitError {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRInitError")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVRInitError {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -130,6 +131,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::EVRInitError
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRInitError")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVRInitError {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -142,6 +144,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::EVRInitErro
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRInitError")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVRInitError {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -155,6 +158,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::EVRInitError
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRInitError")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EVRInitError {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

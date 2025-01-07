@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::SFB::ExtensionFilter {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SFB+ExtensionFilter")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::SFB::ExtensionFilter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::SFB::ExtensionFilter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SFB+ExtensionFilter")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::SFB::ExtensionFilter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::SFB::ExtensionFilter {
         self
     }
 }
+#[cfg(feature = "SFB+ExtensionFilter")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::SFB::ExtensionFilter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::SFB::ExtensionFilter {
         }
     }
 }
+#[cfg(feature = "SFB+ExtensionFilter")]
 unsafe impl quest_hook::libil2cpp::Return for crate::SFB::ExtensionFilter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

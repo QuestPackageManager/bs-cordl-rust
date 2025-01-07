@@ -41,6 +41,9 @@ for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Control
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder {
     type Type = Self;
@@ -51,6 +54,9 @@ for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Control
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder {
     type Actual = Self;
@@ -64,6 +70,9 @@ for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Control
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder {
     type Type = Self;
@@ -78,6 +87,9 @@ for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Control
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder {
     type Actual = Self;
@@ -410,6 +422,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Layo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_LayoutMatcher {
     type Type = Self;
@@ -420,6 +435,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Layo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_LayoutMatcher {
     type Actual = Self;
@@ -433,6 +451,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Layo
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_LayoutMatcher {
     type Type = Self;
@@ -447,6 +468,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Layo
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+LayoutMatcher"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_LayoutMatcher {
     type Actual = Self;
@@ -522,6 +546,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Prec
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout {
     type Type = Self;
@@ -532,6 +559,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Prec
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout {
     type Actual = Self;
@@ -545,6 +575,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Prec
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout {
     type Type = Self;
@@ -559,6 +592,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Prec
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout {
     type Actual = Self;
@@ -630,6 +666,7 @@ for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Fla
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Flags {
     type Type = Self;
@@ -640,6 +677,7 @@ for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Fla
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Flags {
     type Actual = Self;
@@ -653,6 +691,7 @@ for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Fla
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Flags {
     type Type = Self;
@@ -667,6 +706,7 @@ for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Fla
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Flags {
     type Actual = Self;
@@ -1817,6 +1857,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
     type Type = Self;
@@ -1827,6 +1868,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
     type Actual = Self;
@@ -1840,6 +1882,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
     type Type = Self;
@@ -1854,6 +1897,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Cache")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
     type Actual = Self;
@@ -1945,6 +1989,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstanc
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance {
     type Type = Self;
@@ -1955,6 +2000,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstanc
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance {
     type Actual = Self;
@@ -1968,6 +2014,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstanc
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance {
     type Type = Self;
@@ -1982,6 +2029,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstanc
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+CacheRefInstance")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance {
     type Actual = Self;
@@ -2124,6 +2172,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
     type Type = Self;
@@ -2134,6 +2183,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
     type Actual = Self;
@@ -2147,6 +2197,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
     type Type = Self;
@@ -2161,6 +2212,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
     type Actual = Self;
@@ -2489,6 +2541,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
     type Type = Self;
@@ -2499,6 +2552,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
     type Actual = Self;
@@ -2512,6 +2566,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
     type Type = Self;
@@ -2526,6 +2581,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
     type Actual = Self;
@@ -3285,6 +3341,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
     type Type = Self;
@@ -3295,6 +3352,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
     type Actual = Self;
@@ -3308,6 +3366,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
     type Type = Self;
@@ -3322,6 +3381,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
     type Actual = Self;
@@ -3398,6 +3458,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
     type Type = Self;
@@ -3408,6 +3469,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
     type Actual = Self;
@@ -3421,6 +3483,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
     type Type = Self;
@@ -3435,6 +3498,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
     type Actual = Self;
@@ -3532,6 +3596,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameA
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameAndDescriptorOnly {
     type Type = Self;
@@ -3542,6 +3609,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameA
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameAndDescriptorOnly {
     type Actual = Self;
@@ -3555,6 +3625,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameA
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameAndDescriptorOnly {
     type Type = Self;
@@ -3569,6 +3642,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameA
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJsonNameAndDescriptorOnly"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameAndDescriptorOnly {
     type Actual = Self;

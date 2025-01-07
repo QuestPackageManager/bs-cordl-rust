@@ -35,6 +35,7 @@ for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
         self
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
         }
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
     type Actual = Self;

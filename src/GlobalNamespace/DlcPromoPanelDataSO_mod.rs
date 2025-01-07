@@ -180,6 +180,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Type = Self;
@@ -190,6 +191,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Actual = Self;
@@ -203,6 +205,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
         self
     }
 }
+#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Type = Self;
@@ -217,6 +220,7 @@ for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
         }
     }
 }
+#[cfg(feature = "DlcPromoPanelDataSO+DlcPromoPanelType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::DlcPromoPanelDataSO_DlcPromoPanelType {
     type Actual = Self;

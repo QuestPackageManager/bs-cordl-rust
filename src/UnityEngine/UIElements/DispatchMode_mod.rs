@@ -36,6 +36,7 @@ for crate::UnityEngine::UIElements::DispatchMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DispatchMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DispatchMode {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::UIElements::DispatchMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DispatchMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DispatchMode {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::UIElements::DispatchMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DispatchMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DispatchMode {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::UIElements::DispatchMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DispatchMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DispatchMode {
     type Actual = Self;

@@ -246,6 +246,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataError_Colum
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::DataError_ColumnError {
     type Type = Self;
@@ -256,6 +257,7 @@ for crate::System::Data::DataError_ColumnError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::DataError_ColumnError {
     type Actual = Self;
@@ -269,6 +271,7 @@ for crate::System::Data::DataError_ColumnError {
         self
     }
 }
+#[cfg(feature = "System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::DataError_ColumnError {
     type Type = Self;
@@ -283,6 +286,7 @@ for crate::System::Data::DataError_ColumnError {
         }
     }
 }
+#[cfg(feature = "System+Data+DataError+ColumnError")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::DataError_ColumnError {
     type Actual = Self;

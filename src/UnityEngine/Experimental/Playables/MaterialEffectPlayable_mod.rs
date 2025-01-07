@@ -34,6 +34,7 @@ for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
     type Actual = Self;

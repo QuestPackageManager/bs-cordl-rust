@@ -537,6 +537,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Type = Self;
@@ -547,6 +548,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Actual = Self;
@@ -560,6 +562,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
         self
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Type = Self;
@@ -574,6 +577,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
         }
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+DynamicString")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicString {
     type Actual = Self;
@@ -900,6 +904,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
     type Type = Self;
@@ -910,6 +917,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
     type Actual = Self;
@@ -923,6 +933,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
     type Type = Self;
@@ -937,6 +950,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+ObjectTypeData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectTypeData {
     type Actual = Self;
@@ -2041,6 +2057,9 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     type Type = Self;
@@ -2051,6 +2070,9 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     type Actual = Self;
@@ -2064,6 +2086,9 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     type Type = Self;
@@ -2078,6 +2103,9 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {
     type Actual = Self;
@@ -2149,6 +2177,9 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
     type Type = Self;
@@ -2159,6 +2190,9 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
     type Actual = Self;
@@ -2172,6 +2206,9 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
     type Type = Self;
@@ -2186,6 +2223,9 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBuffer_Data {
     type Actual = Self;
@@ -2331,6 +2371,9 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
     type Type = Self;
@@ -2341,6 +2384,9 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
     type Actual = Self;
@@ -2354,6 +2400,9 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
     type Type = Self;
@@ -2368,6 +2417,9 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts {
     type Actual = Self;

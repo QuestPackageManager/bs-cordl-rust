@@ -43,6 +43,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::UnityEngine::InputSystem::InputActionChange {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionChange {
     type Actual = Self;

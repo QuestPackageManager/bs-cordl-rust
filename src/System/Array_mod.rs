@@ -2366,6 +2366,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Array_InternalEnumerator_1<T> {
     type Type = Self;
@@ -2376,6 +2377,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Array_InternalEnumerator_1<T> {
     type Actual = Self;
@@ -2389,6 +2391,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         self
     }
 }
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Array_InternalEnumerator_1<T> {
     type Type = Self;
@@ -2403,6 +2406,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
         }
     }
 }
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Array_InternalEnumerator_1<T> {
     type Actual = Self;
@@ -2650,6 +2654,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterGenericAr
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterGenericArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2659,6 +2664,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterGener
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Array_SorterGenericArray {
     type Actual = Self;
@@ -2672,6 +2678,7 @@ for crate::System::Array_SorterGenericArray {
         self
     }
 }
+#[cfg(feature = "System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterGenericArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2685,6 +2692,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterGener
         }
     }
 }
+#[cfg(feature = "System+Array+SorterGenericArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Array_SorterGenericArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2879,6 +2887,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterObjectArr
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterObjectArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2888,6 +2897,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Array_SorterObjec
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Array_SorterObjectArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2900,6 +2910,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Array_SorterObje
         self
     }
 }
+#[cfg(feature = "System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterObjectArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2913,6 +2924,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Array_SorterObjec
         }
     }
 }
+#[cfg(feature = "System+Array+SorterObjectArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Array_SorterObjectArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

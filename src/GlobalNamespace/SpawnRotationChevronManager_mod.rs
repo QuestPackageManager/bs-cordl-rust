@@ -301,6 +301,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Type = Self;
@@ -311,6 +312,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Actual = Self;
@@ -324,6 +326,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
         self
     }
 }
+#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Type = Self;
@@ -338,6 +341,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
         }
     }
 }
+#[cfg(feature = "SpawnRotationChevronManager+QueuedDirectionData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData {
     type Actual = Self;

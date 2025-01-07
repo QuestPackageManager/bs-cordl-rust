@@ -34,6 +34,7 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Audio::AudioMixerPlayable {
     type Actual = Self;

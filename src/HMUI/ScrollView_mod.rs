@@ -487,6 +487,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollDirect
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollDirection {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -496,6 +497,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollDi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ScrollView_ScrollDirection {
     type Actual = Self;
@@ -509,6 +511,7 @@ for crate::HMUI::ScrollView_ScrollDirection {
         self
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollDirection {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -522,6 +525,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollDi
         }
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollDirection {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -572,6 +576,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -581,6 +586,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::ScrollView_ScrollTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::ScrollView_ScrollType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -593,6 +599,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::ScrollView_ScrollT
         self
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -606,6 +613,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::ScrollView_ScrollTy
         }
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ScrollView_ScrollType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -655,6 +663,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollViewDi
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Type = Self;
@@ -665,6 +674,7 @@ for crate::HMUI::ScrollView_ScrollViewDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Actual = Self;
@@ -678,6 +688,7 @@ for crate::HMUI::ScrollView_ScrollViewDirection {
         self
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Type = Self;
@@ -692,6 +703,7 @@ for crate::HMUI::ScrollView_ScrollViewDirection {
         }
     }
 }
+#[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::ScrollView_ScrollViewDirection {
     type Actual = Self;

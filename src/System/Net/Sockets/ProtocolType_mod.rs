@@ -56,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Sockets::Protoco
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::ProtocolType {
     type Type = Self;
@@ -66,6 +67,7 @@ for crate::System::Net::Sockets::ProtocolType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::ProtocolType {
     type Actual = Self;
@@ -79,6 +81,7 @@ for crate::System::Net::Sockets::ProtocolType {
         self
     }
 }
+#[cfg(feature = "System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::ProtocolType {
     type Type = Self;
@@ -93,6 +96,7 @@ for crate::System::Net::Sockets::ProtocolType {
         }
     }
 }
+#[cfg(feature = "System+Net+Sockets+ProtocolType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::Sockets::ProtocolType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

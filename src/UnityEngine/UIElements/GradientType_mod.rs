@@ -36,6 +36,7 @@ for crate::UnityEngine::UIElements::GradientType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+GradientType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::GradientType {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::UIElements::GradientType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+GradientType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::GradientType {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::UIElements::GradientType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+GradientType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::GradientType {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::UIElements::GradientType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+GradientType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::GradientType {
     type Actual = Self;

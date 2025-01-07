@@ -7550,6 +7550,7 @@ for crate::Oculus::Platform::CAPI_OculusInitParams {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::CAPI_OculusInitParams {
     type Type = Self;
@@ -7560,6 +7561,7 @@ for crate::Oculus::Platform::CAPI_OculusInitParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::CAPI_OculusInitParams {
     type Actual = Self;
@@ -7573,6 +7575,7 @@ for crate::Oculus::Platform::CAPI_OculusInitParams {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::CAPI_OculusInitParams {
     type Type = Self;
@@ -7587,6 +7590,7 @@ for crate::Oculus::Platform::CAPI_OculusInitParams {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::CAPI_OculusInitParams {
     type Actual = Self;
@@ -7653,6 +7657,7 @@ for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     type Type = Self;
@@ -7663,6 +7668,7 @@ for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     type Actual = Self;
@@ -7676,6 +7682,7 @@ for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     type Type = Self;
@@ -7690,6 +7697,7 @@ for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     type Actual = Self;
@@ -7791,6 +7799,7 @@ for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
     type Type = Self;
@@ -7801,6 +7810,7 @@ for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
     type Actual = Self;
@@ -7814,6 +7824,7 @@ for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
     type Type = Self;
@@ -7828,6 +7839,7 @@ for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+CAPI+ovrNetSyncVec3")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
     type Actual = Self;

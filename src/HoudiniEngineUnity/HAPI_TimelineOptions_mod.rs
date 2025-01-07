@@ -36,6 +36,7 @@ for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_TimelineOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_TimelineOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_TimelineOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_TimelineOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_TimelineOptions {
     type Actual = Self;

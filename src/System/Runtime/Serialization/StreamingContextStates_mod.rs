@@ -43,6 +43,7 @@ for crate::System::Runtime::Serialization::StreamingContextStates {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+StreamingContextStates")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Serialization::StreamingContextStates {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::System::Runtime::Serialization::StreamingContextStates {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+StreamingContextStates")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Serialization::StreamingContextStates {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::System::Runtime::Serialization::StreamingContextStates {
         self
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+StreamingContextStates")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Serialization::StreamingContextStates {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::System::Runtime::Serialization::StreamingContextStates {
         }
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+StreamingContextStates")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Serialization::StreamingContextStates {
     type Actual = Self;

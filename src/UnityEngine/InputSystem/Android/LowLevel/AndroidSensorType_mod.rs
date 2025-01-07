@@ -62,6 +62,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
     type Type = Self;
@@ -72,6 +73,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
     type Actual = Self;
@@ -85,6 +87,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
     type Type = Self;
@@ -99,6 +102,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorType {
     type Actual = Self;

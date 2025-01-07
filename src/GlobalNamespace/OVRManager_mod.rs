@@ -2380,6 +2380,7 @@ for crate::GlobalNamespace::OVRManager_CameraDevice {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+CameraDevice")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_CameraDevice {
     type Type = Self;
@@ -2390,6 +2391,7 @@ for crate::GlobalNamespace::OVRManager_CameraDevice {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+CameraDevice")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_CameraDevice {
     type Actual = Self;
@@ -2403,6 +2405,7 @@ for crate::GlobalNamespace::OVRManager_CameraDevice {
         self
     }
 }
+#[cfg(feature = "OVRManager+CameraDevice")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_CameraDevice {
     type Type = Self;
@@ -2417,6 +2420,7 @@ for crate::GlobalNamespace::OVRManager_CameraDevice {
         }
     }
 }
+#[cfg(feature = "OVRManager+CameraDevice")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_CameraDevice {
     type Actual = Self;
@@ -2475,6 +2479,7 @@ for crate::GlobalNamespace::OVRManager_ColorSpace {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_ColorSpace {
     type Type = Self;
@@ -2485,6 +2490,7 @@ for crate::GlobalNamespace::OVRManager_ColorSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_ColorSpace {
     type Actual = Self;
@@ -2498,6 +2504,7 @@ for crate::GlobalNamespace::OVRManager_ColorSpace {
         self
     }
 }
+#[cfg(feature = "OVRManager+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_ColorSpace {
     type Type = Self;
@@ -2512,6 +2519,7 @@ for crate::GlobalNamespace::OVRManager_ColorSpace {
         }
     }
 }
+#[cfg(feature = "OVRManager+ColorSpace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_ColorSpace {
     type Actual = Self;
@@ -2563,6 +2571,7 @@ for crate::GlobalNamespace::OVRManager_CompositionMethod {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+CompositionMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_CompositionMethod {
     type Type = Self;
@@ -2573,6 +2582,7 @@ for crate::GlobalNamespace::OVRManager_CompositionMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+CompositionMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_CompositionMethod {
     type Actual = Self;
@@ -2586,6 +2596,7 @@ for crate::GlobalNamespace::OVRManager_CompositionMethod {
         self
     }
 }
+#[cfg(feature = "OVRManager+CompositionMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_CompositionMethod {
     type Type = Self;
@@ -2600,6 +2611,7 @@ for crate::GlobalNamespace::OVRManager_CompositionMethod {
         }
     }
 }
+#[cfg(feature = "OVRManager+CompositionMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_CompositionMethod {
     type Actual = Self;
@@ -2652,6 +2664,7 @@ for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
     type Type = Self;
@@ -2662,6 +2675,7 @@ for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
     type Actual = Self;
@@ -2675,6 +2689,7 @@ for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
         self
     }
 }
+#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
     type Type = Self;
@@ -2689,6 +2704,7 @@ for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
         }
     }
 }
+#[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
     type Actual = Self;
@@ -2741,6 +2757,7 @@ for crate::GlobalNamespace::OVRManager_DepthQuality {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+DepthQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_DepthQuality {
     type Type = Self;
@@ -2751,6 +2768,7 @@ for crate::GlobalNamespace::OVRManager_DepthQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+DepthQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_DepthQuality {
     type Actual = Self;
@@ -2764,6 +2782,7 @@ for crate::GlobalNamespace::OVRManager_DepthQuality {
         self
     }
 }
+#[cfg(feature = "OVRManager+DepthQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_DepthQuality {
     type Type = Self;
@@ -2778,6 +2797,7 @@ for crate::GlobalNamespace::OVRManager_DepthQuality {
         }
     }
 }
+#[cfg(feature = "OVRManager+DepthQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_DepthQuality {
     type Actual = Self;
@@ -2898,6 +2918,7 @@ for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+EyeTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
     type Type = Self;
@@ -2908,6 +2929,7 @@ for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+EyeTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
     type Actual = Self;
@@ -2921,6 +2943,7 @@ for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
         self
     }
 }
+#[cfg(feature = "OVRManager+EyeTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
     type Type = Self;
@@ -2935,6 +2958,7 @@ for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
         }
     }
 }
+#[cfg(feature = "OVRManager+EyeTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
     type Actual = Self;
@@ -2989,6 +3013,7 @@ for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
     type Type = Self;
@@ -2999,6 +3024,7 @@ for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
     type Actual = Self;
@@ -3012,6 +3038,7 @@ for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
         self
     }
 }
+#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
     type Type = Self;
@@ -3026,6 +3053,7 @@ for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
         }
     }
 }
+#[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
     type Actual = Self;
@@ -3080,6 +3108,7 @@ for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
     type Type = Self;
@@ -3090,6 +3119,7 @@ for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
     type Actual = Self;
@@ -3103,6 +3133,7 @@ for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
         self
     }
 }
+#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
     type Type = Self;
@@ -3117,6 +3148,7 @@ for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
         }
     }
 }
+#[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
     type Actual = Self;
@@ -3290,6 +3322,7 @@ for crate::GlobalNamespace::OVRManager_MrcActivationMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+MrcActivationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_MrcActivationMode {
     type Type = Self;
@@ -3300,6 +3333,7 @@ for crate::GlobalNamespace::OVRManager_MrcActivationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+MrcActivationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_MrcActivationMode {
     type Actual = Self;
@@ -3313,6 +3347,7 @@ for crate::GlobalNamespace::OVRManager_MrcActivationMode {
         self
     }
 }
+#[cfg(feature = "OVRManager+MrcActivationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_MrcActivationMode {
     type Type = Self;
@@ -3327,6 +3362,7 @@ for crate::GlobalNamespace::OVRManager_MrcActivationMode {
         }
     }
 }
+#[cfg(feature = "OVRManager+MrcActivationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_MrcActivationMode {
     type Actual = Self;
@@ -3379,6 +3415,7 @@ for crate::GlobalNamespace::OVRManager_MrcCameraType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+MrcCameraType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_MrcCameraType {
     type Type = Self;
@@ -3389,6 +3426,7 @@ for crate::GlobalNamespace::OVRManager_MrcCameraType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+MrcCameraType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_MrcCameraType {
     type Actual = Self;
@@ -3402,6 +3440,7 @@ for crate::GlobalNamespace::OVRManager_MrcCameraType {
         self
     }
 }
+#[cfg(feature = "OVRManager+MrcCameraType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_MrcCameraType {
     type Type = Self;
@@ -3416,6 +3455,7 @@ for crate::GlobalNamespace::OVRManager_MrcCameraType {
         }
     }
 }
+#[cfg(feature = "OVRManager+MrcCameraType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_MrcCameraType {
     type Actual = Self;
@@ -3578,6 +3618,7 @@ for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+PassthroughInitializationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
     type Type = Self;
@@ -3588,6 +3629,7 @@ for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+PassthroughInitializationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
     type Actual = Self;
@@ -3601,6 +3643,7 @@ for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
         self
     }
 }
+#[cfg(feature = "OVRManager+PassthroughInitializationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
     type Type = Self;
@@ -3615,6 +3658,7 @@ for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
         }
     }
 }
+#[cfg(feature = "OVRManager+PassthroughInitializationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
     type Actual = Self;
@@ -3668,6 +3712,7 @@ for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
     type Type = Self;
@@ -3678,6 +3723,7 @@ for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
     type Actual = Self;
@@ -3691,6 +3737,7 @@ for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
         self
     }
 }
+#[cfg(feature = "OVRManager+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
     type Type = Self;
@@ -3705,6 +3752,7 @@ for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
         }
     }
 }
+#[cfg(feature = "OVRManager+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
     type Actual = Self;
@@ -3774,6 +3822,7 @@ for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+SystemHeadsetType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
     type Type = Self;
@@ -3784,6 +3833,7 @@ for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+SystemHeadsetType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
     type Actual = Self;
@@ -3797,6 +3847,7 @@ for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
         self
     }
 }
+#[cfg(feature = "OVRManager+SystemHeadsetType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
     type Type = Self;
@@ -3811,6 +3862,7 @@ for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
         }
     }
 }
+#[cfg(feature = "OVRManager+SystemHeadsetType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
     type Actual = Self;
@@ -3865,6 +3917,7 @@ for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+TiledMultiResLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
     type Type = Self;
@@ -3875,6 +3928,7 @@ for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+TiledMultiResLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
     type Actual = Self;
@@ -3888,6 +3942,7 @@ for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
         self
     }
 }
+#[cfg(feature = "OVRManager+TiledMultiResLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
     type Type = Self;
@@ -3902,6 +3957,7 @@ for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
         }
     }
 }
+#[cfg(feature = "OVRManager+TiledMultiResLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
     type Actual = Self;
@@ -3954,6 +4010,7 @@ for crate::GlobalNamespace::OVRManager_TrackingOrigin {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+TrackingOrigin")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_TrackingOrigin {
     type Type = Self;
@@ -3964,6 +4021,7 @@ for crate::GlobalNamespace::OVRManager_TrackingOrigin {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+TrackingOrigin")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_TrackingOrigin {
     type Actual = Self;
@@ -3977,6 +4035,7 @@ for crate::GlobalNamespace::OVRManager_TrackingOrigin {
         self
     }
 }
+#[cfg(feature = "OVRManager+TrackingOrigin")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_TrackingOrigin {
     type Type = Self;
@@ -3991,6 +4050,7 @@ for crate::GlobalNamespace::OVRManager_TrackingOrigin {
         }
     }
 }
+#[cfg(feature = "OVRManager+TrackingOrigin")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_TrackingOrigin {
     type Actual = Self;
@@ -4043,6 +4103,7 @@ for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+VirtualGreenScreenType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
     type Type = Self;
@@ -4053,6 +4114,7 @@ for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+VirtualGreenScreenType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
     type Actual = Self;
@@ -4066,6 +4128,7 @@ for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
         self
     }
 }
+#[cfg(feature = "OVRManager+VirtualGreenScreenType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
     type Type = Self;
@@ -4080,6 +4143,7 @@ for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
         }
     }
 }
+#[cfg(feature = "OVRManager+VirtualGreenScreenType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
     type Actual = Self;
@@ -4131,6 +4195,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRManager_X
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+XRDevice")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_XRDevice {
     type Type = Self;
@@ -4141,6 +4206,7 @@ for crate::GlobalNamespace::OVRManager_XRDevice {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+XRDevice")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_XRDevice {
     type Actual = Self;
@@ -4154,6 +4220,7 @@ for crate::GlobalNamespace::OVRManager_XRDevice {
         self
     }
 }
+#[cfg(feature = "OVRManager+XRDevice")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_XRDevice {
     type Type = Self;
@@ -4168,6 +4235,7 @@ for crate::GlobalNamespace::OVRManager_XRDevice {
         }
     }
 }
+#[cfg(feature = "OVRManager+XRDevice")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRManager_XRDevice {
     type Actual = Self;
@@ -4220,6 +4288,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRManager_X
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRManager+XrApi")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRManager_XrApi {
     type Type = Self;
@@ -4230,6 +4299,7 @@ for crate::GlobalNamespace::OVRManager_XrApi {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRManager+XrApi")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRManager_XrApi {
     type Actual = Self;
@@ -4243,6 +4313,7 @@ for crate::GlobalNamespace::OVRManager_XrApi {
         self
     }
 }
+#[cfg(feature = "OVRManager+XrApi")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRManager_XrApi {
     type Type = Self;
@@ -4257,6 +4328,7 @@ for crate::GlobalNamespace::OVRManager_XrApi {
         }
     }
 }
+#[cfg(feature = "OVRManager+XrApi")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRManager_XrApi {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -217,6 +217,7 @@ for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceServer+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
     type Type = Self;
@@ -227,6 +228,7 @@ for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceServer+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
     type Actual = Self;
@@ -240,6 +242,7 @@ for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
         self
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceServer+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
     type Type = Self;
@@ -254,6 +257,7 @@ for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
         }
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceServer+ThreadParamInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceServer_ThreadParamInfo {
     type Actual = Self;

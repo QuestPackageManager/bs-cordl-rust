@@ -53,6 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Resources::ResourceTy
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Resources+ResourceTypeCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Resources::ResourceTypeCode {
     type Type = Self;
@@ -63,6 +64,7 @@ for crate::System::Resources::ResourceTypeCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Resources+ResourceTypeCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Resources::ResourceTypeCode {
     type Actual = Self;
@@ -76,6 +78,7 @@ for crate::System::Resources::ResourceTypeCode {
         self
     }
 }
+#[cfg(feature = "System+Resources+ResourceTypeCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Resources::ResourceTypeCode {
     type Type = Self;
@@ -90,6 +93,7 @@ for crate::System::Resources::ResourceTypeCode {
         }
     }
 }
+#[cfg(feature = "System+Resources+ResourceTypeCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Resources::ResourceTypeCode {
     type Actual = Self;

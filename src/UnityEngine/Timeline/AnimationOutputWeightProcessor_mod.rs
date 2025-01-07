@@ -167,6 +167,7 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
     type Type = Self;
@@ -177,6 +178,7 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
     type Actual = Self;
@@ -190,6 +192,7 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
     type Type = Self;
@@ -204,6 +207,7 @@ for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationOutputWeightProcessor+WeightInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo {
     type Actual = Self;

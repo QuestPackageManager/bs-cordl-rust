@@ -39,6 +39,7 @@ for crate::System::Runtime::Remoting::Lifetime::LeaseState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Remoting::Lifetime::LeaseState {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::System::Runtime::Remoting::Lifetime::LeaseState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Remoting::Lifetime::LeaseState {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::System::Runtime::Remoting::Lifetime::LeaseState {
         self
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Remoting::Lifetime::LeaseState {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::System::Runtime::Remoting::Lifetime::LeaseState {
         }
     }
 }
+#[cfg(feature = "System+Runtime+Remoting+Lifetime+LeaseState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Remoting::Lifetime::LeaseState {
     type Actual = Self;

@@ -58,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::EventType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::EventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +68,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::EventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::EventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,6 +81,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::EventType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::EventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -92,6 +95,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::EventType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+EventType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::EventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

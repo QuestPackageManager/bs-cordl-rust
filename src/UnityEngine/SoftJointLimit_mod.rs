@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SoftJointLimit {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimit")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SoftJointLimit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SoftJointLim
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimit")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SoftJointLimit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SoftJointLi
         self
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimit")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SoftJointLimit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SoftJointLim
         }
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SoftJointLimit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -43,6 +43,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
         self
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::System::Security::Cryptography::CspProviderFlags {
         }
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::CspProviderFlags {
     type Actual = Self;

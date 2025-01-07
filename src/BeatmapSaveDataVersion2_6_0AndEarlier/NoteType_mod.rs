@@ -39,6 +39,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+NoteType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+NoteType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+NoteType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+NoteType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteType {
     type Actual = Self;

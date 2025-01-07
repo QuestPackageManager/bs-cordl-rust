@@ -35,6 +35,7 @@ for crate::System::Globalization::InternalEncodingDataItem {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+InternalEncodingDataItem")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::InternalEncodingDataItem {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::System::Globalization::InternalEncodingDataItem {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+InternalEncodingDataItem")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::InternalEncodingDataItem {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::System::Globalization::InternalEncodingDataItem {
         self
     }
 }
+#[cfg(feature = "System+Globalization+InternalEncodingDataItem")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::InternalEncodingDataItem {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::System::Globalization::InternalEncodingDataItem {
         }
     }
 }
+#[cfg(feature = "System+Globalization+InternalEncodingDataItem")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::InternalEncodingDataItem {
     type Actual = Self;

@@ -36,6 +36,7 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     type Actual = Self;

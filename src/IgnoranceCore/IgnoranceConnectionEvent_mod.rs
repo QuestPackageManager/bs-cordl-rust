@@ -37,6 +37,7 @@ for crate::IgnoranceCore::IgnoranceConnectionEvent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceConnectionEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::IgnoranceConnectionEvent {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::IgnoranceCore::IgnoranceConnectionEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceConnectionEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::IgnoranceConnectionEvent {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::IgnoranceCore::IgnoranceConnectionEvent {
         self
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceConnectionEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::IgnoranceConnectionEvent {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::IgnoranceCore::IgnoranceConnectionEvent {
         }
     }
 }
+#[cfg(feature = "IgnoranceCore+IgnoranceConnectionEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceCore::IgnoranceConnectionEvent {
     type Actual = Self;

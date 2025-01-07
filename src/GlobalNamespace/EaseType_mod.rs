@@ -68,6 +68,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::EaseType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "EaseType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::EaseType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::EaseType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "EaseType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::EaseType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,6 +91,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::EaseTyp
         self
     }
 }
+#[cfg(feature = "EaseType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::EaseType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -102,6 +105,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::EaseType
         }
     }
 }
+#[cfg(feature = "EaseType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::EaseType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

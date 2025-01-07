@@ -37,6 +37,7 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
         self
     }
 }
+#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforceme
         }
     }
 }
+#[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Authentication::ExtendedProtection::PolicyEnforcement {
     type Actual = Self;

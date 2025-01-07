@@ -1418,6 +1418,7 @@ for crate::System::Collections::Hashtable_bucket {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::Hashtable_bucket {
     type Type = Self;
@@ -1428,6 +1429,7 @@ for crate::System::Collections::Hashtable_bucket {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Hashtable_bucket {
     type Actual = Self;
@@ -1441,6 +1443,7 @@ for crate::System::Collections::Hashtable_bucket {
         self
     }
 }
+#[cfg(feature = "System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::Hashtable_bucket {
     type Type = Self;
@@ -1455,6 +1458,7 @@ for crate::System::Collections::Hashtable_bucket {
         }
     }
 }
+#[cfg(feature = "System+Collections+Hashtable+bucket")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::Hashtable_bucket {
     type Actual = Self;

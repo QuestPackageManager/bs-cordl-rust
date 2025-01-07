@@ -39,6 +39,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
         self
     }
 }
+#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngineInternal::Input::NativeInputEventType {
         }
     }
 }
+#[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngineInternal::Input::NativeInputEventType {
     type Actual = Self;

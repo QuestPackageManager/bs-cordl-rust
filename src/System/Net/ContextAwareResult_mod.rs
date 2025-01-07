@@ -302,6 +302,7 @@ for crate::System::Net::ContextAwareResult_StateFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+ContextAwareResult+StateFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::ContextAwareResult_StateFlags {
     type Type = Self;
@@ -312,6 +313,7 @@ for crate::System::Net::ContextAwareResult_StateFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+ContextAwareResult+StateFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::ContextAwareResult_StateFlags {
     type Actual = Self;
@@ -325,6 +327,7 @@ for crate::System::Net::ContextAwareResult_StateFlags {
         self
     }
 }
+#[cfg(feature = "System+Net+ContextAwareResult+StateFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::ContextAwareResult_StateFlags {
     type Type = Self;
@@ -339,6 +342,7 @@ for crate::System::Net::ContextAwareResult_StateFlags {
         }
     }
 }
+#[cfg(feature = "System+Net+ContextAwareResult+StateFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::ContextAwareResult_StateFlags {
     type Actual = Self;

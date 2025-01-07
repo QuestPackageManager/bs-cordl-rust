@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CombineInstance 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CombineInstance {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CombineInsta
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CombineInstance {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,6 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CombineInst
         self
     }
 }
+#[cfg(feature = "UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CombineInstance {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CombineInsta
         }
     }
 }
+#[cfg(feature = "UnityEngine+CombineInstance")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CombineInstance {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

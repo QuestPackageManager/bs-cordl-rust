@@ -39,6 +39,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
         self
     }
 }
+#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
         }
     }
 }
+#[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::DotnetExtension::CommandLine::ArgumentType {
     type Actual = Self;

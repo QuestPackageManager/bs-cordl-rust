@@ -34,6 +34,7 @@ for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
     type Actual = Self;

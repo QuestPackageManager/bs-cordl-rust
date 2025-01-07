@@ -47,6 +47,7 @@ for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryOperator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
     type Type = Self;
@@ -57,6 +58,7 @@ for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryOperator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
     type Actual = Self;
@@ -70,6 +72,7 @@ for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryOperator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
     type Type = Self;
@@ -84,6 +87,7 @@ for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryOperator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator {
     type Actual = Self;

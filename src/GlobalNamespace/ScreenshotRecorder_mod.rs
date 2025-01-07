@@ -228,6 +228,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Type = Self;
@@ -238,6 +239,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Actual = Self;
@@ -251,6 +253,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
         self
     }
 }
+#[cfg(feature = "ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Type = Self;
@@ -265,6 +268,7 @@ for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
         }
     }
 }
+#[cfg(feature = "ScreenshotRecorder+RecordingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScreenshotRecorder_RecordingType {
     type Actual = Self;

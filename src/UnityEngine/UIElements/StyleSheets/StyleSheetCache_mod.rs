@@ -139,6 +139,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Type = Self;
@@ -149,6 +150,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Actual = Self;
@@ -162,6 +164,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Type = Self;
@@ -176,6 +179,7 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey 
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKey")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey {
     type Actual = Self;

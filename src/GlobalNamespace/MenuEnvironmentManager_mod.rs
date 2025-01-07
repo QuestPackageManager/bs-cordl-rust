@@ -236,6 +236,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Type = Self;
@@ -246,6 +247,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Actual = Self;
@@ -259,6 +261,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
         self
     }
 }
+#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Type = Self;
@@ -273,6 +276,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
         }
     }
 }
+#[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Actual = Self;

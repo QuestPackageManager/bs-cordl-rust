@@ -38,6 +38,7 @@ for crate::System::Globalization::HebrewNumberParsingState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumberParsingState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::HebrewNumberParsingState {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Globalization::HebrewNumberParsingState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumberParsingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::HebrewNumberParsingState {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Globalization::HebrewNumberParsingState {
         self
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumberParsingState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::HebrewNumberParsingState {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Globalization::HebrewNumberParsingState {
         }
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumberParsingState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::HebrewNumberParsingState {
     type Actual = Self;

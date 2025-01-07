@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::QuestSet
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QuestSettings {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::BeatSaber::Settings::QuestSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QuestSettings {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::BeatSaber::Settings::QuestSettings {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QuestSettings {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::BeatSaber::Settings::QuestSettings {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::QuestSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -146,6 +150,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Type = Self;
@@ -156,6 +161,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Actual = Self;
@@ -169,6 +175,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Type = Self;
@@ -183,6 +190,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Actual = Self;
@@ -237,6 +245,7 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Type = Self;
@@ -247,6 +256,7 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Actual = Self;
@@ -260,6 +270,7 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Type = Self;
@@ -274,6 +285,7 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Actual = Self;

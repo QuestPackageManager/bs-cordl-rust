@@ -144,6 +144,7 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Type = Self;
@@ -154,6 +155,7 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Actual = Self;
@@ -167,6 +169,7 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Type = Self;
@@ -181,6 +184,7 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Actual = Self;

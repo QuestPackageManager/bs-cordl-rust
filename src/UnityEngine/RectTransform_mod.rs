@@ -557,6 +557,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Ax
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransform_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -566,6 +567,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransfor
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransform_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -578,6 +580,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransfo
         self
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransform_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -591,6 +594,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransfor
         }
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Axis")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -642,6 +646,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Ed
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransform_Edge {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -651,6 +656,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::RectTransfor
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransform_Edge {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -663,6 +669,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::RectTransfo
         self
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransform_Edge {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -676,6 +683,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::RectTransfor
         }
     }
 }
+#[cfg(feature = "UnityEngine+RectTransform+Edge")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RectTransform_Edge {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

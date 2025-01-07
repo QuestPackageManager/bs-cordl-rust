@@ -53,6 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRScreenshots {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRScreenshots {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +63,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::IVRScreensho
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRScreenshots {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,6 +76,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::IVRScreensh
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRScreenshots {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,6 +90,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::IVRScreensho
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+IVRScreenshots")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::IVRScreenshots {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

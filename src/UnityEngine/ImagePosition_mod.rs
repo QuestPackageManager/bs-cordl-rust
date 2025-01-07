@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ImagePosition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ImagePosition")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ImagePosition {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ImagePositio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ImagePosition")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ImagePosition {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,6 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ImagePositi
         self
     }
 }
+#[cfg(feature = "UnityEngine+ImagePosition")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ImagePosition {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ImagePositio
         }
     }
 }
+#[cfg(feature = "UnityEngine+ImagePosition")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ImagePosition {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

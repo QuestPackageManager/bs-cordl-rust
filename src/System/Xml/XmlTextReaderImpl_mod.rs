@@ -4127,6 +4127,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Type = Self;
@@ -4137,6 +4138,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Actual = Self;
@@ -4150,6 +4152,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Type = Self;
@@ -4164,6 +4167,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Actual = Self;
@@ -4221,6 +4225,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Type = Self;
@@ -4231,6 +4236,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Actual = Self;
@@ -4244,6 +4250,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Type = Self;
@@ -4258,6 +4265,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Actual = Self;
@@ -4322,6 +4330,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Type = Self;
@@ -4332,6 +4341,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Actual = Self;
@@ -4345,6 +4355,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Type = Self;
@@ -4359,6 +4370,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Actual = Self;
@@ -4412,6 +4424,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Type = Self;
@@ -4422,6 +4435,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Actual = Self;
@@ -4435,6 +4449,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Type = Self;
@@ -4449,6 +4464,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Actual = Self;
@@ -5267,6 +5283,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Type = Self;
@@ -5277,6 +5294,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Actual = Self;
@@ -5290,6 +5308,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Type = Self;
@@ -5304,6 +5323,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Actual = Self;
@@ -5356,6 +5376,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Type = Self;
@@ -5366,6 +5387,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Actual = Self;
@@ -5379,6 +5401,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Type = Self;
@@ -5393,6 +5416,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Actual = Self;
@@ -5462,6 +5486,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Type = Self;
@@ -5472,6 +5497,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Actual = Self;
@@ -5485,6 +5511,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Type = Self;
@@ -5499,6 +5526,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Actual = Self;

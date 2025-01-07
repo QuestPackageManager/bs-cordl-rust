@@ -60,6 +60,7 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
     type Type = Self;
@@ -70,6 +71,7 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
     type Actual = Self;
@@ -83,6 +85,7 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
     type Type = Self;
@@ -97,6 +100,7 @@ for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+CallbackArray_1")]
 unsafe impl<TDelegate: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<TDelegate> {
     type Actual = Self;

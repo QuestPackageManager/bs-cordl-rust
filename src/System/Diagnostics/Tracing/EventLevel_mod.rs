@@ -40,6 +40,7 @@ for crate::System::Diagnostics::Tracing::EventLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+Tracing+EventLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::Tracing::EventLevel {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::System::Diagnostics::Tracing::EventLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+Tracing+EventLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::Tracing::EventLevel {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::System::Diagnostics::Tracing::EventLevel {
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+Tracing+EventLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::Tracing::EventLevel {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::System::Diagnostics::Tracing::EventLevel {
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+Tracing+EventLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::Tracing::EventLevel {
     type Actual = Self;

@@ -663,6 +663,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
     type Type = Self;
@@ -673,6 +674,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
     type Actual = Self;
@@ -686,6 +688,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
         self
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
     type Type = Self;
@@ -700,6 +703,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
         }
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
     type Actual = Self;
@@ -749,6 +753,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     type Type = Self;
@@ -759,6 +764,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     type Actual = Self;
@@ -772,6 +778,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
         self
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     type Type = Self;
@@ -786,6 +793,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
         }
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardSetActiveEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     type Actual = Self;
@@ -868,6 +876,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
     type Type = Self;
@@ -878,6 +887,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
     type Actual = Self;
@@ -891,6 +901,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
         self
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
     type Type = Self;
@@ -905,6 +916,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
         }
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
     type Actual = Self;
@@ -958,6 +970,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedE
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     type Type = Self;
@@ -968,6 +981,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedE
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     type Actual = Self;
@@ -981,6 +995,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedE
         self
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     type Type = Self;
@@ -995,6 +1010,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedE
         }
     }
 }
+#[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     type Actual = Self;

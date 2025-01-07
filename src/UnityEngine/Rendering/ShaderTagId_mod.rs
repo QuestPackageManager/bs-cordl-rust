@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Shade
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Type = Self;
@@ -43,6 +44,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Type = Self;
@@ -70,6 +73,7 @@ for crate::UnityEngine::Rendering::ShaderTagId {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ShaderTagId {
     type Actual = Self;

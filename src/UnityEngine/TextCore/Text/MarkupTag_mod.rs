@@ -175,6 +175,7 @@ for crate::UnityEngine::TextCore::Text::MarkupTag {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::MarkupTag {
     type Type = Self;
@@ -185,6 +186,7 @@ for crate::UnityEngine::TextCore::Text::MarkupTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::MarkupTag {
     type Actual = Self;
@@ -198,6 +200,7 @@ for crate::UnityEngine::TextCore::Text::MarkupTag {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::MarkupTag {
     type Type = Self;
@@ -212,6 +215,7 @@ for crate::UnityEngine::TextCore::Text::MarkupTag {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+MarkupTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::MarkupTag {
     type Actual = Self;

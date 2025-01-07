@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::ValueStringBuil
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Text::ValueStringBuilder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Text::ValueString
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::ValueStringBuilder {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::System::Text::ValueStringBuilder {
         self
     }
 }
+#[cfg(feature = "System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Text::ValueStringBuilder {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Text::ValueString
         }
     }
 }
+#[cfg(feature = "System+Text+ValueStringBuilder")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Text::ValueStringBuilder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

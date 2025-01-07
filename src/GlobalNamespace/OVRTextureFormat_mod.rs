@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRTextureFo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTextureFormat {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::OVRTextureFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTextureFormat {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::OVRTextureFormat {
         self
     }
 }
+#[cfg(feature = "OVRTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTextureFormat {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::OVRTextureFormat {
         }
     }
 }
+#[cfg(feature = "OVRTextureFormat")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRTextureFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

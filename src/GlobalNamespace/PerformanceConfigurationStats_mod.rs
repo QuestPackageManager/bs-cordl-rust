@@ -159,6 +159,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     type Type = Self;
@@ -169,6 +170,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     type Actual = Self;
@@ -182,6 +184,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
         self
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     type Type = Self;
@@ -196,6 +199,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
         }
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+BoolStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     type Actual = Self;
@@ -294,6 +298,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
     type Type = Self;
@@ -304,6 +309,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
     type Actual = Self;
@@ -317,6 +323,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
         self
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
     type Type = Self;
@@ -331,6 +338,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
         }
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+EnumStats_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
     type Actual = Self;
@@ -426,6 +434,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     type Type = Self;
@@ -436,6 +445,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     type Actual = Self;
@@ -449,6 +459,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
         self
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     type Type = Self;
@@ -463,6 +474,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
         }
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+FloatStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     type Actual = Self;
@@ -548,6 +560,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+IntStats")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
     type Type = Self;
@@ -558,6 +571,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+IntStats")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
     type Actual = Self;
@@ -571,6 +585,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
         self
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+IntStats")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
     type Type = Self;
@@ -585,6 +600,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
         }
     }
 }
+#[cfg(feature = "PerformanceConfigurationStats+IntStats")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
     type Actual = Self;

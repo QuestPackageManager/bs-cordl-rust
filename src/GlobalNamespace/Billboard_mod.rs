@@ -130,6 +130,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Type = Self;
@@ -140,6 +141,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Actual = Self;
@@ -153,6 +155,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
         self
     }
 }
+#[cfg(feature = "Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Type = Self;
@@ -167,6 +170,7 @@ for crate::GlobalNamespace::Billboard_RotationMode {
         }
     }
 }
+#[cfg(feature = "Billboard+RotationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Billboard_RotationMode {
     type Actual = Self;

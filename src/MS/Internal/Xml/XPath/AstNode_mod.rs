@@ -134,6 +134,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Type = Self;
@@ -144,6 +145,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Actual = Self;
@@ -157,6 +159,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
         self
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Type = Self;
@@ -171,6 +174,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
         }
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Actual = Self;

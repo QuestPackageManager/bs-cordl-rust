@@ -542,6 +542,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Type = Self;
@@ -552,6 +553,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Actual = Self;
@@ -565,6 +567,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
         self
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Type = Self;
@@ -579,6 +582,7 @@ for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
         }
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+NativeMethods+UserDefinedSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::NativeMethods_UserDefinedSettings {
     type Actual = Self;

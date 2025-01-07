@@ -851,6 +851,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Type = Self;
@@ -861,6 +862,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Actual = Self;
@@ -874,6 +876,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Type = Self;
@@ -888,6 +891,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Actual = Self;

@@ -440,6 +440,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
     type Type = Self;
@@ -450,6 +451,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
     type Actual = Self;
@@ -463,6 +465,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
     type Type = Self;
@@ -477,6 +480,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
     type Actual = Self;
@@ -537,6 +541,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
     type Type = Self;
@@ -547,6 +552,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
     type Actual = Self;
@@ -560,6 +566,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
     type Type = Self;
@@ -574,6 +581,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
     type Actual = Self;
@@ -626,6 +634,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
     type Type = Self;
@@ -636,6 +645,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
     type Actual = Self;
@@ -649,6 +659,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
     type Type = Self;
@@ -663,6 +674,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
     type Actual = Self;
@@ -715,6 +727,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
     type Type = Self;
@@ -725,6 +738,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
     type Actual = Self;
@@ -738,6 +752,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
     type Type = Self;
@@ -752,6 +767,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
     type Actual = Self;

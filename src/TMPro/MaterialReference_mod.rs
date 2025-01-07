@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::MaterialReference {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+MaterialReference")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::MaterialReference {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::MaterialReference 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+MaterialReference")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::MaterialReference {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::MaterialReference
         self
     }
 }
+#[cfg(feature = "TMPro+MaterialReference")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::MaterialReference {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::MaterialReference 
         }
     }
 }
+#[cfg(feature = "TMPro+MaterialReference")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::MaterialReference {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -48,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::PassT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+PassType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::PassType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Rendering::P
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+PassType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::PassType {
     type Actual = Self;
@@ -70,6 +72,7 @@ for crate::UnityEngine::Rendering::PassType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+PassType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::PassType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -83,6 +86,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Rendering::P
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+PassType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Rendering::PassType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

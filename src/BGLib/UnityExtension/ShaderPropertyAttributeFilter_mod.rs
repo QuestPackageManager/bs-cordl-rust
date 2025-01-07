@@ -119,6 +119,7 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Type = Self;
@@ -129,6 +130,7 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Actual = Self;
@@ -142,6 +144,7 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
         self
     }
 }
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Type = Self;
@@ -156,6 +159,7 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
         }
     }
 }
+#[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter_PropType {
     type Actual = Self;

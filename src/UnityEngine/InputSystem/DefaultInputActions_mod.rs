@@ -809,6 +809,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Type = Self;
@@ -819,6 +820,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Actual = Self;
@@ -832,6 +834,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Type = Self;
@@ -846,6 +849,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+PlayerActions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Actual = Self;
@@ -1015,6 +1019,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Type = Self;
@@ -1025,6 +1030,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Actual = Self;
@@ -1038,6 +1044,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Type = Self;
@@ -1052,6 +1059,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Actual = Self;

@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Drawing::Size {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Drawing+Size")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::Size {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::Size {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Drawing+Size")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::Size {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -55,6 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::Size {
         self
     }
 }
+#[cfg(feature = "System+Drawing+Size")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::Size {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::Size {
         }
     }
 }
+#[cfg(feature = "System+Drawing+Size")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Drawing::Size {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

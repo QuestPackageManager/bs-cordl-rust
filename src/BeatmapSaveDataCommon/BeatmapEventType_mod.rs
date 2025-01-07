@@ -58,6 +58,7 @@ for crate::BeatmapSaveDataCommon::BeatmapEventType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+BeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::BeatmapEventType {
     type Type = Self;
@@ -68,6 +69,7 @@ for crate::BeatmapSaveDataCommon::BeatmapEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+BeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::BeatmapEventType {
     type Actual = Self;
@@ -81,6 +83,7 @@ for crate::BeatmapSaveDataCommon::BeatmapEventType {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+BeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::BeatmapEventType {
     type Type = Self;
@@ -95,6 +98,7 @@ for crate::BeatmapSaveDataCommon::BeatmapEventType {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+BeatmapEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::BeatmapEventType {
     type Actual = Self;

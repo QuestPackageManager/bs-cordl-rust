@@ -37,6 +37,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::BeatmapSaveDataVersion3::TransitionType {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion3::TransitionType {
     type Actual = Self;

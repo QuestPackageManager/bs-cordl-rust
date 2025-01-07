@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::Selected
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+SelectedProfile")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::SelectedProfile {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::BeatSaber::Settings::SelectedProfile {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+SelectedProfile")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::SelectedProfile {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::BeatSaber::Settings::SelectedProfile {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+SelectedProfile")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::SelectedProfile {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::BeatSaber::Settings::SelectedProfile {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+SelectedProfile")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::SelectedProfile {
     type Actual = Self;

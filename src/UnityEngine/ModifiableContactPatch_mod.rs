@@ -43,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ModifiableContac
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ModifiableContactPatch {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::UnityEngine::ModifiableContactPatch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ModifiableContactPatch {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::UnityEngine::ModifiableContactPatch {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ModifiableContactPatch {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::UnityEngine::ModifiableContactPatch {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ModifiableContactPatch {
     type Actual = Self;
@@ -150,6 +154,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Type = Self;
@@ -160,6 +165,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Actual = Self;
@@ -173,6 +179,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Type = Self;
@@ -187,6 +194,7 @@ for crate::UnityEngine::ModifiableContactPatch_Flags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ModifiableContactPatch+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ModifiableContactPatch_Flags {
     type Actual = Self;

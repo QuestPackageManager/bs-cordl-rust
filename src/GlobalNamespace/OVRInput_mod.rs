@@ -1255,6 +1255,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Axi
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+Axis1D")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput_Axis1D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1264,6 +1265,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+Axis1D")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_Axis1D {
     type Actual = Self;
@@ -1277,6 +1279,7 @@ for crate::GlobalNamespace::OVRInput_Axis1D {
         self
     }
 }
+#[cfg(feature = "OVRInput+Axis1D")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput_Axis1D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1290,6 +1293,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput
         }
     }
 }
+#[cfg(feature = "OVRInput+Axis1D")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_Axis1D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1343,6 +1347,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Axi
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+Axis2D")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput_Axis2D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1352,6 +1357,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+Axis2D")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_Axis2D {
     type Actual = Self;
@@ -1365,6 +1371,7 @@ for crate::GlobalNamespace::OVRInput_Axis2D {
         self
     }
 }
+#[cfg(feature = "OVRInput+Axis2D")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput_Axis2D {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1378,6 +1385,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput
         }
     }
 }
+#[cfg(feature = "OVRInput+Axis2D")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_Axis2D {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1459,6 +1467,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_But
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+Button")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput_Button {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1468,6 +1477,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+Button")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_Button {
     type Actual = Self;
@@ -1481,6 +1491,7 @@ for crate::GlobalNamespace::OVRInput_Button {
         self
     }
 }
+#[cfg(feature = "OVRInput+Button")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput_Button {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1494,6 +1505,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput
         }
     }
 }
+#[cfg(feature = "OVRInput+Button")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_Button {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1552,6 +1564,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Con
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+Controller")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_Controller {
     type Type = Self;
@@ -1562,6 +1575,7 @@ for crate::GlobalNamespace::OVRInput_Controller {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+Controller")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_Controller {
     type Actual = Self;
@@ -1575,6 +1589,7 @@ for crate::GlobalNamespace::OVRInput_Controller {
         self
     }
 }
+#[cfg(feature = "OVRInput+Controller")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_Controller {
     type Type = Self;
@@ -1589,6 +1604,7 @@ for crate::GlobalNamespace::OVRInput_Controller {
         }
     }
 }
+#[cfg(feature = "OVRInput+Controller")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_Controller {
     type Actual = Self;
@@ -1641,6 +1657,7 @@ for crate::GlobalNamespace::OVRInput_ControllerInHandState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+ControllerInHandState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_ControllerInHandState {
     type Type = Self;
@@ -1651,6 +1668,7 @@ for crate::GlobalNamespace::OVRInput_ControllerInHandState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+ControllerInHandState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_ControllerInHandState {
     type Actual = Self;
@@ -1664,6 +1682,7 @@ for crate::GlobalNamespace::OVRInput_ControllerInHandState {
         self
     }
 }
+#[cfg(feature = "OVRInput+ControllerInHandState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_ControllerInHandState {
     type Type = Self;
@@ -1678,6 +1697,7 @@ for crate::GlobalNamespace::OVRInput_ControllerInHandState {
         }
     }
 }
+#[cfg(feature = "OVRInput+ControllerInHandState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_ControllerInHandState {
     type Actual = Self;
@@ -1729,6 +1749,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Han
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+Hand")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput_Hand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1738,6 +1759,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+Hand")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRInput_Hand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1750,6 +1772,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRInpu
         self
     }
 }
+#[cfg(feature = "OVRInput+Hand")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput_Hand {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1763,6 +1786,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput
         }
     }
 }
+#[cfg(feature = "OVRInput+Hand")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_Hand {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1813,6 +1837,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Han
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+Handedness")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_Handedness {
     type Type = Self;
@@ -1823,6 +1848,7 @@ for crate::GlobalNamespace::OVRInput_Handedness {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+Handedness")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_Handedness {
     type Actual = Self;
@@ -1836,6 +1862,7 @@ for crate::GlobalNamespace::OVRInput_Handedness {
         self
     }
 }
+#[cfg(feature = "OVRInput+Handedness")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_Handedness {
     type Type = Self;
@@ -1850,6 +1877,7 @@ for crate::GlobalNamespace::OVRInput_Handedness {
         }
     }
 }
+#[cfg(feature = "OVRInput+Handedness")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_Handedness {
     type Actual = Self;
@@ -1973,6 +2001,7 @@ for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
     type Type = Self;
@@ -1983,6 +2012,7 @@ for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
     type Actual = Self;
@@ -1996,6 +2026,7 @@ for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
         self
     }
 }
+#[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
     type Type = Self;
@@ -2010,6 +2041,7 @@ for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
         }
     }
 }
+#[cfg(feature = "OVRInput+HapticsAmplitudeEnvelopeVibration")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
     type Actual = Self;
@@ -2076,6 +2108,7 @@ for crate::GlobalNamespace::OVRInput_HapticsLocation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+HapticsLocation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_HapticsLocation {
     type Type = Self;
@@ -2086,6 +2119,7 @@ for crate::GlobalNamespace::OVRInput_HapticsLocation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+HapticsLocation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_HapticsLocation {
     type Actual = Self;
@@ -2099,6 +2133,7 @@ for crate::GlobalNamespace::OVRInput_HapticsLocation {
         self
     }
 }
+#[cfg(feature = "OVRInput+HapticsLocation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_HapticsLocation {
     type Type = Self;
@@ -2113,6 +2148,7 @@ for crate::GlobalNamespace::OVRInput_HapticsLocation {
         }
     }
 }
+#[cfg(feature = "OVRInput+HapticsLocation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_HapticsLocation {
     type Actual = Self;
@@ -2165,6 +2201,7 @@ for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+HapticsPcmVibration")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
     type Type = Self;
@@ -2175,6 +2212,7 @@ for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+HapticsPcmVibration")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
     type Actual = Self;
@@ -2188,6 +2226,7 @@ for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
         self
     }
 }
+#[cfg(feature = "OVRInput+HapticsPcmVibration")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
     type Type = Self;
@@ -2202,6 +2241,7 @@ for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
         }
     }
 }
+#[cfg(feature = "OVRInput+HapticsPcmVibration")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
     type Actual = Self;
@@ -2269,6 +2309,7 @@ for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+InputDeviceShowState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
     type Type = Self;
@@ -2279,6 +2320,7 @@ for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+InputDeviceShowState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
     type Actual = Self;
@@ -2292,6 +2334,7 @@ for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
         self
     }
 }
+#[cfg(feature = "OVRInput+InputDeviceShowState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
     type Type = Self;
@@ -2306,6 +2349,7 @@ for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
         }
     }
 }
+#[cfg(feature = "OVRInput+InputDeviceShowState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
     type Actual = Self;
@@ -2359,6 +2403,7 @@ for crate::GlobalNamespace::OVRInput_InteractionProfile {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+InteractionProfile")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_InteractionProfile {
     type Type = Self;
@@ -2369,6 +2414,7 @@ for crate::GlobalNamespace::OVRInput_InteractionProfile {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+InteractionProfile")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_InteractionProfile {
     type Actual = Self;
@@ -2382,6 +2428,7 @@ for crate::GlobalNamespace::OVRInput_InteractionProfile {
         self
     }
 }
+#[cfg(feature = "OVRInput+InteractionProfile")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_InteractionProfile {
     type Type = Self;
@@ -2396,6 +2443,7 @@ for crate::GlobalNamespace::OVRInput_InteractionProfile {
         }
     }
 }
+#[cfg(feature = "OVRInput+InteractionProfile")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_InteractionProfile {
     type Actual = Self;
@@ -2450,6 +2498,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Nea
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+NearTouch")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_NearTouch {
     type Type = Self;
@@ -2460,6 +2509,7 @@ for crate::GlobalNamespace::OVRInput_NearTouch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+NearTouch")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_NearTouch {
     type Actual = Self;
@@ -2473,6 +2523,7 @@ for crate::GlobalNamespace::OVRInput_NearTouch {
         self
     }
 }
+#[cfg(feature = "OVRInput+NearTouch")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_NearTouch {
     type Type = Self;
@@ -2487,6 +2538,7 @@ for crate::GlobalNamespace::OVRInput_NearTouch {
         }
     }
 }
+#[cfg(feature = "OVRInput+NearTouch")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_NearTouch {
     type Actual = Self;
@@ -3947,6 +3999,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRButton {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+OpenVRButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_OpenVRButton {
     type Type = Self;
@@ -3957,6 +4010,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+OpenVRButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_OpenVRButton {
     type Actual = Self;
@@ -3970,6 +4024,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRButton {
         self
     }
 }
+#[cfg(feature = "OVRInput+OpenVRButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_OpenVRButton {
     type Type = Self;
@@ -3984,6 +4039,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRButton {
         }
     }
 }
+#[cfg(feature = "OVRInput+OpenVRButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_OpenVRButton {
     type Actual = Self;
@@ -4037,6 +4093,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRController {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+OpenVRController")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_OpenVRController {
     type Type = Self;
@@ -4047,6 +4104,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRController {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+OpenVRController")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_OpenVRController {
     type Actual = Self;
@@ -4060,6 +4118,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRController {
         self
     }
 }
+#[cfg(feature = "OVRInput+OpenVRController")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_OpenVRController {
     type Type = Self;
@@ -4074,6 +4133,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRController {
         }
     }
 }
+#[cfg(feature = "OVRInput+OpenVRController")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_OpenVRController {
     type Actual = Self;
@@ -4127,6 +4187,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+OpenVRControllerDetails")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
     type Type = Self;
@@ -4137,6 +4198,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+OpenVRControllerDetails")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
     type Actual = Self;
@@ -4150,6 +4212,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
         self
     }
 }
+#[cfg(feature = "OVRInput+OpenVRControllerDetails")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
     type Type = Self;
@@ -4164,6 +4227,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
         }
     }
 }
+#[cfg(feature = "OVRInput+OpenVRControllerDetails")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
     type Actual = Self;
@@ -4241,6 +4305,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+RawAxis1D")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_RawAxis1D {
     type Type = Self;
@@ -4251,6 +4316,7 @@ for crate::GlobalNamespace::OVRInput_RawAxis1D {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+RawAxis1D")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_RawAxis1D {
     type Actual = Self;
@@ -4264,6 +4330,7 @@ for crate::GlobalNamespace::OVRInput_RawAxis1D {
         self
     }
 }
+#[cfg(feature = "OVRInput+RawAxis1D")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_RawAxis1D {
     type Type = Self;
@@ -4278,6 +4345,7 @@ for crate::GlobalNamespace::OVRInput_RawAxis1D {
         }
     }
 }
+#[cfg(feature = "OVRInput+RawAxis1D")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_RawAxis1D {
     type Actual = Self;
@@ -4332,6 +4400,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+RawAxis2D")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_RawAxis2D {
     type Type = Self;
@@ -4342,6 +4411,7 @@ for crate::GlobalNamespace::OVRInput_RawAxis2D {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+RawAxis2D")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_RawAxis2D {
     type Actual = Self;
@@ -4355,6 +4425,7 @@ for crate::GlobalNamespace::OVRInput_RawAxis2D {
         self
     }
 }
+#[cfg(feature = "OVRInput+RawAxis2D")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_RawAxis2D {
     type Type = Self;
@@ -4369,6 +4440,7 @@ for crate::GlobalNamespace::OVRInput_RawAxis2D {
         }
     }
 }
+#[cfg(feature = "OVRInput+RawAxis2D")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_RawAxis2D {
     type Actual = Self;
@@ -4447,6 +4519,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+RawButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_RawButton {
     type Type = Self;
@@ -4457,6 +4530,7 @@ for crate::GlobalNamespace::OVRInput_RawButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+RawButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_RawButton {
     type Actual = Self;
@@ -4470,6 +4544,7 @@ for crate::GlobalNamespace::OVRInput_RawButton {
         self
     }
 }
+#[cfg(feature = "OVRInput+RawButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_RawButton {
     type Type = Self;
@@ -4484,6 +4559,7 @@ for crate::GlobalNamespace::OVRInput_RawButton {
         }
     }
 }
+#[cfg(feature = "OVRInput+RawButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_RawButton {
     type Actual = Self;
@@ -4539,6 +4615,7 @@ for crate::GlobalNamespace::OVRInput_RawNearTouch {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+RawNearTouch")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_RawNearTouch {
     type Type = Self;
@@ -4549,6 +4626,7 @@ for crate::GlobalNamespace::OVRInput_RawNearTouch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+RawNearTouch")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_RawNearTouch {
     type Actual = Self;
@@ -4562,6 +4640,7 @@ for crate::GlobalNamespace::OVRInput_RawNearTouch {
         self
     }
 }
+#[cfg(feature = "OVRInput+RawNearTouch")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_RawNearTouch {
     type Type = Self;
@@ -4576,6 +4655,7 @@ for crate::GlobalNamespace::OVRInput_RawNearTouch {
         }
     }
 }
+#[cfg(feature = "OVRInput+RawNearTouch")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRInput_RawNearTouch {
     type Actual = Self;
@@ -4638,6 +4718,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+RawTouch")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRInput_RawTouch {
     type Type = Self;
@@ -4648,6 +4729,7 @@ for crate::GlobalNamespace::OVRInput_RawTouch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+RawTouch")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRInput_RawTouch {
     type Actual = Self;
@@ -4661,6 +4743,7 @@ for crate::GlobalNamespace::OVRInput_RawTouch {
         self
     }
 }
+#[cfg(feature = "OVRInput+RawTouch")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRInput_RawTouch {
     type Type = Self;
@@ -4675,6 +4758,7 @@ for crate::GlobalNamespace::OVRInput_RawTouch {
         }
     }
 }
+#[cfg(feature = "OVRInput+RawTouch")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_RawTouch {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4736,6 +4820,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Tou
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRInput+Touch")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput_Touch {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4745,6 +4830,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRInput+Touch")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRInput_Touch {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4757,6 +4843,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRInpu
         self
     }
 }
+#[cfg(feature = "OVRInput+Touch")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput_Touch {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4770,6 +4857,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRInput
         }
     }
 }
+#[cfg(feature = "OVRInput+Touch")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRInput_Touch {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

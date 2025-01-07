@@ -39,6 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_LinkInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_LinkInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,6 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_LinkInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_LinkInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,6 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_LinkInfo {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_LinkInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,6 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_LinkInfo {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_LinkInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_LinkInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -50,6 +50,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Type = Self;
@@ -60,6 +61,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Actual = Self;
@@ -73,6 +75,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
         self
     }
 }
+#[cfg(feature = "ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Type = Self;
@@ -87,6 +90,7 @@ for crate::GlobalNamespace::ConnectionFailedReason {
         }
     }
 }
+#[cfg(feature = "ConnectionFailedReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ConnectionFailedReason {
     type Actual = Self;

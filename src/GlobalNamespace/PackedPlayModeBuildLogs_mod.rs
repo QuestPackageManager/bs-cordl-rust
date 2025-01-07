@@ -145,6 +145,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Type = Self;
@@ -155,6 +156,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Actual = Self;
@@ -168,6 +170,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         self
     }
 }
+#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Type = Self;
@@ -182,6 +185,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
         }
     }
 }
+#[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Actual = Self;

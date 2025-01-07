@@ -142,6 +142,7 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
     type Type = Self;
@@ -152,6 +153,7 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
     type Actual = Self;
@@ -165,6 +167,7 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
         self
     }
 }
+#[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
     type Type = Self;
@@ -179,6 +182,7 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideSt
         }
     }
 }
+#[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
     type Actual = Self;

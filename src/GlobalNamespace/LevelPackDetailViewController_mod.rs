@@ -275,6 +275,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Type = Self;
@@ -285,6 +286,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Actual = Self;
@@ -298,6 +300,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
         self
     }
 }
+#[cfg(feature = "LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Type = Self;
@@ -312,6 +315,7 @@ for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
         }
     }
 }
+#[cfg(feature = "LevelPackDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelPackDetailViewController_ContentType {
     type Actual = Self;

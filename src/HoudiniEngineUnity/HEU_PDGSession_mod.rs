@@ -500,6 +500,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Type = Self;
@@ -510,6 +511,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Actual = Self;
@@ -523,6 +525,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Type = Self;
@@ -537,6 +540,7 @@ for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_PDGSession_EventMessageColor {
     type Actual = Self;

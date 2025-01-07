@@ -829,6 +829,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Type = Self;
@@ -839,6 +840,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Actual = Self;
@@ -852,6 +854,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
         self
     }
 }
+#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Type = Self;
@@ -866,6 +869,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelTy
         }
     }
 }
+#[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     type Actual = Self;

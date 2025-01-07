@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::CertificateImportFlags 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+CertificateImportFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::CertificateImportFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::CertificateImportFl
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+CertificateImportFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::CertificateImportFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::CertificateImportF
         self
     }
 }
+#[cfg(feature = "Mono+CertificateImportFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::CertificateImportFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::CertificateImportFl
         }
     }
 }
+#[cfg(feature = "Mono+CertificateImportFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::CertificateImportFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

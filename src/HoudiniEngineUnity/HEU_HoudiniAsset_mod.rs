@@ -3002,6 +3002,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
     type Type = Self;
@@ -3012,6 +3013,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
     type Actual = Self;
@@ -3025,6 +3027,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
     type Type = Self;
@@ -3039,6 +3042,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
     type Actual = Self;
@@ -3091,6 +3095,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
     type Type = Self;
@@ -3101,6 +3106,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
     type Actual = Self;
@@ -3114,6 +3120,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
     type Type = Self;
@@ -3128,6 +3135,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
     type Actual = Self;
@@ -3184,6 +3192,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
     type Type = Self;
@@ -3194,6 +3203,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
     type Actual = Self;
@@ -3207,6 +3217,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
     type Type = Self;
@@ -3221,6 +3232,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
     type Actual = Self;
@@ -3273,6 +3285,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
     type Type = Self;
@@ -3283,6 +3296,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
     type Actual = Self;
@@ -3296,6 +3310,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
     type Type = Self;
@@ -3310,6 +3325,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
     type Actual = Self;
@@ -3363,6 +3379,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
     type Type = Self;
@@ -3373,6 +3390,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
     type Actual = Self;
@@ -3386,6 +3404,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
     type Type = Self;
@@ -3400,6 +3419,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
     type Actual = Self;

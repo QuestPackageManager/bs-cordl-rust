@@ -149,6 +149,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Type = Self;
@@ -159,6 +160,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Actual = Self;
@@ -172,6 +174,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
         self
     }
 }
+#[cfg(feature = "NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Type = Self;
@@ -186,6 +189,7 @@ for crate::GlobalNamespace::NoteExecutionRating_Rating {
         }
     }
 }
+#[cfg(feature = "NoteExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteExecutionRating_Rating {
     type Actual = Self;

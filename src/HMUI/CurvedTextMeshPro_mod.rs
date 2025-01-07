@@ -248,6 +248,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Type = Self;
@@ -258,6 +259,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Actual = Self;
@@ -271,6 +273,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
         self
     }
 }
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Type = Self;
@@ -285,6 +288,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
         }
     }
 }
+#[cfg(feature = "HMUI+CurvedTextMeshPro+CurvedMeshInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Actual = Self;

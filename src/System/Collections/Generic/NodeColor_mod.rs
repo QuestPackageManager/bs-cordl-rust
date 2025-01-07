@@ -36,6 +36,7 @@ for crate::System::Collections::Generic::NodeColor {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Generic+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::Generic::NodeColor {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::System::Collections::Generic::NodeColor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Generic+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Generic::NodeColor {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::System::Collections::Generic::NodeColor {
         self
     }
 }
+#[cfg(feature = "System+Collections+Generic+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::Generic::NodeColor {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::System::Collections::Generic::NodeColor {
         }
     }
 }
+#[cfg(feature = "System+Collections+Generic+NodeColor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::Generic::NodeColor {
     type Actual = Self;

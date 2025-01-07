@@ -674,6 +674,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Scrollbar_Ax
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Scrollbar_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -683,6 +684,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Scrollba
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Scrollbar_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -695,6 +697,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Scrollb
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Scrollbar_Axis {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -708,6 +711,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Scrollba
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Scrollbar_Axis {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -759,6 +763,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Scrollbar_Di
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Scrollbar_Direction {
     type Type = Self;
@@ -769,6 +774,7 @@ for crate::UnityEngine::UI::Scrollbar_Direction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Scrollbar_Direction {
     type Actual = Self;
@@ -782,6 +788,7 @@ for crate::UnityEngine::UI::Scrollbar_Direction {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Scrollbar_Direction {
     type Type = Self;
@@ -796,6 +803,7 @@ for crate::UnityEngine::UI::Scrollbar_Direction {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Scrollbar_Direction {
     type Actual = Self;

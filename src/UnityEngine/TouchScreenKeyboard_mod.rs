@@ -376,6 +376,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Type = Self;
@@ -386,6 +387,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Actual = Self;
@@ -399,6 +401,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Type = Self;
@@ -413,6 +416,7 @@ for crate::UnityEngine::TouchScreenKeyboard_Status {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TouchScreenKeyboard_Status {
     type Actual = Self;

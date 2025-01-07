@@ -2104,6 +2104,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+InternalMessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
     type Type = Self;
@@ -2114,6 +2115,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+InternalMessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
     type Actual = Self;
@@ -2127,6 +2129,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
         self
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+InternalMessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
     type Type = Self;
@@ -2141,6 +2144,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
         }
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+InternalMessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
     type Actual = Self;
@@ -2358,6 +2362,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
     type Type = Self;
@@ -2368,6 +2373,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
     type Actual = Self;
@@ -2381,6 +2387,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
         self
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
     type Type = Self;
@@ -2395,6 +2402,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
         }
     }
 }
+#[cfg(feature = "ConnectedPlayerManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
     type Actual = Self;

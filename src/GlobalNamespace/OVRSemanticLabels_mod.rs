@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSemanticL
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSemanticLabels {
     type Type = Self;
@@ -43,6 +44,7 @@ for crate::GlobalNamespace::OVRSemanticLabels {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSemanticLabels {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::GlobalNamespace::OVRSemanticLabels {
         self
     }
 }
+#[cfg(feature = "OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSemanticLabels {
     type Type = Self;
@@ -70,6 +73,7 @@ for crate::GlobalNamespace::OVRSemanticLabels {
         }
     }
 }
+#[cfg(feature = "OVRSemanticLabels")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRSemanticLabels {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

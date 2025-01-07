@@ -1431,6 +1431,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
     type Type = Self;
@@ -1441,6 +1444,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
     type Actual = Self;
@@ -1454,6 +1460,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
     type Type = Self;
@@ -1468,6 +1477,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBeha
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior {
     type Actual = Self;
@@ -1522,6 +1534,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
     type Type = Self;
@@ -1532,6 +1547,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
     type Actual = Self;
@@ -1545,6 +1563,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
     type Type = Self;
@@ -1559,6 +1580,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionRef
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+InputActionReferenceState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_InputActionReferenceState {
     type Actual = Self;

@@ -267,6 +267,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Type = Self;
@@ -277,6 +278,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Actual = Self;
@@ -290,6 +292,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Type = Self;
@@ -304,6 +307,7 @@ for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::ContentSizeFitter_FitMode {
     type Actual = Self;

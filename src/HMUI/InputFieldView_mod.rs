@@ -456,6 +456,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldView_Selectio
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::InputFieldView_SelectionState {
     type Type = Self;
@@ -466,6 +467,7 @@ for crate::HMUI::InputFieldView_SelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::InputFieldView_SelectionState {
     type Actual = Self;
@@ -479,6 +481,7 @@ for crate::HMUI::InputFieldView_SelectionState {
         self
     }
 }
+#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::InputFieldView_SelectionState {
     type Type = Self;
@@ -493,6 +496,7 @@ for crate::HMUI::InputFieldView_SelectionState {
         }
     }
 }
+#[cfg(feature = "HMUI+InputFieldView+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::InputFieldView_SelectionState {
     type Actual = Self;

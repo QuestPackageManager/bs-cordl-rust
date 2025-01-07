@@ -1607,6 +1607,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Check {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Check {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1616,6 +1617,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Check {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Check {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1628,6 +1630,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Check {
         self
     }
 }
+#[cfg(feature = "System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Check {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1641,6 +1644,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Check {
         }
     }
 }
+#[cfg(feature = "System+Uri+Check")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Check {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1741,6 +1745,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Flags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Flags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1750,6 +1755,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Flags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1762,6 +1768,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Flags {
         self
     }
 }
+#[cfg(feature = "System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Flags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1775,6 +1782,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Flags {
         }
     }
 }
+#[cfg(feature = "System+Uri+Flags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Flags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1902,6 +1910,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Uri_Offset {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Offset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1911,6 +1920,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Uri_Offset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Offset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1923,6 +1933,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Uri_Offset {
         self
     }
 }
+#[cfg(feature = "System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Offset {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1936,6 +1947,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Uri_Offset {
         }
     }
 }
+#[cfg(feature = "System+Uri+Offset")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Uri_Offset {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

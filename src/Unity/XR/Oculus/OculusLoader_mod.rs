@@ -194,6 +194,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Type = Self;
@@ -204,6 +205,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Actual = Self;
@@ -217,6 +219,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
         self
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Type = Self;
@@ -231,6 +234,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
         }
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Actual = Self;

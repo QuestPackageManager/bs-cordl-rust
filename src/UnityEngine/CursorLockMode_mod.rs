@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::CursorLockMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+CursorLockMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CursorLockMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::CursorLockMo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+CursorLockMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CursorLockMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::CursorLockM
         self
     }
 }
+#[cfg(feature = "UnityEngine+CursorLockMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CursorLockMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::CursorLockMo
         }
     }
 }
+#[cfg(feature = "UnityEngine+CursorLockMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::CursorLockMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

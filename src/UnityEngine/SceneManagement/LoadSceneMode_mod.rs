@@ -36,6 +36,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SceneManagement::LoadSceneMode {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SceneManagement::LoadSceneMode {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SceneManagement::LoadSceneMode {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::SceneManagement::LoadSceneMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SceneManagement+LoadSceneMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SceneManagement::LoadSceneMode {
     type Actual = Self;

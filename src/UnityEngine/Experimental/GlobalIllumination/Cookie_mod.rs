@@ -36,6 +36,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Cookie")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
     type Actual = Self;

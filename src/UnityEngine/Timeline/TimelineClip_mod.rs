@@ -1040,6 +1040,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Type = Self;
@@ -1050,6 +1051,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Actual = Self;
@@ -1063,6 +1065,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Type = Self;
@@ -1077,6 +1080,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Actual = Self;
@@ -1131,6 +1135,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Type = Self;
@@ -1141,6 +1146,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Actual = Self;
@@ -1154,6 +1160,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Type = Self;
@@ -1168,6 +1175,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Actual = Self;
@@ -1279,6 +1287,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Type = Self;
@@ -1289,6 +1298,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Actual = Self;
@@ -1302,6 +1312,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Type = Self;
@@ -1316,6 +1327,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Actual = Self;

@@ -174,6 +174,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Type = Self;
@@ -184,6 +185,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Actual = Self;
@@ -197,6 +199,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
         self
     }
 }
+#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Type = Self;
@@ -211,6 +214,7 @@ for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
         }
     }
 }
+#[cfg(feature = "AveragingValueRecorder+AverageValueData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AveragingValueRecorder_AverageValueData {
     type Actual = Self;

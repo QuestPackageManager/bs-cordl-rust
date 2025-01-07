@@ -38,6 +38,9 @@ for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Type = Self;
@@ -48,6 +51,9 @@ for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Actual = Self;
@@ -61,6 +67,9 @@ for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Type = Self;
@@ -75,6 +84,9 @@ for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Actual = Self;
@@ -1205,6 +1217,7 @@ for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
     type Type = Self;
@@ -1215,6 +1228,7 @@ for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
     type Actual = Self;
@@ -1228,6 +1242,7 @@ for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
     type Type = Self;
@@ -1242,6 +1257,7 @@ for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+DeltaStateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
     type Actual = Self;
@@ -1311,6 +1327,7 @@ for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
     type Type = Self;
@@ -1321,6 +1338,7 @@ for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
     type Actual = Self;
@@ -1334,6 +1352,7 @@ for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
     type Type = Self;
@@ -1348,6 +1367,7 @@ for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
     type Actual = Self;
@@ -1420,6 +1440,9 @@ for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__Fixed
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Type = Self;
@@ -1430,6 +1453,9 @@ for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__Fixed
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Actual = Self;
@@ -1443,6 +1469,9 @@ for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__Fixed
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Type = Self;
@@ -1457,6 +1486,9 @@ for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__Fixed
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__FixedBuffer {
     type Actual = Self;

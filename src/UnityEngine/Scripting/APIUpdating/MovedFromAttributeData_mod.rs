@@ -40,6 +40,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttributeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     type Actual = Self;

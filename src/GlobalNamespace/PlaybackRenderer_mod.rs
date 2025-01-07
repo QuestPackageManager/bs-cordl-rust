@@ -469,6 +469,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Type = Self;
@@ -479,6 +480,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Actual = Self;
@@ -492,6 +494,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
         self
     }
 }
+#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Type = Self;
@@ -506,6 +509,7 @@ for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
         }
     }
 }
+#[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type {
     type Actual = Self;

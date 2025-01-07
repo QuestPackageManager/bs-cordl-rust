@@ -597,6 +597,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Type = Self;
@@ -607,6 +608,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Actual = Self;
@@ -620,6 +622,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Type = Self;
@@ -634,6 +637,7 @@ for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::OVRInputModule_InputMode {
     type Actual = Self;

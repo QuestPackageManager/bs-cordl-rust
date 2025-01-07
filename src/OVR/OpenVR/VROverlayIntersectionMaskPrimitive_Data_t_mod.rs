@@ -34,6 +34,7 @@ for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+VROverlayIntersectionMaskPrimitive_Data_t")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+VROverlayIntersectionMaskPrimitive_Data_t")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+VROverlayIntersectionMaskPrimitive_Data_t")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+VROverlayIntersectionMaskPrimitive_Data_t")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_Data_t {
     type Actual = Self;

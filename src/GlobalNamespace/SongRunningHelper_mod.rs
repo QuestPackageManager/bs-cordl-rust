@@ -218,6 +218,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Type = Self;
@@ -228,6 +229,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Actual = Self;
@@ -241,6 +243,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         self
     }
 }
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Type = Self;
@@ -255,6 +258,7 @@ for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         }
     }
 }
+#[cfg(feature = "SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     type Actual = Self;

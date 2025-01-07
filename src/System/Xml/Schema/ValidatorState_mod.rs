@@ -45,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::Validato
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+ValidatorState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::ValidatorState {
     type Type = Self;
@@ -55,6 +56,7 @@ for crate::System::Xml::Schema::ValidatorState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+ValidatorState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::ValidatorState {
     type Actual = Self;
@@ -68,6 +70,7 @@ for crate::System::Xml::Schema::ValidatorState {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+ValidatorState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::ValidatorState {
     type Type = Self;
@@ -82,6 +85,7 @@ for crate::System::Xml::Schema::ValidatorState {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+ValidatorState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::ValidatorState {
     type Actual = Self;

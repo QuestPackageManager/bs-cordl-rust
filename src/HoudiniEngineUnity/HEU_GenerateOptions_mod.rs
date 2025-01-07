@@ -38,6 +38,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::HoudiniEngineUnity::HEU_GenerateOptions {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_GenerateOptions {
     type Actual = Self;

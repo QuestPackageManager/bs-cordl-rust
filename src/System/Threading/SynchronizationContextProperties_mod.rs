@@ -36,6 +36,7 @@ for crate::System::Threading::SynchronizationContextProperties {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+SynchronizationContextProperties")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::SynchronizationContextProperties {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::System::Threading::SynchronizationContextProperties {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+SynchronizationContextProperties")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::SynchronizationContextProperties {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::System::Threading::SynchronizationContextProperties {
         self
     }
 }
+#[cfg(feature = "System+Threading+SynchronizationContextProperties")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::SynchronizationContextProperties {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::System::Threading::SynchronizationContextProperties {
         }
     }
 }
+#[cfg(feature = "System+Threading+SynchronizationContextProperties")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::SynchronizationContextProperties {
     type Actual = Self;

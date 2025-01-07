@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GraphicsBufferHa
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::GraphicsBufferHandle {
     type Type = Self;
@@ -43,6 +44,7 @@ for crate::UnityEngine::GraphicsBufferHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::GraphicsBufferHandle {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::UnityEngine::GraphicsBufferHandle {
         self
     }
 }
+#[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::GraphicsBufferHandle {
     type Type = Self;
@@ -70,6 +73,7 @@ for crate::UnityEngine::GraphicsBufferHandle {
         }
     }
 }
+#[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::GraphicsBufferHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

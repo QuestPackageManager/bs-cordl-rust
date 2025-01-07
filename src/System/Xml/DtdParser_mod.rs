@@ -1310,6 +1310,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_Litera
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::DtdParser_LiteralType {
     type Type = Self;
@@ -1320,6 +1321,7 @@ for crate::System::Xml::DtdParser_LiteralType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::DtdParser_LiteralType {
     type Actual = Self;
@@ -1333,6 +1335,7 @@ for crate::System::Xml::DtdParser_LiteralType {
         self
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::DtdParser_LiteralType {
     type Type = Self;
@@ -1347,6 +1350,7 @@ for crate::System::Xml::DtdParser_LiteralType {
         }
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+LiteralType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_LiteralType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1505,6 +1509,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Type = Self;
@@ -1515,6 +1520,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Actual = Self;
@@ -1528,6 +1534,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
         self
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Type = Self;
@@ -1542,6 +1549,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
         }
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::DtdParser_ScanningFunction {
     type Actual = Self;
@@ -1638,6 +1646,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_Token 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::DtdParser_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1647,6 +1656,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::DtdParser_To
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::DtdParser_Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1659,6 +1669,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::DtdParser_T
         self
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::DtdParser_Token {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1672,6 +1683,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::DtdParser_To
         }
     }
 }
+#[cfg(feature = "System+Xml+DtdParser+Token")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::DtdParser_Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

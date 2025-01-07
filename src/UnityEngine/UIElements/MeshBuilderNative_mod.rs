@@ -325,6 +325,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Type = Self;
@@ -335,6 +336,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Actual = Self;
@@ -348,6 +350,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Type = Self;
@@ -362,6 +365,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeBorderParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Actual = Self;
@@ -425,6 +429,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Type = Self;
@@ -435,6 +440,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Actual = Self;
@@ -448,6 +454,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Type = Self;
@@ -462,6 +469,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeColorPage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Actual = Self;
@@ -543,6 +551,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Type = Self;
@@ -553,6 +562,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Actual = Self;
@@ -566,6 +576,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Type = Self;
@@ -580,6 +591,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Actual = Self;

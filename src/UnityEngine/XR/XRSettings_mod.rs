@@ -191,6 +191,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Type = Self;
@@ -201,6 +202,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Actual = Self;
@@ -214,6 +216,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Type = Self;
@@ -228,6 +231,7 @@ for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::XRSettings_StereoRenderingMode {
     type Actual = Self;

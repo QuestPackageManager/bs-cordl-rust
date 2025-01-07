@@ -183,6 +183,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRProfile_S
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRProfile_State {
     type Type = Self;
@@ -193,6 +194,7 @@ for crate::GlobalNamespace::OVRProfile_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRProfile_State {
     type Actual = Self;
@@ -206,6 +208,7 @@ for crate::GlobalNamespace::OVRProfile_State {
         self
     }
 }
+#[cfg(feature = "OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRProfile_State {
     type Type = Self;
@@ -220,6 +223,7 @@ for crate::GlobalNamespace::OVRProfile_State {
         }
     }
 }
+#[cfg(feature = "OVRProfile+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRProfile_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

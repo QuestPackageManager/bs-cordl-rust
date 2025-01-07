@@ -116,6 +116,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
     type Type = Self;
@@ -126,6 +127,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
     type Actual = Self;
@@ -139,6 +141,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
         self
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
     type Type = Self;
@@ -153,6 +156,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
         }
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo {
     type Actual = Self;
@@ -221,6 +225,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
     type Type = Self;
@@ -231,6 +236,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
     type Actual = Self;
@@ -244,6 +250,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
         self
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
     type Type = Self;
@@ -258,6 +265,7 @@ for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
         }
     }
 }
+#[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState {
     type Actual = Self;

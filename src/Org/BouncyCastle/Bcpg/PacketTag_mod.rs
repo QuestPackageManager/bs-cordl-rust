@@ -55,6 +55,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Bcpg::Pack
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+PacketTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::PacketTag {
     type Type = Self;
@@ -65,6 +66,7 @@ for crate::Org::BouncyCastle::Bcpg::PacketTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+PacketTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::PacketTag {
     type Actual = Self;
@@ -78,6 +80,7 @@ for crate::Org::BouncyCastle::Bcpg::PacketTag {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+PacketTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::PacketTag {
     type Type = Self;
@@ -92,6 +95,7 @@ for crate::Org::BouncyCastle::Bcpg::PacketTag {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+PacketTag")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Org::BouncyCastle::Bcpg::PacketTag {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

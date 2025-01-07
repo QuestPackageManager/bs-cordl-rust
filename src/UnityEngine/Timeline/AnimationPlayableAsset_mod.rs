@@ -610,6 +610,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Type = Self;
@@ -620,6 +621,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Actual = Self;
@@ -633,6 +635,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Type = Self;
@@ -647,6 +650,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Actual = Self;
@@ -698,6 +702,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Type = Self;
@@ -708,6 +713,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Actual = Self;
@@ -721,6 +727,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Type = Self;
@@ -735,6 +742,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Actual = Self;

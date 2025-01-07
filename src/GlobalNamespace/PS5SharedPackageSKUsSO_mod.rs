@@ -213,6 +213,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Type = Self;
@@ -223,6 +224,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Actual = Self;
@@ -236,6 +238,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
         self
     }
 }
+#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Type = Self;
@@ -250,6 +253,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
         }
     }
 }
+#[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Actual = Self;

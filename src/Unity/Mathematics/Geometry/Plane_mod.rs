@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Mathematics::Geometry:
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::Geometry::Plane {
     type Type = Self;
@@ -43,6 +44,7 @@ for crate::Unity::Mathematics::Geometry::Plane {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::Geometry::Plane {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::Unity::Mathematics::Geometry::Plane {
         self
     }
 }
+#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::Geometry::Plane {
     type Type = Self;
@@ -70,6 +73,7 @@ for crate::Unity::Mathematics::Geometry::Plane {
         }
     }
 }
+#[cfg(feature = "Unity+Mathematics+Geometry+Plane")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::Geometry::Plane {
     type Actual = Self;

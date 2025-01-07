@@ -60,6 +60,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Type = Self;
@@ -70,6 +71,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Actual = Self;
@@ -83,6 +85,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
         self
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Type = Self;
@@ -97,6 +100,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionArray {
         }
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionArray")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::InstructionArray {
     type Actual = Self;

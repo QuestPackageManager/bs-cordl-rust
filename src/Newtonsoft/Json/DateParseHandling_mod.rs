@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::DateParseHa
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+DateParseHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::DateParseHandling {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Newtonsoft::Json::DateParseHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+DateParseHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::DateParseHandling {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Newtonsoft::Json::DateParseHandling {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+DateParseHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::DateParseHandling {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Newtonsoft::Json::DateParseHandling {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+DateParseHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::DateParseHandling {
     type Actual = Self;

@@ -147,6 +147,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Type = Self;
@@ -157,6 +158,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Actual = Self;
@@ -170,6 +172,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Type = Self;
@@ -184,6 +187,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Actual = Self;

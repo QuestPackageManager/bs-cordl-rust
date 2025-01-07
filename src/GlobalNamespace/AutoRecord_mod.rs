@@ -175,6 +175,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::AutoRecord_B
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Type = Self;
@@ -185,6 +186,7 @@ for crate::GlobalNamespace::AutoRecord_Beatmap {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Actual = Self;
@@ -198,6 +200,7 @@ for crate::GlobalNamespace::AutoRecord_Beatmap {
         self
     }
 }
+#[cfg(feature = "AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Type = Self;
@@ -212,6 +215,7 @@ for crate::GlobalNamespace::AutoRecord_Beatmap {
         }
     }
 }
+#[cfg(feature = "AutoRecord+Beatmap")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AutoRecord_Beatmap {
     type Actual = Self;

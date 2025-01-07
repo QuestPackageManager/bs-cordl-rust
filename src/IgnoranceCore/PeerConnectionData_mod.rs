@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::IgnoranceCore::PeerConnection
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceCore::PeerConnectionData {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::IgnoranceCore::PeerConnectionData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceCore::PeerConnectionData {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::IgnoranceCore::PeerConnectionData {
         self
     }
 }
+#[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceCore::PeerConnectionData {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::IgnoranceCore::PeerConnectionData {
         }
     }
 }
+#[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::IgnoranceCore::PeerConnectionData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

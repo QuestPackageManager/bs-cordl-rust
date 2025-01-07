@@ -40,6 +40,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
         self
     }
 }
+#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
         }
     }
 }
+#[cfg(feature = "UnityEngine+LowLevel+PlayerLoopSystemInternal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::LowLevel::PlayerLoopSystemInternal {
     type Actual = Self;

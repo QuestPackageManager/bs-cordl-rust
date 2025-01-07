@@ -118,6 +118,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Type = Self;
@@ -128,6 +129,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Actual = Self;
@@ -141,6 +143,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
         self
     }
 }
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Type = Self;
@@ -155,6 +158,7 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoS
         }
     }
 }
+#[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData {
     type Actual = Self;

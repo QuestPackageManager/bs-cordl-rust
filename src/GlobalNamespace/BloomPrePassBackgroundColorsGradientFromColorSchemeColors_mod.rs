@@ -237,6 +237,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
     type Type = Self;
@@ -247,6 +250,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
     type Actual = Self;
@@ -260,6 +266,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         self
     }
 }
+#[cfg(
+    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
     type Type = Self;
@@ -274,6 +283,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
         }
     }
 }
+#[cfg(
+    feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
     type Actual = Self;

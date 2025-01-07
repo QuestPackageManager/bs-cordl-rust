@@ -370,6 +370,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Type = Self;
@@ -380,6 +381,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Actual = Self;
@@ -393,6 +395,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
         self
     }
 }
+#[cfg(feature = "MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Type = Self;
@@ -407,6 +410,7 @@ for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
         }
     }
 }
+#[cfg(feature = "MissionLevelGameplayManager+GameState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MissionLevelGameplayManager_GameState {
     type Actual = Self;

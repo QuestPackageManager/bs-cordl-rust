@@ -46,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AudioType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -55,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AudioType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +69,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AudioType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -80,6 +83,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AudioType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+AudioType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AudioType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

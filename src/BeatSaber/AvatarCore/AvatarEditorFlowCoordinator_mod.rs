@@ -281,6 +281,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+EditMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
     type Type = Self;
@@ -291,6 +292,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+EditMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
     type Actual = Self;
@@ -304,6 +306,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
         self
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+EditMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
     type Type = Self;
@@ -318,6 +321,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
         }
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+EditMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
     type Actual = Self;
@@ -369,6 +373,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
     type Type = Self;
@@ -379,6 +384,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
     type Actual = Self;
@@ -392,6 +398,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
         self
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
     type Type = Self;
@@ -406,6 +413,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
         }
     }
 }
+#[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
     type Actual = Self;

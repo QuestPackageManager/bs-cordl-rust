@@ -80,6 +80,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -99,6 +100,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -121,6 +123,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
         self
     }
 }
+#[cfg(feature = "System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -144,6 +147,7 @@ for crate::System::ValueTuple_8<T1, T2, T3, T4, T5, T6, T7, TRest> {
         }
     }
 }
+#[cfg(feature = "System+ValueTuple_8")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

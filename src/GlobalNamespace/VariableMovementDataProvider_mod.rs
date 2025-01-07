@@ -393,6 +393,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Type = Self;
@@ -403,6 +404,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Actual = Self;
@@ -416,6 +418,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
         self
     }
 }
+#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Type = Self;
@@ -430,6 +433,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
         }
     }
 }
+#[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Actual = Self;

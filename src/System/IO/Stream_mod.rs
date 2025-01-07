@@ -857,6 +857,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::IO::Stream_ReadWriteParameters {
     type Type = Self;
@@ -867,6 +868,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::IO::Stream_ReadWriteParameters {
     type Actual = Self;
@@ -880,6 +882,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
         self
     }
 }
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::IO::Stream_ReadWriteParameters {
     type Type = Self;
@@ -894,6 +897,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
         }
     }
 }
+#[cfg(feature = "System+IO+Stream+ReadWriteParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::IO::Stream_ReadWriteParameters {
     type Actual = Self;
@@ -1341,6 +1345,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Type = Self;
@@ -1351,6 +1356,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Actual = Self;
@@ -1364,6 +1370,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         self
     }
 }
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Type = Self;
@@ -1378,6 +1385,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
         }
     }
 }
+#[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Actual = Self;

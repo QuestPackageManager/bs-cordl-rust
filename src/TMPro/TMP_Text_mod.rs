@@ -3738,6 +3738,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Type = Self;
@@ -3748,6 +3749,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Actual = Self;
@@ -3761,6 +3763,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Type = Self;
@@ -3775,6 +3778,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Actual = Self;
@@ -3852,6 +3856,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_SpecialCharac
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_SpecialCharacter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3861,6 +3866,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_SpecialCh
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_SpecialCharacter {
     type Actual = Self;
@@ -3874,6 +3880,7 @@ for crate::TMPro::TMP_Text_SpecialCharacter {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_SpecialCharacter {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3887,6 +3894,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_SpecialCh
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_SpecialCharacter {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -3961,6 +3969,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextBackingCo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Type = Self;
@@ -3971,6 +3980,7 @@ for crate::TMPro::TMP_Text_TextBackingContainer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Actual = Self;
@@ -3984,6 +3994,7 @@ for crate::TMPro::TMP_Text_TextBackingContainer {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Type = Self;
@@ -3998,6 +4009,7 @@ for crate::TMPro::TMP_Text_TextBackingContainer {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_Text_TextBackingContainer {
     type Actual = Self;
@@ -4133,6 +4145,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextInputSour
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_TextInputSources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4142,6 +4155,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_TextInput
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Text_TextInputSources {
     type Actual = Self;
@@ -4155,6 +4169,7 @@ for crate::TMPro::TMP_Text_TextInputSources {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_TextInputSources {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4168,6 +4183,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_TextInput
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_TextInputSources {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4217,6 +4233,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_UnicodeChar {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_UnicodeChar {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4226,6 +4243,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_UnicodeCh
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Text_UnicodeChar {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4238,6 +4256,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Text_UnicodeC
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_UnicodeChar {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4251,6 +4270,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_UnicodeCh
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_UnicodeChar {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

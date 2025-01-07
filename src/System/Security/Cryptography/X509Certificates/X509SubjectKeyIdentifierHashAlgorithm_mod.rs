@@ -41,6 +41,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdent
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierHashAlgorithm"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierHashAlgorithm {
     type Type = Self;
@@ -51,6 +54,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdent
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierHashAlgorithm"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierHashAlgorithm {
     type Actual = Self;
@@ -64,6 +70,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdent
         self
     }
 }
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierHashAlgorithm"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierHashAlgorithm {
     type Type = Self;
@@ -78,6 +87,9 @@ for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdent
         }
     }
 }
+#[cfg(
+    feature = "System+Security+Cryptography+X509Certificates+X509SubjectKeyIdentifierHashAlgorithm"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierHashAlgorithm {
     type Actual = Self;

@@ -905,6 +905,7 @@ for crate::GlobalNamespace::VRControllersRecorder_Mode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "VRControllersRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::VRControllersRecorder_Mode {
     type Type = Self;
@@ -915,6 +916,7 @@ for crate::GlobalNamespace::VRControllersRecorder_Mode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "VRControllersRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::VRControllersRecorder_Mode {
     type Actual = Self;
@@ -928,6 +930,7 @@ for crate::GlobalNamespace::VRControllersRecorder_Mode {
         self
     }
 }
+#[cfg(feature = "VRControllersRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::VRControllersRecorder_Mode {
     type Type = Self;
@@ -942,6 +945,7 @@ for crate::GlobalNamespace::VRControllersRecorder_Mode {
         }
     }
 }
+#[cfg(feature = "VRControllersRecorder+Mode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::VRControllersRecorder_Mode {
     type Actual = Self;

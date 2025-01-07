@@ -617,6 +617,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DefaultBinder_Primiti
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DefaultBinder_Primitives {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -626,6 +627,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DefaultBinder_Pri
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::DefaultBinder_Primitives {
     type Actual = Self;
@@ -639,6 +641,7 @@ for crate::System::DefaultBinder_Primitives {
         self
     }
 }
+#[cfg(feature = "System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DefaultBinder_Primitives {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -652,6 +655,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DefaultBinder_Pri
         }
     }
 }
+#[cfg(feature = "System+DefaultBinder+Primitives")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DefaultBinder_Primitives {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

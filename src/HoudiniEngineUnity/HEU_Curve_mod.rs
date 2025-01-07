@@ -676,6 +676,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveDrawCollision")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
     type Type = Self;
@@ -686,6 +687,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveDrawCollision")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
     type Actual = Self;
@@ -699,6 +701,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveDrawCollision")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
     type Type = Self;
@@ -713,6 +716,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveDrawCollision")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
     type Actual = Self;
@@ -766,6 +770,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveEditState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
     type Type = Self;
@@ -776,6 +781,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveEditState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
     type Actual = Self;
@@ -789,6 +795,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveEditState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
     type Type = Self;
@@ -803,6 +810,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveEditState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
     type Actual = Self;
@@ -855,6 +863,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+Interaction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
     type Type = Self;
@@ -865,6 +874,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+Interaction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
     type Actual = Self;
@@ -878,6 +888,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+Interaction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
     type Type = Self;
@@ -892,6 +903,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Curve+Interaction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
     type Actual = Self;

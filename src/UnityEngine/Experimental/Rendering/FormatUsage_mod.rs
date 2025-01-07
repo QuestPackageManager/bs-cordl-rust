@@ -48,6 +48,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Type = Self;
@@ -58,6 +59,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Actual = Self;
@@ -71,6 +73,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Type = Self;
@@ -85,6 +88,7 @@ for crate::UnityEngine::Experimental::Rendering::FormatUsage {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::Rendering::FormatUsage {
     type Actual = Self;

@@ -276,6 +276,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Type = Self;
@@ -286,6 +287,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Actual = Self;
@@ -299,6 +301,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Type = Self;
@@ -313,6 +316,7 @@ for crate::System::Xml::Schema::NamespaceList_ListType {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::NamespaceList_ListType {
     type Actual = Self;

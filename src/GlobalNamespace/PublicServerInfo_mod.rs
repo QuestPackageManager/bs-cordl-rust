@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PublicServer
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PublicServerInfo {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::GlobalNamespace::PublicServerInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PublicServerInfo {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::GlobalNamespace::PublicServerInfo {
         self
     }
 }
+#[cfg(feature = "PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PublicServerInfo {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::GlobalNamespace::PublicServerInfo {
         }
     }
 }
+#[cfg(feature = "PublicServerInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PublicServerInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -350,6 +350,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::MonoChunkParser_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::MonoChunkParser_State {
     type Type = Self;
@@ -360,6 +361,7 @@ for crate::System::Net::MonoChunkParser_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::MonoChunkParser_State {
     type Actual = Self;
@@ -373,6 +375,7 @@ for crate::System::Net::MonoChunkParser_State {
         self
     }
 }
+#[cfg(feature = "System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::MonoChunkParser_State {
     type Type = Self;
@@ -387,6 +390,7 @@ for crate::System::Net::MonoChunkParser_State {
         }
     }
 }
+#[cfg(feature = "System+Net+MonoChunkParser+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::MonoChunkParser_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

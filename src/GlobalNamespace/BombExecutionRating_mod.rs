@@ -123,6 +123,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Type = Self;
@@ -133,6 +134,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Actual = Self;
@@ -146,6 +148,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
         self
     }
 }
+#[cfg(feature = "BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Type = Self;
@@ -160,6 +163,7 @@ for crate::GlobalNamespace::BombExecutionRating_Rating {
         }
     }
 }
+#[cfg(feature = "BombExecutionRating+Rating")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BombExecutionRating_Rating {
     type Actual = Self;

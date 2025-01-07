@@ -349,6 +349,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Type = Self;
@@ -359,6 +360,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Actual = Self;
@@ -372,6 +374,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Type = Self;
@@ -386,6 +389,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+ResolveContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
     type Actual = Self;
@@ -451,6 +455,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Type = Self;
@@ -461,6 +466,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Actual = Self;
@@ -474,6 +480,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Type = Self;
@@ -488,6 +495,7 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleVariableResolver_Result {
     type Actual = Self;

@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SoftJointLimitSp
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimitSpring")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SoftJointLimitSpring {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::SoftJointLimitSpring {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimitSpring")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SoftJointLimitSpring {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::SoftJointLimitSpring {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimitSpring")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SoftJointLimitSpring {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::SoftJointLimitSpring {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SoftJointLimitSpring")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SoftJointLimitSpring {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

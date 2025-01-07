@@ -37,6 +37,7 @@ for crate::UnityEngine::ParticleSystemBakeMeshOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemBakeMeshOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemBakeMeshOptions {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::ParticleSystemBakeMeshOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemBakeMeshOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemBakeMeshOptions {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::ParticleSystemBakeMeshOptions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemBakeMeshOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemBakeMeshOptions {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::ParticleSystemBakeMeshOptions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemBakeMeshOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemBakeMeshOptions {
     type Actual = Self;

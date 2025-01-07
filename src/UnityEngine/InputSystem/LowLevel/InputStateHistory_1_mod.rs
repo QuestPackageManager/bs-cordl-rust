@@ -469,6 +469,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TV
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
     type Type = Self;
@@ -479,6 +480,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TV
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
     type Actual = Self;
@@ -492,6 +494,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TV
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
     type Type = Self;
@@ -506,6 +509,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TV
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TValue> {
     type Actual = Self;
@@ -739,6 +743,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue> {
     type Type = Self;
@@ -749,6 +754,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue> {
     type Actual = Self;
@@ -762,6 +768,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue> {
     type Type = Self;
@@ -776,6 +783,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory_1+Record")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue> {
     type Actual = Self;

@@ -42,6 +42,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryTypeEnum")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryTypeEnum")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
         self
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryTypeEnum")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
         }
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryTypeEnum")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum {
     type Actual = Self;

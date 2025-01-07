@@ -452,6 +452,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Type = Self;
@@ -462,6 +463,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Actual = Self;
@@ -475,6 +477,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Type = Self;
@@ -489,6 +492,7 @@ for crate::UnityEngine::UI::Toggle_ToggleTransition {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Toggle_ToggleTransition {
     type Actual = Self;

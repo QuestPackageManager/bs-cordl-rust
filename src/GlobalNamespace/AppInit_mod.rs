@@ -261,6 +261,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Type = Self;
@@ -271,6 +272,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Actual = Self;
@@ -284,6 +286,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
         self
     }
 }
+#[cfg(feature = "AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Type = Self;
@@ -298,6 +301,7 @@ for crate::GlobalNamespace::AppInit_AppStartType {
         }
     }
 }
+#[cfg(feature = "AppInit+AppStartType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AppInit_AppStartType {
     type Actual = Self;

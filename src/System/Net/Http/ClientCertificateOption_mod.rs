@@ -36,6 +36,7 @@ for crate::System::Net::Http::ClientCertificateOption {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Http::ClientCertificateOption {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::System::Net::Http::ClientCertificateOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Http::ClientCertificateOption {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::System::Net::Http::ClientCertificateOption {
         self
     }
 }
+#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Http::ClientCertificateOption {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::System::Net::Http::ClientCertificateOption {
         }
     }
 }
+#[cfg(feature = "System+Net+Http+ClientCertificateOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Http::ClientCertificateOption {
     type Actual = Self;

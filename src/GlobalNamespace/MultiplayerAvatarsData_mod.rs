@@ -39,6 +39,7 @@ for crate::GlobalNamespace::MultiplayerAvatarsData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerAvatarsData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerAvatarsData {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::GlobalNamespace::MultiplayerAvatarsData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerAvatarsData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerAvatarsData {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::GlobalNamespace::MultiplayerAvatarsData {
         self
     }
 }
+#[cfg(feature = "MultiplayerAvatarsData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerAvatarsData {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::GlobalNamespace::MultiplayerAvatarsData {
         }
     }
 }
+#[cfg(feature = "MultiplayerAvatarsData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerAvatarsData {
     type Actual = Self;

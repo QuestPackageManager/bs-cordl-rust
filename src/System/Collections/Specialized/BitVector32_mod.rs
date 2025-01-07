@@ -34,6 +34,7 @@ for crate::System::Collections::Specialized::BitVector32 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Specialized+BitVector32")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::Specialized::BitVector32 {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::System::Collections::Specialized::BitVector32 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Specialized+BitVector32")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Specialized::BitVector32 {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::System::Collections::Specialized::BitVector32 {
         self
     }
 }
+#[cfg(feature = "System+Collections+Specialized+BitVector32")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::Specialized::BitVector32 {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::System::Collections::Specialized::BitVector32 {
         }
     }
 }
+#[cfg(feature = "System+Collections+Specialized+BitVector32")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::Specialized::BitVector32 {
     type Actual = Self;

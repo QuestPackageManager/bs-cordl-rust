@@ -47,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HAPI_Volu
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_VolumeInfo {
     type Type = Self;
@@ -57,6 +58,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_VolumeInfo {
     type Actual = Self;
@@ -70,6 +72,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeInfo {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_VolumeInfo {
     type Type = Self;
@@ -84,6 +87,7 @@ for crate::HoudiniEngineUnity::HAPI_VolumeInfo {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_VolumeInfo {
     type Actual = Self;

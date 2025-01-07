@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PacketOption
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PacketOption")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::PacketOption {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::PacketOp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PacketOption")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::PacketOption {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::PacketO
         self
     }
 }
+#[cfg(feature = "PacketOption")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::PacketOption {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::PacketOp
         }
     }
 }
+#[cfg(feature = "PacketOption")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::PacketOption {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

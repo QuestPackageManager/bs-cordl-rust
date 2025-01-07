@@ -137,6 +137,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Type = Self;
@@ -147,6 +148,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Actual = Self;
@@ -160,6 +162,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Type = Self;
@@ -174,6 +177,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags {
     type Actual = Self;

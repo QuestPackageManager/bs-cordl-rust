@@ -300,6 +300,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Type = Self;
@@ -310,6 +311,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Actual = Self;
@@ -323,6 +325,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
         self
     }
 }
+#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Type = Self;
@@ -337,6 +340,7 @@ for crate::Mono::Security::Interface::CipherSuiteCode {
         }
     }
 }
+#[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::Interface::CipherSuiteCode {
     type Actual = Self;

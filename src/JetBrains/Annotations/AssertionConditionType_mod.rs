@@ -38,6 +38,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
         self
     }
 }
+#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::JetBrains::Annotations::AssertionConditionType {
         }
     }
 }
+#[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::JetBrains::Annotations::AssertionConditionType {
     type Actual = Self;

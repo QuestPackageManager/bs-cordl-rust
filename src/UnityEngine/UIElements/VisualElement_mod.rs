@@ -4521,6 +4521,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Type = Self;
@@ -4531,6 +4532,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Actual = Self;
@@ -4544,6 +4546,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Type = Self;
@@ -4558,6 +4561,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+Hierarchy")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Actual = Self;
@@ -4903,6 +4907,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Type = Self;
@@ -4913,6 +4918,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Actual = Self;
@@ -4926,6 +4932,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Type = Self;
@@ -4940,6 +4947,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Actual = Self;
@@ -4993,6 +5001,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Type = Self;
@@ -5003,6 +5012,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Actual = Self;
@@ -5016,6 +5026,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Type = Self;
@@ -5030,6 +5041,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Actual = Self;

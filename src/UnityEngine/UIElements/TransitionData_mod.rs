@@ -53,6 +53,7 @@ for crate::UnityEngine::UIElements::TransitionData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::TransitionData {
     type Type = Self;
@@ -63,6 +64,7 @@ for crate::UnityEngine::UIElements::TransitionData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::TransitionData {
     type Actual = Self;
@@ -76,6 +78,7 @@ for crate::UnityEngine::UIElements::TransitionData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::TransitionData {
     type Type = Self;
@@ -90,6 +93,7 @@ for crate::UnityEngine::UIElements::TransitionData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+TransitionData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::TransitionData {
     type Actual = Self;

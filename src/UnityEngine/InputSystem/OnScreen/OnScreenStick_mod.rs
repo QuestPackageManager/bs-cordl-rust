@@ -450,6 +450,7 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
     type Type = Self;
@@ -460,6 +461,7 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
     type Actual = Self;
@@ -473,6 +475,7 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
     type Type = Self;
@@ -487,6 +490,7 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick_Behaviour {
     type Actual = Self;

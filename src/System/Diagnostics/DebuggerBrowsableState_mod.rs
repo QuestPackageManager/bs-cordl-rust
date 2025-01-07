@@ -37,6 +37,7 @@ for crate::System::Diagnostics::DebuggerBrowsableState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+DebuggerBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::DebuggerBrowsableState {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::Diagnostics::DebuggerBrowsableState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+DebuggerBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::DebuggerBrowsableState {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::Diagnostics::DebuggerBrowsableState {
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+DebuggerBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::DebuggerBrowsableState {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::Diagnostics::DebuggerBrowsableState {
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+DebuggerBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::DebuggerBrowsableState {
     type Actual = Self;

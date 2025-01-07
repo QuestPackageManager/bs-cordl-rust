@@ -242,6 +242,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Type = Self;
@@ -252,6 +253,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Actual = Self;
@@ -265,6 +267,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
         self
     }
 }
+#[cfg(feature = "OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Type = Self;
@@ -279,6 +282,7 @@ for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
         }
     }
 }
+#[cfg(feature = "OVRSceneLoader+SceneInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     type Actual = Self;

@@ -631,6 +631,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Type = Self;
@@ -641,6 +642,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Actual = Self;
@@ -654,6 +656,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Type = Self;
@@ -668,6 +671,7 @@ for crate::UnityEngine::TerrainData_BoundaryValueType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TerrainData_BoundaryValueType {
     type Actual = Self;

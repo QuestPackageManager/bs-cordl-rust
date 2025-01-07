@@ -875,6 +875,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Type = Self;
@@ -885,6 +886,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Actual = Self;
@@ -898,6 +900,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Type = Self;
@@ -912,6 +915,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Actual = Self;
@@ -963,6 +967,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Type = Self;
@@ -973,6 +978,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Actual = Self;
@@ -986,6 +992,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Type = Self;
@@ -1000,6 +1007,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Actual = Self;

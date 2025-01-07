@@ -37,6 +37,7 @@ for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalDefinition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalDefinition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
         self
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalDefinition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
         }
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LocalDefinition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::LocalDefinition {
     type Actual = Self;

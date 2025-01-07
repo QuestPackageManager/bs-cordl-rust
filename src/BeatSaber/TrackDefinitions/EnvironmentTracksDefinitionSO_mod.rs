@@ -360,6 +360,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
     type Type = Self;
@@ -370,6 +373,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
     type Actual = Self;
@@ -383,6 +389,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
         self
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
     type Type = Self;
@@ -397,6 +406,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
         }
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+BasicEventTrackPage"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage {
     type Actual = Self;
@@ -855,6 +867,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
     type Type = Self;
@@ -865,6 +880,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
     type Actual = Self;
@@ -878,6 +896,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
         self
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
     type Type = Self;
@@ -892,6 +913,9 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
         }
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO+OverrideDefaultLightAxis"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDefaultLightAxis {
     type Actual = Self;

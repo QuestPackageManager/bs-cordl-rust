@@ -113,6 +113,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Type = Self;
@@ -123,6 +124,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Actual = Self;
@@ -136,6 +138,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
         self
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Type = Self;
@@ -150,6 +153,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
         }
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Actual = Self;

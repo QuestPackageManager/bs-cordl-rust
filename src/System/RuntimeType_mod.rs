@@ -2253,6 +2253,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Type = Self;
@@ -2263,6 +2264,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Actual = Self;
@@ -2276,6 +2278,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
         self
     }
 }
+#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Type = Self;
@@ -2290,6 +2293,7 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
         }
     }
 }
+#[cfg(feature = "System+RuntimeType+ListBuilder_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::RuntimeType_ListBuilder_1<T> {
     type Actual = Self;
@@ -2444,6 +2448,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::RuntimeType_MemberLis
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::RuntimeType_MemberListType {
     type Type = Self;
@@ -2454,6 +2459,7 @@ for crate::System::RuntimeType_MemberListType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::RuntimeType_MemberListType {
     type Actual = Self;
@@ -2467,6 +2473,7 @@ for crate::System::RuntimeType_MemberListType {
         self
     }
 }
+#[cfg(feature = "System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::RuntimeType_MemberListType {
     type Type = Self;
@@ -2481,6 +2488,7 @@ for crate::System::RuntimeType_MemberListType {
         }
     }
 }
+#[cfg(feature = "System+RuntimeType+MemberListType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::RuntimeType_MemberListType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -40,6 +40,7 @@ for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+ProcessingState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+ProcessingState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
         self
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+ProcessingState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
         }
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+ProcessingState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IO::LowLevel::Unsafe::ProcessingState {
     type Actual = Self;

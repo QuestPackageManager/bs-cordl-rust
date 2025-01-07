@@ -813,6 +813,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Type = Self;
@@ -823,6 +824,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Actual = Self;
@@ -836,6 +838,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
         self
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Type = Self;
@@ -850,6 +853,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
         }
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Actual = Self;

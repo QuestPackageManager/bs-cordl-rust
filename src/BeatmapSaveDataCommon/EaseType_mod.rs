@@ -68,6 +68,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataCommon::EaseTy
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EaseType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BeatmapSaveDataCommon::EaseType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BeatmapSaveDataCommon::Ea
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EaseType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatmapSaveDataCommon::EaseType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -89,6 +91,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatmapSaveDataCommon::E
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EaseType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BeatmapSaveDataCommon::EaseType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -102,6 +105,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BeatmapSaveDataCommon::Ea
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EaseType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataCommon::EaseType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

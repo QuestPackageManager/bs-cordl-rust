@@ -41,6 +41,7 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Type = Self;
@@ -51,6 +52,7 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Actual = Self;
@@ -64,6 +66,7 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Type = Self;
@@ -78,6 +81,7 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
     type Actual = Self;

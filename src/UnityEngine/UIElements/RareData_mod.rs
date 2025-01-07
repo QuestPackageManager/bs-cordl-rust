@@ -42,6 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Rare
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::RareData {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::UnityEngine::UIElements::RareData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::RareData {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::UnityEngine::UIElements::RareData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::RareData {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::UnityEngine::UIElements::RareData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+RareData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::RareData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

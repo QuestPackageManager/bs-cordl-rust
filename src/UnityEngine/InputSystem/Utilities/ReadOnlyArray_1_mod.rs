@@ -53,6 +53,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
     type Type = Self;
@@ -63,6 +64,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
     type Actual = Self;
@@ -76,6 +78,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
     type Type = Self;
@@ -90,6 +93,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue> {
     type Actual = Self;
@@ -407,6 +411,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
     type Type = Self;
@@ -417,6 +422,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
     type Actual = Self;
@@ -430,6 +436,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
     type Type = Self;
@@ -444,6 +451,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1+Enumerator")]
 unsafe impl<TValue: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValue> {
     type Actual = Self;

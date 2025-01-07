@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONContainerT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVRSimpleJSON::JSONContainerType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVRSimpleJSON::JSONContai
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVRSimpleJSON::JSONContainerType {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::OVRSimpleJSON::JSONContainerType {
         self
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVRSimpleJSON::JSONContainerType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVRSimpleJSON::JSONContai
         }
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONContainerType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVRSimpleJSON::JSONContainerType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -433,6 +433,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Type = Self;
@@ -443,6 +444,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Actual = Self;
@@ -456,6 +458,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Type = Self;
@@ -470,6 +473,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Actual = Self;

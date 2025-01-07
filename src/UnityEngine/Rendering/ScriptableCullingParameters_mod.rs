@@ -57,6 +57,7 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ScriptableCullingParameters {
     type Type = Self;
@@ -67,6 +68,7 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ScriptableCullingParameters {
     type Actual = Self;
@@ -80,6 +82,7 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ScriptableCullingParameters {
     type Type = Self;
@@ -94,6 +97,7 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ScriptableCullingParameters {
     type Actual = Self;
@@ -257,6 +261,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer {
     type Type = Self;
@@ -267,6 +274,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer {
     type Actual = Self;
@@ -280,6 +290,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer {
     type Type = Self;
@@ -294,6 +307,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_CullingPlanes_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_CullingPlanes_e__FixedBuffer {
     type Actual = Self;
@@ -364,6 +380,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDi
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer {
     type Type = Self;
@@ -374,6 +393,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer {
     type Actual = Self;
@@ -387,6 +409,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDi
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer {
     type Type = Self;
@@ -401,6 +426,9 @@ for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDi
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+ScriptableCullingParameters+_m_LayerFarCullDistances_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::ScriptableCullingParameters__m_LayerFarCullDistances_e__FixedBuffer {
     type Actual = Self;

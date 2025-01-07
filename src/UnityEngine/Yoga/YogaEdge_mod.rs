@@ -42,6 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaEdge {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaEdge")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Yoga::YogaEdge {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -51,6 +52,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Yoga::YogaEd
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaEdge")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Yoga::YogaEdge {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,6 +65,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Yoga::YogaE
         self
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaEdge")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Yoga::YogaEdge {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,6 +79,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Yoga::YogaEd
         }
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaEdge")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Yoga::YogaEdge {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -306,6 +306,7 @@ for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
     type Type = Self;
@@ -316,6 +317,7 @@ for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
     type Actual = Self;
@@ -329,6 +331,7 @@ for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
         self
     }
 }
+#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
     type Type = Self;
@@ -343,6 +346,7 @@ for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
         }
     }
 }
+#[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction {
     type Actual = Self;

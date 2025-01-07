@@ -104,6 +104,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Type = Self;
@@ -114,6 +115,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Actual = Self;
@@ -127,6 +129,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Type = Self;
@@ -141,6 +144,7 @@ for crate::TMPro::TMP_Compatibility_AnchorPositions {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_Compatibility_AnchorPositions {
     type Actual = Self;

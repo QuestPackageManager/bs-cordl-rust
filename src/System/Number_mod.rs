@@ -1076,6 +1076,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Type = Self;
@@ -1086,6 +1087,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Actual = Self;
@@ -1099,6 +1101,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
         self
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Type = Self;
@@ -1113,6 +1116,7 @@ for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
         }
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer+DigitsAndNullTerminator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::NumberBuffer_Number_DigitsAndNullTerminator {
     type Actual = Self;
@@ -1178,6 +1182,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Number_NumberBuffer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Number_NumberBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1187,6 +1192,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Number_NumberBuff
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Number_NumberBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1199,6 +1205,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Number_NumberBuf
         self
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Number_NumberBuffer {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1212,6 +1219,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Number_NumberBuff
         }
     }
 }
+#[cfg(feature = "System+Number+NumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Number_NumberBuffer {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -293,6 +293,7 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Type = Self;
@@ -303,6 +304,7 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Actual = Self;
@@ -316,6 +318,7 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Type = Self;
@@ -330,6 +333,7 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversa
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+FocusableHierarchyTraversal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::NavigateFocusRing_FocusableHierarchyTraversal {
     type Actual = Self;

@@ -44,6 +44,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
         self
     }
 }
+#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::System::Net::Sockets::SocketAsyncOperation {
         }
     }
 }
+#[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Sockets::SocketAsyncOperation {
     type Actual = Self;

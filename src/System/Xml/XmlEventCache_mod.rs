@@ -572,6 +572,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEventCache_Xm
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Type = Self;
@@ -582,6 +583,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Actual = Self;
@@ -595,6 +597,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Type = Self;
@@ -609,6 +612,7 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlEventCache_XmlEvent {
     type Actual = Self;
@@ -825,6 +829,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Type = Self;
@@ -835,6 +840,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Actual = Self;
@@ -848,6 +854,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Type = Self;
@@ -862,6 +869,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlEventCache_XmlEventType {
     type Actual = Self;

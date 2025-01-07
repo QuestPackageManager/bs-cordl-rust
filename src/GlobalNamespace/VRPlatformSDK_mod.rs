@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::VRPlatformSD
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "VRPlatformSDK")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::VRPlatformSDK {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::VRPlatfo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "VRPlatformSDK")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::VRPlatformSDK {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::VRPlatf
         self
     }
 }
+#[cfg(feature = "VRPlatformSDK")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::VRPlatformSDK {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::VRPlatfo
         }
     }
 }
+#[cfg(feature = "VRPlatformSDK")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::VRPlatformSDK {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

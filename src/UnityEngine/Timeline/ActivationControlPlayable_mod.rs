@@ -191,6 +191,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Type = Self;
@@ -201,6 +202,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Actual = Self;
@@ -214,6 +216,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Type = Self;
@@ -228,6 +231,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Actual = Self;
@@ -280,6 +284,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Type = Self;
@@ -290,6 +295,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Actual = Self;
@@ -303,6 +309,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Type = Self;
@@ -317,6 +324,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Actual = Self;

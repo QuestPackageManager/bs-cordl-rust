@@ -113,6 +113,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Type = Self;
@@ -123,6 +124,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Actual = Self;
@@ -136,6 +138,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Type = Self;
@@ -150,6 +153,7 @@ for crate::UnityEngine::ProBuilder::Clipping_OutCode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::Clipping_OutCode {
     type Actual = Self;

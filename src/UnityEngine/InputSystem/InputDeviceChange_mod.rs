@@ -45,6 +45,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Type = Self;
@@ -55,6 +56,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Actual = Self;
@@ -68,6 +70,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Type = Self;
@@ -82,6 +85,7 @@ for crate::UnityEngine::InputSystem::InputDeviceChange {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputDeviceChange {
     type Actual = Self;

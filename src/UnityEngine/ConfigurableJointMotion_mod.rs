@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ConfigurableJoin
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ConfigurableJointMotion {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::ConfigurableJointMotion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ConfigurableJointMotion {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::ConfigurableJointMotion {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ConfigurableJointMotion {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::ConfigurableJointMotion {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ConfigurableJointMotion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ConfigurableJointMotion {
     type Actual = Self;

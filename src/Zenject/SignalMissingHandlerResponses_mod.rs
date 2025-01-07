@@ -37,6 +37,7 @@ for crate::Zenject::SignalMissingHandlerResponses {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Zenject+SignalMissingHandlerResponses")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::SignalMissingHandlerResponses {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::Zenject::SignalMissingHandlerResponses {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Zenject+SignalMissingHandlerResponses")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::SignalMissingHandlerResponses {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::Zenject::SignalMissingHandlerResponses {
         self
     }
 }
+#[cfg(feature = "Zenject+SignalMissingHandlerResponses")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::SignalMissingHandlerResponses {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::Zenject::SignalMissingHandlerResponses {
         }
     }
 }
+#[cfg(feature = "Zenject+SignalMissingHandlerResponses")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::SignalMissingHandlerResponses {
     type Actual = Self;

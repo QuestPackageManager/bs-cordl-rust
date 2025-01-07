@@ -249,6 +249,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -259,6 +260,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -272,6 +274,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
         self
     }
 }
+#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -286,6 +289,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
         }
     }
 }
+#[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -408,6 +412,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Type = Self;
@@ -418,6 +423,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Actual = Self;
@@ -431,6 +437,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         self
     }
 }
+#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Type = Self;
@@ -445,6 +452,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
         }
     }
 }
+#[cfg(feature = "OVRMeshRenderer+MeshRendererData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Actual = Self;
@@ -569,6 +577,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -579,6 +588,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Actual = Self;
@@ -592,6 +602,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
         self
     }
 }
+#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -606,6 +617,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
         }
     }
 }
+#[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Actual = Self;

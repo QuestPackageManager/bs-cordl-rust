@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::TraceLev
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+TraceLevel")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Diagnostics::TraceLevel {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Diagnostics::Trac
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+TraceLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Diagnostics::TraceLevel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Diagnostics::Tra
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+TraceLevel")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Diagnostics::TraceLevel {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Diagnostics::Trac
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+TraceLevel")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Diagnostics::TraceLevel {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -382,6 +382,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Type = Self;
@@ -392,6 +393,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Actual = Self;
@@ -405,6 +407,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
         self
     }
 }
+#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Type = Self;
@@ -419,6 +422,7 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
         }
     }
 }
+#[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace {
     type Actual = Self;

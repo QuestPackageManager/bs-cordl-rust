@@ -2661,6 +2661,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonWriter_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter_State {
     type Type = Self;
@@ -2671,6 +2672,7 @@ for crate::Newtonsoft::Json::JsonWriter_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter_State {
     type Actual = Self;
@@ -2684,6 +2686,7 @@ for crate::Newtonsoft::Json::JsonWriter_State {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter_State {
     type Type = Self;
@@ -2698,6 +2701,7 @@ for crate::Newtonsoft::Json::JsonWriter_State {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::JsonWriter_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2752,6 +2756,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Type = Self;
@@ -2762,6 +2767,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Actual = Self;
@@ -2775,6 +2781,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Type = Self;
@@ -2789,6 +2796,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2_d {
     type Actual = Self;
@@ -2902,6 +2910,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     type Type = Self;
@@ -2912,6 +2923,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     type Actual = Self;
@@ -2925,6 +2939,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
         self
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     type Type = Self;
@@ -2939,6 +2956,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
         }
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitIndent_11_1_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_11_1_d {
     type Actual = Self;
@@ -3060,6 +3080,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     type Type = Self;
@@ -3070,6 +3093,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     type Actual = Self;
@@ -3083,6 +3109,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
         self
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     type Type = Self;
@@ -3097,6 +3126,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
         }
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitProperty_11_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty_11_0_d {
     type Actual = Self;
@@ -3217,6 +3249,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     type Type = Self;
@@ -3227,6 +3262,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     type Actual = Self;
@@ -3240,6 +3278,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
         self
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     type Type = Self;
@@ -3254,6 +3295,9 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
         }
     }
 }
+#[cfg(
+    feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitRemaining_11_3_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemaining_11_3_d {
     type Actual = Self;

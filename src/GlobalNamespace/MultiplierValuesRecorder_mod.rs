@@ -171,6 +171,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Type = Self;
@@ -181,6 +182,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Actual = Self;
@@ -194,6 +196,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
         self
     }
 }
+#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Type = Self;
@@ -208,6 +211,7 @@ for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
         }
     }
 }
+#[cfg(feature = "MultiplierValuesRecorder+MultiplierValue")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplierValuesRecorder_MultiplierValue {
     type Actual = Self;

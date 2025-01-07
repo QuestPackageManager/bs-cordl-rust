@@ -39,6 +39,7 @@ for crate::System::Threading::CancellationCallbackCoreWorkArguments {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+CancellationCallbackCoreWorkArguments")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::CancellationCallbackCoreWorkArguments {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::System::Threading::CancellationCallbackCoreWorkArguments {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+CancellationCallbackCoreWorkArguments")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::CancellationCallbackCoreWorkArguments {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::System::Threading::CancellationCallbackCoreWorkArguments {
         self
     }
 }
+#[cfg(feature = "System+Threading+CancellationCallbackCoreWorkArguments")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::CancellationCallbackCoreWorkArguments {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::System::Threading::CancellationCallbackCoreWorkArguments {
         }
     }
 }
+#[cfg(feature = "System+Threading+CancellationCallbackCoreWorkArguments")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::CancellationCallbackCoreWorkArguments {
     type Actual = Self;

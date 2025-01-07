@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SyncStateId 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SyncStateId")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SyncStateId {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SyncStat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SyncStateId")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::SyncStateId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::SyncSta
         self
     }
 }
+#[cfg(feature = "SyncStateId")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SyncStateId {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SyncStat
         }
     }
 }
+#[cfg(feature = "SyncStateId")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SyncStateId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

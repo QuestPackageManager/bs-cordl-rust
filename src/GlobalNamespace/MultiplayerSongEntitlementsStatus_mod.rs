@@ -36,6 +36,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
         self
     }
 }
+#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
         }
     }
 }
+#[cfg(feature = "MultiplayerSongEntitlementsStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSongEntitlementsStatus {
     type Actual = Self;

@@ -248,6 +248,7 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SelectLevelCategoryViewController+LevelCategory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
     type Type = Self;
@@ -258,6 +259,7 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SelectLevelCategoryViewController+LevelCategory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
     type Actual = Self;
@@ -271,6 +273,7 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
         self
     }
 }
+#[cfg(feature = "SelectLevelCategoryViewController+LevelCategory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
     type Type = Self;
@@ -285,6 +288,7 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
         }
     }
 }
+#[cfg(feature = "SelectLevelCategoryViewController+LevelCategory")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
     type Actual = Self;

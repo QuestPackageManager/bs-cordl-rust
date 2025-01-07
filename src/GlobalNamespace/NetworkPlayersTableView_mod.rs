@@ -37,6 +37,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
         self
     }
 }
+#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
         }
     }
 }
+#[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType {
     type Actual = Self;

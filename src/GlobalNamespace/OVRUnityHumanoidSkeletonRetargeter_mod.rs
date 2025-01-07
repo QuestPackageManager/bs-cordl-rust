@@ -50,6 +50,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodySection"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection {
     type Type = Self;
@@ -60,6 +63,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodySection"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection {
     type Actual = Self;
@@ -73,6 +79,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
         self
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodySection"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection {
     type Type = Self;
@@ -87,6 +96,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
         }
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodySection"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection {
     type Actual = Self;
@@ -213,6 +225,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodyTrackingBoneId"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId {
     type Type = Self;
@@ -223,6 +238,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodyTrackingBoneId"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId {
     type Actual = Self;
@@ -236,6 +254,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
         self
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodyTrackingBoneId"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId {
     type Type = Self;
@@ -250,6 +271,9 @@ for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRe
         }
     }
 }
+#[cfg(
+    feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings+BodyTrackingBoneId"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodyTrackingBoneId {
     type Actual = Self;

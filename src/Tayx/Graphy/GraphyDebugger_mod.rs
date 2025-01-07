@@ -411,6 +411,7 @@ for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
     type Type = Self;
@@ -421,6 +422,7 @@ for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
     type Actual = Self;
@@ -434,6 +436,7 @@ for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
         self
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
     type Type = Self;
@@ -448,6 +451,7 @@ for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
         }
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
     type Actual = Self;
@@ -502,6 +506,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
     type Type = Self;
@@ -512,6 +517,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
     type Actual = Self;
@@ -525,6 +531,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
         self
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
     type Type = Self;
@@ -539,6 +546,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
         }
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
     type Actual = Self;
@@ -590,6 +598,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
     type Type = Self;
@@ -600,6 +609,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
     type Actual = Self;
@@ -613,6 +623,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
         self
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
     type Type = Self;
@@ -627,6 +638,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
         }
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugCondition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
     type Actual = Self;
@@ -820,6 +832,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
     type Type = Self;
@@ -830,6 +843,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
     type Actual = Self;
@@ -843,6 +857,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
         self
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
     type Type = Self;
@@ -857,6 +872,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
         }
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
     type Actual = Self;
@@ -909,6 +925,7 @@ for crate::Tayx::Graphy::GraphyDebugger_MessageType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Tayx::Graphy::GraphyDebugger_MessageType {
     type Type = Self;
@@ -919,6 +936,7 @@ for crate::Tayx::Graphy::GraphyDebugger_MessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Tayx::Graphy::GraphyDebugger_MessageType {
     type Actual = Self;
@@ -932,6 +950,7 @@ for crate::Tayx::Graphy::GraphyDebugger_MessageType {
         self
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Tayx::Graphy::GraphyDebugger_MessageType {
     type Type = Self;
@@ -946,6 +965,7 @@ for crate::Tayx::Graphy::GraphyDebugger_MessageType {
         }
     }
 }
+#[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Tayx::Graphy::GraphyDebugger_MessageType {
     type Actual = Self;

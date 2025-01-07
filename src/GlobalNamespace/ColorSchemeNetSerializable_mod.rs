@@ -40,6 +40,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
         self
     }
 }
+#[cfg(feature = "ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::GlobalNamespace::ColorSchemeNetSerializable {
         }
     }
 }
+#[cfg(feature = "ColorSchemeNetSerializable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorSchemeNetSerializable {
     type Actual = Self;

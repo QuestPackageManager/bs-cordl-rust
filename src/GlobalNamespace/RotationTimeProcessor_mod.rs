@@ -184,6 +184,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Type = Self;
@@ -194,6 +195,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Actual = Self;
@@ -207,6 +209,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         self
     }
 }
+#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Type = Self;
@@ -221,6 +224,7 @@ for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
         }
     }
 }
+#[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData {
     type Actual = Self;

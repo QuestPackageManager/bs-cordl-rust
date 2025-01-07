@@ -34,6 +34,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
         self
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
         }
     }
 }
+#[cfg(feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable {
     type Actual = Self;
@@ -167,6 +171,9 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configured
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
     type Type = Self;
@@ -177,6 +184,9 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configured
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
     type Actual = Self;
@@ -190,6 +200,9 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configured
         self
     }
 }
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
     type Type = Self;
@@ -204,6 +217,9 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configured
         }
     }
 }
+#[cfg(
+    feature = "System+Runtime+CompilerServices+ConfiguredTaskAwaitable+ConfiguredTaskAwaiter"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_ConfiguredTaskAwaiter {
     type Actual = Self;

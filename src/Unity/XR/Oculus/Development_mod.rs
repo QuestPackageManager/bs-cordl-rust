@@ -110,6 +110,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Type = Self;
@@ -120,6 +121,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Actual = Self;
@@ -133,6 +135,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
         self
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Type = Self;
@@ -147,6 +150,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
         }
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Actual = Self;

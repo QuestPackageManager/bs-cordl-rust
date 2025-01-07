@@ -123,6 +123,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Type = Self;
@@ -133,6 +134,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Actual = Self;
@@ -146,6 +148,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Type = Self;
@@ -160,6 +163,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Actual = Self;

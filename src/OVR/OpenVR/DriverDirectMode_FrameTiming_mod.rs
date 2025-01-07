@@ -38,6 +38,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+DriverDirectMode_FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::DriverDirectMode_FrameTiming {
     type Actual = Self;

@@ -116,6 +116,7 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Type = Self;
@@ -126,6 +127,7 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Actual = Self;
@@ -139,6 +141,7 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
         self
     }
 }
+#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Type = Self;
@@ -153,6 +156,7 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesA
         }
     }
 }
+#[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
     type Actual = Self;

@@ -59,6 +59,7 @@ unsafe impl<
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -72,6 +73,7 @@ for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -88,6 +90,7 @@ for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
         self
     }
 }
+#[cfg(feature = "IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -105,6 +108,7 @@ for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
         }
     }
 }
+#[cfg(feature = "IntervalTree+RangeValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

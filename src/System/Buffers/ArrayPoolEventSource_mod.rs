@@ -177,6 +177,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Type = Self;
@@ -187,6 +188,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Actual = Self;
@@ -200,6 +202,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
         self
     }
 }
+#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Type = Self;
@@ -214,6 +217,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
         }
     }
 }
+#[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Actual = Self;

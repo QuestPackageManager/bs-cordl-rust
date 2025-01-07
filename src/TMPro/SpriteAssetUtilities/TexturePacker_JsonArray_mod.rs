@@ -121,6 +121,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
     type Type = Self;
@@ -131,6 +132,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
     type Actual = Self;
@@ -144,6 +146,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
         self
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
     type Type = Self;
@@ -158,6 +161,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
         }
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Frame")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
     type Actual = Self;
@@ -226,6 +230,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
     type Type = Self;
@@ -236,6 +241,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
     type Actual = Self;
@@ -249,6 +255,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
         self
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
     type Type = Self;
@@ -263,6 +270,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
         }
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
     type Actual = Self;
@@ -405,6 +413,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     type Type = Self;
@@ -415,6 +424,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     type Actual = Self;
@@ -428,6 +438,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
         self
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     type Type = Self;
@@ -442,6 +453,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
         }
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteFrame")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     type Actual = Self;
@@ -516,6 +528,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     type Type = Self;
@@ -526,6 +539,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     type Actual = Self;
@@ -539,6 +553,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
         self
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     type Type = Self;
@@ -553,6 +568,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
         }
     }
 }
+#[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteSize")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     type Actual = Self;

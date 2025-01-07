@@ -46,6 +46,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;
@@ -56,6 +57,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Actual = Self;
@@ -69,6 +71,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
         self
     }
 }
+#[cfg(feature = "LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Type = Self;
@@ -83,6 +86,7 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
         }
     }
 }
+#[cfg(feature = "LastUsedBeatmapDataCache")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LastUsedBeatmapDataCache {
     type Actual = Self;

@@ -40,6 +40,7 @@ for crate::System::Reflection::ProcessorArchitecture {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Reflection+ProcessorArchitecture")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::ProcessorArchitecture {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::System::Reflection::ProcessorArchitecture {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Reflection+ProcessorArchitecture")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::ProcessorArchitecture {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::System::Reflection::ProcessorArchitecture {
         self
     }
 }
+#[cfg(feature = "System+Reflection+ProcessorArchitecture")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::ProcessorArchitecture {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::System::Reflection::ProcessorArchitecture {
         }
     }
 }
+#[cfg(feature = "System+Reflection+ProcessorArchitecture")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::ProcessorArchitecture {
     type Actual = Self;

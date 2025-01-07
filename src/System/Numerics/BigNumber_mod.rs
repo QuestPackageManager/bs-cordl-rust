@@ -228,6 +228,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Type = Self;
@@ -238,6 +239,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Actual = Self;
@@ -251,6 +253,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
         self
     }
 }
+#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Type = Self;
@@ -265,6 +268,7 @@ for crate::System::Numerics::BigNumber_BigNumberBuffer {
         }
     }
 }
+#[cfg(feature = "System+Numerics+BigNumber+BigNumberBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Numerics::BigNumber_BigNumberBuffer {
     type Actual = Self;

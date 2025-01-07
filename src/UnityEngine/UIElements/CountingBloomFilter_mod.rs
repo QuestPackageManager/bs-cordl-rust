@@ -34,6 +34,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::CountingBloomFilter {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::CountingBloomFilter {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::CountingBloomFilter {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::CountingBloomFilter {
     type Actual = Self;
@@ -204,6 +208,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
     type Type = Self;
@@ -214,6 +219,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
     type Actual = Self;
@@ -227,6 +233,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
     type Type = Self;
@@ -241,6 +248,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+CountingBloomFilter+_m_Counters_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuffer {
     type Actual = Self;

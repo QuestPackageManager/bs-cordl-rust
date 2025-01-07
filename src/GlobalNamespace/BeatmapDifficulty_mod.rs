@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDiffi
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapDifficulty")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapDifficulty {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::GlobalNamespace::BeatmapDifficulty {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapDifficulty")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapDifficulty {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::GlobalNamespace::BeatmapDifficulty {
         self
     }
 }
+#[cfg(feature = "BeatmapDifficulty")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapDifficulty {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::GlobalNamespace::BeatmapDifficulty {
         }
     }
 }
+#[cfg(feature = "BeatmapDifficulty")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BeatmapDifficulty {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

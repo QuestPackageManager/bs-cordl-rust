@@ -36,6 +36,7 @@ for crate::Unity::Burst::BurstExecutionEnvironment {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+BurstExecutionEnvironment")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::BurstExecutionEnvironment {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Unity::Burst::BurstExecutionEnvironment {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+BurstExecutionEnvironment")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::BurstExecutionEnvironment {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Unity::Burst::BurstExecutionEnvironment {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+BurstExecutionEnvironment")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::BurstExecutionEnvironment {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Unity::Burst::BurstExecutionEnvironment {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+BurstExecutionEnvironment")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::BurstExecutionEnvironment {
     type Actual = Self;

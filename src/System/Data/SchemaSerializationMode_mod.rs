@@ -36,6 +36,7 @@ for crate::System::Data::SchemaSerializationMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::SchemaSerializationMode {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::System::Data::SchemaSerializationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SchemaSerializationMode {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::System::Data::SchemaSerializationMode {
         self
     }
 }
+#[cfg(feature = "System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::SchemaSerializationMode {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::System::Data::SchemaSerializationMode {
         }
     }
 }
+#[cfg(feature = "System+Data+SchemaSerializationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::SchemaSerializationMode {
     type Actual = Self;

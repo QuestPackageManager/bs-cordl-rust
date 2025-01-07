@@ -228,6 +228,7 @@ for crate::MS::Internal::Xml::XPath::Function_FunctionType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Function+FunctionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::XPath::Function_FunctionType {
     type Type = Self;
@@ -238,6 +239,7 @@ for crate::MS::Internal::Xml::XPath::Function_FunctionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Function+FunctionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::XPath::Function_FunctionType {
     type Actual = Self;
@@ -251,6 +253,7 @@ for crate::MS::Internal::Xml::XPath::Function_FunctionType {
         self
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Function+FunctionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::XPath::Function_FunctionType {
     type Type = Self;
@@ -265,6 +268,7 @@ for crate::MS::Internal::Xml::XPath::Function_FunctionType {
         }
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Function+FunctionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::XPath::Function_FunctionType {
     type Actual = Self;

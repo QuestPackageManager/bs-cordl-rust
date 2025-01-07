@@ -48,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Matrix4x4 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Matrix4x4")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Matrix4x4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Matrix4x4 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Matrix4x4")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Matrix4x4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Matrix4x4 {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Matrix4x4")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Matrix4x4 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -82,6 +85,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Matrix4x4 {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Matrix4x4")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Matrix4x4 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

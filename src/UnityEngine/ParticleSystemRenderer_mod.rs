@@ -1112,6 +1112,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Type = Self;
@@ -1122,6 +1123,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Actual = Self;
@@ -1135,6 +1137,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Type = Self;
@@ -1149,6 +1152,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemRenderer+BakeTextureOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Actual = Self;

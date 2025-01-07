@@ -38,6 +38,7 @@ for crate::System::Runtime::InteropServices::CharSet {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+CharSet")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::InteropServices::CharSet {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Runtime::InteropServices::CharSet {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+CharSet")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::InteropServices::CharSet {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Runtime::InteropServices::CharSet {
         self
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+CharSet")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::InteropServices::CharSet {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Runtime::InteropServices::CharSet {
         }
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+CharSet")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::InteropServices::CharSet {
     type Actual = Self;

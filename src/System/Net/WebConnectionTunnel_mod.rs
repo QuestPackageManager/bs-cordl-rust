@@ -383,6 +383,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Type = Self;
@@ -393,6 +394,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Actual = Self;
@@ -406,6 +408,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
         self
     }
 }
+#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Type = Self;
@@ -420,6 +423,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
         }
     }
 }
+#[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Actual = Self;

@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightmapBakeType
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightmapBakeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LightmapBake
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightmapBakeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LightmapBak
         self
     }
 }
+#[cfg(feature = "UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightmapBakeType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LightmapBake
         }
     }
 }
+#[cfg(feature = "UnityEngine+LightmapBakeType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LightmapBakeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

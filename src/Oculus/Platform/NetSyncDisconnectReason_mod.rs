@@ -39,6 +39,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::Oculus::Platform::NetSyncDisconnectReason {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::NetSyncDisconnectReason {
     type Actual = Self;

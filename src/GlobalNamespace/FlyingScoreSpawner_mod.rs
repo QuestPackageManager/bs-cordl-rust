@@ -261,6 +261,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Type = Self;
@@ -271,6 +272,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Actual = Self;
@@ -284,6 +286,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
         self
     }
 }
+#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Type = Self;
@@ -298,6 +301,7 @@ for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
         }
     }
 }
+#[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition {
     type Actual = Self;

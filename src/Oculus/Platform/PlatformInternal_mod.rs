@@ -258,6 +258,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Type = Self;
@@ -268,6 +269,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Actual = Self;
@@ -281,6 +283,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Type = Self;
@@ -295,6 +298,7 @@ for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::PlatformInternal_MessageTypeInternal {
     type Actual = Self;

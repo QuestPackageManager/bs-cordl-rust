@@ -298,6 +298,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_TextUtilities_Line
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;
@@ -308,6 +309,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Actual = Self;
@@ -321,6 +323,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Type = Self;
@@ -335,6 +338,7 @@ for crate::TMPro::TMP_TextUtilities_LineSegment {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_TextUtilities+LineSegment")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_TextUtilities_LineSegment {
     type Actual = Self;

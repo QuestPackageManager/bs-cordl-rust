@@ -72,6 +72,7 @@ for crate::System::Runtime::InteropServices::UnmanagedType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+UnmanagedType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::InteropServices::UnmanagedType {
     type Type = Self;
@@ -82,6 +83,7 @@ for crate::System::Runtime::InteropServices::UnmanagedType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+UnmanagedType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::InteropServices::UnmanagedType {
     type Actual = Self;
@@ -95,6 +97,7 @@ for crate::System::Runtime::InteropServices::UnmanagedType {
         self
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+UnmanagedType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::InteropServices::UnmanagedType {
     type Type = Self;
@@ -109,6 +112,7 @@ for crate::System::Runtime::InteropServices::UnmanagedType {
         }
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+UnmanagedType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::InteropServices::UnmanagedType {
     type Actual = Self;

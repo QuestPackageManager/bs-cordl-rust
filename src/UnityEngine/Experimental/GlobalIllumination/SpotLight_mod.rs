@@ -46,6 +46,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+SpotLight")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
     type Type = Self;
@@ -56,6 +57,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+SpotLight")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
     type Actual = Self;
@@ -69,6 +71,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+SpotLight")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
     type Type = Self;
@@ -83,6 +86,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+SpotLight")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::SpotLight {
     type Actual = Self;

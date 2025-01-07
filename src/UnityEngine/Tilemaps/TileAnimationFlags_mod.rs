@@ -38,6 +38,7 @@ for crate::UnityEngine::Tilemaps::TileAnimationFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileAnimationFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Tilemaps::TileAnimationFlags {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::Tilemaps::TileAnimationFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileAnimationFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Tilemaps::TileAnimationFlags {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::Tilemaps::TileAnimationFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileAnimationFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Tilemaps::TileAnimationFlags {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::Tilemaps::TileAnimationFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileAnimationFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Tilemaps::TileAnimationFlags {
     type Actual = Self;

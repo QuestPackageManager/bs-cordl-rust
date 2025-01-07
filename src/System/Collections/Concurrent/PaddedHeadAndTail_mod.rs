@@ -34,6 +34,7 @@ for crate::System::Collections::Concurrent::PaddedHeadAndTail {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Concurrent+PaddedHeadAndTail")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Collections::Concurrent::PaddedHeadAndTail {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::System::Collections::Concurrent::PaddedHeadAndTail {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Concurrent+PaddedHeadAndTail")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Collections::Concurrent::PaddedHeadAndTail {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::System::Collections::Concurrent::PaddedHeadAndTail {
         self
     }
 }
+#[cfg(feature = "System+Collections+Concurrent+PaddedHeadAndTail")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Collections::Concurrent::PaddedHeadAndTail {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::System::Collections::Concurrent::PaddedHeadAndTail {
         }
     }
 }
+#[cfg(feature = "System+Collections+Concurrent+PaddedHeadAndTail")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Collections::Concurrent::PaddedHeadAndTail {
     type Actual = Self;

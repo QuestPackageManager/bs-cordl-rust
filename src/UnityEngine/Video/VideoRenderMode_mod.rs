@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::VideoRend
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Video::VideoRenderMode {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::Video::VideoRenderMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Video::VideoRenderMode {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::Video::VideoRenderMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Video::VideoRenderMode {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::Video::VideoRenderMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Video::VideoRenderMode {
     type Actual = Self;

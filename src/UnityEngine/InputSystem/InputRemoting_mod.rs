@@ -39,6 +39,7 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
     type Actual = Self;
@@ -803,6 +807,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     type Type = Self;
@@ -813,6 +818,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     type Actual = Self;
@@ -826,6 +832,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     type Type = Self;
@@ -840,6 +847,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     type Actual = Self;
@@ -891,6 +899,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputRemoting_Message {
     type Type = Self;
@@ -901,6 +910,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputRemoting_Message {
     type Actual = Self;
@@ -914,6 +924,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputRemoting_Message {
     type Type = Self;
@@ -928,6 +939,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Message")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputRemoting_Message {
     type Actual = Self;
@@ -1000,6 +1012,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
     type Type = Self;
@@ -1010,6 +1023,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
     type Actual = Self;
@@ -1023,6 +1037,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
     type Type = Self;
@@ -1037,6 +1052,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
     type Actual = Self;
@@ -1330,6 +1346,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
     type Type = Self;
@@ -1340,6 +1357,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
     type Actual = Self;
@@ -1353,6 +1371,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
     type Type = Self;
@@ -1367,6 +1386,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteInputDevice")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
     type Actual = Self;
@@ -1439,6 +1459,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
     type Type = Self;
@@ -1449,6 +1470,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
     type Actual = Self;
@@ -1462,6 +1484,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
     type Type = Self;
@@ -1476,6 +1499,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoteSender")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
     type Actual = Self;
@@ -1841,6 +1865,7 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
     type Type = Self;
@@ -1851,6 +1876,7 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
     type Actual = Self;
@@ -1864,6 +1890,7 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
     type Type = Self;
@@ -1878,6 +1905,7 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
     type Actual = Self;
@@ -1942,6 +1970,7 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
     type Type = Self;
@@ -1952,6 +1981,7 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
     type Actual = Self;
@@ -1965,6 +1995,7 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
     type Type = Self;
@@ -1979,6 +2010,7 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
     type Actual = Self;

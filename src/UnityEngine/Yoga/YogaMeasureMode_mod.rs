@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Yoga::YogaMeasur
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaMeasureMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Yoga::YogaMeasureMode {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::Yoga::YogaMeasureMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaMeasureMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Yoga::YogaMeasureMode {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::Yoga::YogaMeasureMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaMeasureMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Yoga::YogaMeasureMode {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::Yoga::YogaMeasureMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Yoga+YogaMeasureMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Yoga::YogaMeasureMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

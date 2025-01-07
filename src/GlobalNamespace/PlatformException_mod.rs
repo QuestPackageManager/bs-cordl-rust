@@ -145,6 +145,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Type = Self;
@@ -155,6 +156,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Actual = Self;
@@ -168,6 +170,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
         self
     }
 }
+#[cfg(feature = "PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Type = Self;
@@ -182,6 +185,7 @@ for crate::GlobalNamespace::PlatformException_ErrorType {
         }
     }
 }
+#[cfg(feature = "PlatformException+ErrorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformException_ErrorType {
     type Actual = Self;

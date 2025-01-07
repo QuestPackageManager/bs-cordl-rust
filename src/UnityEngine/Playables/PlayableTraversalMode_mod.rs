@@ -36,6 +36,7 @@ for crate::UnityEngine::Playables::PlayableTraversalMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Playables+PlayableTraversalMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Playables::PlayableTraversalMode {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::Playables::PlayableTraversalMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Playables+PlayableTraversalMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Playables::PlayableTraversalMode {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::Playables::PlayableTraversalMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Playables+PlayableTraversalMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Playables::PlayableTraversalMode {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::Playables::PlayableTraversalMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Playables+PlayableTraversalMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Playables::PlayableTraversalMode {
     type Actual = Self;

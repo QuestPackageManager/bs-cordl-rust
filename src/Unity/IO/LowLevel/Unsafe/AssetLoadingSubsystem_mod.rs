@@ -44,6 +44,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
         self
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
         }
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+AssetLoadingSubsystem")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IO::LowLevel::Unsafe::AssetLoadingSubsystem {
     type Actual = Self;

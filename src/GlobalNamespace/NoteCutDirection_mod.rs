@@ -43,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutDirec
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteCutDirection {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::GlobalNamespace::NoteCutDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteCutDirection {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::GlobalNamespace::NoteCutDirection {
         self
     }
 }
+#[cfg(feature = "NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteCutDirection {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::GlobalNamespace::NoteCutDirection {
         }
     }
 }
+#[cfg(feature = "NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteCutDirection {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

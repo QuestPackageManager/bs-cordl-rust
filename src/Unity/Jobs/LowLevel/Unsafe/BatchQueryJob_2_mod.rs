@@ -59,6 +59,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -72,6 +73,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -88,6 +90,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
         self
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,
@@ -105,6 +108,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJob_2<CommandT, ResultT> {
         }
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJob_2")]
 unsafe impl<
     CommandT: quest_hook::libil2cpp::Type,
     ResultT: quest_hook::libil2cpp::Type,

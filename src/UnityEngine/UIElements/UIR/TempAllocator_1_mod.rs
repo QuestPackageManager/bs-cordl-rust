@@ -279,6 +279,7 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
     type Type = Self;
@@ -289,6 +290,7 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
     type Actual = Self;
@@ -302,6 +304,7 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
     type Type = Self;
@@ -316,6 +319,7 @@ for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TempAllocator_1+Page")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T> {
     type Actual = Self;

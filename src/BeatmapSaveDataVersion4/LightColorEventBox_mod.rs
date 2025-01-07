@@ -39,6 +39,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEventBox {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEventBox")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::LightColorEventBox {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEventBox {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEventBox")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::LightColorEventBox {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEventBox {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEventBox")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::LightColorEventBox {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::BeatmapSaveDataVersion4::LightColorEventBox {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightColorEventBox")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::LightColorEventBox {
     type Actual = Self;

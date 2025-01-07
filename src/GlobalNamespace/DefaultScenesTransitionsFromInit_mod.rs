@@ -180,6 +180,9 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
     type Type = Self;
@@ -190,6 +193,9 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
     type Actual = Self;
@@ -203,6 +209,9 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
         self
     }
 }
+#[cfg(
+    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
     type Type = Self;
@@ -217,6 +226,9 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
         }
     }
 }
+#[cfg(
+    feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0+__TransitionToNextScene_g__OnFinishCallback_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
     type Actual = Self;

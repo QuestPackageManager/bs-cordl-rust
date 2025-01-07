@@ -504,6 +504,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Type = Self;
@@ -514,6 +515,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Actual = Self;
@@ -527,6 +529,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Type = Self;
@@ -541,6 +544,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_PluginStorage_DataType {
     type Actual = Self;

@@ -59,6 +59,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -72,6 +73,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -88,6 +90,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -105,6 +108,7 @@ for crate::Newtonsoft::Json::Utilities::StructMultiKey_2<T1, T2> {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StructMultiKey_2")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

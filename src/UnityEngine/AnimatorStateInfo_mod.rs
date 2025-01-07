@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::AnimatorStateInf
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+AnimatorStateInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AnimatorStateInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::AnimatorStat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+AnimatorStateInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AnimatorStateInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::AnimatorSta
         self
     }
 }
+#[cfg(feature = "UnityEngine+AnimatorStateInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AnimatorStateInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::AnimatorStat
         }
     }
 }
+#[cfg(feature = "UnityEngine+AnimatorStateInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::AnimatorStateInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -272,6 +272,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextAsset_Create
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Type = Self;
@@ -282,6 +283,7 @@ for crate::UnityEngine::TextAsset_CreateOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Actual = Self;
@@ -295,6 +297,7 @@ for crate::UnityEngine::TextAsset_CreateOptions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Type = Self;
@@ -309,6 +312,7 @@ for crate::UnityEngine::TextAsset_CreateOptions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextAsset_CreateOptions {
     type Actual = Self;

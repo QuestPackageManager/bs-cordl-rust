@@ -49,6 +49,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::PointerModel {
     type Type = Self;
@@ -59,6 +60,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::PointerModel {
     type Actual = Self;
@@ -72,6 +74,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::PointerModel {
     type Type = Self;
@@ -86,6 +89,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::PointerModel {
     type Actual = Self;
@@ -393,6 +397,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
     type Type = Self;
@@ -403,6 +408,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
     type Actual = Self;
@@ -416,6 +422,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
     type Type = Self;
@@ -430,6 +437,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+UI+PointerModel+ButtonState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
     type Actual = Self;

@@ -63,6 +63,7 @@ unsafe impl<
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+ValueTuple_4")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -77,6 +78,7 @@ unsafe impl<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+ValueTuple_4")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -94,6 +96,7 @@ unsafe impl<
         self
     }
 }
+#[cfg(feature = "System+ValueTuple_4")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -112,6 +115,7 @@ unsafe impl<
         }
     }
 }
+#[cfg(feature = "System+ValueTuple_4")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

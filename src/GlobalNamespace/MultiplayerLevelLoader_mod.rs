@@ -280,6 +280,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Type = Self;
@@ -290,6 +291,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Actual = Self;
@@ -303,6 +305,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
         self
     }
 }
+#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Type = Self;
@@ -317,6 +320,7 @@ for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState
         }
     }
 }
+#[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
     type Actual = Self;

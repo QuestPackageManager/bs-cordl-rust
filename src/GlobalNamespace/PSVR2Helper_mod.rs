@@ -697,6 +697,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Type = Self;
@@ -707,6 +708,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Actual = Self;
@@ -720,6 +722,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
         self
     }
 }
+#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Type = Self;
@@ -734,6 +737,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
         }
     }
 }
+#[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Actual = Self;

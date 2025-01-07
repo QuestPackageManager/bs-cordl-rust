@@ -534,6 +534,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PauseController_PauseState {
     type Type = Self;
@@ -544,6 +545,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PauseController_PauseState {
     type Actual = Self;
@@ -557,6 +559,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
         self
     }
 }
+#[cfg(feature = "PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PauseController_PauseState {
     type Type = Self;
@@ -571,6 +574,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
         }
     }
 }
+#[cfg(feature = "PauseController+PauseState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PauseController_PauseState {
     type Actual = Self;

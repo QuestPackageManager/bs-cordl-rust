@@ -178,6 +178,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomPrePass
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePass_Mode {
     type Type = Self;
@@ -188,6 +189,7 @@ for crate::GlobalNamespace::BloomPrePass_Mode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePass_Mode {
     type Actual = Self;
@@ -201,6 +203,7 @@ for crate::GlobalNamespace::BloomPrePass_Mode {
         self
     }
 }
+#[cfg(feature = "BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePass_Mode {
     type Type = Self;
@@ -215,6 +218,7 @@ for crate::GlobalNamespace::BloomPrePass_Mode {
         }
     }
 }
+#[cfg(feature = "BloomPrePass+Mode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BloomPrePass_Mode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

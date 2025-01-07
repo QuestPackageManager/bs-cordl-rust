@@ -47,6 +47,7 @@ for crate::System::Security::AccessControl::ResourceType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::AccessControl::ResourceType {
     type Type = Self;
@@ -57,6 +58,7 @@ for crate::System::Security::AccessControl::ResourceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::AccessControl::ResourceType {
     type Actual = Self;
@@ -70,6 +72,7 @@ for crate::System::Security::AccessControl::ResourceType {
         self
     }
 }
+#[cfg(feature = "System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::AccessControl::ResourceType {
     type Type = Self;
@@ -84,6 +87,7 @@ for crate::System::Security::AccessControl::ResourceType {
         }
     }
 }
+#[cfg(feature = "System+Security+AccessControl+ResourceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::AccessControl::ResourceType {
     type Actual = Self;

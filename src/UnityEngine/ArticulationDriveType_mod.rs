@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ArticulationDriv
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ArticulationDriveType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ArticulationDriveType {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::ArticulationDriveType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ArticulationDriveType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ArticulationDriveType {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::ArticulationDriveType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ArticulationDriveType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ArticulationDriveType {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::ArticulationDriveType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ArticulationDriveType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ArticulationDriveType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

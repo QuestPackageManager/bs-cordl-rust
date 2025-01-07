@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::Instantiat
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Properties+InstantiationKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Properties::InstantiationKind {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Unity::Properties::InstantiationKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Properties+InstantiationKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Properties::InstantiationKind {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Unity::Properties::InstantiationKind {
         self
     }
 }
+#[cfg(feature = "Unity+Properties+InstantiationKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Properties::InstantiationKind {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Unity::Properties::InstantiationKind {
         }
     }
 }
+#[cfg(feature = "Unity+Properties+InstantiationKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Properties::InstantiationKind {
     type Actual = Self;

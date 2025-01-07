@@ -377,6 +377,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Type = Self;
@@ -387,6 +388,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Actual = Self;
@@ -400,6 +402,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
         self
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Type = Self;
@@ -414,6 +417,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
         }
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Actual = Self;
@@ -466,6 +470,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Type = Self;
@@ -476,6 +481,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Actual = Self;
@@ -489,6 +495,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
         self
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Type = Self;
@@ -503,6 +510,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
         }
     }
 }
+#[cfg(feature = "IndexFilter+IndexFilterRandomType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Actual = Self;

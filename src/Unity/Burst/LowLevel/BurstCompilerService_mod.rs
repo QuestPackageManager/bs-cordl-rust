@@ -178,6 +178,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Type = Self;
@@ -188,6 +189,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Actual = Self;
@@ -201,6 +203,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Type = Self;
@@ -215,6 +218,7 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Burst::LowLevel::BurstCompilerService_BurstLogType {
     type Actual = Self;

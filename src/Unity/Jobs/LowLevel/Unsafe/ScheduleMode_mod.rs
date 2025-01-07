@@ -37,6 +37,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
         self
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
         }
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode {
     type Actual = Self;

@@ -366,6 +366,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Type = Self;
@@ -376,6 +377,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Actual = Self;
@@ -389,6 +391,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
         self
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Type = Self;
@@ -403,6 +406,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
         }
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Actual = Self;
@@ -455,6 +459,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Type = Self;
@@ -465,6 +470,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Actual = Self;
@@ -478,6 +484,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
         self
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Type = Self;
@@ -492,6 +499,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
         }
     }
 }
+#[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Actual = Self;

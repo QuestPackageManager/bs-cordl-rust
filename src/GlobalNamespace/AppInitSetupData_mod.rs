@@ -106,6 +106,7 @@ for crate::GlobalNamespace::AppInitSetupData_RunMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AppInitSetupData+RunMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AppInitSetupData_RunMode {
     type Type = Self;
@@ -116,6 +117,7 @@ for crate::GlobalNamespace::AppInitSetupData_RunMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AppInitSetupData+RunMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AppInitSetupData_RunMode {
     type Actual = Self;
@@ -129,6 +131,7 @@ for crate::GlobalNamespace::AppInitSetupData_RunMode {
         self
     }
 }
+#[cfg(feature = "AppInitSetupData+RunMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AppInitSetupData_RunMode {
     type Type = Self;
@@ -143,6 +146,7 @@ for crate::GlobalNamespace::AppInitSetupData_RunMode {
         }
     }
 }
+#[cfg(feature = "AppInitSetupData+RunMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AppInitSetupData_RunMode {
     type Actual = Self;

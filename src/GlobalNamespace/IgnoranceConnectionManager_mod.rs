@@ -950,6 +950,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
     type Type = Self;
@@ -960,6 +961,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
     type Actual = Self;
@@ -973,6 +975,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
         self
     }
 }
+#[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
     type Type = Self;
@@ -987,6 +990,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
         }
     }
 }
+#[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectionState {
     type Actual = Self;

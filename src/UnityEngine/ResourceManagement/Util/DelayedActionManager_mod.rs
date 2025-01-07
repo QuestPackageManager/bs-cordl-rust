@@ -260,6 +260,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Type = Self;
@@ -270,6 +271,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Actual = Self;
@@ -283,6 +285,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
         self
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Type = Self;
@@ -297,6 +300,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
         }
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo {
     type Actual = Self;

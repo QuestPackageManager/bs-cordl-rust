@@ -46,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::ETrackedProperty
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+ETrackedPropertyError")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::ETrackedPropertyError {
     type Type = Self;
@@ -56,6 +57,7 @@ for crate::OVR::OpenVR::ETrackedPropertyError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+ETrackedPropertyError")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::ETrackedPropertyError {
     type Actual = Self;
@@ -69,6 +71,7 @@ for crate::OVR::OpenVR::ETrackedPropertyError {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+ETrackedPropertyError")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::ETrackedPropertyError {
     type Type = Self;
@@ -83,6 +86,7 @@ for crate::OVR::OpenVR::ETrackedPropertyError {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+ETrackedPropertyError")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::ETrackedPropertyError {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -43,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XPath::XPathNode
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XPath+XPathNodeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XPath::XPathNodeType {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::System::Xml::XPath::XPathNodeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XPath+XPathNodeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XPath::XPathNodeType {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::System::Xml::XPath::XPathNodeType {
         self
     }
 }
+#[cfg(feature = "System+Xml+XPath+XPathNodeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XPath::XPathNodeType {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::System::Xml::XPath::XPathNodeType {
         }
     }
 }
+#[cfg(feature = "System+Xml+XPath+XPathNodeType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::XPath::XPathNodeType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

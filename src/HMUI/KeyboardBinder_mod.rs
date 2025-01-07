@@ -275,6 +275,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::KeyboardBinder_KeyBindi
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Type = Self;
@@ -285,6 +286,7 @@ for crate::HMUI::KeyboardBinder_KeyBindingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Actual = Self;
@@ -298,6 +300,7 @@ for crate::HMUI::KeyboardBinder_KeyBindingType {
         self
     }
 }
+#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Type = Self;
@@ -312,6 +315,7 @@ for crate::HMUI::KeyboardBinder_KeyBindingType {
         }
     }
 }
+#[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::KeyboardBinder_KeyBindingType {
     type Actual = Self;

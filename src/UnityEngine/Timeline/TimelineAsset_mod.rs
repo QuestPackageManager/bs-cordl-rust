@@ -718,6 +718,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Type = Self;
@@ -728,6 +729,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Actual = Self;
@@ -741,6 +743,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Type = Self;
@@ -755,6 +758,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Actual = Self;
@@ -946,6 +950,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Type = Self;
@@ -956,6 +961,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Actual = Self;
@@ -969,6 +975,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Type = Self;
@@ -983,6 +990,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Actual = Self;
@@ -1086,6 +1094,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Type = Self;
@@ -1096,6 +1105,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Actual = Self;
@@ -1109,6 +1119,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Type = Self;
@@ -1123,6 +1134,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Actual = Self;

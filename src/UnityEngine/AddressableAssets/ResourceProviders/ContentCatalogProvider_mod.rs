@@ -179,6 +179,9 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
     type Type = Self;
@@ -189,6 +192,9 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
     type Actual = Self;
@@ -202,6 +208,9 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
     type Type = Self;
@@ -216,6 +225,9 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_DependencyHashIndex {
     type Actual = Self;

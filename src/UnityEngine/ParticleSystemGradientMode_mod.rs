@@ -39,6 +39,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngine::ParticleSystemGradientMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemGradientMode {
     type Actual = Self;

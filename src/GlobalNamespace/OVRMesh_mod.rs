@@ -261,6 +261,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMesh_Mesh
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMesh_MeshType {
     type Type = Self;
@@ -271,6 +272,7 @@ for crate::GlobalNamespace::OVRMesh_MeshType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMesh_MeshType {
     type Actual = Self;
@@ -284,6 +286,7 @@ for crate::GlobalNamespace::OVRMesh_MeshType {
         self
     }
 }
+#[cfg(feature = "OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMesh_MeshType {
     type Type = Self;
@@ -298,6 +301,7 @@ for crate::GlobalNamespace::OVRMesh_MeshType {
         }
     }
 }
+#[cfg(feature = "OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRMesh_MeshType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

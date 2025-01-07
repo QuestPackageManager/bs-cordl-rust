@@ -261,6 +261,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Type = Self;
@@ -271,6 +272,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Actual = Self;
@@ -284,6 +286,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Type = Self;
@@ -298,6 +301,7 @@ for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+TextureBlitter+BlitInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo {
     type Actual = Self;

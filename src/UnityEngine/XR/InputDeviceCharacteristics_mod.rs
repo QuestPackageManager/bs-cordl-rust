@@ -46,6 +46,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Type = Self;
@@ -56,6 +57,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Actual = Self;
@@ -69,6 +71,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
         self
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Type = Self;
@@ -83,6 +86,7 @@ for crate::UnityEngine::XR::InputDeviceCharacteristics {
         }
     }
 }
+#[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::InputDeviceCharacteristics {
     type Actual = Self;

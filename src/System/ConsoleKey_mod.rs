@@ -177,6 +177,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ConsoleKey {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+ConsoleKey")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::ConsoleKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -186,6 +187,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::ConsoleKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+ConsoleKey")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ConsoleKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -198,6 +200,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::ConsoleKey {
         self
     }
 }
+#[cfg(feature = "System+ConsoleKey")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::ConsoleKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -211,6 +214,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::ConsoleKey {
         }
     }
 }
+#[cfg(feature = "System+ConsoleKey")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::ConsoleKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

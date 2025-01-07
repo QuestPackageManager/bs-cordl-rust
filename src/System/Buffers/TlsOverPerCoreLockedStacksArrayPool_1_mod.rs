@@ -426,6 +426,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
     type Type = Self;
@@ -436,6 +437,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
     type Actual = Self;
@@ -449,6 +451,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure
         self
     }
 }
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
     type Type = Self;
@@ -463,6 +466,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure
         }
     }
 }
+#[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
     type Actual = Self;

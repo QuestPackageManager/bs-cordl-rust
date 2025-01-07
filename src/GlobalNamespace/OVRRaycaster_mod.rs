@@ -293,6 +293,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Type = Self;
@@ -303,6 +304,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Actual = Self;
@@ -316,6 +318,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
         self
     }
 }
+#[cfg(feature = "OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Type = Self;
@@ -330,6 +333,7 @@ for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
         }
     }
 }
+#[cfg(feature = "OVRRaycaster+RaycastHit")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRRaycaster_RaycastHit {
     type Actual = Self;

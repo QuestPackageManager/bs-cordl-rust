@@ -36,6 +36,7 @@ for crate::Mono::Security::Interface::AlertLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Security+Interface+AlertLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Security::Interface::AlertLevel {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Mono::Security::Interface::AlertLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Security+Interface+AlertLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Security::Interface::AlertLevel {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Mono::Security::Interface::AlertLevel {
         self
     }
 }
+#[cfg(feature = "Mono+Security+Interface+AlertLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Security::Interface::AlertLevel {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Mono::Security::Interface::AlertLevel {
         }
     }
 }
+#[cfg(feature = "Mono+Security+Interface+AlertLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Security::Interface::AlertLevel {
     type Actual = Self;

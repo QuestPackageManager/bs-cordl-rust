@@ -244,6 +244,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Interop_Error {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -253,6 +254,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::Interop_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Interop_Error {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -265,6 +267,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::Interop
         self
     }
 }
+#[cfg(feature = "Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Interop_Error {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -278,6 +281,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::Interop_
         }
     }
 }
+#[cfg(feature = "Interop+Error")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_Error {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -326,6 +330,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
@@ -336,6 +341,7 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Interop_ErrorInfo {
     type Actual = Self;
@@ -349,6 +355,7 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
         self
     }
 }
+#[cfg(feature = "Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Interop_ErrorInfo {
     type Type = Self;
@@ -363,6 +370,7 @@ for crate::GlobalNamespace::Interop_ErrorInfo {
         }
     }
 }
+#[cfg(feature = "Interop+ErrorInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::Interop_ErrorInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -791,6 +799,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Type = Self;
@@ -801,6 +810,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Actual = Self;
@@ -814,6 +824,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         self
     }
 }
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Type = Self;
@@ -828,6 +839,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
         }
     }
 }
+#[cfg(feature = "Interop+Sys+DirectoryEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Actual = Self;
@@ -917,6 +929,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
@@ -927,6 +940,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Actual = Self;
@@ -940,6 +954,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
         self
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Type = Self;
@@ -954,6 +969,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
         }
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Actual = Self;
@@ -1018,6 +1034,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Type = Self;
@@ -1028,6 +1045,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Actual = Self;
@@ -1041,6 +1059,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
         self
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Type = Self;
@@ -1055,6 +1074,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
         }
     }
 }
+#[cfg(feature = "Interop+Sys+FileStatusFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Actual = Self;
@@ -1113,6 +1133,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Type = Self;
@@ -1123,6 +1144,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Actual = Self;
@@ -1136,6 +1158,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
         self
     }
 }
+#[cfg(feature = "Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Type = Self;
@@ -1150,6 +1173,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
         }
     }
 }
+#[cfg(feature = "Interop+Sys+NodeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Actual = Self;
@@ -1212,6 +1236,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Type = Self;
@@ -1222,6 +1247,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Actual = Self;
@@ -1235,6 +1261,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
         self
     }
 }
+#[cfg(feature = "Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Type = Self;
@@ -1249,6 +1276,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
         }
     }
 }
+#[cfg(feature = "Interop+Sys+Permissions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Actual = Self;

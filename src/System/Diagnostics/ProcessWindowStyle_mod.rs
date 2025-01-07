@@ -38,6 +38,7 @@ for crate::System::Diagnostics::ProcessWindowStyle {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+ProcessWindowStyle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::ProcessWindowStyle {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Diagnostics::ProcessWindowStyle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+ProcessWindowStyle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::ProcessWindowStyle {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Diagnostics::ProcessWindowStyle {
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+ProcessWindowStyle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::ProcessWindowStyle {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Diagnostics::ProcessWindowStyle {
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+ProcessWindowStyle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::ProcessWindowStyle {
     type Actual = Self;

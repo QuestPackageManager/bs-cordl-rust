@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GradientAlphaKey
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+GradientAlphaKey")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::GradientAlphaKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::GradientAlph
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+GradientAlphaKey")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::GradientAlphaKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -55,6 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::GradientAlp
         self
     }
 }
+#[cfg(feature = "UnityEngine+GradientAlphaKey")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::GradientAlphaKey {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::GradientAlph
         }
     }
 }
+#[cfg(feature = "UnityEngine+GradientAlphaKey")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::GradientAlphaKey {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

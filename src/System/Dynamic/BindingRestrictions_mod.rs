@@ -367,6 +367,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Type = Self;
@@ -377,6 +378,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Actual = Self;
@@ -390,6 +392,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
         self
     }
 }
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Type = Self;
@@ -404,6 +407,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
         }
     }
 }
+#[cfg(feature = "System+Dynamic+BindingRestrictions+TestBuilder+AndNode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Actual = Self;

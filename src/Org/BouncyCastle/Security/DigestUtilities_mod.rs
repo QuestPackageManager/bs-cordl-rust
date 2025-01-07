@@ -251,6 +251,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Type = Self;
@@ -261,6 +262,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Actual = Self;
@@ -274,6 +276,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Type = Self;
@@ -288,6 +291,7 @@ for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::DigestUtilities_DigestAlgorithm {
     type Actual = Self;

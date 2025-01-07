@@ -172,6 +172,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Type = Self;
@@ -182,6 +183,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Actual = Self;
@@ -195,6 +197,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
         self
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Type = Self;
@@ -209,6 +212,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
         }
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Actual = Self;
@@ -260,6 +264,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Type = Self;
@@ -270,6 +275,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Actual = Self;
@@ -283,6 +289,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
         self
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Type = Self;
@@ -297,6 +304,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
         }
     }
 }
+#[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Actual = Self;

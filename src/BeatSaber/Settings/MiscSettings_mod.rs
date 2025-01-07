@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::MiscSett
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::MiscSettings {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::BeatSaber::Settings::MiscSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::MiscSettings {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::BeatSaber::Settings::MiscSettings {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::MiscSettings {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::BeatSaber::Settings::MiscSettings {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::MiscSettings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -137,6 +141,7 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
     type Type = Self;
@@ -147,6 +152,7 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
     type Actual = Self;
@@ -160,6 +166,7 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
     type Type = Self;
@@ -174,6 +181,7 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+MiscSettings+ResponseLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
     type Actual = Self;

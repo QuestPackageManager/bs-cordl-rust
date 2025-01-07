@@ -133,6 +133,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Type = Self;
@@ -143,6 +144,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Actual = Self;
@@ -156,6 +158,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Type = Self;
@@ -170,6 +173,7 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode {
     type Actual = Self;

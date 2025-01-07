@@ -124,6 +124,7 @@ for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
     type Type = Self;
@@ -134,6 +135,7 @@ for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
     type Actual = Self;
@@ -147,6 +149,7 @@ for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
         self
     }
 }
+#[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
     type Type = Self;
@@ -161,6 +164,7 @@ for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
         }
     }
 }
+#[cfg(feature = "OVRMeshJobs+NativeArrayHelper_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
     type Actual = Self;
@@ -290,6 +294,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
     type Type = Self;
@@ -300,6 +305,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
     type Actual = Self;
@@ -313,6 +319,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
         self
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
     type Type = Self;
@@ -327,6 +334,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
         }
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformToUnitySpaceJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
     type Actual = Self;
@@ -417,6 +425,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
     type Type = Self;
@@ -427,6 +436,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
     type Actual = Self;
@@ -440,6 +450,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
         self
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
     type Type = Self;
@@ -454,6 +465,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
         }
     }
 }
+#[cfg(feature = "OVRMeshJobs+TransformTrianglesJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
     type Actual = Self;

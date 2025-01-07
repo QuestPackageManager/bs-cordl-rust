@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Inde
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+IndexFilter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::IndexFilter {
     type Type = Self;
@@ -51,6 +52,7 @@ for crate::BeatmapSaveDataVersion4::IndexFilter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+IndexFilter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::IndexFilter {
     type Actual = Self;
@@ -64,6 +66,7 @@ for crate::BeatmapSaveDataVersion4::IndexFilter {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+IndexFilter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::IndexFilter {
     type Type = Self;
@@ -78,6 +81,7 @@ for crate::BeatmapSaveDataVersion4::IndexFilter {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+IndexFilter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::IndexFilter {
     type Actual = Self;

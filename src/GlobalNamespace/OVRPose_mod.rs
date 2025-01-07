@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPose {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPose")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::OVRPose 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPose")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -55,6 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::OVRPose
         self
     }
 }
+#[cfg(feature = "OVRPose")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::OVRPose 
         }
     }
 }
+#[cfg(feature = "OVRPose")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

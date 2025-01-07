@@ -1064,6 +1064,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Type = Self;
@@ -1074,6 +1075,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Actual = Self;
@@ -1087,6 +1089,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
         self
     }
 }
+#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Type = Self;
@@ -1101,6 +1104,7 @@ for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
         }
     }
 }
+#[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XsdValidatingReader_ValidatingReaderState {
     type Actual = Self;

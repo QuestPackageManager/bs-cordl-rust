@@ -38,6 +38,7 @@ for crate::UnityEngine::InputSystem::PlayerNotifications {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PlayerNotifications")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::PlayerNotifications {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::InputSystem::PlayerNotifications {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PlayerNotifications")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::PlayerNotifications {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::InputSystem::PlayerNotifications {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PlayerNotifications")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::PlayerNotifications {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::InputSystem::PlayerNotifications {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+PlayerNotifications")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::PlayerNotifications {
     type Actual = Self;

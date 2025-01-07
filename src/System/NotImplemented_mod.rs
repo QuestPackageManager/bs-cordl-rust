@@ -38,13 +38,11 @@ impl std::ops::DerefMut for crate::System::NotImplemented {
 }
 #[cfg(feature = "System+NotImplemented")]
 impl crate::System::NotImplemented {
-    pub fn ByDesignWithMessage(
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
+    pub fn get_ByDesign() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ByDesignWithMessage", (message))?;
+            .invoke("get_ByDesign", ())?;
         Ok(__cordl_ret.into())
     }
 }

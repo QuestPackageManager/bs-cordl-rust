@@ -38,6 +38,7 @@ for crate::UnityEngine::ResourceManagement::Util::BundleSource {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BundleSource")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::BundleSource {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::ResourceManagement::Util::BundleSource {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BundleSource")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::BundleSource {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::ResourceManagement::Util::BundleSource {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BundleSource")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::BundleSource {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::ResourceManagement::Util::BundleSource {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+BundleSource")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::BundleSource {
     type Actual = Self;

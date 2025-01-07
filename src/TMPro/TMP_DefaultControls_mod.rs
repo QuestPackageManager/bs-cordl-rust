@@ -189,6 +189,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_DefaultControls_Re
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TMPro::TMP_DefaultControls_Resources {
     type Type = Self;
@@ -199,6 +200,7 @@ for crate::TMPro::TMP_DefaultControls_Resources {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::TMP_DefaultControls_Resources {
     type Actual = Self;
@@ -212,6 +214,7 @@ for crate::TMPro::TMP_DefaultControls_Resources {
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TMPro::TMP_DefaultControls_Resources {
     type Type = Self;
@@ -226,6 +229,7 @@ for crate::TMPro::TMP_DefaultControls_Resources {
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TMPro::TMP_DefaultControls_Resources {
     type Actual = Self;

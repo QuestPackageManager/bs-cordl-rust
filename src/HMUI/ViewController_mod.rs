@@ -524,6 +524,7 @@ for crate::HMUI::ViewController_AnimationDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ViewController_AnimationDirection {
     type Type = Self;
@@ -534,6 +535,7 @@ for crate::HMUI::ViewController_AnimationDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ViewController_AnimationDirection {
     type Actual = Self;
@@ -547,6 +549,7 @@ for crate::HMUI::ViewController_AnimationDirection {
         self
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ViewController_AnimationDirection {
     type Type = Self;
@@ -561,6 +564,7 @@ for crate::HMUI::ViewController_AnimationDirection {
         }
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::ViewController_AnimationDirection {
     type Actual = Self;
@@ -612,6 +616,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewController_Animatio
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::ViewController_AnimationType {
     type Type = Self;
@@ -622,6 +627,7 @@ for crate::HMUI::ViewController_AnimationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::ViewController_AnimationType {
     type Actual = Self;
@@ -635,6 +641,7 @@ for crate::HMUI::ViewController_AnimationType {
         self
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::ViewController_AnimationType {
     type Type = Self;
@@ -649,6 +656,7 @@ for crate::HMUI::ViewController_AnimationType {
         }
     }
 }
+#[cfg(feature = "HMUI+ViewController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::ViewController_AnimationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

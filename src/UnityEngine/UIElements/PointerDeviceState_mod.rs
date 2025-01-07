@@ -201,6 +201,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Type = Self;
@@ -211,6 +212,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Actual = Self;
@@ -224,6 +226,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Type = Self;
@@ -238,6 +241,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Actual = Self;
@@ -291,6 +295,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Type = Self;
@@ -301,6 +306,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Actual = Self;
@@ -314,6 +320,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Type = Self;
@@ -328,6 +335,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Actual = Self;

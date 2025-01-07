@@ -798,6 +798,7 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Type = Self;
@@ -808,6 +809,7 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Actual = Self;
@@ -821,6 +823,7 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Type = Self;
@@ -835,6 +838,7 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Actual = Self;

@@ -220,6 +220,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Type = Self;
@@ -230,6 +231,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Actual = Self;
@@ -243,6 +245,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
         self
     }
 }
+#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Type = Self;
@@ -257,6 +260,7 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndState
         }
     }
 }
+#[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
     type Actual = Self;

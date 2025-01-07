@@ -221,6 +221,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Type = Self;
@@ -231,6 +232,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Actual = Self;
@@ -244,6 +246,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Type = Self;
@@ -258,6 +261,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Actual = Self;
@@ -321,6 +325,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Type = Self;
@@ -331,6 +336,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Actual = Self;
@@ -344,6 +350,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Type = Self;
@@ -358,6 +365,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Actual = Self;
@@ -439,6 +447,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Type = Self;
@@ -449,6 +458,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Actual = Self;
@@ -462,6 +472,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Type = Self;
@@ -476,6 +487,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Actual = Self;

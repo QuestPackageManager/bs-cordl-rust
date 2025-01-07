@@ -1565,6 +1565,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1578,6 +1579,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1594,6 +1596,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
         self
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1611,6 +1614,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
         }
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Entry")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1712,6 +1716,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1725,6 +1730,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1741,6 +1747,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         self
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1758,6 +1765,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         }
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3066,6 +3074,7 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3082,6 +3091,7 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3101,6 +3111,7 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         self
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3121,6 +3132,7 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         }
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3413,6 +3425,7 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3429,6 +3442,7 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3448,6 +3462,7 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
         self
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -3468,6 +3483,7 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
         }
     }
 }
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

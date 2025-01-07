@@ -1595,6 +1595,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Type = Self;
@@ -1605,6 +1606,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Actual = Self;
@@ -1618,6 +1620,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Type = Self;
@@ -1632,6 +1635,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XsdBuilder_State {
     type Actual = Self;

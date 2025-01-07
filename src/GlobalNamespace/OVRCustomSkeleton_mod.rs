@@ -200,6 +200,7 @@ for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRCustomSkeleton+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
     type Type = Self;
@@ -210,6 +211,7 @@ for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRCustomSkeleton+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
     type Actual = Self;
@@ -223,6 +225,7 @@ for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
         self
     }
 }
+#[cfg(feature = "OVRCustomSkeleton+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
     type Type = Self;
@@ -237,6 +240,7 @@ for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
         }
     }
 }
+#[cfg(feature = "OVRCustomSkeleton+RetargetingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType {
     type Actual = Self;

@@ -173,6 +173,7 @@ for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier+ModifierAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
     type Type = Self;
@@ -183,6 +184,7 @@ for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier+ModifierAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
     type Actual = Self;
@@ -196,6 +198,7 @@ for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier+ModifierAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
     type Type = Self;
@@ -210,6 +213,7 @@ for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier+ModifierAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction {
     type Actual = Self;

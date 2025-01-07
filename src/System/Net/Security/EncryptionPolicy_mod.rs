@@ -37,6 +37,7 @@ for crate::System::Net::Security::EncryptionPolicy {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+Security+EncryptionPolicy")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Security::EncryptionPolicy {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::Net::Security::EncryptionPolicy {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+Security+EncryptionPolicy")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Security::EncryptionPolicy {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::Net::Security::EncryptionPolicy {
         self
     }
 }
+#[cfg(feature = "System+Net+Security+EncryptionPolicy")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Security::EncryptionPolicy {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::Net::Security::EncryptionPolicy {
         }
     }
 }
+#[cfg(feature = "System+Net+Security+EncryptionPolicy")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Security::EncryptionPolicy {
     type Actual = Self;

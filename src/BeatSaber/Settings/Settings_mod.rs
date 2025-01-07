@@ -43,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::Settings
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+Settings")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::Settings::Settings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -52,6 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::Settings::Sett
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+Settings")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::Settings::Settings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,6 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::Settings::Set
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+Settings")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::Settings::Settings {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,6 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::Settings::Sett
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+Settings")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::Settings::Settings {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

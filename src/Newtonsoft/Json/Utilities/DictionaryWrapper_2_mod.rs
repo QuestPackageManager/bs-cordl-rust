@@ -1007,6 +1007,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1027,6 +1028,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1050,6 +1052,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1074,6 +1077,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+DictionaryEnumerator_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

@@ -39,6 +39,7 @@ for crate::UnityEngine::RuntimeInitializeLoadType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RuntimeInitializeLoadType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RuntimeInitializeLoadType {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngine::RuntimeInitializeLoadType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RuntimeInitializeLoadType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RuntimeInitializeLoadType {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngine::RuntimeInitializeLoadType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+RuntimeInitializeLoadType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RuntimeInitializeLoadType {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngine::RuntimeInitializeLoadType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+RuntimeInitializeLoadType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::RuntimeInitializeLoadType {
     type Actual = Self;

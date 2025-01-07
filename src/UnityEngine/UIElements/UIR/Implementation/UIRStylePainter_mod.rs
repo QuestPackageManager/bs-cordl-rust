@@ -747,6 +747,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Closing
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {
     type Type = Self;
@@ -757,6 +758,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Closing
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {
     type Actual = Self;
@@ -770,6 +772,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Closing
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {
     type Type = Self;
@@ -784,6 +787,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Closing
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+ClosingInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo {
     type Actual = Self;
@@ -862,6 +866,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
     type Type = Self;
@@ -872,6 +877,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
     type Actual = Self;
@@ -885,6 +891,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
     type Type = Self;
@@ -899,6 +906,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+Entry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
     type Actual = Self;
@@ -966,6 +974,9 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatR
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {
     type Type = Self;
@@ -976,6 +987,9 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatR
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {
     type Actual = Self;
@@ -989,6 +1003,9 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatR
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {
     type Type = Self;
@@ -1003,6 +1020,9 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatR
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter+RepeatRectUV"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV {
     type Actual = Self;

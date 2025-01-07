@@ -49,6 +49,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::QualityS
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
@@ -59,6 +60,7 @@ for crate::BeatSaber::Settings::QualitySettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings {
     type Actual = Self;
@@ -72,6 +74,7 @@ for crate::BeatSaber::Settings::QualitySettings {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings {
     type Type = Self;
@@ -86,6 +89,7 @@ for crate::BeatSaber::Settings::QualitySettings {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings {
     type Actual = Self;
@@ -159,6 +163,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Type = Self;
@@ -169,6 +174,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Actual = Self;
@@ -182,6 +188,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Type = Self;
@@ -196,6 +203,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Actual = Self;
@@ -248,6 +256,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Type = Self;
@@ -258,6 +267,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Actual = Self;
@@ -271,6 +281,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Type = Self;
@@ -285,6 +296,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Actual = Self;
@@ -338,6 +350,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Type = Self;
@@ -348,6 +361,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Actual = Self;
@@ -361,6 +375,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Type = Self;
@@ -375,6 +390,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Actual = Self;
@@ -427,6 +443,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Type = Self;
@@ -437,6 +454,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Actual = Self;
@@ -450,6 +468,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Type = Self;
@@ -464,6 +483,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Actual = Self;

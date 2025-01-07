@@ -167,6 +167,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Type = Self;
@@ -177,6 +178,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Actual = Self;
@@ -190,6 +192,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Type = Self;
@@ -204,6 +207,7 @@ for crate::LiteNetLib::ReliableChannel_PendingPacket {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+ReliableChannel+PendingPacket")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::ReliableChannel_PendingPacket {
     type Actual = Self;

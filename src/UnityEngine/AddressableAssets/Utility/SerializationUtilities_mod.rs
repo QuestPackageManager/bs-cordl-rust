@@ -143,6 +143,9 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
     type Type = Self;
@@ -153,6 +156,9 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
     type Actual = Self;
@@ -166,6 +172,9 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
     type Type = Self;
@@ -180,6 +189,9 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType {
     type Actual = Self;

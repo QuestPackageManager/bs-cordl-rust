@@ -136,6 +136,7 @@ for crate::System::Globalization::HebrewNumber_HS {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::HebrewNumber_HS {
     type Type = Self;
@@ -146,6 +147,7 @@ for crate::System::Globalization::HebrewNumber_HS {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::HebrewNumber_HS {
     type Actual = Self;
@@ -159,6 +161,7 @@ for crate::System::Globalization::HebrewNumber_HS {
         self
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::HebrewNumber_HS {
     type Type = Self;
@@ -173,6 +176,7 @@ for crate::System::Globalization::HebrewNumber_HS {
         }
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HS")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::HebrewNumber_HS {
     type Actual = Self;
@@ -233,6 +237,7 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::HebrewNumber_HebrewToken {
     type Type = Self;
@@ -243,6 +248,7 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::HebrewNumber_HebrewToken {
     type Actual = Self;
@@ -256,6 +262,7 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
         self
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::HebrewNumber_HebrewToken {
     type Type = Self;
@@ -270,6 +277,7 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
         }
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewToken")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::HebrewNumber_HebrewToken {
     type Actual = Self;
@@ -320,6 +328,7 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::HebrewNumber_HebrewValue {
     type Type = Self;
@@ -330,6 +339,7 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::HebrewNumber_HebrewValue {
     type Actual = Self;
@@ -343,6 +353,7 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
         self
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::HebrewNumber_HebrewValue {
     type Type = Self;
@@ -357,6 +368,7 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
         }
     }
 }
+#[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::HebrewNumber_HebrewValue {
     type Actual = Self;

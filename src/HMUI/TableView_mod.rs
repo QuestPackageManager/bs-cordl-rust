@@ -1048,6 +1048,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_ScrollPositio
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::TableView_ScrollPositionType {
     type Type = Self;
@@ -1058,6 +1059,7 @@ for crate::HMUI::TableView_ScrollPositionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::TableView_ScrollPositionType {
     type Actual = Self;
@@ -1071,6 +1073,7 @@ for crate::HMUI::TableView_ScrollPositionType {
         self
     }
 }
+#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::TableView_ScrollPositionType {
     type Type = Self;
@@ -1085,6 +1088,7 @@ for crate::HMUI::TableView_ScrollPositionType {
         }
     }
 }
+#[cfg(feature = "HMUI+TableView+ScrollPositionType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::TableView_ScrollPositionType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1134,6 +1138,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_TableType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::TableView_TableType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1143,6 +1148,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::TableView_TableType
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::TableView_TableType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1155,6 +1161,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::TableView_TableTyp
         self
     }
 }
+#[cfg(feature = "HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::TableView_TableType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1168,6 +1175,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::TableView_TableType
         }
     }
 }
+#[cfg(feature = "HMUI+TableView+TableType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::TableView_TableType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

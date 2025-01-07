@@ -50,6 +50,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeTypeInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
     type Type = Self;
@@ -60,6 +61,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeTypeInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
     type Actual = Self;
@@ -73,6 +75,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeTypeInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
     type Type = Self;
@@ -87,6 +90,7 @@ for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeTypeInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_AttributeTypeInfo {
     type Actual = Self;

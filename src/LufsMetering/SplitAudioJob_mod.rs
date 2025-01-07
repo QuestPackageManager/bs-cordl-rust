@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::SplitAudioJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LufsMetering+SplitAudioJob")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::SplitAudioJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LufsMetering::SplitAudioJ
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LufsMetering+SplitAudioJob")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LufsMetering::SplitAudioJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LufsMetering::SplitAudio
         self
     }
 }
+#[cfg(feature = "LufsMetering+SplitAudioJob")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::SplitAudioJob {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LufsMetering::SplitAudioJ
         }
     }
 }
+#[cfg(feature = "LufsMetering+SplitAudioJob")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::SplitAudioJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -43,6 +43,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DiscLight")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DiscLight")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DiscLight")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+DiscLight")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Experimental::GlobalIllumination::DiscLight {
     type Actual = Self;

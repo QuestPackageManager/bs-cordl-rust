@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IOOperation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+IOOperation")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::IOOperation {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::IOOperation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+IOOperation")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IOOperation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IOOperation {
         self
     }
 }
+#[cfg(feature = "System+IOOperation")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::IOOperation {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::IOOperation {
         }
     }
 }
+#[cfg(feature = "System+IOOperation")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::IOOperation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

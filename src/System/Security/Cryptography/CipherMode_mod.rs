@@ -39,6 +39,7 @@ for crate::System::Security::Cryptography::CipherMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::CipherMode {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::System::Security::Cryptography::CipherMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::CipherMode {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::System::Security::Cryptography::CipherMode {
         self
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::CipherMode {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::System::Security::Cryptography::CipherMode {
         }
     }
 }
+#[cfg(feature = "System+Security+Cryptography+CipherMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::CipherMode {
     type Actual = Self;

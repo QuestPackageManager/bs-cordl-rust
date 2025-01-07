@@ -855,6 +855,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Type = Self;
@@ -865,6 +866,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Actual = Self;
@@ -878,6 +880,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Type = Self;
@@ -892,6 +895,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Actual = Self;
@@ -953,6 +957,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Type = Self;
@@ -963,6 +968,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Actual = Self;
@@ -976,6 +982,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Type = Self;
@@ -990,6 +997,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Actual = Self;

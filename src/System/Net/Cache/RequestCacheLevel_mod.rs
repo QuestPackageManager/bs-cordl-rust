@@ -41,6 +41,7 @@ for crate::System::Net::Cache::RequestCacheLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+Cache+RequestCacheLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Cache::RequestCacheLevel {
     type Type = Self;
@@ -51,6 +52,7 @@ for crate::System::Net::Cache::RequestCacheLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+Cache+RequestCacheLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Cache::RequestCacheLevel {
     type Actual = Self;
@@ -64,6 +66,7 @@ for crate::System::Net::Cache::RequestCacheLevel {
         self
     }
 }
+#[cfg(feature = "System+Net+Cache+RequestCacheLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Cache::RequestCacheLevel {
     type Type = Self;
@@ -78,6 +81,7 @@ for crate::System::Net::Cache::RequestCacheLevel {
         }
     }
 }
+#[cfg(feature = "System+Net+Cache+RequestCacheLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Cache::RequestCacheLevel {
     type Actual = Self;

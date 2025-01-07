@@ -38,6 +38,7 @@ for crate::System::Net::TimerNode_TimerThread_TimerState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+TimerThread+TimerNode+TimerState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::TimerNode_TimerThread_TimerState {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Net::TimerNode_TimerThread_TimerState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+TimerThread+TimerNode+TimerState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::TimerNode_TimerThread_TimerState {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Net::TimerNode_TimerThread_TimerState {
         self
     }
 }
+#[cfg(feature = "System+Net+TimerThread+TimerNode+TimerState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::TimerNode_TimerThread_TimerState {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Net::TimerNode_TimerThread_TimerState {
         }
     }
 }
+#[cfg(feature = "System+Net+TimerThread+TimerNode+TimerState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::TimerNode_TimerThread_TimerState {
     type Actual = Self;

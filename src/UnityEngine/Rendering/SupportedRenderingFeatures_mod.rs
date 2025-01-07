@@ -350,6 +350,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
     type Type = Self;
@@ -360,6 +363,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
     type Actual = Self;
@@ -373,6 +379,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
     type Type = Self;
@@ -387,6 +396,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeM
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes {
     type Actual = Self;
@@ -438,6 +450,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Type = Self;
@@ -448,6 +461,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Actual = Self;
@@ -461,6 +475,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Type = Self;
@@ -475,6 +490,7 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeMod
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes {
     type Actual = Self;

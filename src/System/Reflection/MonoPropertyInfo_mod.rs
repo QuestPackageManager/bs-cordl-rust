@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MonoPrope
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::MonoPropertyInfo {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Reflection::MonoPropertyInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::MonoPropertyInfo {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Reflection::MonoPropertyInfo {
         self
     }
 }
+#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::MonoPropertyInfo {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Reflection::MonoPropertyInfo {
         }
     }
 }
+#[cfg(feature = "System+Reflection+MonoPropertyInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::MonoPropertyInfo {
     type Actual = Self;

@@ -529,6 +529,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Type = Self;
@@ -539,6 +540,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Actual = Self;
@@ -552,6 +554,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
         self
     }
 }
+#[cfg(feature = "OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Type = Self;
@@ -566,6 +569,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
         }
     }
 }
+#[cfg(feature = "OrderedSet_1+ProcessOrder")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Actual = Self;

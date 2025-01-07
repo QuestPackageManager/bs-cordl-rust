@@ -704,6 +704,7 @@ for crate::System::Diagnostics::Process_ProcInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::Process_ProcInfo {
     type Type = Self;
@@ -714,6 +715,7 @@ for crate::System::Diagnostics::Process_ProcInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::Process_ProcInfo {
     type Actual = Self;
@@ -727,6 +729,7 @@ for crate::System::Diagnostics::Process_ProcInfo {
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::Process_ProcInfo {
     type Type = Self;
@@ -741,6 +744,7 @@ for crate::System::Diagnostics::Process_ProcInfo {
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+ProcInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::Process_ProcInfo {
     type Actual = Self;
@@ -810,6 +814,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::Process_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::Process_State {
     type Type = Self;
@@ -820,6 +825,7 @@ for crate::System::Diagnostics::Process_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::Process_State {
     type Actual = Self;
@@ -833,6 +839,7 @@ for crate::System::Diagnostics::Process_State {
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::Process_State {
     type Type = Self;
@@ -847,6 +854,7 @@ for crate::System::Diagnostics::Process_State {
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+State")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Diagnostics::Process_State {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -898,6 +906,7 @@ for crate::System::Diagnostics::Process_StreamReadMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Diagnostics::Process_StreamReadMode {
     type Type = Self;
@@ -908,6 +917,7 @@ for crate::System::Diagnostics::Process_StreamReadMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Diagnostics::Process_StreamReadMode {
     type Actual = Self;
@@ -921,6 +931,7 @@ for crate::System::Diagnostics::Process_StreamReadMode {
         self
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Diagnostics::Process_StreamReadMode {
     type Type = Self;
@@ -935,6 +946,7 @@ for crate::System::Diagnostics::Process_StreamReadMode {
         }
     }
 }
+#[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Diagnostics::Process_StreamReadMode {
     type Actual = Self;

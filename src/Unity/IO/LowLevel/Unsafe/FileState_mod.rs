@@ -36,6 +36,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::LowLevel::Unsafe::FileState {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::LowLevel::Unsafe::FileState {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileState {
         self
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::LowLevel::Unsafe::FileState {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Unity::IO::LowLevel::Unsafe::FileState {
         }
     }
 }
+#[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IO::LowLevel::Unsafe::FileState {
     type Actual = Self;

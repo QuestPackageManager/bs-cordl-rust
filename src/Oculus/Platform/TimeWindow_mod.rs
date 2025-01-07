@@ -39,6 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::TimeWindow 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+TimeWindow")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::TimeWindow {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,6 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::TimeWin
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+TimeWindow")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::TimeWindow {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,6 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Oculus::Platform::TimeWi
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+TimeWindow")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::TimeWindow {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,6 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::TimeWin
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+TimeWindow")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::TimeWindow {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

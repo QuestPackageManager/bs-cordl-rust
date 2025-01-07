@@ -48,6 +48,7 @@ for crate::GlobalNamespace::OVRTask_1<TResult> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     type Type = Self;
@@ -58,6 +59,7 @@ for crate::GlobalNamespace::OVRTask_1<TResult> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     type Actual = Self;
@@ -71,6 +73,7 @@ for crate::GlobalNamespace::OVRTask_1<TResult> {
         self
     }
 }
+#[cfg(feature = "OVRTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     type Type = Self;
@@ -85,6 +88,7 @@ for crate::GlobalNamespace::OVRTask_1<TResult> {
         }
     }
 }
+#[cfg(feature = "OVRTask_1")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     type Actual = Self;
@@ -553,6 +557,7 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTask_1+Awaiter")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
     type Type = Self;
@@ -563,6 +568,7 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTask_1+Awaiter")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
     type Actual = Self;
@@ -576,6 +582,7 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
         self
     }
 }
+#[cfg(feature = "OVRTask_1+Awaiter")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
     type Type = Self;
@@ -590,6 +597,7 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
         }
     }
 }
+#[cfg(feature = "OVRTask_1+Awaiter")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
     type Actual = Self;
@@ -743,6 +751,7 @@ for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTask_1+Callback")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
     type Type = Self;
@@ -753,6 +762,7 @@ for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTask_1+Callback")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
     type Actual = Self;
@@ -766,6 +776,7 @@ for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
         self
     }
 }
+#[cfg(feature = "OVRTask_1+Callback")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
     type Type = Self;
@@ -780,6 +791,7 @@ for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
         }
     }
 }
+#[cfg(feature = "OVRTask_1+Callback")]
 unsafe impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
     type Actual = Self;
@@ -1237,6 +1249,7 @@ for crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<TResult, T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTask_1+CallbackWithState_1")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
@@ -1250,6 +1263,7 @@ for crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<TResult, T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTask_1+CallbackWithState_1")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
@@ -1266,6 +1280,7 @@ for crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<TResult, T> {
         self
     }
 }
+#[cfg(feature = "OVRTask_1+CallbackWithState_1")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
@@ -1283,6 +1298,7 @@ for crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<TResult, T> {
         }
     }
 }
+#[cfg(feature = "OVRTask_1+CallbackWithState_1")]
 unsafe impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,

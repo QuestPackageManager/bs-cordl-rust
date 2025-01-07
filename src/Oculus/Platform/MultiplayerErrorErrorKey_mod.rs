@@ -46,6 +46,7 @@ for crate::Oculus::Platform::MultiplayerErrorErrorKey {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+MultiplayerErrorErrorKey")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::MultiplayerErrorErrorKey {
     type Type = Self;
@@ -56,6 +57,7 @@ for crate::Oculus::Platform::MultiplayerErrorErrorKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+MultiplayerErrorErrorKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::MultiplayerErrorErrorKey {
     type Actual = Self;
@@ -69,6 +71,7 @@ for crate::Oculus::Platform::MultiplayerErrorErrorKey {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+MultiplayerErrorErrorKey")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::MultiplayerErrorErrorKey {
     type Type = Self;
@@ -83,6 +86,7 @@ for crate::Oculus::Platform::MultiplayerErrorErrorKey {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+MultiplayerErrorErrorKey")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::MultiplayerErrorErrorKey {
     type Actual = Self;

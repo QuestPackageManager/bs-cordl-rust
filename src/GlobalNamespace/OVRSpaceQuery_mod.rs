@@ -94,6 +94,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Type = Self;
@@ -104,6 +105,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Actual = Self;
@@ -117,6 +119,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
         self
     }
 }
+#[cfg(feature = "OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Type = Self;
@@ -131,6 +134,7 @@ for crate::GlobalNamespace::OVRSpaceQuery_Options {
         }
     }
 }
+#[cfg(feature = "OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSpaceQuery_Options {
     type Actual = Self;

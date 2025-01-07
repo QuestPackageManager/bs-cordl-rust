@@ -42,6 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_FontStyleStack {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+TMP_FontStyleStack")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_FontStyleStack {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -51,6 +52,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_FontStyleStack
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+TMP_FontStyleStack")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_FontStyleStack {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,6 +65,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_FontStyleStac
         self
     }
 }
+#[cfg(feature = "TMPro+TMP_FontStyleStack")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_FontStyleStack {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,6 +79,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_FontStyleStack
         }
     }
 }
+#[cfg(feature = "TMPro+TMP_FontStyleStack")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_FontStyleStack {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

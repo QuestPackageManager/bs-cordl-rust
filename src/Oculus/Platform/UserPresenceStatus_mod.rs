@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::UserPresenc
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+UserPresenceStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::UserPresenceStatus {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Oculus::Platform::UserPresenceStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+UserPresenceStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::UserPresenceStatus {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Oculus::Platform::UserPresenceStatus {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+UserPresenceStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::UserPresenceStatus {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Oculus::Platform::UserPresenceStatus {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+UserPresenceStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::UserPresenceStatus {
     type Actual = Self;

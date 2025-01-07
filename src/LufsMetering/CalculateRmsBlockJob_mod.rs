@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LufsMetering::CalculateRmsBlo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LufsMetering::CalculateRmsBlockJob {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::LufsMetering::CalculateRmsBlockJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LufsMetering::CalculateRmsBlockJob {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::LufsMetering::CalculateRmsBlockJob {
         self
     }
 }
+#[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LufsMetering::CalculateRmsBlockJob {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::LufsMetering::CalculateRmsBlockJob {
         }
     }
 }
+#[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LufsMetering::CalculateRmsBlockJob {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

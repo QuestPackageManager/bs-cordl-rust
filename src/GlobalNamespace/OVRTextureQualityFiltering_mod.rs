@@ -41,6 +41,7 @@ for crate::GlobalNamespace::OVRTextureQualityFiltering {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTextureQualityFiltering")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTextureQualityFiltering {
     type Type = Self;
@@ -51,6 +52,7 @@ for crate::GlobalNamespace::OVRTextureQualityFiltering {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTextureQualityFiltering")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTextureQualityFiltering {
     type Actual = Self;
@@ -64,6 +66,7 @@ for crate::GlobalNamespace::OVRTextureQualityFiltering {
         self
     }
 }
+#[cfg(feature = "OVRTextureQualityFiltering")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTextureQualityFiltering {
     type Type = Self;
@@ -78,6 +81,7 @@ for crate::GlobalNamespace::OVRTextureQualityFiltering {
         }
     }
 }
+#[cfg(feature = "OVRTextureQualityFiltering")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTextureQualityFiltering {
     type Actual = Self;

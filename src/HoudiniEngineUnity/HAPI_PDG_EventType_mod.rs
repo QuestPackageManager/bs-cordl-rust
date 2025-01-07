@@ -76,6 +76,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
     type Type = Self;
@@ -86,6 +87,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
     type Actual = Self;
@@ -99,6 +101,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
     type Type = Self;
@@ -113,6 +116,7 @@ for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HAPI_PDG_EventType {
     type Actual = Self;

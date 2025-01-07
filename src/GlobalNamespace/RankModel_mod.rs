@@ -117,6 +117,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::RankModel_Ra
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::RankModel_Rank {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -126,6 +127,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::RankMode
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::RankModel_Rank {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -138,6 +140,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::RankMod
         self
     }
 }
+#[cfg(feature = "RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::RankModel_Rank {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -151,6 +154,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::RankMode
         }
     }
 }
+#[cfg(feature = "RankModel+Rank")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::RankModel_Rank {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

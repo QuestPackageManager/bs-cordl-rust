@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityOpus::ErrorCode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityOpus+ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::ErrorCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::ErrorCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityOpus+ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::ErrorCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::ErrorCode {
         self
     }
 }
+#[cfg(feature = "UnityOpus+ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::ErrorCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::ErrorCode {
         }
     }
 }
+#[cfg(feature = "UnityOpus+ErrorCode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityOpus::ErrorCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

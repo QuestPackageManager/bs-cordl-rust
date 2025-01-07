@@ -137,6 +137,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Type = Self;
@@ -147,6 +148,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Actual = Self;
@@ -160,6 +162,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
         self
     }
 }
+#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Type = Self;
@@ -174,6 +177,7 @@ for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
         }
     }
 }
+#[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SpriteLightWithId_MultiplyColorByAlphaType {
     type Actual = Self;

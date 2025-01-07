@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::VREvent_Keyboard
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+VREvent_Keyboard_t")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VREvent_Keyboard_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::OVR::OpenVR::VREvent_Keyb
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+VREvent_Keyboard_t")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::VREvent_Keyboard_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::OVR::OpenVR::VREvent_Key
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+VREvent_Keyboard_t")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VREvent_Keyboard_t {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::OVR::OpenVR::VREvent_Keyb
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+VREvent_Keyboard_t")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::VREvent_Keyboard_t {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

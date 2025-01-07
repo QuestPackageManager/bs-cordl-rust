@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SpritePackingRot
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SpritePackingRotation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SpritePackingRotation {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::SpritePackingRotation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SpritePackingRotation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SpritePackingRotation {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::SpritePackingRotation {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SpritePackingRotation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SpritePackingRotation {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::SpritePackingRotation {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SpritePackingRotation")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SpritePackingRotation {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

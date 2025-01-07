@@ -55,6 +55,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Reflection::MethodAtt
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Reflection::MethodAttributes {
     type Type = Self;
@@ -65,6 +66,7 @@ for crate::System::Reflection::MethodAttributes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Reflection::MethodAttributes {
     type Actual = Self;
@@ -78,6 +80,7 @@ for crate::System::Reflection::MethodAttributes {
         self
     }
 }
+#[cfg(feature = "System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Reflection::MethodAttributes {
     type Type = Self;
@@ -92,6 +95,7 @@ for crate::System::Reflection::MethodAttributes {
         }
     }
 }
+#[cfg(feature = "System+Reflection+MethodAttributes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Reflection::MethodAttributes {
     type Actual = Self;

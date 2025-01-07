@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::IMECompositionMo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+IMECompositionMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::IMECompositionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::IMECompositi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+IMECompositionMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::IMECompositionMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::IMEComposit
         self
     }
 }
+#[cfg(feature = "UnityEngine+IMECompositionMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::IMECompositionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::IMECompositi
         }
     }
 }
+#[cfg(feature = "UnityEngine+IMECompositionMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::IMECompositionMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

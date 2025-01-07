@@ -248,6 +248,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Type = Self;
@@ -258,6 +259,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Actual = Self;
@@ -271,6 +273,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
         self
     }
 }
+#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Type = Self;
@@ -285,6 +288,7 @@ for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
         }
     }
 }
+#[cfg(feature = "BeatmapDataItem+BeatmapDataItemType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapDataItem_BeatmapDataItemType {
     type Actual = Self;

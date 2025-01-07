@@ -1444,6 +1444,7 @@ for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
     type Type = Self;
@@ -1454,6 +1455,7 @@ for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
     type Actual = Self;
@@ -1467,6 +1469,7 @@ for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
     type Type = Self;
@@ -1481,6 +1484,7 @@ for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+AttrInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
     type Actual = Self;
@@ -1643,6 +1647,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
     type Type = Self;
@@ -1653,6 +1658,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
     type Actual = Self;
@@ -1666,6 +1672,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
     type Type = Self;
@@ -1680,6 +1687,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ElemInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
     type Actual = Self;
@@ -1955,6 +1963,7 @@ for crate::System::Xml::XmlSqlBinaryReader_QName {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlSqlBinaryReader_QName {
     type Type = Self;
@@ -1965,6 +1974,7 @@ for crate::System::Xml::XmlSqlBinaryReader_QName {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlSqlBinaryReader_QName {
     type Actual = Self;
@@ -1978,6 +1988,7 @@ for crate::System::Xml::XmlSqlBinaryReader_QName {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlSqlBinaryReader_QName {
     type Type = Self;
@@ -1992,6 +2003,7 @@ for crate::System::Xml::XmlSqlBinaryReader_QName {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+QName")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlSqlBinaryReader_QName {
     type Actual = Self;
@@ -2184,6 +2196,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ScanState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlSqlBinaryReader_ScanState {
     type Type = Self;
@@ -2194,6 +2207,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ScanState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlSqlBinaryReader_ScanState {
     type Actual = Self;
@@ -2207,6 +2221,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ScanState {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlSqlBinaryReader_ScanState {
     type Type = Self;
@@ -2221,6 +2236,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ScanState {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlSqlBinaryReader_ScanState {
     type Actual = Self;
@@ -2279,6 +2295,7 @@ for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
     type Type = Self;
@@ -2289,6 +2306,7 @@ for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
     type Actual = Self;
@@ -2302,6 +2320,7 @@ for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
     type Type = Self;
@@ -2316,6 +2335,7 @@ for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlSqlBinaryReader+SymbolTables")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
     type Actual = Self;

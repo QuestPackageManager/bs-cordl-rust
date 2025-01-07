@@ -223,6 +223,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Type = Self;
@@ -233,6 +234,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Actual = Self;
@@ -246,6 +248,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
         self
     }
 }
+#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Type = Self;
@@ -260,6 +263,7 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
         }
     }
 }
+#[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BloomPrePassNonLightPass_ExecutionTimeType {
     type Actual = Self;

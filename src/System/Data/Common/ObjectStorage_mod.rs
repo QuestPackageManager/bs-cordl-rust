@@ -383,6 +383,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::Common::ObjectStorage_Families {
     type Type = Self;
@@ -393,6 +394,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::Common::ObjectStorage_Families {
     type Actual = Self;
@@ -406,6 +408,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
         self
     }
 }
+#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::Common::ObjectStorage_Families {
     type Type = Self;
@@ -420,6 +423,7 @@ for crate::System::Data::Common::ObjectStorage_Families {
         }
     }
 }
+#[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::Common::ObjectStorage_Families {
     type Actual = Self;

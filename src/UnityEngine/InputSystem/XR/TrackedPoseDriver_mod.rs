@@ -620,6 +620,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Type = Self;
@@ -630,6 +631,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Actual = Self;
@@ -643,6 +645,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Type = Self;
@@ -657,6 +660,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingStates")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Actual = Self;
@@ -709,6 +713,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Type = Self;
@@ -719,6 +724,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Actual = Self;
@@ -732,6 +738,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Type = Self;
@@ -746,6 +753,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+TrackingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Actual = Self;
@@ -798,6 +806,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Type = Self;
@@ -808,6 +817,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Actual = Self;
@@ -821,6 +831,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Type = Self;
@@ -835,6 +846,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+TrackedPoseDriver+UpdateType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Actual = Self;

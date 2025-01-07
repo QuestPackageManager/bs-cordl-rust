@@ -44,6 +44,7 @@ for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+ProfilerMarkerDataType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+ProfilerMarkerDataType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
         self
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+ProfilerMarkerDataType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
         }
     }
 }
+#[cfg(feature = "Unity+Profiling+LowLevel+ProfilerMarkerDataType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Profiling::LowLevel::ProfilerMarkerDataType {
     type Actual = Self;

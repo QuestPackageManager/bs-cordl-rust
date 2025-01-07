@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::FindObjectsSortM
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+FindObjectsSortMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::FindObjectsSortMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::FindObjectsS
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+FindObjectsSortMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::FindObjectsSortMode {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::FindObjectsSortMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+FindObjectsSortMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::FindObjectsSortMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::FindObjectsS
         }
     }
 }
+#[cfg(feature = "UnityEngine+FindObjectsSortMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::FindObjectsSortMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

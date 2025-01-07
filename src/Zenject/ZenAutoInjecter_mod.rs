@@ -194,6 +194,7 @@ for crate::Zenject::ZenAutoInjecter_ContainerSources {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::ZenAutoInjecter_ContainerSources {
     type Type = Self;
@@ -204,6 +205,7 @@ for crate::Zenject::ZenAutoInjecter_ContainerSources {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::ZenAutoInjecter_ContainerSources {
     type Actual = Self;
@@ -217,6 +219,7 @@ for crate::Zenject::ZenAutoInjecter_ContainerSources {
         self
     }
 }
+#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::ZenAutoInjecter_ContainerSources {
     type Type = Self;
@@ -231,6 +234,7 @@ for crate::Zenject::ZenAutoInjecter_ContainerSources {
         }
     }
 }
+#[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::ZenAutoInjecter_ContainerSources {
     type Actual = Self;

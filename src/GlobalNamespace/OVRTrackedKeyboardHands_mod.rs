@@ -359,6 +359,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
     type Type = Self;
@@ -369,6 +370,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
     type Actual = Self;
@@ -382,6 +384,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
         self
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
     type Type = Self;
@@ -396,6 +399,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
         }
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
     type Actual = Self;
@@ -459,6 +463,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibili
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+TrackedKeyboardHandsVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent {
     type Type = Self;
@@ -469,6 +474,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibili
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+TrackedKeyboardHandsVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent {
     type Actual = Self;
@@ -482,6 +488,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibili
         self
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+TrackedKeyboardHandsVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent {
     type Type = Self;
@@ -496,6 +503,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibili
         }
     }
 }
+#[cfg(feature = "OVRTrackedKeyboardHands+TrackedKeyboardHandsVisibilityChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibilityChangedEvent {
     type Actual = Self;

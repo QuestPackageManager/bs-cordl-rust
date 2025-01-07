@@ -37,6 +37,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
         self
     }
 }
+#[cfg(feature = "MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::MultiplayerPlayerLayout {
         }
     }
 }
+#[cfg(feature = "MultiplayerPlayerLayout")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerPlayerLayout {
     type Actual = Self;

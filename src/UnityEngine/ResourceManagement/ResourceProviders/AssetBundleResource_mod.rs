@@ -490,6 +490,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
     type Type = Self;
@@ -500,6 +503,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
     type Actual = Self;
@@ -513,6 +519,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
     type Type = Self;
@@ -527,6 +536,9 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResour
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType {
     type Actual = Self;

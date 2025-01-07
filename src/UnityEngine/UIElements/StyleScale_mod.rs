@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Styl
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleScale {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::UIElements::StyleScale {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleScale {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::UIElements::StyleScale {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleScale {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::UIElements::StyleScale {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleScale")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleScale {
     type Actual = Self;

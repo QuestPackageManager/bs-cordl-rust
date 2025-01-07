@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::ColorTween {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::ColorTween {
         self
     }
 }
+#[cfg(feature = "TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween {
         }
     }
 }
+#[cfg(feature = "TMPro+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::ColorTween {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -367,6 +371,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::ColorTween_ColorTweenM
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween_ColorTweenMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -376,6 +381,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::ColorTween_ColorTw
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TMPro::ColorTween_ColorTweenMode {
     type Actual = Self;
@@ -389,6 +395,7 @@ for crate::TMPro::ColorTween_ColorTweenMode {
         self
     }
 }
+#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween_ColorTweenMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -402,6 +409,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::ColorTween_ColorTw
         }
     }
 }
+#[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::ColorTween_ColorTweenMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

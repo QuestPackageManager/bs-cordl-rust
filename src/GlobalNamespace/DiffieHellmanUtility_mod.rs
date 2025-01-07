@@ -483,6 +483,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "DiffieHellmanUtility+KeyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
     type Type = Self;
@@ -493,6 +494,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "DiffieHellmanUtility+KeyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
     type Actual = Self;
@@ -506,6 +508,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
         self
     }
 }
+#[cfg(feature = "DiffieHellmanUtility+KeyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
     type Type = Self;
@@ -520,6 +523,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
         }
     }
 }
+#[cfg(feature = "DiffieHellmanUtility+KeyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::DiffieHellmanUtility_KeyType {
     type Actual = Self;

@@ -163,6 +163,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
     type Type = Self;
@@ -173,6 +174,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
     type Actual = Self;
@@ -186,6 +188,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
         self
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
     type Type = Self;
@@ -200,6 +203,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
         }
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+BakeMeshJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
     type Actual = Self;
@@ -288,6 +292,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     type Type = Self;
@@ -298,6 +303,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     type Actual = Self;
@@ -311,6 +317,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
         self
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     type Type = Self;
@@ -325,6 +332,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
         }
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshCountsJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     type Actual = Self;
@@ -414,6 +422,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     type Type = Self;
@@ -424,6 +433,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     type Actual = Self;
@@ -437,6 +447,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
         self
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     type Type = Self;
@@ -451,6 +462,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
         }
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+GetTriangleMeshJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     type Actual = Self;
@@ -540,6 +552,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     type Type = Self;
@@ -550,6 +563,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     type Actual = Self;
@@ -563,6 +577,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
         self
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     type Type = Self;
@@ -577,6 +592,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
         }
     }
 }
+#[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     type Actual = Self;

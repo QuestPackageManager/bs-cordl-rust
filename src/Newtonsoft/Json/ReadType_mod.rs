@@ -43,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::ReadType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+ReadType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::ReadType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -52,6 +53,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Newtonsoft::Json::ReadTyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+ReadType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::ReadType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -64,6 +66,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Newtonsoft::Json::ReadTy
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+ReadType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::ReadType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -77,6 +80,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Newtonsoft::Json::ReadTyp
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+ReadType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::ReadType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

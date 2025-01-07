@@ -961,6 +961,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Type = Self;
@@ -971,6 +972,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Actual = Self;
@@ -984,6 +986,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
         self
     }
 }
+#[cfg(feature = "GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Type = Self;
@@ -998,6 +1001,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
         }
     }
 }
+#[cfg(feature = "GameScenesManager+SceneDismissType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Actual = Self;
@@ -1051,6 +1055,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Type = Self;
@@ -1061,6 +1066,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Actual = Self;
@@ -1074,6 +1080,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
         self
     }
 }
+#[cfg(feature = "GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Type = Self;
@@ -1088,6 +1095,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
         }
     }
 }
+#[cfg(feature = "GameScenesManager+ScenePresentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Actual = Self;
@@ -1146,6 +1154,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Type = Self;
@@ -1156,6 +1165,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Actual = Self;
@@ -1169,6 +1179,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
         self
     }
 }
+#[cfg(feature = "GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Type = Self;
@@ -1183,6 +1194,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
         }
     }
 }
+#[cfg(feature = "GameScenesManager+SceneTransitionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Actual = Self;

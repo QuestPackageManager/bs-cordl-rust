@@ -479,6 +479,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SectionTableView_Sectio
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+SectionTableView+Section")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::SectionTableView_Section {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -488,6 +489,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::SectionTableView_Se
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+SectionTableView+Section")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::SectionTableView_Section {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -500,6 +502,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::SectionTableView_S
         self
     }
 }
+#[cfg(feature = "HMUI+SectionTableView+Section")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::SectionTableView_Section {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -513,6 +516,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::SectionTableView_Se
         }
     }
 }
+#[cfg(feature = "HMUI+SectionTableView+Section")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::SectionTableView_Section {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

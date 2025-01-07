@@ -270,6 +270,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Type = Self;
@@ -280,6 +281,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Actual = Self;
@@ -293,6 +295,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         self
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Type = Self;
@@ -307,6 +310,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
         }
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
     type Actual = Self;
@@ -471,6 +475,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Type = Self;
@@ -481,6 +486,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Actual = Self;
@@ -494,6 +500,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
         self
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Type = Self;
@@ -508,6 +515,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
         }
     }
 }
+#[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult {
     type Actual = Self;

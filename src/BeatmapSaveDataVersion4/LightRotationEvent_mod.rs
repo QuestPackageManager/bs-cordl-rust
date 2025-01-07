@@ -38,6 +38,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEvent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion4::LightRotationEvent {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion4::LightRotationEvent {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEvent {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion4::LightRotationEvent {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::BeatmapSaveDataVersion4::LightRotationEvent {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+LightRotationEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion4::LightRotationEvent {
     type Actual = Self;

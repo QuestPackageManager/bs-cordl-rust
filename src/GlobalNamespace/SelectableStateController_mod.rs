@@ -201,6 +201,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Type = Self;
@@ -211,6 +212,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Actual = Self;
@@ -224,6 +226,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
         self
     }
 }
+#[cfg(feature = "SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Type = Self;
@@ -238,6 +241,7 @@ for crate::GlobalNamespace::SelectableStateController_ViewState {
         }
     }
 }
+#[cfg(feature = "SelectableStateController+ViewState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SelectableStateController_ViewState {
     type Actual = Self;

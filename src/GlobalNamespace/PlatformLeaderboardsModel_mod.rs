@@ -510,6 +510,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Type = Self;
@@ -520,6 +521,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Actual = Self;
@@ -533,6 +535,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
         self
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Type = Self;
@@ -547,6 +550,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
         }
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Actual = Self;
@@ -731,6 +735,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Type = Self;
@@ -741,6 +746,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Actual = Self;
@@ -754,6 +760,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
         self
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Type = Self;
@@ -768,6 +775,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
         }
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Actual = Self;
@@ -820,6 +828,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Type = Self;
@@ -830,6 +839,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Actual = Self;
@@ -843,6 +853,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
         self
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Type = Self;
@@ -857,6 +868,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
         }
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Actual = Self;
@@ -1022,6 +1034,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Type = Self;
@@ -1032,6 +1045,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Actual = Self;
@@ -1045,6 +1059,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
         self
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Type = Self;
@@ -1059,6 +1074,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
         }
     }
 }
+#[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Actual = Self;

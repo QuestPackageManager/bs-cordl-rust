@@ -38,6 +38,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
         self
     }
 }
+#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Runtime::ConstrainedExecution::Consistency {
         }
     }
 }
+#[cfg(feature = "System+Runtime+ConstrainedExecution+Consistency")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::ConstrainedExecution::Consistency {
     type Actual = Self;

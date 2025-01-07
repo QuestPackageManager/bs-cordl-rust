@@ -516,6 +516,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -526,6 +527,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -539,6 +541,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
         self
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Type = Self;
@@ -553,6 +556,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
         }
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Actual = Self;
@@ -676,6 +680,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Type = Self;
@@ -686,6 +691,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Actual = Self;
@@ -699,6 +705,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         self
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Type = Self;
@@ -713,6 +720,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
         }
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SkeletonRendererData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Actual = Self;
@@ -856,6 +864,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -866,6 +875,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Actual = Self;
@@ -879,6 +889,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
         self
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Type = Self;
@@ -893,6 +904,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
         }
     }
 }
+#[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Actual = Self;

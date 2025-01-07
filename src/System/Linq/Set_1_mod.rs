@@ -226,6 +226,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Type = Self;
@@ -236,6 +237,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Actual = Self;
@@ -249,6 +251,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
         self
     }
 }
+#[cfg(feature = "System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Type = Self;
@@ -263,6 +266,7 @@ for crate::System::Linq::Set_1_Slot<TElement> {
         }
     }
 }
+#[cfg(feature = "System+Linq+Set_1+Slot")]
 unsafe impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::System::Linq::Set_1_Slot<TElement> {
     type Actual = Self;

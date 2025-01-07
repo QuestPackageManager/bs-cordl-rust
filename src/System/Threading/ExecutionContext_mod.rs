@@ -554,6 +554,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Type = Self;
@@ -564,6 +565,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Actual = Self;
@@ -577,6 +579,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
         self
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Type = Self;
@@ -591,6 +594,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
         }
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Actual = Self;
@@ -644,6 +648,7 @@ for crate::System::Threading::ExecutionContext_Flags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ExecutionContext_Flags {
     type Type = Self;
@@ -654,6 +659,7 @@ for crate::System::Threading::ExecutionContext_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ExecutionContext_Flags {
     type Actual = Self;
@@ -667,6 +673,7 @@ for crate::System::Threading::ExecutionContext_Flags {
         self
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ExecutionContext_Flags {
     type Type = Self;
@@ -681,6 +688,7 @@ for crate::System::Threading::ExecutionContext_Flags {
         }
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ExecutionContext_Flags {
     type Actual = Self;
@@ -730,6 +738,7 @@ for crate::System::Threading::ExecutionContext_Reader {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ExecutionContext_Reader {
     type Type = Self;
@@ -740,6 +749,7 @@ for crate::System::Threading::ExecutionContext_Reader {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ExecutionContext_Reader {
     type Actual = Self;
@@ -753,6 +763,7 @@ for crate::System::Threading::ExecutionContext_Reader {
         self
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ExecutionContext_Reader {
     type Type = Self;
@@ -767,6 +778,7 @@ for crate::System::Threading::ExecutionContext_Reader {
         }
     }
 }
+#[cfg(feature = "System+Threading+ExecutionContext+Reader")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ExecutionContext_Reader {
     type Actual = Self;

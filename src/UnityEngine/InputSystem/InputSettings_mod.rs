@@ -554,6 +554,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Type = Self;
@@ -564,6 +565,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Actual = Self;
@@ -577,6 +579,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Type = Self;
@@ -591,6 +594,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+BackgroundBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Actual = Self;
@@ -643,6 +647,7 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Type = Self;
@@ -653,6 +658,7 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Actual = Self;
@@ -666,6 +672,7 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Type = Self;
@@ -680,6 +687,7 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
     type Actual = Self;
@@ -732,6 +740,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Type = Self;
@@ -742,6 +751,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Actual = Self;
@@ -755,6 +765,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Type = Self;
@@ -769,6 +780,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Actual = Self;

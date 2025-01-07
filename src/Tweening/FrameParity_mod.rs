@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::FrameParity {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Tweening+FrameParity")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Tweening::FrameParity {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Tweening::FrameParity {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Tweening+FrameParity")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Tweening::FrameParity {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Tweening::FrameParity {
         self
     }
 }
+#[cfg(feature = "Tweening+FrameParity")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Tweening::FrameParity {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Tweening::FrameParity {
         }
     }
 }
+#[cfg(feature = "Tweening+FrameParity")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Tweening::FrameParity {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

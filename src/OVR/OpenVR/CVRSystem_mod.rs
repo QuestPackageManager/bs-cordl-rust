@@ -749,6 +749,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Type = Self;
@@ -759,6 +760,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Actual = Self;
@@ -772,6 +774,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Type = Self;
@@ -786,6 +789,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Actual = Self;
@@ -848,6 +852,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Type = Self;
@@ -858,6 +863,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Actual = Self;
@@ -871,6 +877,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Type = Self;
@@ -885,6 +892,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+GetControllerStateWithPoseUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Actual = Self;
@@ -947,6 +955,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Type = Self;
@@ -957,6 +966,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Actual = Self;
@@ -970,6 +980,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Type = Self;
@@ -984,6 +995,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+CVRSystem+PollNextEventUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Actual = Self;

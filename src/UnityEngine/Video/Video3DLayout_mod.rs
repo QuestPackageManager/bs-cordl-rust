@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::Video3DLa
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Video+Video3DLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Video::Video3DLayout {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::Video::Video3DLayout {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Video+Video3DLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Video::Video3DLayout {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::Video::Video3DLayout {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Video+Video3DLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Video::Video3DLayout {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::Video::Video3DLayout {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Video+Video3DLayout")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Video::Video3DLayout {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

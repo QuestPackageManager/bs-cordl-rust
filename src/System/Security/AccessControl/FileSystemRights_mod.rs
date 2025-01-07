@@ -53,6 +53,7 @@ for crate::System::Security::AccessControl::FileSystemRights {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+AccessControl+FileSystemRights")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::AccessControl::FileSystemRights {
     type Type = Self;
@@ -63,6 +64,7 @@ for crate::System::Security::AccessControl::FileSystemRights {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+AccessControl+FileSystemRights")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::AccessControl::FileSystemRights {
     type Actual = Self;
@@ -76,6 +78,7 @@ for crate::System::Security::AccessControl::FileSystemRights {
         self
     }
 }
+#[cfg(feature = "System+Security+AccessControl+FileSystemRights")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::AccessControl::FileSystemRights {
     type Type = Self;
@@ -90,6 +93,7 @@ for crate::System::Security::AccessControl::FileSystemRights {
         }
     }
 }
+#[cfg(feature = "System+Security+AccessControl+FileSystemRights")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::AccessControl::FileSystemRights {
     type Actual = Self;

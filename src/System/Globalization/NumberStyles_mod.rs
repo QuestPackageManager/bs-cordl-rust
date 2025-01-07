@@ -50,6 +50,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::Number
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+NumberStyles")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::NumberStyles {
     type Type = Self;
@@ -60,6 +61,7 @@ for crate::System::Globalization::NumberStyles {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+NumberStyles")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::NumberStyles {
     type Actual = Self;
@@ -73,6 +75,7 @@ for crate::System::Globalization::NumberStyles {
         self
     }
 }
+#[cfg(feature = "System+Globalization+NumberStyles")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::NumberStyles {
     type Type = Self;
@@ -87,6 +90,7 @@ for crate::System::Globalization::NumberStyles {
         }
     }
 }
+#[cfg(feature = "System+Globalization+NumberStyles")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::NumberStyles {
     type Actual = Self;

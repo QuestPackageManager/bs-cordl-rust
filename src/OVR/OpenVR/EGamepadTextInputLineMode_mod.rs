@@ -36,6 +36,7 @@ for crate::OVR::OpenVR::EGamepadTextInputLineMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+EGamepadTextInputLineMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::EGamepadTextInputLineMode {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::OVR::OpenVR::EGamepadTextInputLineMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+EGamepadTextInputLineMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::EGamepadTextInputLineMode {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::OVR::OpenVR::EGamepadTextInputLineMode {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+EGamepadTextInputLineMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::EGamepadTextInputLineMode {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::OVR::OpenVR::EGamepadTextInputLineMode {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+EGamepadTextInputLineMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVR::OpenVR::EGamepadTextInputLineMode {
     type Actual = Self;

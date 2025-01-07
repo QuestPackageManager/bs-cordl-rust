@@ -299,6 +299,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
     type Type = Self;
@@ -309,6 +310,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
     type Actual = Self;
@@ -322,6 +324,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
     type Type = Self;
@@ -336,6 +339,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         }
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
     type Actual = Self;
@@ -388,6 +392,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
     type Type = Self;
@@ -398,6 +403,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
     type Actual = Self;
@@ -411,6 +417,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         self
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
     type Type = Self;
@@ -425,6 +432,7 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerL
         }
     }
 }
+#[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
     type Actual = Self;

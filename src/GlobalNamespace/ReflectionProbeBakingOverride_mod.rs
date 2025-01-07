@@ -125,6 +125,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Type = Self;
@@ -135,6 +136,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Actual = Self;
@@ -148,6 +150,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
         self
     }
 }
+#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Type = Self;
@@ -162,6 +165,7 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
         }
     }
 }
+#[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ReflectionProbeBakingOverride_ActiveStateHandling {
     type Actual = Self;

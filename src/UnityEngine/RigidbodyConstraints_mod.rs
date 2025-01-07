@@ -43,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RigidbodyConstra
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::RigidbodyConstraints {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::UnityEngine::RigidbodyConstraints {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::RigidbodyConstraints {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::UnityEngine::RigidbodyConstraints {
         self
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::RigidbodyConstraints {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::UnityEngine::RigidbodyConstraints {
         }
     }
 }
+#[cfg(feature = "UnityEngine+RigidbodyConstraints")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::RigidbodyConstraints {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

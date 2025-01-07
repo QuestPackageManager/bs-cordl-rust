@@ -37,6 +37,7 @@ for crate::GlobalNamespace::NoteVisualModifierType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteVisualModifierType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteVisualModifierType {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::NoteVisualModifierType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteVisualModifierType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteVisualModifierType {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::NoteVisualModifierType {
         self
     }
 }
+#[cfg(feature = "NoteVisualModifierType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteVisualModifierType {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::NoteVisualModifierType {
         }
     }
 }
+#[cfg(feature = "NoteVisualModifierType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteVisualModifierType {
     type Actual = Self;

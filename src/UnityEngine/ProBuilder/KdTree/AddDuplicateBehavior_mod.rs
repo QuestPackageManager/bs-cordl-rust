@@ -38,6 +38,7 @@ for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+AddDuplicateBehavior")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+AddDuplicateBehavior")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+AddDuplicateBehavior")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+AddDuplicateBehavior")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::KdTree::AddDuplicateBehavior {
     type Actual = Self;

@@ -38,6 +38,7 @@ for crate::UnityEngine::TextCore::Text::TextWrappingMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+TextWrappingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::TextWrappingMode {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::TextCore::Text::TextWrappingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+TextWrappingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::TextWrappingMode {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::TextCore::Text::TextWrappingMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+TextWrappingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::TextWrappingMode {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::TextCore::Text::TextWrappingMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+TextWrappingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::TextWrappingMode {
     type Actual = Self;

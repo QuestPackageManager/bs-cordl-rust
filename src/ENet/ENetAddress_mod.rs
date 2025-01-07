@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::ENetAddress {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetAddress {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::ENetAddress {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetAddress {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::ENetAddress {
         self
     }
 }
+#[cfg(feature = "ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetAddress {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::ENetAddress {
         }
     }
 }
+#[cfg(feature = "ENet+ENetAddress")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::ENetAddress {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::NewLineHandling 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+NewLineHandling")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::NewLineHandling {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::NewLineHandl
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+NewLineHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::NewLineHandling {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::NewLineHand
         self
     }
 }
+#[cfg(feature = "System+Xml+NewLineHandling")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::NewLineHandling {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::NewLineHandl
         }
     }
 }
+#[cfg(feature = "System+Xml+NewLineHandling")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::NewLineHandling {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

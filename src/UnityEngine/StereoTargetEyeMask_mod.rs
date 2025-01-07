@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::StereoTargetEyeM
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+StereoTargetEyeMask")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::StereoTargetEyeMask {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::StereoTarget
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+StereoTargetEyeMask")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::StereoTargetEyeMask {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::StereoTargetEyeMask {
         self
     }
 }
+#[cfg(feature = "UnityEngine+StereoTargetEyeMask")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::StereoTargetEyeMask {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::StereoTarget
         }
     }
 }
+#[cfg(feature = "UnityEngine+StereoTargetEyeMask")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::StereoTargetEyeMask {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

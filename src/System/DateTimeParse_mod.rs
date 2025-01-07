@@ -969,6 +969,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DS {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DS {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -978,6 +979,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DS 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DS {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -990,6 +992,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DS
         self
     }
 }
+#[cfg(feature = "System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DS {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1003,6 +1006,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DS 
         }
     }
 }
+#[cfg(feature = "System+DateTimeParse+DS")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DS {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1071,6 +1075,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DTT {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DTT {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1080,6 +1085,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_DTT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DTT {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1092,6 +1098,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_DT
         self
     }
 }
+#[cfg(feature = "System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DTT {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1105,6 +1112,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_DTT
         }
     }
 }
+#[cfg(feature = "System+DateTimeParse+DTT")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_DTT {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1242,6 +1250,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_TM {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_TM {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1251,6 +1260,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::DateTimeParse_TM 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_TM {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1263,6 +1273,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::DateTimeParse_TM
         self
     }
 }
+#[cfg(feature = "System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_TM {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1276,6 +1287,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::DateTimeParse_TM 
         }
     }
 }
+#[cfg(feature = "System+DateTimeParse+TM")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::DateTimeParse_TM {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

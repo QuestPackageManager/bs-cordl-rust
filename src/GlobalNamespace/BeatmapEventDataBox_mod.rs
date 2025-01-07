@@ -286,6 +286,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Type = Self;
@@ -296,6 +297,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Actual = Self;
@@ -309,6 +311,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
         self
     }
 }
+#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Type = Self;
@@ -323,6 +326,7 @@ for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
         }
     }
 }
+#[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType {
     type Actual = Self;

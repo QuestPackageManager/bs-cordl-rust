@@ -4784,6 +4784,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4793,6 +4794,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshDat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4805,6 +4807,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshDa
         self
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -4818,6 +4821,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshDat
         }
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Mesh_MeshData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5060,6 +5064,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshDataArr
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshDataArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5069,6 +5074,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Mesh_MeshDat
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshDataArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5081,6 +5087,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Mesh_MeshDa
         self
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshDataArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -5094,6 +5101,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Mesh_MeshDat
         }
     }
 }
+#[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Mesh_MeshDataArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -282,6 +282,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Type = Self;
@@ -292,6 +293,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Actual = Self;
@@ -305,6 +307,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
         self
     }
 }
+#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Type = Self;
@@ -319,6 +322,7 @@ for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
         }
     }
 }
+#[cfg(feature = "ScoreUIController+ScoreDisplayType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScoreUIController_ScoreDisplayType {
     type Actual = Self;

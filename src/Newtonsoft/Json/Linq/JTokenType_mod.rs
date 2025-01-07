@@ -51,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Linq::JToke
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Linq::JTokenType {
     type Type = Self;
@@ -61,6 +62,7 @@ for crate::Newtonsoft::Json::Linq::JTokenType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Linq::JTokenType {
     type Actual = Self;
@@ -74,6 +76,7 @@ for crate::Newtonsoft::Json::Linq::JTokenType {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Linq::JTokenType {
     type Type = Self;
@@ -88,6 +91,7 @@ for crate::Newtonsoft::Json::Linq::JTokenType {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JTokenType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Newtonsoft::Json::Linq::JTokenType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

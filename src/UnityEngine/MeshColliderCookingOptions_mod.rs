@@ -40,6 +40,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::MeshColliderCookingOptions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::MeshColliderCookingOptions {
     type Actual = Self;

@@ -148,6 +148,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "EnvironmentSizeData+CeilingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
     type Type = Self;
@@ -158,6 +159,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "EnvironmentSizeData+CeilingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
     type Actual = Self;
@@ -171,6 +173,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
         self
     }
 }
+#[cfg(feature = "EnvironmentSizeData+CeilingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
     type Type = Self;
@@ -185,6 +188,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
         }
     }
 }
+#[cfg(feature = "EnvironmentSizeData+CeilingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
     type Actual = Self;
@@ -236,6 +240,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "EnvironmentSizeData+FloorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
     type Type = Self;
@@ -246,6 +251,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "EnvironmentSizeData+FloorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
     type Actual = Self;
@@ -259,6 +265,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
         self
     }
 }
+#[cfg(feature = "EnvironmentSizeData+FloorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
     type Type = Self;
@@ -273,6 +280,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
         }
     }
 }
+#[cfg(feature = "EnvironmentSizeData+FloorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
     type Actual = Self;
@@ -324,6 +332,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
     type Type = Self;
@@ -334,6 +343,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
     type Actual = Self;
@@ -347,6 +357,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
         self
     }
 }
+#[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
     type Type = Self;
@@ -361,6 +372,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
         }
     }
 }
+#[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
     type Actual = Self;

@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LanguageDire
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BGLib+Polyglot+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::Polyglot::LanguageDirection {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::BGLib::Polyglot::LanguageDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BGLib+Polyglot+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::Polyglot::LanguageDirection {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::BGLib::Polyglot::LanguageDirection {
         self
     }
 }
+#[cfg(feature = "BGLib+Polyglot+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::Polyglot::LanguageDirection {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::BGLib::Polyglot::LanguageDirection {
         }
     }
 }
+#[cfg(feature = "BGLib+Polyglot+LanguageDirection")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BGLib::Polyglot::LanguageDirection {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

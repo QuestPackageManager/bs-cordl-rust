@@ -2896,6 +2896,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Type = Self;
@@ -2906,6 +2907,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Actual = Self;
@@ -2919,6 +2921,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         self
     }
 }
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Type = Self;
@@ -2933,6 +2936,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
         }
     }
 }
+#[cfg(feature = "System+Data+DataTable+DSRowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Actual = Self;
@@ -3007,6 +3011,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Type = Self;
@@ -3017,6 +3022,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Actual = Self;
@@ -3030,6 +3036,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
         self
     }
 }
+#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Type = Self;
@@ -3044,6 +3051,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
         }
     }
 }
+#[cfg(feature = "System+Data+DataTable+RowDiffIdUsageSection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Actual = Self;

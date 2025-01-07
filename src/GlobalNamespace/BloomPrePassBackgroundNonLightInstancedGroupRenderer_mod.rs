@@ -251,6 +251,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType {
     type Type = Self;
@@ -261,6 +262,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType {
     type Actual = Self;
@@ -274,6 +276,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
         self
     }
 }
+#[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType {
     type Type = Self;
@@ -288,6 +291,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
         }
     }
 }
+#[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType {
     type Actual = Self;

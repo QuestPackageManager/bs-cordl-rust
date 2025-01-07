@@ -256,6 +256,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::MouseBinder_ButtonType 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::MouseBinder_ButtonType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -265,6 +266,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::MouseBinder_ButtonT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::MouseBinder_ButtonType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -277,6 +279,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::MouseBinder_Button
         self
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::MouseBinder_ButtonType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -290,6 +293,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::MouseBinder_ButtonT
         }
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+ButtonType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::MouseBinder_ButtonType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -340,6 +344,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::MouseBinder_MouseEventT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::MouseBinder_MouseEventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -349,6 +354,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::MouseBinder_MouseEv
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::MouseBinder_MouseEventType {
     type Actual = Self;
@@ -362,6 +368,7 @@ for crate::HMUI::MouseBinder_MouseEventType {
         self
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::MouseBinder_MouseEventType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -375,6 +382,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::MouseBinder_MouseEv
         }
     }
 }
+#[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::MouseBinder_MouseEventType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

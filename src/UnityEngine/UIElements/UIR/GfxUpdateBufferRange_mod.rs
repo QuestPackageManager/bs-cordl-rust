@@ -36,6 +36,7 @@ for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GfxUpdateBufferRange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GfxUpdateBufferRange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GfxUpdateBufferRange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GfxUpdateBufferRange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange {
     type Actual = Self;

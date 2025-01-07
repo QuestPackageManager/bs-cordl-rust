@@ -44,6 +44,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputMetrics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputMetrics {
     type Actual = Self;

@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::RuntimeFieldHandle {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+RuntimeFieldHandle")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::RuntimeFieldHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::RuntimeFieldHandl
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+RuntimeFieldHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::RuntimeFieldHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::RuntimeFieldHand
         self
     }
 }
+#[cfg(feature = "System+RuntimeFieldHandle")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::RuntimeFieldHandle {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::RuntimeFieldHandl
         }
     }
 }
+#[cfg(feature = "System+RuntimeFieldHandle")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::RuntimeFieldHandle {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

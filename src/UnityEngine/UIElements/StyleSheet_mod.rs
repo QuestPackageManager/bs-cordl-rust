@@ -707,6 +707,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Type = Self;
@@ -717,6 +718,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Actual = Self;
@@ -730,6 +732,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Type = Self;
@@ -744,6 +747,7 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
     type Actual = Self;

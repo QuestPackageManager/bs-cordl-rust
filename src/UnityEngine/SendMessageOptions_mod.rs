@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SendMessageOptio
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SendMessageOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SendMessageOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::SendMessageO
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SendMessageOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SendMessageOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::SendMessage
         self
     }
 }
+#[cfg(feature = "UnityEngine+SendMessageOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SendMessageOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::SendMessageO
         }
     }
 }
+#[cfg(feature = "UnityEngine+SendMessageOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::SendMessageOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

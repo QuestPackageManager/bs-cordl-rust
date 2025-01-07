@@ -921,6 +921,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Type = Self;
@@ -931,6 +932,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Actual = Self;
@@ -944,6 +946,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Type = Self;
@@ -958,6 +961,7 @@ for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControl_ControlFlags {
     type Actual = Self;

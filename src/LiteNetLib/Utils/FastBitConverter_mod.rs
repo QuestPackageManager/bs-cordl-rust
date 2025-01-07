@@ -187,6 +187,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Type = Self;
@@ -197,6 +198,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Actual = Self;
@@ -210,6 +212,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Type = Self;
@@ -224,6 +227,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperDouble")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Actual = Self;
@@ -286,6 +290,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Type = Self;
@@ -296,6 +301,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Actual = Self;
@@ -309,6 +315,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Type = Self;
@@ -323,6 +330,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Actual = Self;

@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::WindowSe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+WindowSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::WindowSettings {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::BeatSaber::Settings::WindowSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+WindowSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::WindowSettings {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::BeatSaber::Settings::WindowSettings {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+WindowSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::WindowSettings {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::BeatSaber::Settings::WindowSettings {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+WindowSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::WindowSettings {
     type Actual = Self;

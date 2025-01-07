@@ -1024,6 +1024,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
     type Type = Self;
@@ -1034,6 +1035,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
     type Actual = Self;
@@ -1047,6 +1049,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
     type Type = Self;
@@ -1061,6 +1064,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
     type Actual = Self;
@@ -1149,6 +1153,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
     type Type = Self;
@@ -1159,6 +1164,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
     type Actual = Self;
@@ -1172,6 +1178,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
     type Type = Self;
@@ -1186,6 +1193,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
     type Actual = Self;
@@ -1279,6 +1287,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
     type Type = Self;
@@ -1289,6 +1298,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
     type Actual = Self;
@@ -1302,6 +1312,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
     type Type = Self;
@@ -1316,6 +1327,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
     type Actual = Self;
@@ -1384,6 +1396,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
     type Type = Self;
@@ -1394,6 +1407,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
     type Actual = Self;
@@ -1407,6 +1421,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
     type Type = Self;
@@ -1421,6 +1436,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+DeviceArray")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
     type Actual = Self;
@@ -1541,6 +1557,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_Flags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_Flags {
     type Type = Self;
@@ -1551,6 +1568,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_Flags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_Flags {
     type Actual = Self;
@@ -1564,6 +1582,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_Flags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_Flags {
     type Type = Self;
@@ -1578,6 +1597,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_Flags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_Flags {
     type Actual = Self;
@@ -1644,6 +1664,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
     type Type = Self;
@@ -1654,6 +1675,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
     type Actual = Self;
@@ -1667,6 +1689,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
     type Type = Self;
@@ -1681,6 +1704,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadActionJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
     type Actual = Self;
@@ -1764,6 +1788,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     type Type = Self;
@@ -1774,6 +1799,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     type Actual = Self;
@@ -1787,6 +1813,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     type Type = Self;
@@ -1801,6 +1828,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     type Actual = Self;
@@ -1895,6 +1923,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
     type Type = Self;
@@ -1905,6 +1934,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
     type Actual = Self;
@@ -1918,6 +1948,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
     type Type = Self;
@@ -1932,6 +1963,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+ReadMapJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
     type Actual = Self;
@@ -2002,6 +2034,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
     type Type = Self;
@@ -2012,6 +2045,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
     type Actual = Self;
@@ -2025,6 +2059,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
     type Type = Self;
@@ -2039,6 +2074,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
     type Actual = Self;
@@ -2115,6 +2151,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     type Type = Self;
@@ -2125,6 +2162,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     type Actual = Self;
@@ -2138,6 +2176,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     type Type = Self;
@@ -2152,6 +2191,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     type Actual = Self;
@@ -2250,6 +2290,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
     type Type = Self;
@@ -2260,6 +2301,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
     type Actual = Self;
@@ -2273,6 +2315,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
     type Type = Self;
@@ -2287,6 +2330,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
     type Actual = Self;

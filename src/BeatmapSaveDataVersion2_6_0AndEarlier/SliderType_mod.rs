@@ -36,6 +36,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+SliderType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderType {
     type Actual = Self;

@@ -32,6 +32,7 @@ for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericStructType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
     type Type = Self;
@@ -42,6 +43,7 @@ for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericStructType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
     type Actual = Self;
@@ -55,6 +57,7 @@ for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
         self
     }
 }
+#[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericStructType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
     type Type = Self;
@@ -69,6 +72,7 @@ for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
         }
     }
 }
+#[cfg(feature = "Unity+IL2CPP+Metadata+__Il2CppFullySharedGenericStructType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::IL2CPP::Metadata::__Il2CppFullySharedGenericStructType {
     type Actual = Self;

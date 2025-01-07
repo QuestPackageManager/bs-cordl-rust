@@ -157,6 +157,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Type = Self;
@@ -167,6 +168,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Actual = Self;
@@ -180,6 +182,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
         self
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Type = Self;
@@ -194,6 +197,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
         }
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Actual = Self;
@@ -245,6 +249,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Type = Self;
@@ -255,6 +260,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Actual = Self;
@@ -268,6 +274,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
         self
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Type = Self;
@@ -282,6 +289,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
         }
     }
 }
+#[cfg(feature = "OVRPlatformMenu+eHandler")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Actual = Self;

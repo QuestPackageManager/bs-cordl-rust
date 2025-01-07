@@ -37,6 +37,7 @@ for crate::BeatmapSaveDataCommon::RotationDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::RotationDirection {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::BeatmapSaveDataCommon::RotationDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::RotationDirection {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::BeatmapSaveDataCommon::RotationDirection {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::RotationDirection {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::BeatmapSaveDataCommon::RotationDirection {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+RotationDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::RotationDirection {
     type Actual = Self;

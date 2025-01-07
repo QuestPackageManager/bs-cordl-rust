@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::DataViewRowStat
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+DataViewRowState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::DataViewRowState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::DataViewRow
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+DataViewRowState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::DataViewRowState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::DataViewRo
         self
     }
 }
+#[cfg(feature = "System+Data+DataViewRowState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::DataViewRowState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::DataViewRow
         }
     }
 }
+#[cfg(feature = "System+Data+DataViewRowState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::DataViewRowState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

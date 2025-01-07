@@ -180,6 +180,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMergeMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
     type Type = Self;
@@ -190,6 +191,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMergeMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
     type Actual = Self;
@@ -203,6 +205,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMergeMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
     type Type = Self;
@@ -217,6 +220,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMergeMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
     type Actual = Self;
@@ -269,6 +273,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMeshVisibility")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
     type Type = Self;
@@ -279,6 +284,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMeshVisibility")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
     type Actual = Self;
@@ -292,6 +298,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMeshVisibility")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
     type Type = Self;
@@ -306,6 +313,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMeshVisibility")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
     type Actual = Self;

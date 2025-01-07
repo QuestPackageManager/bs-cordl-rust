@@ -882,6 +882,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Type = Self;
@@ -892,6 +893,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Actual = Self;
@@ -905,6 +907,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Type = Self;
@@ -919,6 +922,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Actual = Self;
@@ -971,6 +975,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Type = Self;
@@ -981,6 +986,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Actual = Self;
@@ -994,6 +1000,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
         self
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Type = Self;
@@ -1008,6 +1015,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
         }
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Actual = Self;

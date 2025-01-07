@@ -245,6 +245,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Type = Self;
@@ -255,6 +256,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Actual = Self;
@@ -268,6 +270,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
         self
     }
 }
+#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Type = Self;
@@ -282,6 +285,7 @@ for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
         }
     }
 }
+#[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerStatusData_AvailabilityStatus {
     type Actual = Self;

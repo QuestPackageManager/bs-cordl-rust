@@ -38,6 +38,7 @@ for crate::JetBrains::Annotations::CollectionAccessType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "JetBrains+Annotations+CollectionAccessType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::JetBrains::Annotations::CollectionAccessType {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::JetBrains::Annotations::CollectionAccessType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "JetBrains+Annotations+CollectionAccessType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::JetBrains::Annotations::CollectionAccessType {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::JetBrains::Annotations::CollectionAccessType {
         self
     }
 }
+#[cfg(feature = "JetBrains+Annotations+CollectionAccessType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::JetBrains::Annotations::CollectionAccessType {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::JetBrains::Annotations::CollectionAccessType {
         }
     }
 }
+#[cfg(feature = "JetBrains+Annotations+CollectionAccessType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::JetBrains::Annotations::CollectionAccessType {
     type Actual = Self;

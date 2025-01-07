@@ -40,6 +40,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
         self
     }
 }
+#[cfg(feature = "MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::GlobalNamespace::MultiplayerLobbyState {
         }
     }
 }
+#[cfg(feature = "MultiplayerLobbyState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerLobbyState {
     type Actual = Self;

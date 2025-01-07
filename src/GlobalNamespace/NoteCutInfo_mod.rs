@@ -53,6 +53,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteCutInfo 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteCutInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +63,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::NoteCutI
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteCutInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -74,6 +76,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::NoteCut
         self
     }
 }
+#[cfg(feature = "NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteCutInfo {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -87,6 +90,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::NoteCutI
         }
     }
 }
+#[cfg(feature = "NoteCutInfo")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::NoteCutInfo {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -232,6 +236,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Type = Self;
@@ -242,6 +247,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Actual = Self;
@@ -255,6 +261,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
         self
     }
 }
+#[cfg(feature = "NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Type = Self;
@@ -269,6 +276,7 @@ for crate::GlobalNamespace::NoteCutInfo_FailReason {
         }
     }
 }
+#[cfg(feature = "NoteCutInfo+FailReason")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteCutInfo_FailReason {
     type Actual = Self;

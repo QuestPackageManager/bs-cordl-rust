@@ -38,6 +38,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
         self
     }
 }
+#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngineInternal::TypeInferenceRules {
         }
     }
 }
+#[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngineInternal::TypeInferenceRules {
     type Actual = Self;

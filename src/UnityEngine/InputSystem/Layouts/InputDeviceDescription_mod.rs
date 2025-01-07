@@ -40,6 +40,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
     type Actual = Self;
@@ -424,6 +428,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescr
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {
     type Type = Self;
@@ -434,6 +441,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {
     type Actual = Self;
@@ -447,6 +457,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescr
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {
     type Type = Self;
@@ -461,6 +474,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescr
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson {
     type Actual = Self;

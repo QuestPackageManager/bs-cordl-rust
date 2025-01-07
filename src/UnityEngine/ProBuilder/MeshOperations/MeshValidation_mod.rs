@@ -342,6 +342,9 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
     type Type = Self;
@@ -352,6 +355,9 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
     type Actual = Self;
@@ -365,6 +371,9 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
     type Type = Self;
@@ -379,6 +388,9 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeVali
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy {
     type Actual = Self;

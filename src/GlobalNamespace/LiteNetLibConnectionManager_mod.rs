@@ -1306,6 +1306,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Type = Self;
@@ -1316,6 +1317,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Actual = Self;
@@ -1329,6 +1331,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         self
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Type = Self;
@@ -1343,6 +1346,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
         }
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState {
     type Actual = Self;
@@ -1864,6 +1868,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Type = Self;
@@ -1874,6 +1879,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Actual = Self;
@@ -1887,6 +1893,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
         self
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Type = Self;
@@ -1901,6 +1908,7 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
         }
     }
 }
+#[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode {
     type Actual = Self;

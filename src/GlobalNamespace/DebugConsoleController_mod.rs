@@ -370,6 +370,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Type = Self;
@@ -380,6 +381,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Actual = Self;
@@ -393,6 +395,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         self
     }
 }
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Type = Self;
@@ -407,6 +410,7 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         }
     }
 }
+#[cfg(feature = "DebugConsoleController+ConsoleMessage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     type Actual = Self;

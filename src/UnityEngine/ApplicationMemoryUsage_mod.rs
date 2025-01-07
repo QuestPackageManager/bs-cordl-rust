@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ApplicationMemor
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ApplicationMemoryUsage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ApplicationMemoryUsage {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::UnityEngine::ApplicationMemoryUsage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ApplicationMemoryUsage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ApplicationMemoryUsage {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::UnityEngine::ApplicationMemoryUsage {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ApplicationMemoryUsage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ApplicationMemoryUsage {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::UnityEngine::ApplicationMemoryUsage {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ApplicationMemoryUsage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ApplicationMemoryUsage {
     type Actual = Self;

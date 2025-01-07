@@ -49,6 +49,7 @@ for crate::System::Threading::Tasks::TaskContinuationOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+Tasks+TaskContinuationOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::TaskContinuationOptions {
     type Type = Self;
@@ -59,6 +60,7 @@ for crate::System::Threading::Tasks::TaskContinuationOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+Tasks+TaskContinuationOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::TaskContinuationOptions {
     type Actual = Self;
@@ -72,6 +74,7 @@ for crate::System::Threading::Tasks::TaskContinuationOptions {
         self
     }
 }
+#[cfg(feature = "System+Threading+Tasks+TaskContinuationOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::TaskContinuationOptions {
     type Type = Self;
@@ -86,6 +89,7 @@ for crate::System::Threading::Tasks::TaskContinuationOptions {
         }
     }
 }
+#[cfg(feature = "System+Threading+Tasks+TaskContinuationOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::TaskContinuationOptions {
     type Actual = Self;

@@ -58,6 +58,7 @@ for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
     type Type = Self;
@@ -68,6 +69,7 @@ for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
     type Actual = Self;
@@ -81,6 +83,7 @@ for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
     type Type = Self;
@@ -95,6 +98,7 @@ for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacketTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag {
     type Actual = Self;

@@ -264,6 +264,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Type = Self;
@@ -274,6 +275,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Actual = Self;
@@ -287,6 +289,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
         self
     }
 }
+#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Type = Self;
@@ -301,6 +304,7 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
         }
     }
 }
+#[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction {
     type Actual = Self;

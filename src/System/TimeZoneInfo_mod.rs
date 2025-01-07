@@ -2020,6 +2020,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZVersio
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2029,6 +2030,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZVe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2041,6 +2043,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZV
         self
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZVersion {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2054,6 +2057,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZVe
         }
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZVersion")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZVersion {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2108,6 +2112,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifHead
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZifHead {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2117,6 +2122,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZif
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZifHead {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2129,6 +2135,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZi
         self
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZifHead {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2142,6 +2149,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZif
         }
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifHead")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZifHead {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2217,6 +2225,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifType
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZifType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2226,6 +2235,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TimeZoneInfo_TZif
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZifType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2238,6 +2248,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TimeZoneInfo_TZi
         self
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZifType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2251,6 +2262,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TimeZoneInfo_TZif
         }
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TZifType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TimeZoneInfo_TZifType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -2329,6 +2341,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_Transiti
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::TimeZoneInfo_TransitionTime {
     type Type = Self;
@@ -2339,6 +2352,7 @@ for crate::System::TimeZoneInfo_TransitionTime {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::TimeZoneInfo_TransitionTime {
     type Actual = Self;
@@ -2352,6 +2366,7 @@ for crate::System::TimeZoneInfo_TransitionTime {
         self
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::TimeZoneInfo_TransitionTime {
     type Type = Self;
@@ -2366,6 +2381,7 @@ for crate::System::TimeZoneInfo_TransitionTime {
         }
     }
 }
+#[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::TimeZoneInfo_TransitionTime {
     type Actual = Self;

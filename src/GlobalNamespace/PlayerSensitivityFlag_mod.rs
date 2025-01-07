@@ -38,6 +38,7 @@ for crate::GlobalNamespace::PlayerSensitivityFlag {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSensitivityFlag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSensitivityFlag {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::GlobalNamespace::PlayerSensitivityFlag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSensitivityFlag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSensitivityFlag {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::GlobalNamespace::PlayerSensitivityFlag {
         self
     }
 }
+#[cfg(feature = "PlayerSensitivityFlag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSensitivityFlag {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::GlobalNamespace::PlayerSensitivityFlag {
         }
     }
 }
+#[cfg(feature = "PlayerSensitivityFlag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSensitivityFlag {
     type Actual = Self;

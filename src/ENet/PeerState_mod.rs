@@ -44,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::PeerState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ENet+PeerState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::PeerState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,6 +54,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::PeerState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ENet+PeerState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::PeerState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -65,6 +67,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::PeerState {
         self
     }
 }
+#[cfg(feature = "ENet+PeerState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::PeerState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,6 +81,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::PeerState {
         }
     }
 }
+#[cfg(feature = "ENet+PeerState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::PeerState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

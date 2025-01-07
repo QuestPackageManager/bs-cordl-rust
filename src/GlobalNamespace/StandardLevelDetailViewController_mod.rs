@@ -821,6 +821,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Type = Self;
@@ -831,6 +832,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Actual = Self;
@@ -844,6 +846,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
         self
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Type = Self;
@@ -858,6 +861,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
         }
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+ContentType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Actual = Self;
@@ -915,6 +919,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Type = Self;
@@ -925,6 +930,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Actual = Self;
@@ -938,6 +944,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
         self
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Type = Self;
@@ -952,6 +959,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
         }
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d {
     type Actual = Self;
@@ -1065,6 +1073,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
     type Type = Self;
@@ -1075,6 +1086,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
     type Actual = Self;
@@ -1088,6 +1102,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         self
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
     type Type = Self;
@@ -1102,6 +1119,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         }
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__OpenLevelProductStoreOrShowBuyInfo_b__56_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStoreOrShowBuyInfo_b__56_0_d {
     type Actual = Self;
@@ -1220,6 +1240,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Type = Self;
@@ -1230,6 +1251,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Actual = Self;
@@ -1243,6 +1265,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         self
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Type = Self;
@@ -1257,6 +1280,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
         }
     }
 }
+#[cfg(feature = "StandardLevelDetailViewController+__OpenLevelProductStore_b__57_0_d")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProductStore_b__57_0_d {
     type Actual = Self;
@@ -1371,6 +1395,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
     type Type = Self;
@@ -1381,6 +1408,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
     type Actual = Self;
@@ -1394,6 +1424,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
         self
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
     type Type = Self;
@@ -1408,6 +1441,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
         }
     }
 }
+#[cfg(
+    feature = "StandardLevelDetailViewController+__RefreshAvailabilityIfNeeded_b__58_0_d"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabilityIfNeeded_b__58_0_d {
     type Actual = Self;

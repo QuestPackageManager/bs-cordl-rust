@@ -1422,6 +1422,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Type = Self;
@@ -1432,6 +1433,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Actual = Self;
@@ -1445,6 +1447,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Type = Self;
@@ -1459,6 +1462,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+TransientBuildData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Actual = Self;
@@ -1543,6 +1547,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Type = Self;
@@ -1553,6 +1558,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Actual = Self;
@@ -1566,6 +1572,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Type = Self;
@@ -1580,6 +1587,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Actual = Self;

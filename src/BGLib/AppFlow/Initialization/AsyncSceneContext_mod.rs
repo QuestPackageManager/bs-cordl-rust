@@ -216,6 +216,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Type = Self;
@@ -226,6 +227,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Actual = Self;
@@ -239,6 +241,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
         self
     }
 }
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Type = Self;
@@ -253,6 +256,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
         }
     }
 }
+#[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Actual = Self;

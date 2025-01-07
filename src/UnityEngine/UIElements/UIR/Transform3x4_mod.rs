@@ -36,6 +36,7 @@ for crate::UnityEngine::UIElements::UIR::Transform3x4 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Transform3x4")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::Transform3x4 {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::UIElements::UIR::Transform3x4 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Transform3x4")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::Transform3x4 {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::UIElements::UIR::Transform3x4 {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Transform3x4")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::Transform3x4 {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::UIElements::UIR::Transform3x4 {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+Transform3x4")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::Transform3x4 {
     type Actual = Self;

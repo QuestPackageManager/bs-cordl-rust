@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LineAlignment {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+LineAlignment")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LineAlignment {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::LineAlignmen
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+LineAlignment")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LineAlignment {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::LineAlignme
         self
     }
 }
+#[cfg(feature = "UnityEngine+LineAlignment")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LineAlignment {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::LineAlignmen
         }
     }
 }
+#[cfg(feature = "UnityEngine+LineAlignment")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::LineAlignment {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -152,6 +152,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Type = Self;
@@ -162,6 +163,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Actual = Self;
@@ -175,6 +177,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
         self
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Type = Self;
@@ -189,6 +192,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
         }
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+AudioData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Actual = Self;
@@ -260,6 +264,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Type = Self;
@@ -270,6 +275,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Actual = Self;
@@ -283,6 +289,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
         self
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Type = Self;
@@ -297,6 +304,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
         }
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Actual = Self;
@@ -534,6 +542,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Type = Self;
@@ -544,6 +553,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Actual = Self;
@@ -557,6 +567,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
         self
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Type = Self;
@@ -571,6 +582,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
         }
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Actual = Self;

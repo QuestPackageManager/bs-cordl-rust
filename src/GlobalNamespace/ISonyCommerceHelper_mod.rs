@@ -167,6 +167,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Type = Self;
@@ -177,6 +178,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Actual = Self;
@@ -190,6 +192,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
         self
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Type = Self;
@@ -204,6 +207,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
         }
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     type Actual = Self;
@@ -268,6 +272,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Type = Self;
@@ -278,6 +283,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Actual = Self;
@@ -291,6 +297,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
         self
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Type = Self;
@@ -305,6 +312,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
         }
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
     type Actual = Self;
@@ -356,6 +364,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Type = Self;
@@ -366,6 +375,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Actual = Self;
@@ -379,6 +389,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
         self
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Type = Self;
@@ -393,6 +404,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
         }
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult {
     type Actual = Self;
@@ -444,6 +456,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Type = Self;
@@ -454,6 +467,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Actual = Self;
@@ -467,6 +481,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
         self
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Type = Self;
@@ -481,6 +496,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
         }
     }
 }
+#[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
     type Actual = Self;

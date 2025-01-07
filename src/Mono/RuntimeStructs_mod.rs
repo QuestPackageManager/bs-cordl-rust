@@ -92,6 +92,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_GPtrArra
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_GPtrArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -101,6 +102,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_GPtr
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_GPtrArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -113,6 +115,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_GPt
         self
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_GPtrArray {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -126,6 +129,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_GPtr
         }
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GPtrArray")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_GPtrArray {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -191,6 +195,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Type = Self;
@@ -201,6 +206,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Actual = Self;
@@ -214,6 +220,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
         self
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Type = Self;
@@ -228,6 +235,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
         }
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+GenericParamInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Actual = Self;
@@ -287,6 +295,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_MonoClas
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_MonoClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -296,6 +305,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_Mono
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_MonoClass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -308,6 +318,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::RuntimeStructs_Mon
         self
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_MonoClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -321,6 +332,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_Mono
         }
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+MonoClass")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_MonoClass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -385,6 +397,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_RemoteCl
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_RemoteClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -394,6 +407,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::RuntimeStructs_Remo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::RuntimeStructs_RemoteClass {
     type Actual = Self;
@@ -407,6 +421,7 @@ for crate::Mono::RuntimeStructs_RemoteClass {
         self
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_RemoteClass {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -420,6 +435,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::RuntimeStructs_Remo
         }
     }
 }
+#[cfg(feature = "Mono+RuntimeStructs+RemoteClass")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::RuntimeStructs_RemoteClass {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -574,6 +574,7 @@ for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
     type Type = Self;
@@ -584,6 +585,7 @@ for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
     type Actual = Self;
@@ -597,6 +599,7 @@ for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
     type Type = Self;
@@ -611,6 +614,7 @@ for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlSchemaInference+InferenceOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
     type Actual = Self;

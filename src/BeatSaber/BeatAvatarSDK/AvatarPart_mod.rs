@@ -47,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::BeatAvatarSDK::Ava
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Type = Self;
@@ -57,6 +58,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Actual = Self;
@@ -70,6 +72,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
         self
     }
 }
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Type = Self;
@@ -84,6 +87,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
         }
     }
 }
+#[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::BeatAvatarSDK::AvatarPart {
     type Actual = Self;

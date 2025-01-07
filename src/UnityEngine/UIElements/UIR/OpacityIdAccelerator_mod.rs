@@ -197,6 +197,7 @@ for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob {
     type Type = Self;
@@ -207,6 +208,7 @@ for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob {
     type Actual = Self;
@@ -220,6 +222,7 @@ for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob {
     type Type = Self;
@@ -234,6 +237,7 @@ for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+OpacityIdAccelerator+OpacityIdUpdateJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::OpacityIdAccelerator_OpacityIdUpdateJob {
     type Actual = Self;

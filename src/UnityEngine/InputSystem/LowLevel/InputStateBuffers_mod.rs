@@ -42,6 +42,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     type Actual = Self;
@@ -303,6 +307,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
     type Type = Self;
@@ -313,6 +318,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
     type Actual = Self;
@@ -326,6 +332,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
     type Type = Self;
@@ -340,6 +347,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers {
     type Actual = Self;

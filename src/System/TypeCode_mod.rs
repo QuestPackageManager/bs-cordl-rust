@@ -51,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeCode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::TypeCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::TypeCode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TypeCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::TypeCode {
         self
     }
 }
+#[cfg(feature = "System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::TypeCode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,6 +88,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::TypeCode {
         }
     }
 }
+#[cfg(feature = "System+TypeCode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TypeCode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -1052,6 +1052,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Type = Self;
@@ -1062,6 +1063,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Actual = Self;
@@ -1075,6 +1077,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
         self
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Type = Self;
@@ -1089,6 +1092,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
         }
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState {
     type Actual = Self;
@@ -1145,6 +1149,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Type = Self;
@@ -1155,6 +1160,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Actual = Self;
@@ -1168,6 +1174,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
         self
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Type = Self;
@@ -1182,6 +1189,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
         }
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSessionManager_MessageType {
     type Actual = Self;
@@ -1234,6 +1242,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Type = Self;
@@ -1244,6 +1253,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Actual = Self;
@@ -1257,6 +1267,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
         self
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Type = Self;
@@ -1271,6 +1282,7 @@ for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
         }
     }
 }
+#[cfg(feature = "MultiplayerSessionManager+SessionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerSessionManager_SessionType {
     type Actual = Self;

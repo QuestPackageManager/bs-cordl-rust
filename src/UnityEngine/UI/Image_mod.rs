@@ -891,6 +891,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_FillMe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Image_FillMethod {
     type Type = Self;
@@ -901,6 +902,7 @@ for crate::UnityEngine::UI::Image_FillMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_FillMethod {
     type Actual = Self;
@@ -914,6 +916,7 @@ for crate::UnityEngine::UI::Image_FillMethod {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Image_FillMethod {
     type Type = Self;
@@ -928,6 +931,7 @@ for crate::UnityEngine::UI::Image_FillMethod {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_FillMethod {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -979,6 +983,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Origin180 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -988,6 +993,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Or
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_Origin180 {
     type Actual = Self;
@@ -1001,6 +1007,7 @@ for crate::UnityEngine::UI::Image_Origin180 {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Origin180 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1014,6 +1021,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Or
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin180")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Origin180 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1065,6 +1073,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Origin360 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1074,6 +1083,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Or
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_Origin360 {
     type Actual = Self;
@@ -1087,6 +1097,7 @@ for crate::UnityEngine::UI::Image_Origin360 {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Origin360 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1100,6 +1111,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Or
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin360")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Origin360 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1151,6 +1163,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Origin90 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1160,6 +1173,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Or
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_Origin90 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1172,6 +1186,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_O
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Origin90 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1185,6 +1200,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Or
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Origin90")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Origin90 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1235,6 +1251,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Type = Self;
@@ -1245,6 +1262,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Actual = Self;
@@ -1258,6 +1276,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Type = Self;
@@ -1272,6 +1291,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Actual = Self;
@@ -1323,6 +1343,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Type = Self;
@@ -1333,6 +1354,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Actual = Self;
@@ -1346,6 +1368,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Type = Self;
@@ -1360,6 +1383,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Image_OriginVertical {
     type Actual = Self;
@@ -1412,6 +1436,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Type {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1421,6 +1446,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UI::Image_Ty
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1433,6 +1459,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UI::Image_T
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1446,6 +1473,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UI::Image_Ty
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Image+Type")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Image_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

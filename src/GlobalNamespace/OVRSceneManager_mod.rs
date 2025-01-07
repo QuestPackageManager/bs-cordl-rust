@@ -654,6 +654,7 @@ for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSceneManager+LogForwarder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     type Type = Self;
@@ -664,6 +665,7 @@ for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSceneManager+LogForwarder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     type Actual = Self;
@@ -677,6 +679,7 @@ for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
         self
     }
 }
+#[cfg(feature = "OVRSceneManager+LogForwarder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     type Type = Self;
@@ -691,6 +694,7 @@ for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
         }
     }
 }
+#[cfg(feature = "OVRSceneManager+LogForwarder")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     type Actual = Self;

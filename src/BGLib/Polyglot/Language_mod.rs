@@ -64,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::Language {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BGLib+Polyglot+Language")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BGLib::Polyglot::Language {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BGLib::Polyglot::Language
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BGLib+Polyglot+Language")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BGLib::Polyglot::Language {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -85,6 +87,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BGLib::Polyglot::Languag
         self
     }
 }
+#[cfg(feature = "BGLib+Polyglot+Language")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BGLib::Polyglot::Language {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -98,6 +101,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BGLib::Polyglot::Language
         }
     }
 }
+#[cfg(feature = "BGLib+Polyglot+Language")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BGLib::Polyglot::Language {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

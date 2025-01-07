@@ -37,6 +37,7 @@ for crate::HoudiniEngineUnity::SessionConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::SessionConnectionState {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::HoudiniEngineUnity::SessionConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::SessionConnectionState {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::HoudiniEngineUnity::SessionConnectionState {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::SessionConnectionState {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::HoudiniEngineUnity::SessionConnectionState {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::SessionConnectionState {
     type Actual = Self;

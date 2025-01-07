@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::Headers::T
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Http::Headers::Token {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::System::Net::Http::Headers::Token {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Http::Headers::Token {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::System::Net::Http::Headers::Token {
         self
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Http::Headers::Token {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::System::Net::Http::Headers::Token {
         }
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Net::Http::Headers::Token {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -224,6 +228,7 @@ for crate::System::Net::Http::Headers::Token_Type {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::Http::Headers::Token_Type {
     type Type = Self;
@@ -234,6 +239,7 @@ for crate::System::Net::Http::Headers::Token_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::Http::Headers::Token_Type {
     type Actual = Self;
@@ -247,6 +253,7 @@ for crate::System::Net::Http::Headers::Token_Type {
         self
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::Http::Headers::Token_Type {
     type Type = Self;
@@ -261,6 +268,7 @@ for crate::System::Net::Http::Headers::Token_Type {
         }
     }
 }
+#[cfg(feature = "System+Net+Http+Headers+Token+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::Http::Headers::Token_Type {
     type Actual = Self;

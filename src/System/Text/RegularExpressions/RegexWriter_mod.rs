@@ -48,6 +48,7 @@ for crate::System::Text::RegularExpressions::RegexWriter {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Text::RegularExpressions::RegexWriter {
     type Type = Self;
@@ -58,6 +59,7 @@ for crate::System::Text::RegularExpressions::RegexWriter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Text::RegularExpressions::RegexWriter {
     type Actual = Self;
@@ -71,6 +73,7 @@ for crate::System::Text::RegularExpressions::RegexWriter {
         self
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Text::RegularExpressions::RegexWriter {
     type Type = Self;
@@ -85,6 +88,7 @@ for crate::System::Text::RegularExpressions::RegexWriter {
         }
     }
 }
+#[cfg(feature = "System+Text+RegularExpressions+RegexWriter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Text::RegularExpressions::RegexWriter {
     type Actual = Self;

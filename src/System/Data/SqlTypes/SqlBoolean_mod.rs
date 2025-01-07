@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SqlTypes::SqlBo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+SqlTypes+SqlBoolean")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::SqlTypes::SqlBoolean {
     type Type = Self;
@@ -43,6 +44,7 @@ for crate::System::Data::SqlTypes::SqlBoolean {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+SqlTypes+SqlBoolean")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::SqlTypes::SqlBoolean {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::System::Data::SqlTypes::SqlBoolean {
         self
     }
 }
+#[cfg(feature = "System+Data+SqlTypes+SqlBoolean")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::SqlTypes::SqlBoolean {
     type Type = Self;
@@ -70,6 +73,7 @@ for crate::System::Data::SqlTypes::SqlBoolean {
         }
     }
 }
+#[cfg(feature = "System+Data+SqlTypes+SqlBoolean")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::SqlTypes::SqlBoolean {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

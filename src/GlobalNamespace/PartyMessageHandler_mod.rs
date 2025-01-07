@@ -480,6 +480,7 @@ for crate::GlobalNamespace::PartyMessageHandler_MessageType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PartyMessageHandler+MessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PartyMessageHandler_MessageType {
     type Type = Self;
@@ -490,6 +491,7 @@ for crate::GlobalNamespace::PartyMessageHandler_MessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PartyMessageHandler+MessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PartyMessageHandler_MessageType {
     type Actual = Self;
@@ -503,6 +505,7 @@ for crate::GlobalNamespace::PartyMessageHandler_MessageType {
         self
     }
 }
+#[cfg(feature = "PartyMessageHandler+MessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PartyMessageHandler_MessageType {
     type Type = Self;
@@ -517,6 +520,7 @@ for crate::GlobalNamespace::PartyMessageHandler_MessageType {
         }
     }
 }
+#[cfg(feature = "PartyMessageHandler+MessageType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PartyMessageHandler_MessageType {
     type Actual = Self;

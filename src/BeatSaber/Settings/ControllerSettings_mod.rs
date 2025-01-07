@@ -37,6 +37,7 @@ for crate::BeatSaber::Settings::ControllerSettings {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+ControllerSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::ControllerSettings {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::BeatSaber::Settings::ControllerSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+ControllerSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::ControllerSettings {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::BeatSaber::Settings::ControllerSettings {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+ControllerSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::ControllerSettings {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::BeatSaber::Settings::ControllerSettings {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+ControllerSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::ControllerSettings {
     type Actual = Self;

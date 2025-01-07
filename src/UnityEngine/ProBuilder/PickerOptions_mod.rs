@@ -35,6 +35,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::UnityEngine::ProBuilder::PickerOptions {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+PickerOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::PickerOptions {
     type Actual = Self;

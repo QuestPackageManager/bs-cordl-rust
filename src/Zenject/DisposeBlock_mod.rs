@@ -530,6 +530,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Type = Self;
@@ -540,6 +541,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Actual = Self;
@@ -553,6 +555,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
         self
     }
 }
+#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Type = Self;
@@ -567,6 +570,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
         }
     }
 }
+#[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Actual = Self;

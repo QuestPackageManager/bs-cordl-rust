@@ -161,6 +161,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Type = Self;
@@ -171,6 +172,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Actual = Self;
@@ -184,6 +186,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
         self
     }
 }
+#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Type = Self;
@@ -198,6 +201,7 @@ for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
         }
     }
 }
+#[cfg(feature = "OVRHeadsetEmulator+OpMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRHeadsetEmulator_OpMode {
     type Actual = Self;

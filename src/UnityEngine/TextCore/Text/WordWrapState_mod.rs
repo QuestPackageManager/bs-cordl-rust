@@ -122,6 +122,7 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Type = Self;
@@ -132,6 +133,7 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Actual = Self;
@@ -145,6 +147,7 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Type = Self;
@@ -159,6 +162,7 @@ for crate::UnityEngine::TextCore::Text::WordWrapState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+Text+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::Text::WordWrapState {
     type Actual = Self;

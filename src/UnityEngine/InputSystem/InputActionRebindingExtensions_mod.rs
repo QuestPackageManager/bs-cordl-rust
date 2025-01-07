@@ -810,6 +810,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Type = Self;
@@ -820,6 +821,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Actual = Self;
@@ -833,6 +835,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Type = Self;
@@ -847,6 +850,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+Parameter")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Actual = Self;
@@ -917,6 +921,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
     type Type = Self;
@@ -927,6 +934,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
     type Actual = Self;
@@ -940,6 +950,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
     type Type = Self;
@@ -954,6 +967,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
     type Actual = Self;
@@ -1158,6 +1174,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
     type Type = Self;
@@ -1168,6 +1187,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
     type Actual = Self;
@@ -1181,6 +1203,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
     type Type = Self;
@@ -1195,6 +1220,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
     type Actual = Self;
@@ -1445,6 +1473,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
     type Type = Self;
@@ -1455,6 +1486,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
     type Actual = Self;
@@ -1468,6 +1502,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
     type Type = Self;
@@ -1482,6 +1519,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
     type Actual = Self;
@@ -2665,6 +2705,9 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
     type Type = Self;
@@ -2675,6 +2718,9 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
     type Actual = Self;
@@ -2688,6 +2734,9 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
     type Type = Self;
@@ -2702,6 +2751,9 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags {
     type Actual = Self;

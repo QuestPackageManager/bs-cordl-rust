@@ -270,6 +270,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Type = Self;
@@ -280,6 +281,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Actual = Self;
@@ -293,6 +295,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         self
     }
 }
+#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Type = Self;
@@ -307,6 +310,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         }
     }
 }
+#[cfg(feature = "PlayerStatisticsViewController+StatsScopeData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Actual = Self;

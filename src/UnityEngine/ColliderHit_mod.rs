@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ColliderHit {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ColliderHit")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ColliderHit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ColliderHit 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ColliderHit")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ColliderHit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ColliderHit
         self
     }
 }
+#[cfg(feature = "UnityEngine+ColliderHit")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ColliderHit {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ColliderHit 
         }
     }
 }
+#[cfg(feature = "UnityEngine+ColliderHit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ColliderHit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

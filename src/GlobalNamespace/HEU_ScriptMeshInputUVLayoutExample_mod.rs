@@ -122,6 +122,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Type = Self;
@@ -132,6 +133,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Actual = Self;
@@ -145,6 +147,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
         self
     }
 }
+#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Type = Self;
@@ -159,6 +162,7 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
         }
     }
 }
+#[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode {
     type Actual = Self;

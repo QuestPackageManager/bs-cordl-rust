@@ -37,6 +37,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstac
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstacleType {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstac
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstacleType {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstac
         self
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstacleType {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstac
         }
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnabledObstacleType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstacleType {
     type Actual = Self;
@@ -125,6 +129,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
     type Type = Self;
@@ -135,6 +140,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
     type Actual = Self;
@@ -148,6 +154,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
         self
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
     type Type = Self;
@@ -162,6 +169,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
         }
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnergyType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
     type Actual = Self;
@@ -214,6 +222,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
     type Type = Self;
@@ -224,6 +233,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
     type Actual = Self;
@@ -237,6 +247,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
         self
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
     type Type = Self;
@@ -251,6 +262,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
         }
     }
 }
+#[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+SongSpeed")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
     type Actual = Self;

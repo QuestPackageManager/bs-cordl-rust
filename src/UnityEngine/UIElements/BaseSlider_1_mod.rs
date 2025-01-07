@@ -1165,6 +1165,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Type = Self;
@@ -1175,6 +1176,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Actual = Self;
@@ -1188,6 +1190,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Type = Self;
@@ -1202,6 +1205,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Actual = Self;

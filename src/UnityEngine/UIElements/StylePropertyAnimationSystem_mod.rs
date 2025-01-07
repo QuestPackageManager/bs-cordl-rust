@@ -891,6 +891,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSe
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
+)]
 unsafe impl<
     TTimingData: quest_hook::libil2cpp::Type,
     TStyleData: quest_hook::libil2cpp::Type,
@@ -907,6 +910,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
+)]
 unsafe impl<
     TTimingData: quest_hook::libil2cpp::Type,
     TStyleData: quest_hook::libil2cpp::Type,
@@ -926,6 +932,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSe
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
+)]
 unsafe impl<
     TTimingData: quest_hook::libil2cpp::Type,
     TStyleData: quest_hook::libil2cpp::Type,
@@ -946,6 +955,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSe
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+AnimationDataSet_2"
+)]
 unsafe impl<
     TTimingData: quest_hook::libil2cpp::Type,
     TStyleData: quest_hook::libil2cpp::Type,
@@ -1233,6 +1245,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementProperty
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
     type Type = Self;
@@ -1243,6 +1258,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementProperty
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
     type Actual = Self;
@@ -1256,6 +1274,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementProperty
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
     type Type = Self;
@@ -1270,6 +1291,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementProperty
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair {
     type Actual = Self;
@@ -1360,6 +1384,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState {
     type Type = Self;
@@ -1370,6 +1395,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState {
     type Actual = Self;
@@ -1383,6 +1409,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState {
     type Type = Self;
@@ -1397,6 +1424,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState {
     type Actual = Self;
@@ -4424,6 +4452,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyD
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<T> {
     type Type = Self;
@@ -4434,6 +4465,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyD
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<T> {
     type Actual = Self;
@@ -4447,6 +4481,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyD
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<T> {
     type Type = Self;
@@ -4461,6 +4498,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyD
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+EmptyData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyData<T> {
     type Actual = Self;
@@ -4555,6 +4595,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleD
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<T> {
     type Type = Self;
@@ -4565,6 +4608,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleD
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<T> {
     type Actual = Self;
@@ -4578,6 +4624,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleD
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<T> {
     type Type = Self;
@@ -4592,6 +4641,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleD
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+StyleData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleData<T> {
     type Actual = Self;
@@ -4689,6 +4741,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Timing
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<T> {
     type Type = Self;
@@ -4699,6 +4754,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Timing
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<T> {
     type Actual = Self;
@@ -4712,6 +4770,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Timing
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<T> {
     type Type = Self;
@@ -4726,6 +4787,9 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Timing
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TimingData"
+)]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<T> {
     type Actual = Self;

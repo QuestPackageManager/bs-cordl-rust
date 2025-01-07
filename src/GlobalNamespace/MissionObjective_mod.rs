@@ -175,6 +175,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Type = Self;
@@ -185,6 +186,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Actual = Self;
@@ -198,6 +200,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
         self
     }
 }
+#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Type = Self;
@@ -212,6 +215,7 @@ for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
         }
     }
 }
+#[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType {
     type Actual = Self;

@@ -37,6 +37,7 @@ for crate::System::ComponentModel::EditorBrowsableState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+ComponentModel+EditorBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::EditorBrowsableState {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::ComponentModel::EditorBrowsableState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+ComponentModel+EditorBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::EditorBrowsableState {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::ComponentModel::EditorBrowsableState {
         self
     }
 }
+#[cfg(feature = "System+ComponentModel+EditorBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::EditorBrowsableState {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::ComponentModel::EditorBrowsableState {
         }
     }
 }
+#[cfg(feature = "System+ComponentModel+EditorBrowsableState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::EditorBrowsableState {
     type Actual = Self;

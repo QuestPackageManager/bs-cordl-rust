@@ -762,6 +762,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Type = Self;
@@ -772,6 +773,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Actual = Self;
@@ -785,6 +787,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Type = Self;
@@ -799,6 +802,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Actual = Self;
@@ -989,6 +993,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Type = Self;
@@ -999,6 +1004,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Actual = Self;
@@ -1012,6 +1018,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Type = Self;
@@ -1026,6 +1033,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+Record")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Actual = Self;
@@ -1363,6 +1371,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Type = Self;
@@ -1373,6 +1382,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Actual = Self;
@@ -1386,6 +1396,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Type = Self;
@@ -1400,6 +1411,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Actual = Self;
@@ -1505,6 +1517,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
     type Type = Self;
@@ -1515,6 +1530,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
     type Actual = Self;
@@ -1528,6 +1546,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
     type Type = Self;
@@ -1542,6 +1563,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithControlIndex_e__FixedBuffer {
     type Actual = Self;
@@ -1612,6 +1636,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
     type Type = Self;
@@ -1622,6 +1649,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
     type Actual = Self;
@@ -1635,6 +1665,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
     type Type = Self;
@@ -1649,6 +1682,9 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+InputStateHistory+RecordHeader+_m_StateWithoutControlIndex_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m_StateWithoutControlIndex_e__FixedBuffer {
     type Actual = Self;

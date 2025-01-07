@@ -163,6 +163,7 @@ for crate::UnityEngine::EnumDataUtility_CachedType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EnumDataUtility_CachedType {
     type Type = Self;
@@ -173,6 +174,7 @@ for crate::UnityEngine::EnumDataUtility_CachedType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EnumDataUtility_CachedType {
     type Actual = Self;
@@ -186,6 +188,7 @@ for crate::UnityEngine::EnumDataUtility_CachedType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EnumDataUtility_CachedType {
     type Type = Self;
@@ -200,6 +203,7 @@ for crate::UnityEngine::EnumDataUtility_CachedType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EnumDataUtility_CachedType {
     type Actual = Self;

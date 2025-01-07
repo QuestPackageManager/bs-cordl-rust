@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::IO::Archive::ArchiveSt
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+IO+Archive+ArchiveStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::IO::Archive::ArchiveStatus {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Unity::IO::Archive::ArchiveStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+IO+Archive+ArchiveStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::IO::Archive::ArchiveStatus {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Unity::IO::Archive::ArchiveStatus {
         self
     }
 }
+#[cfg(feature = "Unity+IO+Archive+ArchiveStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::IO::Archive::ArchiveStatus {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Unity::IO::Archive::ArchiveStatus {
         }
     }
 }
+#[cfg(feature = "Unity+IO+Archive+ArchiveStatus")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::IO::Archive::ArchiveStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

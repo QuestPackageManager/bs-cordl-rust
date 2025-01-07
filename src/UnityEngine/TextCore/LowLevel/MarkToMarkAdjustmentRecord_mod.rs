@@ -37,6 +37,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToMarkAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToMarkAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToMarkAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextCore+LowLevel+MarkToMarkAdjustmentRecord")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::TextCore::LowLevel::MarkToMarkAdjustmentRecord {
     type Actual = Self;

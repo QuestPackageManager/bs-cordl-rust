@@ -332,6 +332,7 @@ for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
     type Type = Self;
@@ -342,6 +343,7 @@ for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
     type Actual = Self;
@@ -355,6 +357,7 @@ for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
     type Type = Self;
@@ -369,6 +372,7 @@ for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Timeline+IntervalTree_1+Entry")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
     type Actual = Self;

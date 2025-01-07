@@ -39,6 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContactPair {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ContactPair")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactPair {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,6 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactPair 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ContactPair")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactPair {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,6 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactPair
         self
     }
 }
+#[cfg(feature = "UnityEngine+ContactPair")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactPair {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,6 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactPair 
         }
     }
 }
+#[cfg(feature = "UnityEngine+ContactPair")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ContactPair {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::VoipSampleR
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+VoipSampleRate")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::VoipSampleRate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::VoipSam
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+VoipSampleRate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::VoipSampleRate {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Oculus::Platform::VoipSampleRate {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+VoipSampleRate")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::VoipSampleRate {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::VoipSam
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+VoipSampleRate")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::VoipSampleRate {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

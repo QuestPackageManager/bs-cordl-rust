@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion4::Chai
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+Chain")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BeatmapSaveDataVersion4::Chain {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BeatmapSaveDataVersion4::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+Chain")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatmapSaveDataVersion4::Chain {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatmapSaveDataVersion4:
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+Chain")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BeatmapSaveDataVersion4::Chain {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BeatmapSaveDataVersion4::
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion4+Chain")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatmapSaveDataVersion4::Chain {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

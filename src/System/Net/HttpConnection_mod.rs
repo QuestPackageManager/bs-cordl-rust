@@ -370,6 +370,7 @@ for crate::System::Net::HttpConnection_InputState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpConnection_InputState {
     type Type = Self;
@@ -380,6 +381,7 @@ for crate::System::Net::HttpConnection_InputState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpConnection_InputState {
     type Actual = Self;
@@ -393,6 +395,7 @@ for crate::System::Net::HttpConnection_InputState {
         self
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpConnection_InputState {
     type Type = Self;
@@ -407,6 +410,7 @@ for crate::System::Net::HttpConnection_InputState {
         }
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+InputState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpConnection_InputState {
     type Actual = Self;
@@ -459,6 +463,7 @@ for crate::System::Net::HttpConnection_LineState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpConnection_LineState {
     type Type = Self;
@@ -469,6 +474,7 @@ for crate::System::Net::HttpConnection_LineState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpConnection_LineState {
     type Actual = Self;
@@ -482,6 +488,7 @@ for crate::System::Net::HttpConnection_LineState {
         self
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpConnection_LineState {
     type Type = Self;
@@ -496,6 +503,7 @@ for crate::System::Net::HttpConnection_LineState {
         }
     }
 }
+#[cfg(feature = "System+Net+HttpConnection+LineState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpConnection_LineState {
     type Actual = Self;

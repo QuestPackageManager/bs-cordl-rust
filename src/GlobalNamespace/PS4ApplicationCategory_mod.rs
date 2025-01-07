@@ -37,6 +37,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
         self
     }
 }
+#[cfg(feature = "PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::GlobalNamespace::PS4ApplicationCategory {
         }
     }
 }
+#[cfg(feature = "PS4ApplicationCategory")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PS4ApplicationCategory {
     type Actual = Self;

@@ -363,6 +363,7 @@ for crate::GlobalNamespace::BloomPrePassLight_QuadData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BloomPrePassLight+QuadData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePassLight_QuadData {
     type Type = Self;
@@ -373,6 +374,7 @@ for crate::GlobalNamespace::BloomPrePassLight_QuadData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BloomPrePassLight+QuadData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePassLight_QuadData {
     type Actual = Self;
@@ -386,6 +388,7 @@ for crate::GlobalNamespace::BloomPrePassLight_QuadData {
         self
     }
 }
+#[cfg(feature = "BloomPrePassLight+QuadData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePassLight_QuadData {
     type Type = Self;
@@ -400,6 +403,7 @@ for crate::GlobalNamespace::BloomPrePassLight_QuadData {
         }
     }
 }
+#[cfg(feature = "BloomPrePassLight+QuadData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BloomPrePassLight_QuadData {
     type Actual = Self;
@@ -462,6 +466,7 @@ for crate::GlobalNamespace::BloomPrePassLight_VertexData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BloomPrePassLight+VertexData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BloomPrePassLight_VertexData {
     type Type = Self;
@@ -472,6 +477,7 @@ for crate::GlobalNamespace::BloomPrePassLight_VertexData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BloomPrePassLight+VertexData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BloomPrePassLight_VertexData {
     type Actual = Self;
@@ -485,6 +491,7 @@ for crate::GlobalNamespace::BloomPrePassLight_VertexData {
         self
     }
 }
+#[cfg(feature = "BloomPrePassLight+VertexData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BloomPrePassLight_VertexData {
     type Type = Self;
@@ -499,6 +506,7 @@ for crate::GlobalNamespace::BloomPrePassLight_VertexData {
         }
     }
 }
+#[cfg(feature = "BloomPrePassLight+VertexData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BloomPrePassLight_VertexData {
     type Actual = Self;

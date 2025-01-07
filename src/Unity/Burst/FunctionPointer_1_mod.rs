@@ -51,6 +51,7 @@ for crate::Unity::Burst::FunctionPointer_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+FunctionPointer_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Burst::FunctionPointer_1<T> {
     type Type = Self;
@@ -61,6 +62,7 @@ for crate::Unity::Burst::FunctionPointer_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+FunctionPointer_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Burst::FunctionPointer_1<T> {
     type Actual = Self;
@@ -74,6 +76,7 @@ for crate::Unity::Burst::FunctionPointer_1<T> {
         self
     }
 }
+#[cfg(feature = "Unity+Burst+FunctionPointer_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Burst::FunctionPointer_1<T> {
     type Type = Self;
@@ -88,6 +91,7 @@ for crate::Unity::Burst::FunctionPointer_1<T> {
         }
     }
 }
+#[cfg(feature = "Unity+Burst+FunctionPointer_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Burst::FunctionPointer_1<T> {
     type Actual = Self;

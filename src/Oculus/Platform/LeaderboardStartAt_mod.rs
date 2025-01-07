@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Leaderboard
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+LeaderboardStartAt")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::LeaderboardStartAt {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::Oculus::Platform::LeaderboardStartAt {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+LeaderboardStartAt")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::LeaderboardStartAt {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::Oculus::Platform::LeaderboardStartAt {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+LeaderboardStartAt")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::LeaderboardStartAt {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::Oculus::Platform::LeaderboardStartAt {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+LeaderboardStartAt")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::LeaderboardStartAt {
     type Actual = Self;

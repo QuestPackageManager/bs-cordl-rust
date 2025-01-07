@@ -963,6 +963,7 @@ for crate::System::Globalization::CultureInfo_Data {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::CultureInfo_Data {
     type Type = Self;
@@ -973,6 +974,7 @@ for crate::System::Globalization::CultureInfo_Data {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::CultureInfo_Data {
     type Actual = Self;
@@ -986,6 +988,7 @@ for crate::System::Globalization::CultureInfo_Data {
         self
     }
 }
+#[cfg(feature = "System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::CultureInfo_Data {
     type Type = Self;
@@ -1000,6 +1003,7 @@ for crate::System::Globalization::CultureInfo_Data {
         }
     }
 }
+#[cfg(feature = "System+Globalization+CultureInfo+Data")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::CultureInfo_Data {
     type Actual = Self;

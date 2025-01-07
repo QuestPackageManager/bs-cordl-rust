@@ -46,6 +46,7 @@ for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BatchCullingOutputDrawCommands")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
     type Type = Self;
@@ -56,6 +57,7 @@ for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BatchCullingOutputDrawCommands")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
     type Actual = Self;
@@ -69,6 +71,7 @@ for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BatchCullingOutputDrawCommands")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
     type Type = Self;
@@ -83,6 +86,7 @@ for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+BatchCullingOutputDrawCommands")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands {
     type Actual = Self;

@@ -14707,6 +14707,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Type = Self;
@@ -14717,6 +14718,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Actual = Self;
@@ -14730,6 +14732,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
         self
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Type = Self;
@@ -14744,6 +14747,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
         }
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+IntFloatUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_IntFloatUnion {
     type Actual = Self;
@@ -14806,6 +14810,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Type = Self;
@@ -14816,6 +14821,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Actual = Self;
@@ -14829,6 +14835,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
         self
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Type = Self;
@@ -14843,6 +14850,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
         }
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+LongDoubleUnion")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Actual = Self;
@@ -14911,6 +14919,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_RotationOrder {
     type Type = Self;
@@ -14921,6 +14930,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_RotationOrder {
     type Actual = Self;
@@ -14934,6 +14944,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
         self
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_RotationOrder {
     type Type = Self;
@@ -14948,6 +14959,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
         }
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_RotationOrder {
     type Actual = Self;
@@ -15005,6 +15017,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Type = Self;
@@ -15015,6 +15028,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Actual = Self;
@@ -15028,6 +15042,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
         self
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Type = Self;
@@ -15042,6 +15057,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
         }
     }
 }
+#[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Mathematics::math_ShuffleComponent {
     type Actual = Self;

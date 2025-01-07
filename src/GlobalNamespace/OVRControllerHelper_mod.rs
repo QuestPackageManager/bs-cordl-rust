@@ -200,6 +200,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Type = Self;
@@ -210,6 +211,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Actual = Self;
@@ -223,6 +225,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
         self
     }
 }
+#[cfg(feature = "OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Type = Self;
@@ -237,6 +240,7 @@ for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
         }
     }
 }
+#[cfg(feature = "OVRControllerHelper+ControllerType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRControllerHelper_ControllerType {
     type Actual = Self;

@@ -44,6 +44,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509KeyUsageFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509KeyUsageFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
         self
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509KeyUsageFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
         }
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+X509KeyUsageFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags {
     type Actual = Self;

@@ -37,6 +37,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+SerializedType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ResourceManagement::Util::SerializedType {
     type Actual = Self;

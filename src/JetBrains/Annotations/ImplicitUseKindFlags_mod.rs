@@ -39,6 +39,7 @@ for crate::JetBrains::Annotations::ImplicitUseKindFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "JetBrains+Annotations+ImplicitUseKindFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::JetBrains::Annotations::ImplicitUseKindFlags {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::JetBrains::Annotations::ImplicitUseKindFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "JetBrains+Annotations+ImplicitUseKindFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::JetBrains::Annotations::ImplicitUseKindFlags {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::JetBrains::Annotations::ImplicitUseKindFlags {
         self
     }
 }
+#[cfg(feature = "JetBrains+Annotations+ImplicitUseKindFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::JetBrains::Annotations::ImplicitUseKindFlags {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::JetBrains::Annotations::ImplicitUseKindFlags {
         }
     }
 }
+#[cfg(feature = "JetBrains+Annotations+ImplicitUseKindFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::JetBrains::Annotations::ImplicitUseKindFlags {
     type Actual = Self;

@@ -338,6 +338,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Type = Self;
@@ -348,6 +349,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Actual = Self;
@@ -361,6 +363,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
         self
     }
 }
+#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Type = Self;
@@ -375,6 +378,7 @@ for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
         }
     }
 }
+#[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType {
     type Actual = Self;

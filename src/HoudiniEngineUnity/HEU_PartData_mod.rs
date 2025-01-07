@@ -1336,6 +1336,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Type = Self;
@@ -1346,6 +1347,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Actual = Self;
@@ -1359,6 +1361,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Type = Self;
@@ -1373,6 +1376,7 @@ for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_PartData_PartOutputType {
     type Actual = Self;

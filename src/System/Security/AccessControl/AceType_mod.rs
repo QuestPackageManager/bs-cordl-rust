@@ -51,6 +51,7 @@ for crate::System::Security::AccessControl::AceType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::AccessControl::AceType {
     type Type = Self;
@@ -61,6 +62,7 @@ for crate::System::Security::AccessControl::AceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::AccessControl::AceType {
     type Actual = Self;
@@ -74,6 +76,7 @@ for crate::System::Security::AccessControl::AceType {
         self
     }
 }
+#[cfg(feature = "System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::AccessControl::AceType {
     type Type = Self;
@@ -88,6 +91,7 @@ for crate::System::Security::AccessControl::AceType {
         }
     }
 }
+#[cfg(feature = "System+Security+AccessControl+AceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::AccessControl::AceType {
     type Actual = Self;

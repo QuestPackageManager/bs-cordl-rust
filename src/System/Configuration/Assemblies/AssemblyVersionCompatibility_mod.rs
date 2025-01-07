@@ -37,6 +37,7 @@ for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyVersionCompatibility")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyVersionCompatibility")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
         self
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyVersionCompatibility")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
         }
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyVersionCompatibility")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Configuration::Assemblies::AssemblyVersionCompatibility {
     type Actual = Self;

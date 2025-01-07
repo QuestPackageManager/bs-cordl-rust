@@ -50,6 +50,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Type = Self;
@@ -60,6 +61,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Actual = Self;
@@ -73,6 +75,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
         self
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Type = Self;
@@ -87,6 +90,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
         }
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapLevelChecksums {
     type Actual = Self;
@@ -219,6 +223,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
     type Type = Self;
@@ -229,6 +234,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
     type Actual = Self;
@@ -242,6 +248,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
         self
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
     type Type = Self;
@@ -256,6 +263,7 @@ for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
         }
     }
 }
+#[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
     type Actual = Self;

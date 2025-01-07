@@ -38,6 +38,7 @@ for crate::BeatmapSaveDataCommon::EnvironmentColorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::EnvironmentColorType {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::BeatmapSaveDataCommon::EnvironmentColorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::EnvironmentColorType {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::BeatmapSaveDataCommon::EnvironmentColorType {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::EnvironmentColorType {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::BeatmapSaveDataCommon::EnvironmentColorType {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::EnvironmentColorType {
     type Actual = Self;

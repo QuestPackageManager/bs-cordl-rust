@@ -177,6 +177,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Type = Self;
@@ -187,6 +188,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Actual = Self;
@@ -200,6 +202,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
         self
     }
 }
+#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Type = Self;
@@ -214,6 +217,7 @@ for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
         }
     }
 }
+#[cfg(feature = "TextureIntSwitchEventEffect+TextureValueTuple")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TextureIntSwitchEventEffect_TextureValueTuple {
     type Actual = Self;

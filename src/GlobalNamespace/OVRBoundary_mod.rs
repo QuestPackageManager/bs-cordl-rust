@@ -193,6 +193,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Type = Self;
@@ -203,6 +204,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Actual = Self;
@@ -216,6 +218,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
         self
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Type = Self;
@@ -230,6 +233,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
         }
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryTestResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Actual = Self;
@@ -294,6 +298,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Type = Self;
@@ -304,6 +309,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Actual = Self;
@@ -317,6 +323,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
         self
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Type = Self;
@@ -331,6 +338,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
         }
     }
 }
+#[cfg(feature = "OVRBoundary+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Actual = Self;
@@ -382,6 +390,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRBoundary_Node {
     type Type = Self;
@@ -392,6 +401,7 @@ for crate::GlobalNamespace::OVRBoundary_Node {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRBoundary_Node {
     type Actual = Self;
@@ -405,6 +415,7 @@ for crate::GlobalNamespace::OVRBoundary_Node {
         self
     }
 }
+#[cfg(feature = "OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRBoundary_Node {
     type Type = Self;
@@ -419,6 +430,7 @@ for crate::GlobalNamespace::OVRBoundary_Node {
         }
     }
 }
+#[cfg(feature = "OVRBoundary+Node")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRBoundary_Node {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

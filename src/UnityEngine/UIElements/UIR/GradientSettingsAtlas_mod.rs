@@ -271,6 +271,7 @@ for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas+RawTexture")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
     type Type = Self;
@@ -281,6 +282,7 @@ for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas+RawTexture")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
     type Actual = Self;
@@ -294,6 +296,7 @@ for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas+RawTexture")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
     type Type = Self;
@@ -308,6 +311,7 @@ for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas+RawTexture")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas_RawTexture {
     type Actual = Self;

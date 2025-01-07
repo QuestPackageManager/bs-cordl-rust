@@ -522,6 +522,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Type = Self;
@@ -532,6 +533,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Actual = Self;
@@ -545,6 +547,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Type = Self;
@@ -559,6 +562,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
     type Actual = Self;

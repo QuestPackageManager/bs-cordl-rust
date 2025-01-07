@@ -44,6 +44,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
         self
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
         }
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LIV::SDK::Unity::SDKApplicationOutput {
     type Actual = Self;

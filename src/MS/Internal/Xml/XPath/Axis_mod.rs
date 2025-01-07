@@ -280,6 +280,7 @@ for crate::MS::Internal::Xml::XPath::Axis_AxisType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Axis+AxisType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::XPath::Axis_AxisType {
     type Type = Self;
@@ -290,6 +291,7 @@ for crate::MS::Internal::Xml::XPath::Axis_AxisType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Axis+AxisType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::XPath::Axis_AxisType {
     type Actual = Self;
@@ -303,6 +305,7 @@ for crate::MS::Internal::Xml::XPath::Axis_AxisType {
         self
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Axis+AxisType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::XPath::Axis_AxisType {
     type Type = Self;
@@ -317,6 +320,7 @@ for crate::MS::Internal::Xml::XPath::Axis_AxisType {
         }
     }
 }
+#[cfg(feature = "MS+Internal+Xml+XPath+Axis+AxisType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::XPath::Axis_AxisType {
     type Actual = Self;

@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetCurrentHapticStateCommand")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetCurrentHapticStateCommand")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetCurrentHapticStateCommand")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetCurrentHapticStateCommand")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
     type Actual = Self;

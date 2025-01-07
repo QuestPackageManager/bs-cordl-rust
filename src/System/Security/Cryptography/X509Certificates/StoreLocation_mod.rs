@@ -36,6 +36,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreLocation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreLocation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
         self
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreLocation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
         }
     }
 }
+#[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreLocation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Security::Cryptography::X509Certificates::StoreLocation {
     type Actual = Self;

@@ -47,6 +47,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     type Type = Self;
@@ -57,6 +58,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     type Actual = Self;
@@ -70,6 +72,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     type Type = Self;
@@ -84,6 +87,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     type Actual = Self;
@@ -605,6 +609,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
     type Type = Self;
@@ -615,6 +620,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
     type Actual = Self;
@@ -628,6 +634,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
     type Type = Self;
@@ -642,6 +649,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
     type Actual = Self;

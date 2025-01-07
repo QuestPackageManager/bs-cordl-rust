@@ -49,6 +49,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Type = Self;
@@ -59,6 +60,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Actual = Self;
@@ -72,6 +74,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Type = Self;
@@ -86,6 +89,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData {
     type Actual = Self;
@@ -155,6 +159,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Type = Self;
@@ -165,6 +170,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Actual = Self;
@@ -178,6 +184,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Type = Self;
@@ -192,6 +199,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array3")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Actual = Self;
@@ -257,6 +265,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Type = Self;
@@ -267,6 +276,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Actual = Self;
@@ -280,6 +290,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Type = Self;
@@ -294,6 +305,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemJobs+NativeParticleData+Array4")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Actual = Self;

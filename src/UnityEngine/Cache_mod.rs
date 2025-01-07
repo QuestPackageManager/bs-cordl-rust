@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Cache {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Cache")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Cache {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Cache {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Cache")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Cache {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Cache {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Cache")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Cache {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Cache {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Cache")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Cache {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

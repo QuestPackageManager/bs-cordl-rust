@@ -40,6 +40,7 @@ for crate::UnityEngine::Rendering::RenderingThreadingMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+RenderingThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::RenderingThreadingMode {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::Rendering::RenderingThreadingMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+RenderingThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::RenderingThreadingMode {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::Rendering::RenderingThreadingMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+RenderingThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::RenderingThreadingMode {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::Rendering::RenderingThreadingMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+RenderingThreadingMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::RenderingThreadingMode {
     type Actual = Self;

@@ -91,6 +91,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Type = Self;
@@ -101,6 +102,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Actual = Self;
@@ -114,6 +116,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Type = Self;
@@ -128,6 +131,7 @@ for crate::UnityEngine::ScriptingUtility_TestClass {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ScriptingUtility_TestClass {
     type Actual = Self;

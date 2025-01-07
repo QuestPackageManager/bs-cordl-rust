@@ -39,6 +39,7 @@ for crate::UnityEngine::EventSystems::MoveDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+MoveDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::EventSystems::MoveDirection {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngine::EventSystems::MoveDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+MoveDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::EventSystems::MoveDirection {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngine::EventSystems::MoveDirection {
         self
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+MoveDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::EventSystems::MoveDirection {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngine::EventSystems::MoveDirection {
         }
     }
 }
+#[cfg(feature = "UnityEngine+EventSystems+MoveDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::EventSystems::MoveDirection {
     type Actual = Self;

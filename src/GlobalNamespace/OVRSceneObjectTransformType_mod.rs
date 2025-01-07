@@ -109,6 +109,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Type = Self;
@@ -119,6 +120,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Actual = Self;
@@ -132,6 +134,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
         self
     }
 }
+#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Type = Self;
@@ -146,6 +149,7 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
         }
     }
 }
+#[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRSceneObjectTransformType_Transformation {
     type Actual = Self;

@@ -765,6 +765,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Type = Self;
@@ -775,6 +776,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Actual = Self;
@@ -788,6 +790,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
         self
     }
 }
+#[cfg(feature = "NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Type = Self;
@@ -802,6 +805,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
         }
     }
 }
+#[cfg(feature = "NoteData+GameplayType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteData_GameplayType {
     type Actual = Self;
@@ -861,6 +865,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Type = Self;
@@ -871,6 +876,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Actual = Self;
@@ -884,6 +890,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
         self
     }
 }
+#[cfg(feature = "NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Type = Self;
@@ -898,6 +905,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
         }
     }
 }
+#[cfg(feature = "NoteData+ScoringType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::NoteData_ScoringType {
     type Actual = Self;

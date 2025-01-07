@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::RecPlay::PlayerPos
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+RecPlay+PlayerPose")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::RecPlay::PlayerPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::BeatSaber::RecPlay::Playe
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+RecPlay+PlayerPose")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::RecPlay::PlayerPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::BeatSaber::RecPlay::Play
         self
     }
 }
+#[cfg(feature = "BeatSaber+RecPlay+PlayerPose")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::RecPlay::PlayerPose {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::BeatSaber::RecPlay::Playe
         }
     }
 }
+#[cfg(feature = "BeatSaber+RecPlay+PlayerPose")]
 unsafe impl quest_hook::libil2cpp::Return for crate::BeatSaber::RecPlay::PlayerPose {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Authenticati
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::GlobalNamespace::AuthenticationToken {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AuthenticationToken {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::GlobalNamespace::AuthenticationToken {
         self
     }
 }
+#[cfg(feature = "AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AuthenticationToken {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::GlobalNamespace::AuthenticationToken {
         }
     }
 }
+#[cfg(feature = "AuthenticationToken")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AuthenticationToken {
     type Actual = Self;
@@ -264,6 +268,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Type = Self;
@@ -274,6 +279,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Actual = Self;
@@ -287,6 +293,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         self
     }
 }
+#[cfg(feature = "AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Type = Self;
@@ -301,6 +308,7 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         }
     }
 }
+#[cfg(feature = "AuthenticationToken+Platform")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::AuthenticationToken_Platform {
     type Actual = Self;

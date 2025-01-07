@@ -468,6 +468,7 @@ for crate::System::Exception_ExceptionMessageKind {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Exception_ExceptionMessageKind {
     type Type = Self;
@@ -478,6 +479,7 @@ for crate::System::Exception_ExceptionMessageKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Exception_ExceptionMessageKind {
     type Actual = Self;
@@ -491,6 +493,7 @@ for crate::System::Exception_ExceptionMessageKind {
         self
     }
 }
+#[cfg(feature = "System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Exception_ExceptionMessageKind {
     type Type = Self;
@@ -505,6 +508,7 @@ for crate::System::Exception_ExceptionMessageKind {
         }
     }
 }
+#[cfg(feature = "System+Exception+ExceptionMessageKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Exception_ExceptionMessageKind {
     type Actual = Self;

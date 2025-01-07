@@ -197,6 +197,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Type = Self;
@@ -207,6 +208,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Actual = Self;
@@ -220,6 +222,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
         self
     }
 }
+#[cfg(feature = "GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Type = Self;
@@ -234,6 +237,7 @@ for crate::GlobalNamespace::GraphAPIClient_PostOptions {
         }
     }
 }
+#[cfg(feature = "GraphAPIClient+PostOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GraphAPIClient_PostOptions {
     type Actual = Self;

@@ -40,6 +40,7 @@ for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyHashAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyHashAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
         self
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyHashAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
         }
     }
 }
+#[cfg(feature = "System+Configuration+Assemblies+AssemblyHashAlgorithm")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Configuration::Assemblies::AssemblyHashAlgorithm {
     type Actual = Self;

@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ContactPoint {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ContactPoint")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactPoint {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ContactPoint
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ContactPoint")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactPoint {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ContactPoin
         self
     }
 }
+#[cfg(feature = "UnityEngine+ContactPoint")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactPoint {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ContactPoint
         }
     }
 }
+#[cfg(feature = "UnityEngine+ContactPoint")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ContactPoint {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -43,6 +43,7 @@ for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
         self
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
         }
     }
 }
+#[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::LabelScopeKind {
     type Actual = Self;

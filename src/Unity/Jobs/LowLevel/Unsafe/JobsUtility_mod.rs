@@ -217,6 +217,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Type = Self;
@@ -227,6 +228,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Actual = Self;
@@ -240,6 +242,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         self
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Type = Self;
@@ -254,6 +257,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         }
     }
 }
+#[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+JobScheduleParameters")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Actual = Self;

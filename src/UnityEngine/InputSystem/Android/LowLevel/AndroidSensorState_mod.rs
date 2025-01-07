@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState {
     type Actual = Self;
@@ -183,6 +187,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
     type Type = Self;
@@ -193,6 +200,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
     type Actual = Self;
@@ -206,6 +216,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
     type Type = Self;
@@ -220,6 +233,9 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorState+_data_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorState__data_e__FixedBuffer {
     type Actual = Self;

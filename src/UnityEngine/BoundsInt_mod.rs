@@ -34,6 +34,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::BoundsInt {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::BoundsInt {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -43,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::BoundsInt {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::BoundsInt {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -55,6 +57,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::BoundsInt {
         self
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::BoundsInt {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -68,6 +71,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::BoundsInt {
         }
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::BoundsInt {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -439,6 +443,7 @@ for crate::UnityEngine::BoundsInt_PositionEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::BoundsInt_PositionEnumerator {
     type Type = Self;
@@ -449,6 +454,7 @@ for crate::UnityEngine::BoundsInt_PositionEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::BoundsInt_PositionEnumerator {
     type Actual = Self;
@@ -462,6 +468,7 @@ for crate::UnityEngine::BoundsInt_PositionEnumerator {
         self
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::BoundsInt_PositionEnumerator {
     type Type = Self;
@@ -476,6 +483,7 @@ for crate::UnityEngine::BoundsInt_PositionEnumerator {
         }
     }
 }
+#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::BoundsInt_PositionEnumerator {
     type Actual = Self;

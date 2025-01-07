@@ -843,6 +843,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Type = Self;
@@ -853,6 +854,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Actual = Self;
@@ -866,6 +868,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
         self
     }
 }
+#[cfg(feature = "PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Type = Self;
@@ -880,6 +883,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Tags {
         }
     }
 }
+#[cfg(feature = "PackDefinitionSO+Tags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PackDefinitionSO_Tags {
     type Actual = Self;

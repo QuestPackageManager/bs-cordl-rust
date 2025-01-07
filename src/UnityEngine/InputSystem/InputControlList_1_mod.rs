@@ -53,6 +53,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Type = Self;
@@ -63,6 +64,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Actual = Self;
@@ -76,6 +78,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Type = Self;
@@ -90,6 +93,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     type Actual = Self;
@@ -791,6 +795,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Type = Self;
@@ -801,6 +806,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Actual = Self;
@@ -814,6 +820,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Type = Self;
@@ -828,6 +835,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 unsafe impl<TControl: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Actual = Self;

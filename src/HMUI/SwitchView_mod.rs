@@ -188,6 +188,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SwitchView_AnimationTyp
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::SwitchView_AnimationType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -197,6 +198,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::SwitchView_Animatio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::SwitchView_AnimationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -209,6 +211,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::SwitchView_Animati
         self
     }
 }
+#[cfg(feature = "HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::SwitchView_AnimationType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -222,6 +225,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::SwitchView_Animatio
         }
     }
 }
+#[cfg(feature = "HMUI+SwitchView+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::SwitchView_AnimationType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::SDKTrackedSp
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKTrackedSpace")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKTrackedSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::SDKTrack
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKTrackedSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LIV::SDK::Unity::SDKTrackedSpace {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::LIV::SDK::Unity::SDKTrackedSpace {
         self
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKTrackedSpace")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKTrackedSpace {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::SDKTrack
         }
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+SDKTrackedSpace")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::SDKTrackedSpace {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

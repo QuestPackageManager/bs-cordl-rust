@@ -59,6 +59,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -72,6 +73,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -88,6 +90,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
@@ -105,6 +108,7 @@ for crate::UnityEngine::ProBuilder::KdTree::ItemPriority_2<TItem, TPriority> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+ItemPriority_2")]
 unsafe impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,

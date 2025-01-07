@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::DisableBatchingT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+DisableBatchingType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::DisableBatchingType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::DisableBatch
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+DisableBatchingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::DisableBatchingType {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::UnityEngine::DisableBatchingType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+DisableBatchingType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::DisableBatchingType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::DisableBatch
         }
     }
 }
+#[cfg(feature = "UnityEngine+DisableBatchingType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::DisableBatchingType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

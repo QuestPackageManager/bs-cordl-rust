@@ -287,6 +287,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Type = Self;
@@ -297,6 +298,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Actual = Self;
@@ -310,6 +312,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
         self
     }
 }
+#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Type = Self;
@@ -324,6 +327,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
         }
     }
 }
+#[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Actual = Self;

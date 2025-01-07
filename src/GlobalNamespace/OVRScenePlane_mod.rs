@@ -363,6 +363,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Type = Self;
@@ -373,6 +374,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Actual = Self;
@@ -386,6 +388,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         self
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Type = Self;
@@ -400,6 +403,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         }
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Actual = Self;
@@ -503,6 +507,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Type = Self;
@@ -513,6 +518,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Actual = Self;
@@ -526,6 +532,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
         self
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Type = Self;
@@ -540,6 +547,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
         }
     }
 }
+#[cfg(feature = "OVRScenePlane+GetBoundaryLengthJob")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Actual = Self;

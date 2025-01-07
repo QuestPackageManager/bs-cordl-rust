@@ -37,6 +37,7 @@ for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
         self
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
         }
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
     type Actual = Self;
@@ -1213,6 +1217,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONNode_Enume
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVRSimpleJSON::JSONNode_Enumerator {
     type Type = Self;
@@ -1223,6 +1228,7 @@ for crate::OVRSimpleJSON::JSONNode_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVRSimpleJSON::JSONNode_Enumerator {
     type Actual = Self;
@@ -1236,6 +1242,7 @@ for crate::OVRSimpleJSON::JSONNode_Enumerator {
         self
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVRSimpleJSON::JSONNode_Enumerator {
     type Type = Self;
@@ -1250,6 +1257,7 @@ for crate::OVRSimpleJSON::JSONNode_Enumerator {
         }
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVRSimpleJSON::JSONNode_Enumerator {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -1371,6 +1379,7 @@ for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
     type Type = Self;
@@ -1381,6 +1390,7 @@ for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
     type Actual = Self;
@@ -1394,6 +1404,7 @@ for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
         self
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
     type Type = Self;
@@ -1408,6 +1419,7 @@ for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
         }
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
     type Actual = Self;
@@ -1828,6 +1840,7 @@ for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
     type Type = Self;
@@ -1838,6 +1851,7 @@ for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
     type Actual = Self;
@@ -1851,6 +1865,7 @@ for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
         self
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
     type Type = Self;
@@ -1865,6 +1880,7 @@ for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
         }
     }
 }
+#[cfg(feature = "OVRSimpleJSON+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
     type Actual = Self;

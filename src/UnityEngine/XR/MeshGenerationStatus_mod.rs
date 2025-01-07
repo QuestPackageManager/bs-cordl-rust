@@ -39,6 +39,7 @@ for crate::UnityEngine::XR::MeshGenerationStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+XR+MeshGenerationStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::XR::MeshGenerationStatus {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngine::XR::MeshGenerationStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+XR+MeshGenerationStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::XR::MeshGenerationStatus {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngine::XR::MeshGenerationStatus {
         self
     }
 }
+#[cfg(feature = "UnityEngine+XR+MeshGenerationStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::XR::MeshGenerationStatus {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngine::XR::MeshGenerationStatus {
         }
     }
 }
+#[cfg(feature = "UnityEngine+XR+MeshGenerationStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::XR::MeshGenerationStatus {
     type Actual = Self;

@@ -428,6 +428,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Type = Self;
@@ -438,6 +439,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Actual = Self;
@@ -451,6 +453,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Type = Self;
@@ -465,6 +468,7 @@ for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     type Actual = Self;

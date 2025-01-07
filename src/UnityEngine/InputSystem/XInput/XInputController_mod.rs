@@ -222,6 +222,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
     type Type = Self;
@@ -232,6 +233,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
     type Actual = Self;
@@ -245,6 +247,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
     type Type = Self;
@@ -259,6 +262,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+Capabilities")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
     type Actual = Self;
@@ -326,6 +330,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
     type Type = Self;
@@ -336,6 +341,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
     type Actual = Self;
@@ -349,6 +355,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
     type Type = Self;
@@ -363,6 +370,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
     type Actual = Self;
@@ -423,6 +431,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
     type Type = Self;
@@ -433,6 +442,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
     type Actual = Self;
@@ -446,6 +456,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
     type Type = Self;
@@ -460,6 +471,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
     type Actual = Self;
@@ -510,6 +522,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
     type Type = Self;
@@ -520,6 +533,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
     type Actual = Self;
@@ -533,6 +547,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
     type Type = Self;
@@ -547,6 +562,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
     type Actual = Self;

@@ -282,6 +282,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeSpec_DisplayNameF
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::TypeSpec_DisplayNameFormat {
     type Type = Self;
@@ -292,6 +293,7 @@ for crate::System::TypeSpec_DisplayNameFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::TypeSpec_DisplayNameFormat {
     type Actual = Self;
@@ -305,6 +307,7 @@ for crate::System::TypeSpec_DisplayNameFormat {
         self
     }
 }
+#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::TypeSpec_DisplayNameFormat {
     type Type = Self;
@@ -319,6 +322,7 @@ for crate::System::TypeSpec_DisplayNameFormat {
         }
     }
 }
+#[cfg(feature = "System+TypeSpec+DisplayNameFormat")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::TypeSpec_DisplayNameFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

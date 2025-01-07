@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::PartyUpdate
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+PartyUpdateAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::PartyUpdateAction {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::Oculus::Platform::PartyUpdateAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+PartyUpdateAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::PartyUpdateAction {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::Oculus::Platform::PartyUpdateAction {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+PartyUpdateAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::PartyUpdateAction {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::Oculus::Platform::PartyUpdateAction {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+PartyUpdateAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::PartyUpdateAction {
     type Actual = Self;

@@ -614,6 +614,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Type = Self;
@@ -624,6 +625,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Actual = Self;
@@ -637,6 +639,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
         self
     }
 }
+#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Type = Self;
@@ -651,6 +654,7 @@ for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLay
         }
     }
 }
+#[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PlayerSettingsPanelController_PlayerSettingsPanelLayout {
     type Actual = Self;

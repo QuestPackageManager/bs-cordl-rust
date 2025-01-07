@@ -139,6 +139,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Type = Self;
@@ -149,6 +150,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Actual = Self;
@@ -162,6 +164,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
         self
     }
 }
+#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Type = Self;
@@ -176,6 +179,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
         }
     }
 }
+#[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Actual = Self;

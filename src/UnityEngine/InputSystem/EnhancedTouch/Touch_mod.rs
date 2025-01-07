@@ -39,6 +39,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     type Type = Self;
@@ -49,6 +50,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     type Actual = Self;
@@ -62,6 +64,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     type Type = Self;
@@ -76,6 +79,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     type Actual = Self;
@@ -620,6 +624,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {
     type Type = Self;
@@ -630,6 +635,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {
     type Actual = Self;
@@ -643,6 +649,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {
     type Type = Self;
@@ -657,6 +664,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+ExtraDataPerTouchState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState {
     type Actual = Self;
@@ -749,6 +757,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
     type Type = Self;
@@ -759,6 +768,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
     type Actual = Self;
@@ -772,6 +782,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
     type Type = Self;
@@ -786,6 +797,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+FingerAndTouchState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
     type Actual = Self;
@@ -932,6 +944,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
     type Type = Self;
@@ -942,6 +955,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
     type Actual = Self;
@@ -955,6 +969,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
     type Type = Self;
@@ -969,6 +984,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
     type Actual = Self;

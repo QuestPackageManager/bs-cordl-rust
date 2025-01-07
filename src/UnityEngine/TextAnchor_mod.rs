@@ -42,6 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TextAnchor {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+TextAnchor")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextAnchor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -51,6 +52,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::TextAnchor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+TextAnchor")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextAnchor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -63,6 +65,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::TextAnchor 
         self
     }
 }
+#[cfg(feature = "UnityEngine+TextAnchor")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextAnchor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -76,6 +79,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::TextAnchor {
         }
     }
 }
+#[cfg(feature = "UnityEngine+TextAnchor")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::TextAnchor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

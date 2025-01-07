@@ -289,6 +289,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Type = Self;
@@ -299,6 +300,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Actual = Self;
@@ -312,6 +314,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Type = Self;
@@ -326,6 +329,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Actual = Self;
@@ -485,6 +489,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExpressionEvalua
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Type = Self;
@@ -495,6 +500,7 @@ for crate::UnityEngine::ExpressionEvaluator_Op {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Actual = Self;
@@ -508,6 +514,7 @@ for crate::UnityEngine::ExpressionEvaluator_Op {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Type = Self;
@@ -522,6 +529,7 @@ for crate::UnityEngine::ExpressionEvaluator_Op {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ExpressionEvaluator_Op {
     type Actual = Self;
@@ -654,6 +662,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Type = Self;
@@ -664,6 +673,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Actual = Self;
@@ -677,6 +687,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Type = Self;
@@ -691,6 +702,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Actual = Self;

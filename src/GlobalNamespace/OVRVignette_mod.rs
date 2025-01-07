@@ -311,6 +311,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Type = Self;
@@ -321,6 +322,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Actual = Self;
@@ -334,6 +336,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
         self
     }
 }
+#[cfg(feature = "OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Type = Self;
@@ -348,6 +351,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
         }
     }
 }
+#[cfg(feature = "OVRVignette+FalloffType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Actual = Self;
@@ -402,6 +406,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Type = Self;
@@ -412,6 +417,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Actual = Self;
@@ -425,6 +431,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
         self
     }
 }
+#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Type = Self;
@@ -439,6 +446,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
         }
     }
 }
+#[cfg(feature = "OVRVignette+MeshComplexityLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Actual = Self;

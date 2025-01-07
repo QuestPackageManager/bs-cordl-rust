@@ -148,6 +148,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Type = Self;
@@ -158,6 +159,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Actual = Self;
@@ -171,6 +173,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Type = Self;
@@ -185,6 +188,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Actual = Self;
@@ -251,6 +255,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Type = Self;
@@ -261,6 +266,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Actual = Self;
@@ -274,6 +280,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Type = Self;
@@ -288,6 +295,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Actual = Self;
@@ -339,6 +347,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Type = Self;
@@ -349,6 +358,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Actual = Self;
@@ -362,6 +372,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Type = Self;
@@ -376,6 +387,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_errorstate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Actual = Self;
@@ -717,6 +729,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls_unitytl
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_key {
     type Type = Self;
@@ -727,6 +740,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_key {
     type Actual = Self;
@@ -740,6 +754,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_key {
     type Type = Self;
@@ -754,6 +769,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Unity::UnityTls_unitytls_key {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -815,6 +831,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Type = Self;
@@ -825,6 +842,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Actual = Self;
@@ -838,6 +856,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Type = Self;
@@ -852,6 +871,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Actual = Self;
@@ -918,6 +938,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Type = Self;
@@ -928,6 +949,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Actual = Self;
@@ -941,6 +963,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Type = Self;
@@ -955,6 +978,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Actual = Self;
@@ -1002,6 +1026,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Type = Self;
@@ -1012,6 +1037,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Actual = Self;
@@ -1025,6 +1051,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Type = Self;
@@ -1039,6 +1066,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Actual = Self;
@@ -1107,6 +1135,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Type = Self;
@@ -1117,6 +1146,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Actual = Self;
@@ -1130,6 +1160,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Type = Self;
@@ -1144,6 +1175,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_callbacks")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Actual = Self;
@@ -1305,6 +1337,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Type = Self;
@@ -1315,6 +1348,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Actual = Self;
@@ -1328,6 +1362,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Type = Self;
@@ -1342,6 +1377,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_protocolrange")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Actual = Self;
@@ -1759,6 +1795,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Type = Self;
@@ -1769,6 +1806,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Actual = Self;
@@ -1782,6 +1820,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Type = Self;
@@ -1796,6 +1835,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509_ref")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Actual = Self;
@@ -1856,6 +1896,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Type = Self;
@@ -1866,6 +1907,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Actual = Self;
@@ -1879,6 +1921,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Type = Self;
@@ -1893,6 +1936,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Actual = Self;
@@ -1955,6 +1999,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Type = Self;
@@ -1965,6 +2010,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Actual = Self;
@@ -1978,6 +2024,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Type = Self;
@@ -1992,6 +2039,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509list_ref")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Actual = Self;
@@ -2052,6 +2100,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Type = Self;
@@ -2062,6 +2111,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Actual = Self;
@@ -2075,6 +2125,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Type = Self;
@@ -2089,6 +2140,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509name")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Actual = Self;
@@ -2257,6 +2309,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Type = Self;
@@ -2267,6 +2320,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Actual = Self;
@@ -2280,6 +2334,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
         self
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Type = Self;
@@ -2294,6 +2349,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
         }
     }
 }
+#[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Actual = Self;

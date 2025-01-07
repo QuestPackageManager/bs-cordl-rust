@@ -1498,6 +1498,7 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Type = Self;
@@ -1508,6 +1509,7 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Actual = Self;
@@ -1521,6 +1523,7 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Type = Self;
@@ -1535,6 +1538,7 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d {
     type Actual = Self;

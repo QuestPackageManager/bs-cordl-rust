@@ -1277,6 +1277,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Type = Self;
@@ -1287,6 +1288,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Actual = Self;
@@ -1300,6 +1302,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Type = Self;
@@ -1314,6 +1317,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Actual = Self;

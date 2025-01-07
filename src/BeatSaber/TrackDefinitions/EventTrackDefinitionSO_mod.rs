@@ -161,6 +161,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
     type Type = Self;
@@ -171,6 +174,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
     type Actual = Self;
@@ -184,6 +190,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
         self
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
     type Type = Self;
@@ -198,6 +207,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformatio
         }
     }
 }
+#[cfg(
+    feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_DataTransformationType {
     type Actual = Self;
@@ -252,6 +264,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Type = Self;
@@ -262,6 +275,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Actual = Self;
@@ -275,6 +289,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         self
     }
 }
+#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Type = Self;
@@ -289,6 +304,7 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
         }
     }
 }
+#[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO_MarkerType {
     type Actual = Self;

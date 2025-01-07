@@ -35,6 +35,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::Newtonsoft::Json::Utilities::StringBuffer {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Utilities+StringBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Utilities::StringBuffer {
     type Actual = Self;

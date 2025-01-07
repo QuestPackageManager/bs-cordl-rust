@@ -409,6 +409,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Type = Self;
@@ -419,6 +420,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Actual = Self;
@@ -432,6 +434,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Type = Self;
@@ -446,6 +449,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Actual = Self;
@@ -787,6 +791,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Type = Self;
@@ -797,6 +802,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Actual = Self;
@@ -810,6 +816,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Type = Self;
@@ -824,6 +831,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Actual = Self;

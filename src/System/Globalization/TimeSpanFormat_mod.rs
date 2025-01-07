@@ -172,6 +172,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Type = Self;
@@ -182,6 +183,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Actual = Self;
@@ -195,6 +197,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         self
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Type = Self;
@@ -209,6 +212,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
         }
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Actual = Self;
@@ -364,6 +368,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Type = Self;
@@ -374,6 +379,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Actual = Self;
@@ -387,6 +393,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
         self
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Type = Self;
@@ -401,6 +408,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
         }
     }
 }
+#[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Actual = Self;

@@ -250,6 +250,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
     type Type = Self;
@@ -260,6 +261,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
     type Actual = Self;
@@ -273,6 +275,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
     type Type = Self;
@@ -287,6 +290,7 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate_Choice {
     type Actual = Self;

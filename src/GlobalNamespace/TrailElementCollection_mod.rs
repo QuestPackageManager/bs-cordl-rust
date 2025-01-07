@@ -223,6 +223,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Type = Self;
@@ -233,6 +234,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Actual = Self;
@@ -246,6 +248,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
         self
     }
 }
+#[cfg(feature = "TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Type = Self;
@@ -260,6 +263,7 @@ for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
         }
     }
 }
+#[cfg(feature = "TrailElementCollection+InterpolationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TrailElementCollection_InterpolationState {
     type Actual = Self;

@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
     type Actual = Self;
@@ -235,6 +239,9 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__Fix
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__FixedBuffer {
     type Type = Self;
@@ -245,6 +252,9 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__Fix
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__FixedBuffer {
     type Actual = Self;
@@ -258,6 +268,9 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__Fix
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__FixedBuffer {
     type Type = Self;
@@ -272,6 +285,9 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__Fix
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__FixedBuffer {
     type Actual = Self;

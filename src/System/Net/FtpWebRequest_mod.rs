@@ -680,6 +680,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Type = Self;
@@ -690,6 +691,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Actual = Self;
@@ -703,6 +705,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
         self
     }
 }
+#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Type = Self;
@@ -717,6 +720,7 @@ for crate::System::Net::FtpWebRequest_RequestStage {
         }
     }
 }
+#[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::FtpWebRequest_RequestStage {
     type Actual = Self;

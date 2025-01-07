@@ -44,6 +44,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::BeatmapSaveDataCommon::NoteCutDirection {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataCommon::NoteCutDirection {
     type Actual = Self;

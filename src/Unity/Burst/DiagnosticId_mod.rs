@@ -159,6 +159,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::DiagnosticId {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Burst+DiagnosticId")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::DiagnosticId {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -168,6 +169,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Unity::Burst::DiagnosticI
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Burst+DiagnosticId")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::DiagnosticId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -180,6 +182,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Unity::Burst::Diagnostic
         self
     }
 }
+#[cfg(feature = "Unity+Burst+DiagnosticId")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::DiagnosticId {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -193,6 +196,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Unity::Burst::DiagnosticI
         }
     }
 }
+#[cfg(feature = "Unity+Burst+DiagnosticId")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Burst::DiagnosticId {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

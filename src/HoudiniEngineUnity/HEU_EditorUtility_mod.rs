@@ -605,6 +605,7 @@ for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_EditorUtility+HEU_ReplacePrefabOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
     type Type = Self;
@@ -615,6 +616,7 @@ for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_EditorUtility+HEU_ReplacePrefabOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
     type Actual = Self;
@@ -628,6 +630,7 @@ for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_EditorUtility+HEU_ReplacePrefabOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
     type Type = Self;
@@ -642,6 +645,7 @@ for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_EditorUtility+HEU_ReplacePrefabOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_EditorUtility_HEU_ReplacePrefabOptions {
     type Actual = Self;

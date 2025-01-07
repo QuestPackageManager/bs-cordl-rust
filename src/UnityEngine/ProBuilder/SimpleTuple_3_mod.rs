@@ -63,6 +63,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -77,6 +78,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -94,6 +96,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
@@ -112,6 +115,7 @@ for crate::UnityEngine::ProBuilder::SimpleTuple_3<T1, T2, T3> {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+SimpleTuple_3")]
 unsafe impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,

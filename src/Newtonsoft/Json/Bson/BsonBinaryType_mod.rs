@@ -41,6 +41,7 @@ for crate::Newtonsoft::Json::Bson::BsonBinaryType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Bson::BsonBinaryType {
     type Type = Self;
@@ -51,6 +52,7 @@ for crate::Newtonsoft::Json::Bson::BsonBinaryType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Bson::BsonBinaryType {
     type Actual = Self;
@@ -64,6 +66,7 @@ for crate::Newtonsoft::Json::Bson::BsonBinaryType {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Bson::BsonBinaryType {
     type Type = Self;
@@ -78,6 +81,7 @@ for crate::Newtonsoft::Json::Bson::BsonBinaryType {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Bson::BsonBinaryType {
     type Actual = Self;

@@ -797,6 +797,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Type = Self;
@@ -807,6 +808,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Actual = Self;
@@ -820,6 +822,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
         self
     }
 }
+#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Type = Self;
@@ -834,6 +837,7 @@ for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
         }
     }
 }
+#[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
     type Actual = Self;

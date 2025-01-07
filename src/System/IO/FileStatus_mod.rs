@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+IO+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::FileStatus {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::IO::FileStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+IO+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::FileStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,6 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::IO::FileStatus {
         self
     }
 }
+#[cfg(feature = "System+IO+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::FileStatus {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::IO::FileStatus {
         }
     }
 }
+#[cfg(feature = "System+IO+FileStatus")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::IO::FileStatus {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

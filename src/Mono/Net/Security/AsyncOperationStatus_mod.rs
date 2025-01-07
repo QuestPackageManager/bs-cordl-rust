@@ -38,6 +38,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
         self
     }
 }
+#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::Mono::Net::Security::AsyncOperationStatus {
         }
     }
 }
+#[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Net::Security::AsyncOperationStatus {
     type Actual = Self;

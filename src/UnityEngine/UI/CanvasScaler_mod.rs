@@ -421,6 +421,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Type = Self;
@@ -431,6 +432,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Actual = Self;
@@ -444,6 +446,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Type = Self;
@@ -458,6 +461,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Actual = Self;
@@ -510,6 +514,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Type = Self;
@@ -520,6 +525,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Actual = Self;
@@ -533,6 +539,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Type = Self;
@@ -547,6 +554,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Actual = Self;
@@ -600,6 +608,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::CanvasScaler
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Type = Self;
@@ -610,6 +619,7 @@ for crate::UnityEngine::UI::CanvasScaler_Unit {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Actual = Self;
@@ -623,6 +633,7 @@ for crate::UnityEngine::UI::CanvasScaler_Unit {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Type = Self;
@@ -637,6 +648,7 @@ for crate::UnityEngine::UI::CanvasScaler_Unit {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::CanvasScaler_Unit {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

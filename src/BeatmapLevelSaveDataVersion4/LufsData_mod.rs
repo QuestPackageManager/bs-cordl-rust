@@ -36,6 +36,7 @@ for crate::BeatmapLevelSaveDataVersion4::LufsData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+LufsData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapLevelSaveDataVersion4::LufsData {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::BeatmapLevelSaveDataVersion4::LufsData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+LufsData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapLevelSaveDataVersion4::LufsData {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::BeatmapLevelSaveDataVersion4::LufsData {
         self
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+LufsData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapLevelSaveDataVersion4::LufsData {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::BeatmapLevelSaveDataVersion4::LufsData {
         }
     }
 }
+#[cfg(feature = "BeatmapLevelSaveDataVersion4+LufsData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapLevelSaveDataVersion4::LufsData {
     type Actual = Self;

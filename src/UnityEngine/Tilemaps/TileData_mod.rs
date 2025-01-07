@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Tilemaps::TileDa
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileData")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Tilemaps::TileData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Tilemaps::Ti
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileData")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Tilemaps::TileData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Tilemaps::T
         self
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileData")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Tilemaps::TileData {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Tilemaps::Ti
         }
     }
 }
+#[cfg(feature = "UnityEngine+Tilemaps+TileData")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Tilemaps::TileData {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

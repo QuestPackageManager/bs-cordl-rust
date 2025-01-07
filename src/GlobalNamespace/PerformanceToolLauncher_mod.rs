@@ -161,6 +161,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Type = Self;
@@ -171,6 +172,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Actual = Self;
@@ -184,6 +186,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
         self
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Type = Self;
@@ -198,6 +201,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
         }
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+Assets")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Actual = Self;
@@ -261,6 +265,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Type = Self;
@@ -271,6 +276,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Actual = Self;
@@ -284,6 +290,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
         self
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Type = Self;
@@ -298,6 +305,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
         }
     }
 }
+#[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Actual = Self;

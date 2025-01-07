@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Profiling::ProfilerCat
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Profiling::ProfilerCategory {
     type Type = Self;
@@ -43,6 +44,7 @@ for crate::Unity::Profiling::ProfilerCategory {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Profiling::ProfilerCategory {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::Unity::Profiling::ProfilerCategory {
         self
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Profiling::ProfilerCategory {
     type Type = Self;
@@ -70,6 +73,7 @@ for crate::Unity::Profiling::ProfilerCategory {
         }
     }
 }
+#[cfg(feature = "Unity+Profiling+ProfilerCategory")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Unity::Profiling::ProfilerCategory {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

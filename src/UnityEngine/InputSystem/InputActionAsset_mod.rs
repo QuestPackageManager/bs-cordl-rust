@@ -605,6 +605,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Type = Self;
@@ -615,6 +616,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Actual = Self;
@@ -628,6 +630,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Type = Self;
@@ -642,6 +645,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+ReadFileJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Actual = Self;
@@ -728,6 +732,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Type = Self;
@@ -738,6 +743,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Actual = Self;
@@ -751,6 +757,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Type = Self;
@@ -765,6 +772,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Actual = Self;

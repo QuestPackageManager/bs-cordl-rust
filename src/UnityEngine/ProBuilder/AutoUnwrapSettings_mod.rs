@@ -42,6 +42,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
     type Type = Self;
@@ -52,6 +53,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
     type Actual = Self;
@@ -65,6 +67,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
     type Type = Self;
@@ -79,6 +82,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
     type Actual = Self;
@@ -398,6 +402,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
     type Type = Self;
@@ -408,6 +413,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
     type Actual = Self;
@@ -421,6 +427,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
     type Type = Self;
@@ -435,6 +442,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
     type Actual = Self;
@@ -487,6 +495,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
     type Type = Self;
@@ -497,6 +506,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
     type Actual = Self;
@@ -510,6 +520,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
     type Type = Self;
@@ -524,6 +535,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
     type Actual = Self;

@@ -260,6 +260,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Type = Self;
@@ -270,6 +271,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Actual = Self;
@@ -283,6 +285,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
         self
     }
 }
+#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Type = Self;
@@ -297,6 +300,7 @@ for crate::HMUI::AnimatedSwitchView_AnimationState {
         }
     }
 }
+#[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::AnimatedSwitchView_AnimationState {
     type Actual = Self;

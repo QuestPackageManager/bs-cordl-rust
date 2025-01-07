@@ -900,6 +900,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
     type Type = Self;
@@ -910,6 +913,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
     type Actual = Self;
@@ -923,6 +929,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
     type Type = Self;
@@ -937,6 +946,9 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+SortedColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState {
     type Actual = Self;
@@ -1140,6 +1152,9 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
     type Type = Self;
@@ -1150,6 +1165,9 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
     type Actual = Self;
@@ -1163,6 +1181,9 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
     type Type = Self;
@@ -1177,6 +1198,9 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState+ColumnState"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState {
     type Actual = Self;

@@ -31,6 +31,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Android::Permiss
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Android+Permission")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Android::Permission {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -40,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Android::Per
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Android+Permission")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Android::Permission {
     type Actual = Self;
@@ -53,6 +55,7 @@ for crate::UnityEngine::Android::Permission {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Android+Permission")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Android::Permission {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,6 +69,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Android::Per
         }
     }
 }
+#[cfg(feature = "UnityEngine+Android+Permission")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Android::Permission {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

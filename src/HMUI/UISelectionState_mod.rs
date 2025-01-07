@@ -39,6 +39,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::UISelectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+UISelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::UISelectionState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -48,6 +49,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HMUI::UISelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+UISelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::UISelectionState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -60,6 +62,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HMUI::UISelectionState {
         self
     }
 }
+#[cfg(feature = "HMUI+UISelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::UISelectionState {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -73,6 +76,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HMUI::UISelectionState {
         }
     }
 }
+#[cfg(feature = "HMUI+UISelectionState")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HMUI::UISelectionState {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

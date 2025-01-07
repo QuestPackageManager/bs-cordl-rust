@@ -142,6 +142,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Type = Self;
@@ -152,6 +153,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Actual = Self;
@@ -165,6 +167,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
         self
     }
 }
+#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Type = Self;
@@ -179,6 +182,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
         }
     }
 }
+#[cfg(feature = "Unity+Properties+Internal+PropertyBagStore+TypedStore_1")]
 unsafe impl<TContainer: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer> {
     type Actual = Self;

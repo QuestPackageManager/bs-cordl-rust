@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::XR::UsageHint {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::UsageHint {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::XR::UsageHint {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::UsageHint {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::XR::UsageHint {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::UsageHint {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::XR::UsageHint {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::UsageHint {
     type Actual = Self;

@@ -553,6 +553,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Environment_SpecialFo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Environment_SpecialFolder {
     type Type = Self;
@@ -563,6 +564,7 @@ for crate::System::Environment_SpecialFolder {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Environment_SpecialFolder {
     type Actual = Self;
@@ -576,6 +578,7 @@ for crate::System::Environment_SpecialFolder {
         self
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Environment_SpecialFolder {
     type Type = Self;
@@ -590,6 +593,7 @@ for crate::System::Environment_SpecialFolder {
         }
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolder")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Environment_SpecialFolder {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -641,6 +645,7 @@ for crate::System::Environment_SpecialFolderOption {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Environment_SpecialFolderOption {
     type Type = Self;
@@ -651,6 +656,7 @@ for crate::System::Environment_SpecialFolderOption {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Environment_SpecialFolderOption {
     type Actual = Self;
@@ -664,6 +670,7 @@ for crate::System::Environment_SpecialFolderOption {
         self
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Environment_SpecialFolderOption {
     type Type = Self;
@@ -678,6 +685,7 @@ for crate::System::Environment_SpecialFolderOption {
         }
     }
 }
+#[cfg(feature = "System+Environment+SpecialFolderOption")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Environment_SpecialFolderOption {
     type Actual = Self;

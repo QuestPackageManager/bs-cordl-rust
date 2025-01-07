@@ -470,6 +470,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SelectableCell_Transiti
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::SelectableCell_TransitionType {
     type Type = Self;
@@ -480,6 +481,7 @@ for crate::HMUI::SelectableCell_TransitionType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::SelectableCell_TransitionType {
     type Actual = Self;
@@ -493,6 +495,7 @@ for crate::HMUI::SelectableCell_TransitionType {
         self
     }
 }
+#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::SelectableCell_TransitionType {
     type Type = Self;
@@ -507,6 +510,7 @@ for crate::HMUI::SelectableCell_TransitionType {
         }
     }
 }
+#[cfg(feature = "HMUI+SelectableCell+TransitionType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::SelectableCell_TransitionType {
     type Actual = Self;

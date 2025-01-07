@@ -32,6 +32,7 @@ for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
     type Type = Self;
@@ -42,6 +43,7 @@ for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
     type Actual = Self;
@@ -55,6 +57,7 @@ for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
     type Type = Self;
@@ -69,6 +72,7 @@ for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+Vector2MagnitudeComparer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Utilities::Vector2MagnitudeComparer {
     type Actual = Self;

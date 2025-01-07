@@ -36,6 +36,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
     type Actual = Self;

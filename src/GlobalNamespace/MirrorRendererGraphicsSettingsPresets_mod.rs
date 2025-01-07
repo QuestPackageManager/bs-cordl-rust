@@ -239,6 +239,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Type = Self;
@@ -249,6 +250,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Actual = Self;
@@ -262,6 +264,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
         self
     }
 }
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Type = Self;
@@ -276,6 +279,7 @@ for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorT
         }
     }
 }
+#[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
     type Actual = Self;

@@ -40,6 +40,7 @@ for crate::Oculus::Platform::RichPresenceExtraContext {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+RichPresenceExtraContext")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::RichPresenceExtraContext {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::Oculus::Platform::RichPresenceExtraContext {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+RichPresenceExtraContext")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::RichPresenceExtraContext {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::Oculus::Platform::RichPresenceExtraContext {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+RichPresenceExtraContext")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::RichPresenceExtraContext {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::Oculus::Platform::RichPresenceExtraContext {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+RichPresenceExtraContext")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::RichPresenceExtraContext {
     type Actual = Self;

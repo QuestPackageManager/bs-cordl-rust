@@ -253,6 +253,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -266,6 +267,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -282,6 +284,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         self
     }
 }
+#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -299,6 +302,7 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
         }
     }
 }
+#[cfg(feature = "OVRObjectPool+DictionaryScope_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -444,6 +448,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Type = Self;
@@ -454,6 +459,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Actual = Self;
@@ -467,6 +473,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         self
     }
 }
+#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Type = Self;
@@ -481,6 +488,7 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
         }
     }
 }
+#[cfg(feature = "OVRObjectPool+HashSetScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Actual = Self;
@@ -605,6 +613,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Type = Self;
@@ -615,6 +624,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Actual = Self;
@@ -628,6 +638,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         self
     }
 }
+#[cfg(feature = "OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Type = Self;
@@ -642,6 +653,7 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
         }
     }
 }
+#[cfg(feature = "OVRObjectPool+ItemScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Actual = Self;
@@ -764,6 +776,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Type = Self;
@@ -774,6 +787,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Actual = Self;
@@ -787,6 +801,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         self
     }
 }
+#[cfg(feature = "OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Type = Self;
@@ -801,6 +816,7 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
         }
     }
 }
+#[cfg(feature = "OVRObjectPool+ListScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Actual = Self;
@@ -927,6 +943,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Type = Self;
@@ -937,6 +954,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Actual = Self;
@@ -950,6 +968,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         self
     }
 }
+#[cfg(feature = "OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Type = Self;
@@ -964,6 +983,7 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
         }
     }
 }
+#[cfg(feature = "OVRObjectPool+QueueScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Actual = Self;
@@ -1090,6 +1110,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Type = Self;
@@ -1100,6 +1121,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Actual = Self;
@@ -1113,6 +1135,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         self
     }
 }
+#[cfg(feature = "OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Type = Self;
@@ -1127,6 +1150,7 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
         }
     }
 }
+#[cfg(feature = "OVRObjectPool+StackScope_1")]
 unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Actual = Self;

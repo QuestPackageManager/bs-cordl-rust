@@ -45,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::MonoAssemblyName {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::MonoAssemblyName {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +55,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::MonoAssemblyName {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::MonoAssemblyName {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,6 +68,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::MonoAssemblyName {
         self
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::MonoAssemblyName {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,6 +82,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::MonoAssemblyName {
         }
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::MonoAssemblyName {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -142,6 +146,7 @@ for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName+_public_key_token_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
     type Type = Self;
@@ -152,6 +157,7 @@ for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName+_public_key_token_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
     type Actual = Self;
@@ -165,6 +171,7 @@ for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
         self
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName+_public_key_token_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
     type Type = Self;
@@ -179,6 +186,7 @@ for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
         }
     }
 }
+#[cfg(feature = "Mono+MonoAssemblyName+_public_key_token_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
     type Actual = Self;

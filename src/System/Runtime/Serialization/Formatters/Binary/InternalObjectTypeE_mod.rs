@@ -37,6 +37,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTyp
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectTypeE")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTyp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectTypeE")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTyp
         self
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectTypeE")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTyp
         }
     }
 }
+#[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectTypeE")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE {
     type Actual = Self;

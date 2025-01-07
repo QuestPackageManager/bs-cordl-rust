@@ -44,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Rendering::Stenc
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Rendering::StencilState {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::UnityEngine::Rendering::StencilState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Rendering::StencilState {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::UnityEngine::Rendering::StencilState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Rendering::StencilState {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::UnityEngine::Rendering::StencilState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Rendering+StencilState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Rendering::StencilState {
     type Actual = Self;

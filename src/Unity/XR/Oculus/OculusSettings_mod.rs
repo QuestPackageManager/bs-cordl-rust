@@ -145,6 +145,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Type = Self;
@@ -155,6 +156,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Actual = Self;
@@ -168,6 +170,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
         self
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Type = Self;
@@ -182,6 +185,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
         }
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Actual = Self;
@@ -233,6 +237,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Type = Self;
@@ -243,6 +248,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Actual = Self;
@@ -256,6 +262,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
         self
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Type = Self;
@@ -270,6 +277,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
         }
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Actual = Self;
@@ -321,6 +329,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Type = Self;
@@ -331,6 +340,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Actual = Self;
@@ -344,6 +354,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
         self
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Type = Self;
@@ -358,6 +369,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
         }
     }
 }
+#[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Actual = Self;

@@ -38,6 +38,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         self
     }
 }
+#[cfg(feature = "StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::GlobalNamespace::StandardScoreSyncState {
         }
     }
 }
+#[cfg(feature = "StandardScoreSyncState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardScoreSyncState {
     type Actual = Self;
@@ -355,6 +359,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Type = Self;
@@ -365,6 +370,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Actual = Self;
@@ -378,6 +384,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
         self
     }
 }
+#[cfg(feature = "StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Type = Self;
@@ -392,6 +399,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
         }
     }
 }
+#[cfg(feature = "StandardScoreSyncState+Score")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Actual = Self;

@@ -38,6 +38,7 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
         self
     }
 }
+#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
         }
     }
 }
+#[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus {
     type Actual = Self;

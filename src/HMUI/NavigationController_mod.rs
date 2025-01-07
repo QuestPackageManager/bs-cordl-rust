@@ -221,6 +221,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::NavigationController_Al
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::NavigationController_Alignment {
     type Type = Self;
@@ -231,6 +232,7 @@ for crate::HMUI::NavigationController_Alignment {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::NavigationController_Alignment {
     type Actual = Self;
@@ -244,6 +246,7 @@ for crate::HMUI::NavigationController_Alignment {
         self
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::NavigationController_Alignment {
     type Type = Self;
@@ -258,6 +261,7 @@ for crate::HMUI::NavigationController_Alignment {
         }
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Alignment")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::NavigationController_Alignment {
     type Actual = Self;
@@ -309,6 +313,7 @@ for crate::HMUI::NavigationController_Orientation {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::NavigationController_Orientation {
     type Type = Self;
@@ -319,6 +324,7 @@ for crate::HMUI::NavigationController_Orientation {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::NavigationController_Orientation {
     type Actual = Self;
@@ -332,6 +338,7 @@ for crate::HMUI::NavigationController_Orientation {
         self
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::NavigationController_Orientation {
     type Type = Self;
@@ -346,6 +353,7 @@ for crate::HMUI::NavigationController_Orientation {
         }
     }
 }
+#[cfg(feature = "HMUI+NavigationController+Orientation")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::NavigationController_Orientation {
     type Actual = Self;

@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::SdkAccountT
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+SdkAccountType")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::SdkAccountType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Oculus::Platform::SdkAcco
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+SdkAccountType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::SdkAccountType {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::Oculus::Platform::SdkAccountType {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+SdkAccountType")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::SdkAccountType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Oculus::Platform::SdkAcco
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+SdkAccountType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Oculus::Platform::SdkAccountType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

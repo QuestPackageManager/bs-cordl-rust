@@ -43,6 +43,7 @@ for crate::Newtonsoft::Json::Serialization::JsonContractType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonContractType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::Serialization::JsonContractType {
     type Type = Self;
@@ -53,6 +54,7 @@ for crate::Newtonsoft::Json::Serialization::JsonContractType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonContractType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::Serialization::JsonContractType {
     type Actual = Self;
@@ -66,6 +68,7 @@ for crate::Newtonsoft::Json::Serialization::JsonContractType {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonContractType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::Serialization::JsonContractType {
     type Type = Self;
@@ -80,6 +83,7 @@ for crate::Newtonsoft::Json::Serialization::JsonContractType {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonContractType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::Serialization::JsonContractType {
     type Actual = Self;

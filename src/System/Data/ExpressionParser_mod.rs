@@ -373,6 +373,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Type = Self;
@@ -383,6 +384,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Actual = Self;
@@ -396,6 +398,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
         self
     }
 }
+#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Type = Self;
@@ -410,6 +413,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
         }
     }
 }
+#[cfg(feature = "System+Data+ExpressionParser+ReservedWords")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Data::ExpressionParser_ReservedWords {
     type Actual = Self;

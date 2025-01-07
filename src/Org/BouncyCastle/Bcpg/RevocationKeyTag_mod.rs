@@ -36,6 +36,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKeyTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKeyTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKeyTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKeyTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Bcpg::RevocationKeyTag {
     type Actual = Self;

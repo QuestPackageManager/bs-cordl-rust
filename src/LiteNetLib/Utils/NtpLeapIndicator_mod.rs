@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NtpLeapInd
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::LiteNetLib::Utils::NtpLeapIndicator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::LiteNetLib::Utils::NtpLeapIndicator {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::LiteNetLib::Utils::NtpLeapIndicator {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::LiteNetLib::Utils::NtpLeapIndicator {
     type Actual = Self;

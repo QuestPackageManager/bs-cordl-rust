@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BitMask256 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BitMask256")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::BitMask256 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::BitMask2
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BitMask256")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::BitMask256 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::GlobalNamespace::BitMask
         self
     }
 }
+#[cfg(feature = "BitMask256")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::BitMask256 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::BitMask2
         }
     }
 }
+#[cfg(feature = "BitMask256")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::BitMask256 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

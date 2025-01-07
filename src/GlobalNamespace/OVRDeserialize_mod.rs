@@ -116,6 +116,7 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
     type Type = Self;
@@ -126,6 +127,7 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
     type Actual = Self;
@@ -139,6 +141,7 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
     type Type = Self;
@@ -153,6 +156,7 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+DisplayRefreshRateChangedData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
     type Actual = Self;
@@ -216,6 +220,7 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
     type Type = Self;
@@ -226,6 +231,7 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
     type Actual = Self;
@@ -239,6 +245,7 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
     type Type = Self;
@@ -253,6 +260,7 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SceneCaptureCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
     type Actual = Self;
@@ -318,6 +326,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
     type Type = Self;
@@ -328,6 +337,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
     type Actual = Self;
@@ -341,6 +351,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
     type Type = Self;
@@ -355,6 +366,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceEraseCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
     type Actual = Self;
@@ -418,6 +430,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
     type Type = Self;
@@ -428,6 +441,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
     type Actual = Self;
@@ -441,6 +455,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
     type Type = Self;
@@ -455,6 +470,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceListSaveResultData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
     type Actual = Self;
@@ -518,6 +534,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
     type Type = Self;
@@ -528,6 +545,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
     type Actual = Self;
@@ -541,6 +559,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
     type Type = Self;
@@ -555,6 +574,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
     type Actual = Self;
@@ -617,6 +637,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
     type Type = Self;
@@ -627,6 +648,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
     type Actual = Self;
@@ -640,6 +662,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
     type Type = Self;
@@ -654,6 +677,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceQueryResultsData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
     type Actual = Self;
@@ -719,6 +743,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
     type Type = Self;
@@ -729,6 +754,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
     type Actual = Self;
@@ -742,6 +768,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
     type Type = Self;
@@ -756,6 +783,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSaveCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
     type Actual = Self;
@@ -823,6 +851,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
     type Type = Self;
@@ -833,6 +862,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
     type Actual = Self;
@@ -846,6 +876,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
     type Type = Self;
@@ -860,6 +891,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceSetComponentStatusCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
     type Actual = Self;
@@ -923,6 +955,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
     type Type = Self;
@@ -933,6 +966,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
     type Actual = Self;
@@ -946,6 +980,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
     type Type = Self;
@@ -960,6 +995,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpaceShareResultData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
     type Actual = Self;
@@ -1025,6 +1061,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
     type Type = Self;
@@ -1035,6 +1072,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
     type Actual = Self;
@@ -1048,6 +1086,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
         self
     }
 }
+#[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
     type Type = Self;
@@ -1062,6 +1101,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
         }
     }
 }
+#[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
     type Actual = Self;

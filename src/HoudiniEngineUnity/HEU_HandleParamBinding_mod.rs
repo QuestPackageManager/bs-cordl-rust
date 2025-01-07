@@ -155,6 +155,7 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Type = Self;
@@ -165,6 +166,7 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Actual = Self;
@@ -178,6 +180,7 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Type = Self;
@@ -192,6 +195,7 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Actual = Self;

@@ -796,6 +796,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Type = Self;
@@ -806,6 +807,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Actual = Self;
@@ -819,6 +821,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
         self
     }
 }
+#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Type = Self;
@@ -833,6 +836,7 @@ for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationTy
         }
     }
 }
+#[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType {
     type Actual = Self;

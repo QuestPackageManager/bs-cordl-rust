@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRAnchorCon
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRAnchorContainer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRAnchorContainer {
     type Type = Self;
@@ -43,6 +44,7 @@ for crate::GlobalNamespace::OVRAnchorContainer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRAnchorContainer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRAnchorContainer {
     type Actual = Self;
@@ -56,6 +58,7 @@ for crate::GlobalNamespace::OVRAnchorContainer {
         self
     }
 }
+#[cfg(feature = "OVRAnchorContainer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRAnchorContainer {
     type Type = Self;
@@ -70,6 +73,7 @@ for crate::GlobalNamespace::OVRAnchorContainer {
         }
     }
 }
+#[cfg(feature = "OVRAnchorContainer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRAnchorContainer {
     type Actual = Self;

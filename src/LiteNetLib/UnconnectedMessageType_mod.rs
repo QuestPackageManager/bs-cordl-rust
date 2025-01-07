@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::UnconnectedMessag
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LiteNetLib+UnconnectedMessageType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::LiteNetLib::UnconnectedMessageType {
     type Type = Self;
@@ -45,6 +46,7 @@ for crate::LiteNetLib::UnconnectedMessageType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LiteNetLib+UnconnectedMessageType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::LiteNetLib::UnconnectedMessageType {
     type Actual = Self;
@@ -58,6 +60,7 @@ for crate::LiteNetLib::UnconnectedMessageType {
         self
     }
 }
+#[cfg(feature = "LiteNetLib+UnconnectedMessageType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::LiteNetLib::UnconnectedMessageType {
     type Type = Self;
@@ -72,6 +75,7 @@ for crate::LiteNetLib::UnconnectedMessageType {
         }
     }
 }
+#[cfg(feature = "LiteNetLib+UnconnectedMessageType")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LiteNetLib::UnconnectedMessageType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

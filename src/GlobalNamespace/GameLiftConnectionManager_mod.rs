@@ -901,6 +901,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Type = Self;
@@ -911,6 +912,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Actual = Self;
@@ -924,6 +926,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
         self
     }
 }
+#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Type = Self;
@@ -938,6 +941,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
         }
     }
 }
+#[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectionState {
     type Actual = Self;

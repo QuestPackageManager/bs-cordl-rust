@@ -50,6 +50,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::EVRTrackedCamera
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraError")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::OVR::OpenVR::EVRTrackedCameraError {
     type Type = Self;
@@ -60,6 +61,7 @@ for crate::OVR::OpenVR::EVRTrackedCameraError {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraError")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::OVR::OpenVR::EVRTrackedCameraError {
     type Actual = Self;
@@ -73,6 +75,7 @@ for crate::OVR::OpenVR::EVRTrackedCameraError {
         self
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraError")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::OVR::OpenVR::EVRTrackedCameraError {
     type Type = Self;
@@ -87,6 +90,7 @@ for crate::OVR::OpenVR::EVRTrackedCameraError {
         }
     }
 }
+#[cfg(feature = "OVR+OpenVR+EVRTrackedCameraError")]
 unsafe impl quest_hook::libil2cpp::Return for crate::OVR::OpenVR::EVRTrackedCameraError {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

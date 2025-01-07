@@ -37,6 +37,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Actual = Self;
@@ -1257,6 +1261,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Type = Self;
@@ -1267,6 +1272,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Actual = Self;
@@ -1280,6 +1286,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Type = Self;
@@ -1294,6 +1301,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Actual = Self;
@@ -1416,6 +1424,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Type = Self;
@@ -1426,6 +1435,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Actual = Self;
@@ -1439,6 +1449,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Type = Self;
@@ -1453,6 +1464,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+KeyEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Actual = Self;
@@ -1875,6 +1887,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Type = Self;
@@ -1885,6 +1898,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Actual = Self;
@@ -1898,6 +1912,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Type = Self;
@@ -1912,6 +1927,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Actual = Self;

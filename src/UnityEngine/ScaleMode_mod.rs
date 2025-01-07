@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ScaleMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ScaleMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::ScaleMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ScaleMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::ScaleMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ScaleMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::ScaleMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ScaleMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::ScaleMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

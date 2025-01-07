@@ -38,6 +38,7 @@ for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData+LoadStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData+LoadStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData+LoadStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData+LoadStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
     type Actual = Self;
@@ -906,6 +910,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallbackType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
     type Type = Self;
@@ -916,6 +921,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallbackType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
     type Actual = Self;
@@ -929,6 +935,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallbackType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
     type Type = Self;
@@ -943,6 +950,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallbackType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
     type Actual = Self;
@@ -1175,6 +1183,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+LoadType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
     type Type = Self;
@@ -1185,6 +1194,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+LoadType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
     type Actual = Self;
@@ -1198,6 +1208,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+LoadType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
     type Type = Self;
@@ -1212,6 +1223,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+LoadType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
     type Actual = Self;

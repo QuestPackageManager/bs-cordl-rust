@@ -239,6 +239,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Type = Self;
@@ -249,6 +250,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Actual = Self;
@@ -262,6 +264,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
         self
     }
 }
+#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Type = Self;
@@ -276,6 +279,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
         }
     }
 }
+#[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Actual = Self;

@@ -134,6 +134,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Type = Self;
@@ -144,6 +145,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Actual = Self;
@@ -157,6 +159,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
         self
     }
 }
+#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Type = Self;
@@ -171,6 +174,7 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
         }
     }
 }
+#[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::GraphicSettingsConditionalActivator_ActivatorType {
     type Actual = Self;

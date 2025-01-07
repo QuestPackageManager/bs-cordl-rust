@@ -276,6 +276,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Type = Self;
@@ -286,6 +287,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Actual = Self;
@@ -299,6 +301,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
         self
     }
 }
+#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Type = Self;
@@ -313,6 +316,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
         }
     }
 }
+#[cfg(feature = "TrueOverdraw+TrueOverdraw+OverdrawType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Actual = Self;

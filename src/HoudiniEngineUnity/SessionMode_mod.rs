@@ -35,6 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::SessionMo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::SessionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -44,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::HoudiniEngineUnity::Sessi
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::HoudiniEngineUnity::SessionMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -56,6 +58,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::HoudiniEngineUnity::Sess
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::SessionMode {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -69,6 +72,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::HoudiniEngineUnity::Sessi
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+SessionMode")]
 unsafe impl quest_hook::libil2cpp::Return for crate::HoudiniEngineUnity::SessionMode {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

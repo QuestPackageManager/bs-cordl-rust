@@ -1124,6 +1124,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1140,6 +1143,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1159,6 +1165,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
         self
     }
 }
+#[cfg(
+    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -1179,6 +1188,9 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
         }
     }
 }
+#[cfg(
+    feature = "System+Collections+ObjectModel+ReadOnlyDictionary_2+DictionaryEnumerator"
+)]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

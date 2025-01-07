@@ -44,6 +44,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::FrameTiming {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::FrameTiming {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -53,6 +54,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::FrameTiming 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::FrameTiming {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -65,6 +67,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::FrameTiming
         self
     }
 }
+#[cfg(feature = "UnityEngine+FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::FrameTiming {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -78,6 +81,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::FrameTiming 
         }
     }
 }
+#[cfg(feature = "UnityEngine+FrameTiming")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::FrameTiming {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

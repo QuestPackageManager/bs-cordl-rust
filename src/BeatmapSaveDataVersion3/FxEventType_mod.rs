@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatmapSaveDataVersion3::FxEv
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::BeatmapSaveDataVersion3::FxEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::BeatmapSaveDataVersion3::FxEventType {
         self
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::BeatmapSaveDataVersion3::FxEventType {
         }
     }
 }
+#[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatmapSaveDataVersion3::FxEventType {
     type Actual = Self;

@@ -41,6 +41,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::ENet::PacketFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ENet+PacketFlags")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::PacketFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -50,6 +51,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::ENet::PacketFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ENet+PacketFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::PacketFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -62,6 +64,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::ENet::PacketFlags {
         self
     }
 }
+#[cfg(feature = "ENet+PacketFlags")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::PacketFlags {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -75,6 +78,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::ENet::PacketFlags {
         }
     }
 }
+#[cfg(feature = "ENet+PacketFlags")]
 unsafe impl quest_hook::libil2cpp::Return for crate::ENet::PacketFlags {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

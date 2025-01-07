@@ -33,6 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Hash
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::Hashes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -42,6 +43,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::UIElements::
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements::Hashes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +56,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::UIElements:
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::Hashes {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -67,6 +70,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::UIElements::
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UIElements::Hashes {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -132,6 +136,7 @@ for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes+_hashes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
     type Type = Self;
@@ -142,6 +147,7 @@ for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes+_hashes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
     type Actual = Self;
@@ -155,6 +161,7 @@ for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes+_hashes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
     type Type = Self;
@@ -169,6 +176,7 @@ for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Hashes+_hashes_e__FixedBuffer")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::Hashes__hashes_e__FixedBuffer {
     type Actual = Self;

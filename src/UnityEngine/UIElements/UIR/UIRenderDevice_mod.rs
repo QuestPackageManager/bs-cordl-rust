@@ -761,6 +761,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
     type Type = Self;
@@ -771,6 +772,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
     type Actual = Self;
@@ -784,6 +786,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
     type Type = Self;
@@ -798,6 +801,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToFree")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
     type Actual = Self;
@@ -868,6 +872,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
     type Type = Self;
@@ -878,6 +883,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
     type Actual = Self;
@@ -891,6 +897,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
     type Type = Self;
@@ -905,6 +912,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+AllocToUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
     type Actual = Self;
@@ -968,6 +976,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
     type Type = Self;
@@ -978,6 +987,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
     type Actual = Self;
@@ -991,6 +1001,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
     type Type = Self;
@@ -1005,6 +1016,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
     type Actual = Self;
@@ -1086,6 +1098,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
     type Type = Self;
@@ -1096,6 +1109,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
     type Actual = Self;
@@ -1109,6 +1123,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
     type Type = Self;
@@ -1123,6 +1138,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+DrawStatistics")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
     type Actual = Self;
@@ -1194,6 +1210,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
     type Type = Self;
@@ -1204,6 +1221,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
     type Actual = Self;
@@ -1217,6 +1235,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
     type Type = Self;
@@ -1231,6 +1250,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
     type Actual = Self;

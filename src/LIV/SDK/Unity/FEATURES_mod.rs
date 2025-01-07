@@ -45,6 +45,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::FEATURES {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+FEATURES")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::FEATURES {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -54,6 +55,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::LIV::SDK::Unity::FEATURES
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+FEATURES")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::FEATURES {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -66,6 +68,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::LIV::SDK::Unity::FEATURE
         self
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+FEATURES")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::FEATURES {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -79,6 +82,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::LIV::SDK::Unity::FEATURES
         }
     }
 }
+#[cfg(feature = "LIV+SDK+Unity+FEATURES")]
 unsafe impl quest_hook::libil2cpp::Return for crate::LIV::SDK::Unity::FEATURES {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

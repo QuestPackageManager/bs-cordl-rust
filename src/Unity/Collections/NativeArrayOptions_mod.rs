@@ -36,6 +36,7 @@ for crate::Unity::Collections::NativeArrayOptions {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Unity::Collections::NativeArrayOptions {
     type Type = Self;
@@ -46,6 +47,7 @@ for crate::Unity::Collections::NativeArrayOptions {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Unity::Collections::NativeArrayOptions {
     type Actual = Self;
@@ -59,6 +61,7 @@ for crate::Unity::Collections::NativeArrayOptions {
         self
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Unity::Collections::NativeArrayOptions {
     type Type = Self;
@@ -73,6 +76,7 @@ for crate::Unity::Collections::NativeArrayOptions {
         }
     }
 }
+#[cfg(feature = "Unity+Collections+NativeArrayOptions")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Unity::Collections::NativeArrayOptions {
     type Actual = Self;

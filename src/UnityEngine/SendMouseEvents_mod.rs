@@ -113,6 +113,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::SendMouseEvents_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::SendMouseEvents_HitInfo {
     type Type = Self;
@@ -123,6 +124,7 @@ for crate::UnityEngine::SendMouseEvents_HitInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::SendMouseEvents_HitInfo {
     type Actual = Self;
@@ -136,6 +138,7 @@ for crate::UnityEngine::SendMouseEvents_HitInfo {
         self
     }
 }
+#[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::SendMouseEvents_HitInfo {
     type Type = Self;
@@ -150,6 +153,7 @@ for crate::UnityEngine::SendMouseEvents_HitInfo {
         }
     }
 }
+#[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::SendMouseEvents_HitInfo {
     type Actual = Self;

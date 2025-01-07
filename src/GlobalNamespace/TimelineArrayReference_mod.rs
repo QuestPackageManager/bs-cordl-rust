@@ -136,6 +136,7 @@ for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
     type Type = Self;
@@ -146,6 +147,7 @@ for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
     type Actual = Self;
@@ -159,6 +161,7 @@ for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
         self
     }
 }
+#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
     type Type = Self;
@@ -173,6 +176,7 @@ for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
         }
     }
 }
+#[cfg(feature = "TimelineArrayReference+ArrayTypes")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::TimelineArrayReference_ArrayTypes {
     type Actual = Self;

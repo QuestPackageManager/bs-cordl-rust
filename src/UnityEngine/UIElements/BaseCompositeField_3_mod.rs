@@ -366,6 +366,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -384,6 +385,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -405,6 +407,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,
@@ -427,6 +430,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+FieldDescription")]
 unsafe impl<
     TValueType: quest_hook::libil2cpp::Type,
     TField: quest_hook::libil2cpp::Type,

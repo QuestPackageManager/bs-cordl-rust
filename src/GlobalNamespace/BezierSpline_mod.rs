@@ -194,6 +194,7 @@ for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
     type Type = Self;
@@ -204,6 +205,7 @@ for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
     type Actual = Self;
@@ -217,6 +219,7 @@ for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
         self
     }
 }
+#[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
     type Type = Self;
@@ -231,6 +234,7 @@ for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
         }
     }
 }
+#[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults {
     type Actual = Self;

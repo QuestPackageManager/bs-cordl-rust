@@ -240,6 +240,7 @@ for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
     type Type = Self;
@@ -250,6 +251,7 @@ for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
     type Actual = Self;
@@ -263,6 +265,7 @@ for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
     type Type = Self;
@@ -277,6 +280,7 @@ for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DropdownMenuAction_Status {
     type Actual = Self;

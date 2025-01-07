@@ -48,6 +48,7 @@ for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SymmetricKeyAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
     type Type = Self;
@@ -58,6 +59,7 @@ for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SymmetricKeyAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
     type Actual = Self;
@@ -71,6 +73,7 @@ for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SymmetricKeyAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
     type Type = Self;
@@ -85,6 +88,7 @@ for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+SymmetricKeyAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag {
     type Actual = Self;

@@ -137,6 +137,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Type = Self;
@@ -147,6 +148,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Actual = Self;
@@ -160,6 +162,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
         self
     }
 }
+#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Type = Self;
@@ -174,6 +177,7 @@ for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
         }
     }
 }
+#[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScreenCaptureCache_ScreenshotType {
     type Actual = Self;

@@ -104,6 +104,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::AppContext_SwitchValu
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::AppContext_SwitchValueState {
     type Type = Self;
@@ -114,6 +115,7 @@ for crate::System::AppContext_SwitchValueState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::AppContext_SwitchValueState {
     type Actual = Self;
@@ -127,6 +129,7 @@ for crate::System::AppContext_SwitchValueState {
         self
     }
 }
+#[cfg(feature = "System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::AppContext_SwitchValueState {
     type Type = Self;
@@ -141,6 +144,7 @@ for crate::System::AppContext_SwitchValueState {
         }
     }
 }
+#[cfg(feature = "System+AppContext+SwitchValueState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::AppContext_SwitchValueState {
     type Actual = Self;

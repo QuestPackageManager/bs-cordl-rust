@@ -38,6 +38,7 @@ for crate::Oculus::Platform::ChallengeVisibility {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Oculus+Platform+ChallengeVisibility")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Oculus::Platform::ChallengeVisibility {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::Oculus::Platform::ChallengeVisibility {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Oculus+Platform+ChallengeVisibility")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Oculus::Platform::ChallengeVisibility {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::Oculus::Platform::ChallengeVisibility {
         self
     }
 }
+#[cfg(feature = "Oculus+Platform+ChallengeVisibility")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Oculus::Platform::ChallengeVisibility {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::Oculus::Platform::ChallengeVisibility {
         }
     }
 }
+#[cfg(feature = "Oculus+Platform+ChallengeVisibility")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Oculus::Platform::ChallengeVisibility {
     type Actual = Self;

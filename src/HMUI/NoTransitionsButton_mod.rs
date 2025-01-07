@@ -159,6 +159,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Type = Self;
@@ -169,6 +170,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Actual = Self;
@@ -182,6 +184,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
         self
     }
 }
+#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Type = Self;
@@ -196,6 +199,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
         }
     }
 }
+#[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HMUI::NoTransitionsButton_SelectionState {
     type Actual = Self;

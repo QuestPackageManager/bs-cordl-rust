@@ -593,6 +593,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Type = Self;
@@ -603,6 +604,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Actual = Self;
@@ -616,6 +618,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Type = Self;
@@ -630,6 +633,7 @@ for crate::System::Xml::Schema::XmlAtomicValue_Union {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+XmlAtomicValue+Union")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::XmlAtomicValue_Union {
     type Actual = Self;

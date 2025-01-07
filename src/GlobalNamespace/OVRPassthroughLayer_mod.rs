@@ -1119,6 +1119,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Type = Self;
@@ -1129,6 +1130,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Actual = Self;
@@ -1142,6 +1144,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
         self
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Type = Self;
@@ -1156,6 +1159,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
         }
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Actual = Self;
@@ -1206,6 +1210,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Type = Self;
@@ -1216,6 +1221,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Actual = Self;
@@ -1229,6 +1235,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
         self
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Type = Self;
@@ -1243,6 +1250,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
         }
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+DeferredPassthroughMeshAddition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition {
     type Actual = Self;
@@ -1929,6 +1937,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Type = Self;
@@ -1939,6 +1948,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Actual = Self;
@@ -1952,6 +1962,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
         self
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Type = Self;
@@ -1966,6 +1977,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
         }
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+PassthroughMeshInstance")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Actual = Self;
@@ -2030,6 +2042,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Type = Self;
@@ -2040,6 +2053,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Actual = Self;
@@ -2053,6 +2067,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
         self
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Type = Self;
@@ -2067,6 +2082,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
         }
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Actual = Self;
@@ -2117,6 +2133,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Type = Self;
@@ -2127,6 +2144,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Actual = Self;
@@ -2140,6 +2158,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
         self
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Type = Self;
@@ -2154,6 +2173,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
         }
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+SerializedSurfaceGeometry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Actual = Self;
@@ -2224,6 +2244,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Type = Self;
@@ -2234,6 +2255,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Actual = Self;
@@ -2247,6 +2269,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         self
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Type = Self;
@@ -2261,6 +2284,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
         }
     }
 }
+#[cfg(feature = "OVRPassthroughLayer+Settings")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Actual = Self;

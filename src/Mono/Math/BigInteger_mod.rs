@@ -133,6 +133,13 @@ impl crate::Mono::Math::BigInteger {
             .invoke("Incr2", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsProbablePrime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("IsProbablePrime", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LowestSetBit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -224,6 +231,29 @@ impl crate::Mono::Math::BigInteger {
             .invoke("Normalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Randomize_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Randomize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Randomize_RandomNumberGenerator0(
+        &mut self,
+        rng: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Randomize", (rng))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetBit__cordl_bool1(
         &mut self,
         bitNum: u32,
@@ -247,7 +277,14 @@ impl crate::Mono::Math::BigInteger {
             .invoke("SetBit", (bitNum))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TestBit(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn TestBit_i32_1(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TestBit", (bitNum))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TestBit_u32_0(&mut self, bitNum: u32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
@@ -483,7 +520,7 @@ impl crate::Mono::Math::BigInteger {
             .invoke("op_Modulus", (bi, ui))?;
         Ok(__cordl_ret.into())
     }
-    pub fn op_Multiply(
+    pub fn op_Multiply_BigInteger0(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
@@ -491,6 +528,16 @@ impl crate::Mono::Math::BigInteger {
     > {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("op_Multiply", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_i32_1(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (bi, i))?;
         Ok(__cordl_ret.into())
     }
     pub fn op_RightShift(
@@ -627,6 +674,16 @@ impl crate::Mono::Math::BigInteger_Kernel {
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Multiply", (x, xOffset, xLen, y, yOffset, yLen, d, dOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyByDword(
+        n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        f: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiplyByDword", (n, f))?;
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyMod2p32pmod(
@@ -906,6 +963,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger_Sign {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Math+BigInteger+Sign")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::Math::BigInteger_Sign {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -915,6 +973,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::Mono::Math::BigInteger_Si
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Math+BigInteger+Sign")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::Math::BigInteger_Sign {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -927,6 +986,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::Mono::Math::BigInteger_S
         self
     }
 }
+#[cfg(feature = "Mono+Math+BigInteger+Sign")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::Math::BigInteger_Sign {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -940,6 +1000,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::Mono::Math::BigInteger_Si
         }
     }
 }
+#[cfg(feature = "Mono+Math+BigInteger+Sign")]
 unsafe impl quest_hook::libil2cpp::Return for crate::Mono::Math::BigInteger_Sign {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

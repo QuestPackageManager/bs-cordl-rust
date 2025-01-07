@@ -242,6 +242,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Type = Self;
@@ -252,6 +253,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Actual = Self;
@@ -265,6 +267,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
         self
     }
 }
+#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Type = Self;
@@ -279,6 +282,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
         }
     }
 }
+#[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Actual = Self;

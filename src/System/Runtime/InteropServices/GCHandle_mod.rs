@@ -34,6 +34,7 @@ for crate::System::Runtime::InteropServices::GCHandle {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+GCHandle")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Runtime::InteropServices::GCHandle {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::System::Runtime::InteropServices::GCHandle {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+GCHandle")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Runtime::InteropServices::GCHandle {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::System::Runtime::InteropServices::GCHandle {
         self
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+GCHandle")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Runtime::InteropServices::GCHandle {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::System::Runtime::InteropServices::GCHandle {
         }
     }
 }
+#[cfg(feature = "System+Runtime+InteropServices+GCHandle")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Runtime::InteropServices::GCHandle {
     type Actual = Self;

@@ -44,6 +44,9 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
     type Type = Self;
@@ -54,6 +57,9 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
     type Actual = Self;
@@ -67,6 +73,9 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
         self
     }
 }
+#[cfg(
+    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
     type Type = Self;
@@ -81,6 +90,9 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
         }
     }
 }
+#[cfg(
+    feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
     type Actual = Self;

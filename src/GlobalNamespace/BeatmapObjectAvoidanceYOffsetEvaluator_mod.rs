@@ -180,6 +180,7 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     type Type = Self;
@@ -190,6 +191,7 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     type Actual = Self;
@@ -203,6 +205,7 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
         self
     }
 }
+#[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     type Type = Self;
@@ -217,6 +220,7 @@ for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
         }
     }
 }
+#[cfg(feature = "BeatmapObjectAvoidanceYOffsetEvaluator+BufferData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BeatmapObjectAvoidanceYOffsetEvaluator_BufferData {
     type Actual = Self;

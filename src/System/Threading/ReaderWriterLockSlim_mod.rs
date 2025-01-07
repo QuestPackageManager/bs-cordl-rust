@@ -615,6 +615,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Type = Self;
@@ -625,6 +626,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Actual = Self;
@@ -638,6 +640,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         self
     }
 }
+#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Type = Self;
@@ -652,6 +655,7 @@ for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
         }
     }
 }
+#[cfg(feature = "System+Threading+ReaderWriterLockSlim+TimeoutTracker")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::ReaderWriterLockSlim_TimeoutTracker {
     type Actual = Self;

@@ -225,6 +225,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Type = Self;
@@ -235,6 +236,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Actual = Self;
@@ -248,6 +250,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         self
     }
 }
+#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Type = Self;
@@ -262,6 +265,7 @@ for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
         }
     }
 }
+#[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult {
     type Actual = Self;

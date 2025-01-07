@@ -146,6 +146,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Type = Self;
@@ -156,6 +157,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Actual = Self;
@@ -169,6 +171,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
         self
     }
 }
+#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Type = Self;
@@ -183,6 +186,7 @@ for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
         }
     }
 }
+#[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::ScoreMultiplierCounter_MultiplierEventType {
     type Actual = Self;

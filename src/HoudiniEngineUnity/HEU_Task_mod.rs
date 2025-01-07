@@ -279,6 +279,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
     type Type = Self;
@@ -289,6 +290,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
     type Actual = Self;
@@ -302,6 +304,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
     type Type = Self;
@@ -316,6 +319,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_Task_TaskResult {
     type Actual = Self;
@@ -372,6 +376,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
     type Type = Self;
@@ -382,6 +387,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
     type Actual = Self;
@@ -395,6 +401,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
         self
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
     type Type = Self;
@@ -409,6 +416,7 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
         }
     }
 }
+#[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskStatus")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::HoudiniEngineUnity::HEU_Task_TaskStatus {
     type Actual = Self;

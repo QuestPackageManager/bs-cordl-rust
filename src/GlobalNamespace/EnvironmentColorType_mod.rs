@@ -38,6 +38,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::EnvironmentColorType {
     type Type = Self;
@@ -48,6 +49,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::EnvironmentColorType {
     type Actual = Self;
@@ -61,6 +63,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
         self
     }
 }
+#[cfg(feature = "EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::EnvironmentColorType {
     type Type = Self;
@@ -75,6 +78,7 @@ for crate::GlobalNamespace::EnvironmentColorType {
         }
     }
 }
+#[cfg(feature = "EnvironmentColorType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::EnvironmentColorType {
     type Actual = Self;

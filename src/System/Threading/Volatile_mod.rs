@@ -143,6 +143,7 @@ for crate::System::Threading::Volatile_VolatileBoolean {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Volatile_VolatileBoolean {
     type Type = Self;
@@ -153,6 +154,7 @@ for crate::System::Threading::Volatile_VolatileBoolean {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Volatile_VolatileBoolean {
     type Actual = Self;
@@ -166,6 +168,7 @@ for crate::System::Threading::Volatile_VolatileBoolean {
         self
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Volatile_VolatileBoolean {
     type Type = Self;
@@ -180,6 +183,7 @@ for crate::System::Threading::Volatile_VolatileBoolean {
         }
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileBoolean")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Volatile_VolatileBoolean {
     type Actual = Self;
@@ -242,6 +246,7 @@ for crate::System::Threading::Volatile_VolatileInt32 {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Volatile_VolatileInt32 {
     type Type = Self;
@@ -252,6 +257,7 @@ for crate::System::Threading::Volatile_VolatileInt32 {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Volatile_VolatileInt32 {
     type Actual = Self;
@@ -265,6 +271,7 @@ for crate::System::Threading::Volatile_VolatileInt32 {
         self
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Volatile_VolatileInt32 {
     type Type = Self;
@@ -279,6 +286,7 @@ for crate::System::Threading::Volatile_VolatileInt32 {
         }
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileInt32")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Volatile_VolatileInt32 {
     type Actual = Self;
@@ -341,6 +349,7 @@ for crate::System::Threading::Volatile_VolatileObject {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileObject")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Threading::Volatile_VolatileObject {
     type Type = Self;
@@ -351,6 +360,7 @@ for crate::System::Threading::Volatile_VolatileObject {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileObject")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Threading::Volatile_VolatileObject {
     type Actual = Self;
@@ -364,6 +374,7 @@ for crate::System::Threading::Volatile_VolatileObject {
         self
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileObject")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Threading::Volatile_VolatileObject {
     type Type = Self;
@@ -378,6 +389,7 @@ for crate::System::Threading::Volatile_VolatileObject {
         }
     }
 }
+#[cfg(feature = "System+Threading+Volatile+VolatileObject")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Threading::Volatile_VolatileObject {
     type Actual = Self;

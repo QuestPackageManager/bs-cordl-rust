@@ -36,6 +36,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::SmallRect {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::SmallRect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -45,6 +46,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::SmallRect {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::SmallRect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -57,6 +59,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::SmallRect {
         self
     }
 }
+#[cfg(feature = "System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::SmallRect {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -70,6 +73,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::SmallRect {
         }
     }
 }
+#[cfg(feature = "System+SmallRect")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::SmallRect {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

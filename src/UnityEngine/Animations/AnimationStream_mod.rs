@@ -40,6 +40,7 @@ for crate::UnityEngine::Animations::AnimationStream {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationStream")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::Animations::AnimationStream {
     type Type = Self;
@@ -50,6 +51,7 @@ for crate::UnityEngine::Animations::AnimationStream {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationStream")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::Animations::AnimationStream {
     type Actual = Self;
@@ -63,6 +65,7 @@ for crate::UnityEngine::Animations::AnimationStream {
         self
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationStream")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::Animations::AnimationStream {
     type Type = Self;
@@ -77,6 +80,7 @@ for crate::UnityEngine::Animations::AnimationStream {
         }
     }
 }
+#[cfg(feature = "UnityEngine+Animations+AnimationStream")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::Animations::AnimationStream {
     type Actual = Self;

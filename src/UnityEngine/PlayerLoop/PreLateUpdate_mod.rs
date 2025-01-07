@@ -32,6 +32,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate {
     type Type = Self;
@@ -42,6 +43,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate {
     type Actual = Self;
@@ -55,6 +57,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate {
     type Type = Self;
@@ -69,6 +72,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate {
     type Actual = Self;
@@ -160,6 +164,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
     type Type = Self;
@@ -170,6 +175,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
     type Actual = Self;
@@ -183,6 +189,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
     type Type = Self;
@@ -197,6 +204,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+AIUpdatePostScript")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_AIUpdatePostScript {
     type Actual = Self;
@@ -257,6 +265,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
     type Type = Self;
@@ -267,6 +276,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
     type Actual = Self;
@@ -280,6 +290,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
     type Type = Self;
@@ -294,6 +305,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ConstraintManagerUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ConstraintManagerUpdate {
     type Actual = Self;
@@ -354,6 +366,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
     type Type = Self;
@@ -364,6 +377,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
     type Actual = Self;
@@ -377,6 +391,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
     type Type = Self;
@@ -391,6 +406,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorDeferredEvaluate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorDeferredEvaluate {
     type Actual = Self;
@@ -451,6 +467,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
     type Type = Self;
@@ -461,6 +478,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
     type Actual = Self;
@@ -474,6 +492,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
     type Type = Self;
@@ -488,6 +507,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationBegin")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationBegin {
     type Actual = Self;
@@ -548,6 +568,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
     type Type = Self;
@@ -558,6 +579,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
     type Actual = Self;
@@ -571,6 +593,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
     type Type = Self;
@@ -585,6 +608,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+DirectorUpdateAnimationEnd")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_DirectorUpdateAnimationEnd {
     type Actual = Self;
@@ -645,6 +669,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpda
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {
     type Type = Self;
@@ -655,6 +680,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpda
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {
     type Actual = Self;
@@ -668,6 +694,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpda
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {
     type Type = Self;
@@ -682,6 +709,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpda
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+EndGraphicsJobsAfterScriptUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_EndGraphicsJobsAfterScriptUpdate {
     type Actual = Self;
@@ -742,6 +770,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
     type Type = Self;
@@ -752,6 +781,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
     type Actual = Self;
@@ -765,6 +795,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
     type Type = Self;
@@ -779,6 +810,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+LegacyAnimationUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_LegacyAnimationUpdate {
     type Actual = Self;
@@ -839,6 +871,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
     type Type = Self;
@@ -849,6 +882,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
     type Actual = Self;
@@ -862,6 +896,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
     type Type = Self;
@@ -876,6 +911,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ParticleSystemBeginUpdateAll")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ParticleSystemBeginUpdateAll {
     type Actual = Self;
@@ -936,6 +972,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
     type Type = Self;
@@ -946,6 +983,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
     type Actual = Self;
@@ -959,6 +997,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
     type Type = Self;
@@ -973,6 +1012,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+Physics2DLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_Physics2DLateUpdate {
     type Actual = Self;
@@ -1033,6 +1073,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
     type Type = Self;
@@ -1043,6 +1084,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
     type Actual = Self;
@@ -1056,6 +1098,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
     type Type = Self;
@@ -1070,6 +1113,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+PhysicsLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_PhysicsLateUpdate {
     type Actual = Self;
@@ -1130,6 +1174,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
     type Type = Self;
@@ -1140,6 +1185,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
     type Actual = Self;
@@ -1153,6 +1199,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
     type Type = Self;
@@ -1167,6 +1214,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+ScriptRunBehaviourLateUpdate")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_ScriptRunBehaviourLateUpdate {
     type Actual = Self;
@@ -1227,6 +1275,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
     type Type = Self;
@@ -1237,6 +1286,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
     type Actual = Self;
@@ -1250,6 +1300,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
     type Type = Self;
@@ -1264,6 +1315,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UIElementsUpdatePanels")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UIElementsUpdatePanels {
     type Actual = Self;
@@ -1324,6 +1376,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
     type Type = Self;
@@ -1334,6 +1387,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
     type Actual = Self;
@@ -1347,6 +1401,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
     type Type = Self;
@@ -1361,6 +1416,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateMasterServerInterface")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateMasterServerInterface {
     type Actual = Self;
@@ -1421,6 +1477,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
     type Type = Self;
@@ -1431,6 +1488,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
     type Actual = Self;
@@ -1444,6 +1502,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
         self
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
     type Type = Self;
@@ -1458,6 +1517,7 @@ for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
         }
     }
 }
+#[cfg(feature = "UnityEngine+PlayerLoop+PreLateUpdate+UpdateNetworkManager")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::PlayerLoop::PreLateUpdate_UpdateNetworkManager {
     type Actual = Self;

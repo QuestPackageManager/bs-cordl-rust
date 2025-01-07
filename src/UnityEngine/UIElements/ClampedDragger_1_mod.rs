@@ -358,6 +358,7 @@ for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1+DragDirection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
     type Type = Self;
@@ -368,6 +369,7 @@ for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1+DragDirection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
     type Actual = Self;
@@ -381,6 +383,7 @@ for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1+DragDirection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
     type Type = Self;
@@ -395,6 +398,7 @@ for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1+DragDirection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
     type Actual = Self;

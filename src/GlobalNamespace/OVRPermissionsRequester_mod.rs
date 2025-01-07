@@ -181,6 +181,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Type = Self;
@@ -191,6 +192,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Actual = Self;
@@ -204,6 +206,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
         self
     }
 }
+#[cfg(feature = "OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Type = Self;
@@ -218,6 +221,7 @@ for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
         }
     }
 }
+#[cfg(feature = "OVRPermissionsRequester+Permission")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPermissionsRequester_Permission {
     type Actual = Self;

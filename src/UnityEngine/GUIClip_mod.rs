@@ -208,6 +208,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUIClip_ParentCl
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Type = Self;
@@ -218,6 +219,7 @@ for crate::UnityEngine::GUIClip_ParentClipScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Actual = Self;
@@ -231,6 +233,7 @@ for crate::UnityEngine::GUIClip_ParentClipScope {
         self
     }
 }
+#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Type = Self;
@@ -245,6 +248,7 @@ for crate::UnityEngine::GUIClip_ParentClipScope {
         }
     }
 }
+#[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::GUIClip_ParentClipScope {
     type Actual = Self;

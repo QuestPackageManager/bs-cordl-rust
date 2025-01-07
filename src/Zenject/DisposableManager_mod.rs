@@ -297,6 +297,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Type = Self;
@@ -307,6 +308,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Actual = Self;
@@ -320,6 +322,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
         self
     }
 }
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Type = Self;
@@ -334,6 +337,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
         }
     }
 }
+#[cfg(feature = "Zenject+DisposableManager+DisposableInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::DisposableManager_DisposableInfo {
     type Actual = Self;

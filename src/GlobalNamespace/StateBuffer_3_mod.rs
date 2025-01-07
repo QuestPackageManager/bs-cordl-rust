@@ -784,6 +784,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -802,6 +803,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -823,6 +825,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         self
     }
 }
+#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,
@@ -845,6 +848,7 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
         }
     }
 }
+#[cfg(feature = "StateBuffer_3+TimestampedStateTable")]
 unsafe impl<
     TStateTable: quest_hook::libil2cpp::Type,
     TType: quest_hook::libil2cpp::Type,

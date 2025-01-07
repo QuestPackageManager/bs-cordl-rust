@@ -209,6 +209,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+ItemType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
     type Type = Self;
@@ -219,6 +220,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+ItemType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
     type Actual = Self;
@@ -232,6 +234,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+ItemType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
     type Type = Self;
@@ -246,6 +249,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+ItemType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
     type Actual = Self;
@@ -1025,6 +1029,7 @@ for crate::System::Xml::XmlWellFormedWriter_AttrName {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlWellFormedWriter_AttrName {
     type Type = Self;
@@ -1035,6 +1040,7 @@ for crate::System::Xml::XmlWellFormedWriter_AttrName {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlWellFormedWriter_AttrName {
     type Actual = Self;
@@ -1048,6 +1054,7 @@ for crate::System::Xml::XmlWellFormedWriter_AttrName {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlWellFormedWriter_AttrName {
     type Type = Self;
@@ -1062,6 +1069,7 @@ for crate::System::Xml::XmlWellFormedWriter_AttrName {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlWellFormedWriter_AttrName {
     type Actual = Self;
@@ -1414,6 +1422,7 @@ for crate::System::Xml::XmlWellFormedWriter_ElementScope {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlWellFormedWriter_ElementScope {
     type Type = Self;
@@ -1424,6 +1433,7 @@ for crate::System::Xml::XmlWellFormedWriter_ElementScope {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlWellFormedWriter_ElementScope {
     type Actual = Self;
@@ -1437,6 +1447,7 @@ for crate::System::Xml::XmlWellFormedWriter_ElementScope {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlWellFormedWriter_ElementScope {
     type Type = Self;
@@ -1451,6 +1462,7 @@ for crate::System::Xml::XmlWellFormedWriter_ElementScope {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlWellFormedWriter_ElementScope {
     type Actual = Self;
@@ -1553,6 +1565,7 @@ for crate::System::Xml::XmlWellFormedWriter_Namespace {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlWellFormedWriter_Namespace {
     type Type = Self;
@@ -1563,6 +1576,7 @@ for crate::System::Xml::XmlWellFormedWriter_Namespace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlWellFormedWriter_Namespace {
     type Actual = Self;
@@ -1576,6 +1590,7 @@ for crate::System::Xml::XmlWellFormedWriter_Namespace {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlWellFormedWriter_Namespace {
     type Type = Self;
@@ -1590,6 +1605,7 @@ for crate::System::Xml::XmlWellFormedWriter_Namespace {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Namespace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlWellFormedWriter_Namespace {
     type Actual = Self;
@@ -1682,6 +1698,7 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceKind")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
     type Type = Self;
@@ -1692,6 +1709,7 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceKind")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
     type Actual = Self;
@@ -1705,6 +1723,7 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceKind")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
     type Type = Self;
@@ -1719,6 +1738,7 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceKind")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
     type Actual = Self;
@@ -1914,6 +1934,7 @@ for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
     type Type = Self;
@@ -1924,6 +1945,7 @@ for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
     type Actual = Self;
@@ -1937,6 +1959,7 @@ for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
     type Type = Self;
@@ -1951,6 +1974,7 @@ for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
     type Actual = Self;
@@ -2033,6 +2057,7 @@ for crate::System::Xml::XmlWellFormedWriter_State {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+State")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlWellFormedWriter_State {
     type Type = Self;
@@ -2043,6 +2068,7 @@ for crate::System::Xml::XmlWellFormedWriter_State {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+State")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlWellFormedWriter_State {
     type Actual = Self;
@@ -2056,6 +2082,7 @@ for crate::System::Xml::XmlWellFormedWriter_State {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+State")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlWellFormedWriter_State {
     type Type = Self;
@@ -2070,6 +2097,7 @@ for crate::System::Xml::XmlWellFormedWriter_State {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+State")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlWellFormedWriter_State {
     type Actual = Self;
@@ -2134,6 +2162,7 @@ for crate::System::Xml::XmlWellFormedWriter_Token {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::XmlWellFormedWriter_Token {
     type Type = Self;
@@ -2144,6 +2173,7 @@ for crate::System::Xml::XmlWellFormedWriter_Token {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::XmlWellFormedWriter_Token {
     type Actual = Self;
@@ -2157,6 +2187,7 @@ for crate::System::Xml::XmlWellFormedWriter_Token {
         self
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::XmlWellFormedWriter_Token {
     type Type = Self;
@@ -2171,6 +2202,7 @@ for crate::System::Xml::XmlWellFormedWriter_Token {
         }
     }
 }
+#[cfg(feature = "System+Xml+XmlWellFormedWriter+Token")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::XmlWellFormedWriter_Token {
     type Actual = Self;

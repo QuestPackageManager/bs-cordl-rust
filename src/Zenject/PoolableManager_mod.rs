@@ -203,6 +203,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Type = Self;
@@ -213,6 +214,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Actual = Self;
@@ -226,6 +228,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
         self
     }
 }
+#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Type = Self;
@@ -240,6 +243,7 @@ for crate::Zenject::PoolableManager_PoolableInfo {
         }
     }
 }
+#[cfg(feature = "Zenject+PoolableManager+PoolableInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Zenject::PoolableManager_PoolableInfo {
     type Actual = Self;

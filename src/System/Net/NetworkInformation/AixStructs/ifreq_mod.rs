@@ -34,6 +34,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixStructs::ifreq {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq {
         self
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixStructs::ifreq {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq {
         }
     }
 }
+#[cfg(feature = "System+Net+NetworkInformation+AixStructs+ifreq")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixStructs::ifreq {
     type Actual = Self;
@@ -142,6 +146,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__Fixed
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__FixedBuffer {
     type Type = Self;
@@ -152,6 +159,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__Fixed
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__FixedBuffer {
     type Actual = Self;
@@ -165,6 +175,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__Fixed
         self
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__FixedBuffer {
     type Type = Self;
@@ -179,6 +192,9 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__Fixed
         }
     }
 }
+#[cfg(
+    feature = "System+Net+NetworkInformation+AixStructs+ifreq+_ifr_name_e__FixedBuffer"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__FixedBuffer {
     type Actual = Self;

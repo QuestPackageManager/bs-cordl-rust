@@ -901,6 +901,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Type = Self;
@@ -911,6 +912,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Actual = Self;
@@ -924,6 +926,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         self
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Type = Self;
@@ -938,6 +941,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
         }
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Context")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Actual = Self;
@@ -1021,6 +1025,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Type = Self;
@@ -1031,6 +1036,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Actual = Self;
@@ -1044,6 +1050,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
         self
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Type = Self;
@@ -1058,6 +1065,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
         }
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+Escape")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Actual = Self;
@@ -1125,6 +1133,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Type = Self;
@@ -1135,6 +1144,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Actual = Self;
@@ -1148,6 +1158,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
         self
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Type = Self;
@@ -1162,6 +1173,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
         }
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Actual = Self;
@@ -1212,6 +1224,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Type = Self;
@@ -1222,6 +1235,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Actual = Self;
@@ -1235,6 +1249,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         self
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Type = Self;
@@ -1249,6 +1264,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
         }
     }
 }
+#[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+PreviousInfo")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Actual = Self;

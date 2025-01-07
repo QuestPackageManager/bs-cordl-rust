@@ -436,6 +436,9 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
     type Type = Self;
@@ -446,6 +449,9 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
     type Actual = Self;
@@ -459,6 +465,9 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
         self
     }
 }
+#[cfg(
+    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
     type Type = Self;
@@ -473,6 +482,9 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_
         }
     }
 }
+#[cfg(
+    feature = "MultiplayerConnectedPlayerBeatmapObjectEventManager+TimestampedBeatmapObjectEventData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectEventManager_TimestampedBeatmapObjectEventData {
     type Actual = Self;

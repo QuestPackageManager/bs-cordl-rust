@@ -737,6 +737,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Type = Self;
@@ -747,6 +748,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Actual = Self;
@@ -760,6 +762,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Type = Self;
@@ -774,6 +777,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+AssetEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Actual = Self;
@@ -861,6 +865,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Type = Self;
@@ -871,6 +876,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Actual = Self;
@@ -884,6 +890,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Type = Self;
@@ -898,6 +905,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Actual = Self;
@@ -961,6 +969,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Type = Self;
@@ -971,6 +980,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Actual = Self;
@@ -984,6 +994,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Type = Self;
@@ -998,6 +1009,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Actual = Self;
@@ -1064,6 +1076,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Type = Self;
@@ -1074,6 +1087,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Actual = Self;
@@ -1087,6 +1101,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Type = Self;
@@ -1101,6 +1116,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Actual = Self;
@@ -1291,6 +1307,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Type = Self;
@@ -1301,6 +1318,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Actual = Self;
@@ -1314,6 +1332,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Type = Self;
@@ -1328,6 +1347,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Actual = Self;

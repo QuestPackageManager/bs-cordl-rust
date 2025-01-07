@@ -37,6 +37,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
         self
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::ParticleSystemSimulationSpace {
         }
     }
 }
+#[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::ParticleSystemSimulationSpace {
     type Actual = Self;

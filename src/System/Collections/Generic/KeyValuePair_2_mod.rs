@@ -59,6 +59,7 @@ for crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue> {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Collections+Generic+KeyValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -72,6 +73,7 @@ for crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue> {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Collections+Generic+KeyValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -88,6 +90,7 @@ for crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue> {
         self
     }
 }
+#[cfg(feature = "System+Collections+Generic+KeyValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
@@ -105,6 +108,7 @@ for crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue> {
         }
     }
 }
+#[cfg(feature = "System+Collections+Generic+KeyValuePair_2")]
 unsafe impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,

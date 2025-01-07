@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::LoadOption
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::LoadOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -46,6 +47,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Xml::Linq::LoadOp
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Linq::LoadOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -58,6 +60,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Xml::Linq::LoadO
         self
     }
 }
+#[cfg(feature = "System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::LoadOptions {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -71,6 +74,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Xml::Linq::LoadOp
         }
     }
 }
+#[cfg(feature = "System+Xml+Linq+LoadOptions")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Xml::Linq::LoadOptions {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

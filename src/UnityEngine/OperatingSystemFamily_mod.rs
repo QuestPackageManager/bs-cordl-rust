@@ -37,6 +37,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::OperatingSystemF
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+OperatingSystemFamily")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::OperatingSystemFamily {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::UnityEngine::OperatingSystemFamily {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+OperatingSystemFamily")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::OperatingSystemFamily {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::UnityEngine::OperatingSystemFamily {
         self
     }
 }
+#[cfg(feature = "UnityEngine+OperatingSystemFamily")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::OperatingSystemFamily {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::UnityEngine::OperatingSystemFamily {
         }
     }
 }
+#[cfg(feature = "UnityEngine+OperatingSystemFamily")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::OperatingSystemFamily {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

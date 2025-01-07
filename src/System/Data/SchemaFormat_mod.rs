@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::SchemaFormat {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Data+SchemaFormat")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::SchemaFormat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Data::SchemaForma
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Data+SchemaFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::SchemaFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Data::SchemaForm
         self
     }
 }
+#[cfg(feature = "System+Data+SchemaFormat")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::SchemaFormat {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Data::SchemaForma
         }
     }
 }
+#[cfg(feature = "System+Data+SchemaFormat")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Data::SchemaFormat {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -203,6 +203,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Type = Self;
@@ -213,6 +214,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Actual = Self;
@@ -226,6 +228,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
         self
     }
 }
+#[cfg(feature = "SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Type = Self;
@@ -240,6 +243,7 @@ for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
         }
     }
 }
+#[cfg(feature = "SettingsNavigationController+FinishAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SettingsNavigationController_FinishAction {
     type Actual = Self;

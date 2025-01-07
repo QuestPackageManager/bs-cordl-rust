@@ -37,6 +37,7 @@ for crate::MS::Internal::Xml::Cache::XPathNodeRef {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeRef")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::MS::Internal::Xml::Cache::XPathNodeRef {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::MS::Internal::Xml::Cache::XPathNodeRef {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeRef")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::MS::Internal::Xml::Cache::XPathNodeRef {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::MS::Internal::Xml::Cache::XPathNodeRef {
         self
     }
 }
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeRef")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::MS::Internal::Xml::Cache::XPathNodeRef {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::MS::Internal::Xml::Cache::XPathNodeRef {
         }
     }
 }
+#[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeRef")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::MS::Internal::Xml::Cache::XPathNodeRef {
     type Actual = Self;

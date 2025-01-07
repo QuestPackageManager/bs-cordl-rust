@@ -45,6 +45,7 @@ for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+HashAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
     type Type = Self;
@@ -55,6 +56,7 @@ for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+HashAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
     type Actual = Self;
@@ -68,6 +70,7 @@ for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
         self
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+HashAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
     type Type = Self;
@@ -82,6 +85,7 @@ for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
         }
     }
 }
+#[cfg(feature = "Org+BouncyCastle+Bcpg+HashAlgorithmTag")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag {
     type Actual = Self;

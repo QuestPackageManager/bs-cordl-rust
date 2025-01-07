@@ -207,6 +207,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Drawing::KnownColor {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Drawing+KnownColor")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::KnownColor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -216,6 +217,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::System::Drawing::KnownCol
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Drawing+KnownColor")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::KnownColor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -228,6 +230,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::System::Drawing::KnownCo
         self
     }
 }
+#[cfg(feature = "System+Drawing+KnownColor")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::KnownColor {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -241,6 +244,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::System::Drawing::KnownCol
         }
     }
 }
+#[cfg(feature = "System+Drawing+KnownColor")]
 unsafe impl quest_hook::libil2cpp::Return for crate::System::Drawing::KnownColor {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

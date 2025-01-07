@@ -113,6 +113,7 @@ for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
     type Type = Self;
@@ -123,6 +124,7 @@ for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
     type Actual = Self;
@@ -136,6 +138,7 @@ for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
         self
     }
 }
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
     type Type = Self;
@@ -150,6 +153,7 @@ for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
         }
     }
 }
+#[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
     type Actual = Self;
@@ -201,6 +205,7 @@ for crate::GlobalNamespace::OVRNetwork_FrameHeader {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRNetwork+FrameHeader")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRNetwork_FrameHeader {
     type Type = Self;
@@ -211,6 +216,7 @@ for crate::GlobalNamespace::OVRNetwork_FrameHeader {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRNetwork+FrameHeader")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRNetwork_FrameHeader {
     type Actual = Self;
@@ -224,6 +230,7 @@ for crate::GlobalNamespace::OVRNetwork_FrameHeader {
         self
     }
 }
+#[cfg(feature = "OVRNetwork+FrameHeader")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRNetwork_FrameHeader {
     type Type = Self;
@@ -238,6 +245,7 @@ for crate::GlobalNamespace::OVRNetwork_FrameHeader {
         }
     }
 }
+#[cfg(feature = "OVRNetwork+FrameHeader")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRNetwork_FrameHeader {
     type Actual = Self;

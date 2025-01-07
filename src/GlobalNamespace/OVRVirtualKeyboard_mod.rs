@@ -40,6 +40,9 @@ for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_I
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {
     type Type = Self;
@@ -50,6 +53,9 @@ for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_I
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {
     type Actual = Self;
@@ -63,6 +69,9 @@ for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_I
         self
     }
 }
+#[cfg(
+    feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {
     type Type = Self;
@@ -77,6 +86,9 @@ for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_I
         }
     }
 }
+#[cfg(
+    feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData {
     type Actual = Self;
@@ -1254,6 +1266,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+InputSource")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
     type Type = Self;
@@ -1264,6 +1277,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+InputSource")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
     type Actual = Self;
@@ -1277,6 +1291,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
         self
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+InputSource")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
     type Type = Self;
@@ -1291,6 +1306,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
         }
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+InputSource")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
     type Actual = Self;
@@ -1483,6 +1499,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+KeyboardPosition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
     type Type = Self;
@@ -1493,6 +1510,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+KeyboardPosition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
     type Actual = Self;
@@ -1506,6 +1524,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
         self
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+KeyboardPosition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
     type Type = Self;
@@ -1520,6 +1539,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
         }
     }
 }
+#[cfg(feature = "OVRVirtualKeyboard+KeyboardPosition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition {
     type Actual = Self;

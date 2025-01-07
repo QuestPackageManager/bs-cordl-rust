@@ -44,6 +44,7 @@ for crate::System::Globalization::DateTimeStyles {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Globalization::DateTimeStyles {
     type Type = Self;
@@ -54,6 +55,7 @@ for crate::System::Globalization::DateTimeStyles {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Globalization::DateTimeStyles {
     type Actual = Self;
@@ -67,6 +69,7 @@ for crate::System::Globalization::DateTimeStyles {
         self
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Globalization::DateTimeStyles {
     type Type = Self;
@@ -81,6 +84,7 @@ for crate::System::Globalization::DateTimeStyles {
         }
     }
 }
+#[cfg(feature = "System+Globalization+DateTimeStyles")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Globalization::DateTimeStyles {
     type Actual = Self;

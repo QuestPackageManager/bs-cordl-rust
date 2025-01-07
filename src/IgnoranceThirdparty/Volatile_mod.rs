@@ -87,6 +87,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Type = Self;
@@ -97,6 +98,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Actual = Self;
@@ -110,6 +112,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
         self
     }
 }
+#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Type = Self;
@@ -124,6 +127,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
         }
     }
 }
+#[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Actual = Self;

@@ -34,6 +34,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUser {
     type Type = Self;
@@ -44,6 +45,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUser {
     type Actual = Self;
@@ -57,6 +59,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUser {
     type Type = Self;
@@ -71,6 +74,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUser {
     type Actual = Self;
@@ -854,6 +858,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccoun
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
     type Type = Self;
@@ -864,6 +869,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccoun
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
     type Actual = Self;
@@ -877,6 +883,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccoun
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
     type Type = Self;
@@ -891,6 +898,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccoun
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccount {
     type Actual = Self;
@@ -1007,6 +1015,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
     type Type = Self;
@@ -1017,6 +1026,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax 
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
     type Actual = Self;
@@ -1030,6 +1040,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax 
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
     type Type = Self;
@@ -1044,6 +1055,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax 
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+ControlSchemeChangeSyntax")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax {
     type Actual = Self;
@@ -1194,6 +1206,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
     type Type = Self;
@@ -1204,6 +1217,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
     type Actual = Self;
@@ -1217,6 +1231,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
     type Type = Self;
@@ -1231,6 +1246,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+GlobalState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
     type Actual = Self;
@@ -1294,6 +1310,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
     type Type = Self;
@@ -1304,6 +1321,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
     type Actual = Self;
@@ -1317,6 +1335,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
     type Type = Self;
@@ -1331,6 +1350,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+OngoingAccountSelection")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
     type Actual = Self;
@@ -1413,6 +1433,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
     type Type = Self;
@@ -1423,6 +1444,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
     type Actual = Self;
@@ -1436,6 +1458,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
     type Type = Self;
@@ -1450,6 +1473,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserData")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
     type Actual = Self;
@@ -1514,6 +1538,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
     type Type = Self;
@@ -1524,6 +1549,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
     type Actual = Self;
@@ -1537,6 +1563,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
         self
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
     type Type = Self;
@@ -1551,6 +1578,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
         }
     }
 }
+#[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
     type Actual = Self;

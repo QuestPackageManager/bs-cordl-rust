@@ -205,6 +205,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Type = Self;
@@ -215,6 +216,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Actual = Self;
@@ -228,6 +230,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
         self
     }
 }
+#[cfg(feature = "SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Type = Self;
@@ -242,6 +245,7 @@ for crate::GlobalNamespace::SonyVersion_VersionFormat {
         }
     }
 }
+#[cfg(feature = "SonyVersion+VersionFormat")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SonyVersion_VersionFormat {
     type Actual = Self;

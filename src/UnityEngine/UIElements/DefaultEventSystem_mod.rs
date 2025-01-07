@@ -430,6 +430,9 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceCo
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
+)]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
     type Type = Self;
@@ -440,6 +443,9 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceCo
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
+)]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
     type Actual = Self;
@@ -453,6 +459,9 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceCo
         self
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
+)]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
     type Type = Self;
@@ -467,6 +476,9 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceCo
         }
     }
 }
+#[cfg(
+    feature = "UnityEngine+UIElements+DefaultEventSystem+FocusBasedEventSequenceContext"
+)]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceContext {
     type Actual = Self;
@@ -1171,6 +1183,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
     type Type = Self;
@@ -1181,6 +1194,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
     type Actual = Self;
@@ -1194,6 +1208,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
     type Type = Self;
@@ -1208,6 +1223,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
     type Actual = Self;

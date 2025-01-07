@@ -900,6 +900,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Type = Self;
@@ -910,6 +911,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Actual = Self;
@@ -923,6 +925,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Type = Self;
@@ -937,6 +940,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Selectable_SelectionState {
     type Actual = Self;
@@ -990,6 +994,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::UnityEngine::UI::Selectable_Transition {
     type Type = Self;
@@ -1000,6 +1005,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::UnityEngine::UI::Selectable_Transition {
     type Actual = Self;
@@ -1013,6 +1019,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
         self
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::UnityEngine::UI::Selectable_Transition {
     type Type = Self;
@@ -1027,6 +1034,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
         }
     }
 }
+#[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::UI::Selectable_Transition {
     type Actual = Self;

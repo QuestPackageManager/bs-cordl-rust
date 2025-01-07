@@ -226,6 +226,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Type = Self;
@@ -236,6 +237,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Actual = Self;
@@ -249,6 +251,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Type = Self;
@@ -263,6 +266,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset {
     type Actual = Self;
@@ -538,6 +542,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Type = Self;
@@ -548,6 +553,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Actual = Self;
@@ -561,6 +567,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Type = Self;
@@ -575,6 +582,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Actual = Self;
@@ -705,6 +713,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Type = Self;
@@ -715,6 +724,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Actual = Self;
@@ -728,6 +738,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Type = Self;
@@ -742,6 +753,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Actual = Self;
@@ -885,6 +897,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Type = Self;
@@ -895,6 +908,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Actual = Self;
@@ -908,6 +922,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Type = Self;
@@ -922,6 +937,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Actual = Self;
@@ -975,6 +991,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Type = Self;
@@ -985,6 +1002,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Actual = Self;
@@ -998,6 +1016,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Type = Self;
@@ -1012,6 +1031,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Actual = Self;
@@ -1156,6 +1176,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Type = Self;
@@ -1166,6 +1187,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Actual = Self;
@@ -1179,6 +1201,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Type = Self;
@@ -1193,6 +1216,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Actual = Self;
@@ -1322,6 +1346,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Type = Self;
@@ -1332,6 +1357,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Actual = Self;
@@ -1345,6 +1371,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
         self
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Type = Self;
@@ -1359,6 +1386,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
         }
     }
 }
+#[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Actual = Self;

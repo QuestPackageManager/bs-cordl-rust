@@ -289,6 +289,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Type = Self;
@@ -299,6 +300,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Actual = Self;
@@ -312,6 +314,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
         self
     }
 }
+#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Type = Self;
@@ -326,6 +329,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
         }
     }
 }
+#[cfg(feature = "System+ComponentModel+AttributeCollection+AttributeEntry")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Actual = Self;

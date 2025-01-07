@@ -343,6 +343,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Type = Self;
@@ -353,6 +354,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Actual = Self;
@@ -366,6 +368,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
         self
     }
 }
+#[cfg(feature = "MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Type = Self;
@@ -380,6 +383,7 @@ for crate::GlobalNamespace::MainMenuViewController_MenuButton {
         }
     }
 }
+#[cfg(feature = "MainMenuViewController+MenuButton")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::MainMenuViewController_MenuButton {
     type Actual = Self;

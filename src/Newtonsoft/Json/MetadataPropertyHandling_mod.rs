@@ -37,6 +37,7 @@ for crate::Newtonsoft::Json::MetadataPropertyHandling {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "Newtonsoft+Json+MetadataPropertyHandling")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::Newtonsoft::Json::MetadataPropertyHandling {
     type Type = Self;
@@ -47,6 +48,7 @@ for crate::Newtonsoft::Json::MetadataPropertyHandling {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "Newtonsoft+Json+MetadataPropertyHandling")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::Newtonsoft::Json::MetadataPropertyHandling {
     type Actual = Self;
@@ -60,6 +62,7 @@ for crate::Newtonsoft::Json::MetadataPropertyHandling {
         self
     }
 }
+#[cfg(feature = "Newtonsoft+Json+MetadataPropertyHandling")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::Newtonsoft::Json::MetadataPropertyHandling {
     type Type = Self;
@@ -74,6 +77,7 @@ for crate::Newtonsoft::Json::MetadataPropertyHandling {
         }
     }
 }
+#[cfg(feature = "Newtonsoft+Json+MetadataPropertyHandling")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::Newtonsoft::Json::MetadataPropertyHandling {
     type Actual = Self;

@@ -38,6 +38,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityOpus::SamplingFrequency 
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "UnityOpus+SamplingFrequency")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::SamplingFrequency {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -47,6 +48,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::UnityOpus::SamplingFreque
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "UnityOpus+SamplingFrequency")]
 unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::SamplingFrequency {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -59,6 +61,7 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityOpus::SamplingFrequ
         self
     }
 }
+#[cfg(feature = "UnityOpus+SamplingFrequency")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::SamplingFrequency {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -72,6 +75,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::UnityOpus::SamplingFreque
         }
     }
 }
+#[cfg(feature = "UnityOpus+SamplingFrequency")]
 unsafe impl quest_hook::libil2cpp::Return for crate::UnityOpus::SamplingFrequency {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

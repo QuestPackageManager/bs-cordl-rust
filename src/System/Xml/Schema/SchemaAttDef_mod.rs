@@ -507,6 +507,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Type = Self;
@@ -517,6 +518,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Actual = Self;
@@ -530,6 +532,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
         self
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Type = Self;
@@ -544,6 +547,7 @@ for crate::System::Xml::Schema::SchemaAttDef_Reserve {
         }
     }
 }
+#[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Xml::Schema::SchemaAttDef_Reserve {
     type Actual = Self;

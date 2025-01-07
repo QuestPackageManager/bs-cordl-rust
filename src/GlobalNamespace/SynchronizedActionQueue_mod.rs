@@ -144,6 +144,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Type = Self;
@@ -154,6 +155,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Actual = Self;
@@ -167,6 +169,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
         self
     }
 }
+#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Type = Self;
@@ -181,6 +184,7 @@ for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
         }
     }
 }
+#[cfg(feature = "SynchronizedActionQueue+SynchronizedAction")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction {
     type Actual = Self;

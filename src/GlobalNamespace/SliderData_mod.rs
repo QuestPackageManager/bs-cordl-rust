@@ -832,6 +832,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderData_T
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SliderData_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -841,6 +842,7 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::GlobalNamespace::SliderDa
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::GlobalNamespace::SliderData_Type {
     type Actual = Self;
@@ -854,6 +856,7 @@ for crate::GlobalNamespace::SliderData_Type {
         self
     }
 }
+#[cfg(feature = "SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SliderData_Type {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
@@ -867,6 +870,7 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::GlobalNamespace::SliderDa
         }
     }
 }
+#[cfg(feature = "SliderData+Type")]
 unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::SliderData_Type {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {

@@ -315,6 +315,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Type = Self;
@@ -325,6 +326,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Actual = Self;
@@ -338,6 +340,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
         self
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Type = Self;
@@ -352,6 +355,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
         }
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Actual = Self;
@@ -404,6 +408,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
                 .is_assignable_from(ty.class())
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Argument
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Type = Self;
@@ -414,6 +419,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Parameter
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Actual = Self;
@@ -427,6 +433,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
         self
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Returned
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Type = Self;
@@ -441,6 +448,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
         }
     }
 }
+#[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Actual = Self;
