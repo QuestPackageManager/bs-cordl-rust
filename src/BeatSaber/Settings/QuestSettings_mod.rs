@@ -126,7 +126,7 @@ for crate::BeatSaber::Settings::QuestSettings_FoveatedRenderingLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "FoveatedRenderingLevel";
+    const CLASS_NAME: &'static str = "QuestSettings/FoveatedRenderingLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -221,7 +221,7 @@ for crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "SuggestedPerformanceLevel";
+    const CLASS_NAME: &'static str = "QuestSettings/SuggestedPerformanceLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

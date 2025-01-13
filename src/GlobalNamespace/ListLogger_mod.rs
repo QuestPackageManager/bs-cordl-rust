@@ -306,7 +306,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ListLogger_L
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LogType";
+    const CLASS_NAME: &'static str = "ListLogger/LogType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

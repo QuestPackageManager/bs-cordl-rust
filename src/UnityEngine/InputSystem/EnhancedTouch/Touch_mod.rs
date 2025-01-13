@@ -600,7 +600,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_ExtraDataPerTouchState
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.EnhancedTouch";
-    const CLASS_NAME: &'static str = "ExtraDataPerTouchState";
+    const CLASS_NAME: &'static str = "Touch/ExtraDataPerTouchState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -733,7 +733,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.EnhancedTouch";
-    const CLASS_NAME: &'static str = "FingerAndTouchState";
+    const CLASS_NAME: &'static str = "Touch/FingerAndTouchState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -920,7 +920,7 @@ for crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.EnhancedTouch";
-    const CLASS_NAME: &'static str = "GlobalState";
+    const CLASS_NAME: &'static str = "Touch/GlobalState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

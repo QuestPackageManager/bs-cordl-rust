@@ -110,7 +110,7 @@ for crate::MS::Internal::Xml::XPath::AstNode_AstType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
-    const CLASS_NAME: &'static str = "AstType";
+    const CLASS_NAME: &'static str = "AstNode/AstType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

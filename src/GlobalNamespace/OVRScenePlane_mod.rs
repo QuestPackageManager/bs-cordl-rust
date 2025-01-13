@@ -339,7 +339,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetBoundaryJob";
+    const CLASS_NAME: &'static str = "OVRScenePlane/GetBoundaryJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -483,7 +483,7 @@ for crate::GlobalNamespace::OVRScenePlane_GetBoundaryLengthJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetBoundaryLengthJob";
+    const CLASS_NAME: &'static str = "OVRScenePlane/GetBoundaryLengthJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

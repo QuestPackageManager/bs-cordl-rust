@@ -322,7 +322,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "JsonString";
+    const CLASS_NAME: &'static str = "JsonParser/JsonString";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -535,7 +535,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "JsonValue";
+    const CLASS_NAME: &'static str = "JsonParser/JsonValue";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -844,7 +844,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValueType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "JsonValueType";
+    const CLASS_NAME: &'static str = "JsonParser/JsonValueType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

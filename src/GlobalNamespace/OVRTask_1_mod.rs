@@ -520,14 +520,14 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Awaiter";
+    const CLASS_NAME: &'static str = "OVRTask`1/Awaiter";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "Awaiter")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRTask`1/Awaiter")
                     .unwrap()
                     .make_generic::<(TResult)>()
                     .unwrap()
@@ -714,14 +714,14 @@ for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Callback";
+    const CLASS_NAME: &'static str = "OVRTask`1/Callback";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "Callback")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRTask`1/Callback")
                     .unwrap()
                     .make_generic::<(TResult)>()
                     .unwrap()
@@ -1212,14 +1212,17 @@ for crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<TResult, T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CallbackWithState`1";
+    const CLASS_NAME: &'static str = "OVRTask`1/CallbackWithState`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "CallbackWithState`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRTask`1/CallbackWithState`1",
+                    )
                     .unwrap()
                     .make_generic::<(TResult, T)>()
                     .unwrap()

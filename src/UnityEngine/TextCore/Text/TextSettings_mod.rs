@@ -583,7 +583,7 @@ for crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.TextCore.Text";
-    const CLASS_NAME: &'static str = "FontReferenceMap";
+    const CLASS_NAME: &'static str = "TextSettings/FontReferenceMap";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

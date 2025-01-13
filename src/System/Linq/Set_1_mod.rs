@@ -189,14 +189,14 @@ for crate::System::Linq::Set_1_Slot<TElement> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "Slot";
+    const CLASS_NAME: &'static str = "Set`1/Slot";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Linq", "Slot")
+                quest_hook::libil2cpp::Il2CppClass::find("System.Linq", "Set`1/Slot")
                     .unwrap()
                     .make_generic::<(TElement)>()
                     .unwrap()

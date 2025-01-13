@@ -170,7 +170,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Result";
+    const CLASS_NAME: &'static str = "InitiateUserAccountPairingCommand/Result";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

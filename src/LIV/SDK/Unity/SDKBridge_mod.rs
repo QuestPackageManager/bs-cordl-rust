@@ -329,7 +329,7 @@ for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LIV.SDK.Unity";
-    const CLASS_NAME: &'static str = "SDKInjection`1";
+    const CLASS_NAME: &'static str = "SDKBridge/SDKInjection`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -338,7 +338,7 @@ for crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LIV.SDK.Unity",
-                        "SDKInjection`1",
+                        "SDKBridge/SDKInjection`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

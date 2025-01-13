@@ -636,7 +636,7 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerTexture";
+    const CLASS_NAME: &'static str = "OVROverlay/LayerTexture";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -749,7 +749,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayShape {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OverlayShape";
+    const CLASS_NAME: &'static str = "OVROverlay/OverlayShape";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -842,7 +842,7 @@ for crate::GlobalNamespace::OVROverlay_OverlayType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OverlayType";
+    const CLASS_NAME: &'static str = "OVROverlay/OverlayType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

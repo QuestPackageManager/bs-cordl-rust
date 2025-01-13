@@ -1751,7 +1751,7 @@ for crate::UnityEngine::ParticleSystem_CollisionModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "CollisionModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/CollisionModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1866,7 +1866,7 @@ for crate::UnityEngine::ParticleSystem_ColorBySpeedModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "ColorBySpeedModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/ColorBySpeedModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1981,7 +1981,7 @@ for crate::UnityEngine::ParticleSystem_ColorOverLifetimeModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "ColorOverLifetimeModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/ColorOverLifetimeModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2096,7 +2096,7 @@ for crate::UnityEngine::ParticleSystem_CustomDataModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "CustomDataModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/CustomDataModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2211,7 +2211,7 @@ for crate::UnityEngine::ParticleSystem_EmissionModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "EmissionModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/EmissionModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2415,7 +2415,7 @@ for crate::UnityEngine::ParticleSystem_EmitParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "EmitParams";
+    const CLASS_NAME: &'static str = "ParticleSystem/EmitParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2563,7 +2563,7 @@ for crate::UnityEngine::ParticleSystem_ExternalForcesModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "ExternalForcesModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/ExternalForcesModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2678,7 +2678,7 @@ for crate::UnityEngine::ParticleSystem_ForceOverLifetimeModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "ForceOverLifetimeModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/ForceOverLifetimeModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2793,7 +2793,7 @@ for crate::UnityEngine::ParticleSystem_InheritVelocityModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "InheritVelocityModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/InheritVelocityModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2908,7 +2908,7 @@ for crate::UnityEngine::ParticleSystem_LifetimeByEmitterSpeedModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "LifetimeByEmitterSpeedModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/LifetimeByEmitterSpeedModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3023,7 +3023,7 @@ for crate::UnityEngine::ParticleSystem_LightsModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "LightsModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/LightsModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3138,7 +3138,7 @@ for crate::UnityEngine::ParticleSystem_LimitVelocityOverLifetimeModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "LimitVelocityOverLifetimeModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/LimitVelocityOverLifetimeModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3253,7 +3253,7 @@ for crate::UnityEngine::ParticleSystem_MainModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "MainModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/MainModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4069,7 +4069,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxCurve {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "MinMaxCurve";
+    const CLASS_NAME: &'static str = "ParticleSystem/MinMaxCurve";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4229,7 +4229,7 @@ for crate::UnityEngine::ParticleSystem_MinMaxGradient {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "MinMaxGradient";
+    const CLASS_NAME: &'static str = "ParticleSystem/MinMaxGradient";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4363,7 +4363,7 @@ for crate::UnityEngine::ParticleSystem_NoiseModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "NoiseModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/NoiseModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4493,7 +4493,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem_P
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Particle";
+    const CLASS_NAME: &'static str = "ParticleSystem/Particle";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4718,7 +4718,7 @@ for crate::UnityEngine::ParticleSystem_PlaybackState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "PlaybackState";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4842,7 +4842,7 @@ for crate::UnityEngine::ParticleSystem_RotationBySpeedModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "RotationBySpeedModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/RotationBySpeedModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4957,7 +4957,7 @@ for crate::UnityEngine::ParticleSystem_RotationOverLifetimeModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "RotationOverLifetimeModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/RotationOverLifetimeModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5072,7 +5072,7 @@ for crate::UnityEngine::ParticleSystem_ShapeModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "ShapeModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/ShapeModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5252,7 +5252,7 @@ for crate::UnityEngine::ParticleSystem_SizeBySpeedModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "SizeBySpeedModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/SizeBySpeedModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5367,7 +5367,7 @@ for crate::UnityEngine::ParticleSystem_SizeOverLifetimeModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "SizeOverLifetimeModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/SizeOverLifetimeModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5482,7 +5482,7 @@ for crate::UnityEngine::ParticleSystem_SubEmittersModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "SubEmittersModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/SubEmittersModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5639,7 +5639,7 @@ for crate::UnityEngine::ParticleSystem_TextureSheetAnimationModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "TextureSheetAnimationModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/TextureSheetAnimationModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5754,7 +5754,7 @@ for crate::UnityEngine::ParticleSystem_TrailModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "TrailModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/TrailModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5884,7 +5884,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ParticleSystem_T
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Trails";
+    const CLASS_NAME: &'static str = "ParticleSystem/Trails";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5997,7 +5997,7 @@ for crate::UnityEngine::ParticleSystem_TriggerModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "TriggerModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/TriggerModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6112,7 +6112,7 @@ for crate::UnityEngine::ParticleSystem_VelocityOverLifetimeModule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "VelocityOverLifetimeModule";
+    const CLASS_NAME: &'static str = "ParticleSystem/VelocityOverLifetimeModule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6227,7 +6227,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Collision {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Collision";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Collision";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6332,7 +6332,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Emission {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Emission";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Emission";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6435,7 +6435,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Force {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Force";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Force";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6538,7 +6538,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Initial {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Initial";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Initial";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6642,7 +6642,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Lights {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Lights";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Lights";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6745,7 +6745,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Noise {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Noise";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Noise";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6851,7 +6851,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Seed";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Seed";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6957,7 +6957,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Seed4 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Seed4";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Seed4";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7067,7 +7067,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Shape {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Shape";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Shape";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7170,7 +7170,7 @@ for crate::UnityEngine::PlaybackState_ParticleSystem_Trail {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Trail";
+    const CLASS_NAME: &'static str = "ParticleSystem/PlaybackState/Trail";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

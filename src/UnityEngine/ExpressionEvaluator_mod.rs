@@ -265,7 +265,7 @@ for crate::UnityEngine::ExpressionEvaluator_Associativity {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Associativity";
+    const CLASS_NAME: &'static str = "ExpressionEvaluator/Associativity";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -465,7 +465,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExpressionEvalua
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Op";
+    const CLASS_NAME: &'static str = "ExpressionEvaluator/Op";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -638,7 +638,7 @@ for crate::UnityEngine::ExpressionEvaluator_PcgRandom {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "PcgRandom";
+    const CLASS_NAME: &'static str = "ExpressionEvaluator/PcgRandom";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

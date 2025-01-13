@@ -945,7 +945,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DS {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "DS";
+    const CLASS_NAME: &'static str = "DateTimeParse/DS";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1051,7 +1051,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_DTT {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "DTT";
+    const CLASS_NAME: &'static str = "DateTimeParse/DTT";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1226,7 +1226,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DateTimeParse_TM {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "TM";
+    const CLASS_NAME: &'static str = "DateTimeParse/TM";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

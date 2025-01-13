@@ -752,7 +752,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_Algorithm {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Rfc8032";
-    const CLASS_NAME: &'static str = "Algorithm";
+    const CLASS_NAME: &'static str = "Ed25519/Algorithm";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

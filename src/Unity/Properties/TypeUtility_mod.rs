@@ -301,14 +301,17 @@ for crate::Unity::Properties::TypeUtility_Cache_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "Cache`1";
+    const CLASS_NAME: &'static str = "TypeUtility/Cache`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("Unity.Properties", "Cache`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Properties",
+                        "TypeUtility/Cache`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

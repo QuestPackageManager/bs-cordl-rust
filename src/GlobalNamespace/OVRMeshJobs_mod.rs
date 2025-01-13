@@ -87,14 +87,17 @@ for crate::GlobalNamespace::OVRMeshJobs_NativeArrayHelper_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NativeArrayHelper`1";
+    const CLASS_NAME: &'static str = "OVRMeshJobs/NativeArrayHelper`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "NativeArrayHelper`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRMeshJobs/NativeArrayHelper`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -270,7 +273,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformToUnitySpaceJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TransformToUnitySpaceJob";
+    const CLASS_NAME: &'static str = "OVRMeshJobs/TransformToUnitySpaceJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -401,7 +404,7 @@ for crate::GlobalNamespace::OVRMeshJobs_TransformTrianglesJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TransformTrianglesJob";
+    const CLASS_NAME: &'static str = "OVRMeshJobs/TransformTrianglesJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

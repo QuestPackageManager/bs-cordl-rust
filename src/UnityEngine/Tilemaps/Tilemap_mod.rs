@@ -469,7 +469,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTile {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Tilemaps";
-    const CLASS_NAME: &'static str = "SyncTile";
+    const CLASS_NAME: &'static str = "Tilemap/SyncTile";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -574,7 +574,7 @@ for crate::UnityEngine::Tilemaps::Tilemap_SyncTileCallbackSettings {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Tilemaps";
-    const CLASS_NAME: &'static str = "SyncTileCallbackSettings";
+    const CLASS_NAME: &'static str = "Tilemap/SyncTileCallbackSettings";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

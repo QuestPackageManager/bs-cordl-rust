@@ -20,7 +20,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
-    const CLASS_NAME: &'static str = "InstructionView";
+    const CLASS_NAME: &'static str = "InstructionList/DebugView/InstructionView";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

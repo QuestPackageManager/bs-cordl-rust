@@ -119,7 +119,7 @@ for crate::System::Threading::Volatile_VolatileBoolean {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "VolatileBoolean";
+    const CLASS_NAME: &'static str = "Volatile/VolatileBoolean";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -222,7 +222,7 @@ for crate::System::Threading::Volatile_VolatileInt32 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "VolatileInt32";
+    const CLASS_NAME: &'static str = "Volatile/VolatileInt32";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -325,7 +325,7 @@ for crate::System::Threading::Volatile_VolatileObject {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "VolatileObject";
+    const CLASS_NAME: &'static str = "Volatile/VolatileObject";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

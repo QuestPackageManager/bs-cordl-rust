@@ -899,7 +899,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "DepthOrderedDirtyTracking";
+    const CLASS_NAME: &'static str = "RenderChain/DepthOrderedDirtyTracking";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1051,7 +1051,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAlloc
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "RenderChainStaticIndexAllocator";
+    const CLASS_NAME: &'static str = "RenderChain/RenderChainStaticIndexAllocator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1213,7 +1213,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "RenderNodeData";
+    const CLASS_NAME: &'static str = "RenderChain/RenderNodeData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

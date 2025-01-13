@@ -2637,7 +2637,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonWriter_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "JsonWriter/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2732,7 +2732,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitEnd_11_2
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json";
-    const CLASS_NAME: &'static str = "<<InternalWriteEndAsync>g__AwaitEnd|11_2>d";
+    const CLASS_NAME: &'static str = "JsonWriter/<<InternalWriteEndAsync>g__AwaitEnd|11_2>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2886,7 +2886,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitIndent_1
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json";
-    const CLASS_NAME: &'static str = "<<InternalWriteEndAsync>g__AwaitIndent|11_1>d";
+    const CLASS_NAME: &'static str = "JsonWriter/<<InternalWriteEndAsync>g__AwaitIndent|11_1>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3056,7 +3056,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitProperty
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json";
-    const CLASS_NAME: &'static str = "<<InternalWriteEndAsync>g__AwaitProperty|11_0>d";
+    const CLASS_NAME: &'static str = "JsonWriter/<<InternalWriteEndAsync>g__AwaitProperty|11_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3225,7 +3225,7 @@ for crate::Newtonsoft::Json::JsonWriter___InternalWriteEndAsync_g__AwaitRemainin
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json";
-    const CLASS_NAME: &'static str = "<<InternalWriteEndAsync>g__AwaitRemaining|11_3>d";
+    const CLASS_NAME: &'static str = "JsonWriter/<<InternalWriteEndAsync>g__AwaitRemaining|11_3>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

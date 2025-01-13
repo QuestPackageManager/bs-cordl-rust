@@ -876,7 +876,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorted
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
-    const CLASS_NAME: &'static str = "SortedColumnState";
+    const CLASS_NAME: &'static str = "MultiColumnCollectionHeader/SortedColumnState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1128,7 +1128,7 @@ for crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHea
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
-    const CLASS_NAME: &'static str = "ColumnState";
+    const CLASS_NAME: &'static str = "MultiColumnCollectionHeader/ViewState/ColumnState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

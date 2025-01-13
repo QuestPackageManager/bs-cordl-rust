@@ -1571,7 +1571,7 @@ for crate::System::Xml::Schema::XsdBuilder_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "XsdBuilder/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

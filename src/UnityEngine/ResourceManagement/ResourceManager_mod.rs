@@ -1730,7 +1730,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DeferredCallbackRegi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
-    const CLASS_NAME: &'static str = "DeferredCallbackRegisterRequest";
+    const CLASS_NAME: &'static str = "ResourceManager/DeferredCallbackRegisterRequest";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1856,7 +1856,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventConte
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
-    const CLASS_NAME: &'static str = "DiagnosticEventContext";
+    const CLASS_NAME: &'static str = "ResourceManager/DiagnosticEventContext";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2045,7 +2045,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
-    const CLASS_NAME: &'static str = "DiagnosticEventType";
+    const CLASS_NAME: &'static str = "ResourceManager/DiagnosticEventType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

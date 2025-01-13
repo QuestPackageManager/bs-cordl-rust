@@ -216,14 +216,17 @@ for crate::GlobalNamespace::OVRObjectPool_DictionaryScope_2<TKey, TValue> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DictionaryScope`2";
+    const CLASS_NAME: &'static str = "OVRObjectPool/DictionaryScope`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "DictionaryScope`2")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRObjectPool/DictionaryScope`2",
+                    )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
                     .unwrap()
@@ -411,14 +414,17 @@ for crate::GlobalNamespace::OVRObjectPool_HashSetScope_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HashSetScope`1";
+    const CLASS_NAME: &'static str = "OVRObjectPool/HashSetScope`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "HashSetScope`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRObjectPool/HashSetScope`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -576,14 +582,14 @@ for crate::GlobalNamespace::OVRObjectPool_ItemScope_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ItemScope`1";
+    const CLASS_NAME: &'static str = "OVRObjectPool/ItemScope`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "ItemScope`1")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRObjectPool/ItemScope`1")
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -739,14 +745,14 @@ for crate::GlobalNamespace::OVRObjectPool_ListScope_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ListScope`1";
+    const CLASS_NAME: &'static str = "OVRObjectPool/ListScope`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "ListScope`1")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRObjectPool/ListScope`1")
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -906,14 +912,17 @@ for crate::GlobalNamespace::OVRObjectPool_QueueScope_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "QueueScope`1";
+    const CLASS_NAME: &'static str = "OVRObjectPool/QueueScope`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "QueueScope`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRObjectPool/QueueScope`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -1073,14 +1082,17 @@ for crate::GlobalNamespace::OVRObjectPool_StackScope_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "StackScope`1";
+    const CLASS_NAME: &'static str = "OVRObjectPool/StackScope`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "StackScope`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRObjectPool/StackScope`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

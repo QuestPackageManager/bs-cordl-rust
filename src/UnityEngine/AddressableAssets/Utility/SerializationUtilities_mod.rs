@@ -119,7 +119,7 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_Objec
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.AddressableAssets.Utility";
-    const CLASS_NAME: &'static str = "ObjectType";
+    const CLASS_NAME: &'static str = "SerializationUtilities/ObjectType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

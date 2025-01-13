@@ -227,7 +227,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "EnumeratorType";
+    const CLASS_NAME: &'static str = "XmlSchemaObjectTable/EnumeratorType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -779,7 +779,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "XmlSchemaObjectEntry";
+    const CLASS_NAME: &'static str = "XmlSchemaObjectTable/XmlSchemaObjectEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -359,7 +359,7 @@ for crate::System::Net::WebConnectionTunnel_NtlmAuthState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "NtlmAuthState";
+    const CLASS_NAME: &'static str = "WebConnectionTunnel/NtlmAuthState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

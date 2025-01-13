@@ -236,7 +236,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateI
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "DelegateInfo";
+    const CLASS_NAME: &'static str = "DelayedActionManager/DelegateInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

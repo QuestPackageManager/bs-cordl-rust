@@ -91,7 +91,7 @@ for crate::Unity::Jobs::IJobParallelForExtensions_ParallelForJobStruct_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Jobs";
-    const CLASS_NAME: &'static str = "ParallelForJobStruct`1";
+    const CLASS_NAME: &'static str = "IJobParallelForExtensions/ParallelForJobStruct`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -100,7 +100,7 @@ for crate::Unity::Jobs::IJobParallelForExtensions_ParallelForJobStruct_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Jobs",
-                        "ParallelForJobStruct`1",
+                        "IJobParallelForExtensions/ParallelForJobStruct`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

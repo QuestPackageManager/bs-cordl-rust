@@ -1951,7 +1951,7 @@ for crate::UnityEngine::AddressableAssets::Addressables_MergeMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.AddressableAssets";
-    const CLASS_NAME: &'static str = "MergeMode";
+    const CLASS_NAME: &'static str = "Addressables/MergeMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

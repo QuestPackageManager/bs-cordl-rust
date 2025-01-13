@@ -409,7 +409,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "MatcherJson";
+    const CLASS_NAME: &'static str = "InputDeviceMatcher/MatcherJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -543,7 +543,7 @@ for crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Cap
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "Capability";
+    const CLASS_NAME: &'static str = "InputDeviceMatcher/MatcherJson/Capability";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

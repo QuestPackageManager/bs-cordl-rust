@@ -1398,7 +1398,7 @@ for crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "TransientBuildData";
+    const CLASS_NAME: &'static str = "TrackAsset/TransientBuildData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1523,7 +1523,7 @@ for crate::UnityEngine::Timeline::TrackAsset_Versions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "Versions";
+    const CLASS_NAME: &'static str = "TrackAsset/Versions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

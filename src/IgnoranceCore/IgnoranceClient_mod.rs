@@ -184,7 +184,7 @@ for crate::IgnoranceCore::IgnoranceClient_ThreadParamInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "IgnoranceCore";
-    const CLASS_NAME: &'static str = "ThreadParamInfo";
+    const CLASS_NAME: &'static str = "IgnoranceClient/ThreadParamInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

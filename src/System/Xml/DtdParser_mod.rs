@@ -1286,7 +1286,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_Litera
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "LiteralType";
+    const CLASS_NAME: &'static str = "DtdParser/LiteralType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1485,7 +1485,7 @@ for crate::System::Xml::DtdParser_ScanningFunction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ScanningFunction";
+    const CLASS_NAME: &'static str = "DtdParser/ScanningFunction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1622,7 +1622,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::DtdParser_Token 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "Token";
+    const CLASS_NAME: &'static str = "DtdParser/Token";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

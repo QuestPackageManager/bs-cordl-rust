@@ -220,7 +220,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Error";
+    const CLASS_NAME: &'static str = "Interop/Error";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -306,7 +306,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Interop_Erro
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ErrorInfo";
+    const CLASS_NAME: &'static str = "Interop/ErrorInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -775,7 +775,7 @@ for crate::GlobalNamespace::Sys_Interop_DirectoryEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DirectoryEntry";
+    const CLASS_NAME: &'static str = "Interop/Sys/DirectoryEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -905,7 +905,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FileStatus";
+    const CLASS_NAME: &'static str = "Interop/Sys/FileStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1010,7 +1010,7 @@ for crate::GlobalNamespace::Sys_Interop_FileStatusFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FileStatusFlags";
+    const CLASS_NAME: &'static str = "Interop/Sys/FileStatusFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1109,7 +1109,7 @@ for crate::GlobalNamespace::Sys_Interop_NodeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NodeType";
+    const CLASS_NAME: &'static str = "Interop/Sys/NodeType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1212,7 +1212,7 @@ for crate::GlobalNamespace::Sys_Interop_Permissions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Permissions";
+    const CLASS_NAME: &'static str = "Interop/Sys/Permissions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

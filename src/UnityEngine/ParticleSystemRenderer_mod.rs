@@ -1088,7 +1088,7 @@ for crate::UnityEngine::ParticleSystemRenderer_BakeTextureOutput {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "BakeTextureOutput";
+    const CLASS_NAME: &'static str = "ParticleSystemRenderer/BakeTextureOutput";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

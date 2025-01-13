@@ -123,7 +123,7 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl_WriteMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Controls";
-    const CLASS_NAME: &'static str = "WriteMode";
+    const CLASS_NAME: &'static str = "DiscreteButtonControl/WriteMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

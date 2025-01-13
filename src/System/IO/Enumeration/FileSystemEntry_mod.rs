@@ -288,7 +288,7 @@ for crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuf
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.IO.Enumeration";
-    const CLASS_NAME: &'static str = "<_fileNameBuffer>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "FileSystemEntry/<_fileNameBuffer>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

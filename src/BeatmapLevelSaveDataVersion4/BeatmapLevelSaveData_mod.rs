@@ -128,7 +128,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatmapLevelSaveDataVersion4";
-    const CLASS_NAME: &'static str = "AudioData";
+    const CLASS_NAME: &'static str = "BeatmapLevelSaveData/AudioData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -240,7 +240,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatmapLevelSaveDataVersion4";
-    const CLASS_NAME: &'static str = "BeatmapAuthors";
+    const CLASS_NAME: &'static str = "BeatmapLevelSaveData/BeatmapAuthors";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -518,7 +518,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatmapLevelSaveDataVersion4";
-    const CLASS_NAME: &'static str = "SongData";
+    const CLASS_NAME: &'static str = "BeatmapLevelSaveData/SongData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -92,7 +92,7 @@ for crate::GlobalNamespace::OVRDeserialize_DisplayRefreshRateChangedData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DisplayRefreshRateChangedData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/DisplayRefreshRateChangedData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -196,7 +196,7 @@ for crate::GlobalNamespace::OVRDeserialize_SceneCaptureCompleteData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SceneCaptureCompleteData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SceneCaptureCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -302,7 +302,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceEraseCompleteData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceEraseCompleteData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpaceEraseCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -406,7 +406,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceListSaveResultData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceListSaveResultData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpaceListSaveResultData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -510,7 +510,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryCompleteData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceQueryCompleteData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpaceQueryCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -613,7 +613,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceQueryResultsData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceQueryResultsData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpaceQueryResultsData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -719,7 +719,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSaveCompleteData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceSaveCompleteData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpaceSaveCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -827,7 +827,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceSetComponentStatusCompleteData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceSetComponentStatusCompleteData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpaceSetComponentStatusCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -931,7 +931,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceShareResultData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpaceShareResultData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1037,7 +1037,7 @@ for crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpatialAnchorCreateCompleteData";
+    const CLASS_NAME: &'static str = "OVRDeserialize/SpatialAnchorCreateCompleteData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

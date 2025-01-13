@@ -773,7 +773,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_Na
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "Namespace";
+    const CLASS_NAME: &'static str = "XmlTextWriter/Namespace";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -894,7 +894,7 @@ for crate::System::Xml::XmlTextWriter_NamespaceState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "NamespaceState";
+    const CLASS_NAME: &'static str = "XmlTextWriter/NamespaceState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -988,7 +988,7 @@ for crate::System::Xml::XmlTextWriter_SpecialAttr {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "SpecialAttr";
+    const CLASS_NAME: &'static str = "XmlTextWriter/SpecialAttr";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1087,7 +1087,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_St
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "XmlTextWriter/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1181,7 +1181,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_Ta
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "TagInfo";
+    const CLASS_NAME: &'static str = "XmlTextWriter/TagInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1308,7 +1308,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextWriter_To
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "Token";
+    const CLASS_NAME: &'static str = "XmlTextWriter/Token";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

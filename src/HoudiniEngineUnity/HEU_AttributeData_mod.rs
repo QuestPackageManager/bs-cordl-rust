@@ -154,7 +154,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "AttributeState";
+    const CLASS_NAME: &'static str = "HEU_AttributeData/AttributeState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -250,7 +250,7 @@ for crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "AttributeType";
+    const CLASS_NAME: &'static str = "HEU_AttributeData/AttributeType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

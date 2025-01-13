@@ -427,7 +427,7 @@ for crate::Unity::Collections::NativeSlice_1_Enumerator<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "NativeSlice`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -436,7 +436,7 @@ for crate::Unity::Collections::NativeSlice_1_Enumerator<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Collections",
-                        "Enumerator",
+                        "NativeSlice`1/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

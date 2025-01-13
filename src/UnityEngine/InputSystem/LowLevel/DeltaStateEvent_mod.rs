@@ -215,7 +215,7 @@ for crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__Fix
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "<stateData>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "DeltaStateEvent/<stateData>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -218,7 +218,7 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ValueType";
+    const CLASS_NAME: &'static str = "FormattedFloatListSettingsController/ValueType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -481,7 +481,7 @@ for crate::UnityEngine::InputSystem::UI::VirtualMouseInput_CursorMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.UI";
-    const CLASS_NAME: &'static str = "CursorMode";
+    const CLASS_NAME: &'static str = "VirtualMouseInput/CursorMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

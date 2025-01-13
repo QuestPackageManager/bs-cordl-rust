@@ -99,7 +99,7 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute_UseEditMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "UseEditMode";
+    const CLASS_NAME: &'static str = "TimeFieldAttribute/UseEditMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

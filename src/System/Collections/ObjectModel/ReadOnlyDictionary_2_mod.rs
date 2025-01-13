@@ -1084,7 +1084,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.ObjectModel";
-    const CLASS_NAME: &'static str = "DictionaryEnumerator";
+    const CLASS_NAME: &'static str = "ReadOnlyDictionary`2/DictionaryEnumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1093,7 +1093,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionary_2_DictionaryEnum
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.ObjectModel",
-                        "DictionaryEnumerator",
+                        "ReadOnlyDictionary`2/DictionaryEnumerator",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()

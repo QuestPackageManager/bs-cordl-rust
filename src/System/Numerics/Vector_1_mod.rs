@@ -422,7 +422,7 @@ for crate::System::Numerics::Vector_1_VectorSizeHelper<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Numerics";
-    const CLASS_NAME: &'static str = "VectorSizeHelper";
+    const CLASS_NAME: &'static str = "Vector`1/VectorSizeHelper";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -431,7 +431,7 @@ for crate::System::Numerics::Vector_1_VectorSizeHelper<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Numerics",
-                        "VectorSizeHelper",
+                        "Vector`1/VectorSizeHelper",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

@@ -990,7 +990,7 @@ for crate::Tayx::Graphy::GraphyManager_LookForAudioListener {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "LookForAudioListener";
+    const CLASS_NAME: &'static str = "GraphyManager/LookForAudioListener";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1081,7 +1081,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyManager_M
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "Mode";
+    const CLASS_NAME: &'static str = "GraphyManager/Mode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1173,7 +1173,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePosition {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "ModulePosition";
+    const CLASS_NAME: &'static str = "GraphyManager/ModulePosition";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1275,7 +1275,7 @@ for crate::Tayx::Graphy::GraphyManager_ModulePreset {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "ModulePreset";
+    const CLASS_NAME: &'static str = "GraphyManager/ModulePreset";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1370,7 +1370,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "ModuleState";
+    const CLASS_NAME: &'static str = "GraphyManager/ModuleState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1464,7 +1464,7 @@ for crate::Tayx::Graphy::GraphyManager_ModuleType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "ModuleType";
+    const CLASS_NAME: &'static str = "GraphyManager/ModuleType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

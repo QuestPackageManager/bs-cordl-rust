@@ -17,7 +17,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultExt
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "DefaultExtendedTypeDescriptor";
+    const CLASS_NAME: &'static str = "TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -361,7 +361,7 @@ for crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTyp
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "DefaultTypeDescriptor";
+    const CLASS_NAME: &'static str = "TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

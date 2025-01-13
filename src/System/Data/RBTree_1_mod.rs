@@ -1029,14 +1029,14 @@ for crate::System::Data::RBTree_1_Node<K> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "Node";
+    const CLASS_NAME: &'static str = "RBTree`1/Node";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "Node")
+                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "RBTree`1/Node")
                     .unwrap()
                     .make_generic::<(K)>()
                     .unwrap()
@@ -1146,7 +1146,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::RBTree_1_NodeCo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "NodeColor";
+    const CLASS_NAME: &'static str = "RBTree`1/NodeColor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1235,14 +1235,17 @@ for crate::System::Data::RBTree_1_NodePath<K> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "NodePath";
+    const CLASS_NAME: &'static str = "RBTree`1/NodePath";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "NodePath")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Data",
+                        "RBTree`1/NodePath",
+                    )
                     .unwrap()
                     .make_generic::<(K)>()
                     .unwrap()
@@ -1373,7 +1376,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "RBTreeEnumerator";
+    const CLASS_NAME: &'static str = "RBTree`1/RBTreeEnumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1382,7 +1385,7 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Data",
-                        "RBTreeEnumerator",
+                        "RBTree`1/RBTreeEnumerator",
                     )
                     .unwrap()
                     .make_generic::<(K)>()

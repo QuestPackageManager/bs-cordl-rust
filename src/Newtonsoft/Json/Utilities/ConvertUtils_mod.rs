@@ -283,7 +283,7 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Utilities";
-    const CLASS_NAME: &'static str = "ConvertResult";
+    const CLASS_NAME: &'static str = "ConvertUtils/ConvertResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

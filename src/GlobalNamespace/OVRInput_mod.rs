@@ -1231,7 +1231,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Axi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Axis1D";
+    const CLASS_NAME: &'static str = "OVRInput/Axis1D";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1323,7 +1323,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Axi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Axis2D";
+    const CLASS_NAME: &'static str = "OVRInput/Axis2D";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1443,7 +1443,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_But
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Button";
+    const CLASS_NAME: &'static str = "OVRInput/Button";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1540,7 +1540,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Con
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Controller";
+    const CLASS_NAME: &'static str = "OVRInput/Controller";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1633,7 +1633,7 @@ for crate::GlobalNamespace::OVRInput_ControllerInHandState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerInHandState";
+    const CLASS_NAME: &'static str = "OVRInput/ControllerInHandState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1725,7 +1725,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Han
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Hand";
+    const CLASS_NAME: &'static str = "OVRInput/Hand";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1813,7 +1813,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Han
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Handedness";
+    const CLASS_NAME: &'static str = "OVRInput/Handedness";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1977,7 +1977,7 @@ for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsAmplitudeEnvelopeVibration";
+    const CLASS_NAME: &'static str = "OVRInput/HapticsAmplitudeEnvelopeVibration";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2084,7 +2084,7 @@ for crate::GlobalNamespace::OVRInput_HapticsLocation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsLocation";
+    const CLASS_NAME: &'static str = "OVRInput/HapticsLocation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2177,7 +2177,7 @@ for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsPcmVibration";
+    const CLASS_NAME: &'static str = "OVRInput/HapticsPcmVibration";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2285,7 +2285,7 @@ for crate::GlobalNamespace::OVRInput_InputDeviceShowState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InputDeviceShowState";
+    const CLASS_NAME: &'static str = "OVRInput/InputDeviceShowState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2379,7 +2379,7 @@ for crate::GlobalNamespace::OVRInput_InteractionProfile {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InteractionProfile";
+    const CLASS_NAME: &'static str = "OVRInput/InteractionProfile";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2474,7 +2474,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Nea
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NearTouch";
+    const CLASS_NAME: &'static str = "OVRInput/NearTouch";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3975,7 +3975,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRButton {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OpenVRButton";
+    const CLASS_NAME: &'static str = "OVRInput/OpenVRButton";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4069,7 +4069,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRController {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OpenVRController";
+    const CLASS_NAME: &'static str = "OVRInput/OpenVRController";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4163,7 +4163,7 @@ for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OpenVRControllerDetails";
+    const CLASS_NAME: &'static str = "OVRInput/OpenVRControllerDetails";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4281,7 +4281,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RawAxis1D";
+    const CLASS_NAME: &'static str = "OVRInput/RawAxis1D";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4376,7 +4376,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RawAxis2D";
+    const CLASS_NAME: &'static str = "OVRInput/RawAxis2D";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4495,7 +4495,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RawButton";
+    const CLASS_NAME: &'static str = "OVRInput/RawButton";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4591,7 +4591,7 @@ for crate::GlobalNamespace::OVRInput_RawNearTouch {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RawNearTouch";
+    const CLASS_NAME: &'static str = "OVRInput/RawNearTouch";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4694,7 +4694,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Raw
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RawTouch";
+    const CLASS_NAME: &'static str = "OVRInput/RawTouch";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4796,7 +4796,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Tou
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Touch";
+    const CLASS_NAME: &'static str = "OVRInput/Touch";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

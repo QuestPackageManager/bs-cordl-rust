@@ -406,7 +406,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_FocusBasedEventSequenceCo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "FocusBasedEventSequenceContext";
+    const CLASS_NAME: &'static str = "DefaultEventSystem/FocusBasedEventSequenceContext";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1159,7 +1159,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UpdateMode";
+    const CLASS_NAME: &'static str = "DefaultEventSystem/UpdateMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -1284,7 +1284,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Propert
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Serialization";
-    const CLASS_NAME: &'static str = "PropertyPresence";
+    const CLASS_NAME: &'static str = "JsonSerializerInternalReader/PropertyPresence";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

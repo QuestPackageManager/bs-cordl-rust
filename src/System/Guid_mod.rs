@@ -608,7 +608,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidParseThrowSt
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "GuidParseThrowStyle";
+    const CLASS_NAME: &'static str = "Guid/GuidParseThrowStyle";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -706,7 +706,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "GuidResult";
+    const CLASS_NAME: &'static str = "Guid/GuidResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -903,7 +903,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_GuidStyles {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "GuidStyles";
+    const CLASS_NAME: &'static str = "Guid/GuidStyles";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -994,7 +994,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Guid_ParseFailureKind
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "ParseFailureKind";
+    const CLASS_NAME: &'static str = "Guid/ParseFailureKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

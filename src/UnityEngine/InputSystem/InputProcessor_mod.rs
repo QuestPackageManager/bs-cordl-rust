@@ -130,7 +130,7 @@ for crate::UnityEngine::InputSystem::InputProcessor_CachingPolicy {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "CachingPolicy";
+    const CLASS_NAME: &'static str = "InputProcessor/CachingPolicy";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

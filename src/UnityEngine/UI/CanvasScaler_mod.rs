@@ -397,7 +397,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScaleMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "ScaleMode";
+    const CLASS_NAME: &'static str = "CanvasScaler/ScaleMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -490,7 +490,7 @@ for crate::UnityEngine::UI::CanvasScaler_ScreenMatchMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "ScreenMatchMode";
+    const CLASS_NAME: &'static str = "CanvasScaler/ScreenMatchMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -584,7 +584,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::CanvasScaler
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Unit";
+    const CLASS_NAME: &'static str = "CanvasScaler/Unit";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

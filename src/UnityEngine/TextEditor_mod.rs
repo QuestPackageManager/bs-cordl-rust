@@ -99,7 +99,7 @@ for crate::UnityEngine::TextEditor_DblClickSnapping {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "DblClickSnapping";
+    const CLASS_NAME: &'static str = "TextEditor/DblClickSnapping";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

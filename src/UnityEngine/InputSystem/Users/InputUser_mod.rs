@@ -834,7 +834,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccoun
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Users";
-    const CLASS_NAME: &'static str = "CompareDevicesByUserAccount";
+    const CLASS_NAME: &'static str = "InputUser/CompareDevicesByUserAccount";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -991,7 +991,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Users";
-    const CLASS_NAME: &'static str = "ControlSchemeChangeSyntax";
+    const CLASS_NAME: &'static str = "InputUser/ControlSchemeChangeSyntax";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1182,7 +1182,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_GlobalState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Users";
-    const CLASS_NAME: &'static str = "GlobalState";
+    const CLASS_NAME: &'static str = "InputUser/GlobalState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1286,7 +1286,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_OngoingAccountSelection {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Users";
-    const CLASS_NAME: &'static str = "OngoingAccountSelection";
+    const CLASS_NAME: &'static str = "InputUser/OngoingAccountSelection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1409,7 +1409,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Users";
-    const CLASS_NAME: &'static str = "UserData";
+    const CLASS_NAME: &'static str = "InputUser/UserData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1514,7 +1514,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Users";
-    const CLASS_NAME: &'static str = "UserFlags";
+    const CLASS_NAME: &'static str = "InputUser/UserFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

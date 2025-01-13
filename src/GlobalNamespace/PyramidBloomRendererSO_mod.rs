@@ -197,7 +197,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Level";
+    const CLASS_NAME: &'static str = "PyramidBloomRendererSO/Level";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -314,7 +314,7 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Pass {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Pass";
+    const CLASS_NAME: &'static str = "PyramidBloomRendererSO/Pass";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

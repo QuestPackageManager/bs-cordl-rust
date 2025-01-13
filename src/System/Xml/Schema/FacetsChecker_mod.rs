@@ -385,7 +385,7 @@ for crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "FacetsCompiler";
+    const CLASS_NAME: &'static str = "FacetsChecker/FacetsCompiler";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -767,7 +767,7 @@ for crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "Map";
+    const CLASS_NAME: &'static str = "FacetsChecker/FacetsCompiler/Map";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

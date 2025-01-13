@@ -155,7 +155,7 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.AddressableAssets.ResourceProviders";
-    const CLASS_NAME: &'static str = "DependencyHashIndex";
+    const CLASS_NAME: &'static str = "ContentCatalogProvider/DependencyHashIndex";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

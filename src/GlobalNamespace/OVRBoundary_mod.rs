@@ -169,7 +169,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoundaryTestResult";
+    const CLASS_NAME: &'static str = "OVRBoundary/BoundaryTestResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -274,7 +274,7 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoundaryType";
+    const CLASS_NAME: &'static str = "OVRBoundary/BoundaryType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -366,7 +366,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Node";
+    const CLASS_NAME: &'static str = "OVRBoundary/Node";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

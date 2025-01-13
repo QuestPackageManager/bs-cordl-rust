@@ -143,7 +143,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AdditionalContentEntitlementsAsyncResult";
+    const CLASS_NAME: &'static str = "ISonyCommerceHelper/AdditionalContentEntitlementsAsyncResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -248,7 +248,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResul
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DisplayCategoryBrowseDialogResult";
+    const CLASS_NAME: &'static str = "ISonyCommerceHelper/DisplayCategoryBrowseDialogResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -340,7 +340,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DisplayProductBrowseDialogResult";
+    const CLASS_NAME: &'static str = "ISonyCommerceHelper/DisplayProductBrowseDialogResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -432,7 +432,7 @@ for crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlements
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetAdditionalContentEntitlementsResult";
+    const CLASS_NAME: &'static str = "ISonyCommerceHelper/GetAdditionalContentEntitlementsResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -1928,7 +1928,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Texture2D_EXRFla
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "EXRFlags";
+    const CLASS_NAME: &'static str = "Texture2D/EXRFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

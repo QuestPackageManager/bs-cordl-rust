@@ -488,7 +488,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "HumanReadableStringOptions";
+    const CLASS_NAME: &'static str = "InputControlPath/HumanReadableStringOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -583,7 +583,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ParsedPathComponent";
+    const CLASS_NAME: &'static str = "InputControlPath/ParsedPathComponent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -814,7 +814,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathComponentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "PathComponentType";
+    const CLASS_NAME: &'static str = "InputControlPath/PathComponentType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -908,7 +908,7 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "PathParser";
+    const CLASS_NAME: &'static str = "InputControlPath/PathParser";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

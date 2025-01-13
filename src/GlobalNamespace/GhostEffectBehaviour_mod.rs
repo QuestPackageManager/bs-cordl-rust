@@ -148,7 +148,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_EndBehavior {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EndBehavior";
+    const CLASS_NAME: &'static str = "GhostEffectBehaviour/EndBehavior";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -240,7 +240,7 @@ for crate::GlobalNamespace::GhostEffectBehaviour_GhostEffectType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GhostEffectType";
+    const CLASS_NAME: &'static str = "GhostEffectBehaviour/GhostEffectType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

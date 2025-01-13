@@ -671,7 +671,7 @@ for crate::HoudiniEngineUnity::HEU_PDGAssetLink_LinkState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "LinkState";
+    const CLASS_NAME: &'static str = "HEU_PDGAssetLink/LinkState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

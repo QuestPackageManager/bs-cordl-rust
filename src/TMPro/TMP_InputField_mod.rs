@@ -2709,7 +2709,7 @@ for crate::TMPro::TMP_InputField_CharacterValidation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "CharacterValidation";
+    const CLASS_NAME: &'static str = "TMP_InputField/CharacterValidation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2808,7 +2808,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_Content
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "ContentType";
+    const CLASS_NAME: &'static str = "TMP_InputField/ContentType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2898,7 +2898,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_EditSta
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "EditState";
+    const CLASS_NAME: &'static str = "TMP_InputField/EditState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2986,7 +2986,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_InputTy
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "InputType";
+    const CLASS_NAME: &'static str = "TMP_InputField/InputType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3074,7 +3074,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_LineTyp
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "LineType";
+    const CLASS_NAME: &'static str = "TMP_InputField/LineType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -86,7 +86,7 @@ for crate::Unity::XR::Oculus::Development_UserDeveloperModeSettingCache {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.XR.Oculus";
-    const CLASS_NAME: &'static str = "UserDeveloperModeSettingCache";
+    const CLASS_NAME: &'static str = "Development/UserDeveloperModeSettingCache";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

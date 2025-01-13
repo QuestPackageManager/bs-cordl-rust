@@ -127,7 +127,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::IntTween_RoundingTy
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tweening";
-    const CLASS_NAME: &'static str = "RoundingType";
+    const CLASS_NAME: &'static str = "IntTween/RoundingType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

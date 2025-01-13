@@ -524,7 +524,7 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "Compositor";
+    const CLASS_NAME: &'static str = "SchemaCollectionPreprocessor/Compositor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

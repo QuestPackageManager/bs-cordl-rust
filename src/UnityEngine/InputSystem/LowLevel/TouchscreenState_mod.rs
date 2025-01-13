@@ -183,7 +183,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__primaryTouchDat
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "<primaryTouchData>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "TouchscreenState/<primaryTouchData>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -302,7 +302,7 @@ for crate::UnityEngine::InputSystem::LowLevel::TouchscreenState__touchData_e__Fi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "<touchData>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "TouchscreenState/<touchData>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

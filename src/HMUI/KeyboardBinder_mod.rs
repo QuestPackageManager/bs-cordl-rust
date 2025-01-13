@@ -251,7 +251,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::KeyboardBinder_KeyBindi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "KeyBindingType";
+    const CLASS_NAME: &'static str = "KeyboardBinder/KeyBindingType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

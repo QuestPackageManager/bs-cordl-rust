@@ -222,7 +222,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_BatchModeUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "BatchModeUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/BatchModeUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -323,7 +323,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ClearImmediateRenderers {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ClearImmediateRenderers";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ClearImmediateRenderers";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -424,7 +424,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorLateUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "DirectorLateUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/DirectorLateUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -525,7 +525,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_DirectorRenderImage {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "DirectorRenderImage";
+    const CLASS_NAME: &'static str = "PostLateUpdate/DirectorRenderImage";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -630,7 +630,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EndGraphicsJobsAfterScriptLat
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "EndGraphicsJobsAfterScriptLateUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/EndGraphicsJobsAfterScriptLateUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -743,7 +743,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_EnlightenRuntimeUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "EnlightenRuntimeUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/EnlightenRuntimeUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -844,7 +844,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ExecuteGameCenterCallbacks {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ExecuteGameCenterCallbacks";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ExecuteGameCenterCallbacks";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -945,7 +945,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_FinishFrameRendering {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "FinishFrameRendering";
+    const CLASS_NAME: &'static str = "PostLateUpdate/FinishFrameRendering";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1046,7 +1046,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GUIClearEvents {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "GUIClearEvents";
+    const CLASS_NAME: &'static str = "PostLateUpdate/GUIClearEvents";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1147,7 +1147,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_GraphicsWarmupPreloadedShader
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "GraphicsWarmupPreloadedShaders";
+    const CLASS_NAME: &'static str = "PostLateUpdate/GraphicsWarmupPreloadedShaders";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1248,7 +1248,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_InputEndFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "InputEndFrame";
+    const CLASS_NAME: &'static str = "PostLateUpdate/InputEndFrame";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1349,7 +1349,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_MemoryFrameMaintenance {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "MemoryFrameMaintenance";
+    const CLASS_NAME: &'static str = "PostLateUpdate/MemoryFrameMaintenance";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1450,7 +1450,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ObjectDispatcherPostLateUpdat
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ObjectDispatcherPostLateUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ObjectDispatcherPostLateUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1551,7 +1551,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ParticleSystemEndUpdateAll {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ParticleSystemEndUpdateAll";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ParticleSystemEndUpdateAll";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1652,7 +1652,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothBeginUpdat
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PhysicsSkinnedClothBeginUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PhysicsSkinnedClothBeginUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1753,7 +1753,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PhysicsSkinnedClothFinishUpda
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PhysicsSkinnedClothFinishUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PhysicsSkinnedClothFinishUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1854,7 +1854,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerEmitCanvasGeometry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PlayerEmitCanvasGeometry";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PlayerEmitCanvasGeometry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1959,7 +1959,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerRenderUIEBatchModeOffsc
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PlayerRenderUIEBatchModeOffscreen";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PlayerRenderUIEBatchModeOffscreen";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2072,7 +2072,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameComplete {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PlayerSendFrameComplete";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PlayerSendFrameComplete";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2173,7 +2173,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFramePostPresent {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PlayerSendFramePostPresent";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PlayerSendFramePostPresent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2274,7 +2274,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerSendFrameStarted {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PlayerSendFrameStarted";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PlayerSendFrameStarted";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2375,7 +2375,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PlayerUpdateCanvases {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PlayerUpdateCanvases";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PlayerUpdateCanvases";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2476,7 +2476,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_PresentAfterDraw {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PresentAfterDraw";
+    const CLASS_NAME: &'static str = "PostLateUpdate/PresentAfterDraw";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2577,7 +2577,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProcessWebSendMessages {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ProcessWebSendMessages";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ProcessWebSendMessages";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2678,7 +2678,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerEndFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ProfilerEndFrame";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ProfilerEndFrame";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2779,7 +2779,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ProfilerSynchronizeStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ProfilerSynchronizeStats";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ProfilerSynchronizeStats";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2880,7 +2880,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ResetInputAxis {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ResetInputAxis";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ResetInputAxis";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2985,7 +2985,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ScriptRunDelayedDynamicFrameR
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ScriptRunDelayedDynamicFrameRate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ScriptRunDelayedDynamicFrameRate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3098,7 +3098,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ShaderHandleErrors {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ShaderHandleErrors";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ShaderHandleErrors";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3199,7 +3199,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_SortingGroupsUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "SortingGroupsUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/SortingGroupsUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3300,7 +3300,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_ThreadedLoadingDebug {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ThreadedLoadingDebug";
+    const CLASS_NAME: &'static str = "PostLateUpdate/ThreadedLoadingDebug";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3401,7 +3401,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_TriggerEndOfFrameCallbacks {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "TriggerEndOfFrameCallbacks";
+    const CLASS_NAME: &'static str = "PostLateUpdate/TriggerEndOfFrameCallbacks";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3502,7 +3502,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllRenderers {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateAllRenderers";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateAllRenderers";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3603,7 +3603,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAllSkinnedMeshes {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateAllSkinnedMeshes";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateAllSkinnedMeshes";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3704,7 +3704,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateAudio {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateAudio";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateAudio";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3805,7 +3805,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCanvasRectTransform {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateCanvasRectTransform";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateCanvasRectTransform";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3906,7 +3906,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCaptureScreenshot {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateCaptureScreenshot";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateCaptureScreenshot";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4007,7 +4007,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateCustomRenderTextures {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateCustomRenderTextures";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateCustomRenderTextures";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4108,7 +4108,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateLightProbeProxyVolumes 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateLightProbeProxyVolumes";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateLightProbeProxyVolumes";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4209,7 +4209,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateRectTransform {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateRectTransform";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateRectTransform";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4310,7 +4310,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateResolution {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateResolution";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateResolution";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4411,7 +4411,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateSubstance {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateSubstance";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateSubstance";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4512,7 +4512,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateVideo";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateVideo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4613,7 +4613,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_UpdateVideoTextures {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateVideoTextures";
+    const CLASS_NAME: &'static str = "PostLateUpdate/UpdateVideoTextures";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4714,7 +4714,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_VFXUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "VFXUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/VFXUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4815,7 +4815,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostLateUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "XRPostLateUpdate";
+    const CLASS_NAME: &'static str = "PostLateUpdate/XRPostLateUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4916,7 +4916,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPostPresent {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "XRPostPresent";
+    const CLASS_NAME: &'static str = "PostLateUpdate/XRPostPresent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5017,7 +5017,7 @@ for crate::UnityEngine::PlayerLoop::PostLateUpdate_XRPreEndFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "XRPreEndFrame";
+    const CLASS_NAME: &'static str = "PostLateUpdate/XRPreEndFrame";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

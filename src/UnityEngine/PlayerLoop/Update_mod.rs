@@ -113,7 +113,7 @@ for crate::UnityEngine::PlayerLoop::Update_DirectorUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "DirectorUpdate";
+    const CLASS_NAME: &'static str = "Update/DirectorUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -214,7 +214,7 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunBehaviourUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ScriptRunBehaviourUpdate";
+    const CLASS_NAME: &'static str = "Update/ScriptRunBehaviourUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -315,7 +315,7 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedDynamicFrameRate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ScriptRunDelayedDynamicFrameRate";
+    const CLASS_NAME: &'static str = "Update/ScriptRunDelayedDynamicFrameRate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -416,7 +416,7 @@ for crate::UnityEngine::PlayerLoop::Update_ScriptRunDelayedTasks {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ScriptRunDelayedTasks";
+    const CLASS_NAME: &'static str = "Update/ScriptRunDelayedTasks";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

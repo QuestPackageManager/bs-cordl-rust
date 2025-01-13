@@ -1095,7 +1095,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorMapEditorType";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/ColorMapEditorType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1186,7 +1186,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DeferredPassthroughMeshAddition";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/DeferredPassthroughMeshAddition";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1913,7 +1913,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughMeshInstance";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/PassthroughMeshInstance";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2018,7 +2018,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ProjectionSurfaceType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ProjectionSurfaceType";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/ProjectionSurfaceType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2109,7 +2109,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SerializedSurfaceGeometry";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/SerializedSurfaceGeometry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2220,7 +2220,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_Settings {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Settings";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/Settings";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

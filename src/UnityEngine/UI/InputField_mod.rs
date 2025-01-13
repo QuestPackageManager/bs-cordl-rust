@@ -2001,7 +2001,7 @@ for crate::UnityEngine::UI::InputField_CharacterValidation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "CharacterValidation";
+    const CLASS_NAME: &'static str = "InputField/CharacterValidation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2101,7 +2101,7 @@ for crate::UnityEngine::UI::InputField_ContentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "ContentType";
+    const CLASS_NAME: &'static str = "InputField/ContentType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2193,7 +2193,7 @@ for crate::UnityEngine::UI::InputField_EditState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "EditState";
+    const CLASS_NAME: &'static str = "InputField/EditState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2359,7 +2359,7 @@ for crate::UnityEngine::UI::InputField_InputType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "InputType";
+    const CLASS_NAME: &'static str = "InputField/InputType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2451,7 +2451,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::InputField_L
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "LineType";
+    const CLASS_NAME: &'static str = "InputField/LineType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

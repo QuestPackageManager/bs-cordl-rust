@@ -833,7 +833,7 @@ for crate::System::IO::Stream_ReadWriteParameters {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.IO";
-    const CLASS_NAME: &'static str = "ReadWriteParameters";
+    const CLASS_NAME: &'static str = "Stream/ReadWriteParameters";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1321,7 +1321,7 @@ for crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.IO";
-    const CLASS_NAME: &'static str = "<<ReadAsync>g__FinishReadAsync|44_0>d";
+    const CLASS_NAME: &'static str = "Stream/<<ReadAsync>g__FinishReadAsync|44_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

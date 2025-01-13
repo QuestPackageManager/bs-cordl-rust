@@ -122,7 +122,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MaterialPropertyNameCouple";
+    const CLASS_NAME: &'static str = "Noise3DTexturesGenerator/MaterialPropertyNameCouple";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -232,7 +232,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialTextureParamsCouple
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MaterialTextureParamsCouple";
+    const CLASS_NAME: &'static str = "Noise3DTexturesGenerator/MaterialTextureParamsCouple";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

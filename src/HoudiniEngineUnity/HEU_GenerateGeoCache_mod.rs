@@ -17,7 +17,7 @@ for crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderTyp
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "ColliderType";
+    const CLASS_NAME: &'static str = "HEU_GenerateGeoCache/HEU_ColliderInfo/ColliderType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

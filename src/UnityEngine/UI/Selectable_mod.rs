@@ -876,7 +876,7 @@ for crate::UnityEngine::UI::Selectable_SelectionState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "SelectionState";
+    const CLASS_NAME: &'static str = "Selectable/SelectionState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -970,7 +970,7 @@ for crate::UnityEngine::UI::Selectable_Transition {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Transition";
+    const CLASS_NAME: &'static str = "Selectable/Transition";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

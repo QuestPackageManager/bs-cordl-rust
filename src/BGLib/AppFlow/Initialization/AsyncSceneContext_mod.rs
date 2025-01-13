@@ -192,7 +192,7 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BGLib.AppFlow.Initialization";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "AsyncSceneContext/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

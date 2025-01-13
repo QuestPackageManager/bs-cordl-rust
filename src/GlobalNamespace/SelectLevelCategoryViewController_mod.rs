@@ -224,7 +224,7 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelCategory";
+    const CLASS_NAME: &'static str = "SelectLevelCategoryViewController/LevelCategory";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

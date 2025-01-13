@@ -128,7 +128,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_AIUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "AIUpdate";
+    const CLASS_NAME: &'static str = "PreUpdate/AIUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -229,7 +229,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_CheckTexFieldInput {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "CheckTexFieldInput";
+    const CLASS_NAME: &'static str = "PreUpdate/CheckTexFieldInput";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -330,7 +330,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_IMGUISendQueuedEvents {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "IMGUISendQueuedEvents";
+    const CLASS_NAME: &'static str = "PreUpdate/IMGUISendQueuedEvents";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -431,7 +431,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_NewInputUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "NewInputUpdate";
+    const CLASS_NAME: &'static str = "PreUpdate/NewInputUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -532,7 +532,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_Physics2DUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "Physics2DUpdate";
+    const CLASS_NAME: &'static str = "PreUpdate/Physics2DUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -633,7 +633,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsClothUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PhysicsClothUpdate";
+    const CLASS_NAME: &'static str = "PreUpdate/PhysicsClothUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -734,7 +734,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_PhysicsUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PhysicsUpdate";
+    const CLASS_NAME: &'static str = "PreUpdate/PhysicsUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -835,7 +835,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_SendMouseEvents {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "SendMouseEvents";
+    const CLASS_NAME: &'static str = "PreUpdate/SendMouseEvents";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -936,7 +936,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_UpdateVideo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateVideo";
+    const CLASS_NAME: &'static str = "PreUpdate/UpdateVideo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1037,7 +1037,7 @@ for crate::UnityEngine::PlayerLoop::PreUpdate_WindUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "WindUpdate";
+    const CLASS_NAME: &'static str = "PreUpdate/WindUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

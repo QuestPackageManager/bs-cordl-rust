@@ -478,7 +478,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnabledObstacleType";
+    const CLASS_NAME: &'static str = "GameplayModifiers/EnabledObstacleType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -570,7 +570,7 @@ for crate::GlobalNamespace::GameplayModifiers_EnergyType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnergyType";
+    const CLASS_NAME: &'static str = "GameplayModifiers/EnergyType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -664,7 +664,7 @@ for crate::GlobalNamespace::GameplayModifiers_SongSpeed {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SongSpeed";
+    const CLASS_NAME: &'static str = "GameplayModifiers/SongSpeed";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

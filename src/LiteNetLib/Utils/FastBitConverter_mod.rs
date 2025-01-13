@@ -163,7 +163,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "ConverterHelperDouble";
+    const CLASS_NAME: &'static str = "FastBitConverter/ConverterHelperDouble";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -266,7 +266,7 @@ for crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "ConverterHelperFloat";
+    const CLASS_NAME: &'static str = "FastBitConverter/ConverterHelperFloat";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

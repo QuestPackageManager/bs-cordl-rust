@@ -786,7 +786,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Parameter";
+    const CLASS_NAME: &'static str = "InputActionRebindingExtensions/Parameter";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -897,7 +897,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ParameterEnumerable";
+    const CLASS_NAME: &'static str = "InputActionRebindingExtensions/ParameterEnumerable";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1150,7 +1150,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ParameterEnumerator";
+    const CLASS_NAME: &'static str = "InputActionRebindingExtensions/ParameterEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1449,7 +1449,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ParameterOverride";
+    const CLASS_NAME: &'static str = "InputActionRebindingExtensions/ParameterOverride";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2681,7 +2681,7 @@ for crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExte
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputActionRebindingExtensions/RebindingOperation/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

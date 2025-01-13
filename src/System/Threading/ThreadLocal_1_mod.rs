@@ -714,7 +714,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "LinkedSlotVolatile";
+    const CLASS_NAME: &'static str = "ThreadLocal`1/LinkedSlotVolatile";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -723,7 +723,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading",
-                        "LinkedSlotVolatile",
+                        "ThreadLocal`1/LinkedSlotVolatile",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

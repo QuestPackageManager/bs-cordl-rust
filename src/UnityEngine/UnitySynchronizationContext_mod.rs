@@ -229,7 +229,7 @@ for crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "WorkRequest";
+    const CLASS_NAME: &'static str = "UnitySynchronizationContext/WorkRequest";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

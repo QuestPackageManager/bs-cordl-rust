@@ -13,7 +13,7 @@ for crate::OVRSimpleJSON::Enumerator_JSONNode_Type {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVRSimpleJSON";
-    const CLASS_NAME: &'static str = "Type";
+    const CLASS_NAME: &'static str = "JSONNode/Enumerator/Type";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1193,7 +1193,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVRSimpleJSON::JSONNode_Enume
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVRSimpleJSON";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "JSONNode/Enumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1355,7 +1355,7 @@ for crate::OVRSimpleJSON::JSONNode_KeyEnumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVRSimpleJSON";
-    const CLASS_NAME: &'static str = "KeyEnumerator";
+    const CLASS_NAME: &'static str = "JSONNode/KeyEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1816,7 +1816,7 @@ for crate::OVRSimpleJSON::JSONNode_ValueEnumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVRSimpleJSON";
-    const CLASS_NAME: &'static str = "ValueEnumerator";
+    const CLASS_NAME: &'static str = "JSONNode/ValueEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

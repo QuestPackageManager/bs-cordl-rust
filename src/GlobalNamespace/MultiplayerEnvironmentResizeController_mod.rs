@@ -339,7 +339,7 @@ for crate::GlobalNamespace::MultiplayerEnvironmentResizeController_ResizeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ResizeType";
+    const CLASS_NAME: &'static str = "MultiplayerEnvironmentResizeController/ResizeType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

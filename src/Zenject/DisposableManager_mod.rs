@@ -273,7 +273,7 @@ for crate::Zenject::DisposableManager_DisposableInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Zenject";
-    const CLASS_NAME: &'static str = "DisposableInfo";
+    const CLASS_NAME: &'static str = "DisposableManager/DisposableInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

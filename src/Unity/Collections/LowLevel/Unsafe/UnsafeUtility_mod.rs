@@ -431,7 +431,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
-    const CLASS_NAME: &'static str = "AlignOfHelper`1";
+    const CLASS_NAME: &'static str = "UnsafeUtility/AlignOfHelper`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -440,7 +440,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_AlignOfHelper_1<T
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Collections.LowLevel.Unsafe",
-                        "AlignOfHelper`1",
+                        "UnsafeUtility/AlignOfHelper`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -552,7 +552,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections.LowLevel.Unsafe";
-    const CLASS_NAME: &'static str = "TypeFlagsCache`1";
+    const CLASS_NAME: &'static str = "UnsafeUtility/TypeFlagsCache`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -561,7 +561,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::UnsafeUtility_TypeFlagsCache_1<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Collections.LowLevel.Unsafe",
-                        "TypeFlagsCache`1",
+                        "UnsafeUtility/TypeFlagsCache`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

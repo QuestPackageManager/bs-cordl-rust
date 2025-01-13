@@ -184,7 +184,7 @@ for crate::Org::BouncyCastle::Asn1::X509::Target_Choice {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.X509";
-    const CLASS_NAME: &'static str = "Choice";
+    const CLASS_NAME: &'static str = "Target/Choice";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

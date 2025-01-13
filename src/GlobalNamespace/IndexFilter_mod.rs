@@ -353,7 +353,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IndexFilterLimitAlsoAffectType";
+    const CLASS_NAME: &'static str = "IndexFilter/IndexFilterLimitAlsoAffectType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -446,7 +446,7 @@ for crate::GlobalNamespace::IndexFilter_IndexFilterRandomType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IndexFilterRandomType";
+    const CLASS_NAME: &'static str = "IndexFilter/IndexFilterRandomType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

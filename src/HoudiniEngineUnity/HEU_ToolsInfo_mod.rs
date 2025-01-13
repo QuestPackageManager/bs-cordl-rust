@@ -156,7 +156,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "PaintMergeMode";
+    const CLASS_NAME: &'static str = "HEU_ToolsInfo/PaintMergeMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -249,7 +249,7 @@ for crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMeshVisibility {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "PaintMeshVisibility";
+    const CLASS_NAME: &'static str = "HEU_ToolsInfo/PaintMeshVisibility";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

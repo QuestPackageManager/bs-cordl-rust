@@ -785,7 +785,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "PlayerActions";
+    const CLASS_NAME: &'static str = "DefaultInputActions/PlayerActions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -995,7 +995,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "UIActions";
+    const CLASS_NAME: &'static str = "DefaultInputActions/UIActions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

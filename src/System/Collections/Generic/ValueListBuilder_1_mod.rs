@@ -177,18 +177,6 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Pop",
-            (),
-        )?;
-        Ok(__cordl_ret.into())
-    }
     pub fn _ctor(
         &mut self,
         initialSpan: crate::System::Span_1<T>,
@@ -201,21 +189,6 @@ impl<
             self,
             ".ctor",
             (initialSpan),
-        )?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_Item(
-        &mut self,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
         )?;
         Ok(__cordl_ret.into())
     }

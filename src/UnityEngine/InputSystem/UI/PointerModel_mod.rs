@@ -373,7 +373,7 @@ for crate::UnityEngine::InputSystem::UI::PointerModel_ButtonState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.UI";
-    const CLASS_NAME: &'static str = "ButtonState";
+    const CLASS_NAME: &'static str = "PointerModel/ButtonState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

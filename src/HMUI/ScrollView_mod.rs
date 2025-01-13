@@ -463,7 +463,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollDirect
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "ScrollDirection";
+    const CLASS_NAME: &'static str = "ScrollView/ScrollDirection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -552,7 +552,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "ScrollType";
+    const CLASS_NAME: &'static str = "ScrollView/ScrollType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -639,7 +639,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ScrollView_ScrollViewDi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "ScrollViewDirection";
+    const CLASS_NAME: &'static str = "ScrollView/ScrollViewDirection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -346,7 +346,7 @@ for crate::System::Net::HttpConnection_InputState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "InputState";
+    const CLASS_NAME: &'static str = "HttpConnection/InputState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -439,7 +439,7 @@ for crate::System::Net::HttpConnection_LineState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "LineState";
+    const CLASS_NAME: &'static str = "HttpConnection/LineState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -256,7 +256,7 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.Remoting.Messaging";
-    const CLASS_NAME: &'static str = "Reader";
+    const CLASS_NAME: &'static str = "LogicalCallContext/Reader";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

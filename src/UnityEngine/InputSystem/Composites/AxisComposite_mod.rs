@@ -120,7 +120,7 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite_WhichSideWins {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Composites";
-    const CLASS_NAME: &'static str = "WhichSideWins";
+    const CLASS_NAME: &'static str = "AxisComposite/WhichSideWins";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

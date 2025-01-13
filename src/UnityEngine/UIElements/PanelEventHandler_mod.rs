@@ -1292,7 +1292,7 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "PointerEventType";
+    const CLASS_NAME: &'static str = "PanelEventHandler/PointerEventType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

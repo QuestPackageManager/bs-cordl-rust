@@ -306,7 +306,7 @@ for crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Utilities";
-    const CLASS_NAME: &'static str = "SeparatedCaseState";
+    const CLASS_NAME: &'static str = "StringUtils/SeparatedCaseState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

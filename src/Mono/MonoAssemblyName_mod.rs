@@ -122,7 +122,7 @@ for crate::Mono::MonoAssemblyName__public_key_token_e__FixedBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono";
-    const CLASS_NAME: &'static str = "<public_key_token>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "MonoAssemblyName/<public_key_token>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

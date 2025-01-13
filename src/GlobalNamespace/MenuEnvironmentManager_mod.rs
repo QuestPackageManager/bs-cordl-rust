@@ -212,7 +212,7 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MenuEnvironmentType";
+    const CLASS_NAME: &'static str = "MenuEnvironmentManager/MenuEnvironmentType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -335,7 +335,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_HandBoneMapping {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandBoneMapping";
+    const CLASS_NAME: &'static str = "OVRTrackedKeyboardHands/HandBoneMapping";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -439,7 +439,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboardHands_TrackedKeyboardHandsVisibili
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackedKeyboardHandsVisibilityChangedEvent";
+    const CLASS_NAME: &'static str = "OVRTrackedKeyboardHands/TrackedKeyboardHandsVisibilityChangedEvent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

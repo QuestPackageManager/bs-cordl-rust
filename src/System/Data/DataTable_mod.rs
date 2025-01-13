@@ -2872,7 +2872,7 @@ for crate::System::Data::DataTable_DSRowDiffIdUsageSection {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "DSRowDiffIdUsageSection";
+    const CLASS_NAME: &'static str = "DataTable/DSRowDiffIdUsageSection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2987,7 +2987,7 @@ for crate::System::Data::DataTable_RowDiffIdUsageSection {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "RowDiffIdUsageSection";
+    const CLASS_NAME: &'static str = "DataTable/RowDiffIdUsageSection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

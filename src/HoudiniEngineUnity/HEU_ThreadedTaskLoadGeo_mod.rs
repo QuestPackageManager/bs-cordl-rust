@@ -14,7 +14,7 @@ for crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "LoadStatus";
+    const CLASS_NAME: &'static str = "HEU_ThreadedTaskLoadGeo/HEU_LoadData/LoadStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -886,7 +886,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "HEU_LoadCallbackType";
+    const CLASS_NAME: &'static str = "HEU_ThreadedTaskLoadGeo/HEU_LoadCallbackType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1159,7 +1159,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "LoadType";
+    const CLASS_NAME: &'static str = "HEU_ThreadedTaskLoadGeo/LoadType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

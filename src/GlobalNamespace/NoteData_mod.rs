@@ -741,7 +741,7 @@ for crate::GlobalNamespace::NoteData_GameplayType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GameplayType";
+    const CLASS_NAME: &'static str = "NoteData/GameplayType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -841,7 +841,7 @@ for crate::GlobalNamespace::NoteData_ScoringType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ScoringType";
+    const CLASS_NAME: &'static str = "NoteData/ScoringType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

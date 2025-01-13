@@ -692,7 +692,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_Cut
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "CutoffMode";
+    const CLASS_NAME: &'static str = "BurstString/CutoffMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -785,7 +785,7 @@ for crate::Unity::Burst::BurstString_FormatOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "FormatOptions";
+    const CLASS_NAME: &'static str = "BurstString/FormatOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -941,7 +941,7 @@ for crate::Unity::Burst::BurstString_NumberBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "NumberBuffer";
+    const CLASS_NAME: &'static str = "BurstString/NumberBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1072,7 +1072,7 @@ for crate::Unity::Burst::BurstString_NumberBufferKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "NumberBufferKind";
+    const CLASS_NAME: &'static str = "BurstString/NumberBufferKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1166,7 +1166,7 @@ for crate::Unity::Burst::BurstString_NumberFormatKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "NumberFormatKind";
+    const CLASS_NAME: &'static str = "BurstString/NumberFormatKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1327,7 +1327,7 @@ for crate::Unity::Burst::BurstString_PrintFloatFormat {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "PrintFloatFormat";
+    const CLASS_NAME: &'static str = "BurstString/PrintFloatFormat";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1417,7 +1417,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::BurstString_tBi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "tBigInt";
+    const CLASS_NAME: &'static str = "BurstString/tBigInt";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1587,7 +1587,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion32 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "tFloatUnion32";
+    const CLASS_NAME: &'static str = "BurstString/tFloatUnion32";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1715,7 +1715,7 @@ for crate::Unity::Burst::BurstString_tFloatUnion64 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "tFloatUnion64";
+    const CLASS_NAME: &'static str = "BurstString/tFloatUnion64";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1843,7 +1843,7 @@ for crate::Unity::Burst::tBigInt_BurstString__m_blocks_e__FixedBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "<m_blocks>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "BurstString/tBigInt/<m_blocks>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

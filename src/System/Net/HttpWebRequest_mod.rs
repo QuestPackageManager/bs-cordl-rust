@@ -1382,7 +1382,7 @@ for crate::System::Net::HttpWebRequest_AuthorizationState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "AuthorizationState";
+    const CLASS_NAME: &'static str = "HttpWebRequest/AuthorizationState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1561,7 +1561,7 @@ for crate::System::Net::HttpWebRequest_NtlmAuthState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "NtlmAuthState";
+    const CLASS_NAME: &'static str = "HttpWebRequest/NtlmAuthState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1657,7 +1657,7 @@ for crate::System::Net::HttpWebRequest___GetRewriteHandler_b__271_0_d {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "<<GetRewriteHandler>b__271_0>d";
+    const CLASS_NAME: &'static str = "HttpWebRequest/<<GetRewriteHandler>b__271_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

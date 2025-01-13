@@ -350,7 +350,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Controll
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Haptics";
-    const CLASS_NAME: &'static str = "Controller";
+    const CLASS_NAME: &'static str = "Ffi/Controller";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -551,7 +551,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_LogLevel
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Haptics";
-    const CLASS_NAME: &'static str = "LogLevel";
+    const CLASS_NAME: &'static str = "Ffi/LogLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -639,7 +639,7 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Haptics";
-    const CLASS_NAME: &'static str = "NullBackendStatistics";
+    const CLASS_NAME: &'static str = "Ffi/NullBackendStatistics";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -756,7 +756,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_Result {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Haptics";
-    const CLASS_NAME: &'static str = "Result";
+    const CLASS_NAME: &'static str = "Ffi/Result";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -843,7 +843,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Haptics::Ffi_SdkVersi
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Haptics";
-    const CLASS_NAME: &'static str = "SdkVersion";
+    const CLASS_NAME: &'static str = "Ffi/SdkVersion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

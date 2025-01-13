@@ -816,7 +816,7 @@ for crate::System::Numerics::BigInteger_GetBytesMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Numerics";
-    const CLASS_NAME: &'static str = "GetBytesMode";
+    const CLASS_NAME: &'static str = "BigInteger/GetBytesMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

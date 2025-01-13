@@ -134,7 +134,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.OpenSsl";
-    const CLASS_NAME: &'static str = "PemBaseAlg";
+    const CLASS_NAME: &'static str = "PemUtilities/PemBaseAlg";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -228,7 +228,7 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.OpenSsl";
-    const CLASS_NAME: &'static str = "PemMode";
+    const CLASS_NAME: &'static str = "PemUtilities/PemMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

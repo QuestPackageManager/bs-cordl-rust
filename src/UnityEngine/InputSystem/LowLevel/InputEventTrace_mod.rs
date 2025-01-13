@@ -715,7 +715,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_DeviceInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "DeviceInfo";
+    const CLASS_NAME: &'static str = "InputEventTrace/DeviceInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1093,7 +1093,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_FileFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "FileFlags";
+    const CLASS_NAME: &'static str = "InputEventTrace/FileFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

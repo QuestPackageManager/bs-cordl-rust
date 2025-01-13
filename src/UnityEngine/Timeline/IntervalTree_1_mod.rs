@@ -295,14 +295,17 @@ for crate::UnityEngine::Timeline::IntervalTree_1_Entry<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "Entry";
+    const CLASS_NAME: &'static str = "IntervalTree`1/Entry";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("UnityEngine.Timeline", "Entry")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.Timeline",
+                        "IntervalTree`1/Entry",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

@@ -179,7 +179,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_Con
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
-    const CLASS_NAME: &'static str = "ConfiguredValueTaskAwaiter";
+    const CLASS_NAME: &'static str = "ConfiguredValueTaskAwaitable`1/ConfiguredValueTaskAwaiter";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -188,7 +188,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredValueTaskAwaitable_1_Con
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Runtime.CompilerServices",
-                        "ConfiguredValueTaskAwaiter",
+                        "ConfiguredValueTaskAwaitable`1/ConfiguredValueTaskAwaiter",
                     )
                     .unwrap()
                     .make_generic::<(TResult)>()

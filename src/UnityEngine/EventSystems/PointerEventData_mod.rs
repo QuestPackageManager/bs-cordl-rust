@@ -858,7 +858,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_FramePressState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "FramePressState";
+    const CLASS_NAME: &'static str = "PointerEventData/FramePressState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -951,7 +951,7 @@ for crate::UnityEngine::EventSystems::PointerEventData_InputButton {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "InputButton";
+    const CLASS_NAME: &'static str = "PointerEventData/InputButton";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

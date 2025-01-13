@@ -156,7 +156,7 @@ for crate::GlobalNamespace::__c__DisplayClass9_0_DefaultScenesTransitionsFromIni
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "<<TransitionToNextScene>g__OnFinishCallback|0>d";
+    const CLASS_NAME: &'static str = "DefaultScenesTransitionsFromInit/<>c__DisplayClass9_0/<<TransitionToNextScene>g__OnFinishCallback|0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

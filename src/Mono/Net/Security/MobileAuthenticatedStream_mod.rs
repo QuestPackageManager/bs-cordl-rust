@@ -807,7 +807,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_Operation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Net.Security";
-    const CLASS_NAME: &'static str = "Operation";
+    const CLASS_NAME: &'static str = "MobileAuthenticatedStream/Operation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -901,7 +901,7 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream_OperationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Net.Security";
-    const CLASS_NAME: &'static str = "OperationType";
+    const CLASS_NAME: &'static str = "MobileAuthenticatedStream/OperationType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

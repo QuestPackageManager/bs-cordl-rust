@@ -4497,7 +4497,7 @@ for crate::UnityEngine::UIElements::VisualElement_Hierarchy {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "Hierarchy";
+    const CLASS_NAME: &'static str = "VisualElement/Hierarchy";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4883,7 +4883,7 @@ for crate::UnityEngine::UIElements::VisualElement_MeasureMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "MeasureMode";
+    const CLASS_NAME: &'static str = "VisualElement/MeasureMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4977,7 +4977,7 @@ for crate::UnityEngine::UIElements::VisualElement_RenderTargetMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "RenderTargetMode";
+    const CLASS_NAME: &'static str = "VisualElement/RenderTargetMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

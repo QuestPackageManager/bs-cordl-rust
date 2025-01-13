@@ -774,7 +774,7 @@ for crate::HoudiniEngineUnity::HEU_AssetDatabase_HEU_ImportAssetOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "HEU_ImportAssetOptions";
+    const CLASS_NAME: &'static str = "HEU_AssetDatabase/HEU_ImportAssetOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

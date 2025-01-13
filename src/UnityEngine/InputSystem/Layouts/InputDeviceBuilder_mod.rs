@@ -585,7 +585,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "RefInstance";
+    const CLASS_NAME: &'static str = "InputDeviceBuilder/RefInstance";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

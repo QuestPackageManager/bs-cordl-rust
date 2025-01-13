@@ -993,7 +993,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EraseOptions";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/EraseOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1105,14 +1105,17 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InvertedCapture`2";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/InvertedCapture`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "InvertedCapture`2")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRSpatialAnchor/InvertedCapture`2",
+                    )
                     .unwrap()
                     .make_generic::<(TResult, TCapture)>()
                     .unwrap()
@@ -1297,7 +1300,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LoadOptions";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/LoadOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1500,7 +1503,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MultiAnchorActionType";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/MultiAnchorActionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1604,7 +1607,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MultiAnchorDelegatePair";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/MultiAnchorDelegatePair";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1714,7 +1717,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OperationResult";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/OperationResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1804,7 +1807,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SaveOptions";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/SaveOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1908,7 +1911,7 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "UnboundAnchor";
+    const CLASS_NAME: &'static str = "OVRSpatialAnchor/UnboundAnchor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

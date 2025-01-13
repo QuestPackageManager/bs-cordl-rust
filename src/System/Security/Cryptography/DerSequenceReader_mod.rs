@@ -481,7 +481,7 @@ for crate::System::Security::Cryptography::DerSequenceReader_DerTag {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Security.Cryptography";
-    const CLASS_NAME: &'static str = "DerTag";
+    const CLASS_NAME: &'static str = "DerSequenceReader/DerTag";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

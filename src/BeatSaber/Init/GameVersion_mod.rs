@@ -221,7 +221,7 @@ for crate::BeatSaber::Init::GameVersion_BuildInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Init";
-    const CLASS_NAME: &'static str = "BuildInfo";
+    const CLASS_NAME: &'static str = "GameVersion/BuildInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -448,7 +448,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Init::GameVersion_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Init";
-    const CLASS_NAME: &'static str = "Content";
+    const CLASS_NAME: &'static str = "GameVersion/Content";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -670,7 +670,7 @@ for crate::BeatSaber::Init::GameVersion_Metadata {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Init";
-    const CLASS_NAME: &'static str = "Metadata";
+    const CLASS_NAME: &'static str = "GameVersion/Metadata";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -905,7 +905,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Init";
-    const CLASS_NAME: &'static str = "PreReleaseLabel";
+    const CLASS_NAME: &'static str = "GameVersion/PreReleaseLabel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1139,7 +1139,7 @@ for crate::BeatSaber::Init::GameVersion_PreReleasePrefix {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Init";
-    const CLASS_NAME: &'static str = "PreReleasePrefix";
+    const CLASS_NAME: &'static str = "GameVersion/PreReleasePrefix";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

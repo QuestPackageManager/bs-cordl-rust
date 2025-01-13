@@ -2356,7 +2356,7 @@ for crate::GlobalNamespace::OVRManager_CameraDevice {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraDevice";
+    const CLASS_NAME: &'static str = "OVRManager/CameraDevice";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2455,7 +2455,7 @@ for crate::GlobalNamespace::OVRManager_ColorSpace {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorSpace";
+    const CLASS_NAME: &'static str = "OVRManager/ColorSpace";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2547,7 +2547,7 @@ for crate::GlobalNamespace::OVRManager_CompositionMethod {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CompositionMethod";
+    const CLASS_NAME: &'static str = "OVRManager/CompositionMethod";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2640,7 +2640,7 @@ for crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerDrivenHandPosesType";
+    const CLASS_NAME: &'static str = "OVRManager/ControllerDrivenHandPosesType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2733,7 +2733,7 @@ for crate::GlobalNamespace::OVRManager_DepthQuality {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DepthQuality";
+    const CLASS_NAME: &'static str = "OVRManager/DepthQuality";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2894,7 +2894,7 @@ for crate::GlobalNamespace::OVRManager_EyeTextureFormat {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EyeTextureFormat";
+    const CLASS_NAME: &'static str = "OVRManager/EyeTextureFormat";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2989,7 +2989,7 @@ for crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FixedFoveatedRenderingLevel";
+    const CLASS_NAME: &'static str = "OVRManager/FixedFoveatedRenderingLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3084,7 +3084,7 @@ for crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FoveatedRenderingLevel";
+    const CLASS_NAME: &'static str = "OVRManager/FoveatedRenderingLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3298,7 +3298,7 @@ for crate::GlobalNamespace::OVRManager_MrcActivationMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MrcActivationMode";
+    const CLASS_NAME: &'static str = "OVRManager/MrcActivationMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3391,7 +3391,7 @@ for crate::GlobalNamespace::OVRManager_MrcCameraType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MrcCameraType";
+    const CLASS_NAME: &'static str = "OVRManager/MrcCameraType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3594,7 +3594,7 @@ for crate::GlobalNamespace::OVRManager_PassthroughInitializationState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughInitializationState";
+    const CLASS_NAME: &'static str = "OVRManager/PassthroughInitializationState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3688,7 +3688,7 @@ for crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ProcessorPerformanceLevel";
+    const CLASS_NAME: &'static str = "OVRManager/ProcessorPerformanceLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3798,7 +3798,7 @@ for crate::GlobalNamespace::OVRManager_SystemHeadsetType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SystemHeadsetType";
+    const CLASS_NAME: &'static str = "OVRManager/SystemHeadsetType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3893,7 +3893,7 @@ for crate::GlobalNamespace::OVRManager_TiledMultiResLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TiledMultiResLevel";
+    const CLASS_NAME: &'static str = "OVRManager/TiledMultiResLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3986,7 +3986,7 @@ for crate::GlobalNamespace::OVRManager_TrackingOrigin {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackingOrigin";
+    const CLASS_NAME: &'static str = "OVRManager/TrackingOrigin";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4079,7 +4079,7 @@ for crate::GlobalNamespace::OVRManager_VirtualGreenScreenType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualGreenScreenType";
+    const CLASS_NAME: &'static str = "OVRManager/VirtualGreenScreenType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4171,7 +4171,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRManager_X
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "XRDevice";
+    const CLASS_NAME: &'static str = "OVRManager/XRDevice";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4264,7 +4264,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRManager_X
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "XrApi";
+    const CLASS_NAME: &'static str = "OVRManager/XrApi";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

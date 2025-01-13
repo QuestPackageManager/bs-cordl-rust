@@ -167,7 +167,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "InitialState";
+    const CLASS_NAME: &'static str = "ActivationControlPlayable/InitialState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -260,7 +260,7 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "PostPlaybackState";
+    const CLASS_NAME: &'static str = "ActivationControlPlayable/PostPlaybackState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

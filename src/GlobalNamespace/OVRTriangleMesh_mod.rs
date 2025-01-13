@@ -363,7 +363,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_FlipTriangleWindingJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FlipTriangleWindingJob";
+    const CLASS_NAME: &'static str = "OVRTriangleMesh/FlipTriangleWindingJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -494,7 +494,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_GetMeshJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetMeshJob";
+    const CLASS_NAME: &'static str = "OVRTriangleMesh/GetMeshJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -622,7 +622,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_NegateXJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NegateXJob";
+    const CLASS_NAME: &'static str = "OVRTriangleMesh/NegateXJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -753,7 +753,7 @@ for crate::GlobalNamespace::OVRTriangleMesh_Triangle {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Triangle";
+    const CLASS_NAME: &'static str = "OVRTriangleMesh/Triangle";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

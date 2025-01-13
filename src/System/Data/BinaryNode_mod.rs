@@ -392,7 +392,7 @@ for crate::System::Data::BinaryNode_DataTypePrecedence {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "DataTypePrecedence";
+    const CLASS_NAME: &'static str = "BinaryNode/DataTypePrecedence";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

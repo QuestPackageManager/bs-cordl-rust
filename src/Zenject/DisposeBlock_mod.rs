@@ -506,7 +506,7 @@ for crate::Zenject::DisposeBlock_SpawnedObjectPoolPair {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Zenject";
-    const CLASS_NAME: &'static str = "SpawnedObjectPoolPair";
+    const CLASS_NAME: &'static str = "DisposeBlock/SpawnedObjectPoolPair";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

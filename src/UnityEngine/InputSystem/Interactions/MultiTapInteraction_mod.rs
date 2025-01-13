@@ -13,7 +13,7 @@ for crate::UnityEngine::InputSystem::Interactions::MultiTapInteraction_TapPhase 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Interactions";
-    const CLASS_NAME: &'static str = "TapPhase";
+    const CLASS_NAME: &'static str = "MultiTapInteraction/TapPhase";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

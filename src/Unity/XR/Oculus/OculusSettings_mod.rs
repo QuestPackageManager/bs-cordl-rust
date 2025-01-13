@@ -121,7 +121,7 @@ for crate::Unity::XR::Oculus::OculusSettings_FoveationMethod {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.XR.Oculus";
-    const CLASS_NAME: &'static str = "FoveationMethod";
+    const CLASS_NAME: &'static str = "OculusSettings/FoveationMethod";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -213,7 +213,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeAndroid {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.XR.Oculus";
-    const CLASS_NAME: &'static str = "StereoRenderingModeAndroid";
+    const CLASS_NAME: &'static str = "OculusSettings/StereoRenderingModeAndroid";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -305,7 +305,7 @@ for crate::Unity::XR::Oculus::OculusSettings_StereoRenderingModeDesktop {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.XR.Oculus";
-    const CLASS_NAME: &'static str = "StereoRenderingModeDesktop";
+    const CLASS_NAME: &'static str = "OculusSettings/StereoRenderingModeDesktop";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

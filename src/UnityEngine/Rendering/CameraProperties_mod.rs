@@ -233,7 +233,7 @@ for crate::UnityEngine::Rendering::CameraProperties__layerCullDistances_e__Fixed
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
-    const CLASS_NAME: &'static str = "<layerCullDistances>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "CameraProperties/<layerCullDistances>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -352,7 +352,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_CameraCullPlanes_e__Fixed
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
-    const CLASS_NAME: &'static str = "<m_CameraCullPlanes>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "CameraProperties/<m_CameraCullPlanes>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -471,7 +471,7 @@ for crate::UnityEngine::Rendering::CameraProperties__m_ShadowCullPlanes_e__Fixed
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Rendering";
-    const CLASS_NAME: &'static str = "<m_ShadowCullPlanes>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "CameraProperties/<m_ShadowCullPlanes>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -1253,7 +1253,7 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "NetPeerEnumerator";
+    const CLASS_NAME: &'static str = "NetManager/NetPeerEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

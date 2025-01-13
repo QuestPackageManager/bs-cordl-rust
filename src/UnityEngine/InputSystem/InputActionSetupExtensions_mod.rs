@@ -482,7 +482,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "BindingSyntax";
+    const CLASS_NAME: &'static str = "InputActionSetupExtensions/BindingSyntax";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -934,7 +934,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "CompositeSyntax";
+    const CLASS_NAME: &'static str = "InputActionSetupExtensions/CompositeSyntax";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1083,7 +1083,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ControlSchemeSyntax";
+    const CLASS_NAME: &'static str = "InputActionSetupExtensions/ControlSchemeSyntax";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

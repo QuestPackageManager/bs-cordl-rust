@@ -1269,7 +1269,7 @@ for crate::OVR::OpenVR::CVROverlay_PollNextOverlayEventUnion {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "PollNextOverlayEventUnion";
+    const CLASS_NAME: &'static str = "CVROverlay/PollNextOverlayEventUnion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

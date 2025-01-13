@@ -252,7 +252,7 @@ for crate::TrueOverdraw::TrueOverdraw_OverdrawType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TrueOverdraw";
-    const CLASS_NAME: &'static str = "OverdrawType";
+    const CLASS_NAME: &'static str = "TrueOverdraw/OverdrawType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

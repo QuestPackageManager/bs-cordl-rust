@@ -4760,7 +4760,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "MeshData";
+    const CLASS_NAME: &'static str = "Mesh/MeshData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5040,7 +5040,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Mesh_MeshDataArr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "MeshDataArray";
+    const CLASS_NAME: &'static str = "Mesh/MeshDataArray";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

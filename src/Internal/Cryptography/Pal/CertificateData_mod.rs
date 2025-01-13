@@ -230,7 +230,7 @@ for crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Internal.Cryptography.Pal";
-    const CLASS_NAME: &'static str = "AlgorithmIdentifier";
+    const CLASS_NAME: &'static str = "CertificateData/AlgorithmIdentifier";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

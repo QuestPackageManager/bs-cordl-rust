@@ -16,7 +16,7 @@ for crate::UnityEngine::InputSystem::BindingState_InputActionState_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputActionState/BindingState/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1689,7 +1689,7 @@ for crate::UnityEngine::InputSystem::InputActionState_ActionMapIndices {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ActionMapIndices";
+    const CLASS_NAME: &'static str = "InputActionState/ActionMapIndices";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1792,7 +1792,7 @@ for crate::UnityEngine::InputSystem::InputActionState_BindingState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "BindingState";
+    const CLASS_NAME: &'static str = "InputActionState/BindingState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2294,7 +2294,7 @@ for crate::UnityEngine::InputSystem::InputActionState_GlobalState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "GlobalState";
+    const CLASS_NAME: &'static str = "InputActionState/GlobalState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2397,7 +2397,7 @@ for crate::UnityEngine::InputSystem::InputActionState_InteractionState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "InteractionState";
+    const CLASS_NAME: &'static str = "InputActionState/InteractionState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2701,7 +2701,7 @@ for crate::UnityEngine::InputSystem::InputActionState_TriggerState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "TriggerState";
+    const CLASS_NAME: &'static str = "InputActionState/TriggerState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3263,7 +3263,7 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "UnmanagedMemory";
+    const CLASS_NAME: &'static str = "InputActionState/UnmanagedMemory";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3454,7 +3454,7 @@ for crate::UnityEngine::InputSystem::InteractionState_InputActionState_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputActionState/InteractionState/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3551,7 +3551,7 @@ for crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputActionState/TriggerState/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

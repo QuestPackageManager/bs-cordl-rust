@@ -632,7 +632,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ControlBuilder";
+    const CLASS_NAME: &'static str = "InputControlExtensions/ControlBuilder";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1001,7 +1001,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceBuilder";
+    const CLASS_NAME: &'static str = "InputControlExtensions/DeviceBuilder";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1293,7 +1293,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Enumerate";
+    const CLASS_NAME: &'static str = "InputControlExtensions/Enumerate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1392,7 +1392,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCol
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "InputEventControlCollection";
+    const CLASS_NAME: &'static str = "InputControlExtensions/InputEventControlCollection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1647,7 +1647,7 @@ for crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnu
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "InputEventControlEnumerator";
+    const CLASS_NAME: &'static str = "InputControlExtensions/InputEventControlEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

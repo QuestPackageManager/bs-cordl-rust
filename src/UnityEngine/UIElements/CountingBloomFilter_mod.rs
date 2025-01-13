@@ -184,7 +184,7 @@ for crate::UnityEngine::UIElements::CountingBloomFilter__m_Counters_e__FixedBuff
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "<m_Counters>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "CountingBloomFilter/<m_Counters>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

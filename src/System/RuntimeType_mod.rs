@@ -2216,14 +2216,17 @@ for crate::System::RuntimeType_ListBuilder_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "ListBuilder`1";
+    const CLASS_NAME: &'static str = "RuntimeType/ListBuilder`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System", "ListBuilder`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System",
+                        "RuntimeType/ListBuilder`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -2424,7 +2427,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::RuntimeType_MemberLis
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "MemberListType";
+    const CLASS_NAME: &'static str = "RuntimeType/MemberListType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

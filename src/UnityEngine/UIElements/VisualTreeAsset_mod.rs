@@ -713,7 +713,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "AssetEntry";
+    const CLASS_NAME: &'static str = "VisualTreeAsset/AssetEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -841,7 +841,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "SlotDefinition";
+    const CLASS_NAME: &'static str = "VisualTreeAsset/SlotDefinition";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -945,7 +945,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "SlotUsageEntry";
+    const CLASS_NAME: &'static str = "VisualTreeAsset/SlotUsageEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1052,7 +1052,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UsingEntry";
+    const CLASS_NAME: &'static str = "VisualTreeAsset/UsingEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1283,7 +1283,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UxmlObjectEntry";
+    const CLASS_NAME: &'static str = "VisualTreeAsset/UxmlObjectEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

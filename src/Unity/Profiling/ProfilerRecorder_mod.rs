@@ -290,7 +290,7 @@ for crate::Unity::Profiling::ProfilerRecorder_ControlOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Profiling";
-    const CLASS_NAME: &'static str = "ControlOptions";
+    const CLASS_NAME: &'static str = "ProfilerRecorder/ControlOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -7526,7 +7526,7 @@ for crate::Oculus::Platform::CAPI_OculusInitParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
-    const CLASS_NAME: &'static str = "OculusInitParams";
+    const CLASS_NAME: &'static str = "CAPI/OculusInitParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7633,7 +7633,7 @@ for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
-    const CLASS_NAME: &'static str = "ovrKeyValuePair";
+    const CLASS_NAME: &'static str = "CAPI/ovrKeyValuePair";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7775,7 +7775,7 @@ for crate::Oculus::Platform::CAPI_ovrNetSyncVec3 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
-    const CLASS_NAME: &'static str = "ovrNetSyncVec3";
+    const CLASS_NAME: &'static str = "CAPI/ovrNetSyncVec3";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

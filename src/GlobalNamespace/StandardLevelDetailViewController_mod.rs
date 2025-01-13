@@ -797,7 +797,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController_ContentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ContentType";
+    const CLASS_NAME: &'static str = "StandardLevelDetailViewController/ContentType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -895,7 +895,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWas
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "<<BuyPackButtonWasPressed>b__55_0>d";
+    const CLASS_NAME: &'static str = "StandardLevelDetailViewController/<<BuyPackButtonWasPressed>b__55_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1049,7 +1049,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "<<OpenLevelProductStoreOrShowBuyInfo>b__56_0>d";
+    const CLASS_NAME: &'static str = "StandardLevelDetailViewController/<<OpenLevelProductStoreOrShowBuyInfo>b__56_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1216,7 +1216,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___OpenLevelProduct
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "<<OpenLevelProductStore>b__57_0>d";
+    const CLASS_NAME: &'static str = "StandardLevelDetailViewController/<<OpenLevelProductStore>b__57_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1371,7 +1371,7 @@ for crate::GlobalNamespace::StandardLevelDetailViewController___RefreshAvailabil
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "<<RefreshAvailabilityIfNeeded>b__58_0>d";
+    const CLASS_NAME: &'static str = "StandardLevelDetailViewController/<<RefreshAvailabilityIfNeeded>b__58_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

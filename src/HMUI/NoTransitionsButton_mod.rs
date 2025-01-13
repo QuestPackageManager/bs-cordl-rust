@@ -135,7 +135,7 @@ for crate::HMUI::NoTransitionsButton_SelectionState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "SelectionState";
+    const CLASS_NAME: &'static str = "NoTransitionsButton/SelectionState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

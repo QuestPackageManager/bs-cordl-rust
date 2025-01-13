@@ -1004,7 +1004,7 @@ for crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "NestedInteractionKind";
+    const CLASS_NAME: &'static str = "ScrollView/NestedInteractionKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1097,7 +1097,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TouchScrollBehavior";
+    const CLASS_NAME: &'static str = "ScrollView/TouchScrollBehavior";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1190,7 +1190,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TouchScrollingResult";
+    const CLASS_NAME: &'static str = "ScrollView/TouchScrollingResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

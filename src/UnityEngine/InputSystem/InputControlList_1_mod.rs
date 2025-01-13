@@ -755,7 +755,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "InputControlList`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -764,7 +764,7 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem",
-                        "Enumerator",
+                        "InputControlList`1/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TControl)>()

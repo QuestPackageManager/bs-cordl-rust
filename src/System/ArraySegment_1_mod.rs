@@ -610,14 +610,17 @@ for crate::System::ArraySegment_1_Enumerator<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "ArraySegment`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System", "Enumerator")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System",
+                        "ArraySegment`1/Enumerator",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

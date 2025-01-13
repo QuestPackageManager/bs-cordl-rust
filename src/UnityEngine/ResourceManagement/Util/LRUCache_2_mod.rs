@@ -234,7 +234,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "Entry";
+    const CLASS_NAME: &'static str = "LRUCache`2/Entry";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -243,7 +243,7 @@ for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.ResourceManagement.Util",
-                        "Entry",
+                        "LRUCache`2/Entry",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()

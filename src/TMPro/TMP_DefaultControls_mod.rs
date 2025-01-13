@@ -165,7 +165,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_DefaultControls_Re
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "Resources";
+    const CLASS_NAME: &'static str = "TMP_DefaultControls/Resources";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

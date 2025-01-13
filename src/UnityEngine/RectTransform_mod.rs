@@ -533,7 +533,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Ax
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Axis";
+    const CLASS_NAME: &'static str = "RectTransform/Axis";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -622,7 +622,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::RectTransform_Ed
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Edge";
+    const CLASS_NAME: &'static str = "RectTransform/Edge";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -790,7 +790,7 @@ for crate::UnityEngine::InputSystem::InputAction_ActionFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ActionFlags";
+    const CLASS_NAME: &'static str = "InputAction/ActionFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -883,7 +883,7 @@ for crate::UnityEngine::InputSystem::InputAction_CallbackContext {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "CallbackContext";
+    const CLASS_NAME: &'static str = "InputAction/CallbackContext";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

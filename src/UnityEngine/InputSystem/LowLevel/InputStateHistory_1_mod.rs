@@ -429,7 +429,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TV
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "InputStateHistory`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -438,7 +438,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Enumerator<TV
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.LowLevel",
-                        "Enumerator",
+                        "InputStateHistory`1/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()
@@ -703,7 +703,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Record";
+    const CLASS_NAME: &'static str = "InputStateHistory`1/Record";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -712,7 +712,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1_Record<TValue
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.LowLevel",
-                        "Record",
+                        "InputStateHistory`1/Record",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()

@@ -202,7 +202,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_BloomPrepassTextureEffectPreset
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "BloomPrepassTextureEffectPreset";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/BloomPrepassTextureEffectPreset";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -518,7 +518,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_FoveatedRenderingLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "FoveatedRenderingLevel";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/FoveatedRenderingLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -689,7 +689,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainEffectPreset {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "MainEffectPreset";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/MainEffectPreset";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -873,7 +873,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MirrorQualityPreset {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "MirrorQualityPreset";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/MirrorQualityPreset";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -967,7 +967,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ObstaclesQuality {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "ObstaclesQuality";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/ObstaclesQuality";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1152,7 +1152,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ProcessorPerformanceLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "ProcessorPerformanceLevel";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/ProcessorPerformanceLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1322,7 +1322,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_WindowMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "WindowMode";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/WindowMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

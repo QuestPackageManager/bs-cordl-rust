@@ -181,7 +181,7 @@ for crate::GlobalNamespace::SelectRegionViewController_Region {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Region";
+    const CLASS_NAME: &'static str = "SelectRegionViewController/Region";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -272,7 +272,7 @@ for crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPa
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RegionToLocalizationKeyPair";
+    const CLASS_NAME: &'static str = "SelectRegionViewController/RegionToLocalizationKeyPair";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

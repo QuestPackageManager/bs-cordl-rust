@@ -738,7 +738,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Enumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "InputStateHistory/Enumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -969,7 +969,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_Record {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Record";
+    const CLASS_NAME: &'static str = "InputStateHistory/Record";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1347,7 +1347,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_RecordHeader {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "RecordHeader";
+    const CLASS_NAME: &'static str = "InputStateHistory/RecordHeader";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1493,7 +1493,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "<m_StateWithControlIndex>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "InputStateHistory/RecordHeader/<m_StateWithControlIndex>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1612,7 +1612,7 @@ for crate::UnityEngine::InputSystem::LowLevel::RecordHeader_InputStateHistory__m
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "<m_StateWithoutControlIndex>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "InputStateHistory/RecordHeader/<m_StateWithoutControlIndex>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -789,7 +789,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Text.RegularExpressions";
-    const CLASS_NAME: &'static str = "CachedCodeEntryKey";
+    const CLASS_NAME: &'static str = "Regex/CachedCodeEntryKey";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

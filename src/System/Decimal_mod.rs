@@ -9,7 +9,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf12
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "Buf12";
+    const CLASS_NAME: &'static str = "Decimal/DecCalc/Buf12";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -146,7 +146,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf16
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "Buf16";
+    const CLASS_NAME: &'static str = "Decimal/DecCalc/Buf16";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -283,7 +283,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Buf24
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "Buf24";
+    const CLASS_NAME: &'static str = "Decimal/DecCalc/Buf24";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -424,7 +424,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Power
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "PowerOvfl";
+    const CLASS_NAME: &'static str = "Decimal/DecCalc/PowerOvfl";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -544,7 +544,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DecCalc_Decimal_Round
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "RoundingMode";
+    const CLASS_NAME: &'static str = "Decimal/DecCalc/RoundingMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1690,7 +1690,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Decimal_DecCalc {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "DecCalc";
+    const CLASS_NAME: &'static str = "Decimal/DecCalc";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

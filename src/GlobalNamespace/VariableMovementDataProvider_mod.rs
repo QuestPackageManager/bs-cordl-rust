@@ -369,7 +369,7 @@ for crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InterpolationData";
+    const CLASS_NAME: &'static str = "VariableMovementDataProvider/InterpolationData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

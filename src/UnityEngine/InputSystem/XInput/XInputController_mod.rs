@@ -198,7 +198,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XInput";
-    const CLASS_NAME: &'static str = "Capabilities";
+    const CLASS_NAME: &'static str = "XInputController/Capabilities";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -306,7 +306,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XInput";
-    const CLASS_NAME: &'static str = "DeviceFlags";
+    const CLASS_NAME: &'static str = "XInputController/DeviceFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -407,7 +407,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceSubType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XInput";
-    const CLASS_NAME: &'static str = "DeviceSubType";
+    const CLASS_NAME: &'static str = "XInputController/DeviceSubType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -498,7 +498,7 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_DeviceType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XInput";
-    const CLASS_NAME: &'static str = "DeviceType";
+    const CLASS_NAME: &'static str = "XInputController/DeviceType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

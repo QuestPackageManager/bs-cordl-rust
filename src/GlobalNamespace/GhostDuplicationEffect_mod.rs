@@ -215,7 +215,7 @@ for crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GhostEffectParams";
+    const CLASS_NAME: &'static str = "GhostDuplicationEffect/GhostEffectParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

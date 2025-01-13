@@ -867,7 +867,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_FillMe
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "FillMethod";
+    const CLASS_NAME: &'static str = "Image/FillMethod";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -959,7 +959,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Origin180";
+    const CLASS_NAME: &'static str = "Image/Origin180";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1049,7 +1049,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Origin360";
+    const CLASS_NAME: &'static str = "Image/Origin360";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1139,7 +1139,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Origin
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Origin90";
+    const CLASS_NAME: &'static str = "Image/Origin90";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1227,7 +1227,7 @@ for crate::UnityEngine::UI::Image_OriginHorizontal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "OriginHorizontal";
+    const CLASS_NAME: &'static str = "Image/OriginHorizontal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1319,7 +1319,7 @@ for crate::UnityEngine::UI::Image_OriginVertical {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "OriginVertical";
+    const CLASS_NAME: &'static str = "Image/OriginVertical";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1412,7 +1412,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Image_Type {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Type";
+    const CLASS_NAME: &'static str = "Image/Type";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

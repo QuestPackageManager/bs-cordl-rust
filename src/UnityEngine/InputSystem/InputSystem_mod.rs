@@ -14,7 +14,7 @@ for crate::UnityEngine::InputSystem::DeltaStateEventBuffer_InputSystem__data_e__
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "<data>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "InputSystem/DeltaStateEventBuffer/<data>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1193,7 +1193,7 @@ for crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeltaStateEventBuffer";
+    const CLASS_NAME: &'static str = "InputSystem/DeltaStateEventBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1303,7 +1303,7 @@ for crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "StateEventBuffer";
+    const CLASS_NAME: &'static str = "InputSystem/StateEventBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1416,7 +1416,7 @@ for crate::UnityEngine::InputSystem::StateEventBuffer_InputSystem__data_e__Fixed
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "<data>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "InputSystem/StateEventBuffer/<data>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

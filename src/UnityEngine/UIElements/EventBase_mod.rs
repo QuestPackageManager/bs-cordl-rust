@@ -831,7 +831,7 @@ for crate::UnityEngine::UIElements::EventBase_EventPropagation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "EventPropagation";
+    const CLASS_NAME: &'static str = "EventBase/EventPropagation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -933,7 +933,7 @@ for crate::UnityEngine::UIElements::EventBase_LifeCycleStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "LifeCycleStatus";
+    const CLASS_NAME: &'static str = "EventBase/LifeCycleStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

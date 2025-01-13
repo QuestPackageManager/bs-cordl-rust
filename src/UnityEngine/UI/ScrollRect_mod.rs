@@ -1206,7 +1206,7 @@ for crate::UnityEngine::UI::ScrollRect_MovementType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "MovementType";
+    const CLASS_NAME: &'static str = "ScrollRect/MovementType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1370,7 +1370,7 @@ for crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "ScrollbarVisibility";
+    const CLASS_NAME: &'static str = "ScrollRect/ScrollbarVisibility";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

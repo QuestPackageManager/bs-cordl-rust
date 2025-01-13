@@ -939,7 +939,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger_Sign {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Math";
-    const CLASS_NAME: &'static str = "Sign";
+    const CLASS_NAME: &'static str = "BigInteger/Sign";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

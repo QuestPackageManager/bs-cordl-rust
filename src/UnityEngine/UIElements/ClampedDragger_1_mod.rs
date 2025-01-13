@@ -334,7 +334,7 @@ for crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "DragDirection";
+    const CLASS_NAME: &'static str = "ClampedDragger`1/DragDirection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -193,7 +193,7 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Jobs.LowLevel.Unsafe";
-    const CLASS_NAME: &'static str = "JobScheduleParameters";
+    const CLASS_NAME: &'static str = "JobsUtility/JobScheduleParameters";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

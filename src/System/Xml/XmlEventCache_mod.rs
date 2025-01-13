@@ -548,7 +548,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlEventCache_Xm
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "XmlEvent";
+    const CLASS_NAME: &'static str = "XmlEventCache/XmlEvent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -805,7 +805,7 @@ for crate::System::Xml::XmlEventCache_XmlEventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "XmlEventType";
+    const CLASS_NAME: &'static str = "XmlEventCache/XmlEventType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

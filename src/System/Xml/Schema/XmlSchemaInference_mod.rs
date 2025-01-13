@@ -550,7 +550,7 @@ for crate::System::Xml::Schema::XmlSchemaInference_InferenceOption {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "InferenceOption";
+    const CLASS_NAME: &'static str = "XmlSchemaInference/InferenceOption";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

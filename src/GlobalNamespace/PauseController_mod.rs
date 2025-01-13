@@ -510,7 +510,7 @@ for crate::GlobalNamespace::PauseController_PauseState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PauseState";
+    const CLASS_NAME: &'static str = "PauseController/PauseState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

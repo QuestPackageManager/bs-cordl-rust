@@ -1996,7 +1996,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZVersio
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "TZVersion";
+    const CLASS_NAME: &'static str = "TimeZoneInfo/TZVersion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2088,7 +2088,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifHead
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "TZifHead";
+    const CLASS_NAME: &'static str = "TimeZoneInfo/TZifHead";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2201,7 +2201,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_TZifType
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "TZifType";
+    const CLASS_NAME: &'static str = "TimeZoneInfo/TZifType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2317,7 +2317,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_Transiti
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "TransitionTime";
+    const CLASS_NAME: &'static str = "TimeZoneInfo/TransitionTime";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

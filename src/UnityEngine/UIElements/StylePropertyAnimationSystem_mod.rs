@@ -851,7 +851,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSe
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "AnimationDataSet`2";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/AnimationDataSet`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -860,7 +860,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSe
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "AnimationDataSet`2",
+                        "StylePropertyAnimationSystem/AnimationDataSet`2",
                     )
                     .unwrap()
                     .make_generic::<(TTimingData, TStyleData)>()
@@ -1221,7 +1221,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementProperty
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ElementPropertyPair";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ElementPropertyPair";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1360,7 +1360,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TransitionState";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/TransitionState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4412,7 +4412,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyD
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "EmptyData";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/Values`1/EmptyData";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4421,7 +4421,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_EmptyD
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "EmptyData",
+                        "StylePropertyAnimationSystem/Values`1/EmptyData",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -4555,7 +4555,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleD
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "StyleData";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/Values`1/StyleData";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4564,7 +4564,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_StyleD
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "StyleData",
+                        "StylePropertyAnimationSystem/Values`1/StyleData",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -4701,7 +4701,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Timing
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TimingData";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/Values`1/TimingData";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4710,7 +4710,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Timing
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "TimingData",
+                        "StylePropertyAnimationSystem/Values`1/TimingData",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

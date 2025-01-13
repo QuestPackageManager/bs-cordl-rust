@@ -639,7 +639,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_KeyboardPresentation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "KeyboardPresentation";
+    const CLASS_NAME: &'static str = "OVRTrackedKeyboard/KeyboardPresentation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -729,7 +729,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackedKeyboardSetActiveEvent";
+    const CLASS_NAME: &'static str = "OVRTrackedKeyboard/TrackedKeyboardSetActiveEvent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -852,7 +852,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackedKeyboardState";
+    const CLASS_NAME: &'static str = "OVRTrackedKeyboard/TrackedKeyboardState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -946,7 +946,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedE
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackedKeyboardVisibilityChangedEvent";
+    const CLASS_NAME: &'static str = "OVRTrackedKeyboard/TrackedKeyboardVisibilityChangedEvent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

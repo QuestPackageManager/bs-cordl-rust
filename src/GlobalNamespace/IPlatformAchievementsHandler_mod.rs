@@ -246,7 +246,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetUnlockedAchievementsResult";
+    const CLASS_NAME: &'static str = "IPlatformAchievementsHandler/GetUnlockedAchievementsResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -451,7 +451,7 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementResult
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "UnlockAchievementResult";
+    const CLASS_NAME: &'static str = "IPlatformAchievementsHandler/UnlockAchievementResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

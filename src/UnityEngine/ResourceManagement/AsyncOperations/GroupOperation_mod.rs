@@ -354,7 +354,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_Grou
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.AsyncOperations";
-    const CLASS_NAME: &'static str = "GroupOperationSettings";
+    const CLASS_NAME: &'static str = "GroupOperation/GroupOperationSettings";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

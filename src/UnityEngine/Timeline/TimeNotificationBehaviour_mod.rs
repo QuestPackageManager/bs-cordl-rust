@@ -239,7 +239,7 @@ for crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "NotificationEntry";
+    const CLASS_NAME: &'static str = "TimeNotificationBehaviour/NotificationEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

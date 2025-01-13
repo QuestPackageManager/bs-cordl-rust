@@ -967,7 +967,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Utilities";
-    const CLASS_NAME: &'static str = "DictionaryEnumerator`2";
+    const CLASS_NAME: &'static str = "DictionaryWrapper`2/DictionaryEnumerator`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -976,7 +976,7 @@ for crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2_DictionaryEnumerator
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Newtonsoft.Json.Utilities",
-                        "DictionaryEnumerator`2",
+                        "DictionaryWrapper`2/DictionaryEnumerator`2",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue, TEnumeratorKey, TEnumeratorValue)>()

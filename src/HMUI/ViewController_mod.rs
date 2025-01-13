@@ -500,7 +500,7 @@ for crate::HMUI::ViewController_AnimationDirection {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "AnimationDirection";
+    const CLASS_NAME: &'static str = "ViewController/AnimationDirection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -592,7 +592,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::ViewController_Animatio
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "AnimationType";
+    const CLASS_NAME: &'static str = "ViewController/AnimationType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

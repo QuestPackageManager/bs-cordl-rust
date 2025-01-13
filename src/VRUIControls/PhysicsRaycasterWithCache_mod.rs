@@ -105,7 +105,7 @@ for crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "VRUIControls";
-    const CLASS_NAME: &'static str = "CachedRaycast";
+    const CLASS_NAME: &'static str = "PhysicsRaycasterWithCache/CachedRaycast";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

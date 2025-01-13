@@ -877,7 +877,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Context {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Globalization.Unicode";
-    const CLASS_NAME: &'static str = "Context";
+    const CLASS_NAME: &'static str = "SimpleCollator/Context";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1001,7 +1001,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Globalization.Unicode";
-    const CLASS_NAME: &'static str = "Escape";
+    const CLASS_NAME: &'static str = "SimpleCollator/Escape";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1109,7 +1109,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Globalization.Unicode";
-    const CLASS_NAME: &'static str = "ExtenderType";
+    const CLASS_NAME: &'static str = "SimpleCollator/ExtenderType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1200,7 +1200,7 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_PreviousInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Globalization.Unicode";
-    const CLASS_NAME: &'static str = "PreviousInfo";
+    const CLASS_NAME: &'static str = "SimpleCollator/PreviousInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -233,7 +233,7 @@ for crate::UnityEngine::UI::GraphicRaycaster_BlockingObjects {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "BlockingObjects";
+    const CLASS_NAME: &'static str = "GraphicRaycaster/BlockingObjects";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

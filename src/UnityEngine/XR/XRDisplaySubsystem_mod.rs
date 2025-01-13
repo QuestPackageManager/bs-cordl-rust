@@ -13,7 +13,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_LateLatchNode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
-    const CLASS_NAME: &'static str = "LateLatchNode";
+    const CLASS_NAME: &'static str = "XRDisplaySubsystem/LateLatchNode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -110,7 +110,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRBlitParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
-    const CLASS_NAME: &'static str = "XRBlitParams";
+    const CLASS_NAME: &'static str = "XRDisplaySubsystem/XRBlitParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -216,7 +216,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRMirrorViewBlitDesc {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
-    const CLASS_NAME: &'static str = "XRMirrorViewBlitDesc";
+    const CLASS_NAME: &'static str = "XRDisplaySubsystem/XRMirrorViewBlitDesc";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -328,7 +328,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystem_XRRenderPass {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
-    const CLASS_NAME: &'static str = "XRRenderPass";
+    const CLASS_NAME: &'static str = "XRDisplaySubsystem/XRRenderPass";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

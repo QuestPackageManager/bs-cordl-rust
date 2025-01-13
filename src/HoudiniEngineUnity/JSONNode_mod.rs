@@ -13,7 +13,7 @@ for crate::HoudiniEngineUnity::Enumerator_JSONNode_Type {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "Type";
+    const CLASS_NAME: &'static str = "JSONNode/Enumerator/Type";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1237,7 +1237,7 @@ for crate::HoudiniEngineUnity::JSONNode_Enumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "JSONNode/Enumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1400,7 +1400,7 @@ for crate::HoudiniEngineUnity::JSONNode_KeyEnumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "KeyEnumerator";
+    const CLASS_NAME: &'static str = "JSONNode/KeyEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1863,7 +1863,7 @@ for crate::HoudiniEngineUnity::JSONNode_ValueEnumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "ValueEnumerator";
+    const CLASS_NAME: &'static str = "JSONNode/ValueEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

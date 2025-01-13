@@ -384,7 +384,7 @@ for crate::System::Xml::Schema::XsdDateTime_DateTimeTypeCode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "DateTimeTypeCode";
+    const CLASS_NAME: &'static str = "XsdDateTime/DateTimeTypeCode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -486,7 +486,7 @@ for crate::System::Xml::Schema::XsdDateTime_Parser {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "Parser";
+    const CLASS_NAME: &'static str = "XsdDateTime/Parser";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -702,7 +702,7 @@ for crate::System::Xml::Schema::XsdDateTime_XsdDateTimeKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "XsdDateTimeKind";
+    const CLASS_NAME: &'static str = "XsdDateTime/XsdDateTimeKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

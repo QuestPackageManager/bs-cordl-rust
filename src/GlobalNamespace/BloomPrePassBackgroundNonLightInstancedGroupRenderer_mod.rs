@@ -227,7 +227,7 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PropertyType";
+    const CLASS_NAME: &'static str = "BloomPrePassBackgroundNonLightInstancedGroupRenderer/PropertyType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

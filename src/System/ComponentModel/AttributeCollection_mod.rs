@@ -265,7 +265,7 @@ for crate::System::ComponentModel::AttributeCollection_AttributeEntry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "AttributeEntry";
+    const CLASS_NAME: &'static str = "AttributeCollection/AttributeEntry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

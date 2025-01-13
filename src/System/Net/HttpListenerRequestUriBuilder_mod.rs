@@ -291,7 +291,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_EncodingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "EncodingType";
+    const CLASS_NAME: &'static str = "HttpListenerRequestUriBuilder/EncodingType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -384,7 +384,7 @@ for crate::System::Net::HttpListenerRequestUriBuilder_ParsingResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "ParsingResult";
+    const CLASS_NAME: &'static str = "HttpListenerRequestUriBuilder/ParsingResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

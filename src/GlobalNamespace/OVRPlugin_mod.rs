@@ -13,7 +13,7 @@ for crate::GlobalNamespace::Media_OVRPlugin_InputVideoBufferType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InputVideoBufferType";
+    const CLASS_NAME: &'static str = "OVRPlugin/Media/InputVideoBufferType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -106,7 +106,7 @@ for crate::GlobalNamespace::Media_OVRPlugin_MrcActivationMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MrcActivationMode";
+    const CLASS_NAME: &'static str = "OVRPlugin/Media/MrcActivationMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -206,7 +206,7 @@ for crate::GlobalNamespace::Media_OVRPlugin_PlatformCameraMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlatformCameraMode";
+    const CLASS_NAME: &'static str = "OVRPlugin/Media/PlatformCameraMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3197,7 +3197,7 @@ for crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AppPerfFrameStats";
+    const CLASS_NAME: &'static str = "OVRPlugin/AppPerfFrameStats";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3307,7 +3307,7 @@ for crate::GlobalNamespace::OVRPlugin_AppPerfStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AppPerfStats";
+    const CLASS_NAME: &'static str = "OVRPlugin/AppPerfStats";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3415,7 +3415,7 @@ for crate::GlobalNamespace::OVRPlugin_BatteryStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BatteryStatus";
+    const CLASS_NAME: &'static str = "OVRPlugin/BatteryStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3511,7 +3511,7 @@ for crate::GlobalNamespace::OVRPlugin_BlendFactor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BlendFactor";
+    const CLASS_NAME: &'static str = "OVRPlugin/BlendFactor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3602,7 +3602,7 @@ for crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BodyJointLocation";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyJointLocation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3744,7 +3744,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Bo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BodyState";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3920,7 +3920,7 @@ for crate::GlobalNamespace::OVRPlugin_BodyStateInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BodyStateInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyStateInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4024,7 +4024,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Bo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Bone";
+    const CLASS_NAME: &'static str = "OVRPlugin/Bone";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4126,7 +4126,7 @@ for crate::GlobalNamespace::OVRPlugin_BoneCapsule {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoneCapsule";
+    const CLASS_NAME: &'static str = "OVRPlugin/BoneCapsule";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4300,7 +4300,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Bo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoneId";
+    const CLASS_NAME: &'static str = "OVRPlugin/BoneId";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4390,7 +4390,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Bo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Bool";
+    const CLASS_NAME: &'static str = "OVRPlugin/Bool";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4480,7 +4480,7 @@ for crate::GlobalNamespace::OVRPlugin_BoundaryGeometry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoundaryGeometry";
+    const CLASS_NAME: &'static str = "OVRPlugin/BoundaryGeometry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4586,7 +4586,7 @@ for crate::GlobalNamespace::OVRPlugin_BoundaryTestResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoundaryTestResult";
+    const CLASS_NAME: &'static str = "OVRPlugin/BoundaryTestResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4691,7 +4691,7 @@ for crate::GlobalNamespace::OVRPlugin_BoundaryType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoundaryType";
+    const CLASS_NAME: &'static str = "OVRPlugin/BoundaryType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4781,7 +4781,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Bo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Boundsf";
+    const CLASS_NAME: &'static str = "OVRPlugin/Boundsf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4887,7 +4887,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraAnchorType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraAnchorType";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraAnchorType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4981,7 +4981,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraDevice {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraDevice";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraDevice";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5074,7 +5074,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraDeviceDepthQuality {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraDeviceDepthQuality";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraDeviceDepthQuality";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5166,7 +5166,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraDeviceDepthSensingMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraDeviceDepthSensingMode";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraDeviceDepthSensingMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5269,7 +5269,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraDeviceIntrinsicsParameters {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraDeviceIntrinsicsParameters";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraDeviceIntrinsicsParameters";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5376,7 +5376,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraExtrinsics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraExtrinsics";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraExtrinsics";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5484,7 +5484,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraIntrinsics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraIntrinsics";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraIntrinsics";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5594,7 +5594,7 @@ for crate::GlobalNamespace::OVRPlugin_CameraStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CameraStatus";
+    const CLASS_NAME: &'static str = "OVRPlugin/CameraStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5693,7 +5693,7 @@ for crate::GlobalNamespace::OVRPlugin_ColorSpace {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorSpace";
+    const CLASS_NAME: &'static str = "OVRPlugin/ColorSpace";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5785,7 +5785,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Co
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Colorf";
+    const CLASS_NAME: &'static str = "OVRPlugin/Colorf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5909,7 +5909,7 @@ for crate::GlobalNamespace::OVRPlugin_Controller {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Controller";
+    const CLASS_NAME: &'static str = "OVRPlugin/Controller";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6008,7 +6008,7 @@ for crate::GlobalNamespace::OVRPlugin_ControllerState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerState";
+    const CLASS_NAME: &'static str = "OVRPlugin/ControllerState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6122,7 +6122,7 @@ for crate::GlobalNamespace::OVRPlugin_ControllerState2 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerState2";
+    const CLASS_NAME: &'static str = "OVRPlugin/ControllerState2";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6280,7 +6280,7 @@ for crate::GlobalNamespace::OVRPlugin_ControllerState4 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerState4";
+    const CLASS_NAME: &'static str = "OVRPlugin/ControllerState4";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6418,7 +6418,7 @@ for crate::GlobalNamespace::OVRPlugin_ControllerState5 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerState5";
+    const CLASS_NAME: &'static str = "OVRPlugin/ControllerState5";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6558,7 +6558,7 @@ for crate::GlobalNamespace::OVRPlugin_ControllerState6 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerState6";
+    const CLASS_NAME: &'static str = "OVRPlugin/ControllerState6";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6674,7 +6674,7 @@ for crate::GlobalNamespace::OVRPlugin_EventDataBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EventDataBuffer";
+    const CLASS_NAME: &'static str = "OVRPlugin/EventDataBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6792,7 +6792,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ev
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EventType";
+    const CLASS_NAME: &'static str = "OVRPlugin/EventType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6885,7 +6885,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ey
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Eye";
+    const CLASS_NAME: &'static str = "OVRPlugin/Eye";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -6973,7 +6973,7 @@ for crate::GlobalNamespace::OVRPlugin_EyeGazeState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EyeGazeState";
+    const CLASS_NAME: &'static str = "OVRPlugin/EyeGazeState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7090,7 +7090,7 @@ for crate::GlobalNamespace::OVRPlugin_EyeGazesState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EyeGazesState";
+    const CLASS_NAME: &'static str = "OVRPlugin/EyeGazesState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7195,7 +7195,7 @@ for crate::GlobalNamespace::OVRPlugin_EyeGazesStateInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EyeGazesStateInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/EyeGazesStateInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7306,7 +7306,7 @@ for crate::GlobalNamespace::OVRPlugin_EyeTextureFormat {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EyeTextureFormat";
+    const CLASS_NAME: &'static str = "OVRPlugin/EyeTextureFormat";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7398,7 +7398,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceConstants {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceConstants";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceConstants";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7553,7 +7553,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceExpression {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceExpression";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceExpression";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7644,7 +7644,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceExpressionStatus";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceExpressionStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7748,7 +7748,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceExpressionStatusInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceExpressionStatusInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7867,7 +7867,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceRegionConfidence {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceRegionConfidence";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceRegionConfidence";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -7963,7 +7963,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Fa
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceState";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8132,7 +8132,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceState2Internal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceState2Internal";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceState2Internal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8301,7 +8301,7 @@ for crate::GlobalNamespace::OVRPlugin_FaceStateInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceStateInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceStateInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8413,7 +8413,7 @@ for crate::GlobalNamespace::OVRPlugin_FeatureType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FeatureType";
+    const CLASS_NAME: &'static str = "OVRPlugin/FeatureType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8509,7 +8509,7 @@ for crate::GlobalNamespace::OVRPlugin_FixedFoveatedRenderingLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FixedFoveatedRenderingLevel";
+    const CLASS_NAME: &'static str = "OVRPlugin/FixedFoveatedRenderingLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8605,7 +8605,7 @@ for crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FoveatedRenderingLevel";
+    const CLASS_NAME: &'static str = "OVRPlugin/FoveatedRenderingLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8697,7 +8697,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Fo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Fovf";
+    const CLASS_NAME: &'static str = "OVRPlugin/Fovf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8798,7 +8798,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Fr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Frustumf";
+    const CLASS_NAME: &'static str = "OVRPlugin/Frustumf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8902,7 +8902,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Fr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Frustumf2";
+    const CLASS_NAME: &'static str = "OVRPlugin/Frustumf2";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9085,7 +9085,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ha
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Hand";
+    const CLASS_NAME: &'static str = "OVRPlugin/Hand";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9177,7 +9177,7 @@ for crate::GlobalNamespace::OVRPlugin_HandFinger {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandFinger";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandFinger";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9272,7 +9272,7 @@ for crate::GlobalNamespace::OVRPlugin_HandFingerPinch {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandFingerPinch";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandFingerPinch";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9379,7 +9379,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ha
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandState";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9523,7 +9523,7 @@ for crate::GlobalNamespace::OVRPlugin_HandStateInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandStateInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandStateInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9631,7 +9631,7 @@ for crate::GlobalNamespace::OVRPlugin_HandStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandStatus";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9724,7 +9724,7 @@ for crate::GlobalNamespace::OVRPlugin_Handedness {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Handedness";
+    const CLASS_NAME: &'static str = "OVRPlugin/Handedness";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9816,7 +9816,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsAmplitudeEnvelopeVibration {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsAmplitudeEnvelopeVibration";
+    const CLASS_NAME: &'static str = "OVRPlugin/HapticsAmplitudeEnvelopeVibration";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -9920,7 +9920,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsBuffer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsBuffer";
+    const CLASS_NAME: &'static str = "OVRPlugin/HapticsBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10024,7 +10024,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsConstants {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsConstants";
+    const CLASS_NAME: &'static str = "OVRPlugin/HapticsConstants";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10119,7 +10119,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsDesc {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsDesc";
+    const CLASS_NAME: &'static str = "OVRPlugin/HapticsDesc";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10226,7 +10226,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsLocation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsLocation";
+    const CLASS_NAME: &'static str = "OVRPlugin/HapticsLocation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10320,7 +10320,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsPcmVibration {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsPcmVibration";
+    const CLASS_NAME: &'static str = "OVRPlugin/HapticsPcmVibration";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10424,7 +10424,7 @@ for crate::GlobalNamespace::OVRPlugin_HapticsState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticsState";
+    const CLASS_NAME: &'static str = "OVRPlugin/HapticsState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10533,7 +10533,7 @@ for crate::GlobalNamespace::OVRPlugin_InsightPassthroughColorMapType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InsightPassthroughColorMapType";
+    const CLASS_NAME: &'static str = "OVRPlugin/InsightPassthroughColorMapType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10624,7 +10624,7 @@ for crate::GlobalNamespace::OVRPlugin_InsightPassthroughKeyboardHandsIntensity {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InsightPassthroughKeyboardHandsIntensity";
+    const CLASS_NAME: &'static str = "OVRPlugin/InsightPassthroughKeyboardHandsIntensity";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10732,7 +10732,7 @@ for crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InsightPassthroughStyle";
+    const CLASS_NAME: &'static str = "OVRPlugin/InsightPassthroughStyle";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10843,7 +10843,7 @@ for crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InsightPassthroughStyle2";
+    const CLASS_NAME: &'static str = "OVRPlugin/InsightPassthroughStyle2";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -10963,7 +10963,7 @@ for crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyleFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InsightPassthroughStyleFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/InsightPassthroughStyleFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11057,7 +11057,7 @@ for crate::GlobalNamespace::OVRPlugin_InteractionProfile {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InteractionProfile";
+    const CLASS_NAME: &'static str = "OVRPlugin/InteractionProfile";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11151,7 +11151,7 @@ for crate::GlobalNamespace::OVRPlugin_KeyboardDescription {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "KeyboardDescription";
+    const CLASS_NAME: &'static str = "OVRPlugin/KeyboardDescription";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11255,7 +11255,7 @@ for crate::GlobalNamespace::OVRPlugin_KeyboardDescriptionConstants {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "KeyboardDescriptionConstants";
+    const CLASS_NAME: &'static str = "OVRPlugin/KeyboardDescriptionConstants";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11351,7 +11351,7 @@ for crate::GlobalNamespace::OVRPlugin_KeyboardState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "KeyboardState";
+    const CLASS_NAME: &'static str = "OVRPlugin/KeyboardState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11590,7 +11590,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_La
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerDesc";
+    const CLASS_NAME: &'static str = "OVRPlugin/LayerDesc";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11719,7 +11719,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerDescInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/LayerDescInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11853,7 +11853,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/LayerFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -11948,7 +11948,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerLayout {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerLayout";
+    const CLASS_NAME: &'static str = "OVRPlugin/LayerLayout";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -12041,7 +12041,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerSharpenType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerSharpenType";
+    const CLASS_NAME: &'static str = "OVRPlugin/LayerSharpenType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -12137,7 +12137,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerSubmit {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerSubmit";
+    const CLASS_NAME: &'static str = "OVRPlugin/LayerSubmit";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -12243,7 +12243,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerSuperSamplingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LayerSuperSamplingType";
+    const CLASS_NAME: &'static str = "OVRPlugin/LayerSuperSamplingType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -12450,7 +12450,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Lo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LogLevel";
+    const CLASS_NAME: &'static str = "OVRPlugin/LogLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -12902,7 +12902,7 @@ for crate::GlobalNamespace::OVRPlugin_MeshConstants {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MeshConstants";
+    const CLASS_NAME: &'static str = "OVRPlugin/MeshConstants";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -12994,7 +12994,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Me
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MeshType";
+    const CLASS_NAME: &'static str = "OVRPlugin/MeshType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -13099,7 +13099,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_No
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Node";
+    const CLASS_NAME: &'static str = "OVRPlugin/Node";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -20622,7 +20622,7 @@ for crate::GlobalNamespace::OVRPlugin_OverlayFlag {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OverlayFlag";
+    const CLASS_NAME: &'static str = "OVRPlugin/OverlayFlag";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -20722,7 +20722,7 @@ for crate::GlobalNamespace::OVRPlugin_OverlayShape {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OverlayShape";
+    const CLASS_NAME: &'static str = "OVRPlugin/OverlayShape";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -20814,7 +20814,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughCapabilities";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughCapabilities";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -20919,7 +20919,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFields {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughCapabilityFields";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughCapabilityFields";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21012,7 +21012,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughCapabilityFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughCapabilityFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughCapabilityFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21104,7 +21104,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughColorLutChannels {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughColorLutChannels";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughColorLutChannels";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21195,7 +21195,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughColorLutData";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughColorLutData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21299,7 +21299,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFields {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughPreferenceFields";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughPreferenceFields";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21390,7 +21390,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughPreferenceFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughPreferenceFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughPreferenceFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21481,7 +21481,7 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughPreferences {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughPreferences";
+    const CLASS_NAME: &'static str = "OVRPlugin/PassthroughPreferences";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21607,7 +21607,7 @@ for crate::GlobalNamespace::OVRPlugin_PerfMetrics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PerfMetrics";
+    const CLASS_NAME: &'static str = "OVRPlugin/PerfMetrics";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21698,14 +21698,14 @@ for crate::GlobalNamespace::OVRPlugin_PinnedArray_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PinnedArray`1";
+    const CLASS_NAME: &'static str = "OVRPlugin/PinnedArray`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "PinnedArray`1")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRPlugin/PinnedArray`1")
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -21872,7 +21872,7 @@ for crate::GlobalNamespace::OVRPlugin_PlatformUI {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlatformUI";
+    const CLASS_NAME: &'static str = "OVRPlugin/PlatformUI";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -21964,7 +21964,7 @@ for crate::GlobalNamespace::OVRPlugin_PolygonalBoundary2DInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PolygonalBoundary2DInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/PolygonalBoundary2DInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22072,7 +22072,7 @@ for crate::GlobalNamespace::OVRPlugin_PoseStatef {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PoseStatef";
+    const CLASS_NAME: &'static str = "OVRPlugin/PoseStatef";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22175,7 +22175,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Po
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Posef";
+    const CLASS_NAME: &'static str = "OVRPlugin/Posef";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22291,7 +22291,7 @@ for crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ProcessorPerformanceLevel";
+    const CLASS_NAME: &'static str = "OVRPlugin/ProcessorPerformanceLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22496,7 +22496,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Qu
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Quatf";
+    const CLASS_NAME: &'static str = "OVRPlugin/Quatf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22610,7 +22610,7 @@ for crate::GlobalNamespace::OVRPlugin_RecenterFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RecenterFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/RecenterFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22700,7 +22700,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Re
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Rectf";
+    const CLASS_NAME: &'static str = "OVRPlugin/Rectf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22800,7 +22800,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Re
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Recti";
+    const CLASS_NAME: &'static str = "OVRPlugin/Recti";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22902,7 +22902,7 @@ for crate::GlobalNamespace::OVRPlugin_RenderModelFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RenderModelFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/RenderModelFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -22995,7 +22995,7 @@ for crate::GlobalNamespace::OVRPlugin_RenderModelProperties {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RenderModelProperties";
+    const CLASS_NAME: &'static str = "OVRPlugin/RenderModelProperties";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23101,7 +23101,7 @@ for crate::GlobalNamespace::OVRPlugin_RenderModelPropertiesInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RenderModelPropertiesInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/RenderModelPropertiesInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23223,7 +23223,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Re
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Result";
+    const CLASS_NAME: &'static str = "OVRPlugin/Result";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23316,7 +23316,7 @@ for crate::GlobalNamespace::OVRPlugin_RoomLayout {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RoomLayout";
+    const CLASS_NAME: &'static str = "OVRPlugin/RoomLayout";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23423,7 +23423,7 @@ for crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RoomLayoutInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/RoomLayoutInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23527,7 +23527,7 @@ for crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SceneCaptureRequestInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/SceneCaptureRequestInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23631,7 +23631,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Si
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Size3f";
+    const CLASS_NAME: &'static str = "OVRPlugin/Size3f";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23733,7 +23733,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Si
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Sizef";
+    const CLASS_NAME: &'static str = "OVRPlugin/Sizef";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23833,7 +23833,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Si
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Sizei";
+    const CLASS_NAME: &'static str = "OVRPlugin/Sizei";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -23989,7 +23989,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Sk
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Skeleton";
+    const CLASS_NAME: &'static str = "OVRPlugin/Skeleton";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24099,7 +24099,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Sk
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Skeleton2";
+    const CLASS_NAME: &'static str = "OVRPlugin/Skeleton2";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24293,7 +24293,7 @@ for crate::GlobalNamespace::OVRPlugin_Skeleton2Internal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Skeleton2Internal";
+    const CLASS_NAME: &'static str = "OVRPlugin/Skeleton2Internal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24400,7 +24400,7 @@ for crate::GlobalNamespace::OVRPlugin_SkeletonConstants {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SkeletonConstants";
+    const CLASS_NAME: &'static str = "OVRPlugin/SkeletonConstants";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24494,7 +24494,7 @@ for crate::GlobalNamespace::OVRPlugin_SkeletonType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SkeletonType";
+    const CLASS_NAME: &'static str = "OVRPlugin/SkeletonType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24593,7 +24593,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceComponentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceComponentType";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceComponentType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24685,7 +24685,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceContainerInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceContainerInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24793,7 +24793,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceFilterInfoComponents";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceFilterInfoComponents";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -24899,7 +24899,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceFilterInfoIds";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceFilterInfoIds";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25006,7 +25006,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceLocationFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceLocationFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25097,7 +25097,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceLocationf {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceLocationf";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceLocationf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25201,7 +25201,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceQueryActionType";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceQueryActionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25294,7 +25294,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryFilterType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceQueryFilterType";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceQueryFilterType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25391,7 +25391,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceQueryInfo";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceQueryInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25495,7 +25495,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceQueryResult";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceQueryResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25599,7 +25599,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceQueryType";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceQueryType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25691,7 +25691,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceSemanticLabelInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceSemanticLabelInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceSemanticLabelInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25797,7 +25797,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceStorageLocation";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceStorageLocation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25889,7 +25889,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceStoragePersistenceMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpaceStoragePersistenceMode";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceStoragePersistenceMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -25981,7 +25981,7 @@ for crate::GlobalNamespace::OVRPlugin_SpatialAnchorCreateInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SpatialAnchorCreateInfo";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpatialAnchorCreateInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26085,7 +26085,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_St
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Step";
+    const CLASS_NAME: &'static str = "OVRPlugin/Step";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26191,7 +26191,7 @@ for crate::GlobalNamespace::OVRPlugin_SystemHeadset {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SystemHeadset";
+    const CLASS_NAME: &'static str = "OVRPlugin/SystemHeadset";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26284,7 +26284,7 @@ for crate::GlobalNamespace::OVRPlugin_SystemRegion {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SystemRegion";
+    const CLASS_NAME: &'static str = "OVRPlugin/SystemRegion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26377,7 +26377,7 @@ for crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TextureRectMatrixf";
+    const CLASS_NAME: &'static str = "OVRPlugin/TextureRectMatrixf";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26497,7 +26497,7 @@ for crate::GlobalNamespace::OVRPlugin_TiledMultiResLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TiledMultiResLevel";
+    const CLASS_NAME: &'static str = "OVRPlugin/TiledMultiResLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26591,7 +26591,7 @@ for crate::GlobalNamespace::OVRPlugin_TrackedKeyboardFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackedKeyboardFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/TrackedKeyboardFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26684,7 +26684,7 @@ for crate::GlobalNamespace::OVRPlugin_TrackedKeyboardPresentationStyles {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackedKeyboardPresentationStyles";
+    const CLASS_NAME: &'static str = "OVRPlugin/TrackedKeyboardPresentationStyles";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26776,7 +26776,7 @@ for crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackedKeyboardQueryFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/TrackedKeyboardQueryFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26871,7 +26871,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Tr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Tracker";
+    const CLASS_NAME: &'static str = "OVRPlugin/Tracker";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -26962,7 +26962,7 @@ for crate::GlobalNamespace::OVRPlugin_TrackingConfidence {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackingConfidence";
+    const CLASS_NAME: &'static str = "OVRPlugin/TrackingConfidence";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27057,7 +27057,7 @@ for crate::GlobalNamespace::OVRPlugin_TrackingOrigin {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackingOrigin";
+    const CLASS_NAME: &'static str = "OVRPlugin/TrackingOrigin";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27152,7 +27152,7 @@ for crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TriangleMeshInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/TriangleMeshInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27400,7 +27400,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ve
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Vector2f";
+    const CLASS_NAME: &'static str = "OVRPlugin/Vector2f";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27503,7 +27503,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ve
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Vector2i";
+    const CLASS_NAME: &'static str = "OVRPlugin/Vector2i";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27607,7 +27607,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ve
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Vector3f";
+    const CLASS_NAME: &'static str = "OVRPlugin/Vector3f";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27723,7 +27723,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ve
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Vector4f";
+    const CLASS_NAME: &'static str = "OVRPlugin/Vector4f";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27839,7 +27839,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Ve
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Vector4s";
+    const CLASS_NAME: &'static str = "OVRPlugin/Vector4s";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -27951,7 +27951,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardCreateInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardCreateInfo";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardCreateInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28056,7 +28056,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardInputInfo";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardInputInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28169,7 +28169,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputSource {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardInputSource";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardInputSource";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28260,7 +28260,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputStateFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardInputStateFlags";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardInputStateFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28352,7 +28352,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardLocationInfo";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardLocationInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28458,7 +28458,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardLocationType";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardLocationType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28549,7 +28549,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardModelAnimationState";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardModelAnimationState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28656,7 +28656,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardModelAnimationStates";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardModelAnimationStates";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28761,7 +28761,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStatesInterna
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardModelAnimationStatesInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardModelAnimationStatesInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28864,7 +28864,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardModelVisibility";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardModelVisibility";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -28988,7 +28988,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardSpaceCreateInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardSpaceCreateInfo";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardSpaceCreateInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -29095,7 +29095,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardTextureData";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardTextureData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -29198,7 +29198,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIds {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardTextureIds";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardTextureIds";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -29303,7 +29303,7 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIdsInternal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualKeyboardTextureIdsInternal";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardTextureIdsInternal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -29410,7 +29410,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Xr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "XrApi";
+    const CLASS_NAME: &'static str = "OVRPlugin/XrApi";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -29500,7 +29500,7 @@ for crate::GlobalNamespace::Qpl_OVRPlugin_ResultType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ResultType";
+    const CLASS_NAME: &'static str = "OVRPlugin/Qpl/ResultType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

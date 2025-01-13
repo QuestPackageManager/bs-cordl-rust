@@ -13,7 +13,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstac
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnabledObstacleType";
+    const CLASS_NAME: &'static str = "PlayerSaveDataV1_0_1/GameplayModifiers/EnabledObstacleType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -105,7 +105,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnergyType";
+    const CLASS_NAME: &'static str = "PlayerSaveDataV1_0_1/GameplayModifiers/EnergyType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -198,7 +198,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SongSpeed";
+    const CLASS_NAME: &'static str = "PlayerSaveDataV1_0_1/GameplayModifiers/SongSpeed";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -225,7 +225,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_ConfidenceBehavior {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ConfidenceBehavior";
+    const CLASS_NAME: &'static str = "OVRMeshRenderer/ConfidenceBehavior";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -388,7 +388,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MeshRendererData";
+    const CLASS_NAME: &'static str = "OVRMeshRenderer/MeshRendererData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -553,7 +553,7 @@ for crate::GlobalNamespace::OVRMeshRenderer_SystemGestureBehavior {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SystemGestureBehavior";
+    const CLASS_NAME: &'static str = "OVRMeshRenderer/SystemGestureBehavior";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

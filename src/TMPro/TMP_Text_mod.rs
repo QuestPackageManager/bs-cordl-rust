@@ -3714,7 +3714,7 @@ for crate::TMPro::TMP_Text_CharacterSubstitution {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "CharacterSubstitution";
+    const CLASS_NAME: &'static str = "TMP_Text/CharacterSubstitution";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3832,7 +3832,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_SpecialCharac
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "SpecialCharacter";
+    const CLASS_NAME: &'static str = "TMP_Text/SpecialCharacter";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3945,7 +3945,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextBackingCo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "TextBackingContainer";
+    const CLASS_NAME: &'static str = "TMP_Text/TextBackingContainer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4121,7 +4121,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextInputSour
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "TextInputSources";
+    const CLASS_NAME: &'static str = "TMP_Text/TextInputSources";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4209,7 +4209,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_UnicodeChar {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "UnicodeChar";
+    const CLASS_NAME: &'static str = "TMP_Text/UnicodeChar";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -360,7 +360,7 @@ for crate::System::Xml::Schema::XsdDuration_DurationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "DurationType";
+    const CLASS_NAME: &'static str = "XsdDuration/DurationType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -457,7 +457,7 @@ for crate::System::Xml::Schema::XsdDuration_Parts {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "Parts";
+    const CLASS_NAME: &'static str = "XsdDuration/Parts";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

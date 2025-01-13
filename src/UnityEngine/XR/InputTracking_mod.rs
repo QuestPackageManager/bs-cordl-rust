@@ -141,7 +141,7 @@ for crate::UnityEngine::XR::InputTracking_TrackingStateEventType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
-    const CLASS_NAME: &'static str = "TrackingStateEventType";
+    const CLASS_NAME: &'static str = "InputTracking/TrackingStateEventType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

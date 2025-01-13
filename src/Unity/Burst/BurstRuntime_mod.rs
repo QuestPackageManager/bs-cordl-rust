@@ -178,14 +178,17 @@ for crate::Unity::Burst::BurstRuntime_HashCode32_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "HashCode32`1";
+    const CLASS_NAME: &'static str = "BurstRuntime/HashCode32`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("Unity.Burst", "HashCode32`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Burst",
+                        "BurstRuntime/HashCode32`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -294,14 +297,17 @@ for crate::Unity::Burst::BurstRuntime_HashCode64_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "HashCode64`1";
+    const CLASS_NAME: &'static str = "BurstRuntime/HashCode64`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("Unity.Burst", "HashCode64`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Burst",
+                        "BurstRuntime/HashCode64`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

@@ -530,7 +530,7 @@ for crate::System::Threading::ExecutionContext_CaptureOptions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "CaptureOptions";
+    const CLASS_NAME: &'static str = "ExecutionContext/CaptureOptions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -624,7 +624,7 @@ for crate::System::Threading::ExecutionContext_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "ExecutionContext/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -714,7 +714,7 @@ for crate::System::Threading::ExecutionContext_Reader {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "Reader";
+    const CLASS_NAME: &'static str = "ExecutionContext/Reader";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

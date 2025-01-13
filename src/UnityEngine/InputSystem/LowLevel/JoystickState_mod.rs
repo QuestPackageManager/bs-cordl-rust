@@ -157,7 +157,7 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState_Button {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Button";
+    const CLASS_NAME: &'static str = "JoystickState/Button";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

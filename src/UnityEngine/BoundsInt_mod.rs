@@ -419,7 +419,7 @@ for crate::UnityEngine::BoundsInt_PositionEnumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "PositionEnumerator";
+    const CLASS_NAME: &'static str = "BoundsInt/PositionEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

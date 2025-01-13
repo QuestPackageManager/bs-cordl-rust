@@ -111,7 +111,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "SerializedState";
+    const CLASS_NAME: &'static str = "InputUpdate/SerializedState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -215,7 +215,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "UpdateStepCount";
+    const CLASS_NAME: &'static str = "InputUpdate/UpdateStepCount";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

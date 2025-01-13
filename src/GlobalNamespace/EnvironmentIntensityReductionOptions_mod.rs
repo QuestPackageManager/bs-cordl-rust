@@ -112,7 +112,7 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandR
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CompressExpandReductionType";
+    const CLASS_NAME: &'static str = "EnvironmentIntensityReductionOptions/CompressExpandReductionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -204,7 +204,7 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsRedu
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RotateRingsReductionType";
+    const CLASS_NAME: &'static str = "EnvironmentIntensityReductionOptions/RotateRingsReductionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

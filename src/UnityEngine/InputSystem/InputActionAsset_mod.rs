@@ -581,7 +581,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ReadFileJson";
+    const CLASS_NAME: &'static str = "InputActionAsset/ReadFileJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -708,7 +708,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "WriteFileJson";
+    const CLASS_NAME: &'static str = "InputActionAsset/WriteFileJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

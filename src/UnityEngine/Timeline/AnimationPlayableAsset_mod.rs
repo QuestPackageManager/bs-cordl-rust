@@ -586,7 +586,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "LoopMode";
+    const CLASS_NAME: &'static str = "AnimationPlayableAsset/LoopMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -678,7 +678,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "Versions";
+    const CLASS_NAME: &'static str = "AnimationPlayableAsset/Versions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

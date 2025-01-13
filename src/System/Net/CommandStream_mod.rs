@@ -508,7 +508,7 @@ for crate::System::Net::CommandStream_PipelineEntryFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "PipelineEntryFlags";
+    const CLASS_NAME: &'static str = "CommandStream/PipelineEntryFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -603,7 +603,7 @@ for crate::System::Net::CommandStream_PipelineInstruction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "PipelineInstruction";
+    const CLASS_NAME: &'static str = "CommandStream/PipelineInstruction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

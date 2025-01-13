@@ -267,7 +267,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Axis {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Axis";
+    const CLASS_NAME: &'static str = "GridLayoutGroup/Axis";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -360,7 +360,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Constraint {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Constraint";
+    const CLASS_NAME: &'static str = "GridLayoutGroup/Constraint";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -454,7 +454,7 @@ for crate::UnityEngine::UI::GridLayoutGroup_Corner {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Corner";
+    const CLASS_NAME: &'static str = "GridLayoutGroup/Corner";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

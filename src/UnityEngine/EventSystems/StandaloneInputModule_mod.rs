@@ -471,7 +471,7 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule_InputMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "InputMode";
+    const CLASS_NAME: &'static str = "StandaloneInputModule/InputMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

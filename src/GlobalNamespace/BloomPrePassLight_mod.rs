@@ -339,7 +339,7 @@ for crate::GlobalNamespace::BloomPrePassLight_QuadData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "QuadData";
+    const CLASS_NAME: &'static str = "BloomPrePassLight/QuadData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -442,7 +442,7 @@ for crate::GlobalNamespace::BloomPrePassLight_VertexData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VertexData";
+    const CLASS_NAME: &'static str = "BloomPrePassLight/VertexData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

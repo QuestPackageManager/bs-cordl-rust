@@ -405,7 +405,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Buffers";
-    const CLASS_NAME: &'static str = "MemoryPressure";
+    const CLASS_NAME: &'static str = "TlsOverPerCoreLockedStacksArrayPool`1/MemoryPressure";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

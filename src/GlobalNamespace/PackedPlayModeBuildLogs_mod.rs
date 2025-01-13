@@ -121,7 +121,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RuntimeBuildLog";
+    const CLASS_NAME: &'static str = "PackedPlayModeBuildLogs/RuntimeBuildLog";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

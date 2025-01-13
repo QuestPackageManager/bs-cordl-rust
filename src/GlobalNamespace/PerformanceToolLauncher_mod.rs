@@ -137,7 +137,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_Assets {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Assets";
+    const CLASS_NAME: &'static str = "PerformanceToolLauncher/Assets";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -241,7 +241,7 @@ for crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OverrideConfig";
+    const CLASS_NAME: &'static str = "PerformanceToolLauncher/OverrideConfig";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

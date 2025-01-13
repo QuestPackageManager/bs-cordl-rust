@@ -201,19 +201,6 @@ impl crate::System::Text::ValueStringBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Insert(
-        &mut self,
-        index: i32,
-        value: char,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Insert",
-            (index, value, count),
-        )?;
-        Ok(__cordl_ret.into())
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -244,6 +231,17 @@ impl crate::System::Text::ValueStringBuilder {
             self,
             ".ctor",
             (initialBuffer),
+        )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<char>> {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_Item",
+            (index),
         )?;
         Ok(__cordl_ret.into())
     }

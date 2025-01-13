@@ -135,7 +135,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoolStats";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationStats/BoolStats";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -261,14 +261,17 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnumStats`1";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationStats/EnumStats`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "EnumStats`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "PerformanceConfigurationStats/EnumStats`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -410,7 +413,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FloatStats";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationStats/FloatStats";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -536,7 +539,7 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IntStats";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationStats/IntStats";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -2978,7 +2978,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetBuildAction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "AssetBuildAction";
+    const CLASS_NAME: &'static str = "HEU_HoudiniAsset/AssetBuildAction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3071,7 +3071,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "AssetCookResult";
+    const CLASS_NAME: &'static str = "HEU_HoudiniAsset/AssetCookResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3168,7 +3168,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetCookStatus {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "AssetCookStatus";
+    const CLASS_NAME: &'static str = "HEU_HoudiniAsset/AssetCookStatus";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3261,7 +3261,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_AssetInstantiationMethod {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "AssetInstantiationMethod";
+    const CLASS_NAME: &'static str = "HEU_HoudiniAsset/AssetInstantiationMethod";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3355,7 +3355,7 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "HEU_AssetType";
+    const CLASS_NAME: &'static str = "HEU_HoudiniAsset/HEU_AssetType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

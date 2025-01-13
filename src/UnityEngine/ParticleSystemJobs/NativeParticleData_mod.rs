@@ -135,7 +135,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array3 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ParticleSystemJobs";
-    const CLASS_NAME: &'static str = "Array3";
+    const CLASS_NAME: &'static str = "NativeParticleData/Array3";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -241,7 +241,7 @@ for crate::UnityEngine::ParticleSystemJobs::NativeParticleData_Array4 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ParticleSystemJobs";
-    const CLASS_NAME: &'static str = "Array4";
+    const CLASS_NAME: &'static str = "NativeParticleData/Array4";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

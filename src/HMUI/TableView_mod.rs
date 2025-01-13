@@ -1024,7 +1024,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_ScrollPositio
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "ScrollPositionType";
+    const CLASS_NAME: &'static str = "TableView/ScrollPositionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1114,7 +1114,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TableView_TableType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "TableType";
+    const CLASS_NAME: &'static str = "TableView/TableType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

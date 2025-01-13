@@ -851,7 +851,7 @@ for crate::UnityEngine::TextSelectingUtilities_CharacterType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "CharacterType";
+    const CLASS_NAME: &'static str = "TextSelectingUtilities/CharacterType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -943,7 +943,7 @@ for crate::UnityEngine::TextSelectingUtilities_Direction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Direction";
+    const CLASS_NAME: &'static str = "TextSelectingUtilities/Direction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

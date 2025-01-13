@@ -138,7 +138,7 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TriangulateBoundaryJob";
+    const CLASS_NAME: &'static str = "OVRScenePlaneMeshFilter/TriangulateBoundaryJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -287,7 +287,7 @@ for crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NList";
+    const CLASS_NAME: &'static str = "OVRScenePlaneMeshFilter/TriangulateBoundaryJob/NList";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

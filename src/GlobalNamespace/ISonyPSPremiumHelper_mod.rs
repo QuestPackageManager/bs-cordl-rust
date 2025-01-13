@@ -123,7 +123,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DisplayJoinPremiumDialogResult";
+    const CLASS_NAME: &'static str = "ISonyPSPremiumHelper/DisplayJoinPremiumDialogResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -216,7 +216,7 @@ for crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetPremiumStatusResult";
+    const CLASS_NAME: &'static str = "ISonyPSPremiumHelper/GetPremiumStatusResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

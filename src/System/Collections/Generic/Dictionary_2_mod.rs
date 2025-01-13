@@ -1525,7 +1525,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Entry";
+    const CLASS_NAME: &'static str = "Dictionary`2/Entry";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1534,7 +1534,7 @@ for crate::System::Collections::Generic::Dictionary_2_Entry<TKey, TValue> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Entry",
+                        "Dictionary`2/Entry",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
@@ -1676,7 +1676,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "Dictionary`2/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1685,7 +1685,7 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Enumerator",
+                        "Dictionary`2/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
@@ -3034,7 +3034,7 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "Dictionary`2/KeyCollection/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3043,7 +3043,7 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Enumerator",
+                        "Dictionary`2/KeyCollection/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
@@ -3385,7 +3385,7 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "Dictionary`2/ValueCollection/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3394,7 +3394,7 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Enumerator",
+                        "Dictionary`2/ValueCollection/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()

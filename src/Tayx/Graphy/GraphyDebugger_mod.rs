@@ -387,7 +387,7 @@ for crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "ConditionEvaluation";
+    const CLASS_NAME: &'static str = "GraphyDebugger/ConditionEvaluation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -482,7 +482,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugComparer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "DebugComparer";
+    const CLASS_NAME: &'static str = "GraphyDebugger/DebugComparer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -574,7 +574,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugCondition {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "DebugCondition";
+    const CLASS_NAME: &'static str = "GraphyDebugger/DebugCondition";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -808,7 +808,7 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugVariable {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "DebugVariable";
+    const CLASS_NAME: &'static str = "GraphyDebugger/DebugVariable";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -901,7 +901,7 @@ for crate::Tayx::Graphy::GraphyDebugger_MessageType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Tayx.Graphy";
-    const CLASS_NAME: &'static str = "MessageType";
+    const CLASS_NAME: &'static str = "GraphyDebugger/MessageType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

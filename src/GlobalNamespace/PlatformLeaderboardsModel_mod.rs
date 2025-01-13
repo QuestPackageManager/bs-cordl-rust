@@ -486,7 +486,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetScoresResult";
+    const CLASS_NAME: &'static str = "PlatformLeaderboardsModel/GetScoresResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -711,7 +711,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ScoresScope";
+    const CLASS_NAME: &'static str = "PlatformLeaderboardsModel/ScoresScope";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -804,7 +804,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "PlatformLeaderboardsModel/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1010,7 +1010,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "UploadScoreResult";
+    const CLASS_NAME: &'static str = "PlatformLeaderboardsModel/UploadScoreResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

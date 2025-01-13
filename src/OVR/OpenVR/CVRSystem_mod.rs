@@ -725,7 +725,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateUnion {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "GetControllerStateUnion";
+    const CLASS_NAME: &'static str = "CVRSystem/GetControllerStateUnion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -828,7 +828,7 @@ for crate::OVR::OpenVR::CVRSystem_GetControllerStateWithPoseUnion {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "GetControllerStateWithPoseUnion";
+    const CLASS_NAME: &'static str = "CVRSystem/GetControllerStateWithPoseUnion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -931,7 +931,7 @@ for crate::OVR::OpenVR::CVRSystem_PollNextEventUnion {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "PollNextEventUnion";
+    const CLASS_NAME: &'static str = "CVRSystem/PollNextEventUnion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

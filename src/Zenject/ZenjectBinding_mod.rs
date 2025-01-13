@@ -188,7 +188,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectBinding_BindT
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Zenject";
-    const CLASS_NAME: &'static str = "BindTypes";
+    const CLASS_NAME: &'static str = "ZenjectBinding/BindTypes";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

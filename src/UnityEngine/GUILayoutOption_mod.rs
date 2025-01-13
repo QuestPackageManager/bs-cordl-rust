@@ -99,7 +99,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::GUILayoutOption_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "Type";
+    const CLASS_NAME: &'static str = "GUILayoutOption/Type";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

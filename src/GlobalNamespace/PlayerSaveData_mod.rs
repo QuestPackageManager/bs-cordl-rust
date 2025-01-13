@@ -13,7 +13,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnabledObstacleType
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnabledObstacleType";
+    const CLASS_NAME: &'static str = "PlayerSaveData/GameplayModifiers/EnabledObstacleType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -105,7 +105,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_EnergyType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnergyType";
+    const CLASS_NAME: &'static str = "PlayerSaveData/GameplayModifiers/EnergyType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -198,7 +198,7 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SongSpeed";
+    const CLASS_NAME: &'static str = "PlayerSaveData/GameplayModifiers/SongSpeed";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -402,7 +402,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorOverrideType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorOverrideType";
+    const CLASS_NAME: &'static str = "PlayerSaveData/ColorOverrideType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1709,7 +1709,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerSensitivityFlagSaveData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerSensitivityFlagSaveData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1975,7 +1975,7 @@ for crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "UserAgeCategorySaveData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/UserAgeCategorySaveData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2069,7 +2069,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_ArcVisibilityT
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ArcVisibilityTypeSaveData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerSpecificSettings/ArcVisibilityTypeSaveData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2166,7 +2166,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_EnvironmentEff
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EnvironmentEffectsFilterPresetSaveData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerSpecificSettings/EnvironmentEffectsFilterPresetSaveData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2270,7 +2270,7 @@ for crate::GlobalNamespace::PlayerSpecificSettings_PlayerSaveData_NoteJumpDurati
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NoteJumpDurationTypeSettingsSaveData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerSpecificSettings/NoteJumpDurationTypeSettingsSaveData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -266,7 +266,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRDisplay_E
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EyeFov";
+    const CLASS_NAME: &'static str = "OVRDisplay/EyeFov";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -370,7 +370,7 @@ for crate::GlobalNamespace::OVRDisplay_EyeRenderDesc {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EyeRenderDesc";
+    const CLASS_NAME: &'static str = "OVRDisplay/EyeRenderDesc";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -477,7 +477,7 @@ for crate::GlobalNamespace::OVRDisplay_LatencyData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LatencyData";
+    const CLASS_NAME: &'static str = "OVRDisplay/LatencyData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -177,7 +177,7 @@ for crate::UnityEngine::UIElements::TextureRegistry_TextureInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TextureInfo";
+    const CLASS_NAME: &'static str = "TextureRegistry/TextureInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

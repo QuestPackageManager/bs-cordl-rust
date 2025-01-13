@@ -138,7 +138,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "BorderParams";
+    const CLASS_NAME: &'static str = "MeshGenerationContextUtils/BorderParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -284,7 +284,7 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "RectangleParams";
+    const CLASS_NAME: &'static str = "MeshGenerationContextUtils/RectangleParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

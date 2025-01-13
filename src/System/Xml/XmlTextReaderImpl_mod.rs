@@ -4103,7 +4103,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityExpandType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "EntityExpandType";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/EntityExpandType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4201,7 +4201,7 @@ for crate::System::Xml::XmlTextReaderImpl_EntityType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "EntityType";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/EntityType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4306,7 +4306,7 @@ for crate::System::Xml::XmlTextReaderImpl_IncrementalReadState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "IncrementalReadState";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/IncrementalReadState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4400,7 +4400,7 @@ for crate::System::Xml::XmlTextReaderImpl_InitInputType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "InitInputType";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/InitInputType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5259,7 +5259,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingFunction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ParsingFunction";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/ParsingFunction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5352,7 +5352,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ParsingMode";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/ParsingMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5462,7 +5462,7 @@ for crate::System::Xml::XmlTextReaderImpl_ParsingState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ParsingState";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/ParsingState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

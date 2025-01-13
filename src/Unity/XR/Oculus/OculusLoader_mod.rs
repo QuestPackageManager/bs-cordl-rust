@@ -170,7 +170,7 @@ for crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.XR.Oculus";
-    const CLASS_NAME: &'static str = "DeviceSupportedResult";
+    const CLASS_NAME: &'static str = "OculusLoader/DeviceSupportedResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

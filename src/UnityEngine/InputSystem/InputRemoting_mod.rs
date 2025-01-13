@@ -15,7 +15,7 @@ for crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Data";
+    const CLASS_NAME: &'static str = "InputRemoting/ChangeUsageMsg/Data";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -783,7 +783,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputRemoting/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -875,7 +875,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Message";
+    const CLASS_NAME: &'static str = "InputRemoting/Message";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -988,7 +988,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_MessageType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "MessageType";
+    const CLASS_NAME: &'static str = "InputRemoting/MessageType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1322,7 +1322,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteInputDevice {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "RemoteInputDevice";
+    const CLASS_NAME: &'static str = "InputRemoting/RemoteInputDevice";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1435,7 +1435,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoteSender {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "RemoteSender";
+    const CLASS_NAME: &'static str = "InputRemoting/RemoteSender";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1841,7 +1841,7 @@ for crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Data";
+    const CLASS_NAME: &'static str = "InputRemoting/NewDeviceMsg/Data";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1946,7 +1946,7 @@ for crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Data";
+    const CLASS_NAME: &'static str = "InputRemoting/NewLayoutMsg/Data";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

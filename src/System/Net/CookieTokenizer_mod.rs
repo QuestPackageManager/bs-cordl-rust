@@ -263,7 +263,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "RecognizedAttribute";
+    const CLASS_NAME: &'static str = "CookieTokenizer/RecognizedAttribute";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

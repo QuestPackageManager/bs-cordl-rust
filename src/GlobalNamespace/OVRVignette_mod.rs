@@ -287,7 +287,7 @@ for crate::GlobalNamespace::OVRVignette_FalloffType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FalloffType";
+    const CLASS_NAME: &'static str = "OVRVignette/FalloffType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -382,7 +382,7 @@ for crate::GlobalNamespace::OVRVignette_MeshComplexityLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MeshComplexityLevel";
+    const CLASS_NAME: &'static str = "OVRVignette/MeshComplexityLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

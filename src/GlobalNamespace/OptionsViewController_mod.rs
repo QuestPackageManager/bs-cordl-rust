@@ -168,7 +168,7 @@ for crate::GlobalNamespace::OptionsViewController_OptionsButton {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OptionsButton";
+    const CLASS_NAME: &'static str = "OptionsViewController/OptionsButton";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

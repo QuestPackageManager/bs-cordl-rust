@@ -675,7 +675,7 @@ for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "NativeArray`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -684,7 +684,7 @@ for crate::Unity::Collections::NativeArray_1_Enumerator<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Collections",
-                        "Enumerator",
+                        "NativeArray`1/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -930,14 +930,17 @@ for crate::Unity::Collections::NativeArray_1_ReadOnly<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
-    const CLASS_NAME: &'static str = "ReadOnly";
+    const CLASS_NAME: &'static str = "NativeArray`1/ReadOnly";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("Unity.Collections", "ReadOnly")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Unity.Collections",
+                        "NativeArray`1/ReadOnly",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -1192,7 +1195,7 @@ for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Collections";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "NativeArray`1/ReadOnly/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1201,7 +1204,7 @@ for crate::Unity::Collections::ReadOnly_NativeArray_1_Enumerator<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Collections",
-                        "Enumerator",
+                        "NativeArray`1/ReadOnly/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

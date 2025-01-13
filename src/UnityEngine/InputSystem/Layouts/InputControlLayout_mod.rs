@@ -17,7 +17,7 @@ for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Control
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "ControlBuilder";
+    const CLASS_NAME: &'static str = "InputControlLayout/Builder/ControlBuilder";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -398,7 +398,7 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Layo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "LayoutMatcher";
+    const CLASS_NAME: &'static str = "InputControlLayout/Collection/LayoutMatcher";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -522,7 +522,7 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Prec
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "PrecompiledLayout";
+    const CLASS_NAME: &'static str = "InputControlLayout/Collection/PrecompiledLayout";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -642,7 +642,7 @@ for crate::UnityEngine::InputSystem::Layouts::ControlItem_InputControlLayout_Fla
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputControlLayout/ControlItem/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1833,7 +1833,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "Cache";
+    const CLASS_NAME: &'static str = "InputControlLayout/Cache";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1965,7 +1965,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstanc
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "CacheRefInstance";
+    const CLASS_NAME: &'static str = "InputControlLayout/CacheRefInstance";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2148,7 +2148,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "Collection";
+    const CLASS_NAME: &'static str = "InputControlLayout/Collection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2517,7 +2517,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "ControlItem";
+    const CLASS_NAME: &'static str = "InputControlLayout/ControlItem";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3317,7 +3317,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputControlLayout/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3434,7 +3434,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "LayoutJson";
+    const CLASS_NAME: &'static str = "InputControlLayout/LayoutJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3572,7 +3572,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJsonNameA
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "LayoutJsonNameAndDescriptorOnly";
+    const CLASS_NAME: &'static str = "InputControlLayout/LayoutJsonNameAndDescriptorOnly";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

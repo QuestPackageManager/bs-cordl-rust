@@ -86,7 +86,7 @@ for crate::UnityEngine::UISystemProfilerApi_SampleType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "SampleType";
+    const CLASS_NAME: &'static str = "UISystemProfilerApi/SampleType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

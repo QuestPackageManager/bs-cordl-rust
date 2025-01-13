@@ -274,7 +274,7 @@ for crate::MS::Internal::Xml::XPath::XPathScanner_LexKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
-    const CLASS_NAME: &'static str = "LexKind";
+    const CLASS_NAME: &'static str = "XPathScanner/LexKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

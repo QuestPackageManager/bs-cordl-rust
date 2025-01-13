@@ -723,7 +723,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Closing
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR.Implementation";
-    const CLASS_NAME: &'static str = "ClosingInfo";
+    const CLASS_NAME: &'static str = "UIRStylePainter/ClosingInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -842,7 +842,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR.Implementation";
-    const CLASS_NAME: &'static str = "Entry";
+    const CLASS_NAME: &'static str = "UIRStylePainter/Entry";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -950,7 +950,7 @@ for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatR
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR.Implementation";
-    const CLASS_NAME: &'static str = "RepeatRectUV";
+    const CLASS_NAME: &'static str = "UIRStylePainter/RepeatRectUV";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

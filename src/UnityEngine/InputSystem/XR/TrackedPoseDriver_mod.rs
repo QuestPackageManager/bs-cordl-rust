@@ -596,7 +596,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingStates {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XR";
-    const CLASS_NAME: &'static str = "TrackingStates";
+    const CLASS_NAME: &'static str = "TrackedPoseDriver/TrackingStates";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -689,7 +689,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_TrackingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XR";
-    const CLASS_NAME: &'static str = "TrackingType";
+    const CLASS_NAME: &'static str = "TrackedPoseDriver/TrackingType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -782,7 +782,7 @@ for crate::UnityEngine::InputSystem::XR::TrackedPoseDriver_UpdateType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XR";
-    const CLASS_NAME: &'static str = "UpdateType";
+    const CLASS_NAME: &'static str = "TrackedPoseDriver/UpdateType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

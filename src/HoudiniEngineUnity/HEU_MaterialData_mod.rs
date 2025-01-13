@@ -221,7 +221,7 @@ for crate::HoudiniEngineUnity::HEU_MaterialData_Source {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "Source";
+    const CLASS_NAME: &'static str = "HEU_MaterialData/Source";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -2935,7 +2935,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::String_ProbabilisticM
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "ProbabilisticMap";
+    const CLASS_NAME: &'static str = "String/ProbabilisticMap";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3036,7 +3036,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::String_TrimType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "TrimType";
+    const CLASS_NAME: &'static str = "String/TrimType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

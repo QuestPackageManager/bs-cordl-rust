@@ -124,7 +124,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_CeilingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CeilingType";
+    const CLASS_NAME: &'static str = "EnvironmentSizeData/CeilingType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -216,7 +216,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_FloorType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FloorType";
+    const CLASS_NAME: &'static str = "EnvironmentSizeData/FloorType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -308,7 +308,7 @@ for crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackLaneType";
+    const CLASS_NAME: &'static str = "EnvironmentSizeData/TrackLaneType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

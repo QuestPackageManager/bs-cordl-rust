@@ -139,7 +139,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_BakeMeshJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BakeMeshJob";
+    const CLASS_NAME: &'static str = "OVRSceneVolumeMeshFilter/BakeMeshJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -268,7 +268,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshCountsJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetTriangleMeshCountsJob";
+    const CLASS_NAME: &'static str = "OVRSceneVolumeMeshFilter/GetTriangleMeshCountsJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -398,7 +398,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetTriangleMeshJob";
+    const CLASS_NAME: &'static str = "OVRSceneVolumeMeshFilter/GetTriangleMeshJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -528,7 +528,7 @@ for crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PopulateMeshDataJob";
+    const CLASS_NAME: &'static str = "OVRSceneVolumeMeshFilter/PopulateMeshDataJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

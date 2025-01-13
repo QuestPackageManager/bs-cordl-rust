@@ -14,7 +14,7 @@ for crate::UnityEngine::InputSystem::LowLevel::ActionEvent__m_ValueData_e__Fixed
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "<m_ValueData>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "ActionEvent/<m_ValueData>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

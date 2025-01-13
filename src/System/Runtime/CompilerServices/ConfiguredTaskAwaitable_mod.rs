@@ -147,7 +147,7 @@ for crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_Configured
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
-    const CLASS_NAME: &'static str = "ConfiguredTaskAwaiter";
+    const CLASS_NAME: &'static str = "ConfiguredTaskAwaitable/ConfiguredTaskAwaiter";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

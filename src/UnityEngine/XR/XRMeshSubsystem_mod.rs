@@ -93,7 +93,7 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.XR";
-    const CLASS_NAME: &'static str = "MeshTransformList";
+    const CLASS_NAME: &'static str = "XRMeshSubsystem/MeshTransformList";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

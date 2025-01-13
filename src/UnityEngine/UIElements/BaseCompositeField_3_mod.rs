@@ -326,7 +326,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "FieldDescription";
+    const CLASS_NAME: &'static str = "BaseCompositeField`3/FieldDescription";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -335,7 +335,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3_FieldDescription<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "FieldDescription",
+                        "BaseCompositeField`3/FieldDescription",
                     )
                     .unwrap()
                     .make_generic::<(TValueType, TField, TFieldValue)>()

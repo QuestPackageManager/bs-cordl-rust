@@ -135,7 +135,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_AudioFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "AudioFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/AudioFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -236,7 +236,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ClearLines {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ClearLines";
+    const CLASS_NAME: &'static str = "FixedUpdate/ClearLines";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -337,7 +337,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedSampleTime {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "DirectorFixedSampleTime";
+    const CLASS_NAME: &'static str = "FixedUpdate/DirectorFixedSampleTime";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -438,7 +438,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "DirectorFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/DirectorFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -539,7 +539,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_DirectorFixedUpdatePostPhysics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "DirectorFixedUpdatePostPhysics";
+    const CLASS_NAME: &'static str = "FixedUpdate/DirectorFixedUpdatePostPhysics";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -640,7 +640,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_LegacyFixedAnimationUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "LegacyFixedAnimationUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/LegacyFixedAnimationUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -741,7 +741,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_NewInputFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "NewInputFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/NewInputFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -842,7 +842,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_Physics2DFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "Physics2DFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/Physics2DFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -943,7 +943,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsClothFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PhysicsClothFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/PhysicsClothFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1044,7 +1044,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_PhysicsFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "PhysicsFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/PhysicsFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1145,7 +1145,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunBehaviourFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ScriptRunBehaviourFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/ScriptRunBehaviourFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1246,7 +1246,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_ScriptRunDelayedFixedFrameRate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ScriptRunDelayedFixedFrameRate";
+    const CLASS_NAME: &'static str = "FixedUpdate/ScriptRunDelayedFixedFrameRate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1347,7 +1347,7 @@ for crate::UnityEngine::PlayerLoop::FixedUpdate_XRFixedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "XRFixedUpdate";
+    const CLASS_NAME: &'static str = "FixedUpdate/XRFixedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

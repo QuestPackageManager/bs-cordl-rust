@@ -827,7 +827,7 @@ for crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "ReflectionProbeEvent";
+    const CLASS_NAME: &'static str = "ReflectionProbe/ReflectionProbeEvent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

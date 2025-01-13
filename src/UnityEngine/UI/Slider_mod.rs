@@ -650,7 +650,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Axis 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Axis";
+    const CLASS_NAME: &'static str = "Slider/Axis";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -739,7 +739,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Direc
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Direction";
+    const CLASS_NAME: &'static str = "Slider/Direction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

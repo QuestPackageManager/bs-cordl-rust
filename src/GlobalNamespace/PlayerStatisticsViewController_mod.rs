@@ -246,7 +246,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "StatsScopeData";
+    const CLASS_NAME: &'static str = "PlayerStatisticsViewController/StatsScopeData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

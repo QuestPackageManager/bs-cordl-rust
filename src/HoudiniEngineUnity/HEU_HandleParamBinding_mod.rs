@@ -131,7 +131,7 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "HEU_HandleParamType";
+    const CLASS_NAME: &'static str = "HEU_HandleParamBinding/HEU_HandleParamType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

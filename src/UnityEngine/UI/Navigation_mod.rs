@@ -287,7 +287,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Navigation_M
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Mode";
+    const CLASS_NAME: &'static str = "Navigation/Mode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

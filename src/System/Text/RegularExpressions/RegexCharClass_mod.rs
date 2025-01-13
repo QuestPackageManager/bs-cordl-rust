@@ -508,7 +508,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_LowerCaseMapping {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Text.RegularExpressions";
-    const CLASS_NAME: &'static str = "LowerCaseMapping";
+    const CLASS_NAME: &'static str = "RegexCharClass/LowerCaseMapping";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -627,7 +627,7 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRange {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Text.RegularExpressions";
-    const CLASS_NAME: &'static str = "SingleRange";
+    const CLASS_NAME: &'static str = "RegexCharClass/SingleRange";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

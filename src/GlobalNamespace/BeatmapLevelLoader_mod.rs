@@ -469,7 +469,7 @@ for crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelDownloadingUpdate";
+    const CLASS_NAME: &'static str = "BeatmapLevelLoader/LevelDownloadingUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -591,7 +591,7 @@ for crate::GlobalNamespace::LevelDownloadingUpdate_BeatmapLevelLoader_Downloadin
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DownloadingState";
+    const CLASS_NAME: &'static str = "BeatmapLevelLoader/LevelDownloadingUpdate/DownloadingState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

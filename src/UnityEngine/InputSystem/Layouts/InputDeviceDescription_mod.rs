@@ -404,7 +404,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "DeviceDescriptionJson";
+    const CLASS_NAME: &'static str = "InputDeviceDescription/DeviceDescriptionJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

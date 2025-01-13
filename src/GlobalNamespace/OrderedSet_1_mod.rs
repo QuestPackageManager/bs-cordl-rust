@@ -505,7 +505,7 @@ for crate::GlobalNamespace::OrderedSet_1_ProcessOrder {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ProcessOrder";
+    const CLASS_NAME: &'static str = "OrderedSet`1/ProcessOrder";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

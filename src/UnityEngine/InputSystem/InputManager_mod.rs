@@ -1845,7 +1845,7 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "AvailableDevice";
+    const CLASS_NAME: &'static str = "InputManager/AvailableDevice";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1951,7 +1951,7 @@ for crate::UnityEngine::InputSystem::InputManager_DeviceDisableScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceDisableScope";
+    const CLASS_NAME: &'static str = "InputManager/DeviceDisableScope";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2048,7 +2048,7 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorListener {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "StateChangeMonitorListener";
+    const CLASS_NAME: &'static str = "InputManager/StateChangeMonitorListener";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2159,7 +2159,7 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "StateChangeMonitorTimeout";
+    const CLASS_NAME: &'static str = "InputManager/StateChangeMonitorTimeout";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2274,7 +2274,7 @@ for crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "StateChangeMonitorsForDevice";
+    const CLASS_NAME: &'static str = "InputManager/StateChangeMonitorsForDevice";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -811,7 +811,7 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Cont
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ContentHeightCacheInfo";
+    const CLASS_NAME: &'static str = "DynamicHeightVirtualizationController`1/ContentHeightCacheInfo";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -820,7 +820,7 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Cont
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "ContentHeightCacheInfo",
+                        "DynamicHeightVirtualizationController`1/ContentHeightCacheInfo",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -980,7 +980,7 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Scro
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ScrollDirection";
+    const CLASS_NAME: &'static str = "DynamicHeightVirtualizationController`1/ScrollDirection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1086,7 +1086,7 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_Virt
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "VirtualizationChange";
+    const CLASS_NAME: &'static str = "DynamicHeightVirtualizationController`1/VirtualizationChange";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

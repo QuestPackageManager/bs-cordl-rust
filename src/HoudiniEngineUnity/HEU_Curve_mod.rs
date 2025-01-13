@@ -652,7 +652,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "CurveDrawCollision";
+    const CLASS_NAME: &'static str = "HEU_Curve/CurveDrawCollision";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -746,7 +746,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_CurveEditState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "CurveEditState";
+    const CLASS_NAME: &'static str = "HEU_Curve/CurveEditState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -839,7 +839,7 @@ for crate::HoudiniEngineUnity::HEU_Curve_Interaction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "Interaction";
+    const CLASS_NAME: &'static str = "HEU_Curve/Interaction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

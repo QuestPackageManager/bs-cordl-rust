@@ -42,7 +42,7 @@ for crate::Unity::Burst::Intrinsics::Avx_X86_CMP {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "CMP";
+    const CLASS_NAME: &'static str = "X86/Avx/CMP";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -132,7 +132,7 @@ for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Union";
+    const CLASS_NAME: &'static str = "X86/Fma/Union";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -246,7 +246,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_SIDD {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "SIDD";
+    const CLASS_NAME: &'static str = "X86/Sse4_2/SIDD";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -336,7 +336,7 @@ for crate::Unity::Burst::Intrinsics::Sse4_2_X86_StrBoolArray {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "StrBoolArray";
+    const CLASS_NAME: &'static str = "X86/Sse4_2/StrBoolArray";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -469,7 +469,7 @@ for crate::Unity::Burst::Intrinsics::StrBoolArray_Sse4_2_X86__Bits_e__FixedBuffe
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "<Bits>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "X86/Sse4_2/StrBoolArray/<Bits>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -4949,7 +4949,7 @@ for crate::Unity::Burst::Intrinsics::X86_MXCSRBits {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "MXCSRBits";
+    const CLASS_NAME: &'static str = "X86/MXCSRBits";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5114,7 +5114,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "RoundingMode";
+    const CLASS_NAME: &'static str = "X86/RoundingMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -5204,7 +5204,7 @@ for crate::Unity::Burst::Intrinsics::X86_RoundingScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "RoundingScope";
+    const CLASS_NAME: &'static str = "X86/RoundingScope";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

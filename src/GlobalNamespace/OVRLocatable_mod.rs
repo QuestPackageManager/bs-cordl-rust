@@ -333,7 +333,7 @@ for crate::GlobalNamespace::OVRLocatable_TrackingSpacePose {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackingSpacePose";
+    const CLASS_NAME: &'static str = "OVRLocatable/TrackingSpacePose";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -1000,7 +1000,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "BindingJson";
+    const CLASS_NAME: &'static str = "InputActionMap/BindingJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1129,7 +1129,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "BindingOverrideJson";
+    const CLASS_NAME: &'static str = "InputActionMap/BindingOverrideJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1263,7 +1263,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideListJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "BindingOverrideListJson";
+    const CLASS_NAME: &'static str = "InputActionMap/BindingOverrideListJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1372,7 +1372,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceArray";
+    const CLASS_NAME: &'static str = "InputActionMap/DeviceArray";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1533,7 +1533,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputActionMap/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1640,7 +1640,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadActionJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ReadActionJson";
+    const CLASS_NAME: &'static str = "InputActionMap/ReadActionJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1764,7 +1764,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadFileJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ReadFileJson";
+    const CLASS_NAME: &'static str = "InputActionMap/ReadFileJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1899,7 +1899,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ReadMapJson";
+    const CLASS_NAME: &'static str = "InputActionMap/ReadMapJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2010,7 +2010,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "WriteActionJson";
+    const CLASS_NAME: &'static str = "InputActionMap/WriteActionJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2127,7 +2127,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "WriteFileJson";
+    const CLASS_NAME: &'static str = "InputActionMap/WriteFileJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2266,7 +2266,7 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "WriteMapJson";
+    const CLASS_NAME: &'static str = "InputActionMap/WriteMapJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

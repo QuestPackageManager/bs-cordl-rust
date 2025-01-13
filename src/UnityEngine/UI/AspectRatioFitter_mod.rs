@@ -314,7 +314,7 @@ for crate::UnityEngine::UI::AspectRatioFitter_AspectMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "AspectMode";
+    const CLASS_NAME: &'static str = "AspectRatioFitter/AspectMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -122,7 +122,7 @@ for crate::System::Net::NetworkInformation::AixStructs::ifreq__ifr_name_e__Fixed
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net.NetworkInformation.AixStructs";
-    const CLASS_NAME: &'static str = "<ifr_name>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "ifreq/<ifr_name>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

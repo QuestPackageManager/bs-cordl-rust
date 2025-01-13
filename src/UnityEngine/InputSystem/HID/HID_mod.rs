@@ -202,7 +202,7 @@ for crate::UnityEngine::InputSystem::HID::HID_Button {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "Button";
+    const CLASS_NAME: &'static str = "HID/Button";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -363,7 +363,7 @@ for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "GenericDesktop";
+    const CLASS_NAME: &'static str = "HID/GenericDesktop";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -458,7 +458,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDCollectionDescriptor";
+    const CLASS_NAME: &'static str = "HID/HIDCollectionDescriptor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -568,7 +568,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDCollectionType";
+    const CLASS_NAME: &'static str = "HID/HIDCollectionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -674,7 +674,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDDeviceDescriptor";
+    const CLASS_NAME: &'static str = "HID/HIDDeviceDescriptor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -814,7 +814,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDDeviceDescriptorBuilder";
+    const CLASS_NAME: &'static str = "HID/HIDDeviceDescriptorBuilder";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1039,7 +1039,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDElementDescriptor";
+    const CLASS_NAME: &'static str = "HID/HIDElementDescriptor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1387,7 +1387,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDElementFlags";
+    const CLASS_NAME: &'static str = "HID/HIDElementFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1569,7 +1569,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDReportType";
+    const CLASS_NAME: &'static str = "HID/HIDReportType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1711,7 +1711,7 @@ for crate::UnityEngine::InputSystem::HID::HID_Simulation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "Simulation";
+    const CLASS_NAME: &'static str = "HID/Simulation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1826,7 +1826,7 @@ for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "UsagePage";
+    const CLASS_NAME: &'static str = "HID/UsagePage";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -825,7 +825,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_Result {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking";
-    const CLASS_NAME: &'static str = "Result";
+    const CLASS_NAME: &'static str = "UnityWebRequest/Result";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -956,7 +956,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking";
-    const CLASS_NAME: &'static str = "UnityWebRequestError";
+    const CLASS_NAME: &'static str = "UnityWebRequest/UnityWebRequestError";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1051,7 +1051,7 @@ for crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking";
-    const CLASS_NAME: &'static str = "UnityWebRequestMethod";
+    const CLASS_NAME: &'static str = "UnityWebRequest/UnityWebRequestMethod";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

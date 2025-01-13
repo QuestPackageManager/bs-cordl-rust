@@ -172,7 +172,7 @@ for crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib_Format {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Bcpg.Attr";
-    const CLASS_NAME: &'static str = "Format";
+    const CLASS_NAME: &'static str = "ImageAttrib/Format";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

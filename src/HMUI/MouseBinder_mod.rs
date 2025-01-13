@@ -232,7 +232,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::MouseBinder_ButtonType 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "ButtonType";
+    const CLASS_NAME: &'static str = "MouseBinder/ButtonType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -320,7 +320,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::MouseBinder_MouseEventT
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "MouseEventType";
+    const CLASS_NAME: &'static str = "MouseBinder/MouseEventType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

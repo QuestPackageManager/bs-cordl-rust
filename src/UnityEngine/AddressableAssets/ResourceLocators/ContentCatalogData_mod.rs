@@ -418,7 +418,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.AddressableAssets.ResourceLocators";
-    const CLASS_NAME: &'static str = "Bucket";
+    const CLASS_NAME: &'static str = "ContentCatalogData/Bucket";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

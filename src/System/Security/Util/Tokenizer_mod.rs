@@ -468,7 +468,7 @@ for crate::System::Security::Util::Tokenizer_TokenSource {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Security.Util";
-    const CLASS_NAME: &'static str = "TokenSource";
+    const CLASS_NAME: &'static str = "Tokenizer/TokenSource";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

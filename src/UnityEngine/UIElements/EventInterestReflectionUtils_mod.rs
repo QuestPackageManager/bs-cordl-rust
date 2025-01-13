@@ -99,7 +99,7 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInt
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "DefaultEventInterests";
+    const CLASS_NAME: &'static str = "EventInterestReflectionUtils/DefaultEventInterests";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

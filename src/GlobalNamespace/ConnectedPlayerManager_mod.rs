@@ -2080,7 +2080,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_InternalMessageType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InternalMessageType";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/InternalMessageType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2338,7 +2338,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_MessageType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MessageType";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/MessageType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

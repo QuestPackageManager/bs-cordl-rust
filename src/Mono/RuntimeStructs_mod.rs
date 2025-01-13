@@ -68,7 +68,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_GPtrArra
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono";
-    const CLASS_NAME: &'static str = "GPtrArray";
+    const CLASS_NAME: &'static str = "RuntimeStructs/GPtrArray";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -171,7 +171,7 @@ for crate::Mono::RuntimeStructs_GenericParamInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono";
-    const CLASS_NAME: &'static str = "GenericParamInfo";
+    const CLASS_NAME: &'static str = "RuntimeStructs/GenericParamInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -271,7 +271,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_MonoClas
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono";
-    const CLASS_NAME: &'static str = "MonoClass";
+    const CLASS_NAME: &'static str = "RuntimeStructs/MonoClass";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -373,7 +373,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::RuntimeStructs_RemoteCl
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono";
-    const CLASS_NAME: &'static str = "RemoteClass";
+    const CLASS_NAME: &'static str = "RuntimeStructs/RemoteClass";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

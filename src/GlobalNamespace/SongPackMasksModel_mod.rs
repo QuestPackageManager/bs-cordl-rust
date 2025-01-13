@@ -173,7 +173,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LocalizedText";
+    const CLASS_NAME: &'static str = "SongPackMasksModel/LocalizedText";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -300,7 +300,7 @@ for crate::GlobalNamespace::SongPackMasksModel_MaskInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MaskInfo";
+    const CLASS_NAME: &'static str = "SongPackMasksModel/MaskInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

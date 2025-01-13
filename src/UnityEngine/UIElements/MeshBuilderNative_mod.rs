@@ -301,7 +301,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "NativeBorderParams";
+    const CLASS_NAME: &'static str = "MeshBuilderNative/NativeBorderParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -405,7 +405,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "NativeColorPage";
+    const CLASS_NAME: &'static str = "MeshBuilderNative/NativeColorPage";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -527,7 +527,7 @@ for crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "NativeRectParams";
+    const CLASS_NAME: &'static str = "MeshBuilderNative/NativeRectParams";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

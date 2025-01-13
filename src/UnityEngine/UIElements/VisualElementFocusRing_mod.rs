@@ -298,7 +298,7 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "DefaultFocusOrder";
+    const CLASS_NAME: &'static str = "VisualElementFocusRing/DefaultFocusOrder";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

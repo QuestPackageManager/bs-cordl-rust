@@ -145,7 +145,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Cloud {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Cloud";
+    const CLASS_NAME: &'static str = "CloudsMeshGenerator/Cloud";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -250,7 +250,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_ProhibitedRadius {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ProhibitedRadius";
+    const CLASS_NAME: &'static str = "CloudsMeshGenerator/ProhibitedRadius";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -356,7 +356,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_RadiusChunk {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RadiusChunk";
+    const CLASS_NAME: &'static str = "CloudsMeshGenerator/RadiusChunk";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -463,7 +463,7 @@ for crate::GlobalNamespace::CloudsMeshGenerator_Ring {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Ring";
+    const CLASS_NAME: &'static str = "CloudsMeshGenerator/Ring";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

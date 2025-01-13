@@ -124,7 +124,7 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_ciphersuite";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_ciphersuite";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -231,7 +231,7 @@ for crate::Mono::Unity::UnityTls_unitytls_error_code {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_error_code";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_error_code";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -323,7 +323,7 @@ for crate::Mono::Unity::UnityTls_unitytls_errorstate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_errorstate";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_errorstate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -705,7 +705,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls_unitytl
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_key";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_key";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -807,7 +807,7 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_key_ref";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_key_ref";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -914,7 +914,7 @@ for crate::Mono::Unity::UnityTls_unitytls_protocol {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_protocol";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_protocol";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1002,7 +1002,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1111,7 +1111,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_callbacks {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_callbacks";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx_callbacks";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1313,7 +1313,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_protocolrange {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_protocolrange";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx_protocolrange";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1771,7 +1771,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509_ref {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509_ref";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_x509_ref";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1872,7 +1872,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_x509list";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1975,7 +1975,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509list_ref {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list_ref";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_x509list_ref";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2076,7 +2076,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509name {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509name";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_x509name";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2285,7 +2285,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_result {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509verify_result";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_x509verify_result";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -257,7 +257,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.AvatarCore";
-    const CLASS_NAME: &'static str = "EditMode";
+    const CLASS_NAME: &'static str = "AvatarEditorFlowCoordinator/EditMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -349,7 +349,7 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.AvatarCore";
-    const CLASS_NAME: &'static str = "FinishAction";
+    const CLASS_NAME: &'static str = "AvatarEditorFlowCoordinator/FinishAction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

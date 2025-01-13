@@ -694,7 +694,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_DurationMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "DurationMode";
+    const CLASS_NAME: &'static str = "TimelineAsset/DurationMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -926,7 +926,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_MediaType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "MediaType";
+    const CLASS_NAME: &'static str = "TimelineAsset/MediaType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1070,7 +1070,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_Versions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "Versions";
+    const CLASS_NAME: &'static str = "TimelineAsset/Versions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

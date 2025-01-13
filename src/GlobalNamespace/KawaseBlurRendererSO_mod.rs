@@ -392,7 +392,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_KernelSize {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "KernelSize";
+    const CLASS_NAME: &'static str = "KawaseBlurRendererSO/KernelSize";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -489,7 +489,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_Pass {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Pass";
+    const CLASS_NAME: &'static str = "KawaseBlurRendererSO/Pass";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -582,7 +582,7 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_WeightsType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "WeightsType";
+    const CLASS_NAME: &'static str = "KawaseBlurRendererSO/WeightsType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -14683,7 +14683,7 @@ for crate::Unity::Mathematics::math_IntFloatUnion {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Mathematics";
-    const CLASS_NAME: &'static str = "IntFloatUnion";
+    const CLASS_NAME: &'static str = "math/IntFloatUnion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -14786,7 +14786,7 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Mathematics";
-    const CLASS_NAME: &'static str = "LongDoubleUnion";
+    const CLASS_NAME: &'static str = "math/LongDoubleUnion";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -14895,7 +14895,7 @@ for crate::Unity::Mathematics::math_RotationOrder {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Mathematics";
-    const CLASS_NAME: &'static str = "RotationOrder";
+    const CLASS_NAME: &'static str = "math/RotationOrder";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -14993,7 +14993,7 @@ for crate::Unity::Mathematics::math_ShuffleComponent {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Mathematics";
-    const CLASS_NAME: &'static str = "ShuffleComponent";
+    const CLASS_NAME: &'static str = "math/ShuffleComponent";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -416,7 +416,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_DeviceType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.SpatialTracking";
-    const CLASS_NAME: &'static str = "DeviceType";
+    const CLASS_NAME: &'static str = "TrackedPoseDriver/DeviceType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -517,7 +517,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.SpatialTracking";
-    const CLASS_NAME: &'static str = "TrackedPose";
+    const CLASS_NAME: &'static str = "TrackedPoseDriver/TrackedPose";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -610,7 +610,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackingType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.SpatialTracking";
-    const CLASS_NAME: &'static str = "TrackingType";
+    const CLASS_NAME: &'static str = "TrackedPoseDriver/TrackingType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -703,7 +703,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver_UpdateType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.SpatialTracking";
-    const CLASS_NAME: &'static str = "UpdateType";
+    const CLASS_NAME: &'static str = "TrackedPoseDriver/UpdateType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

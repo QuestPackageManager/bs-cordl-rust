@@ -117,7 +117,7 @@ for crate::BeatSaber::Settings::MiscSettings_ResponseLevel {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "ResponseLevel";
+    const CLASS_NAME: &'static str = "MiscSettings/ResponseLevel";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

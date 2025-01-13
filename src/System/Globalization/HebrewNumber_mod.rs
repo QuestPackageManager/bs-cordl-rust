@@ -112,7 +112,7 @@ for crate::System::Globalization::HebrewNumber_HS {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "HS";
+    const CLASS_NAME: &'static str = "HebrewNumber/HS";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -213,7 +213,7 @@ for crate::System::Globalization::HebrewNumber_HebrewToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "HebrewToken";
+    const CLASS_NAME: &'static str = "HebrewNumber/HebrewToken";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -304,7 +304,7 @@ for crate::System::Globalization::HebrewNumber_HebrewValue {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "HebrewValue";
+    const CLASS_NAME: &'static str = "HebrewNumber/HebrewValue";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

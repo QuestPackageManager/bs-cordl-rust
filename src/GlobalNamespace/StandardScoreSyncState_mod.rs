@@ -335,7 +335,7 @@ for crate::GlobalNamespace::StandardScoreSyncState_Score {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Score";
+    const CLASS_NAME: &'static str = "StandardScoreSyncState/Score";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -737,7 +737,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "AllocToFree";
+    const CLASS_NAME: &'static str = "UIRenderDevice/AllocToFree";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -848,7 +848,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "AllocToUpdate";
+    const CLASS_NAME: &'static str = "UIRenderDevice/AllocToUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -952,7 +952,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DeviceToFree {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "DeviceToFree";
+    const CLASS_NAME: &'static str = "UIRenderDevice/DeviceToFree";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1074,7 +1074,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "DrawStatistics";
+    const CLASS_NAME: &'static str = "UIRenderDevice/DrawStatistics";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1186,7 +1186,7 @@ for crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "EvaluationState";
+    const CLASS_NAME: &'static str = "UIRenderDevice/EvaluationState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

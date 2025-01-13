@@ -282,7 +282,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DefaultComparer`1";
+    const CLASS_NAME: &'static str = "InputBindingCompositeContext/DefaultComparer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -291,7 +291,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultCompare
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem",
-                        "DefaultComparer`1",
+                        "InputBindingCompositeContext/DefaultComparer`1",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()
@@ -471,7 +471,7 @@ for crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "PartBinding";
+    const CLASS_NAME: &'static str = "InputBindingCompositeContext/PartBinding";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

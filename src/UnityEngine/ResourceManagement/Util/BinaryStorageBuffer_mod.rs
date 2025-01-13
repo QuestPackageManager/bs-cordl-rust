@@ -513,7 +513,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_DynamicStr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "DynamicString";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/DynamicString";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -880,7 +880,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ObjectType
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "ObjectTypeData";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/ObjectTypeData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2033,7 +2033,7 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "ObjectToStringRemap";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/BuiltinTypesSerializer/ObjectToStringRemap";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2153,7 +2153,7 @@ for crate::UnityEngine::ResourceManagement::Util::TypeSerializer_BinaryStorageBu
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "Data";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/TypeSerializer/Data";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2347,7 +2347,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Str
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "StringParts";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/Writer/StringParts";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

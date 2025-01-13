@@ -191,7 +191,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "Alloc2D";
+    const CLASS_NAME: &'static str = "Allocator2D/Alloc2D";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

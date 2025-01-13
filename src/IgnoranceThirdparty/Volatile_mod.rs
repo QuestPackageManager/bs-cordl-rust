@@ -63,7 +63,7 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "IgnoranceThirdparty";
-    const CLASS_NAME: &'static str = "PaddedLong";
+    const CLASS_NAME: &'static str = "Volatile/PaddedLong";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

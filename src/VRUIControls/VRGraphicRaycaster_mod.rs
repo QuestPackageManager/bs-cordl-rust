@@ -154,7 +154,7 @@ for crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "VRUIControls";
-    const CLASS_NAME: &'static str = "VRGraphicRaycastResult";
+    const CLASS_NAME: &'static str = "VRGraphicRaycaster/VRGraphicRaycastResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

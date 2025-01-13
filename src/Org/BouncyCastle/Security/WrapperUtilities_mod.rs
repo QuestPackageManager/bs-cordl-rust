@@ -282,7 +282,7 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_WrapAlgorithm {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
-    const CLASS_NAME: &'static str = "WrapAlgorithm";
+    const CLASS_NAME: &'static str = "WrapperUtilities/WrapAlgorithm";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

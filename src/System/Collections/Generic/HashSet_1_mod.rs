@@ -991,7 +991,7 @@ for crate::System::Collections::Generic::HashSet_1_ElementCount<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "ElementCount";
+    const CLASS_NAME: &'static str = "HashSet`1/ElementCount";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1000,7 +1000,7 @@ for crate::System::Collections::Generic::HashSet_1_ElementCount<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "ElementCount",
+                        "HashSet`1/ElementCount",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1118,7 +1118,7 @@ for crate::System::Collections::Generic::HashSet_1_Enumerator<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "HashSet`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1127,7 +1127,7 @@ for crate::System::Collections::Generic::HashSet_1_Enumerator<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Enumerator",
+                        "HashSet`1/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1374,7 +1374,7 @@ for crate::System::Collections::Generic::HashSet_1_Slot<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Slot";
+    const CLASS_NAME: &'static str = "HashSet`1/Slot";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1383,7 +1383,7 @@ for crate::System::Collections::Generic::HashSet_1_Slot<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Slot",
+                        "HashSet`1/Slot",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

@@ -605,7 +605,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSkeleton_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoneId";
+    const CLASS_NAME: &'static str = "OVRSkeleton/BoneId";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -794,7 +794,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SkeletonPoseData";
+    const CLASS_NAME: &'static str = "OVRSkeleton/SkeletonPoseData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1059,7 +1059,7 @@ for crate::GlobalNamespace::OVRSkeleton_SkeletonType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SkeletonType";
+    const CLASS_NAME: &'static str = "OVRSkeleton/SkeletonType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

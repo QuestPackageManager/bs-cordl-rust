@@ -97,7 +97,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
-    const CLASS_NAME: &'static str = "Frame";
+    const CLASS_NAME: &'static str = "TexturePacker_JsonArray/Frame";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -206,7 +206,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
-    const CLASS_NAME: &'static str = "Meta";
+    const CLASS_NAME: &'static str = "TexturePacker_JsonArray/Meta";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -389,7 +389,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
-    const CLASS_NAME: &'static str = "SpriteFrame";
+    const CLASS_NAME: &'static str = "TexturePacker_JsonArray/SpriteFrame";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -504,7 +504,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro.SpriteAssetUtilities";
-    const CLASS_NAME: &'static str = "SpriteSize";
+    const CLASS_NAME: &'static str = "TexturePacker_JsonArray/SpriteSize";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

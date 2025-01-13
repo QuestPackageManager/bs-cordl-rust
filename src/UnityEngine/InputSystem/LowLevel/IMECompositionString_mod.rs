@@ -215,7 +215,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString_Enumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "IMECompositionString/Enumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -428,7 +428,7 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionString__buffer_e__F
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "<buffer>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "IMECompositionString/<buffer>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

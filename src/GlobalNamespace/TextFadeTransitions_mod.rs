@@ -141,7 +141,7 @@ for crate::GlobalNamespace::TextFadeTransitions_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "TextFadeTransitions/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

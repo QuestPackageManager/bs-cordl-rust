@@ -466,7 +466,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpression {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceExpression";
+    const CLASS_NAME: &'static str = "OVRFaceExpressions/FaceExpression";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -560,7 +560,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceExpressionsEnumerator";
+    const CLASS_NAME: &'static str = "OVRFaceExpressions/FaceExpressionsEnumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -772,7 +772,7 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceRegionConfidence {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FaceRegionConfidence";
+    const CLASS_NAME: &'static str = "OVRFaceExpressions/FaceRegionConfidence";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

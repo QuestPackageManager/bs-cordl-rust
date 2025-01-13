@@ -671,7 +671,7 @@ for crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PromoType";
+    const CLASS_NAME: &'static str = "DlcPromoPanelModel/PromoInfo/PromoType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

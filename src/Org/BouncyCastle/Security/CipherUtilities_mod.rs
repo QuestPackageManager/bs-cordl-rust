@@ -197,7 +197,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
-    const CLASS_NAME: &'static str = "CipherAlgorithm";
+    const CLASS_NAME: &'static str = "CipherUtilities/CipherAlgorithm";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -301,7 +301,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
-    const CLASS_NAME: &'static str = "CipherMode";
+    const CLASS_NAME: &'static str = "CipherUtilities/CipherMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -423,7 +423,7 @@ for crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
-    const CLASS_NAME: &'static str = "CipherPadding";
+    const CLASS_NAME: &'static str = "CipherUtilities/CipherPadding";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

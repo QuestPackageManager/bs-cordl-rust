@@ -300,7 +300,7 @@ for crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.UI";
-    const CLASS_NAME: &'static str = "RaycastHitData";
+    const CLASS_NAME: &'static str = "TrackedDeviceRaycaster/RaycastHitData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -224,7 +224,7 @@ for crate::HMUI::CurvedTextMeshPro_CurvedMeshInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "CurvedMeshInfo";
+    const CLASS_NAME: &'static str = "CurvedTextMeshPro/CurvedMeshInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

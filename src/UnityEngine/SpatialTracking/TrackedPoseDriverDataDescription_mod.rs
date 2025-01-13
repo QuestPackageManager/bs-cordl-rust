@@ -94,7 +94,7 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription_PoseDa
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.SpatialTracking";
-    const CLASS_NAME: &'static str = "PoseData";
+    const CLASS_NAME: &'static str = "TrackedPoseDriverDataDescription/PoseData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

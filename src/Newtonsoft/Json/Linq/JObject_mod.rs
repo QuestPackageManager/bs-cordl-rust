@@ -1474,7 +1474,7 @@ for crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Linq";
-    const CLASS_NAME: &'static str = "<<WriteToAsync>g__AwaitProperties|0_0>d";
+    const CLASS_NAME: &'static str = "JObject/<<WriteToAsync>g__AwaitProperties|0_0>d";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

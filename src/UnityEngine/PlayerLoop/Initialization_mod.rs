@@ -124,7 +124,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_AsyncUploadTimeSlicedUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "AsyncUploadTimeSlicedUpdate";
+    const CLASS_NAME: &'static str = "Initialization/AsyncUploadTimeSlicedUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -225,7 +225,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_DirectorSampleTime {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "DirectorSampleTime";
+    const CLASS_NAME: &'static str = "Initialization/DirectorSampleTime";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -326,7 +326,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_ProfilerStartFrame {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "ProfilerStartFrame";
+    const CLASS_NAME: &'static str = "Initialization/ProfilerStartFrame";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -427,7 +427,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_SynchronizeInputs {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "SynchronizeInputs";
+    const CLASS_NAME: &'static str = "Initialization/SynchronizeInputs";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -528,7 +528,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_SynchronizeState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "SynchronizeState";
+    const CLASS_NAME: &'static str = "Initialization/SynchronizeState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -629,7 +629,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_UpdateCameraMotionVectors {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "UpdateCameraMotionVectors";
+    const CLASS_NAME: &'static str = "Initialization/UpdateCameraMotionVectors";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -730,7 +730,7 @@ for crate::UnityEngine::PlayerLoop::Initialization_XREarlyUpdate {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.PlayerLoop";
-    const CLASS_NAME: &'static str = "XREarlyUpdate";
+    const CLASS_NAME: &'static str = "Initialization/XREarlyUpdate";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

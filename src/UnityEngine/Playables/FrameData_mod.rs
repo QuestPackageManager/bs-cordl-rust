@@ -209,7 +209,7 @@ for crate::UnityEngine::Playables::FrameData_EvaluationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Playables";
-    const CLASS_NAME: &'static str = "EvaluationType";
+    const CLASS_NAME: &'static str = "FrameData/EvaluationType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -305,7 +305,7 @@ for crate::UnityEngine::Playables::FrameData_Flags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Playables";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "FrameData/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

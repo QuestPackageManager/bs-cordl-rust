@@ -3031,7 +3031,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_GateFitMo
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "GateFitMode";
+    const CLASS_NAME: &'static str = "Camera/GateFitMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3118,7 +3118,7 @@ for crate::UnityEngine::Camera_GateFitParameters {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "GateFitParameters";
+    const CLASS_NAME: &'static str = "Camera/GateFitParameters";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3243,7 +3243,7 @@ for crate::UnityEngine::Camera_MonoOrStereoscopicEye {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "MonoOrStereoscopicEye";
+    const CLASS_NAME: &'static str = "Camera/MonoOrStereoscopicEye";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3336,7 +3336,7 @@ for crate::UnityEngine::Camera_ProjectionMatrixMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "ProjectionMatrixMode";
+    const CLASS_NAME: &'static str = "Camera/ProjectionMatrixMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3427,7 +3427,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_RenderReq
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "RenderRequest";
+    const CLASS_NAME: &'static str = "Camera/RenderRequest";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3543,7 +3543,7 @@ for crate::UnityEngine::Camera_RenderRequestMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "RenderRequestMode";
+    const CLASS_NAME: &'static str = "Camera/RenderRequestMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3643,7 +3643,7 @@ for crate::UnityEngine::Camera_RenderRequestOutputSpace {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "RenderRequestOutputSpace";
+    const CLASS_NAME: &'static str = "Camera/RenderRequestOutputSpace";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3735,7 +3735,7 @@ for crate::UnityEngine::Camera_SceneViewFilterMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "SceneViewFilterMode";
+    const CLASS_NAME: &'static str = "Camera/SceneViewFilterMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -3826,7 +3826,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_Stereosco
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "StereoscopicEye";
+    const CLASS_NAME: &'static str = "Camera/StereoscopicEye";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

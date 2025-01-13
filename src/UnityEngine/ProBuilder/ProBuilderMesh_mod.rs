@@ -2184,7 +2184,7 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
-    const CLASS_NAME: &'static str = "CacheValidState";
+    const CLASS_NAME: &'static str = "ProBuilderMesh/CacheValidState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2278,7 +2278,7 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh_NonVersionedEditScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
-    const CLASS_NAME: &'static str = "NonVersionedEditScope";
+    const CLASS_NAME: &'static str = "ProBuilderMesh/NonVersionedEditScope";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

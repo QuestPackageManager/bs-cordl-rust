@@ -409,7 +409,7 @@ for crate::System::Xml::Schema::SchemaDeclBase_Use {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "Use";
+    const CLASS_NAME: &'static str = "SchemaDeclBase/Use";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -336,7 +336,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
-    const CLASS_NAME: &'static str = "BasicEventTrackPage";
+    const CLASS_NAME: &'static str = "EnvironmentTracksDefinitionSO/BasicEventTrackPage";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -843,7 +843,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_OverrideDe
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
-    const CLASS_NAME: &'static str = "OverrideDefaultLightAxis";
+    const CLASS_NAME: &'static str = "EnvironmentTracksDefinitionSO/OverrideDefaultLightAxis";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

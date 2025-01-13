@@ -371,7 +371,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "ReadOnlyArray`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -380,7 +380,7 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1_Enumerator<TValu
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.Utilities",
-                        "Enumerator",
+                        "ReadOnlyArray`1/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()

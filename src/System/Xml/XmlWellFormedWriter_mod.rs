@@ -185,7 +185,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ItemType";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/AttributeValueCache/ItemType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1005,7 +1005,7 @@ for crate::System::Xml::XmlWellFormedWriter_AttrName {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "AttrName";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/AttrName";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1398,7 +1398,7 @@ for crate::System::Xml::XmlWellFormedWriter_ElementScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ElementScope";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/ElementScope";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1541,7 +1541,7 @@ for crate::System::Xml::XmlWellFormedWriter_Namespace {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "Namespace";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/Namespace";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1674,7 +1674,7 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "NamespaceKind";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/NamespaceKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1910,7 +1910,7 @@ for crate::System::Xml::XmlWellFormedWriter_SpecialAttribute {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "SpecialAttribute";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/SpecialAttribute";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2033,7 +2033,7 @@ for crate::System::Xml::XmlWellFormedWriter_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2138,7 +2138,7 @@ for crate::System::Xml::XmlWellFormedWriter_Token {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "Token";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/Token";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

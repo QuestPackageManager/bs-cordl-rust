@@ -189,7 +189,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_BuildType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BuildType";
+    const CLASS_NAME: &'static str = "PS5SharedPackageSKUsSO/BuildType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

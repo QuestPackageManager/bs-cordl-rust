@@ -881,7 +881,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputActions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "InputActions";
+    const CLASS_NAME: &'static str = "HEU_InputNode/InputActions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -974,7 +974,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "InputNodeType";
+    const CLASS_NAME: &'static str = "HEU_InputNode/InputNodeType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1070,7 +1070,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "InputObjectType";
+    const CLASS_NAME: &'static str = "HEU_InputNode/InputObjectType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1163,7 +1163,7 @@ for crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "InternalObjectType";
+    const CLASS_NAME: &'static str = "HEU_InputNode/InternalObjectType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

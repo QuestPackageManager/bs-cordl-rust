@@ -378,7 +378,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
-    const CLASS_NAME: &'static str = "Anchor";
+    const CLASS_NAME: &'static str = "AutoUnwrapSettings/Anchor";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -471,7 +471,7 @@ for crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Fill {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
-    const CLASS_NAME: &'static str = "Fill";
+    const CLASS_NAME: &'static str = "AutoUnwrapSettings/Fill";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

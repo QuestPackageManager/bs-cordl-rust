@@ -278,7 +278,7 @@ for crate::System::Net::ContextAwareResult_StateFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "StateFlags";
+    const CLASS_NAME: &'static str = "ContextAwareResult/StateFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

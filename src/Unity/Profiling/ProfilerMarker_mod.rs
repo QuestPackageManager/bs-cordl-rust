@@ -147,7 +147,7 @@ for crate::Unity::Profiling::ProfilerMarker_AutoScope {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Profiling";
-    const CLASS_NAME: &'static str = "AutoScope";
+    const CLASS_NAME: &'static str = "ProfilerMarker/AutoScope";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

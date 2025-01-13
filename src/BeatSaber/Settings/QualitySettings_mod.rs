@@ -139,7 +139,7 @@ for crate::BeatSaber::Settings::QualitySettings_BloomQuality {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "BloomQuality";
+    const CLASS_NAME: &'static str = "QualitySettings/BloomQuality";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -232,7 +232,7 @@ for crate::BeatSaber::Settings::QualitySettings_MainEffectOption {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "MainEffectOption";
+    const CLASS_NAME: &'static str = "QualitySettings/MainEffectOption";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -326,7 +326,7 @@ for crate::BeatSaber::Settings::QualitySettings_MirrorQuality {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "MirrorQuality";
+    const CLASS_NAME: &'static str = "QualitySettings/MirrorQuality";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -419,7 +419,7 @@ for crate::BeatSaber::Settings::QualitySettings_ObstacleQuality {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "ObstacleQuality";
+    const CLASS_NAME: &'static str = "QualitySettings/ObstacleQuality";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

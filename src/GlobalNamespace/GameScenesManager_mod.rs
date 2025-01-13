@@ -937,7 +937,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneDismissType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SceneDismissType";
+    const CLASS_NAME: &'static str = "GameScenesManager/SceneDismissType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1031,7 +1031,7 @@ for crate::GlobalNamespace::GameScenesManager_ScenePresentType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ScenePresentType";
+    const CLASS_NAME: &'static str = "GameScenesManager/ScenePresentType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1130,7 +1130,7 @@ for crate::GlobalNamespace::GameScenesManager_SceneTransitionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SceneTransitionType";
+    const CLASS_NAME: &'static str = "GameScenesManager/SceneTransitionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

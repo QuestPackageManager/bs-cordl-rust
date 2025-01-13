@@ -15,7 +15,7 @@ for crate::GlobalNamespace::Enumerator_OVREnumerable_1_CollectionType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CollectionType";
+    const CLASS_NAME: &'static str = "OVREnumerable`1/Enumerator/CollectionType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -339,14 +339,17 @@ for crate::GlobalNamespace::OVREnumerable_1_Enumerator<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "OVREnumerable`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "Enumerator")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVREnumerable`1/Enumerator",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

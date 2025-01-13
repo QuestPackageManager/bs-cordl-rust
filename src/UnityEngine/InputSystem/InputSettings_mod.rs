@@ -530,7 +530,7 @@ for crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "BackgroundBehavior";
+    const CLASS_NAME: &'static str = "InputSettings/BackgroundBehavior";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -623,7 +623,7 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "EditorInputBehaviorInPlayMode";
+    const CLASS_NAME: &'static str = "InputSettings/EditorInputBehaviorInPlayMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -716,7 +716,7 @@ for crate::UnityEngine::InputSystem::InputSettings_UpdateMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "UpdateMode";
+    const CLASS_NAME: &'static str = "InputSettings/UpdateMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

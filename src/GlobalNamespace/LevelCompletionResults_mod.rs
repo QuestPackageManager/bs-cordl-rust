@@ -342,7 +342,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndAction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelEndAction";
+    const CLASS_NAME: &'static str = "LevelCompletionResults/LevelEndAction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -435,7 +435,7 @@ for crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelEndStateType";
+    const CLASS_NAME: &'static str = "LevelCompletionResults/LevelEndStateType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

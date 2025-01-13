@@ -13,7 +13,7 @@ for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags 
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Flags";
+    const CLASS_NAME: &'static str = "InputControlScheme/DeviceRequirement/Flags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -485,7 +485,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceRequirement";
+    const CLASS_NAME: &'static str = "InputControlScheme/DeviceRequirement";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -767,7 +767,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "MatchResult";
+    const CLASS_NAME: &'static str = "InputControlScheme/MatchResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1040,7 +1040,7 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "SchemeJson";
+    const CLASS_NAME: &'static str = "InputControlScheme/SchemeJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1216,7 +1216,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "InputControlScheme/MatchResult/Enumerator";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1438,7 +1438,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Match";
+    const CLASS_NAME: &'static str = "InputControlScheme/MatchResult/Match";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1593,7 +1593,7 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Result";
+    const CLASS_NAME: &'static str = "InputControlScheme/MatchResult/Result";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1685,7 +1685,7 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceJson";
+    const CLASS_NAME: &'static str = "InputControlScheme/SchemeJson/DeviceJson";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

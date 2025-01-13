@@ -185,7 +185,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AppConfig";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationChecks/AppConfig";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -288,7 +288,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelConfig";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationChecks/LevelConfig";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -392,7 +392,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Mismatch";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationChecks/Mismatch";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -522,7 +522,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRConfig";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationChecks/OVRConfig";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -625,7 +625,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_OculusXRConfig {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OculusXRConfig";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationChecks/OculusXRConfig";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -747,7 +747,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerConfig";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationChecks/PlayerConfig";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -860,7 +860,7 @@ for crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "XRConfig";
+    const CLASS_NAME: &'static str = "PerformanceConfigurationChecks/XRConfig";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

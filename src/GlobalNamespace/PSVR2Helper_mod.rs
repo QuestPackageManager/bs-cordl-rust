@@ -673,7 +673,7 @@ for crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HeadsetHapticFrequencyLimit";
+    const CLASS_NAME: &'static str = "PSVR2Helper/HeadsetHapticFrequencyLimit";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

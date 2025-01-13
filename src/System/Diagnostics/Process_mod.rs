@@ -680,7 +680,7 @@ for crate::System::Diagnostics::Process_ProcInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Diagnostics";
-    const CLASS_NAME: &'static str = "ProcInfo";
+    const CLASS_NAME: &'static str = "Process/ProcInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -790,7 +790,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Diagnostics::Process_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Diagnostics";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "Process/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -882,7 +882,7 @@ for crate::System::Diagnostics::Process_StreamReadMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Diagnostics";
-    const CLASS_NAME: &'static str = "StreamReadMode";
+    const CLASS_NAME: &'static str = "Process/StreamReadMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

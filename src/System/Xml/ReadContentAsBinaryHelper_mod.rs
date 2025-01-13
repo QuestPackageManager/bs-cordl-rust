@@ -102,7 +102,7 @@ for crate::System::Xml::ReadContentAsBinaryHelper_State {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "ReadContentAsBinaryHelper/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

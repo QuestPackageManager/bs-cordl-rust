@@ -126,7 +126,7 @@ for crate::MS::Internal::Xml::XPath::Operator_Op {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
-    const CLASS_NAME: &'static str = "Op";
+    const CLASS_NAME: &'static str = "Operator/Op";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

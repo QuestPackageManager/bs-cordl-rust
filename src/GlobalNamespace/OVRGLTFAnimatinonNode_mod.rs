@@ -299,7 +299,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InputNodeState";
+    const CLASS_NAME: &'static str = "OVRGLTFAnimatinonNode/InputNodeState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -407,7 +407,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRGLTFTransformType";
+    const CLASS_NAME: &'static str = "OVRGLTFAnimatinonNode/OVRGLTFTransformType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -501,7 +501,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRInterpolationType";
+    const CLASS_NAME: &'static str = "OVRGLTFAnimatinonNode/OVRInterpolationType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -600,7 +600,7 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ThumbstickDirection";
+    const CLASS_NAME: &'static str = "OVRGLTFAnimatinonNode/ThumbstickDirection";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -1420,7 +1420,7 @@ for crate::System::Xml::XmlSqlBinaryReader_AttrInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "AttrInfo";
+    const CLASS_NAME: &'static str = "XmlSqlBinaryReader/AttrInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1623,7 +1623,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ElemInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ElemInfo";
+    const CLASS_NAME: &'static str = "XmlSqlBinaryReader/ElemInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1939,7 +1939,7 @@ for crate::System::Xml::XmlSqlBinaryReader_QName {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "QName";
+    const CLASS_NAME: &'static str = "XmlSqlBinaryReader/QName";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2172,7 +2172,7 @@ for crate::System::Xml::XmlSqlBinaryReader_ScanState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ScanState";
+    const CLASS_NAME: &'static str = "XmlSqlBinaryReader/ScanState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2271,7 +2271,7 @@ for crate::System::Xml::XmlSqlBinaryReader_SymbolTables {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "SymbolTables";
+    const CLASS_NAME: &'static str = "XmlSqlBinaryReader/SymbolTables";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

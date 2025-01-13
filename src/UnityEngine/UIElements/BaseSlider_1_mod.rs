@@ -1141,7 +1141,7 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "SliderKey";
+    const CLASS_NAME: &'static str = "BaseSlider`1/SliderKey";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -115,7 +115,7 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController_AnimationType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AnimationType";
+    const CLASS_NAME: &'static str = "ScreenBackButtonAnimationController/AnimationType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

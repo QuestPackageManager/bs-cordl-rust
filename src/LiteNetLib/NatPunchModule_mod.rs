@@ -635,7 +635,7 @@ for crate::LiteNetLib::NatPunchModule_RequestEventData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "RequestEventData";
+    const CLASS_NAME: &'static str = "NatPunchModule/RequestEventData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -740,7 +740,7 @@ for crate::LiteNetLib::NatPunchModule_SuccessEventData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "SuccessEventData";
+    const CLASS_NAME: &'static str = "NatPunchModule/SuccessEventData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

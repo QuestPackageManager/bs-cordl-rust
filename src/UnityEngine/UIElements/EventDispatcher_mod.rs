@@ -248,7 +248,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "DispatchContext";
+    const CLASS_NAME: &'static str = "EventDispatcher/DispatchContext";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -352,7 +352,7 @@ for crate::UnityEngine::UIElements::EventDispatcher_EventRecord {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "EventRecord";
+    const CLASS_NAME: &'static str = "EventDispatcher/EventRecord";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

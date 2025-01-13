@@ -784,7 +784,7 @@ for crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ControlBitRangeNode";
+    const CLASS_NAME: &'static str = "InputDevice/ControlBitRangeNode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -913,7 +913,7 @@ for crate::UnityEngine::InputSystem::InputDevice_DeviceFlags {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceFlags";
+    const CLASS_NAME: &'static str = "InputDevice/DeviceFlags";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

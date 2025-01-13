@@ -133,7 +133,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eBackButtonAction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "eBackButtonAction";
+    const CLASS_NAME: &'static str = "OVRPlatformMenu/eBackButtonAction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -225,7 +225,7 @@ for crate::GlobalNamespace::OVRPlatformMenu_eHandler {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "eHandler";
+    const CLASS_NAME: &'static str = "OVRPlatformMenu/eHandler";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -89,7 +89,7 @@ for crate::GlobalNamespace::OVRNetworkTcpClient_OVRNetwork_ConnectionState {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ConnectionState";
+    const CLASS_NAME: &'static str = "OVRNetwork/OVRNetworkTcpClient/ConnectionState";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -181,7 +181,7 @@ for crate::GlobalNamespace::OVRNetwork_FrameHeader {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "FrameHeader";
+    const CLASS_NAME: &'static str = "OVRNetwork/FrameHeader";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

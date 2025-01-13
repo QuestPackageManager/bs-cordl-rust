@@ -823,7 +823,7 @@ for crate::System::Xml::XmlValidatingReaderImpl_ParsingFunction {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "ParsingFunction";
+    const CLASS_NAME: &'static str = "XmlValidatingReaderImpl/ParsingFunction";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

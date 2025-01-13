@@ -102,7 +102,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "TypedStore`1";
+    const CLASS_NAME: &'static str = "PropertyBagStore/TypedStore`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -111,7 +111,7 @@ for crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<TContainer
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties.Internal",
-                        "TypedStore`1",
+                        "PropertyBagStore/TypedStore`1",
                     )
                     .unwrap()
                     .make_generic::<(TContainer)>()

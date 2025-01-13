@@ -89,7 +89,7 @@ for crate::Unity::XR::Oculus::Boundary_BoundaryType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Unity.XR.Oculus";
-    const CLASS_NAME: &'static str = "BoundaryType";
+    const CLASS_NAME: &'static str = "Boundary/BoundaryType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

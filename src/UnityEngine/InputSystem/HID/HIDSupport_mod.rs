@@ -90,7 +90,7 @@ for crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDPageUsage";
+    const CLASS_NAME: &'static str = "HIDSupport/HIDPageUsage";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

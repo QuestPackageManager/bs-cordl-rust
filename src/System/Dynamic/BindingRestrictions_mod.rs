@@ -343,7 +343,7 @@ for crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Dynamic";
-    const CLASS_NAME: &'static str = "AndNode";
+    const CLASS_NAME: &'static str = "BindingRestrictions/TestBuilder/AndNode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

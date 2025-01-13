@@ -177,7 +177,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "LocationFlag";
+    const CLASS_NAME: &'static str = "PointerDeviceState/LocationFlag";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -271,7 +271,7 @@ for crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "PointerLocation";
+    const CLASS_NAME: &'static str = "PointerDeviceState/PointerLocation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

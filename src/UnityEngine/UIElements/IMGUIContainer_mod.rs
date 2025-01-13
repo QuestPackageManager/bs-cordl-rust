@@ -575,7 +575,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "GUIGlobals";
+    const CLASS_NAME: &'static str = "IMGUIContainer/GUIGlobals";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -12,7 +12,7 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapC
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MapColorValuesJob";
+    const CLASS_NAME: &'static str = "OVRPassthroughColorLut/ColorLutTextureConverter/MapColorValuesJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -146,7 +146,7 @@ for crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Text
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TextureSettings";
+    const CLASS_NAME: &'static str = "OVRPassthroughColorLut/ColorLutTextureConverter/TextureSettings";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -874,7 +874,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorChannels";
+    const CLASS_NAME: &'static str = "OVRPassthroughColorLut/ColorChannels";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1070,7 +1070,7 @@ for crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "WriteColorsAsBytesJob";
+    const CLASS_NAME: &'static str = "OVRPassthroughColorLut/WriteColorsAsBytesJob";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

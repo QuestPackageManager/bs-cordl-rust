@@ -112,7 +112,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDItemStateGlobal";
+    const CLASS_NAME: &'static str = "HIDParser/HIDItemStateGlobal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -259,7 +259,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDItemStateLocal";
+    const CLASS_NAME: &'static str = "HIDParser/HIDItemStateLocal";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -418,7 +418,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDItemTypeAndTag";
+    const CLASS_NAME: &'static str = "HIDParser/HIDItemTypeAndTag";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -510,7 +510,7 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDReportData";
+    const CLASS_NAME: &'static str = "HIDParser/HIDReportData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

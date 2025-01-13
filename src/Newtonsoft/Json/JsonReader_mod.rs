@@ -1100,7 +1100,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonReader_
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "JsonReader/State";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

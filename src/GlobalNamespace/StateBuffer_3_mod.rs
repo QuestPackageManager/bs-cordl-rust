@@ -753,14 +753,17 @@ for crate::GlobalNamespace::StateBuffer_3_TimestampedStateTable<
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TimestampedStateTable";
+    const CLASS_NAME: &'static str = "StateBuffer`3/TimestampedStateTable";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "TimestampedStateTable")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "StateBuffer`3/TimestampedStateTable",
+                    )
                     .unwrap()
                     .make_generic::<(TStateTable, TType, TState)>()
                     .unwrap()

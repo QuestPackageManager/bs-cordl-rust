@@ -153,7 +153,7 @@ for crate::System::Buffers::ArrayPoolEventSource_BufferAllocatedReason {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Buffers";
-    const CLASS_NAME: &'static str = "BufferAllocatedReason";
+    const CLASS_NAME: &'static str = "ArrayPoolEventSource/BufferAllocatedReason";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

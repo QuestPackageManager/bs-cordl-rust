@@ -1016,7 +1016,7 @@ for crate::UnityEngine::Timeline::TimelineClip_BlendCurveMode {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "BlendCurveMode";
+    const CLASS_NAME: &'static str = "TimelineClip/BlendCurveMode";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1111,7 +1111,7 @@ for crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "ClipExtrapolation";
+    const CLASS_NAME: &'static str = "TimelineClip/ClipExtrapolation";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1263,7 +1263,7 @@ for crate::UnityEngine::Timeline::TimelineClip_Versions {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "Versions";
+    const CLASS_NAME: &'static str = "TimelineClip/Versions";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

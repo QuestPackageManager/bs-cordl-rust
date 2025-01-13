@@ -502,7 +502,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHand_Hand
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Hand";
+    const CLASS_NAME: &'static str = "OVRHand/Hand";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -593,7 +593,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHand_Hand
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandFinger";
+    const CLASS_NAME: &'static str = "OVRHand/HandFinger";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -685,7 +685,7 @@ for crate::GlobalNamespace::OVRHand_TrackingConfidence {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TrackingConfidence";
+    const CLASS_NAME: &'static str = "OVRHand/TrackingConfidence";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

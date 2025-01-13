@@ -2326,7 +2326,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "InternalEnumerator`1";
+    const CLASS_NAME: &'static str = "Array/InternalEnumerator`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2335,7 +2335,7 @@ for crate::System::Array_InternalEnumerator_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System",
-                        "InternalEnumerator`1",
+                        "Array/InternalEnumerator`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -2630,7 +2630,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterGenericAr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "SorterGenericArray";
+    const CLASS_NAME: &'static str = "Array/SorterGenericArray";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -2863,7 +2863,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_SorterObjectArr
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "SorterObjectArray";
+    const CLASS_NAME: &'static str = "Array/SorterObjectArray";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

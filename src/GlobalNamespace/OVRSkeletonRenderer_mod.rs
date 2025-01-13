@@ -492,7 +492,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_ConfidenceBehavior {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ConfidenceBehavior";
+    const CLASS_NAME: &'static str = "OVRSkeletonRenderer/ConfidenceBehavior";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -656,7 +656,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SkeletonRendererData";
+    const CLASS_NAME: &'static str = "OVRSkeletonRenderer/SkeletonRendererData";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -840,7 +840,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_SystemGestureBehavior {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SystemGestureBehavior";
+    const CLASS_NAME: &'static str = "OVRSkeletonRenderer/SystemGestureBehavior";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -286,7 +286,7 @@ for crate::System::Globalization::TimeSpanParse_ParseFailureKind {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "ParseFailureKind";
+    const CLASS_NAME: &'static str = "TimeSpanParse/ParseFailureKind";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -379,7 +379,7 @@ for crate::System::Globalization::TimeSpanParse_StringParser {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "StringParser";
+    const CLASS_NAME: &'static str = "TimeSpanParse/StringParser";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -559,7 +559,7 @@ for crate::System::Globalization::TimeSpanParse_TTT {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "TTT";
+    const CLASS_NAME: &'static str = "TimeSpanParse/TTT";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -669,7 +669,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "TimeSpanRawInfo";
+    const CLASS_NAME: &'static str = "TimeSpanParse/TimeSpanRawInfo";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -976,7 +976,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanResult {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "TimeSpanResult";
+    const CLASS_NAME: &'static str = "TimeSpanParse/TimeSpanResult";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1110,7 +1110,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "TimeSpanStandardStyles";
+    const CLASS_NAME: &'static str = "TimeSpanParse/TimeSpanStandardStyles";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1203,7 +1203,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanToken {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "TimeSpanToken";
+    const CLASS_NAME: &'static str = "TimeSpanParse/TimeSpanToken";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -1364,7 +1364,7 @@ for crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "TimeSpanTokenizer";
+    const CLASS_NAME: &'static str = "TimeSpanParse/TimeSpanTokenizer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

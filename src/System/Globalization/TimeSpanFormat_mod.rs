@@ -148,7 +148,7 @@ for crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "FormatLiterals";
+    const CLASS_NAME: &'static str = "TimeSpanFormat/FormatLiterals";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -344,7 +344,7 @@ for crate::System::Globalization::TimeSpanFormat_Pattern {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "System.Globalization";
-    const CLASS_NAME: &'static str = "Pattern";
+    const CLASS_NAME: &'static str = "TimeSpanFormat/Pattern";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

@@ -174,7 +174,7 @@ for crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_Ligh
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LightGroupSOToIndex";
+    const CLASS_NAME: &'static str = "CombineGroupIdToVector4FloatFxGroupEffectTarget/LightGroupSOToIndex";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty

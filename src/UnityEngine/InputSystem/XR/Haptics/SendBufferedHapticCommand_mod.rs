@@ -170,7 +170,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::SendBufferedHapticCommand__buf
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.XR.Haptics";
-    const CLASS_NAME: &'static str = "<buffer>e__FixedBuffer";
+    const CLASS_NAME: &'static str = "SendBufferedHapticCommand/<buffer>e__FixedBuffer";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
