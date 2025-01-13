@@ -1073,7 +1073,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Serialization";
-    const CLASS_NAME: &'static str = "EnumerableDictionaryWrapper`2";
+    const CLASS_NAME: &'static str = "DefaultContractResolver/EnumerableDictionaryWrapper`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1082,7 +1082,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Newtonsoft.Json.Serialization",
-                        "EnumerableDictionaryWrapper`2",
+                        "DefaultContractResolver/EnumerableDictionaryWrapper`2",
                     )
                     .unwrap()
                     .make_generic::<(TEnumeratorKey, TEnumeratorValue)>()

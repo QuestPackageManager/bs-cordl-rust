@@ -139,7 +139,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCal
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Multiplier";
-    const CLASS_NAME: &'static str = "WTauNafCallback";
+    const CLASS_NAME: &'static str = "WTauNafMultiplier/WTauNafCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

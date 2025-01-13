@@ -276,7 +276,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Ciph
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
-    const CLASS_NAME: &'static str = "Threefish1024Cipher";
+    const CLASS_NAME: &'static str = "ThreefishEngine/Threefish1024Cipher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -440,7 +440,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Ciphe
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
-    const CLASS_NAME: &'static str = "Threefish256Cipher";
+    const CLASS_NAME: &'static str = "ThreefishEngine/Threefish256Cipher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -556,7 +556,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Ciphe
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
-    const CLASS_NAME: &'static str = "Threefish512Cipher";
+    const CLASS_NAME: &'static str = "ThreefishEngine/Threefish512Cipher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -690,7 +690,7 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Engines";
-    const CLASS_NAME: &'static str = "ThreefishCipher";
+    const CLASS_NAME: &'static str = "ThreefishEngine/ThreefishCipher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

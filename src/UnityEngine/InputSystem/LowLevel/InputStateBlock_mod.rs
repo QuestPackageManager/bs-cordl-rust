@@ -104,8 +104,8 @@ for crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputStateBlock")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
-    pub const AutomaticOffset: u32 = 1089470718u32;
-    pub const InvalidOffset: u32 = 4026597119u32;
+    pub const AutomaticOffset: u32 = 4294967294u32;
+    pub const InvalidOffset: u32 = 4294967295u32;
     pub const kFormatBit: i32 = 1112101920i32;
     pub const kFormatByte: i32 = 1113150533i32;
     pub const kFormatDouble: i32 = 1145195552i32;

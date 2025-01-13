@@ -148,7 +148,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetBool";
+    const CLASS_NAME: &'static str = "IVRSettings/_GetBool";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -264,7 +264,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetFloat";
+    const CLASS_NAME: &'static str = "IVRSettings/_GetFloat";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -380,7 +380,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetInt32";
+    const CLASS_NAME: &'static str = "IVRSettings/_GetInt32";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -497,7 +497,7 @@ for crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSettingsErrorNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRSettings/_GetSettingsErrorNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -608,7 +608,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetString";
+    const CLASS_NAME: &'static str = "IVRSettings/_GetString";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -741,7 +741,7 @@ for crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_RemoveKeyInSection";
+    const CLASS_NAME: &'static str = "IVRSettings/_RemoveKeyInSection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -860,7 +860,7 @@ for crate::OVR::OpenVR::IVRSettings__RemoveSection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_RemoveSection";
+    const CLASS_NAME: &'static str = "IVRSettings/_RemoveSection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -973,7 +973,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetBool";
+    const CLASS_NAME: &'static str = "IVRSettings/_SetBool";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1092,7 +1092,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetFloat";
+    const CLASS_NAME: &'static str = "IVRSettings/_SetFloat";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1211,7 +1211,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetInt32";
+    const CLASS_NAME: &'static str = "IVRSettings/_SetInt32";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1330,7 +1330,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetString";
+    const CLASS_NAME: &'static str = "IVRSettings/_SetString";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1449,7 +1449,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Syn
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_Sync";
+    const CLASS_NAME: &'static str = "IVRSettings/_Sync";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

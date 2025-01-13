@@ -38,18 +38,18 @@ impl std::ops::DerefMut for crate::ENet::Library {
 }
 #[cfg(feature = "ENet+Library")]
 impl crate::ENet::Library {
-    pub const maxChannelCount: u32 = 4287627136u32;
-    pub const maxPacketSize: u32 = 194u32;
-    pub const maxPeers: u32 = 12779407u32;
-    pub const throttleAcceleration: u32 = 2291335682u32;
-    pub const throttleDeceleration: u32 = 545821442u32;
-    pub const throttleInterval: u32 = 2468382867u32;
-    pub const throttleScale: u32 = 2466382368u32;
-    pub const throttleThreshold: u32 = 33693736u32;
-    pub const timeoutLimit: u32 = 3230176032u32;
-    pub const timeoutMaximum: u32 = 812974272u32;
-    pub const timeoutMinimum: u32 = 12617875u32;
-    pub const version: u32 = 117703360u32;
+    pub const maxChannelCount: u32 = 255u32;
+    pub const maxPacketSize: u32 = 33554432u32;
+    pub const maxPeers: u32 = 4095u32;
+    pub const throttleAcceleration: u32 = 2u32;
+    pub const throttleDeceleration: u32 = 2u32;
+    pub const throttleInterval: u32 = 5000u32;
+    pub const throttleScale: u32 = 32u32;
+    pub const throttleThreshold: u32 = 40u32;
+    pub const timeoutLimit: u32 = 32u32;
+    pub const timeoutMaximum: u32 = 30000u32;
+    pub const timeoutMinimum: u32 = 5000u32;
+    pub const version: u32 = 132103u32;
     pub fn CRC64(
         buffers: crate::System::IntPtr,
         bufferCount: i32,

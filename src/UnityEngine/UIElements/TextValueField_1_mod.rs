@@ -421,7 +421,7 @@ for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TextValueInput";
+    const CLASS_NAME: &'static str = "TextValueField`1/TextValueInput";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -430,7 +430,7 @@ for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "TextValueInput",
+                        "TextValueField`1/TextValueInput",
                     )
                     .unwrap()
                     .make_generic::<(TValueType)>()

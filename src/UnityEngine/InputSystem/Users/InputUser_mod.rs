@@ -101,7 +101,7 @@ for crate::UnityEngine::InputSystem::Users::InputUser {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 impl crate::UnityEngine::InputSystem::Users::InputUser {
-    pub const InvalidId: u32 = 262656u32;
+    pub const InvalidId: u32 = 0u32;
     #[cfg(
         feature = "UnityEngine+InputSystem+Users+InputUser+CompareDevicesByUserAccount"
     )]

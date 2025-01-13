@@ -117,7 +117,7 @@ for crate::OVR::OpenVR::IVRResources__GetResourceFullPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetResourceFullPath";
+    const CLASS_NAME: &'static str = "IVRResources/_GetResourceFullPath";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -250,7 +250,7 @@ for crate::OVR::OpenVR::IVRResources__LoadSharedResource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_LoadSharedResource";
+    const CLASS_NAME: &'static str = "IVRResources/_LoadSharedResource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

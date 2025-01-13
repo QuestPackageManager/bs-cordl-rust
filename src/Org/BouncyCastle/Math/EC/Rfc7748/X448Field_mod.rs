@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Rfc7748::X448Fie
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc7748+X448Field")]
 impl crate::Org::BouncyCastle::Math::EC::Rfc7748::X448Field {
-    pub const M28: u32 = 4294967247u32;
+    pub const M28: u32 = 268435455u32;
     pub const Size: i32 = 16i32;
     pub fn Add(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,

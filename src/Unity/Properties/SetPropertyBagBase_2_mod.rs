@@ -182,7 +182,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TEle
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "SetElementProperty";
+    const CLASS_NAME: &'static str = "SetPropertyBagBase`2/SetElementProperty";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -191,7 +191,7 @@ for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TEle
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "SetElementProperty",
+                        "SetPropertyBagBase`2/SetElementProperty",
                     )
                     .unwrap()
                     .make_generic::<(TSet, TElement)>()

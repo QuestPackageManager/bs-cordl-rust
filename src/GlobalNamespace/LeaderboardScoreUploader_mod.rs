@@ -238,7 +238,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ScoreData";
+    const CLASS_NAME: &'static str = "LeaderboardScoreUploader/ScoreData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -562,7 +562,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ScoresToUploadData";
+    const CLASS_NAME: &'static str = "LeaderboardScoreUploader/ScoresToUploadData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -633,7 +633,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "UploadScoreCallback";
+    const CLASS_NAME: &'static str = "LeaderboardScoreUploader/UploadScoreCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

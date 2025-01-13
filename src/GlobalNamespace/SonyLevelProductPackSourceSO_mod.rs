@@ -157,7 +157,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelProductPackSource";
+    const CLASS_NAME: &'static str = "SonyLevelProductPackSourceSO/LevelProductPackSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -300,7 +300,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirection
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelProductRedirectionSource";
+    const CLASS_NAME: &'static str = "SonyLevelProductPackSourceSO/LevelProductRedirectionSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -416,7 +416,7 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelProductSource";
+    const CLASS_NAME: &'static str = "SonyLevelProductPackSourceSO/LevelProductSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

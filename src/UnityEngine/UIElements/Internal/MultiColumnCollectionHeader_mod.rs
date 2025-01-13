@@ -734,7 +734,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
-    const CLASS_NAME: &'static str = "ColumnData";
+    const CLASS_NAME: &'static str = "MultiColumnCollectionHeader/ColumnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1019,7 +1019,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.Internal";
-    const CLASS_NAME: &'static str = "ViewState";
+    const CLASS_NAME: &'static str = "MultiColumnCollectionHeader/ViewState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

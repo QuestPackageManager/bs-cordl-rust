@@ -3,18 +3,18 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputDeviceCharacteristics {
     #[default]
-    Camera = 268960770u32,
-    Controller = 2172682304u32,
-    EyeTracking = 2151686160u32,
-    HandTracking = 1075843080u32,
-    HeadMounted = 134480385u32,
-    HeldInHand = 537921540u32,
-    Left = 8519809u32,
-    None = 67240192u32,
-    Right = 8650882u32,
-    Simulated6DOF = 16777348u32,
-    TrackedDevice = 2155888672u32,
-    TrackingReference = 8487040u32,
+    Camera = 2u32,
+    Controller = 64u32,
+    EyeTracking = 16u32,
+    HandTracking = 8u32,
+    HeadMounted = 1u32,
+    HeldInHand = 4u32,
+    Left = 256u32,
+    None = 0u32,
+    Right = 512u32,
+    Simulated6DOF = 1024u32,
+    TrackedDevice = 32u32,
+    TrackingReference = 128u32,
 }
 #[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
 unsafe impl quest_hook::libil2cpp::Type

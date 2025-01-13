@@ -217,7 +217,7 @@ for crate::Zenject::InjectTypeInfo_InjectConstructorInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
-    const CLASS_NAME: &'static str = "InjectConstructorInfo";
+    const CLASS_NAME: &'static str = "InjectTypeInfo/InjectConstructorInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -301,7 +301,7 @@ for crate::Zenject::InjectTypeInfo_InjectMemberInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
-    const CLASS_NAME: &'static str = "InjectMemberInfo";
+    const CLASS_NAME: &'static str = "InjectTypeInfo/InjectMemberInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -382,7 +382,7 @@ for crate::Zenject::InjectTypeInfo_InjectMethodInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
-    const CLASS_NAME: &'static str = "InjectMethodInfo";
+    const CLASS_NAME: &'static str = "InjectTypeInfo/InjectMethodInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -78,7 +78,7 @@ for crate::System::Net::Http::Headers::Parser_DateTime {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "DateTime";
+    const CLASS_NAME: &'static str = "Parser/DateTime";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -138,7 +138,7 @@ for crate::System::Net::Http::Headers::Parser_EmailAddress {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "EmailAddress";
+    const CLASS_NAME: &'static str = "Parser/EmailAddress";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -200,7 +200,7 @@ for crate::System::Net::Http::Headers::Parser_Host {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "Host";
+    const CLASS_NAME: &'static str = "Parser/Host";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -262,7 +262,7 @@ for crate::System::Net::Http::Headers::Parser_Int {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "Int";
+    const CLASS_NAME: &'static str = "Parser/Int";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -322,7 +322,7 @@ for crate::System::Net::Http::Headers::Parser_Long {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "Long";
+    const CLASS_NAME: &'static str = "Parser/Long";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -382,7 +382,7 @@ for crate::System::Net::Http::Headers::Parser_MD5 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "MD5";
+    const CLASS_NAME: &'static str = "Parser/MD5";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -444,7 +444,7 @@ for crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "TimeSpanSeconds";
+    const CLASS_NAME: &'static str = "Parser/TimeSpanSeconds";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -504,7 +504,7 @@ for crate::System::Net::Http::Headers::Parser_Token {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "Token";
+    const CLASS_NAME: &'static str = "Parser/Token";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -570,7 +570,7 @@ for crate::System::Net::Http::Headers::Parser_Uri {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "Uri";
+    const CLASS_NAME: &'static str = "Parser/Uri";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -103,7 +103,7 @@ for crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "QuickPlaySongPacksOverride";
+    const CLASS_NAME: &'static str = "QuickPlaySetupData/QuickPlaySongPacksOverride";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -196,7 +196,7 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_Locali
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LocalizedCustomPack";
+    const CLASS_NAME: &'static str = "QuickPlaySetupData/QuickPlaySongPacksOverride/LocalizedCustomPack";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -269,7 +269,7 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_Locali
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LocalizedCustomPackName";
+    const CLASS_NAME: &'static str = "QuickPlaySetupData/QuickPlaySongPacksOverride/LocalizedCustomPackName";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -342,7 +342,7 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_Predef
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PredefinedPack";
+    const CLASS_NAME: &'static str = "QuickPlaySetupData/QuickPlaySongPacksOverride/PredefinedPack";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

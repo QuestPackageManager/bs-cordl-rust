@@ -954,7 +954,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "JoinMatchmakingPartyConfig";
+    const CLASS_NAME: &'static str = "NetworkPlayerModel`1/JoinMatchmakingPartyConfig";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -963,7 +963,7 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "",
-                        "JoinMatchmakingPartyConfig",
+                        "NetworkPlayerModel`1/JoinMatchmakingPartyConfig",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1088,14 +1088,17 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkPlayer<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NetworkPlayer";
+    const CLASS_NAME: &'static str = "NetworkPlayerModel`1/NetworkPlayer";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "NetworkPlayer")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "NetworkPlayerModel`1/NetworkPlayer",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -1565,14 +1568,17 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_NetworkServer<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NetworkServer";
+    const CLASS_NAME: &'static str = "NetworkPlayerModel`1/NetworkServer";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "NetworkServer")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "NetworkPlayerModel`1/NetworkServer",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -2083,14 +2089,17 @@ for crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "StartClientPartyConfig";
+    const CLASS_NAME: &'static str = "NetworkPlayerModel`1/StartClientPartyConfig";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "StartClientPartyConfig")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "NetworkPlayerModel`1/StartClientPartyConfig",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

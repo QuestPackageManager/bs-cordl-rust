@@ -548,7 +548,7 @@ for crate::System::Collections::SortedList_KeyList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "KeyList";
+    const CLASS_NAME: &'static str = "SortedList/KeyList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -828,7 +828,7 @@ for crate::System::Collections::SortedList_SortedListDebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "SortedListDebugView";
+    const CLASS_NAME: &'static str = "SortedList/SortedListDebugView";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -888,7 +888,7 @@ for crate::System::Collections::SortedList_SortedListEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "SortedListEnumerator";
+    const CLASS_NAME: &'static str = "SortedList/SortedListEnumerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1088,7 +1088,7 @@ for crate::System::Collections::SortedList_ValueList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "ValueList";
+    const CLASS_NAME: &'static str = "SortedList/ValueList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

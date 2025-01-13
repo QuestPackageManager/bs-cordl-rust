@@ -2057,7 +2057,7 @@ for crate::System::Threading::Tasks::Task_ContingentProperties {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
-    const CLASS_NAME: &'static str = "ContingentProperties";
+    const CLASS_NAME: &'static str = "Task/ContingentProperties";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2146,7 +2146,7 @@ for crate::System::Threading::Tasks::Task_SetOnInvokeMres {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
-    const CLASS_NAME: &'static str = "SetOnInvokeMres";
+    const CLASS_NAME: &'static str = "Task/SetOnInvokeMres";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -41,9 +41,9 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
-    pub const kClearFlagsMask: u32 = 4294967280u32;
-    pub const kDynamicStringFlag: u32 = 240u32;
-    pub const kUnicodeStringFlag: u32 = 240u32;
+    pub const kClearFlagsMask: u32 = 1073741823u32;
+    pub const kDynamicStringFlag: u32 = 1073741824u32;
+    pub const kUnicodeStringFlag: u32 = 2147483648u32;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
     )]
@@ -168,7 +168,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "BuiltinTypesSerializer";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/BuiltinTypesSerializer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -620,7 +620,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "ISerializationAdapter";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/ISerializationAdapter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -748,7 +748,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "ISerializationAdapter`1";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/ISerializationAdapter`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -757,7 +757,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializa
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.ResourceManagement.Util",
-                        "ISerializationAdapter`1",
+                        "BinaryStorageBuffer/ISerializationAdapter`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1009,7 +1009,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "Reader";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/Reader";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1406,7 +1406,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerial
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "TypeSerializer";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/TypeSerializer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1622,7 +1622,7 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "Writer";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/Writer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2270,7 +2270,7 @@ for crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chu
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
-    const CLASS_NAME: &'static str = "Chunk";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/Writer/Chunk";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

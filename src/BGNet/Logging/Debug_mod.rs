@@ -113,7 +113,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug_ILogger
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGNet.Logging";
-    const CLASS_NAME: &'static str = "ILogger";
+    const CLASS_NAME: &'static str = "Debug/ILogger";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -216,7 +216,7 @@ for crate::BGNet::Logging::Debug_LoggerLinkedList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGNet.Logging";
-    const CLASS_NAME: &'static str = "LoggerLinkedList";
+    const CLASS_NAME: &'static str = "Debug/LoggerLinkedList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

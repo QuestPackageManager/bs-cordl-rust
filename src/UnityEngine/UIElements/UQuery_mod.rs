@@ -72,7 +72,7 @@ for crate::UnityEngine::UIElements::UQuery_FirstQueryMatcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "FirstQueryMatcher";
+    const CLASS_NAME: &'static str = "UQuery/FirstQueryMatcher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -168,7 +168,7 @@ for crate::UnityEngine::UIElements::UQuery_IVisualPredicateWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "IVisualPredicateWrapper";
+    const CLASS_NAME: &'static str = "UQuery/IVisualPredicateWrapper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -237,7 +237,7 @@ for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "IsOfType`1";
+    const CLASS_NAME: &'static str = "UQuery/IsOfType`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -246,7 +246,7 @@ for crate::UnityEngine::UIElements::UQuery_IsOfType_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "IsOfType`1",
+                        "UQuery/IsOfType`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -369,7 +369,7 @@ for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "SingleQueryMatcher";
+    const CLASS_NAME: &'static str = "UQuery/SingleQueryMatcher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -505,7 +505,7 @@ for crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UQueryMatcher";
+    const CLASS_NAME: &'static str = "UQuery/UQueryMatcher";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

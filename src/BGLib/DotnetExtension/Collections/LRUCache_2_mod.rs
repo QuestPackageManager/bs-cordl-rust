@@ -327,7 +327,7 @@ for crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<TKey, TV
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BGLib.DotnetExtension.Collections";
-    const CLASS_NAME: &'static str = "CacheElement";
+    const CLASS_NAME: &'static str = "LRUCache`2/CacheElement";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -336,7 +336,7 @@ for crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<TKey, TV
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "BGLib.DotnetExtension.Collections",
-                        "CacheElement",
+                        "LRUCache`2/CacheElement",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()

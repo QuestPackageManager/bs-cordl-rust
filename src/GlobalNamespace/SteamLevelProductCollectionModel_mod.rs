@@ -207,7 +207,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelDepotData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelDepotData";
+    const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelDepotData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -287,7 +287,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductDat
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelPackProductData";
+    const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelPackProductData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -464,7 +464,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackRedirectio
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelPackRedirectionData";
+    const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelPackRedirectionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -586,7 +586,7 @@ for crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelProductData";
+    const CLASS_NAME: &'static str = "SteamLevelProductCollectionModel/LevelProductData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

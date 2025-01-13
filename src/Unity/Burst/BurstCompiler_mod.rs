@@ -420,7 +420,7 @@ for crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegat
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "IsBurstEnabledDelegate";
+    const CLASS_NAME: &'static str = "BurstCompiler/BurstCompilerHelper/IsBurstEnabledDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -527,7 +527,7 @@ for crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "BurstCompilerHelper";
+    const CLASS_NAME: &'static str = "BurstCompiler/BurstCompilerHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -604,7 +604,7 @@ for crate::Unity::Burst::BurstCompiler_CommandBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "CommandBuilder";
+    const CLASS_NAME: &'static str = "BurstCompiler/CommandBuilder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -745,7 +745,7 @@ for crate::Unity::Burst::BurstCompiler_FakeDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "FakeDelegate";
+    const CLASS_NAME: &'static str = "BurstCompiler/FakeDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -831,7 +831,7 @@ for crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst";
-    const CLASS_NAME: &'static str = "StaticTypeReinitAttribute";
+    const CLASS_NAME: &'static str = "BurstCompiler/StaticTypeReinitAttribute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

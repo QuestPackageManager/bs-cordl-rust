@@ -857,7 +857,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStream_ReadDe
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO";
-    const CLASS_NAME: &'static str = "ReadDelegate";
+    const CLASS_NAME: &'static str = "FileStream/ReadDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -968,7 +968,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::FileStream_WriteD
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO";
-    const CLASS_NAME: &'static str = "WriteDelegate";
+    const CLASS_NAME: &'static str = "FileStream/WriteDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

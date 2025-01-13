@@ -665,7 +665,7 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC";
-    const CLASS_NAME: &'static str = "Config";
+    const CLASS_NAME: &'static str = "ECCurve/Config";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -813,7 +813,7 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC";
-    const CLASS_NAME: &'static str = "DefaultLookupTable";
+    const CLASS_NAME: &'static str = "ECCurve/DefaultLookupTable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

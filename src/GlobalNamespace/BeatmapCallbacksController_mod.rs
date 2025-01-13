@@ -405,7 +405,7 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CallCallbacksBehavior";
+    const CLASS_NAME: &'static str = "BeatmapCallbacksController/CallCallbacksBehavior";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -535,7 +535,7 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWith
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CallCallbacksBehaviorWithLastState";
+    const CLASS_NAME: &'static str = "BeatmapCallbacksController/CallCallbacksBehaviorWithLastState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -656,7 +656,7 @@ for crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ICallCallbacksBehavior";
+    const CLASS_NAME: &'static str = "BeatmapCallbacksController/ICallCallbacksBehavior";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -752,7 +752,7 @@ for crate::GlobalNamespace::BeatmapCallbacksController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InitData";
+    const CLASS_NAME: &'static str = "BeatmapCallbacksController/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

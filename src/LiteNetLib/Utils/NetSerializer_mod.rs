@@ -369,7 +369,7 @@ for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "BoolSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/BoolSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -378,7 +378,7 @@ for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "BoolSerializer`1",
+                        "NetSerializer/BoolSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -529,7 +529,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "ByteSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/ByteSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -538,7 +538,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "ByteSerializer`1",
+                        "NetSerializer/ByteSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -692,7 +692,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "CharSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/CharSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -701,7 +701,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "CharSerializer`1",
+                        "NetSerializer/CharSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -831,7 +831,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "ClassInfo`1";
+    const CLASS_NAME: &'static str = "NetSerializer/ClassInfo`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -840,7 +840,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "ClassInfo`1",
+                        "NetSerializer/ClassInfo`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -975,7 +975,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "CustomType";
+    const CLASS_NAME: &'static str = "NetSerializer/CustomType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1063,7 +1063,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "CustomTypeClass`1";
+    const CLASS_NAME: &'static str = "NetSerializer/CustomTypeClass`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1072,7 +1072,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "CustomTypeClass`1",
+                        "NetSerializer/CustomTypeClass`1",
                     )
                     .unwrap()
                     .make_generic::<(TProperty)>()
@@ -1195,7 +1195,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "CustomTypeStatic`1";
+    const CLASS_NAME: &'static str = "NetSerializer/CustomTypeStatic`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1204,7 +1204,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "CustomTypeStatic`1",
+                        "NetSerializer/CustomTypeStatic`1",
                     )
                     .unwrap()
                     .make_generic::<(TProperty)>()
@@ -1337,7 +1337,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "CustomTypeStruct`1";
+    const CLASS_NAME: &'static str = "NetSerializer/CustomTypeStruct`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1346,7 +1346,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "CustomTypeStruct`1",
+                        "NetSerializer/CustomTypeStruct`1",
                     )
                     .unwrap()
                     .make_generic::<(TProperty)>()
@@ -1452,7 +1452,7 @@ for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "DoubleSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/DoubleSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1461,7 +1461,7 @@ for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "DoubleSerializer`1",
+                        "NetSerializer/DoubleSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1614,7 +1614,7 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "EnumByteSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/EnumByteSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1623,7 +1623,7 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "EnumByteSerializer`1",
+                        "NetSerializer/EnumByteSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1749,7 +1749,7 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "EnumIntSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/EnumIntSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1758,7 +1758,7 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "EnumIntSerializer`1",
+                        "NetSerializer/EnumIntSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1895,7 +1895,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "FastCallClass`2";
+    const CLASS_NAME: &'static str = "NetSerializer/FastCallClass`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1904,7 +1904,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "FastCallClass`2",
+                        "NetSerializer/FastCallClass`2",
                     )
                     .unwrap()
                     .make_generic::<(TClass, TProperty)>()
@@ -2095,7 +2095,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<TClass, TProp
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "FastCallSpecificAuto`2";
+    const CLASS_NAME: &'static str = "NetSerializer/FastCallSpecificAuto`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2104,7 +2104,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<TClass, TProp
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "FastCallSpecificAuto`2",
+                        "NetSerializer/FastCallSpecificAuto`2",
                     )
                     .unwrap()
                     .make_generic::<(TClass, TProperty)>()
@@ -2337,7 +2337,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "FastCallSpecific`2";
+    const CLASS_NAME: &'static str = "NetSerializer/FastCallSpecific`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2346,7 +2346,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "FastCallSpecific`2",
+                        "NetSerializer/FastCallSpecific`2",
                     )
                     .unwrap()
                     .make_generic::<(TClass, TProperty)>()
@@ -2530,7 +2530,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "FastCallStatic`2";
+    const CLASS_NAME: &'static str = "NetSerializer/FastCallStatic`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2539,7 +2539,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "FastCallStatic`2",
+                        "NetSerializer/FastCallStatic`2",
                     )
                     .unwrap()
                     .make_generic::<(TClass, TProperty)>()
@@ -2753,7 +2753,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "FastCallStruct`2";
+    const CLASS_NAME: &'static str = "NetSerializer/FastCallStruct`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2762,7 +2762,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "FastCallStruct`2",
+                        "NetSerializer/FastCallStruct`2",
                     )
                     .unwrap()
                     .make_generic::<(TClass, TProperty)>()
@@ -2939,7 +2939,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "FastCall`1";
+    const CLASS_NAME: &'static str = "NetSerializer/FastCall`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2948,7 +2948,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "FastCall`1",
+                        "NetSerializer/FastCall`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -3116,7 +3116,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "FloatSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/FloatSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3125,7 +3125,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "FloatSerializer`1",
+                        "NetSerializer/FloatSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -3279,7 +3279,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "IPEndPointSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/IPEndPointSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3288,7 +3288,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "IPEndPointSerializer`1",
+                        "NetSerializer/IPEndPointSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -3414,7 +3414,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "IntSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/IntSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3423,7 +3423,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "IntSerializer`1",
+                        "NetSerializer/IntSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -3574,7 +3574,7 @@ for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "LongSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/LongSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3583,7 +3583,7 @@ for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "LongSerializer`1",
+                        "NetSerializer/LongSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -3734,7 +3734,7 @@ for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "SByteSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/SByteSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3743,7 +3743,7 @@ for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "SByteSerializer`1",
+                        "NetSerializer/SByteSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -3894,7 +3894,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "ShortSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/ShortSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3903,7 +3903,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "ShortSerializer`1",
+                        "NetSerializer/ShortSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -4058,7 +4058,7 @@ for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "StringSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/StringSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4067,7 +4067,7 @@ for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "StringSerializer`1",
+                        "NetSerializer/StringSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -4226,7 +4226,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "UIntSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/UIntSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4235,7 +4235,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "UIntSerializer`1",
+                        "NetSerializer/UIntSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -4386,7 +4386,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "ULongSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/ULongSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4395,7 +4395,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "ULongSerializer`1",
+                        "NetSerializer/ULongSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -4546,7 +4546,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib.Utils";
-    const CLASS_NAME: &'static str = "UShortSerializer`1";
+    const CLASS_NAME: &'static str = "NetSerializer/UShortSerializer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4555,7 +4555,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "LiteNetLib.Utils",
-                        "UShortSerializer`1",
+                        "NetSerializer/UShortSerializer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

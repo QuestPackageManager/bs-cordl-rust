@@ -223,7 +223,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Call
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "Callback";
+    const CLASS_NAME: &'static str = "TimerThread/Callback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -310,7 +310,7 @@ for crate::System::Net::TimerThread_InfiniteTimer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "InfiniteTimer";
+    const CLASS_NAME: &'static str = "TimerThread/InfiniteTimer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -393,7 +393,7 @@ for crate::System::Net::TimerThread_InfiniteTimerQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "InfiniteTimerQueue";
+    const CLASS_NAME: &'static str = "TimerThread/InfiniteTimerQueue";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -477,7 +477,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Queu
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "Queue";
+    const CLASS_NAME: &'static str = "TimerThread/Queue";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -571,7 +571,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Time
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "Timer";
+    const CLASS_NAME: &'static str = "TimerThread/Timer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -697,7 +697,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Time
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "TimerNode";
+    const CLASS_NAME: &'static str = "TimerThread/TimerNode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -863,7 +863,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::TimerThread_Time
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "TimerQueue";
+    const CLASS_NAME: &'static str = "TimerThread/TimerQueue";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

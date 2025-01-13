@@ -318,7 +318,7 @@ for crate::OVR::OpenVR::IVRCompositor__CanRenderScene {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CanRenderScene";
+    const CLASS_NAME: &'static str = "IVRCompositor/_CanRenderScene";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -423,7 +423,7 @@ for crate::OVR::OpenVR::IVRCompositor__ClearLastSubmittedFrame {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ClearLastSubmittedFrame";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ClearLastSubmittedFrame";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -532,7 +532,7 @@ for crate::OVR::OpenVR::IVRCompositor__ClearSkyboxOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ClearSkyboxOverride";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ClearSkyboxOverride";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -641,7 +641,7 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorBringToFront {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CompositorBringToFront";
+    const CLASS_NAME: &'static str = "IVRCompositor/_CompositorBringToFront";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -750,7 +750,7 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorDumpImages {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CompositorDumpImages";
+    const CLASS_NAME: &'static str = "IVRCompositor/_CompositorDumpImages";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -859,7 +859,7 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorGoToBack {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CompositorGoToBack";
+    const CLASS_NAME: &'static str = "IVRCompositor/_CompositorGoToBack";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -968,7 +968,7 @@ for crate::OVR::OpenVR::IVRCompositor__CompositorQuit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CompositorQuit";
+    const CLASS_NAME: &'static str = "IVRCompositor/_CompositorQuit";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1076,7 +1076,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__F
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_FadeGrid";
+    const CLASS_NAME: &'static str = "IVRCompositor/_FadeGrid";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1188,7 +1188,7 @@ for crate::OVR::OpenVR::IVRCompositor__FadeToColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_FadeToColor";
+    const CLASS_NAME: &'static str = "IVRCompositor/_FadeToColor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1312,7 +1312,7 @@ for crate::OVR::OpenVR::IVRCompositor__ForceInterleavedReprojectionOn {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ForceInterleavedReprojectionOn";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ForceInterleavedReprojectionOn";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1425,7 +1425,7 @@ for crate::OVR::OpenVR::IVRCompositor__ForceReconnectProcess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ForceReconnectProcess";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ForceReconnectProcess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1534,7 +1534,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetCumulativeStats {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCumulativeStats";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetCumulativeStats";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1654,7 +1654,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentFadeColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCurrentFadeColor";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetCurrentFadeColor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1765,7 +1765,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentGridAlpha {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCurrentGridAlpha";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetCurrentGridAlpha";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1870,7 +1870,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetCurrentSceneFocusProcess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCurrentSceneFocusProcess";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetCurrentSceneFocusProcess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1976,7 +1976,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTimeRemaining {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetFrameTimeRemaining";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetFrameTimeRemaining";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2081,7 +2081,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTiming {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetFrameTiming";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetFrameTiming";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2199,7 +2199,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetFrameTimings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetFrameTimings";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetFrameTimings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2317,7 +2317,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastFrameRenderer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetLastFrameRenderer";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetLastFrameRenderer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2422,7 +2422,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastPoseForTrackedDeviceIndex {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetLastPoseForTrackedDeviceIndex";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetLastPoseForTrackedDeviceIndex";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2556,7 +2556,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetLastPoses {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetLastPoses";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetLastPoses";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2715,7 +2715,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureD3D11 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetMirrorTextureD3D11";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetMirrorTextureD3D11";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2847,7 +2847,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetMirrorTextureGL {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetMirrorTextureGL";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetMirrorTextureGL";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2966,7 +2966,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetTrackingSpace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetTrackingSpace";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetTrackingSpace";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3075,7 +3075,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanDeviceExtensionsRequired {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetVulkanDeviceExtensionsRequired";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetVulkanDeviceExtensionsRequired";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3194,7 +3194,7 @@ for crate::OVR::OpenVR::IVRCompositor__GetVulkanInstanceExtensionsRequired {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetVulkanInstanceExtensionsRequired";
+    const CLASS_NAME: &'static str = "IVRCompositor/_GetVulkanInstanceExtensionsRequired";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3308,7 +3308,7 @@ for crate::OVR::OpenVR::IVRCompositor__HideMirrorWindow {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_HideMirrorWindow";
+    const CLASS_NAME: &'static str = "IVRCompositor/_HideMirrorWindow";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3417,7 +3417,7 @@ for crate::OVR::OpenVR::IVRCompositor__IsFullscreen {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsFullscreen";
+    const CLASS_NAME: &'static str = "IVRCompositor/_IsFullscreen";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3522,7 +3522,7 @@ for crate::OVR::OpenVR::IVRCompositor__IsMirrorWindowVisible {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsMirrorWindowVisible";
+    const CLASS_NAME: &'static str = "IVRCompositor/_IsMirrorWindowVisible";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3627,7 +3627,7 @@ for crate::OVR::OpenVR::IVRCompositor__LockGLSharedTextureForAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_LockGLSharedTextureForAccess";
+    const CLASS_NAME: &'static str = "IVRCompositor/_LockGLSharedTextureForAccess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3740,7 +3740,7 @@ for crate::OVR::OpenVR::IVRCompositor__PostPresentHandoff {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_PostPresentHandoff";
+    const CLASS_NAME: &'static str = "IVRCompositor/_PostPresentHandoff";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3849,7 +3849,7 @@ for crate::OVR::OpenVR::IVRCompositor__ReleaseMirrorTextureD3D11 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ReleaseMirrorTextureD3D11";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ReleaseMirrorTextureD3D11";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3961,7 +3961,7 @@ for crate::OVR::OpenVR::IVRCompositor__ReleaseSharedGLTexture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ReleaseSharedGLTexture";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ReleaseSharedGLTexture";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4076,7 +4076,7 @@ for crate::OVR::OpenVR::IVRCompositor__SetExplicitTimingMode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetExplicitTimingMode";
+    const CLASS_NAME: &'static str = "IVRCompositor/_SetExplicitTimingMode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4187,7 +4187,7 @@ for crate::OVR::OpenVR::IVRCompositor__SetSkyboxOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetSkyboxOverride";
+    const CLASS_NAME: &'static str = "IVRCompositor/_SetSkyboxOverride";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4308,7 +4308,7 @@ for crate::OVR::OpenVR::IVRCompositor__SetTrackingSpace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetTrackingSpace";
+    const CLASS_NAME: &'static str = "IVRCompositor/_SetTrackingSpace";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4419,7 +4419,7 @@ for crate::OVR::OpenVR::IVRCompositor__ShouldAppRenderWithLowResources {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShouldAppRenderWithLowResources";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ShouldAppRenderWithLowResources";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4526,7 +4526,7 @@ for crate::OVR::OpenVR::IVRCompositor__ShowMirrorWindow {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowMirrorWindow";
+    const CLASS_NAME: &'static str = "IVRCompositor/_ShowMirrorWindow";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4634,7 +4634,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRCompositor__S
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_Submit";
+    const CLASS_NAME: &'static str = "IVRCompositor/_Submit";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4755,7 +4755,7 @@ for crate::OVR::OpenVR::IVRCompositor__SubmitExplicitTimingData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SubmitExplicitTimingData";
+    const CLASS_NAME: &'static str = "IVRCompositor/_SubmitExplicitTimingData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4864,7 +4864,7 @@ for crate::OVR::OpenVR::IVRCompositor__SuspendRendering {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SuspendRendering";
+    const CLASS_NAME: &'static str = "IVRCompositor/_SuspendRendering";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4975,7 +4975,7 @@ for crate::OVR::OpenVR::IVRCompositor__UnlockGLSharedTextureForAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_UnlockGLSharedTextureForAccess";
+    const CLASS_NAME: &'static str = "IVRCompositor/_UnlockGLSharedTextureForAccess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5088,7 +5088,7 @@ for crate::OVR::OpenVR::IVRCompositor__WaitGetPoses {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_WaitGetPoses";
+    const CLASS_NAME: &'static str = "IVRCompositor/_WaitGetPoses";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

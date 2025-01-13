@@ -15,7 +15,7 @@ for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
-    const CLASS_NAME: &'static str = "CastInstructionT`1";
+    const CLASS_NAME: &'static str = "CastInstruction/CastInstructionT`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -24,7 +24,7 @@ for crate::GlobalNamespace::CastInstruction_CastInstructionT_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Linq.Expressions.Interpreter",
-                        "CastInstructionT`1",
+                        "CastInstruction/CastInstructionT`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

@@ -265,7 +265,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoneVisualization";
+    const CLASS_NAME: &'static str = "OVRSkeletonRenderer/BoneVisualization";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -381,7 +381,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CapsuleVisualization";
+    const CLASS_NAME: &'static str = "OVRSkeletonRenderer/CapsuleVisualization";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -582,7 +582,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_IOVRSkeletonRendererDataProvider
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IOVRSkeletonRendererDataProvider";
+    const CLASS_NAME: &'static str = "OVRSkeletonRenderer/IOVRSkeletonRendererDataProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

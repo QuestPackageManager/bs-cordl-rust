@@ -1123,7 +1123,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ActionEvent";
+    const CLASS_NAME: &'static str = "PlayerInput/ActionEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1264,7 +1264,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ControlsChangedEvent";
+    const CLASS_NAME: &'static str = "PlayerInput/ControlsChangedEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1339,7 +1339,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceLostEvent";
+    const CLASS_NAME: &'static str = "PlayerInput/DeviceLostEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1413,7 +1413,7 @@ for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DeviceRegainedEvent";
+    const CLASS_NAME: &'static str = "PlayerInput/DeviceRegainedEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -101,7 +101,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::ContactP
 }
 #[cfg(feature = "UnityEngine+ContactPair")]
 impl crate::UnityEngine::ContactPair {
-    pub const c_InvalidFaceIndex: u32 = 33554943u32;
+    pub const c_InvalidFaceIndex: u32 = 4294967295u32;
     pub fn CopyToNativeArray(
         &mut self,
         buffer: crate::Unity::Collections::NativeArray_1<

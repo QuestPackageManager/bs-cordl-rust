@@ -500,7 +500,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorScheme {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorScheme";
+    const CLASS_NAME: &'static str = "PlayerSaveData/ColorScheme";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -620,7 +620,7 @@ for crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorSchemesSettings";
+    const CLASS_NAME: &'static str = "PlayerSaveData/ColorSchemesSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -745,7 +745,7 @@ for crate::GlobalNamespace::PlayerSaveData_GameplayModifiers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GameplayModifiers";
+    const CLASS_NAME: &'static str = "PlayerSaveData/GameplayModifiers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -821,7 +821,7 @@ for crate::GlobalNamespace::PlayerSaveData_GuestPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GuestPlayer";
+    const CLASS_NAME: &'static str = "PlayerSaveData/GuestPlayer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -959,7 +959,7 @@ for crate::GlobalNamespace::PlayerSaveData_LocalPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LocalPlayer";
+    const CLASS_NAME: &'static str = "PlayerSaveData/LocalPlayer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1039,7 +1039,7 @@ for crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MultiplayerModeSettings";
+    const CLASS_NAME: &'static str = "PlayerSaveData/MultiplayerModeSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1116,7 +1116,7 @@ for crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OverrideEnvironmentSettings";
+    const CLASS_NAME: &'static str = "PlayerSaveData/OverrideEnvironmentSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1192,7 +1192,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAgreementsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerAgreementsData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerAgreementsData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1273,7 +1273,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerAllOverallStatsData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerAllOverallStatsData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1413,7 +1413,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerLevelStatsData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerLevelStatsData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1484,7 +1484,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerMissionStatsData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerMissionStatsData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1565,7 +1565,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerOverallStatsData";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerOverallStatsData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1820,7 +1820,7 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerSpecificSettings";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PlayerSpecificSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1902,7 +1902,7 @@ for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PracticeSettings";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PracticeSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -1286,7 +1286,7 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "AttributeFilterCacheItem";
+    const CLASS_NAME: &'static str = "TypeDescriptor/AttributeFilterCacheItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1394,7 +1394,7 @@ for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "FilterCacheItem";
+    const CLASS_NAME: &'static str = "TypeDescriptor/FilterCacheItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1489,7 +1489,7 @@ for crate::System::ComponentModel::TypeDescriptor_IUnimplemented {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "IUnimplemented";
+    const CLASS_NAME: &'static str = "TypeDescriptor/IUnimplemented";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1547,7 +1547,7 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "MemberDescriptorComparer";
+    const CLASS_NAME: &'static str = "TypeDescriptor/MemberDescriptorComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1649,7 +1649,7 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "MergedTypeDescriptor";
+    const CLASS_NAME: &'static str = "TypeDescriptor/MergedTypeDescriptor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1956,7 +1956,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "TypeDescriptionNode";
+    const CLASS_NAME: &'static str = "TypeDescriptor/TypeDescriptionNode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2147,7 +2147,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "TypeDescriptorComObject";
+    const CLASS_NAME: &'static str = "TypeDescriptor/TypeDescriptorComObject";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2200,7 +2200,7 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "TypeDescriptorInterface";
+    const CLASS_NAME: &'static str = "TypeDescriptor/TypeDescriptorInterface";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

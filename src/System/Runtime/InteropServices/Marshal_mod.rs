@@ -606,7 +606,7 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.InteropServices";
-    const CLASS_NAME: &'static str = "MarshalerInstanceKeyComparer";
+    const CLASS_NAME: &'static str = "Marshal/MarshalerInstanceKeyComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -747,7 +747,7 @@ for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.InteropServices";
-    const CLASS_NAME: &'static str = "SecureStringAllocator";
+    const CLASS_NAME: &'static str = "Marshal/SecureStringAllocator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

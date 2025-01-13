@@ -335,7 +335,7 @@ for crate::System::Collections::Specialized::ListDictionary_DictionaryNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Specialized";
-    const CLASS_NAME: &'static str = "DictionaryNode";
+    const CLASS_NAME: &'static str = "ListDictionary/DictionaryNode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -414,7 +414,7 @@ for crate::System::Collections::Specialized::ListDictionary_NodeEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Specialized";
-    const CLASS_NAME: &'static str = "NodeEnumerator";
+    const CLASS_NAME: &'static str = "ListDictionary/NodeEnumerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -590,7 +590,7 @@ for crate::System::Collections::Specialized::ListDictionary_NodeKeyValueCollecti
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Specialized";
-    const CLASS_NAME: &'static str = "NodeKeyValueCollection";
+    const CLASS_NAME: &'static str = "ListDictionary/NodeKeyValueCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -773,7 +773,7 @@ for crate::System::Collections::Specialized::NodeKeyValueCollection_ListDictiona
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Specialized";
-    const CLASS_NAME: &'static str = "NodeKeyValueEnumerator";
+    const CLASS_NAME: &'static str = "ListDictionary/NodeKeyValueCollection/NodeKeyValueEnumerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

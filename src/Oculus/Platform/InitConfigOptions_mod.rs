@@ -3,7 +3,7 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InitConfigOptions {
     #[default]
-    DisableP2pNetworking = 3730693852u32,
+    DisableP2pNetworking = 484335070u32,
 }
 #[cfg(feature = "Oculus+Platform+InitConfigOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::InitConfigOptions {

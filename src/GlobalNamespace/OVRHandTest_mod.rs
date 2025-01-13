@@ -10,7 +10,7 @@ for crate::GlobalNamespace::BoolMonitor_OVRHandTest_BoolGenerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoolGenerator";
+    const CLASS_NAME: &'static str = "OVRHandTest/BoolMonitor/BoolGenerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -231,7 +231,7 @@ for crate::GlobalNamespace::OVRHandTest_BoolMonitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoolMonitor";
+    const CLASS_NAME: &'static str = "OVRHandTest/BoolMonitor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

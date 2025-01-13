@@ -147,7 +147,7 @@ for crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_AreBoundsVisible";
+    const CLASS_NAME: &'static str = "IVRChaperone/_AreBoundsVisible";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -252,7 +252,7 @@ for crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ForceBoundsVisible";
+    const CLASS_NAME: &'static str = "IVRChaperone/_ForceBoundsVisible";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -363,7 +363,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetBoundsColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetBoundsColor";
+    const CLASS_NAME: &'static str = "IVRChaperone/_GetBoundsColor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -512,7 +512,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetCalibrationState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCalibrationState";
+    const CLASS_NAME: &'static str = "IVRChaperone/_GetCalibrationState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -621,7 +621,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetPlayAreaRect";
+    const CLASS_NAME: &'static str = "IVRChaperone/_GetPlayAreaRect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -731,7 +731,7 @@ for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetPlayAreaSize";
+    const CLASS_NAME: &'static str = "IVRChaperone/_GetPlayAreaSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -845,7 +845,7 @@ for crate::OVR::OpenVR::IVRChaperone__ReloadInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ReloadInfo";
+    const CLASS_NAME: &'static str = "IVRChaperone/_ReloadInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -953,7 +953,7 @@ for crate::OVR::OpenVR::IVRChaperone__SetSceneColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetSceneColor";
+    const CLASS_NAME: &'static str = "IVRChaperone/_SetSceneColor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

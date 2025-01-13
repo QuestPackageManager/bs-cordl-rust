@@ -307,7 +307,7 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "AreaNode";
+    const CLASS_NAME: &'static str = "UIRAtlasAllocator/AreaNode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -426,7 +426,7 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "Row";
+    const CLASS_NAME: &'static str = "UIRAtlasAllocator/Row";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

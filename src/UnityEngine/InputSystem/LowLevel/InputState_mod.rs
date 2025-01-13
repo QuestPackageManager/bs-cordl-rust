@@ -266,7 +266,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDele
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "StateChangeMonitorDelegate";
+    const CLASS_NAME: &'static str = "InputState/StateChangeMonitorDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

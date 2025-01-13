@@ -399,7 +399,7 @@ for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
-    const CLASS_NAME: &'static str = "ValueTaskSourceAsTask";
+    const CLASS_NAME: &'static str = "ValueTask`1/ValueTaskSourceAsTask";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -408,7 +408,7 @@ for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading.Tasks",
-                        "ValueTaskSourceAsTask",
+                        "ValueTask`1/ValueTaskSourceAsTask",
                     )
                     .unwrap()
                     .make_generic::<(TResult)>()

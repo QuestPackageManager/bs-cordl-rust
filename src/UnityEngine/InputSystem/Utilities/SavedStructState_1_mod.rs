@@ -181,7 +181,7 @@ for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "TypedRestore";
+    const CLASS_NAME: &'static str = "SavedStructState`1/TypedRestore";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -190,7 +190,7 @@ for crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.Utilities",
-                        "TypedRestore",
+                        "SavedStructState`1/TypedRestore",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

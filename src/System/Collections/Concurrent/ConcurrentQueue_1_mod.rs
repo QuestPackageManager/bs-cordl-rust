@@ -541,7 +541,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Concurrent";
-    const CLASS_NAME: &'static str = "Segment";
+    const CLASS_NAME: &'static str = "ConcurrentQueue`1/Segment";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -550,7 +550,7 @@ for crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Concurrent",
-                        "Segment",
+                        "ConcurrentQueue`1/Segment",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

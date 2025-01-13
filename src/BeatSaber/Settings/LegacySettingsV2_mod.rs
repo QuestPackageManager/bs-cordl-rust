@@ -131,7 +131,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "AudioSettings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/AudioSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -294,7 +294,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_ControllerSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "ControllerSettings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/ControllerSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -370,7 +370,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_CustomServerSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "CustomServerSettings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/CustomServerSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -444,7 +444,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "DebugSettings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/DebugSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -616,7 +616,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "GraphicSettings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/GraphicSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -800,7 +800,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "MainSettings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/MainSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1077,7 +1077,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "PerformancePreset";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/PerformancePreset";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1249,7 +1249,7 @@ for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.Settings";
-    const CLASS_NAME: &'static str = "SmoothCameraSettings";
+    const CLASS_NAME: &'static str = "LegacySettingsV2/SmoothCameraSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

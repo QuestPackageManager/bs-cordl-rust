@@ -257,7 +257,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
-    const CLASS_NAME: &'static str = "SceneOp";
+    const CLASS_NAME: &'static str = "SceneProvider/SceneOp";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -561,7 +561,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.ResourceProviders";
-    const CLASS_NAME: &'static str = "UnloadSceneOp";
+    const CLASS_NAME: &'static str = "SceneProvider/UnloadSceneOp";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

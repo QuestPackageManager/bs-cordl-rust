@@ -145,14 +145,17 @@ for crate::HMUI::UIItemsList_1_DataCallback<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "DataCallback";
+    const CLASS_NAME: &'static str = "UIItemsList`1/DataCallback";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("HMUI", "DataCallback")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "HMUI",
+                        "UIItemsList`1/DataCallback",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

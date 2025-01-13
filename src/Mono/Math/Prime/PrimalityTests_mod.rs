@@ -54,6 +54,22 @@ impl crate::Mono::Math::Prime::PrimalityTests {
             .invoke("RabinMillerTest", (n, confidence))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SmallPrimeSppTest(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        confidence: crate::Mono::Math::Prime::ConfidenceFactor,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SmallPrimeSppTest", (bi, confidence))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Test(
+        n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        confidence: crate::Mono::Math::Prime::ConfidenceFactor,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Test", (n, confidence))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Mono+Math+Prime+PrimalityTests")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::Prime::PrimalityTests {

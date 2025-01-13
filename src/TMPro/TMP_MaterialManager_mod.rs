@@ -223,7 +223,7 @@ for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "FallbackMaterial";
+    const CLASS_NAME: &'static str = "TMP_MaterialManager/FallbackMaterial";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -296,7 +296,7 @@ for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "MaskingMaterial";
+    const CLASS_NAME: &'static str = "TMP_MaterialManager/MaskingMaterial";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -153,7 +153,7 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "Take";
+    const CLASS_NAME: &'static str = "TakeNObservable`1/Take";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -162,7 +162,7 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.Utilities",
-                        "Take",
+                        "TakeNObservable`1/Take",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()

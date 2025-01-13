@@ -169,7 +169,7 @@ for crate::System::DelegateSerializationHolder_DelegateEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System";
-    const CLASS_NAME: &'static str = "DelegateEntry";
+    const CLASS_NAME: &'static str = "DelegateSerializationHolder/DelegateEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

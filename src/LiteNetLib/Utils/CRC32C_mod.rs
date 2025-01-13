@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::LiteNetLib::Utils::CRC32C {
 #[cfg(feature = "LiteNetLib+Utils+CRC32C")]
 impl crate::LiteNetLib::Utils::CRC32C {
     pub const ChecksumSize: i32 = 4i32;
-    pub const Poly: u32 = 4131092720u32;
+    pub const Poly: u32 = 2197175160u32;
     pub fn Compute(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,

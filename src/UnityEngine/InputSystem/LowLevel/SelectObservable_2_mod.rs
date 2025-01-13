@@ -195,7 +195,7 @@ for crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2_Select<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.LowLevel";
-    const CLASS_NAME: &'static str = "Select";
+    const CLASS_NAME: &'static str = "SelectObservable`2/Select";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -204,7 +204,7 @@ for crate::UnityEngine::InputSystem::LowLevel::SelectObservable_2_Select<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.LowLevel",
-                        "Select",
+                        "SelectObservable`2/Select",
                     )
                     .unwrap()
                     .make_generic::<(TSource, TResult)>()

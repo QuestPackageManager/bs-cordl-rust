@@ -331,7 +331,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::AnimatedSwitchView_Colo
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "ColorBlock";
+    const CLASS_NAME: &'static str = "AnimatedSwitchView/ColorBlock";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -399,7 +399,7 @@ for crate::HMUI::AnimatedSwitchView_GetColorDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "GetColorDelegate";
+    const CLASS_NAME: &'static str = "AnimatedSwitchView/GetColorDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

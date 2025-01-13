@@ -157,7 +157,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BasicBeatmapEvent";
+    const CLASS_NAME: &'static str = "DefaultEnvironmentEvents/BasicBeatmapEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -255,7 +255,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LightGroupDistribution";
+    const CLASS_NAME: &'static str = "DefaultEnvironmentEvents/LightGroupDistribution";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -398,7 +398,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LightGroupEvent";
+    const CLASS_NAME: &'static str = "DefaultEnvironmentEvents/LightGroupEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -734,7 +734,7 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LightGroupFiltering";
+    const CLASS_NAME: &'static str = "DefaultEnvironmentEvents/LightGroupFiltering";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

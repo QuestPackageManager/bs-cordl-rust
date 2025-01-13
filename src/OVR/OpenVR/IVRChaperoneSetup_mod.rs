@@ -218,7 +218,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__CommitWorkingCopy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CommitWorkingCopy";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_CommitWorkingCopy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -327,7 +327,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ExportLiveToBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ExportLiveToBuffer";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_ExportLiveToBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -441,7 +441,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetLiveCollisionBoundsInfo";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetLiveCollisionBoundsInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -565,7 +565,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveCollisionBoundsTagsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetLiveCollisionBoundsTagsInfo";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetLiveCollisionBoundsTagsInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -685,7 +685,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLivePhysicalBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetLivePhysicalBoundsInfo";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetLivePhysicalBoundsInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -809,7 +809,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetLiveSeatedZeroPoseToRawTrackingPos
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetLiveSeatedZeroPoseToRawTrackingPose";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetLiveSeatedZeroPoseToRawTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -932,7 +932,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingCollisionBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetWorkingCollisionBoundsInfo";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetWorkingCollisionBoundsInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1056,7 +1056,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaRect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetWorkingPlayAreaRect";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetWorkingPlayAreaRect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1167,7 +1167,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingPlayAreaSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetWorkingPlayAreaSize";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetWorkingPlayAreaSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1286,7 +1286,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingSeatedZeroPoseToRawTracking
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetWorkingSeatedZeroPoseToRawTrackingPose";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetWorkingSeatedZeroPoseToRawTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1421,7 +1421,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__GetWorkingStandingZeroPoseToRawTracki
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetWorkingStandingZeroPoseToRawTrackingPose";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_GetWorkingStandingZeroPoseToRawTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1552,7 +1552,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ImportFromBufferToWorking {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ImportFromBufferToWorking";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_ImportFromBufferToWorking";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1666,7 +1666,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__ReloadFromDisk {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ReloadFromDisk";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_ReloadFromDisk";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1777,7 +1777,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__RevertWorkingCopy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_RevertWorkingCopy";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_RevertWorkingCopy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1886,7 +1886,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetWorkingCollisionBoundsInfo";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_SetWorkingCollisionBoundsInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2009,7 +2009,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingCollisionBoundsTagsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetWorkingCollisionBoundsTagsInfo";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_SetWorkingCollisionBoundsTagsInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2128,7 +2128,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPhysicalBoundsInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetWorkingPhysicalBoundsInfo";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_SetWorkingPhysicalBoundsInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2250,7 +2250,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingPlayAreaSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetWorkingPlayAreaSize";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_SetWorkingPlayAreaSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2368,7 +2368,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingSeatedZeroPoseToRawTracking
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetWorkingSeatedZeroPoseToRawTrackingPose";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_SetWorkingSeatedZeroPoseToRawTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2503,7 +2503,7 @@ for crate::OVR::OpenVR::IVRChaperoneSetup__SetWorkingStandingZeroPoseToRawTracki
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetWorkingStandingZeroPoseToRawTrackingPose";
+    const CLASS_NAME: &'static str = "IVRChaperoneSetup/_SetWorkingStandingZeroPoseToRawTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -161,7 +161,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValueP
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PropertyNameColorValuePair";
+    const CLASS_NAME: &'static str = "MaterialPropertyValuesSetter/PropertyNameColorValuePair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -233,7 +233,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValueP
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PropertyNameFloatValuePair";
+    const CLASS_NAME: &'static str = "MaterialPropertyValuesSetter/PropertyNameFloatValuePair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -305,7 +305,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePai
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PropertyNameIntValuePair";
+    const CLASS_NAME: &'static str = "MaterialPropertyValuesSetter/PropertyNameIntValuePair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -377,7 +377,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValue
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PropertyNameVectorValuePair";
+    const CLASS_NAME: &'static str = "MaterialPropertyValuesSetter/PropertyNameVectorValuePair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -450,7 +450,7 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PropertyValuePairBase";
+    const CLASS_NAME: &'static str = "MaterialPropertyValuesSetter/PropertyValuePairBase";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

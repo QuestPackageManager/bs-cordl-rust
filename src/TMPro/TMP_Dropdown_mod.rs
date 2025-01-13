@@ -766,7 +766,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_DropdownE
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "DropdownEvent";
+    const CLASS_NAME: &'static str = "TMP_Dropdown/DropdownEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -837,7 +837,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_DropdownI
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "DropdownItem";
+    const CLASS_NAME: &'static str = "TMP_Dropdown/DropdownItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1066,7 +1066,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_OptionDat
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "OptionData";
+    const CLASS_NAME: &'static str = "TMP_Dropdown/OptionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1247,7 +1247,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_OptionDat
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "OptionDataList";
+    const CLASS_NAME: &'static str = "TMP_Dropdown/OptionDataList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

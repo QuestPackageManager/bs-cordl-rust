@@ -334,7 +334,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "DefaultComparer`1";
+    const CLASS_NAME: &'static str = "LowLevelDictionary`2/DefaultComparer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -343,7 +343,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "DefaultComparer`1",
+                        "LowLevelDictionary`2/DefaultComparer`1",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue, T)>()
@@ -542,7 +542,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Entry";
+    const CLASS_NAME: &'static str = "LowLevelDictionary`2/Entry";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -551,7 +551,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Entry",
+                        "LowLevelDictionary`2/Entry",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()

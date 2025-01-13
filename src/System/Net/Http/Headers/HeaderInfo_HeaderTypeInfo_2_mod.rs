@@ -21,7 +21,7 @@ for crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Http.Headers";
-    const CLASS_NAME: &'static str = "HeaderTypeInfo`2";
+    const CLASS_NAME: &'static str = "HeaderInfo/HeaderTypeInfo`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Net.Http.Headers",
-                        "HeaderTypeInfo`2",
+                        "HeaderInfo/HeaderTypeInfo`2",
                     )
                     .unwrap()
                     .make_generic::<(T, U)>()

@@ -104,8 +104,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
     pub const InvalidEventId: i32 = 0i32;
     pub const kAlignment: i32 = 4i32;
     pub const kBaseEventSize: i32 = 20i32;
-    pub const kHandledMask: u32 = 240u32;
-    pub const kIdMask: u32 = 4294967280u32;
+    pub const kHandledMask: u32 = 2147483648u32;
+    pub const kIdMask: u32 = 2147483647u32;
     pub fn Equals(
         first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         second: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

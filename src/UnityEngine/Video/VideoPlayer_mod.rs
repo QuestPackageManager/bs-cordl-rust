@@ -1246,7 +1246,7 @@ for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Video";
-    const CLASS_NAME: &'static str = "ErrorEventHandler";
+    const CLASS_NAME: &'static str = "VideoPlayer/ErrorEventHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1332,7 +1332,7 @@ for crate::UnityEngine::Video::VideoPlayer_EventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Video";
-    const CLASS_NAME: &'static str = "EventHandler";
+    const CLASS_NAME: &'static str = "VideoPlayer/EventHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1417,7 +1417,7 @@ for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Video";
-    const CLASS_NAME: &'static str = "FrameReadyEventHandler";
+    const CLASS_NAME: &'static str = "VideoPlayer/FrameReadyEventHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1504,7 +1504,7 @@ for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Video";
-    const CLASS_NAME: &'static str = "TimeEventHandler";
+    const CLASS_NAME: &'static str = "VideoPlayer/TimeEventHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

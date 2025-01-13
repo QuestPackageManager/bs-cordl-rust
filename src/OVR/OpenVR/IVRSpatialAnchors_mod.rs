@@ -128,7 +128,7 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CreateSpatialAnchorFromDescriptor";
+    const CLASS_NAME: &'static str = "IVRSpatialAnchors/_CreateSpatialAnchorFromDescriptor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -244,7 +244,7 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CreateSpatialAnchorFromPose";
+    const CLASS_NAME: &'static str = "IVRSpatialAnchors/_CreateSpatialAnchorFromPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -368,7 +368,7 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSpatialAnchorDescriptor";
+    const CLASS_NAME: &'static str = "IVRSpatialAnchors/_GetSpatialAnchorDescriptor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -498,7 +498,7 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSpatialAnchorPose";
+    const CLASS_NAME: &'static str = "IVRSpatialAnchors/_GetSpatialAnchorPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

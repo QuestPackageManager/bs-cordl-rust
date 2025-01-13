@@ -10,7 +10,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AnnotationTypes";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/OVRManager/AnnotationTypes";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -158,7 +158,7 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_MarkerId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MarkerId";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/OVRManager/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -274,7 +274,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_Editor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Editor";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/Editor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -327,7 +327,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_OVRManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRManager";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/OVRManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -385,7 +385,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_SBB {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SBB";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/SBB";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -441,7 +441,7 @@ for crate::GlobalNamespace::OVRTelemetryConstants_Scene {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Scene";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/Scene";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -495,7 +495,7 @@ for crate::GlobalNamespace::SBB_OVRTelemetryConstants_AnnotationType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AnnotationType";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/SBB/AnnotationType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -550,7 +550,7 @@ for crate::GlobalNamespace::SBB_OVRTelemetryConstants_MarkerId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MarkerId";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/SBB/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -607,7 +607,7 @@ for crate::GlobalNamespace::Scene_OVRTelemetryConstants_MarkerId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MarkerId";
+    const CLASS_NAME: &'static str = "OVRTelemetryConstants/Scene/MarkerId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

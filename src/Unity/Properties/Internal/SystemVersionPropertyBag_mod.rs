@@ -97,7 +97,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "BuildProperty";
+    const CLASS_NAME: &'static str = "SystemVersionPropertyBag/BuildProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -187,7 +187,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "MajorProperty";
+    const CLASS_NAME: &'static str = "SystemVersionPropertyBag/MajorProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -277,7 +277,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "MinorProperty";
+    const CLASS_NAME: &'static str = "SystemVersionPropertyBag/MinorProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -367,7 +367,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionPropert
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "RevisionProperty";
+    const CLASS_NAME: &'static str = "SystemVersionPropertyBag/RevisionProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -199,7 +199,7 @@ for crate::GlobalNamespace::PosesRecordingData_ExternalCameraCalibration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ExternalCameraCalibration";
+    const CLASS_NAME: &'static str = "PosesRecordingData/ExternalCameraCalibration";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -308,7 +308,7 @@ for crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TransformsKeyframe";
+    const CLASS_NAME: &'static str = "PosesRecordingData/TransformsKeyframe";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

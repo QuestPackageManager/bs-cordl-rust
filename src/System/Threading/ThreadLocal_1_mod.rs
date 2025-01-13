@@ -340,7 +340,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "FinalizationHelper";
+    const CLASS_NAME: &'static str = "ThreadLocal`1/FinalizationHelper";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -349,7 +349,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading",
-                        "FinalizationHelper",
+                        "ThreadLocal`1/FinalizationHelper",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -469,14 +469,17 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "IdManager";
+    const CLASS_NAME: &'static str = "ThreadLocal`1/IdManager";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Threading", "IdManager")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Threading",
+                        "ThreadLocal`1/IdManager",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -600,7 +603,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "LinkedSlot";
+    const CLASS_NAME: &'static str = "ThreadLocal`1/LinkedSlot";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -609,7 +612,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading",
-                        "LinkedSlot",
+                        "ThreadLocal`1/LinkedSlot",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

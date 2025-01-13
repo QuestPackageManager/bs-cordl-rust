@@ -1648,14 +1648,17 @@ for crate::System::Data::RBTree_1_TreePage<K> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "TreePage";
+    const CLASS_NAME: &'static str = "RBTree`1/TreePage";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "TreePage")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Data",
+                        "RBTree`1/TreePage",
+                    )
                     .unwrap()
                     .make_generic::<(K)>()
                     .unwrap()

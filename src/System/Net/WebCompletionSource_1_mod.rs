@@ -258,14 +258,17 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "Result";
+    const CLASS_NAME: &'static str = "WebCompletionSource`1/Result";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Net", "Result")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Net",
+                        "WebCompletionSource`1/Result",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

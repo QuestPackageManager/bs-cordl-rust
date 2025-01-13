@@ -923,7 +923,7 @@ for crate::System::Text::Encoding_DefaultDecoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "DefaultDecoder";
+    const CLASS_NAME: &'static str = "Encoding/DefaultDecoder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1170,7 +1170,7 @@ for crate::System::Text::Encoding_DefaultEncoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "DefaultEncoder";
+    const CLASS_NAME: &'static str = "Encoding/DefaultEncoder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1398,7 +1398,7 @@ for crate::System::Text::Encoding_EncodingByteBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "EncodingByteBuffer";
+    const CLASS_NAME: &'static str = "Encoding/EncodingByteBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1594,7 +1594,7 @@ for crate::System::Text::Encoding_EncodingCharBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "EncodingCharBuffer";
+    const CLASS_NAME: &'static str = "Encoding/EncodingCharBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

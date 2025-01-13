@@ -725,7 +725,7 @@ for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "EventFunction`1";
+    const CLASS_NAME: &'static str = "ExecuteEvents/EventFunction`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -734,7 +734,7 @@ for crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T1> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.EventSystems",
-                        "EventFunction`1",
+                        "ExecuteEvents/EventFunction`1",
                     )
                     .unwrap()
                     .make_generic::<(T1)>()

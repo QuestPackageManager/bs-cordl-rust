@@ -38,7 +38,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRNetwork {
 }
 #[cfg(feature = "OVRNetwork")]
 impl crate::GlobalNamespace::OVRNetwork {
-    pub const FrameHeaderMagicIdentifier: u32 = 2208787440u32;
+    pub const FrameHeaderMagicIdentifier: u32 = 1384359787u32;
     pub const MaxBufferLength: i32 = 65536i32;
     pub const MaxPayloadLength: i32 = 65524i32;
     #[cfg(feature = "OVRNetwork+FrameHeader")]
@@ -323,7 +323,7 @@ for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpClient {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRNetworkTcpClient";
+    const CLASS_NAME: &'static str = "OVRNetwork/OVRNetworkTcpClient";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -473,7 +473,7 @@ for crate::GlobalNamespace::OVRNetwork_OVRNetworkTcpServer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRNetworkTcpServer";
+    const CLASS_NAME: &'static str = "OVRNetwork/OVRNetworkTcpServer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

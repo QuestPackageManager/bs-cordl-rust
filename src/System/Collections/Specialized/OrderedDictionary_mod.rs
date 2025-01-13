@@ -507,7 +507,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Specialized";
-    const CLASS_NAME: &'static str = "OrderedDictionaryEnumerator";
+    const CLASS_NAME: &'static str = "OrderedDictionary/OrderedDictionaryEnumerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -699,7 +699,7 @@ for crate::System::Collections::Specialized::OrderedDictionary_OrderedDictionary
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Specialized";
-    const CLASS_NAME: &'static str = "OrderedDictionaryKeyValueCollection";
+    const CLASS_NAME: &'static str = "OrderedDictionary/OrderedDictionaryKeyValueCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

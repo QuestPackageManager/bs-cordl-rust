@@ -278,7 +278,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO.Enumeration";
-    const CLASS_NAME: &'static str = "DelegateEnumerator";
+    const CLASS_NAME: &'static str = "FileSystemEnumerable`1/DelegateEnumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -287,7 +287,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.IO.Enumeration",
-                        "DelegateEnumerator",
+                        "FileSystemEnumerable`1/DelegateEnumerator",
                     )
                     .unwrap()
                     .make_generic::<(TResult)>()
@@ -432,7 +432,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO.Enumeration";
-    const CLASS_NAME: &'static str = "FindPredicate";
+    const CLASS_NAME: &'static str = "FileSystemEnumerable`1/FindPredicate";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -441,7 +441,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.IO.Enumeration",
-                        "FindPredicate",
+                        "FileSystemEnumerable`1/FindPredicate",
                     )
                     .unwrap()
                     .make_generic::<(TResult)>()
@@ -551,7 +551,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO.Enumeration";
-    const CLASS_NAME: &'static str = "FindTransform";
+    const CLASS_NAME: &'static str = "FileSystemEnumerable`1/FindTransform";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -560,7 +560,7 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.IO.Enumeration",
-                        "FindTransform",
+                        "FileSystemEnumerable`1/FindTransform",
                     )
                     .unwrap()
                     .make_generic::<(TResult)>()

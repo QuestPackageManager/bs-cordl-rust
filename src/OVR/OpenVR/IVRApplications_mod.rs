@@ -264,7 +264,7 @@ for crate::OVR::OpenVR::IVRApplications__AddApplicationManifest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_AddApplicationManifest";
+    const CLASS_NAME: &'static str = "IVRApplications/_AddApplicationManifest";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -384,7 +384,7 @@ for crate::OVR::OpenVR::IVRApplications__CancelApplicationLaunch {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CancelApplicationLaunch";
+    const CLASS_NAME: &'static str = "IVRApplications/_CancelApplicationLaunch";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -494,7 +494,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationAutoLaunch {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationAutoLaunch";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationAutoLaunch";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -604,7 +604,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationCount {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationCount";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationCount";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -709,7 +709,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByIndex {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationKeyByIndex";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationKeyByIndex";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -834,7 +834,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationKeyByProcessId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationKeyByProcessId";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationKeyByProcessId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -954,7 +954,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationLaunchArguments {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationLaunchArguments";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationLaunchArguments";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1070,7 +1070,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationProcessId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationProcessId";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationProcessId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1180,7 +1180,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyBool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationPropertyBool";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationPropertyBool";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1301,7 +1301,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyString {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationPropertyString";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationPropertyString";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1450,7 +1450,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationPropertyUint64 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationPropertyUint64";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationPropertyUint64";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1571,7 +1571,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationSupportedMimeTypes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationSupportedMimeTypes";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationSupportedMimeTypes";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1694,7 +1694,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsErrorNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationsErrorNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationsErrorNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1807,7 +1807,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsThatSupportMimeType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationsThatSupportMimeType";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationsThatSupportMimeType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1943,7 +1943,7 @@ for crate::OVR::OpenVR::IVRApplications__GetApplicationsTransitionStateNameFromE
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetApplicationsTransitionStateNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetApplicationsTransitionStateNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2064,7 +2064,7 @@ for crate::OVR::OpenVR::IVRApplications__GetCurrentSceneProcessId {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCurrentSceneProcessId";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetCurrentSceneProcessId";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2170,7 +2170,7 @@ for crate::OVR::OpenVR::IVRApplications__GetDefaultApplicationForMimeType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDefaultApplicationForMimeType";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetDefaultApplicationForMimeType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2289,7 +2289,7 @@ for crate::OVR::OpenVR::IVRApplications__GetStartingApplication {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetStartingApplication";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetStartingApplication";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2405,7 +2405,7 @@ for crate::OVR::OpenVR::IVRApplications__GetTransitionState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetTransitionState";
+    const CLASS_NAME: &'static str = "IVRApplications/_GetTransitionState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2518,7 +2518,7 @@ for crate::OVR::OpenVR::IVRApplications__IdentifyApplication {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IdentifyApplication";
+    const CLASS_NAME: &'static str = "IVRApplications/_IdentifyApplication";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2631,7 +2631,7 @@ for crate::OVR::OpenVR::IVRApplications__IsApplicationInstalled {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsApplicationInstalled";
+    const CLASS_NAME: &'static str = "IVRApplications/_IsApplicationInstalled";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2740,7 +2740,7 @@ for crate::OVR::OpenVR::IVRApplications__IsQuitUserPromptRequested {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsQuitUserPromptRequested";
+    const CLASS_NAME: &'static str = "IVRApplications/_IsQuitUserPromptRequested";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2846,7 +2846,7 @@ for crate::OVR::OpenVR::IVRApplications__LaunchApplication {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_LaunchApplication";
+    const CLASS_NAME: &'static str = "IVRApplications/_LaunchApplication";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2957,7 +2957,7 @@ for crate::OVR::OpenVR::IVRApplications__LaunchApplicationFromMimeType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_LaunchApplicationFromMimeType";
+    const CLASS_NAME: &'static str = "IVRApplications/_LaunchApplicationFromMimeType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3072,7 +3072,7 @@ for crate::OVR::OpenVR::IVRApplications__LaunchDashboardOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_LaunchDashboardOverlay";
+    const CLASS_NAME: &'static str = "IVRApplications/_LaunchDashboardOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3183,7 +3183,7 @@ for crate::OVR::OpenVR::IVRApplications__LaunchInternalProcess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_LaunchInternalProcess";
+    const CLASS_NAME: &'static str = "IVRApplications/_LaunchInternalProcess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3305,7 +3305,7 @@ for crate::OVR::OpenVR::IVRApplications__LaunchTemplateApplication {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_LaunchTemplateApplication";
+    const CLASS_NAME: &'static str = "IVRApplications/_LaunchTemplateApplication";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3438,7 +3438,7 @@ for crate::OVR::OpenVR::IVRApplications__PerformApplicationPrelaunchCheck {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_PerformApplicationPrelaunchCheck";
+    const CLASS_NAME: &'static str = "IVRApplications/_PerformApplicationPrelaunchCheck";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3551,7 +3551,7 @@ for crate::OVR::OpenVR::IVRApplications__RemoveApplicationManifest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_RemoveApplicationManifest";
+    const CLASS_NAME: &'static str = "IVRApplications/_RemoveApplicationManifest";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3667,7 +3667,7 @@ for crate::OVR::OpenVR::IVRApplications__SetApplicationAutoLaunch {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetApplicationAutoLaunch";
+    const CLASS_NAME: &'static str = "IVRApplications/_SetApplicationAutoLaunch";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3781,7 +3781,7 @@ for crate::OVR::OpenVR::IVRApplications__SetDefaultApplicationForMimeType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetDefaultApplicationForMimeType";
+    const CLASS_NAME: &'static str = "IVRApplications/_SetDefaultApplicationForMimeType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

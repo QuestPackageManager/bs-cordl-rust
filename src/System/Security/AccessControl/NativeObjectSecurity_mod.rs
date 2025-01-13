@@ -245,7 +245,7 @@ for crate::System::Security::AccessControl::NativeObjectSecurity_ExceptionFromEr
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Security.AccessControl";
-    const CLASS_NAME: &'static str = "ExceptionFromErrorCode";
+    const CLASS_NAME: &'static str = "NativeObjectSecurity/ExceptionFromErrorCode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

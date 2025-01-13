@@ -1481,7 +1481,7 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.HID";
-    const CLASS_NAME: &'static str = "HIDLayoutBuilder";
+    const CLASS_NAME: &'static str = "HID/HIDLayoutBuilder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

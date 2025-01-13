@@ -251,7 +251,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP160r1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP160r1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -347,7 +347,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP160t1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP160t1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -443,7 +443,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP192r1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP192r1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -539,7 +539,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP192t1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP192t1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -635,7 +635,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP224r1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP224r1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -731,7 +731,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP224t1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP224t1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -827,7 +827,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP256r1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP256r1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -923,7 +923,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP256t1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP256t1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1019,7 +1019,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP320r1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP320r1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1115,7 +1115,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP320t1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP320t1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1211,7 +1211,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP384r1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP384r1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1307,7 +1307,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP384t1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP384t1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1403,7 +1403,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP512r1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP512r1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1499,7 +1499,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.TeleTrust";
-    const CLASS_NAME: &'static str = "BrainpoolP512t1Holder";
+    const CLASS_NAME: &'static str = "TeleTrusTNamedCurves/BrainpoolP512t1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

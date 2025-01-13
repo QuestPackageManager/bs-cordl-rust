@@ -568,7 +568,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BCSStyleHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/BCSStyleHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -666,7 +666,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BaseGeneratedStyleHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/BaseGeneratedStyleHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -877,7 +877,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorLutHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/ColorLutHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1289,7 +1289,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_IStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IStyleHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/IStyleHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1393,7 +1393,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InterpolatedColorLutHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/InterpolatedColorLutHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1539,7 +1539,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToMonoStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MonoToMonoStyleHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/MonoToMonoStyleHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1651,7 +1651,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MonoToRgbaStyleHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/MonoToRgbaStyleHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1783,7 +1783,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NoneStyleHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/NoneStyleHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2376,7 +2376,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "StylesHandler";
+    const CLASS_NAME: &'static str = "OVRPassthroughLayer/StylesHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

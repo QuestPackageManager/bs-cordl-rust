@@ -4037,7 +4037,7 @@ for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "BaseVisualElementScheduledItem";
+    const CLASS_NAME: &'static str = "VisualElement/BaseVisualElementScheduledItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4274,7 +4274,7 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "CustomStyleAccess";
+    const CLASS_NAME: &'static str = "VisualElement/CustomStyleAccess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5069,7 +5069,7 @@ for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "SimpleScheduledItem";
+    const CLASS_NAME: &'static str = "VisualElement/SimpleScheduledItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5166,7 +5166,7 @@ for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TimerStateScheduledItem";
+    const CLASS_NAME: &'static str = "VisualElement/TimerStateScheduledItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5269,7 +5269,7 @@ for crate::UnityEngine::UIElements::VisualElement_TypeData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TypeData";
+    const CLASS_NAME: &'static str = "VisualElement/TypeData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5395,7 +5395,7 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UxmlFactory";
+    const CLASS_NAME: &'static str = "VisualElement/UxmlFactory";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5506,7 +5506,7 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UxmlTraits";
+    const CLASS_NAME: &'static str = "VisualElement/UxmlTraits";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5624,7 +5624,7 @@ for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "VisualElementScheduledItem`1";
+    const CLASS_NAME: &'static str = "VisualElement/VisualElementScheduledItem`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -5633,7 +5633,7 @@ for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "VisualElementScheduledItem`1",
+                        "VisualElement/VisualElementScheduledItem`1",
                     )
                     .unwrap()
                     .make_generic::<(ActionType)>()

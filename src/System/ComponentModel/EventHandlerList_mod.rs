@@ -102,7 +102,7 @@ for crate::System::ComponentModel::EventHandlerList_ListEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel";
-    const CLASS_NAME: &'static str = "ListEntry";
+    const CLASS_NAME: &'static str = "EventHandlerList/ListEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -470,7 +470,7 @@ for crate::GlobalNamespace::OVRSceneManager_Classification {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Classification";
+    const CLASS_NAME: &'static str = "OVRSceneManager/Classification";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -553,7 +553,7 @@ for crate::GlobalNamespace::OVRSceneManager_Development {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Development";
+    const CLASS_NAME: &'static str = "OVRSceneManager/Development";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -780,7 +780,7 @@ for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RoomLayoutInformation";
+    const CLASS_NAME: &'static str = "OVRSceneManager/RoomLayoutInformation";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

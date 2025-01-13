@@ -326,7 +326,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LightsRenderingData";
+    const CLASS_NAME: &'static str = "BloomPrePassRendererSO/LightsRenderingData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -401,7 +401,7 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_PreallocationData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PreallocationData";
+    const CLASS_NAME: &'static str = "BloomPrePassRendererSO/PreallocationData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

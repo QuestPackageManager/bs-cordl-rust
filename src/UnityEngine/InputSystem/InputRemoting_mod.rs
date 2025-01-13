@@ -583,7 +583,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ChangeUsageMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/ChangeUsageMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -657,7 +657,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "ConnectMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/ConnectMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -718,7 +718,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "DisconnectMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/DisconnectMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1078,7 +1078,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "NewDeviceMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/NewDeviceMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1151,7 +1151,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "NewEventsMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/NewEventsMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1242,7 +1242,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "NewLayoutMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/NewLayoutMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1538,7 +1538,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "RemoveDeviceMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/RemoveDeviceMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1610,7 +1610,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "StartSendingMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/StartSendingMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1672,7 +1672,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "StopSendingMsg";
+    const CLASS_NAME: &'static str = "InputRemoting/StopSendingMsg";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1740,7 +1740,7 @@ for crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "Subscriber";
+    const CLASS_NAME: &'static str = "InputRemoting/Subscriber";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

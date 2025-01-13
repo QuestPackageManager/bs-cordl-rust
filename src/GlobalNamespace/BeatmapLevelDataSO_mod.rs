@@ -464,7 +464,7 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DifficultyBeatmap";
+    const CLASS_NAME: &'static str = "BeatmapLevelDataSO/DifficultyBeatmap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -700,7 +700,7 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "DifficultyBeatmapSet";
+    const CLASS_NAME: &'static str = "BeatmapLevelDataSO/DifficultyBeatmapSet";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -94,7 +94,7 @@ for crate::Unity::Properties::Internal::RectIntPropertyBag_HeightProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "HeightProperty";
+    const CLASS_NAME: &'static str = "RectIntPropertyBag/HeightProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -181,7 +181,7 @@ for crate::Unity::Properties::Internal::RectIntPropertyBag_WidthProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "WidthProperty";
+    const CLASS_NAME: &'static str = "RectIntPropertyBag/WidthProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -268,7 +268,7 @@ for crate::Unity::Properties::Internal::RectIntPropertyBag_XProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "XProperty";
+    const CLASS_NAME: &'static str = "RectIntPropertyBag/XProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -355,7 +355,7 @@ for crate::Unity::Properties::Internal::RectIntPropertyBag_YProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "YProperty";
+    const CLASS_NAME: &'static str = "RectIntPropertyBag/YProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -14,7 +14,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "EqualityComparer";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ElementPropertyPair/EqualityComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1450,7 +1450,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "Values";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/Values";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1626,7 +1626,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesBackground";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesBackground";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1726,7 +1726,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesBackgroundPosition";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesBackgroundPosition";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1834,7 +1834,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesBackgroundRepeat";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesBackgroundRepeat";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1949,7 +1949,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesBackgroundSize";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesBackgroundSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2124,7 +2124,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesColor";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesColor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2276,7 +2276,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesDiscrete`1";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesDiscrete`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2285,7 +2285,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "ValuesDiscrete`1",
+                        "StylePropertyAnimationSystem/ValuesDiscrete`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -2426,7 +2426,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesFloat";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesFloat";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2555,7 +2555,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesFont";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesFont";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2655,7 +2655,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesFontDefinition";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesFontDefinition";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2762,7 +2762,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesInt";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesInt";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2898,7 +2898,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesLength";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesLength";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3065,7 +3065,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesRotate";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesRotate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3218,7 +3218,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesScale";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesScale";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3371,7 +3371,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesTextShadow";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesTextShadow";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3528,7 +3528,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesTransformOrigin";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesTransformOrigin";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3707,7 +3707,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "ValuesTranslate";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/ValuesTranslate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3891,7 +3891,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "Values`1";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/Values`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -3900,7 +3900,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "Values`1",
+                        "StylePropertyAnimationSystem/Values`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -4861,7 +4861,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Transi
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TransitionEventsFrameState";
+    const CLASS_NAME: &'static str = "StylePropertyAnimationSystem/Values`1/TransitionEventsFrameState";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -4870,7 +4870,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Transi
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "TransitionEventsFrameState",
+                        "StylePropertyAnimationSystem/Values`1/TransitionEventsFrameState",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

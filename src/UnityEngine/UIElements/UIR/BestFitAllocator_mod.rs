@@ -200,7 +200,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "Block";
+    const CLASS_NAME: &'static str = "BestFitAllocator/Block";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -284,7 +284,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "BlockPool";
+    const CLASS_NAME: &'static str = "BestFitAllocator/BlockPool";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

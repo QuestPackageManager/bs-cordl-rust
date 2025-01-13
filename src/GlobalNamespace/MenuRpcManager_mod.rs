@@ -2687,7 +2687,7 @@ for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CancelCountdownRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/CancelCountdownRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2756,7 +2756,7 @@ for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CancelLevelStartRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/CancelLevelStartRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2825,7 +2825,7 @@ for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CancelStartGameTimeRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/CancelStartGameTimeRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2895,7 +2895,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ClearRecommendedBeatmapRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/ClearRecommendedBeatmapRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2966,7 +2966,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ClearRecommendedGameplayModifiersRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/ClearRecommendedGameplayModifiersRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3037,7 +3037,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ClearSelectedBeatmapRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/ClearSelectedBeatmapRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3107,7 +3107,7 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ClearSelectedGameplayModifiersRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/ClearSelectedGameplayModifiersRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3178,7 +3178,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetCountdownEndTimeRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetCountdownEndTimeRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3250,7 +3250,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetIsEntitledToLevelRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetIsEntitledToLevelRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3322,7 +3322,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetIsInLobbyRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetIsInLobbyRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3391,7 +3391,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetIsReadyRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetIsReadyRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3460,7 +3460,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetIsStartButtonEnabledRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetIsStartButtonEnabledRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3531,7 +3531,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetMultiplayerGameStateRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetMultiplayerGameStateRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3602,7 +3602,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetOwnedSongPacksRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetOwnedSongPacksRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3671,7 +3671,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetPlayersPermissionConfigurationRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetPlayersPermissionConfigurationRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3742,7 +3742,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetRecommendedBeatmapRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetRecommendedBeatmapRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3813,7 +3813,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetRecommendedGameplayModifiersRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetRecommendedGameplayModifiersRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3884,7 +3884,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetSelectedBeatmapRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetSelectedBeatmapRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3954,7 +3954,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetSelectedGameplayModifiersRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetSelectedGameplayModifiersRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4025,7 +4025,7 @@ for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GetStartedLevelRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/GetStartedLevelRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4094,7 +4094,7 @@ for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InvalidateLevelEntitlementStatusesRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/InvalidateLevelEntitlementStatusesRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4167,7 +4167,7 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelLoadErrorRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/LevelLoadErrorRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4240,7 +4240,7 @@ for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LevelLoadSuccessRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/LevelLoadSuccessRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4313,7 +4313,7 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RecommendBeatmapRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/RecommendBeatmapRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4386,7 +4386,7 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RecommendGameplayModifiersRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/RecommendGameplayModifiersRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4461,7 +4461,7 @@ for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RequestKickPlayerRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/RequestKickPlayerRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4664,7 +4664,7 @@ for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SelectLevelPackRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SelectLevelPackRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4735,7 +4735,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetCountdownEndTimeRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetCountdownEndTimeRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4808,7 +4808,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetIsEntitledToLevelRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetIsEntitledToLevelRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4881,7 +4881,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetIsInLobbyRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetIsInLobbyRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4950,7 +4950,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetIsReadyRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetIsReadyRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5021,7 +5021,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetIsStartButtonEnabledRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetIsStartButtonEnabledRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5096,7 +5096,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetMultiplayerGameStateRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetMultiplayerGameStateRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5171,7 +5171,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetOwnedSongPacksRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetOwnedSongPacksRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5246,7 +5246,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelR
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetPlayersMissingEntitlementsToLevelRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetPlayersMissingEntitlementsToLevelRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5325,7 +5325,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetPlayersPermissionConfigurationRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetPlayersPermissionConfigurationRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5402,7 +5402,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetSelectedBeatmapRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetSelectedBeatmapRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5476,7 +5476,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetSelectedGameplayModifiersRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetSelectedGameplayModifiersRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5549,7 +5549,7 @@ for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SetStartGameTimeRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/SetStartGameTimeRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5622,7 +5622,7 @@ for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "StartLevelRpc";
+    const CLASS_NAME: &'static str = "MenuRpcManager/StartLevelRpc";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

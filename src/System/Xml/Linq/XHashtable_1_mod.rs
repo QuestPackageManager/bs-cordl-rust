@@ -279,7 +279,7 @@ for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Linq";
-    const CLASS_NAME: &'static str = "ExtractKeyDelegate";
+    const CLASS_NAME: &'static str = "XHashtable`1/ExtractKeyDelegate";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -288,7 +288,7 @@ for crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Xml.Linq",
-                        "ExtractKeyDelegate",
+                        "XHashtable`1/ExtractKeyDelegate",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()
@@ -410,7 +410,7 @@ for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Linq";
-    const CLASS_NAME: &'static str = "XHashtableState";
+    const CLASS_NAME: &'static str = "XHashtable`1/XHashtableState";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -419,7 +419,7 @@ for crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Xml.Linq",
-                        "XHashtableState",
+                        "XHashtable`1/XHashtableState",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()

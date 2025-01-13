@@ -270,7 +270,7 @@ for crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO.Compression";
-    const CLASS_NAME: &'static str = "SafeDeflateStreamHandle";
+    const CLASS_NAME: &'static str = "DeflateStreamNative/SafeDeflateStreamHandle";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -355,7 +355,7 @@ for crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO.Compression";
-    const CLASS_NAME: &'static str = "UnmanagedReadOrWrite";
+    const CLASS_NAME: &'static str = "DeflateStreamNative/UnmanagedReadOrWrite";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

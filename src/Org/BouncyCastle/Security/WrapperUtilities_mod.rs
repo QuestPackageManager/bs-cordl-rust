@@ -123,7 +123,7 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Security";
-    const CLASS_NAME: &'static str = "BufferedCipherWrapper";
+    const CLASS_NAME: &'static str = "WrapperUtilities/BufferedCipherWrapper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

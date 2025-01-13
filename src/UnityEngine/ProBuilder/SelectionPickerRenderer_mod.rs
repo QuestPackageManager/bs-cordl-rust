@@ -40,10 +40,10 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::SelectionPickerRende
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     pub const k_FacePickerOcclusionTintUniform: &'static str = "_Tint";
-    pub const k_MinEdgePixelsForValidSelection: u32 = 16843009u32;
-    pub const k_PickerHashMax: u32 = 4294967232u32;
-    pub const k_PickerHashMin: u32 = 4294950913u32;
-    pub const k_PickerHashNone: u32 = 4290773248u32;
+    pub const k_MinEdgePixelsForValidSelection: u32 = 1u32;
+    pub const k_PickerHashMax: u32 = 16777215u32;
+    pub const k_PickerHashMin: u32 = 1u32;
+    pub const k_PickerHashNone: u32 = 0u32;
     #[cfg(
         feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+ISelectionPickerRenderer"
     )]
@@ -523,7 +523,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRend
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
-    const CLASS_NAME: &'static str = "ISelectionPickerRenderer";
+    const CLASS_NAME: &'static str = "SelectionPickerRenderer/ISelectionPickerRenderer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -611,7 +611,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
-    const CLASS_NAME: &'static str = "SelectionPickerRendererHDRP";
+    const CLASS_NAME: &'static str = "SelectionPickerRenderer/SelectionPickerRendererHDRP";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -737,7 +737,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ProBuilder";
-    const CLASS_NAME: &'static str = "SelectionPickerRendererStandard";
+    const CLASS_NAME: &'static str = "SelectionPickerRenderer/SelectionPickerRendererStandard";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

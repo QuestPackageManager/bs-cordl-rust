@@ -210,14 +210,17 @@ for crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_Beatma
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BeatmapObjectListNode";
+    const CLASS_NAME: &'static str = "MultipleSortedBeatmapObjectsListsEnumerator`1/BeatmapObjectListNode";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "BeatmapObjectListNode")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "MultipleSortedBeatmapObjectsListsEnumerator`1/BeatmapObjectListNode",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

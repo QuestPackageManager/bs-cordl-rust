@@ -121,7 +121,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllCallback
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "GetRayIntersectionAllCallback";
+    const CLASS_NAME: &'static str = "ReflectionMethodsCache/GetRayIntersectionAllCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -252,7 +252,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRayIntersectionAllNonAlloc
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "GetRayIntersectionAllNonAllocCallback";
+    const CLASS_NAME: &'static str = "ReflectionMethodsCache/GetRayIntersectionAllNonAllocCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -381,7 +381,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_GetRaycastNonAllocCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "GetRaycastNonAllocCallback";
+    const CLASS_NAME: &'static str = "ReflectionMethodsCache/GetRaycastNonAllocCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -502,7 +502,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast2DCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Raycast2DCallback";
+    const CLASS_NAME: &'static str = "ReflectionMethodsCache/Raycast2DCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -621,7 +621,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_Raycast3DCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "Raycast3DCallback";
+    const CLASS_NAME: &'static str = "ReflectionMethodsCache/Raycast3DCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -739,7 +739,7 @@ for crate::UnityEngine::UI::ReflectionMethodsCache_RaycastAllCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "RaycastAllCallback";
+    const CLASS_NAME: &'static str = "ReflectionMethodsCache/RaycastAllCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

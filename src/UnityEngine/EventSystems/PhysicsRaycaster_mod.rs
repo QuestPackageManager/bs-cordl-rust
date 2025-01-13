@@ -191,7 +191,7 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "RaycastHitComparer";
+    const CLASS_NAME: &'static str = "PhysicsRaycaster/RaycastHitComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

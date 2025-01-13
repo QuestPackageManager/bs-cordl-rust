@@ -798,14 +798,17 @@ for crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Priority_Queue";
-    const CLASS_NAME: &'static str = "SimpleNode";
+    const CLASS_NAME: &'static str = "SimplePriorityQueue`2/SimpleNode";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("Priority_Queue", "SimpleNode")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Priority_Queue",
+                        "SimplePriorityQueue`2/SimpleNode",
+                    )
                     .unwrap()
                     .make_generic::<(TItem, TPriority)>()
                     .unwrap()

@@ -517,7 +517,7 @@ for crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ClearOverlayTexture";
+    const CLASS_NAME: &'static str = "IVROverlay/_ClearOverlayTexture";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -628,7 +628,7 @@ for crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CloseMessageOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_CloseMessageOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -737,7 +737,7 @@ for crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ComputeOverlayIntersection";
+    const CLASS_NAME: &'static str = "IVROverlay/_ComputeOverlayIntersection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -869,7 +869,7 @@ for crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CreateDashboardOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_CreateDashboardOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1005,7 +1005,7 @@ for crate::OVR::OpenVR::IVROverlay__CreateOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CreateOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_CreateOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1124,7 +1124,7 @@ for crate::OVR::OpenVR::IVROverlay__DestroyOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_DestroyOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_DestroyOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1234,7 +1234,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVROverlay__Find
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_FindOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_FindOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1347,7 +1347,7 @@ for crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDashboardOverlaySceneProcess";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetDashboardOverlaySceneProcess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1463,7 +1463,7 @@ for crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetGamepadFocusOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetGamepadFocusOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1568,7 +1568,7 @@ for crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetHighQualityOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetHighQualityOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1673,7 +1673,7 @@ for crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetKeyboardText";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetKeyboardText";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1784,7 +1784,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayAlpha";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayAlpha";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1898,7 +1898,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayAutoCurveDistanceRangeInMeters";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayAutoCurveDistanceRangeInMeters";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2032,7 +2032,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayColor";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayColor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2155,7 +2155,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayDualAnalogTransform";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayDualAnalogTransform";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2278,7 +2278,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayErrorNameFromEnum";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayErrorNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2389,7 +2389,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayFlag";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayFlag";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2508,7 +2508,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayFlags";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayFlags";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2622,7 +2622,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayImageData";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayImageData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2757,7 +2757,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayInputMethod";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayInputMethod";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2877,7 +2877,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayKey";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayKey";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2997,7 +2997,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayMouseScale";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayMouseScale";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3115,7 +3115,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayName";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayName";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3235,7 +3235,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayRenderModel";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayRenderModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3370,7 +3370,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayRenderingPid";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayRenderingPid";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3479,7 +3479,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlaySortOrder";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlaySortOrder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3593,7 +3593,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTexelAspect";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTexelAspect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3707,7 +3707,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTexture";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTexture";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3887,7 +3887,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTextureBounds";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTextureBounds";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4010,7 +4010,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTextureColorSpace";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTextureColorSpace";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4133,7 +4133,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTextureSize";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTextureSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4253,7 +4253,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTransformAbsolute";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTransformAbsolute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4397,7 +4397,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTransformOverlayRelative";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTransformOverlayRelative";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4541,7 +4541,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTransformTrackedDeviceComponent";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTransformTrackedDeviceComponent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4674,7 +4674,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTransformTrackedDeviceRelative";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTransformTrackedDeviceRelative";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4814,7 +4814,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayTransformType";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayTransformType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4937,7 +4937,7 @@ for crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOverlayWidthInMeters";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetOverlayWidthInMeters";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5054,7 +5054,7 @@ for crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetPrimaryDashboardDevice";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetPrimaryDashboardDevice";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5159,7 +5159,7 @@ for crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetTransformForOverlayCoordinates";
+    const CLASS_NAME: &'static str = "IVROverlay/_GetTransformForOverlayCoordinates";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5296,7 +5296,7 @@ for crate::OVR::OpenVR::IVROverlay__HideKeyboard {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_HideKeyboard";
+    const CLASS_NAME: &'static str = "IVROverlay/_HideKeyboard";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5403,7 +5403,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVROverlay__Hide
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_HideOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_HideOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5513,7 +5513,7 @@ for crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsActiveDashboardOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_IsActiveDashboardOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5622,7 +5622,7 @@ for crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsDashboardVisible";
+    const CLASS_NAME: &'static str = "IVROverlay/_IsDashboardVisible";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5727,7 +5727,7 @@ for crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsHoverTargetOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_IsHoverTargetOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5836,7 +5836,7 @@ for crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsOverlayVisible";
+    const CLASS_NAME: &'static str = "IVROverlay/_IsOverlayVisible";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5945,7 +5945,7 @@ for crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_MoveGamepadFocusToNeighbor";
+    const CLASS_NAME: &'static str = "IVROverlay/_MoveGamepadFocusToNeighbor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6058,7 +6058,7 @@ for crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_PollNextOverlayEvent";
+    const CLASS_NAME: &'static str = "IVROverlay/_PollNextOverlayEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6176,7 +6176,7 @@ for crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ReleaseNativeOverlayHandle";
+    const CLASS_NAME: &'static str = "IVROverlay/_ReleaseNativeOverlayHandle";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6292,7 +6292,7 @@ for crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetDashboardOverlaySceneProcess";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetDashboardOverlaySceneProcess";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6407,7 +6407,7 @@ for crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetGamepadFocusOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetGamepadFocusOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6518,7 +6518,7 @@ for crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetHighQualityOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetHighQualityOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6629,7 +6629,7 @@ for crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetKeyboardPositionForOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetKeyboardPositionForOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6743,7 +6743,7 @@ for crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetKeyboardTransformAbsolute";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetKeyboardTransformAbsolute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6872,7 +6872,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayAlpha";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayAlpha";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6985,7 +6985,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayAutoCurveDistanceRangeInMeters";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayAutoCurveDistanceRangeInMeters";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7114,7 +7114,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayColor";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayColor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7234,7 +7234,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayDualAnalogTransform";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayDualAnalogTransform";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7355,7 +7355,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayFlag";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayFlag";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7473,7 +7473,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayFromFile";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayFromFile";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7586,7 +7586,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayInputMethod";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayInputMethod";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7699,7 +7699,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayIntersectionMask";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayIntersectionMask";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7836,7 +7836,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayMouseScale";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayMouseScale";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7954,7 +7954,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayName";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayName";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8067,7 +8067,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayNeighbor";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayNeighbor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8182,7 +8182,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayRaw";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayRaw";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8304,7 +8304,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayRenderModel";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayRenderModel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8423,7 +8423,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayRenderingPid";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayRenderingPid";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8536,7 +8536,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlaySortOrder";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlaySortOrder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8649,7 +8649,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTexelAspect";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTexelAspect";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8762,7 +8762,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTexture";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTexture";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8876,7 +8876,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTextureBounds";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTextureBounds";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8999,7 +8999,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTextureColorSpace";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTextureColorSpace";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -9115,7 +9115,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTransformAbsolute";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTransformAbsolute";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -9249,7 +9249,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTransformOverlayRelative";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTransformOverlayRelative";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -9389,7 +9389,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTransformTrackedDeviceComponent";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTransformTrackedDeviceComponent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -9509,7 +9509,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayTransformTrackedDeviceRelative";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayTransformTrackedDeviceRelative";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -9645,7 +9645,7 @@ for crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetOverlayWidthInMeters";
+    const CLASS_NAME: &'static str = "IVROverlay/_SetOverlayWidthInMeters";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -9758,7 +9758,7 @@ for crate::OVR::OpenVR::IVROverlay__ShowDashboard {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowDashboard";
+    const CLASS_NAME: &'static str = "IVROverlay/_ShowDashboard";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -9869,7 +9869,7 @@ for crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowKeyboard";
+    const CLASS_NAME: &'static str = "IVROverlay/_ShowKeyboard";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -10015,7 +10015,7 @@ for crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowKeyboardForOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_ShowKeyboardForOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -10166,7 +10166,7 @@ for crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowMessageOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_ShowMessageOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -10308,7 +10308,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVROverlay__Show
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowOverlay";
+    const CLASS_NAME: &'static str = "IVROverlay/_ShowOverlay";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

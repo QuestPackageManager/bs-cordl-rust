@@ -397,7 +397,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding_De
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "Decoder";
+    const CLASS_NAME: &'static str = "UTF7Encoding/Decoder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -485,7 +485,7 @@ for crate::System::Text::UTF7Encoding_DecoderUTF7Fallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "DecoderUTF7Fallback";
+    const CLASS_NAME: &'static str = "UTF7Encoding/DecoderUTF7Fallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -594,7 +594,7 @@ for crate::System::Text::UTF7Encoding_DecoderUTF7FallbackBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "DecoderUTF7FallbackBuffer";
+    const CLASS_NAME: &'static str = "UTF7Encoding/DecoderUTF7FallbackBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -719,7 +719,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::UTF7Encoding_En
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "Encoder";
+    const CLASS_NAME: &'static str = "UTF7Encoding/Encoder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -135,14 +135,17 @@ for crate::Oculus::Platform::Message_1_Callback<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
-    const CLASS_NAME: &'static str = "Callback";
+    const CLASS_NAME: &'static str = "Message`1/Callback";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("Oculus.Platform", "Callback")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Oculus.Platform",
+                        "Message`1/Callback",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

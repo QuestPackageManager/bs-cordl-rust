@@ -38,26 +38,26 @@ impl std::ops::DerefMut for crate::TMPro::CodePoint {
 }
 #[cfg(feature = "TMPro+CodePoint")]
 impl crate::TMPro::CodePoint {
-    pub const APOSTROPHE: u32 = 3227557927u32;
-    pub const DOUBLE_QUOTE: u32 = 723854114u32;
-    pub const HIGH_SURROGATE_END: u32 = 4292542656u32;
-    pub const HIGH_SURROGATE_START: u32 = 14155968u32;
-    pub const HYPHEN: u32 = 295702688u32;
-    pub const HYPHEN_MINUS: u32 = 2695725101u32;
-    pub const LOW_SURROGATE_END: u32 = 4292804800u32;
-    pub const LOW_SURROGATE_START: u32 = 14418112u32;
-    pub const MINUS: u32 = 2150444589u32;
-    pub const NON_BREAKING_HYPHEN: u32 = 195039648u32;
-    pub const NUMBER_SIGN: u32 = 757802275u32;
-    pub const PERCENTAGE: u32 = 774712101u32;
-    pub const PERIOD: u32 = 2910858542u32;
-    pub const PLUS: u32 = 758000939u32;
-    pub const RIGHT_SINGLE_QUOTATION: u32 = 2686917024u32;
-    pub const SOFT_HYPHEN: u32 = 278965632u32;
-    pub const SPACE: u32 = 623059488u32;
-    pub const UNICODE_PLANE01_START: u32 = 448u32;
-    pub const WORD_JOINER: u32 = 12607648u32;
-    pub const ZERO_WIDTH_SPACE: u32 = 429919136u32;
+    pub const APOSTROPHE: u32 = 39u32;
+    pub const DOUBLE_QUOTE: u32 = 34u32;
+    pub const HIGH_SURROGATE_END: u32 = 56319u32;
+    pub const HIGH_SURROGATE_START: u32 = 55296u32;
+    pub const HYPHEN: u32 = 8208u32;
+    pub const HYPHEN_MINUS: u32 = 45u32;
+    pub const LOW_SURROGATE_END: u32 = 57343u32;
+    pub const LOW_SURROGATE_START: u32 = 56320u32;
+    pub const MINUS: u32 = 45u32;
+    pub const NON_BREAKING_HYPHEN: u32 = 8209u32;
+    pub const NUMBER_SIGN: u32 = 35u32;
+    pub const PERCENTAGE: u32 = 37u32;
+    pub const PERIOD: u32 = 46u32;
+    pub const PLUS: u32 = 43u32;
+    pub const RIGHT_SINGLE_QUOTATION: u32 = 8217u32;
+    pub const SOFT_HYPHEN: u32 = 173u32;
+    pub const SPACE: u32 = 32u32;
+    pub const UNICODE_PLANE01_START: u32 = 65536u32;
+    pub const WORD_JOINER: u32 = 8288u32;
+    pub const ZERO_WIDTH_SPACE: u32 = 8203u32;
 }
 #[cfg(feature = "TMPro+CodePoint")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::CodePoint {

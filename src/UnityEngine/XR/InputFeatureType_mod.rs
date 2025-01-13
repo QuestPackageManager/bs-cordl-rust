@@ -3,17 +3,17 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputFeatureType {
     #[default]
-    Axis1D = 100992003u32,
-    Axis2D = 117835012u32,
-    Axis3D = 134678021u32,
-    Binary = 67305985u32,
-    Bone = 16713992u32,
-    Custom = 50462976u32,
-    DiscreteStates = 84148994u32,
-    Eyes = 16842505u32,
-    Hand = 4278781959u32,
-    Rotation = 151521030u32,
-    kUnityXRInputFeatureTypeInvalid = 33620223u32,
+    Axis1D = 3u32,
+    Axis2D = 4u32,
+    Axis3D = 5u32,
+    Binary = 1u32,
+    Bone = 8u32,
+    Custom = 0u32,
+    DiscreteStates = 2u32,
+    Eyes = 9u32,
+    Hand = 7u32,
+    Rotation = 6u32,
+    kUnityXRInputFeatureTypeInvalid = 4294967295u32,
 }
 #[cfg(feature = "UnityEngine+XR+InputFeatureType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::InputFeatureType {

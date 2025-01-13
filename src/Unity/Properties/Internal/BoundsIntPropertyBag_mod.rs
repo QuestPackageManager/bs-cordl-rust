@@ -90,7 +90,7 @@ for crate::Unity::Properties::Internal::BoundsIntPropertyBag_PositionProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "PositionProperty";
+    const CLASS_NAME: &'static str = "BoundsIntPropertyBag/PositionProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -180,7 +180,7 @@ for crate::Unity::Properties::Internal::BoundsIntPropertyBag_SizeProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "SizeProperty";
+    const CLASS_NAME: &'static str = "BoundsIntPropertyBag/SizeProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

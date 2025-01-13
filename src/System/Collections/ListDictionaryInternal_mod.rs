@@ -312,7 +312,7 @@ for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "DictionaryNode";
+    const CLASS_NAME: &'static str = "ListDictionaryInternal/DictionaryNode";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -391,7 +391,7 @@ for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "NodeEnumerator";
+    const CLASS_NAME: &'static str = "ListDictionaryInternal/NodeEnumerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -567,7 +567,7 @@ for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "NodeKeyValueCollection";
+    const CLASS_NAME: &'static str = "ListDictionaryInternal/NodeKeyValueCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -750,7 +750,7 @@ for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_No
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "NodeKeyValueEnumerator";
+    const CLASS_NAME: &'static str = "ListDictionaryInternal/NodeKeyValueCollection/NodeKeyValueEnumerator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -364,7 +364,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Message {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
-    const CLASS_NAME: &'static str = "Message";
+    const CLASS_NAME: &'static str = "DtlsReliableHandshake/Message";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -469,7 +469,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_RecordLayerBuff
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
-    const CLASS_NAME: &'static str = "RecordLayerBuffer";
+    const CLASS_NAME: &'static str = "DtlsReliableHandshake/RecordLayerBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -559,7 +559,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake_Retransmit {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Tls";
-    const CLASS_NAME: &'static str = "Retransmit";
+    const CLASS_NAME: &'static str = "DtlsReliableHandshake/Retransmit";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

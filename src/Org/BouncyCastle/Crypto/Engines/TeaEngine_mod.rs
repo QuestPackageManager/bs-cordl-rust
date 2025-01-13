@@ -46,8 +46,8 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::TeaEngine
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+TeaEngine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::TeaEngine {
     pub const block_size: i32 = 8i32;
-    pub const d_sum: u32 = 4013367536u32;
-    pub const delta: u32 = 930724336u32;
+    pub const d_sum: u32 = 3337565984u32;
+    pub const delta: u32 = 2654435769u32;
     pub const rounds: i32 = 32i32;
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

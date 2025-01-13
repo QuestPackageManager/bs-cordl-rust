@@ -228,7 +228,7 @@ for crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Security.Cryptography";
-    const CLASS_NAME: &'static str = "KeyGeneratedEventHandler";
+    const CLASS_NAME: &'static str = "RSAManaged/KeyGeneratedEventHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

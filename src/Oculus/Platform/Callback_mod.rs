@@ -131,7 +131,7 @@ for crate::Oculus::Platform::Callback_RequestCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
-    const CLASS_NAME: &'static str = "RequestCallback";
+    const CLASS_NAME: &'static str = "Callback/RequestCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -235,7 +235,7 @@ for crate::Oculus::Platform::Callback_RequestCallback_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Oculus.Platform";
-    const CLASS_NAME: &'static str = "RequestCallback`1";
+    const CLASS_NAME: &'static str = "Callback/RequestCallback`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -244,7 +244,7 @@ for crate::Oculus::Platform::Callback_RequestCallback_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Oculus.Platform",
-                        "RequestCallback`1",
+                        "Callback/RequestCallback`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

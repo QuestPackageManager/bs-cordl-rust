@@ -188,7 +188,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
-    const CLASS_NAME: &'static str = "BasicEventTrackInfo";
+    const CLASS_NAME: &'static str = "EnvironmentTracksDefinitionSO/BasicEventTrackInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -448,7 +448,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
-    const CLASS_NAME: &'static str = "EventBoxGroupPageInfo";
+    const CLASS_NAME: &'static str = "EnvironmentTracksDefinitionSO/EventBoxGroupPageInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -588,7 +588,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions";
-    const CLASS_NAME: &'static str = "EventBoxGroupTrackInfo";
+    const CLASS_NAME: &'static str = "EnvironmentTracksDefinitionSO/EventBoxGroupTrackInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

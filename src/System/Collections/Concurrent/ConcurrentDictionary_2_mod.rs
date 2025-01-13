@@ -1587,7 +1587,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_DictionaryEnu
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Concurrent";
-    const CLASS_NAME: &'static str = "DictionaryEnumerator";
+    const CLASS_NAME: &'static str = "ConcurrentDictionary`2/DictionaryEnumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1596,7 +1596,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_DictionaryEnu
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Concurrent",
-                        "DictionaryEnumerator",
+                        "ConcurrentDictionary`2/DictionaryEnumerator",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
@@ -1899,7 +1899,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<TKey, TV
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Concurrent";
-    const CLASS_NAME: &'static str = "Node";
+    const CLASS_NAME: &'static str = "ConcurrentDictionary`2/Node";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1908,7 +1908,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Node<TKey, TV
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Concurrent",
-                        "Node",
+                        "ConcurrentDictionary`2/Node",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
@@ -2055,7 +2055,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<TKey, 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Concurrent";
-    const CLASS_NAME: &'static str = "Tables";
+    const CLASS_NAME: &'static str = "ConcurrentDictionary`2/Tables";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2064,7 +2064,7 @@ for crate::System::Collections::Concurrent::ConcurrentDictionary_2_Tables<TKey, 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Concurrent",
-                        "Tables",
+                        "ConcurrentDictionary`2/Tables",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()

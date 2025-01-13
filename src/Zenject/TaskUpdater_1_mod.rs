@@ -328,14 +328,17 @@ for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject";
-    const CLASS_NAME: &'static str = "TaskInfo";
+    const CLASS_NAME: &'static str = "TaskUpdater`1/TaskInfo";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("Zenject", "TaskInfo")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "Zenject",
+                        "TaskUpdater`1/TaskInfo",
+                    )
                     .unwrap()
                     .make_generic::<(TTask)>()
                     .unwrap()

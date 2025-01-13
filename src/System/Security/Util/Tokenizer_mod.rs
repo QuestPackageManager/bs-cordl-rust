@@ -175,7 +175,7 @@ for crate::System::Security::Util::Tokenizer_ITokenReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Security.Util";
-    const CLASS_NAME: &'static str = "ITokenReader";
+    const CLASS_NAME: &'static str = "Tokenizer/ITokenReader";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -241,7 +241,7 @@ for crate::System::Security::Util::Tokenizer_StreamTokenReader {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Security.Util";
-    const CLASS_NAME: &'static str = "StreamTokenReader";
+    const CLASS_NAME: &'static str = "Tokenizer/StreamTokenReader";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -351,7 +351,7 @@ for crate::System::Security::Util::Tokenizer_StringMaker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Security.Util";
-    const CLASS_NAME: &'static str = "StringMaker";
+    const CLASS_NAME: &'static str = "Tokenizer/StringMaker";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

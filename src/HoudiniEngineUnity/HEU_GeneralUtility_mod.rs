@@ -1279,7 +1279,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "GetArray1ArgDel`1";
+    const CLASS_NAME: &'static str = "HEU_GeneralUtility/GetArray1ArgDel`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1288,7 +1288,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "HoudiniEngineUnity",
-                        "GetArray1ArgDel`1",
+                        "HEU_GeneralUtility/GetArray1ArgDel`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -1447,7 +1447,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "GetArray2ArgDel`2";
+    const CLASS_NAME: &'static str = "HEU_GeneralUtility/GetArray2ArgDel`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1456,7 +1456,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "HoudiniEngineUnity",
-                        "GetArray2ArgDel`2",
+                        "HEU_GeneralUtility/GetArray2ArgDel`2",
                     )
                     .unwrap()
                     .make_generic::<(ARG2, T)>()
@@ -1637,7 +1637,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "GetArray3ArgDel`3";
+    const CLASS_NAME: &'static str = "HEU_GeneralUtility/GetArray3ArgDel`3";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1646,7 +1646,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "HoudiniEngineUnity",
-                        "GetArray3ArgDel`3",
+                        "HEU_GeneralUtility/GetArray3ArgDel`3",
                     )
                     .unwrap()
                     .make_generic::<(ARG3, ARG2, T)>()
@@ -1841,7 +1841,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "GetAttributeArrayInputFunc`1";
+    const CLASS_NAME: &'static str = "HEU_GeneralUtility/GetAttributeArrayInputFunc`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1850,7 +1850,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "HoudiniEngineUnity",
-                        "GetAttributeArrayInputFunc`1",
+                        "HEU_GeneralUtility/GetAttributeArrayInputFunc`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -2018,7 +2018,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "SetAttributeArrayFunc`1";
+    const CLASS_NAME: &'static str = "HEU_GeneralUtility/SetAttributeArrayFunc`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2027,7 +2027,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "HoudiniEngineUnity",
-                        "SetAttributeArrayFunc`1",
+                        "HEU_GeneralUtility/SetAttributeArrayFunc`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

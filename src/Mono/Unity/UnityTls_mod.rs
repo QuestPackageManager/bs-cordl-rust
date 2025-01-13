@@ -116,7 +116,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_ciphersuite {
     #[default]
-    UNITYTLS_CIPHERSUITE_INVALID = 4294967232u32,
+    UNITYTLS_CIPHERSUITE_INVALID = 16777215u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -207,23 +207,23 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_error_code {
     #[default]
-    UNITYTLS_BUFFER_OVERFLOW = 134678021u32,
-    UNITYTLS_ENTROPY_SOURCE_FAILED = 281020937u32,
-    UNITYTLS_INTERNAL_ERROR = 168364039u32,
-    UNITYTLS_INVALID_ARGUMENT = 67305985u32,
-    UNITYTLS_INVALID_FORMAT = 84148994u32,
-    UNITYTLS_INVALID_PASSWORD = 100992003u32,
-    UNITYTLS_INVALID_STATE = 117835012u32,
-    UNITYTLS_NOT_SUPPORTED = 3221883144u32,
-    UNITYTLS_OUT_OF_MEMORY = 151521030u32,
-    UNITYTLS_STREAM_CLOSED = 1097738u32,
-    UNITYTLS_SUCCESS = 50462976u32,
-    UNITYTLS_USER_CUSTOM_ERROR_END = 8384u32,
-    UNITYTLS_USER_CUSTOM_ERROR_START = 4288u32,
-    UNITYTLS_USER_READ_FAILED = 33558720u32,
-    UNITYTLS_USER_UNKNOWN_ERROR = 67113152u32,
-    UNITYTLS_USER_WOULD_BLOCK = 16781504u32,
-    UNITYTLS_USER_WRITE_FAILED = 50335936u32,
+    UNITYTLS_BUFFER_OVERFLOW = 5u32,
+    UNITYTLS_ENTROPY_SOURCE_FAILED = 9u32,
+    UNITYTLS_INTERNAL_ERROR = 7u32,
+    UNITYTLS_INVALID_ARGUMENT = 1u32,
+    UNITYTLS_INVALID_FORMAT = 2u32,
+    UNITYTLS_INVALID_PASSWORD = 3u32,
+    UNITYTLS_INVALID_STATE = 4u32,
+    UNITYTLS_NOT_SUPPORTED = 8u32,
+    UNITYTLS_OUT_OF_MEMORY = 6u32,
+    UNITYTLS_STREAM_CLOSED = 10u32,
+    UNITYTLS_SUCCESS = 0u32,
+    UNITYTLS_USER_CUSTOM_ERROR_END = 2097152u32,
+    UNITYTLS_USER_CUSTOM_ERROR_START = 1048576u32,
+    UNITYTLS_USER_READ_FAILED = 1048578u32,
+    UNITYTLS_USER_UNKNOWN_ERROR = 1048580u32,
+    UNITYTLS_USER_WOULD_BLOCK = 1048577u32,
+    UNITYTLS_USER_WRITE_FAILED = 1048579u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -521,7 +521,7 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_interface_struct";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -903,10 +903,10 @@ impl crate::Mono::Unity::UnityTls_unitytls_key_ref {}
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_protocol {
     #[default]
-    UNITYTLS_PROTOCOL_INVALID = 20483u32,
-    UNITYTLS_PROTOCOL_TLS_1_0 = 50462976u32,
-    UNITYTLS_PROTOCOL_TLS_1_1 = 1342374401u32,
-    UNITYTLS_PROTOCOL_TLS_1_2 = 5243650u32,
+    UNITYTLS_PROTOCOL_INVALID = 3u32,
+    UNITYTLS_PROTOCOL_TLS_1_0 = 0u32,
+    UNITYTLS_PROTOCOL_TLS_1_1 = 1u32,
+    UNITYTLS_PROTOCOL_TLS_1_2 = 2u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -1214,7 +1214,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_certificate_callback";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx_certificate_callback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1416,7 +1416,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_read_callback";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx_read_callback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1504,7 +1504,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_trace_callback";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx_trace_callback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1592,7 +1592,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_write_callback";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx_write_callback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1680,7 +1680,7 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_x509verify_callback";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_tlsctx_x509verify_callback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2179,7 +2179,7 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509verify_callback";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_x509verify_callback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2262,22 +2262,22 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_x509verify_result {
     #[default]
-    UNITYTLS_X509VERIFY_FATAL_ERROR = 67240447u32,
-    UNITYTLS_X509VERIFY_FLAG_CN_MISMATCH = 29362180u32,
-    UNITYTLS_X509VERIFY_FLAG_EXPIRED = 134480385u32,
-    UNITYTLS_X509VERIFY_FLAG_NOT_TRUSTED = 114696u32,
-    UNITYTLS_X509VERIFY_FLAG_REVOKED = 3221750786u32,
-    UNITYTLS_X509VERIFY_FLAG_UNKNOWN_ERROR = 200u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR1 = 448u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR2 = 704u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR3 = 1216u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR4 = 2240u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR5 = 4288u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR6 = 8384u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR7 = 16576u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR8 = 32960u32,
-    UNITYTLS_X509VERIFY_NOT_DONE = 240u32,
-    UNITYTLS_X509VERIFY_SUCCESS = 61440u32,
+    UNITYTLS_X509VERIFY_FATAL_ERROR = 4294967295u32,
+    UNITYTLS_X509VERIFY_FLAG_CN_MISMATCH = 4u32,
+    UNITYTLS_X509VERIFY_FLAG_EXPIRED = 1u32,
+    UNITYTLS_X509VERIFY_FLAG_NOT_TRUSTED = 8u32,
+    UNITYTLS_X509VERIFY_FLAG_REVOKED = 2u32,
+    UNITYTLS_X509VERIFY_FLAG_UNKNOWN_ERROR = 134217728u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR1 = 65536u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR2 = 131072u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR3 = 262144u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR4 = 524288u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR5 = 1048576u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR6 = 2097152u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR7 = 4194304u32,
+    UNITYTLS_X509VERIFY_FLAG_USER_ERROR8 = 8388608u32,
+    UNITYTLS_X509VERIFY_NOT_DONE = 2147483648u32,
+    UNITYTLS_X509VERIFY_SUCCESS = 0u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -2379,7 +2379,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_errorstate_create_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_errorstate_create_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2479,7 +2479,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_errorstate_raise_error_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_errorstate_raise_error_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2575,7 +2575,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_key_free_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_key_free_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2662,7 +2662,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_key_get_ref_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_key_get_ref_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2754,7 +2754,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_key_parse_der_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_key_parse_der_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2861,7 +2861,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_key_parse_pem_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_key_parse_pem_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2968,7 +2968,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_random_generate_bytes_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_random_generate_bytes_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3069,7 +3069,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_create_client_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_create_client_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3176,7 +3176,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_create_server_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_create_server_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3288,7 +3288,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_free_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_free_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3379,7 +3379,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_get_ciphersuite_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_get_ciphersuite_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3481,7 +3481,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_get_protocol_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_get_protocol_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3581,7 +3581,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_notify_close_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_notify_close_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3681,7 +3681,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_process_handshake_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_process_handshake_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3779,7 +3779,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_read_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_read_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3873,7 +3873,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_server_require_client_authentication_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_server_require_client_authentication_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3974,7 +3974,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_certificate_callback_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_certificate_callback_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4078,7 +4078,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_supported_ciphersuites_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_supported_ciphersuites_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4185,7 +4185,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_trace_callback_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_trace_callback_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4289,7 +4289,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_set_x509verify_callback_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_x509verify_callback_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4389,7 +4389,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_tlsctx_write_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_write_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4483,7 +4483,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509_export_der_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509_export_der_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4585,7 +4585,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list_append_der_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509list_append_der_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4687,7 +4687,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list_append_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509list_append_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4788,7 +4788,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list_create_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509list_create_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4890,7 +4890,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list_free_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509list_free_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4989,7 +4989,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list_get_ref_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509list_get_ref_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5091,7 +5091,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509list_get_x509_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509list_get_x509_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5192,7 +5192,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509verify_default_ca_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509verify_default_ca_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5300,7 +5300,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_e
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Unity";
-    const CLASS_NAME: &'static str = "unitytls_x509verify_explicit_ca_t";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509verify_explicit_ca_t";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

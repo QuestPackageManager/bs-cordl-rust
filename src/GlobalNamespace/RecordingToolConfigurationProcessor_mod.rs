@@ -335,7 +335,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ColorSaveData";
+    const CLASS_NAME: &'static str = "RecordingToolConfigurationProcessor/ColorSaveData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -421,7 +421,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreensh
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlaybackScreenshot";
+    const CLASS_NAME: &'static str = "RecordingToolConfigurationProcessor/PlaybackScreenshot";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -521,7 +521,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfigu
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RecordingConfiguration";
+    const CLASS_NAME: &'static str = "RecordingToolConfigurationProcessor/RecordingConfiguration";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -599,7 +599,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolCon
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RecordingToolConfiguration";
+    const CLASS_NAME: &'static str = "RecordingToolConfigurationProcessor/RecordingToolConfiguration";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -18,7 +18,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel.Design";
-    const CLASS_NAME: &'static str = "WrappedPropertyDescriptor";
+    const CLASS_NAME: &'static str = "DesignerOptionService/DesignerOptionCollection/WrappedPropertyDescriptor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -211,7 +211,7 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel.Design";
-    const CLASS_NAME: &'static str = "OptionPropertyDescriptor";
+    const CLASS_NAME: &'static str = "DesignerOptionService/DesignerOptionConverter/OptionPropertyDescriptor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -469,7 +469,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel.Design";
-    const CLASS_NAME: &'static str = "DesignerOptionCollection";
+    const CLASS_NAME: &'static str = "DesignerOptionService/DesignerOptionCollection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -650,7 +650,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.ComponentModel.Design";
-    const CLASS_NAME: &'static str = "DesignerOptionConverter";
+    const CLASS_NAME: &'static str = "DesignerOptionService/DesignerOptionConverter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

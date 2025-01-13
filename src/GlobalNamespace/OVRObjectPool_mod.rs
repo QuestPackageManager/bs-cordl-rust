@@ -1238,14 +1238,14 @@ for crate::GlobalNamespace::OVRObjectPool_Storage_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Storage`1";
+    const CLASS_NAME: &'static str = "OVRObjectPool/Storage`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "Storage`1")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRObjectPool/Storage`1")
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

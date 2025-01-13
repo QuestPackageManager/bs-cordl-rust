@@ -142,7 +142,7 @@ for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetScreenshotPropertyFilename";
+    const CLASS_NAME: &'static str = "IVRScreenshots/_GetScreenshotPropertyFilename";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -277,7 +277,7 @@ for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetScreenshotPropertyType";
+    const CLASS_NAME: &'static str = "IVRScreenshots/_GetScreenshotPropertyType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -392,7 +392,7 @@ for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_HookScreenshot";
+    const CLASS_NAME: &'static str = "IVRScreenshots/_HookScreenshot";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -513,7 +513,7 @@ for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_RequestScreenshot";
+    const CLASS_NAME: &'static str = "IVRScreenshots/_RequestScreenshot";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -648,7 +648,7 @@ for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SubmitScreenshot";
+    const CLASS_NAME: &'static str = "IVRScreenshots/_SubmitScreenshot";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -791,7 +791,7 @@ for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_TakeStereoScreenshot";
+    const CLASS_NAME: &'static str = "IVRScreenshots/_TakeStereoScreenshot";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -923,7 +923,7 @@ for crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_UpdateScreenshotProgress";
+    const CLASS_NAME: &'static str = "IVRScreenshots/_UpdateScreenshotProgress";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

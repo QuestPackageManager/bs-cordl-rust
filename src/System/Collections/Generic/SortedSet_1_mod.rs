@@ -1369,7 +1369,7 @@ for crate::System::Collections::Generic::SortedSet_1_Node<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Generic";
-    const CLASS_NAME: &'static str = "Node";
+    const CLASS_NAME: &'static str = "SortedSet`1/Node";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1378,7 +1378,7 @@ for crate::System::Collections::Generic::SortedSet_1_Node<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Generic",
-                        "Node",
+                        "SortedSet`1/Node",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

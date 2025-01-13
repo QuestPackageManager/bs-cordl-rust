@@ -482,7 +482,7 @@ for crate::Mono::Security::X509::PKCS12_DeriveBytes {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Security.X509";
-    const CLASS_NAME: &'static str = "DeriveBytes";
+    const CLASS_NAME: &'static str = "PKCS12/DeriveBytes";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

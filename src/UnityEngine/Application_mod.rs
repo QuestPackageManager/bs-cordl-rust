@@ -431,7 +431,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Application_LogC
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "LogCallback";
+    const CLASS_NAME: &'static str = "Application/LogCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -517,7 +517,7 @@ for crate::UnityEngine::Application_LowMemoryCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "LowMemoryCallback";
+    const CLASS_NAME: &'static str = "Application/LowMemoryCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -601,7 +601,7 @@ for crate::UnityEngine::Application_MemoryUsageChangedCallback {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine";
-    const CLASS_NAME: &'static str = "MemoryUsageChangedCallback";
+    const CLASS_NAME: &'static str = "Application/MemoryUsageChangedCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

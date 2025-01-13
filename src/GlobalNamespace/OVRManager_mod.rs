@@ -2823,7 +2823,7 @@ for crate::GlobalNamespace::OVRManager_EventListener {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "EventListener";
+    const CLASS_NAME: &'static str = "OVRManager/EventListener";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3174,7 +3174,7 @@ for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InstantiateMrcCameraDelegate";
+    const CLASS_NAME: &'static str = "OVRManager/InstantiateMrcCameraDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3484,7 +3484,7 @@ for crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PassthroughCapabilities";
+    const CLASS_NAME: &'static str = "OVRManager/PassthroughCapabilities";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

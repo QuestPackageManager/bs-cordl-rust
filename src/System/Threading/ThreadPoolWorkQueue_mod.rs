@@ -186,7 +186,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_QueueSegment {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "QueueSegment";
+    const CLASS_NAME: &'static str = "ThreadPoolWorkQueue/QueueSegment";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -315,7 +315,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "SparseArray`1";
+    const CLASS_NAME: &'static str = "ThreadPoolWorkQueue/SparseArray`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -324,7 +324,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_SparseArray_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading",
-                        "SparseArray`1",
+                        "ThreadPoolWorkQueue/SparseArray`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -467,7 +467,7 @@ for crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading";
-    const CLASS_NAME: &'static str = "WorkStealingQueue";
+    const CLASS_NAME: &'static str = "ThreadPoolWorkQueue/WorkStealingQueue";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

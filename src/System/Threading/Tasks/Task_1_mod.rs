@@ -803,7 +803,7 @@ for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
-    const CLASS_NAME: &'static str = "TaskWhenAnyCast";
+    const CLASS_NAME: &'static str = "Task`1/TaskWhenAnyCast";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -812,7 +812,7 @@ for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading.Tasks",
-                        "TaskWhenAnyCast",
+                        "Task`1/TaskWhenAnyCast",
                     )
                     .unwrap()
                     .make_generic::<(TResult)>()

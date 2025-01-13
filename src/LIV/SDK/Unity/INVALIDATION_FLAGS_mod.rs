@@ -3,11 +3,11 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum INVALIDATION_FLAGS {
     #[default]
-    EXCLUDE_BEHAVIOURS = 1879048200u32,
-    HMD_CAMERA = 134480385u32,
-    MR_CAMERA_PREFAB = 2052u32,
-    NONE = 67240192u32,
-    STAGE = 525314u32,
+    EXCLUDE_BEHAVIOURS = 8u32,
+    HMD_CAMERA = 1u32,
+    MR_CAMERA_PREFAB = 4u32,
+    NONE = 0u32,
+    STAGE = 2u32,
 }
 #[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::INVALIDATION_FLAGS {

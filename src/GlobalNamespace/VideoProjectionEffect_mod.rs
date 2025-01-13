@@ -133,7 +133,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_BeatmapEditorVideoProjectionBe
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BeatmapEditorVideoProjectionBehavior";
+    const CLASS_NAME: &'static str = "VideoProjectionEffect/BeatmapEditorVideoProjectionBehavior";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -274,7 +274,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavio
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GameplayVideoProjectionBehavior";
+    const CLASS_NAME: &'static str = "VideoProjectionEffect/GameplayVideoProjectionBehavior";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -375,7 +375,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InitData";
+    const CLASS_NAME: &'static str = "VideoProjectionEffect/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -459,7 +459,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VideoProjectionBehavior";
+    const CLASS_NAME: &'static str = "VideoProjectionEffect/VideoProjectionBehavior";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

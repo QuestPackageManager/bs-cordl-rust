@@ -231,7 +231,7 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
-    const CLASS_NAME: &'static str = "LambdaSignature`1";
+    const CLASS_NAME: &'static str = "CallSiteBinder/LambdaSignature`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -240,7 +240,7 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Runtime.CompilerServices",
-                        "LambdaSignature`1",
+                        "CallSiteBinder/LambdaSignature`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

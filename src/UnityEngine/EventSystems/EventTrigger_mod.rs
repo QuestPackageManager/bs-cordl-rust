@@ -667,7 +667,7 @@ for crate::UnityEngine::EventSystems::EventTrigger_Entry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "Entry";
+    const CLASS_NAME: &'static str = "EventTrigger/Entry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -738,7 +738,7 @@ for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "TriggerEvent";
+    const CLASS_NAME: &'static str = "EventTrigger/TriggerEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

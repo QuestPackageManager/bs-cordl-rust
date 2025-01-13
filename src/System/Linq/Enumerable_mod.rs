@@ -1569,14 +1569,17 @@ for crate::System::Linq::Enumerable_Iterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "Iterator`1";
+    const CLASS_NAME: &'static str = "Enumerable/Iterator`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Linq", "Iterator`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Linq",
+                        "Enumerable/Iterator`1",
+                    )
                     .unwrap()
                     .make_generic::<(TSource)>()
                     .unwrap()
@@ -1909,7 +1912,7 @@ for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "WhereArrayIterator`1";
+    const CLASS_NAME: &'static str = "Enumerable/WhereArrayIterator`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1918,7 +1921,7 @@ for crate::System::Linq::Enumerable_WhereArrayIterator_1<TSource> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Linq",
-                        "WhereArrayIterator`1",
+                        "Enumerable/WhereArrayIterator`1",
                     )
                     .unwrap()
                     .make_generic::<(TSource)>()
@@ -2089,7 +2092,7 @@ for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "WhereEnumerableIterator`1";
+    const CLASS_NAME: &'static str = "Enumerable/WhereEnumerableIterator`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2098,7 +2101,7 @@ for crate::System::Linq::Enumerable_WhereEnumerableIterator_1<TSource> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Linq",
-                        "WhereEnumerableIterator`1",
+                        "Enumerable/WhereEnumerableIterator`1",
                     )
                     .unwrap()
                     .make_generic::<(TSource)>()
@@ -2285,7 +2288,7 @@ for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "WhereListIterator`1";
+    const CLASS_NAME: &'static str = "Enumerable/WhereListIterator`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2294,7 +2297,7 @@ for crate::System::Linq::Enumerable_WhereListIterator_1<TSource> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Linq",
-                        "WhereListIterator`1",
+                        "Enumerable/WhereListIterator`1",
                     )
                     .unwrap()
                     .make_generic::<(TSource)>()
@@ -2473,7 +2476,7 @@ for crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult>
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "WhereSelectArrayIterator`2";
+    const CLASS_NAME: &'static str = "Enumerable/WhereSelectArrayIterator`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2482,7 +2485,7 @@ for crate::System::Linq::Enumerable_WhereSelectArrayIterator_2<TSource, TResult>
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Linq",
-                        "WhereSelectArrayIterator`2",
+                        "Enumerable/WhereSelectArrayIterator`2",
                     )
                     .unwrap()
                     .make_generic::<(TSource, TResult)>()
@@ -2685,7 +2688,7 @@ for crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<TSource, TRe
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "WhereSelectEnumerableIterator`2";
+    const CLASS_NAME: &'static str = "Enumerable/WhereSelectEnumerableIterator`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2694,7 +2697,7 @@ for crate::System::Linq::Enumerable_WhereSelectEnumerableIterator_2<TSource, TRe
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Linq",
-                        "WhereSelectEnumerableIterator`2",
+                        "Enumerable/WhereSelectEnumerableIterator`2",
                     )
                     .unwrap()
                     .make_generic::<(TSource, TResult)>()
@@ -2915,7 +2918,7 @@ for crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq";
-    const CLASS_NAME: &'static str = "WhereSelectListIterator`2";
+    const CLASS_NAME: &'static str = "Enumerable/WhereSelectListIterator`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2924,7 +2927,7 @@ for crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Linq",
-                        "WhereSelectListIterator`2",
+                        "Enumerable/WhereSelectListIterator`2",
                     )
                     .unwrap()
                     .make_generic::<(TSource, TResult)>()

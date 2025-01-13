@@ -115,7 +115,7 @@ for crate::Unity::Burst::SharedStatic_1<T> {
 }
 #[cfg(feature = "Unity+Burst+SharedStatic_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
-    pub const DefaultAlignment: u32 = 67239952u32;
+    pub const DefaultAlignment: u32 = 16u32;
     pub fn CheckIf_T_IsUnmanagedOrThrow() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     >

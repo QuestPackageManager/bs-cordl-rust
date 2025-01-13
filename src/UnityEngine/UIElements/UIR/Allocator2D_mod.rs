@@ -315,7 +315,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "Area";
+    const CLASS_NAME: &'static str = "Allocator2D/Area";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -400,7 +400,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
-    const CLASS_NAME: &'static str = "Row";
+    const CLASS_NAME: &'static str = "Allocator2D/Row";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

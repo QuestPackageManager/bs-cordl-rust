@@ -181,7 +181,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_SM2P256V1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.GM";
-    const CLASS_NAME: &'static str = "SM2P256V1Holder";
+    const CLASS_NAME: &'static str = "GMNamedCurves/SM2P256V1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -265,7 +265,7 @@ for crate::Org::BouncyCastle::Asn1::GM::GMNamedCurves_WapiP192V1Holder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Asn1.GM";
-    const CLASS_NAME: &'static str = "WapiP192V1Holder";
+    const CLASS_NAME: &'static str = "GMNamedCurves/WapiP192V1Holder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

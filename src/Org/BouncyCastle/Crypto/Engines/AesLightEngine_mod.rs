@@ -51,11 +51,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::AesLightE
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+AesLightEngine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::AesLightEngine {
     pub const BLOCK_SIZE: i32 = 16i32;
-    pub const m1: u32 = 2155905264u32;
-    pub const m2: u32 = 2139062256u32;
-    pub const m3: u32 = 3233869851u32;
-    pub const m4: u32 = 3233857776u32;
-    pub const m5: u32 = 1061109744u32;
+    pub const m1: u32 = 2155905152u32;
+    pub const m2: u32 = 2139062143u32;
+    pub const m3: u32 = 27u32;
+    pub const m4: u32 = 3233857728u32;
+    pub const m5: u32 = 1061109567u32;
     pub fn DecryptBlock(
         &mut self,
         KW: quest_hook::libil2cpp::Gc<

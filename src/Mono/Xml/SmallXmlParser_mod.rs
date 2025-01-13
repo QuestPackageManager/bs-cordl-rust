@@ -338,7 +338,7 @@ for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Xml";
-    const CLASS_NAME: &'static str = "AttrListImpl";
+    const CLASS_NAME: &'static str = "SmallXmlParser/AttrListImpl";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -529,7 +529,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Xml::SmallXmlParser_IAt
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Xml";
-    const CLASS_NAME: &'static str = "IAttrList";
+    const CLASS_NAME: &'static str = "SmallXmlParser/IAttrList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -672,7 +672,7 @@ for crate::Mono::Xml::SmallXmlParser_IContentHandler {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Xml";
-    const CLASS_NAME: &'static str = "IContentHandler";
+    const CLASS_NAME: &'static str = "SmallXmlParser/IContentHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

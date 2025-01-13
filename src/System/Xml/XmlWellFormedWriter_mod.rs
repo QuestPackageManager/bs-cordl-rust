@@ -13,7 +13,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "BufferChunk";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/AttributeValueCache/BufferChunk";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -93,7 +93,7 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "Item";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/AttributeValueCache/Item";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1148,7 +1148,7 @@ for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "AttributeValueCache";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/AttributeValueCache";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1765,7 +1765,7 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "NamespaceResolverProxy";
+    const CLASS_NAME: &'static str = "XmlWellFormedWriter/NamespaceResolverProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

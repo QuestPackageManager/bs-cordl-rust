@@ -3,8 +3,8 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_FORMAT {
     #[default]
-    ARGB32 = 33619978u32,
-    UNDEFINED = 16779776u32,
+    ARGB32 = 10u32,
+    UNDEFINED = 0u32,
 }
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_FORMAT")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::TEXTURE_FORMAT {

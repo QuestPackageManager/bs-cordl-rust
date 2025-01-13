@@ -565,7 +565,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "RequireClass`1";
+    const CLASS_NAME: &'static str = "HEU_TestHelpers/RequireClass`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -574,7 +574,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireClass_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "HoudiniEngineUnity",
-                        "RequireClass`1",
+                        "HEU_TestHelpers/RequireClass`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -661,7 +661,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HoudiniEngineUnity";
-    const CLASS_NAME: &'static str = "RequireStruct`1";
+    const CLASS_NAME: &'static str = "HEU_TestHelpers/RequireStruct`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -670,7 +670,7 @@ for crate::HoudiniEngineUnity::HEU_TestHelpers_RequireStruct_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "HoudiniEngineUnity",
-                        "RequireStruct`1",
+                        "HEU_TestHelpers/RequireStruct`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

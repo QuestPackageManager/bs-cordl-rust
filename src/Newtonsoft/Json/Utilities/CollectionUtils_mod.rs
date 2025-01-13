@@ -304,7 +304,7 @@ for crate::Newtonsoft::Json::Utilities::CollectionUtils_EmptyArrayContainer_1<T>
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Utilities";
-    const CLASS_NAME: &'static str = "EmptyArrayContainer`1";
+    const CLASS_NAME: &'static str = "CollectionUtils/EmptyArrayContainer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -313,7 +313,7 @@ for crate::Newtonsoft::Json::Utilities::CollectionUtils_EmptyArrayContainer_1<T>
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Newtonsoft.Json.Utilities",
-                        "EmptyArrayContainer`1",
+                        "CollectionUtils/EmptyArrayContainer`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

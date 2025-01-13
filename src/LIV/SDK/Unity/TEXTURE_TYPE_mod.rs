@@ -3,8 +3,8 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_TYPE {
     #[default]
-    COLOR_BUFFER = 655361u32,
-    UNDEFINED = 167772416u32,
+    COLOR_BUFFER = 1u32,
+    UNDEFINED = 0u32,
 }
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::TEXTURE_TYPE {

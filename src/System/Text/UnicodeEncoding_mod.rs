@@ -427,7 +427,7 @@ for crate::System::Text::UnicodeEncoding_Decoder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text";
-    const CLASS_NAME: &'static str = "Decoder";
+    const CLASS_NAME: &'static str = "UnicodeEncoding/Decoder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

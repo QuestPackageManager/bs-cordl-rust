@@ -3,10 +3,10 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AttributeProperties {
     #[default]
-    BOOLEAN = 33555458u32,
-    DEFAULT = 67240192u32,
-    NAME = 67239940u32,
-    URI = 262657u32,
+    BOOLEAN = 2u32,
+    DEFAULT = 0u32,
+    NAME = 4u32,
+    URI = 1u32,
 }
 #[cfg(feature = "System+Xml+AttributeProperties")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::AttributeProperties {

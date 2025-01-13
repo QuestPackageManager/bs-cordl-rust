@@ -2110,7 +2110,7 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
-    const CLASS_NAME: &'static str = "AwaitableSocketAsyncEventArgs";
+    const CLASS_NAME: &'static str = "Socket/AwaitableSocketAsyncEventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2420,7 +2420,7 @@ for crate::System::Net::Sockets::Socket_CachedEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
-    const CLASS_NAME: &'static str = "CachedEventArgs";
+    const CLASS_NAME: &'static str = "Socket/CachedEventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2490,7 +2490,7 @@ for crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
-    const CLASS_NAME: &'static str = "Int32TaskSocketAsyncEventArgs";
+    const CLASS_NAME: &'static str = "Socket/Int32TaskSocketAsyncEventArgs";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2566,7 +2566,7 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net.Sockets";
-    const CLASS_NAME: &'static str = "TaskSocketAsyncEventArgs`1";
+    const CLASS_NAME: &'static str = "Socket/TaskSocketAsyncEventArgs`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2575,7 +2575,7 @@ for crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<TResult> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Net.Sockets",
-                        "TaskSocketAsyncEventArgs`1",
+                        "Socket/TaskSocketAsyncEventArgs`1",
                     )
                     .unwrap()
                     .make_generic::<(TResult)>()

@@ -39,8 +39,8 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Rfc7748::X448 {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc7748+X448")]
 impl crate::Org::BouncyCastle::Math::EC::Rfc7748::X448 {
-    pub const C_A: u32 = 2791441088u32;
-    pub const C_A24: u32 = 2862088384u32;
+    pub const C_A: u32 = 156326u32;
+    pub const C_A24: u32 = 39082u32;
     pub const PointSize: i32 = 56i32;
     pub const ScalarSize: i32 = 56i32;
     pub fn CalculateAgreement(

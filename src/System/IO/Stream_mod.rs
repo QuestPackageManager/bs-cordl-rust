@@ -943,7 +943,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream_ReadWriteT
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO";
-    const CLASS_NAME: &'static str = "ReadWriteTask";
+    const CLASS_NAME: &'static str = "Stream/ReadWriteTask";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1114,7 +1114,7 @@ for crate::System::IO::Stream_SynchronousAsyncResult {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.IO";
-    const CLASS_NAME: &'static str = "SynchronousAsyncResult";
+    const CLASS_NAME: &'static str = "Stream/SynchronousAsyncResult";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

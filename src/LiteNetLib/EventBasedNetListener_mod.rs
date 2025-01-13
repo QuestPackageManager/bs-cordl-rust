@@ -547,7 +547,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnConnectionRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnConnectionRequest";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnConnectionRequest";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -659,7 +659,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnDeliveryEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnDeliveryEvent";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnDeliveryEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -772,7 +772,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkError {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnNetworkError";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnNetworkError";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -885,7 +885,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkLatencyUpdate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnNetworkLatencyUpdate";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnNetworkLatencyUpdate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1000,7 +1000,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceive {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnNetworkReceive";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnNetworkReceive";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1115,7 +1115,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnNetworkReceiveUnconnected {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnNetworkReceiveUnconnected";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnNetworkReceiveUnconnected";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1235,7 +1235,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnPeerConnected {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnPeerConnected";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnPeerConnected";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1346,7 +1346,7 @@ for crate::LiteNetLib::EventBasedNetListener_OnPeerDisconnected {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "OnPeerDisconnected";
+    const CLASS_NAME: &'static str = "EventBasedNetListener/OnPeerDisconnected";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

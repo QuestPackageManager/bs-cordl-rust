@@ -157,7 +157,7 @@ for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Resources";
-    const CLASS_NAME: &'static str = "CultureNameResourceSetPair";
+    const CLASS_NAME: &'static str = "ResourceManager/CultureNameResourceSetPair";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -229,7 +229,7 @@ for crate::System::Resources::ResourceManager_ResourceManagerMediator {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Resources";
-    const CLASS_NAME: &'static str = "ResourceManagerMediator";
+    const CLASS_NAME: &'static str = "ResourceManager/ResourceManagerMediator";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

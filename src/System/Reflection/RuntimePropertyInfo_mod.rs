@@ -543,7 +543,7 @@ for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Reflection";
-    const CLASS_NAME: &'static str = "GetterAdapter";
+    const CLASS_NAME: &'static str = "RuntimePropertyInfo/GetterAdapter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -640,14 +640,17 @@ for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Reflection";
-    const CLASS_NAME: &'static str = "Getter`2";
+    const CLASS_NAME: &'static str = "RuntimePropertyInfo/Getter`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Reflection", "Getter`2")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Reflection",
+                        "RuntimePropertyInfo/Getter`2",
+                    )
                     .unwrap()
                     .make_generic::<(T, R)>()
                     .unwrap()
@@ -761,7 +764,7 @@ for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Reflection";
-    const CLASS_NAME: &'static str = "StaticGetter`1";
+    const CLASS_NAME: &'static str = "RuntimePropertyInfo/StaticGetter`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -770,7 +773,7 @@ for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Reflection",
-                        "StaticGetter`1",
+                        "RuntimePropertyInfo/StaticGetter`1",
                     )
                     .unwrap()
                     .make_generic::<(R)>()

@@ -308,7 +308,7 @@ for crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetarget
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BoneData";
+    const CLASS_NAME: &'static str = "OVRUnityHumanoidSkeletonRetargeter/OVRSkeletonMetadata/BoneData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -819,7 +819,7 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "JointAdjustment";
+    const CLASS_NAME: &'static str = "OVRUnityHumanoidSkeletonRetargeter/JointAdjustment";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -890,7 +890,7 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBones
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRHumanBodyBonesMappings";
+    const CLASS_NAME: &'static str = "OVRUnityHumanoidSkeletonRetargeter/OVRHumanBodyBonesMappings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -963,7 +963,7 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetada
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRSkeletonMetadata";
+    const CLASS_NAME: &'static str = "OVRUnityHumanoidSkeletonRetargeter/OVRSkeletonMetadata";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

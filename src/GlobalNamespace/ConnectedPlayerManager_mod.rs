@@ -1449,7 +1449,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ConnectedPlayer";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/ConnectedPlayer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2171,7 +2171,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "KickPlayerPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/KickPlayerPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2429,7 +2429,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PingPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PingPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2593,7 +2593,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerAvatarPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PlayerAvatarPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2762,7 +2762,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerConnectedPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PlayerConnectedPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2932,7 +2932,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerDisconnectedPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PlayerDisconnectedPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3105,7 +3105,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerIdentityPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PlayerIdentityPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3278,7 +3278,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerSortOrderPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PlayerSortOrderPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3445,7 +3445,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PlayerStatePacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PlayerStatePacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3611,7 +3611,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PongPacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/PongPacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3775,7 +3775,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SyncTimePacket";
+    const CLASS_NAME: &'static str = "ConnectedPlayerManager/SyncTimePacket";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -847,7 +847,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Rfc8032";
-    const CLASS_NAME: &'static str = "PointAccum";
+    const CLASS_NAME: &'static str = "Ed25519/PointAccum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -922,7 +922,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Rfc8032";
-    const CLASS_NAME: &'static str = "PointExt";
+    const CLASS_NAME: &'static str = "Ed25519/PointExt";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -995,7 +995,7 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointPrecomp {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Rfc8032";
-    const CLASS_NAME: &'static str = "PointPrecomp";
+    const CLASS_NAME: &'static str = "Ed25519/PointPrecomp";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

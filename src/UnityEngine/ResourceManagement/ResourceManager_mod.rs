@@ -1542,7 +1542,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
-    const CLASS_NAME: &'static str = "CompletedOperation`1";
+    const CLASS_NAME: &'static str = "ResourceManager/CompletedOperation`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1551,7 +1551,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.ResourceManagement",
-                        "CompletedOperation`1",
+                        "ResourceManager/CompletedOperation`1",
                     )
                     .unwrap()
                     .make_generic::<(TObject)>()
@@ -2146,7 +2146,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.ResourceManagement";
-    const CLASS_NAME: &'static str = "InstanceOperation";
+    const CLASS_NAME: &'static str = "ResourceManager/InstanceOperation";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

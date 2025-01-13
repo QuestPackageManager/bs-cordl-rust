@@ -361,7 +361,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapLevelSaveDataVersion4";
-    const CLASS_NAME: &'static str = "ColorScheme";
+    const CLASS_NAME: &'static str = "BeatmapLevelSaveData/ColorScheme";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -445,7 +445,7 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatmapLevelSaveDataVersion4";
-    const CLASS_NAME: &'static str = "DifficultyBeatmap";
+    const CLASS_NAME: &'static str = "BeatmapLevelSaveData/DifficultyBeatmap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

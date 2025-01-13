@@ -123,7 +123,7 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDriverCount";
+    const CLASS_NAME: &'static str = "IVRDriverManager/_GetDriverCount";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -228,7 +228,7 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDriverHandle";
+    const CLASS_NAME: &'static str = "IVRDriverManager/_GetDriverHandle";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -337,7 +337,7 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDriverName";
+    const CLASS_NAME: &'static str = "IVRDriverManager/_GetDriverName";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

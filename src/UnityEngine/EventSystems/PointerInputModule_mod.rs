@@ -306,7 +306,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_ButtonState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "ButtonState";
+    const CLASS_NAME: &'static str = "PointerInputModule/ButtonState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -432,7 +432,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "MouseButtonEventData";
+    const CLASS_NAME: &'static str = "PointerInputModule/MouseButtonEventData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -524,7 +524,7 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.EventSystems";
-    const CLASS_NAME: &'static str = "MouseState";
+    const CLASS_NAME: &'static str = "PointerInputModule/MouseState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

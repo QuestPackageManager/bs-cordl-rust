@@ -276,7 +276,7 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_SliderTailData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SliderTailData";
+    const CLASS_NAME: &'static str = "BeatmapObjectsInTimeRowProcessor/SliderTailData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -400,14 +400,17 @@ for crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TimeSliceContainer`1";
+    const CLASS_NAME: &'static str = "BeatmapObjectsInTimeRowProcessor/TimeSliceContainer`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "TimeSliceContainer`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "BeatmapObjectsInTimeRowProcessor/TimeSliceContainer`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

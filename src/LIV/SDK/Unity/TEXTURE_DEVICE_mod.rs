@@ -3,12 +3,12 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_DEVICE {
     #[default]
-    DIRECTX = 84148994u32,
-    METAL = 33619973u32,
-    OPENGL = 328707u32,
-    RAW = 67305985u32,
-    UNDEFINED = 50462976u32,
-    VULKAN = 16778500u32,
+    DIRECTX = 2u32,
+    METAL = 5u32,
+    OPENGL = 3u32,
+    RAW = 1u32,
+    UNDEFINED = 0u32,
+    VULKAN = 4u32,
 }
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_DEVICE")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::TEXTURE_DEVICE {

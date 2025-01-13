@@ -113,7 +113,7 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CuttableBySaberSortParams";
+    const CLASS_NAME: &'static str = "NoteCutter/CuttableBySaberSortParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -183,7 +183,7 @@ for crate::GlobalNamespace::NoteCutter_CuttableBySaberSortParamsComparer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CuttableBySaberSortParamsComparer";
+    const CLASS_NAME: &'static str = "NoteCutter/CuttableBySaberSortParamsComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

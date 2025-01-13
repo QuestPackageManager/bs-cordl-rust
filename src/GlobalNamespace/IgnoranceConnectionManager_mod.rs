@@ -850,7 +850,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ConnectToServerParams";
+    const CLASS_NAME: &'static str = "IgnoranceConnectionManager/ConnectToServerParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1027,7 +1027,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IgnoranceConnection";
+    const CLASS_NAME: &'static str = "IgnoranceConnectionManager/IgnoranceConnection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1228,7 +1228,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParams
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IgnoranceConnectionParamsBase";
+    const CLASS_NAME: &'static str = "IgnoranceConnectionManager/IgnoranceConnectionParamsBase";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1332,7 +1332,7 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "StartServerParams";
+    const CLASS_NAME: &'static str = "IgnoranceConnectionManager/StartServerParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

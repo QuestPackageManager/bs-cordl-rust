@@ -197,7 +197,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject.Internal";
-    const CLASS_NAME: &'static str = "InjectConstructorInfo";
+    const CLASS_NAME: &'static str = "ReflectionTypeInfo/InjectConstructorInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -291,7 +291,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject.Internal";
-    const CLASS_NAME: &'static str = "InjectFieldInfo";
+    const CLASS_NAME: &'static str = "ReflectionTypeInfo/InjectFieldInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -374,7 +374,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject.Internal";
-    const CLASS_NAME: &'static str = "InjectMethodInfo";
+    const CLASS_NAME: &'static str = "ReflectionTypeInfo/InjectMethodInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -465,7 +465,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject.Internal";
-    const CLASS_NAME: &'static str = "InjectParameterInfo";
+    const CLASS_NAME: &'static str = "ReflectionTypeInfo/InjectParameterInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -547,7 +547,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Zenject.Internal";
-    const CLASS_NAME: &'static str = "InjectPropertyInfo";
+    const CLASS_NAME: &'static str = "ReflectionTypeInfo/InjectPropertyInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

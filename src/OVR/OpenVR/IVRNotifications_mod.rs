@@ -118,7 +118,7 @@ for crate::OVR::OpenVR::IVRNotifications__CreateNotification {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_CreateNotification";
+    const CLASS_NAME: &'static str = "IVRNotifications/_CreateNotification";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -273,7 +273,7 @@ for crate::OVR::OpenVR::IVRNotifications__RemoveNotification {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_RemoveNotification";
+    const CLASS_NAME: &'static str = "IVRNotifications/_RemoveNotification";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

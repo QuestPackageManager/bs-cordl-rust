@@ -715,7 +715,7 @@ for crate::LiteNetLib::NetPeer_IncomingFragments {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "LiteNetLib";
-    const CLASS_NAME: &'static str = "IncomingFragments";
+    const CLASS_NAME: &'static str = "NetPeer/IncomingFragments";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

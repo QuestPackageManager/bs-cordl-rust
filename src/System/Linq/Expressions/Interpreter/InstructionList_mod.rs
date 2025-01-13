@@ -1628,7 +1628,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
-    const CLASS_NAME: &'static str = "DebugView";
+    const CLASS_NAME: &'static str = "InstructionList/DebugView";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -25,7 +25,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualAxis1DMap";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerBase/VirtualAxis1DMap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -112,7 +112,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualAxis2DMap";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerBase/VirtualAxis2DMap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -227,7 +227,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualButtonMap";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerBase/VirtualButtonMap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -314,7 +314,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualNearTouchMap";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerBase/VirtualNearTouchMap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -409,7 +409,7 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "VirtualTouchMap";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerBase/VirtualTouchMap";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1907,7 +1907,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Hap
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HapticInfo";
+    const CLASS_NAME: &'static str = "OVRInput/HapticInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2586,7 +2586,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerBase {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerBase";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerBase";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2857,7 +2857,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerGamepadAndroid";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerGamepadAndroid";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2977,7 +2977,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerGamepadPC";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerGamepadPC";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3096,7 +3096,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerHands {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerHands";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerHands";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3222,7 +3222,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerLHand";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerLHand";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3348,7 +3348,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerLTouch";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerLTouch";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3474,7 +3474,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerRHand";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerRHand";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3600,7 +3600,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerRTouch";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerRTouch";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3726,7 +3726,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerRemote";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerRemote";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3845,7 +3845,7 @@ for crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRControllerTouch";
+    const CLASS_NAME: &'static str = "OVRInput/OVRControllerTouch";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

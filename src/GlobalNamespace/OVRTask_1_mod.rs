@@ -906,14 +906,14 @@ for crate::GlobalNamespace::OVRTask_1_CallbackInvoker<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CallbackInvoker";
+    const CLASS_NAME: &'static str = "OVRTask`1/CallbackInvoker";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "CallbackInvoker")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRTask`1/CallbackInvoker")
                     .unwrap()
                     .make_generic::<(TResult)>()
                     .unwrap()
@@ -1057,14 +1057,14 @@ for crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "CallbackRemover";
+    const CLASS_NAME: &'static str = "OVRTask`1/CallbackRemover";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "CallbackRemover")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRTask`1/CallbackRemover")
                     .unwrap()
                     .make_generic::<(TResult)>()
                     .unwrap()
@@ -1441,7 +1441,7 @@ for crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IncrementalResultSubscriber`1";
+    const CLASS_NAME: &'static str = "OVRTask`1/IncrementalResultSubscriber`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1450,7 +1450,7 @@ for crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "",
-                        "IncrementalResultSubscriber`1",
+                        "OVRTask`1/IncrementalResultSubscriber`1",
                     )
                     .unwrap()
                     .make_generic::<(TResult, T)>()
@@ -1576,14 +1576,17 @@ for crate::GlobalNamespace::OVRTask_1_InternalDataRemover<TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InternalDataRemover";
+    const CLASS_NAME: &'static str = "OVRTask`1/InternalDataRemover";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "InternalDataRemover")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "OVRTask`1/InternalDataRemover",
+                    )
                     .unwrap()
                     .make_generic::<(TResult)>()
                     .unwrap()
@@ -1730,14 +1733,14 @@ for crate::GlobalNamespace::OVRTask_1_InternalData_1<TResult, T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InternalData`1";
+    const CLASS_NAME: &'static str = "OVRTask`1/InternalData`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "InternalData`1")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OVRTask`1/InternalData`1")
                     .unwrap()
                     .make_generic::<(TResult, T)>()
                     .unwrap()

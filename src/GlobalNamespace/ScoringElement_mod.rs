@@ -277,14 +277,14 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Pool`1";
+    const CLASS_NAME: &'static str = "ScoringElement/Pool`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "Pool`1")
+                quest_hook::libil2cpp::Il2CppClass::find("", "ScoringElement/Pool`1")
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

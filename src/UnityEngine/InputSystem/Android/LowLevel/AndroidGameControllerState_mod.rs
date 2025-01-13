@@ -104,7 +104,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
 impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerState {
     pub const MaxAxes: i32 = 48i32;
     pub const MaxButtons: i32 = 220i32;
-    pub const kAxisOffset: u32 = 1632046620u32;
+    pub const kAxisOffset: u32 = 28u32;
     #[cfg(
         feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidGameControllerState+Variants"
     )]
@@ -190,7 +190,7 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidGameControllerSta
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Android.LowLevel";
-    const CLASS_NAME: &'static str = "Variants";
+    const CLASS_NAME: &'static str = "AndroidGameControllerState/Variants";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

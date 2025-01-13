@@ -745,7 +745,7 @@ for crate::UnityEngine::UI::Dropdown_DropdownEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "DropdownEvent";
+    const CLASS_NAME: &'static str = "Dropdown/DropdownEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -818,7 +818,7 @@ for crate::UnityEngine::UI::Dropdown_DropdownItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "DropdownItem";
+    const CLASS_NAME: &'static str = "Dropdown/DropdownItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1048,7 +1048,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown_Opt
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "OptionData";
+    const CLASS_NAME: &'static str = "Dropdown/OptionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1230,7 +1230,7 @@ for crate::UnityEngine::UI::Dropdown_OptionDataList {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UI";
-    const CLASS_NAME: &'static str = "OptionDataList";
+    const CLASS_NAME: &'static str = "Dropdown/OptionDataList";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

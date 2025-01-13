@@ -270,7 +270,7 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "ListElementProperty";
+    const CLASS_NAME: &'static str = "IndexedCollectionPropertyBag`2/ListElementProperty";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -279,7 +279,7 @@ for crate::Unity::Properties::IndexedCollectionPropertyBag_2_ListElementProperty
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "ListElementProperty",
+                        "IndexedCollectionPropertyBag`2/ListElementProperty",
                     )
                     .unwrap()
                     .make_generic::<(TList, TElement)>()

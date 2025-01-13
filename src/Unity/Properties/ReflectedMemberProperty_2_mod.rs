@@ -214,7 +214,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "GetClassValueAction";
+    const CLASS_NAME: &'static str = "ReflectedMemberProperty`2/GetClassValueAction";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -223,7 +223,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "GetClassValueAction",
+                        "ReflectedMemberProperty`2/GetClassValueAction",
                     )
                     .unwrap()
                     .make_generic::<(TContainer, TValue)>()
@@ -369,7 +369,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "GetStructValueAction";
+    const CLASS_NAME: &'static str = "ReflectedMemberProperty`2/GetStructValueAction";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -378,7 +378,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "GetStructValueAction",
+                        "ReflectedMemberProperty`2/GetStructValueAction",
                     )
                     .unwrap()
                     .make_generic::<(TContainer, TValue)>()
@@ -524,7 +524,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "SetClassValueAction";
+    const CLASS_NAME: &'static str = "ReflectedMemberProperty`2/SetClassValueAction";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -533,7 +533,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "SetClassValueAction",
+                        "ReflectedMemberProperty`2/SetClassValueAction",
                     )
                     .unwrap()
                     .make_generic::<(TContainer, TValue)>()
@@ -681,7 +681,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "SetStructValueAction";
+    const CLASS_NAME: &'static str = "ReflectedMemberProperty`2/SetStructValueAction";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -690,7 +690,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "SetStructValueAction",
+                        "ReflectedMemberProperty`2/SetStructValueAction",
                     )
                     .unwrap()
                     .make_generic::<(TContainer, TValue)>()

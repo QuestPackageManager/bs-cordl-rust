@@ -417,7 +417,7 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "ITypeConstructor";
+    const CLASS_NAME: &'static str = "TypeUtility/ITypeConstructor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -495,7 +495,7 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "ITypeConstructor`1";
+    const CLASS_NAME: &'static str = "TypeUtility/ITypeConstructor`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -504,7 +504,7 @@ for crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "ITypeConstructor`1",
+                        "TypeUtility/ITypeConstructor`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -616,7 +616,7 @@ for crate::Unity::Properties::TypeUtility_NonConstructable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "NonConstructable";
+    const CLASS_NAME: &'static str = "TypeUtility/NonConstructable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -728,7 +728,7 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "TypeConstructorVisitor";
+    const CLASS_NAME: &'static str = "TypeUtility/TypeConstructorVisitor";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -832,7 +832,7 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties";
-    const CLASS_NAME: &'static str = "TypeConstructor`1";
+    const CLASS_NAME: &'static str = "TypeUtility/TypeConstructor`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -841,7 +841,7 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Unity.Properties",
-                        "TypeConstructor`1",
+                        "TypeUtility/TypeConstructor`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

@@ -47,10 +47,10 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::Sha1Diges
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha1Digest")]
 impl crate::Org::BouncyCastle::Crypto::Digests::Sha1Digest {
     pub const DigestLength: i32 = 20i32;
-    pub const Y1: u32 = 2189007344u32;
-    pub const Y2: u32 = 3656098288u32;
-    pub const Y3: u32 = 465362160u32;
-    pub const Y4: u32 = 1656870640u32;
+    pub const Y1: u32 = 1518500249u32;
+    pub const Y2: u32 = 1859775393u32;
+    pub const Y3: u32 = 2400959708u32;
+    pub const Y4: u32 = 3395469782u32;
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

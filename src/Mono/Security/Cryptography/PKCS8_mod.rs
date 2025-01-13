@@ -68,7 +68,7 @@ for crate::Mono::Security::Cryptography::PKCS8_EncryptedPrivateKeyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Security.Cryptography";
-    const CLASS_NAME: &'static str = "EncryptedPrivateKeyInfo";
+    const CLASS_NAME: &'static str = "PKCS8/EncryptedPrivateKeyInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -220,7 +220,7 @@ for crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Mono.Security.Cryptography";
-    const CLASS_NAME: &'static str = "PrivateKeyInfo";
+    const CLASS_NAME: &'static str = "PKCS8/PrivateKeyInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -465,7 +465,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions.DataModels";
-    const CLASS_NAME: &'static str = "SpawnableEventBoxGroupTrack";
+    const CLASS_NAME: &'static str = "EnvironmentTrackDefinitionModel/SpawnableEventBoxGroupTrack";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -575,7 +575,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "BeatSaber.TrackDefinitions.DataModels";
-    const CLASS_NAME: &'static str = "SpawnableEventBoxGroupTypeTrack";
+    const CLASS_NAME: &'static str = "EnvironmentTrackDefinitionModel/SpawnableEventBoxGroupTypeTrack";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

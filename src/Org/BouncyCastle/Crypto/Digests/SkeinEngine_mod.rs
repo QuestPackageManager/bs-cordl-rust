@@ -401,7 +401,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Digests";
-    const CLASS_NAME: &'static str = "Configuration";
+    const CLASS_NAME: &'static str = "SkeinEngine/Configuration";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -490,7 +490,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Digests";
-    const CLASS_NAME: &'static str = "Parameter";
+    const CLASS_NAME: &'static str = "SkeinEngine/Parameter";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -595,7 +595,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Digests";
-    const CLASS_NAME: &'static str = "UBI";
+    const CLASS_NAME: &'static str = "SkeinEngine/UBI";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -735,7 +735,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Digests";
-    const CLASS_NAME: &'static str = "UbiTweak";
+    const CLASS_NAME: &'static str = "SkeinEngine/UbiTweak";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

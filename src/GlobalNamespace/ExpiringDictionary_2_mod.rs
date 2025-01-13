@@ -569,14 +569,17 @@ for crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Entry";
+    const CLASS_NAME: &'static str = "ExpiringDictionary`2/Entry";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "Entry")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "ExpiringDictionary`2/Entry",
+                    )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
                     .unwrap()

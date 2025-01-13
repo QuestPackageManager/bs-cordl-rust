@@ -542,7 +542,7 @@ for crate::System::Collections::ArrayList_ArrayListDebugView {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "ArrayListDebugView";
+    const CLASS_NAME: &'static str = "ArrayList/ArrayListDebugView";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -598,7 +598,7 @@ for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections";
-    const CLASS_NAME: &'static str = "ArrayListEnumeratorSimple";
+    const CLASS_NAME: &'static str = "ArrayList/ArrayListEnumeratorSimple";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

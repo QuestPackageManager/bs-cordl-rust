@@ -41,8 +41,8 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Djb+Curve25519Field")]
 impl crate::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519Field {
-    pub const P7: u32 = 4294967280u32;
-    pub const PInv: u32 = 4262462483u32;
+    pub const P7: u32 = 2147483647u32;
+    pub const PInv: u32 = 19u32;
     pub fn Add(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,

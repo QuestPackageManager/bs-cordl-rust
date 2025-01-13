@@ -229,7 +229,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
-    const CLASS_NAME: &'static str = "ContinuationWrapper";
+    const CLASS_NAME: &'static str = "AsyncMethodBuilderCore/ContinuationWrapper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -329,7 +329,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRun
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
-    const CLASS_NAME: &'static str = "MoveNextRunner";
+    const CLASS_NAME: &'static str = "AsyncMethodBuilderCore/MoveNextRunner";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

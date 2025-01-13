@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUti
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+Gcm+GcmUtilities")]
 impl crate::Org::BouncyCastle::Crypto::Modes::Gcm::GcmUtilities {
-    pub const E1: u32 = 240u32;
+    pub const E1: u32 = 3774873600u32;
     pub const E1L: u64 = 16212958658533785600u64;
     pub fn AsBytes_Il2CppArray0(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,

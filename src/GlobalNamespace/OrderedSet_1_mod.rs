@@ -405,14 +405,14 @@ for crate::GlobalNamespace::OrderedSet_1_Node<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Node";
+    const CLASS_NAME: &'static str = "OrderedSet`1/Node";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "Node")
+                quest_hook::libil2cpp::Il2CppClass::find("", "OrderedSet`1/Node")
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

@@ -681,7 +681,7 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Utilities";
-    const CLASS_NAME: &'static str = "Fallback";
+    const CLASS_NAME: &'static str = "DynamicProxyMetaObject`1/Fallback";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -690,7 +690,7 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Newtonsoft.Json.Utilities",
-                        "Fallback",
+                        "DynamicProxyMetaObject`1/Fallback",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -843,7 +843,7 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapte
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Newtonsoft.Json.Utilities";
-    const CLASS_NAME: &'static str = "GetBinderAdapter";
+    const CLASS_NAME: &'static str = "DynamicProxyMetaObject`1/GetBinderAdapter";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -852,7 +852,7 @@ for crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_GetBinderAdapte
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "Newtonsoft.Json.Utilities",
-                        "GetBinderAdapter",
+                        "DynamicProxyMetaObject`1/GetBinderAdapter",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

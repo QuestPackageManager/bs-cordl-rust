@@ -123,7 +123,7 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetDXGIOutputInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDXGIOutputInfo";
+    const CLASS_NAME: &'static str = "IVRExtendedDisplay/_GetDXGIOutputInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -241,7 +241,7 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetEyeOutputViewport {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetEyeOutputViewport";
+    const CLASS_NAME: &'static str = "IVRExtendedDisplay/_GetEyeOutputViewport";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -368,7 +368,7 @@ for crate::OVR::OpenVR::IVRExtendedDisplay__GetWindowBounds {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetWindowBounds";
+    const CLASS_NAME: &'static str = "IVRExtendedDisplay/_GetWindowBounds";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

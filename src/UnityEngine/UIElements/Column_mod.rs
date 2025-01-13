@@ -719,7 +719,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UxmlObjectFactory`1";
+    const CLASS_NAME: &'static str = "Column/UxmlObjectFactory`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -728,7 +728,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectFactory_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "UxmlObjectFactory`1",
+                        "Column/UxmlObjectFactory`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -856,7 +856,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UxmlObjectTraits`1";
+    const CLASS_NAME: &'static str = "Column/UxmlObjectTraits`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -865,7 +865,7 @@ for crate::UnityEngine::UIElements::Column_UxmlObjectTraits_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "UxmlObjectTraits`1",
+                        "Column/UxmlObjectTraits`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

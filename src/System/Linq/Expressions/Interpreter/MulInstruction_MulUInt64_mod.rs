@@ -10,7 +10,7 @@ for crate::GlobalNamespace::MulInstruction_MulUInt64 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
-    const CLASS_NAME: &'static str = "MulUInt64";
+    const CLASS_NAME: &'static str = "MulInstruction/MulUInt64";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

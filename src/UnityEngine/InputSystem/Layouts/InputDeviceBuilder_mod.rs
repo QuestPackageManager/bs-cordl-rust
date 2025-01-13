@@ -114,7 +114,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]
 impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
-    pub const kSizeForControlUsingStateFromOtherControl: u32 = 16843263u32;
+    pub const kSizeForControlUsingStateFromOtherControl: u32 = 4294967295u32;
     #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceBuilder+RefInstance")]
     pub type RefInstance = crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance;
     pub fn AddChildControl(

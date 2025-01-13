@@ -346,7 +346,7 @@ for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_Exiting {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_AcknowledgeQuit_Exiting";
+    const CLASS_NAME: &'static str = "IVRSystem/_AcknowledgeQuit_Exiting";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -455,7 +455,7 @@ for crate::OVR::OpenVR::IVRSystem__AcknowledgeQuit_UserPrompt {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_AcknowledgeQuit_UserPrompt";
+    const CLASS_NAME: &'static str = "IVRSystem/_AcknowledgeQuit_UserPrompt";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -564,7 +564,7 @@ for crate::OVR::OpenVR::IVRSystem__ApplyTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ApplyTransform";
+    const CLASS_NAME: &'static str = "IVRSystem/_ApplyTransform";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -697,7 +697,7 @@ for crate::OVR::OpenVR::IVRSystem__ComputeDistortion {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ComputeDistortion";
+    const CLASS_NAME: &'static str = "IVRSystem/_ComputeDistortion";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -824,7 +824,7 @@ for crate::OVR::OpenVR::IVRSystem__DriverDebugRequest {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_DriverDebugRequest";
+    const CLASS_NAME: &'static str = "IVRSystem/_DriverDebugRequest";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -953,7 +953,7 @@ for crate::OVR::OpenVR::IVRSystem__GetArrayTrackedDeviceProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetArrayTrackedDeviceProperty";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetArrayTrackedDeviceProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1096,7 +1096,7 @@ for crate::OVR::OpenVR::IVRSystem__GetBoolTrackedDeviceProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetBoolTrackedDeviceProperty";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetBoolTrackedDeviceProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1217,7 +1217,7 @@ for crate::OVR::OpenVR::IVRSystem__GetButtonIdNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetButtonIdNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetButtonIdNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1328,7 +1328,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerAxisTypeNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetControllerAxisTypeNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetControllerAxisTypeNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1441,7 +1441,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerRoleForTrackedDeviceIndex {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetControllerRoleForTrackedDeviceIndex";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetControllerRoleForTrackedDeviceIndex";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1554,7 +1554,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetControllerState";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetControllerState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1688,7 +1688,7 @@ for crate::OVR::OpenVR::IVRSystem__GetControllerStateWithPose {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetControllerStateWithPose";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetControllerStateWithPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1841,7 +1841,7 @@ for crate::OVR::OpenVR::IVRSystem__GetD3D9AdapterIndex {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetD3D9AdapterIndex";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetD3D9AdapterIndex";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1946,7 +1946,7 @@ for crate::OVR::OpenVR::IVRSystem__GetDXGIOutputInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDXGIOutputInfo";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetDXGIOutputInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2058,7 +2058,7 @@ for crate::OVR::OpenVR::IVRSystem__GetDeviceToAbsoluteTrackingPose {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDeviceToAbsoluteTrackingPose";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetDeviceToAbsoluteTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2206,7 +2206,7 @@ for crate::OVR::OpenVR::IVRSystem__GetEventTypeNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetEventTypeNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetEventTypeNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2317,7 +2317,7 @@ for crate::OVR::OpenVR::IVRSystem__GetEyeToHeadTransform {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetEyeToHeadTransform";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetEyeToHeadTransform";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2428,7 +2428,7 @@ for crate::OVR::OpenVR::IVRSystem__GetFloatTrackedDeviceProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetFloatTrackedDeviceProperty";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetFloatTrackedDeviceProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2550,7 +2550,7 @@ for crate::OVR::OpenVR::IVRSystem__GetHiddenAreaMesh {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetHiddenAreaMesh";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetHiddenAreaMesh";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2663,7 +2663,7 @@ for crate::OVR::OpenVR::IVRSystem__GetInt32TrackedDeviceProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetInt32TrackedDeviceProperty";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetInt32TrackedDeviceProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2785,7 +2785,7 @@ for crate::OVR::OpenVR::IVRSystem__GetMatrix34TrackedDeviceProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetMatrix34TrackedDeviceProperty";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetMatrix34TrackedDeviceProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2909,7 +2909,7 @@ for crate::OVR::OpenVR::IVRSystem__GetOutputDevice {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOutputDevice";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetOutputDevice";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3028,7 +3028,7 @@ for crate::OVR::OpenVR::IVRSystem__GetProjectionMatrix {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetProjectionMatrix";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetProjectionMatrix";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3143,7 +3143,7 @@ for crate::OVR::OpenVR::IVRSystem__GetProjectionRaw {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetProjectionRaw";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetProjectionRaw";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3269,7 +3269,7 @@ for crate::OVR::OpenVR::IVRSystem__GetPropErrorNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetPropErrorNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetPropErrorNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3380,7 +3380,7 @@ for crate::OVR::OpenVR::IVRSystem__GetRawZeroPoseToStandingAbsoluteTrackingPose 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetRawZeroPoseToStandingAbsoluteTrackingPose";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetRawZeroPoseToStandingAbsoluteTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3491,7 +3491,7 @@ for crate::OVR::OpenVR::IVRSystem__GetRecommendedRenderTargetSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetRecommendedRenderTargetSize";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetRecommendedRenderTargetSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3607,7 +3607,7 @@ for crate::OVR::OpenVR::IVRSystem__GetSeatedZeroPoseToStandingAbsoluteTrackingPo
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSeatedZeroPoseToStandingAbsoluteTrackingPose";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetSeatedZeroPoseToStandingAbsoluteTrackingPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3718,7 +3718,7 @@ for crate::OVR::OpenVR::IVRSystem__GetSortedTrackedDeviceIndicesOfClass {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSortedTrackedDeviceIndicesOfClass";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetSortedTrackedDeviceIndicesOfClass";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3858,7 +3858,7 @@ for crate::OVR::OpenVR::IVRSystem__GetStringTrackedDeviceProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetStringTrackedDeviceProperty";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetStringTrackedDeviceProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3987,7 +3987,7 @@ for crate::OVR::OpenVR::IVRSystem__GetTimeSinceLastVsync {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetTimeSinceLastVsync";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetTimeSinceLastVsync";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4105,7 +4105,7 @@ for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceActivityLevel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetTrackedDeviceActivityLevel";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetTrackedDeviceActivityLevel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4217,7 +4217,7 @@ for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceClass {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetTrackedDeviceClass";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetTrackedDeviceClass";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4328,7 +4328,7 @@ for crate::OVR::OpenVR::IVRSystem__GetTrackedDeviceIndexForControllerRole {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetTrackedDeviceIndexForControllerRole";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetTrackedDeviceIndexForControllerRole";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4439,7 +4439,7 @@ for crate::OVR::OpenVR::IVRSystem__GetUint64TrackedDeviceProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetUint64TrackedDeviceProperty";
+    const CLASS_NAME: &'static str = "IVRSystem/_GetUint64TrackedDeviceProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4561,7 +4561,7 @@ for crate::OVR::OpenVR::IVRSystem__IsDisplayOnDesktop {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsDisplayOnDesktop";
+    const CLASS_NAME: &'static str = "IVRSystem/_IsDisplayOnDesktop";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4666,7 +4666,7 @@ for crate::OVR::OpenVR::IVRSystem__IsInputAvailable {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsInputAvailable";
+    const CLASS_NAME: &'static str = "IVRSystem/_IsInputAvailable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4771,7 +4771,7 @@ for crate::OVR::OpenVR::IVRSystem__IsSteamVRDrawingControllers {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsSteamVRDrawingControllers";
+    const CLASS_NAME: &'static str = "IVRSystem/_IsSteamVRDrawingControllers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4876,7 +4876,7 @@ for crate::OVR::OpenVR::IVRSystem__IsTrackedDeviceConnected {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_IsTrackedDeviceConnected";
+    const CLASS_NAME: &'static str = "IVRSystem/_IsTrackedDeviceConnected";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4982,7 +4982,7 @@ for crate::OVR::OpenVR::IVRSystem__PerformFirmwareUpdate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_PerformFirmwareUpdate";
+    const CLASS_NAME: &'static str = "IVRSystem/_PerformFirmwareUpdate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5093,7 +5093,7 @@ for crate::OVR::OpenVR::IVRSystem__PollNextEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_PollNextEvent";
+    const CLASS_NAME: &'static str = "IVRSystem/_PollNextEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5204,7 +5204,7 @@ for crate::OVR::OpenVR::IVRSystem__PollNextEventWithPose {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_PollNextEventWithPose";
+    const CLASS_NAME: &'static str = "IVRSystem/_PollNextEventWithPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5332,7 +5332,7 @@ for crate::OVR::OpenVR::IVRSystem__ResetSeatedZeroPose {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ResetSeatedZeroPose";
+    const CLASS_NAME: &'static str = "IVRSystem/_ResetSeatedZeroPose";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5441,7 +5441,7 @@ for crate::OVR::OpenVR::IVRSystem__SetDisplayVisibility {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetDisplayVisibility";
+    const CLASS_NAME: &'static str = "IVRSystem/_SetDisplayVisibility";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5550,7 +5550,7 @@ for crate::OVR::OpenVR::IVRSystem__ShouldApplicationPause {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShouldApplicationPause";
+    const CLASS_NAME: &'static str = "IVRSystem/_ShouldApplicationPause";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5655,7 +5655,7 @@ for crate::OVR::OpenVR::IVRSystem__ShouldApplicationReduceRenderingWork {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShouldApplicationReduceRenderingWork";
+    const CLASS_NAME: &'static str = "IVRSystem/_ShouldApplicationReduceRenderingWork";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5762,7 +5762,7 @@ for crate::OVR::OpenVR::IVRSystem__TriggerHapticPulse {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_TriggerHapticPulse";
+    const CLASS_NAME: &'static str = "IVRSystem/_TriggerHapticPulse";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

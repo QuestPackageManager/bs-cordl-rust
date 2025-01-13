@@ -133,7 +133,7 @@ for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "MaxScoreCounterElement";
+    const CLASS_NAME: &'static str = "ScoreModel/MaxScoreCounterElement";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -261,7 +261,7 @@ for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "NoteScoreDefinition";
+    const CLASS_NAME: &'static str = "ScoreModel/NoteScoreDefinition";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

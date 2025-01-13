@@ -19,7 +19,7 @@ for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
-    const CLASS_NAME: &'static str = "WhenAllPromise`1";
+    const CLASS_NAME: &'static str = "Task/WhenAllPromise`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::Task_WhenAllPromise_1<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading.Tasks",
-                        "WhenAllPromise`1",
+                        "Task/WhenAllPromise`1",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

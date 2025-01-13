@@ -41,9 +41,9 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R1Field {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP160R1Field")]
 impl crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP160R1Field {
-    pub const P4: u32 = 32571391u32;
-    pub const PExt9: u32 = 127231u32;
-    pub const PInv: u32 = 496u32;
+    pub const P4: u32 = 4294967295u32;
+    pub const PExt9: u32 = 4294967295u32;
+    pub const PInv: u32 = 2147483649u32;
     pub fn Add(
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,

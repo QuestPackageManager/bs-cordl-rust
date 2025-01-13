@@ -1434,7 +1434,7 @@ for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "BuilderNamespaceManager";
+    const CLASS_NAME: &'static str = "XsdBuilder/BuilderNamespaceManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1665,7 +1665,7 @@ for crate::System::Xml::Schema::XsdBuilder_XsdAttributeEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "XsdAttributeEntry";
+    const CLASS_NAME: &'static str = "XsdBuilder/XsdAttributeEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1743,7 +1743,7 @@ for crate::System::Xml::Schema::XsdBuilder_XsdBuildFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "XsdBuildFunction";
+    const CLASS_NAME: &'static str = "XsdBuilder/XsdBuildFunction";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1829,7 +1829,7 @@ for crate::System::Xml::Schema::XsdBuilder_XsdEndChildFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "XsdEndChildFunction";
+    const CLASS_NAME: &'static str = "XsdBuilder/XsdEndChildFunction";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1933,7 +1933,7 @@ for crate::System::Xml::Schema::XsdBuilder_XsdEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "XsdEntry";
+    const CLASS_NAME: &'static str = "XsdBuilder/XsdEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2051,7 +2051,7 @@ for crate::System::Xml::Schema::XsdBuilder_XsdInitFunction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml.Schema";
-    const CLASS_NAME: &'static str = "XsdInitFunction";
+    const CLASS_NAME: &'static str = "XsdBuilder/XsdInitFunction";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

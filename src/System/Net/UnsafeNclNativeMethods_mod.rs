@@ -10,7 +10,7 @@ for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "HTTP_REQUEST_HEADER_ID";
+    const CLASS_NAME: &'static str = "UnsafeNclNativeMethods/HttpApi/HTTP_REQUEST_HEADER_ID";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -129,7 +129,7 @@ for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "HttpApi";
+    const CLASS_NAME: &'static str = "UnsafeNclNativeMethods/HttpApi";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -183,7 +183,7 @@ for crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Net";
-    const CLASS_NAME: &'static str = "SecureStringHelper";
+    const CLASS_NAME: &'static str = "UnsafeNclNativeMethods/SecureStringHelper";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

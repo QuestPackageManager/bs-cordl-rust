@@ -588,7 +588,7 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LeaderboardData";
+    const CLASS_NAME: &'static str = "LocalLeaderboardsModel/LeaderboardData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -757,7 +757,7 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SavedLeaderboardsData";
+    const CLASS_NAME: &'static str = "LocalLeaderboardsModel/SavedLeaderboardsData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -832,7 +832,7 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ScoreData";
+    const CLASS_NAME: &'static str = "LocalLeaderboardsModel/ScoreData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

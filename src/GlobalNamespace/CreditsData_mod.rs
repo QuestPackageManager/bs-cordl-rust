@@ -105,7 +105,7 @@ for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ChildCreditsItem";
+    const CLASS_NAME: &'static str = "CreditsData/ChildCreditsItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -198,7 +198,7 @@ for crate::GlobalNamespace::CreditsData_RootCreditsItem {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "RootCreditsItem";
+    const CLASS_NAME: &'static str = "CreditsData/RootCreditsItem";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -290,7 +290,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsData_
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Text";
+    const CLASS_NAME: &'static str = "CreditsData/Text";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -1034,7 +1034,7 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetControllerStatePacked";
+    const CLASS_NAME: &'static str = "CVRSystem/_GetControllerStatePacked";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1168,7 +1168,7 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetControllerStateWithPosePacked";
+    const CLASS_NAME: &'static str = "CVRSystem/_GetControllerStateWithPosePacked";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1323,7 +1323,7 @@ for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_PollNextEventPacked";
+    const CLASS_NAME: &'static str = "CVRSystem/_PollNextEventPacked";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

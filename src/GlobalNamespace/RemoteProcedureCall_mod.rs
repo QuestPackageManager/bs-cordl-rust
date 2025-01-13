@@ -214,14 +214,17 @@ for crate::GlobalNamespace::RemoteProcedureCall_TypeWrapper_1<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TypeWrapper`1";
+    const CLASS_NAME: &'static str = "RemoteProcedureCall/TypeWrapper`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "TypeWrapper`1")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "RemoteProcedureCall/TypeWrapper`1",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()

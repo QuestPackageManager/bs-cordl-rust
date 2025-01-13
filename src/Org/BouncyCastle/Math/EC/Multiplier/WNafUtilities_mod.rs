@@ -330,7 +330,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Multiplier";
-    const CLASS_NAME: &'static str = "ConfigureBasepointCallback";
+    const CLASS_NAME: &'static str = "WNafUtilities/ConfigureBasepointCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -461,7 +461,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallba
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Multiplier";
-    const CLASS_NAME: &'static str = "MapPointCallback";
+    const CLASS_NAME: &'static str = "WNafUtilities/MapPointCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -586,7 +586,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCall
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Multiplier";
-    const CLASS_NAME: &'static str = "PrecomputeCallback";
+    const CLASS_NAME: &'static str = "WNafUtilities/PrecomputeCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -746,7 +746,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWith
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Multiplier";
-    const CLASS_NAME: &'static str = "PrecomputeWithPointMapCallback";
+    const CLASS_NAME: &'static str = "WNafUtilities/PrecomputeWithPointMapCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

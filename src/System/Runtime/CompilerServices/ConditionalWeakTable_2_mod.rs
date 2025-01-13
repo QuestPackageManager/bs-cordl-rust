@@ -402,7 +402,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
-    const CLASS_NAME: &'static str = "CreateValueCallback";
+    const CLASS_NAME: &'static str = "ConditionalWeakTable`2/CreateValueCallback";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -411,7 +411,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_CreateValue
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Runtime.CompilerServices",
-                        "CreateValueCallback",
+                        "ConditionalWeakTable`2/CreateValueCallback",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()
@@ -567,7 +567,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Runtime.CompilerServices";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "ConditionalWeakTable`2/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -576,7 +576,7 @@ for crate::System::Runtime::CompilerServices::ConditionalWeakTable_2_Enumerator<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Runtime.CompilerServices",
-                        "Enumerator",
+                        "ConditionalWeakTable`2/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TKey, TValue)>()

@@ -258,7 +258,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecT163R1Curve_SecT163R1Loo
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Math.EC.Custom.Sec";
-    const CLASS_NAME: &'static str = "SecT163R1LookupTable";
+    const CLASS_NAME: &'static str = "SecT163R1Curve/SecT163R1LookupTable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

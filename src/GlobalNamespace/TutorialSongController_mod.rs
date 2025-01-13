@@ -529,7 +529,7 @@ for crate::GlobalNamespace::TutorialSongController_InitData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InitData";
+    const CLASS_NAME: &'static str = "TutorialSongController/InitData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -611,7 +611,7 @@ for crate::GlobalNamespace::TutorialSongController_SequenceCutInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SequenceCutInfo";
+    const CLASS_NAME: &'static str = "TutorialSongController/SequenceCutInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -736,7 +736,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialArcSpawnData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TutorialArcSpawnData";
+    const CLASS_NAME: &'static str = "TutorialSongController/TutorialArcSpawnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -824,7 +824,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBasicNoteSpawnData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TutorialBasicNoteSpawnData";
+    const CLASS_NAME: &'static str = "TutorialSongController/TutorialBasicNoteSpawnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -932,7 +932,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialBombNoteSpawnData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TutorialBombNoteSpawnData";
+    const CLASS_NAME: &'static str = "TutorialSongController/TutorialBombNoteSpawnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1028,7 +1028,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialChainSpawnData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TutorialChainSpawnData";
+    const CLASS_NAME: &'static str = "TutorialSongController/TutorialChainSpawnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1164,7 +1164,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialJumpingNoteSpawnData 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TutorialJumpingNoteSpawnData";
+    const CLASS_NAME: &'static str = "TutorialSongController/TutorialJumpingNoteSpawnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1256,7 +1256,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObjectSpawnData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TutorialObjectSpawnData";
+    const CLASS_NAME: &'static str = "TutorialSongController/TutorialObjectSpawnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1339,7 +1339,7 @@ for crate::GlobalNamespace::TutorialSongController_TutorialObstacleSpawnData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TutorialObstacleSpawnData";
+    const CLASS_NAME: &'static str = "TutorialSongController/TutorialObstacleSpawnData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

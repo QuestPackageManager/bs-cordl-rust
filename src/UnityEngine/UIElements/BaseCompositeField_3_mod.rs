@@ -549,7 +549,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "WriteDelegate";
+    const CLASS_NAME: &'static str = "BaseCompositeField`3/FieldDescription/WriteDelegate";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -558,7 +558,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "WriteDelegate",
+                        "BaseCompositeField`3/FieldDescription/WriteDelegate",
                     )
                     .unwrap()
                     .make_generic::<(TValueType, TField, TFieldValue)>()

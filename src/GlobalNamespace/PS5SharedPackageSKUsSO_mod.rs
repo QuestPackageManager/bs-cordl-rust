@@ -283,7 +283,7 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO_PS5BuildVersion {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "PS5BuildVersion";
+    const CLASS_NAME: &'static str = "PS5SharedPackageSKUsSO/PS5BuildVersion";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

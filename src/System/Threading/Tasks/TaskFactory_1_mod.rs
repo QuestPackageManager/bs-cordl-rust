@@ -472,7 +472,7 @@ for crate::System::Threading::Tasks::TaskFactory_1_FromAsyncTrimPromise_1<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Threading.Tasks";
-    const CLASS_NAME: &'static str = "FromAsyncTrimPromise`1";
+    const CLASS_NAME: &'static str = "TaskFactory`1/FromAsyncTrimPromise`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -481,7 +481,7 @@ for crate::System::Threading::Tasks::TaskFactory_1_FromAsyncTrimPromise_1<
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Threading.Tasks",
-                        "FromAsyncTrimPromise`1",
+                        "TaskFactory`1/FromAsyncTrimPromise`1",
                     )
                     .unwrap()
                     .make_generic::<(TResult, TInstance)>()

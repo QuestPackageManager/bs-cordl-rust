@@ -522,7 +522,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "IPlayerActions";
+    const CLASS_NAME: &'static str = "DefaultInputActions/IPlayerActions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -614,7 +614,7 @@ for crate::UnityEngine::InputSystem::DefaultInputActions_IUIActions {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem";
-    const CLASS_NAME: &'static str = "IUIActions";
+    const CLASS_NAME: &'static str = "DefaultInputActions/IUIActions";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -256,14 +256,17 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T>
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Buffers";
-    const CLASS_NAME: &'static str = "LockedStack";
+    const CLASS_NAME: &'static str = "TlsOverPerCoreLockedStacksArrayPool`1/LockedStack";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Buffers", "LockedStack")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Buffers",
+                        "TlsOverPerCoreLockedStacksArrayPool`1/LockedStack",
+                    )
                     .unwrap()
                     .make_generic::<(T)>()
                     .unwrap()
@@ -510,7 +513,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedS
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Buffers";
-    const CLASS_NAME: &'static str = "PerCoreLockedStacks";
+    const CLASS_NAME: &'static str = "TlsOverPerCoreLockedStacksArrayPool`1/PerCoreLockedStacks";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -519,7 +522,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedS
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Buffers",
-                        "PerCoreLockedStacks",
+                        "TlsOverPerCoreLockedStacksArrayPool`1/PerCoreLockedStacks",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

@@ -3161,7 +3161,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_OnChang
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "OnChangeEvent";
+    const CLASS_NAME: &'static str = "TMP_InputField/OnChangeEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3231,7 +3231,7 @@ for crate::TMPro::TMP_InputField_OnValidateInput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "OnValidateInput";
+    const CLASS_NAME: &'static str = "TMP_InputField/OnValidateInput";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3345,7 +3345,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_Selecti
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "SelectionEvent";
+    const CLASS_NAME: &'static str = "TMP_InputField/SelectionEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3416,7 +3416,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_SubmitE
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "SubmitEvent";
+    const CLASS_NAME: &'static str = "TMP_InputField/SubmitEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3490,7 +3490,7 @@ for crate::TMPro::TMP_InputField_TextSelectionEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "TextSelectionEvent";
+    const CLASS_NAME: &'static str = "TMP_InputField/TextSelectionEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3565,7 +3565,7 @@ for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "TouchScreenKeyboardEvent";
+    const CLASS_NAME: &'static str = "TMP_InputField/TouchScreenKeyboardEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

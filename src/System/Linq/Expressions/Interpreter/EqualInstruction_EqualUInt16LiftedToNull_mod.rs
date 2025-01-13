@@ -14,7 +14,7 @@ for crate::GlobalNamespace::EqualInstruction_EqualUInt16LiftedToNull {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions.Interpreter";
-    const CLASS_NAME: &'static str = "EqualUInt16LiftedToNull";
+    const CLASS_NAME: &'static str = "EqualInstruction/EqualUInt16LiftedToNull";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

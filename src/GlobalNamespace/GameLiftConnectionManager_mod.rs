@@ -802,7 +802,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ConnectToServerParams";
+    const CLASS_NAME: &'static str = "GameLiftConnectionManager/ConnectToServerParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -979,7 +979,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerP
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GameLiftConnectionManagerParamsBase";
+    const CLASS_NAME: &'static str = "GameLiftConnectionManager/GameLiftConnectionManagerParamsBase";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1080,7 +1080,7 @@ for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "StartClientParams";
+    const CLASS_NAME: &'static str = "GameLiftConnectionManager/StartClientParams";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

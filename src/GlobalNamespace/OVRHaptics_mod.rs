@@ -75,7 +75,7 @@ for crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ClipPlaybackTracker";
+    const CLASS_NAME: &'static str = "OVRHaptics/OVRHapticsOutput/ClipPlaybackTracker";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -190,7 +190,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRHaptics_C
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Config";
+    const CLASS_NAME: &'static str = "OVRHaptics/Config";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -321,7 +321,7 @@ for crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRHapticsChannel";
+    const CLASS_NAME: &'static str = "OVRHaptics/OVRHapticsChannel";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -454,7 +454,7 @@ for crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRHapticsOutput";
+    const CLASS_NAME: &'static str = "OVRHaptics/OVRHapticsOutput";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

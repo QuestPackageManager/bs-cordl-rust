@@ -345,7 +345,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::SectionTableView_IDataS
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "HMUI";
-    const CLASS_NAME: &'static str = "IDataSource";
+    const CLASS_NAME: &'static str = "SectionTableView/IDataSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

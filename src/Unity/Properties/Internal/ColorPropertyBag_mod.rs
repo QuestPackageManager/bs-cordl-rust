@@ -91,7 +91,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "AProperty";
+    const CLASS_NAME: &'static str = "ColorPropertyBag/AProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -174,7 +174,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "BProperty";
+    const CLASS_NAME: &'static str = "ColorPropertyBag/BProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -257,7 +257,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "GProperty";
+    const CLASS_NAME: &'static str = "ColorPropertyBag/GProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -340,7 +340,7 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_RProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "RProperty";
+    const CLASS_NAME: &'static str = "ColorPropertyBag/RProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

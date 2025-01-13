@@ -97,7 +97,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Android";
-    const CLASS_NAME: &'static str = "AssetPackManagerDownloadStatusCallback";
+    const CLASS_NAME: &'static str = "AndroidAssetPacks/AssetPackManagerDownloadStatusCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -238,7 +238,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Android";
-    const CLASS_NAME: &'static str = "AssetPackManagerMobileDataConfirmationCallback";
+    const CLASS_NAME: &'static str = "AndroidAssetPacks/AssetPackManagerMobileDataConfirmationCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -370,7 +370,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Android";
-    const CLASS_NAME: &'static str = "AssetPackManagerStatusQueryCallback";
+    const CLASS_NAME: &'static str = "AndroidAssetPacks/AssetPackManagerStatusQueryCallback";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -90,7 +90,7 @@ for crate::Unity::Properties::Internal::Vector2IntPropertyBag_XProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "XProperty";
+    const CLASS_NAME: &'static str = "Vector2IntPropertyBag/XProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -180,7 +180,7 @@ for crate::Unity::Properties::Internal::Vector2IntPropertyBag_YProperty {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Properties.Internal";
-    const CLASS_NAME: &'static str = "YProperty";
+    const CLASS_NAME: &'static str = "Vector2IntPropertyBag/YProperty";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

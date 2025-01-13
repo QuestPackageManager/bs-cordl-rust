@@ -572,7 +572,7 @@ for crate::System::Collections::Concurrent::ConcurrentBag_1_Enumerator<T> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Concurrent";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "ConcurrentBag`1/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -581,7 +581,7 @@ for crate::System::Collections::Concurrent::ConcurrentBag_1_Enumerator<T> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Concurrent",
-                        "Enumerator",
+                        "ConcurrentBag`1/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(T)>()
@@ -796,7 +796,7 @@ for crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<T>
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Collections.Concurrent";
-    const CLASS_NAME: &'static str = "WorkStealingQueue";
+    const CLASS_NAME: &'static str = "ConcurrentBag`1/WorkStealingQueue";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -805,7 +805,7 @@ for crate::System::Collections::Concurrent::ConcurrentBag_1_WorkStealingQueue<T>
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "System.Collections.Concurrent",
-                        "WorkStealingQueue",
+                        "ConcurrentBag`1/WorkStealingQueue",
                     )
                     .unwrap()
                     .make_generic::<(T)>()

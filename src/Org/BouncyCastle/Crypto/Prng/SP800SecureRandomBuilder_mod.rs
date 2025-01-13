@@ -271,7 +271,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Prng";
-    const CLASS_NAME: &'static str = "CtrDrbgProvider";
+    const CLASS_NAME: &'static str = "SP800SecureRandomBuilder/CtrDrbgProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -421,7 +421,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Prng";
-    const CLASS_NAME: &'static str = "HMacDrbgProvider";
+    const CLASS_NAME: &'static str = "SP800SecureRandomBuilder/HMacDrbgProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -562,7 +562,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Org.BouncyCastle.Crypto.Prng";
-    const CLASS_NAME: &'static str = "HashDrbgProvider";
+    const CLASS_NAME: &'static str = "SP800SecureRandomBuilder/HashDrbgProvider";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

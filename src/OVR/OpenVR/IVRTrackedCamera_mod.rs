@@ -168,7 +168,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_AcquireVideoStreamingService";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_AcquireVideoStreamingService";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -284,7 +284,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCameraErrorNameFromEnum";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetCameraErrorNameFromEnum";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -397,7 +397,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCameraFrameSize";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetCameraFrameSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -533,7 +533,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCameraIntrinsics";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetCameraIntrinsics";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -655,7 +655,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetCameraProjection";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetCameraProjection";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -786,7 +786,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetVideoStreamFrameBuffer";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetVideoStreamFrameBuffer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -938,7 +938,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetVideoStreamTextureD3D11";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetVideoStreamTextureD3D11";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1097,7 +1097,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetVideoStreamTextureGL";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetVideoStreamTextureGL";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1245,7 +1245,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetVideoStreamTextureSize";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_GetVideoStreamTextureSize";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1389,7 +1389,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_HasCamera";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_HasCamera";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1503,7 +1503,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ReleaseVideoStreamTextureGL";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_ReleaseVideoStreamTextureGL";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1618,7 +1618,7 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ReleaseVideoStreamingService";
+    const CLASS_NAME: &'static str = "IVRTrackedCamera/_ReleaseVideoStreamingService";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

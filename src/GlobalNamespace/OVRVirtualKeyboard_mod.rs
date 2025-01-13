@@ -828,7 +828,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "BaseInputSource";
+    const CLASS_NAME: &'static str = "OVRVirtualKeyboard/BaseInputSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -975,7 +975,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "ControllerInputSource";
+    const CLASS_NAME: &'static str = "OVRVirtualKeyboard/ControllerInputSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1085,7 +1085,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "HandInputSource";
+    const CLASS_NAME: &'static str = "OVRVirtualKeyboard/HandInputSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1171,7 +1171,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "IInputSource";
+    const CLASS_NAME: &'static str = "OVRVirtualKeyboard/IInputSource";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1342,7 +1342,7 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InteractorRootTransformOverride";
+    const CLASS_NAME: &'static str = "OVRVirtualKeyboard/InteractorRootTransformOverride";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

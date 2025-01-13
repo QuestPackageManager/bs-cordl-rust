@@ -9015,7 +9015,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_GU
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "GUID";
+    const CLASS_NAME: &'static str = "OVRPlugin/GUID";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -11453,7 +11453,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Kt
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Ktx";
+    const CLASS_NAME: &'static str = "OVRPlugin/Ktx";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -12333,7 +12333,7 @@ for crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "LogCallback2DelegateType";
+    const CLASS_NAME: &'static str = "OVRPlugin/LogCallback2DelegateType";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -12539,7 +12539,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Me
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Media";
+    const CLASS_NAME: &'static str = "OVRPlugin/Media";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -12832,7 +12832,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Me
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Mesh";
+    const CLASS_NAME: &'static str = "OVRPlugin/Mesh";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13185,7 +13185,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_0_1_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_0_1_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13243,7 +13243,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_0_1_1";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_0_1_1";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13309,7 +13309,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_0_1_2";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_0_1_2";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13379,7 +13379,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_0_1_3";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_0_1_3";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13444,7 +13444,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_0_5_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_0_5_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_0_5_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13494,7 +13494,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_0_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_0_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13573,7 +13573,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_10_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_10_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13624,7 +13624,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_11_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_11_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13690,7 +13690,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_12_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_12_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13764,7 +13764,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_15_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_15_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -13993,7 +13993,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_16_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_16_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14133,7 +14133,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_17_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_17_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_17_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14184,7 +14184,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_18_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_18_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14259,7 +14259,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_19_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_19_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_19_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14310,7 +14310,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_1_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_1_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14679,7 +14679,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_21_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_21_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14806,7 +14806,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_28_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_28_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14886,7 +14886,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_29_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_29_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -14991,7 +14991,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_2_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_2_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15056,7 +15056,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_30_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_30_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15161,7 +15161,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_31_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_31_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15232,7 +15232,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_32_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_32_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15292,7 +15292,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_34_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_34_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15384,7 +15384,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_35_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_35_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_35_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15435,7 +15435,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_36_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_36_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_36_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15486,7 +15486,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_37_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_37_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_37_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15537,7 +15537,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_38_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_38_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15815,7 +15815,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_39_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_39_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_39_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15866,7 +15866,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_3_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_3_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15938,7 +15938,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_40_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_40_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_40_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -15989,7 +15989,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_41_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_41_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_41_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16040,7 +16040,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_42_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_42_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16102,7 +16102,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_43_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_43_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_43_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16153,7 +16153,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_44_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_44_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16325,7 +16325,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_45_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_45_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16391,7 +16391,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_46_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_46_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16459,7 +16459,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_47_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_47_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_47_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16510,7 +16510,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_48_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_48_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16578,7 +16578,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_49_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_49_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16808,7 +16808,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_50_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_50_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_50_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16859,7 +16859,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_51_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_51_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_51_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16910,7 +16910,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_52_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_52_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_52_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -16961,7 +16961,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_53_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_53_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_53_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17012,7 +17012,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_54_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_54_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17071,7 +17071,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_55_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_55_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17157,7 +17157,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_55_1";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_55_1";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17219,7 +17219,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_56_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_56_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_56_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17270,7 +17270,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_57_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_57_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17359,7 +17359,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_58_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_58_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_58_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17410,7 +17410,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_59_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_59_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_59_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17461,7 +17461,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_5_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_5_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17519,7 +17519,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_60_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_60_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_60_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17570,7 +17570,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_61_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_61_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_61_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17621,7 +17621,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_62_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_62_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_62_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17672,7 +17672,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_63_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_63_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17809,7 +17809,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_64_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_64_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17872,7 +17872,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_65_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_65_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -17988,7 +17988,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_66_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_66_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18056,7 +18056,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_67_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_67_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_67_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18107,7 +18107,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_68_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_68_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18241,7 +18241,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_69_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_69_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18303,7 +18303,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_6_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_6_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18423,7 +18423,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_70_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_70_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18484,7 +18484,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_71_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_71_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18660,7 +18660,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_72_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_72_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18885,7 +18885,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_73_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_73_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_73_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -18936,7 +18936,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_74_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_74_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19060,7 +19060,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_75_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_75_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_75_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19111,7 +19111,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_76_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_76_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19177,7 +19177,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_78_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_78_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19473,7 +19473,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_79_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_79_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19654,7 +19654,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_7_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_7_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19719,7 +19719,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_81_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_81_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_81_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19770,7 +19770,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_82_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_82_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19832,7 +19832,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_83_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_83_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -19931,7 +19931,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_84_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_84_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -20043,7 +20043,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_85_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_85_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -20111,7 +20111,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_86_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_86_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -20229,7 +20229,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_87_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_87_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -20314,7 +20314,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_88_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_88_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -20373,7 +20373,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_8_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_8_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -20514,7 +20514,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRP_1_9_0";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_9_0";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -22380,7 +22380,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Qp
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Qpl";
+    const CLASS_NAME: &'static str = "OVRPlugin/Qpl";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -27255,7 +27255,7 @@ for crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "UnityOpenXR";
+    const CLASS_NAME: &'static str = "OVRPlugin/UnityOpenXR";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

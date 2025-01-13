@@ -666,7 +666,7 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Text.RegularExpressions";
-    const CLASS_NAME: &'static str = "CachedCodeEntry";
+    const CLASS_NAME: &'static str = "Regex/CachedCodeEntry";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

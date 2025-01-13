@@ -397,7 +397,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "Enumerator";
+    const CLASS_NAME: &'static str = "OneOrMore`2/Enumerator";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -406,7 +406,7 @@ for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, T
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.Utilities",
-                        "Enumerator",
+                        "OneOrMore`2/Enumerator",
                     )
                     .unwrap()
                     .make_generic::<(TValue, TList)>()

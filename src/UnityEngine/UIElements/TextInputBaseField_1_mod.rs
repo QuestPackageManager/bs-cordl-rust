@@ -503,7 +503,7 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueTyp
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "TextInputBase";
+    const CLASS_NAME: &'static str = "TextInputBaseField`1/TextInputBase";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -512,7 +512,7 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueTyp
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "TextInputBase",
+                        "TextInputBaseField`1/TextInputBase",
                     )
                     .unwrap()
                     .make_generic::<(TValueType)>()
@@ -1127,7 +1127,7 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<TValueType> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "UxmlTraits";
+    const CLASS_NAME: &'static str = "TextInputBaseField`1/UxmlTraits";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -1136,7 +1136,7 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<TValueType> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "UxmlTraits",
+                        "TextInputBaseField`1/UxmlTraits",
                     )
                     .unwrap()
                     .make_generic::<(TValueType)>()

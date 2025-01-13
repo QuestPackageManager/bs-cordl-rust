@@ -480,7 +480,7 @@ for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "MS.Internal.Xml.XPath";
-    const CLASS_NAME: &'static str = "ParamInfo";
+    const CLASS_NAME: &'static str = "XPathParser/ParamInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

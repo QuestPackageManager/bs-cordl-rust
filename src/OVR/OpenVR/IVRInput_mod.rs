@@ -197,7 +197,7 @@ for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_DecompressSkeletalBoneData";
+    const CLASS_NAME: &'static str = "IVRInput/_DecompressSkeletalBoneData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -351,7 +351,7 @@ for crate::OVR::OpenVR::IVRInput__GetActionHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetActionHandle";
+    const CLASS_NAME: &'static str = "IVRInput/_GetActionHandle";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -465,7 +465,7 @@ for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetActionOrigins";
+    const CLASS_NAME: &'static str = "IVRInput/_GetActionOrigins";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -599,7 +599,7 @@ for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetActionSetHandle";
+    const CLASS_NAME: &'static str = "IVRInput/_GetActionSetHandle";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -713,7 +713,7 @@ for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetAnalogActionData";
+    const CLASS_NAME: &'static str = "IVRInput/_GetAnalogActionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -850,7 +850,7 @@ for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetDigitalActionData";
+    const CLASS_NAME: &'static str = "IVRInput/_GetDigitalActionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -987,7 +987,7 @@ for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetInputSourceHandle";
+    const CLASS_NAME: &'static str = "IVRInput/_GetInputSourceHandle";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1105,7 +1105,7 @@ for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOriginLocalizedName";
+    const CLASS_NAME: &'static str = "IVRInput/_GetOriginLocalizedName";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1223,7 +1223,7 @@ for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetOriginTrackedDeviceInfo";
+    const CLASS_NAME: &'static str = "IVRInput/_GetOriginTrackedDeviceInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1348,7 +1348,7 @@ for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetPoseActionData";
+    const CLASS_NAME: &'static str = "IVRInput/_GetPoseActionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1498,7 +1498,7 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSkeletalActionData";
+    const CLASS_NAME: &'static str = "IVRInput/_GetSkeletalActionData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1635,7 +1635,7 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSkeletalBoneData";
+    const CLASS_NAME: &'static str = "IVRInput/_GetSkeletalBoneData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1786,7 +1786,7 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_GetSkeletalBoneDataCompressed";
+    const CLASS_NAME: &'static str = "IVRInput/_GetSkeletalBoneDataCompressed";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1934,7 +1934,7 @@ for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_SetActionManifestPath";
+    const CLASS_NAME: &'static str = "IVRInput/_SetActionManifestPath";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2049,7 +2049,7 @@ for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowActionOrigins";
+    const CLASS_NAME: &'static str = "IVRInput/_ShowActionOrigins";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2162,7 +2162,7 @@ for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_ShowBindingsForActionSet";
+    const CLASS_NAME: &'static str = "IVRInput/_ShowBindingsForActionSet";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2304,7 +2304,7 @@ for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_TriggerHapticVibrationAction";
+    const CLASS_NAME: &'static str = "IVRInput/_TriggerHapticVibrationAction";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2447,7 +2447,7 @@ for crate::OVR::OpenVR::IVRInput__UpdateActionState {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "OVR.OpenVR";
-    const CLASS_NAME: &'static str = "_UpdateActionState";
+    const CLASS_NAME: &'static str = "IVRInput/_UpdateActionState";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

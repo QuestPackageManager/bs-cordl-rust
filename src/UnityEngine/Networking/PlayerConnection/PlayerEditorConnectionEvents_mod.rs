@@ -165,7 +165,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking.PlayerConnection";
-    const CLASS_NAME: &'static str = "ConnectionChangeEvent";
+    const CLASS_NAME: &'static str = "PlayerEditorConnectionEvents/ConnectionChangeEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -252,7 +252,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking.PlayerConnection";
-    const CLASS_NAME: &'static str = "MessageEvent";
+    const CLASS_NAME: &'static str = "PlayerEditorConnectionEvents/MessageEvent";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -344,7 +344,7 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEven
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Networking.PlayerConnection";
-    const CLASS_NAME: &'static str = "MessageTypeSubscribers";
+    const CLASS_NAME: &'static str = "PlayerEditorConnectionEvents/MessageTypeSubscribers";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

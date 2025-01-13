@@ -3487,7 +3487,7 @@ for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataCompa
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "DtdDefaultAttributeInfoToNodeDataComparer";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/DtdDefaultAttributeInfoToNodeDataComparer";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3624,7 +3624,7 @@ for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "DtdParserProxy";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/DtdParserProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4500,7 +4500,7 @@ for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "LaterInitParam";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/LaterInitParam";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4569,7 +4569,7 @@ for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "NoNamespaceManager";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/NoNamespaceManager";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4776,7 +4776,7 @@ for crate::System::Xml::XmlTextReaderImpl_NodeData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "NodeData";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/NodeData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5143,7 +5143,7 @@ for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "OnDefaultAttributeUseDelegate";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/OnDefaultAttributeUseDelegate";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5609,7 +5609,7 @@ for crate::System::Xml::XmlTextReaderImpl_XmlContext {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Xml";
-    const CLASS_NAME: &'static str = "XmlContext";
+    const CLASS_NAME: &'static str = "XmlTextReaderImpl/XmlContext";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

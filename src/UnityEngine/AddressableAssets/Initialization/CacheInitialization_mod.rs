@@ -150,7 +150,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_C
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.AddressableAssets.Initialization";
-    const CLASS_NAME: &'static str = "CacheInitOp";
+    const CLASS_NAME: &'static str = "CacheInitialization/CacheInitOp";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

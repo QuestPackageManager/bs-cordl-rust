@@ -3,9 +3,9 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectionChangeType {
     #[default]
-    ConfigChange = 33619970u32,
-    Connected = 131328u32,
-    Disconnected = 16777729u32,
+    ConfigChange = 2u32,
+    Connected = 0u32,
+    Disconnected = 1u32,
 }
 #[cfg(feature = "UnityEngine+XR+ConnectionChangeType")]
 unsafe impl quest_hook::libil2cpp::Type

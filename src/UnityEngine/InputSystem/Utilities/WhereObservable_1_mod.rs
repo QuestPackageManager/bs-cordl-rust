@@ -155,7 +155,7 @@ for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1_Where<TValue> 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Utilities";
-    const CLASS_NAME: &'static str = "Where";
+    const CLASS_NAME: &'static str = "WhereObservable`1/Where";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -164,7 +164,7 @@ for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1_Where<TValue> 
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.InputSystem.Utilities",
-                        "Where",
+                        "WhereObservable`1/Where",
                     )
                     .unwrap()
                     .make_generic::<(TValue)>()

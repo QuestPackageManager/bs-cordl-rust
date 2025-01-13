@@ -3,11 +3,11 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AixIoctlRequest {
     #[default]
-    SIOCGIFCONF = 275334640u32,
-    SIOCGIFFLAGS = 677974512u32,
-    SIOCGIFMTU = 677992176u32,
-    SIOCGIFNETMASK = 677979632u32,
-    SIOCGSIZIFCONF = 74017520u32,
+    SIOCGIFCONF = 3222300997u32,
+    SIOCGIFFLAGS = 3223873809u32,
+    SIOCGIFMTU = 3223873878u32,
+    SIOCGIFNETMASK = 3223873829u32,
+    SIOCGSIZIFCONF = 1074030954u32,
 }
 #[cfg(feature = "System+Net+NetworkInformation+AixIoctlRequest")]
 unsafe impl quest_hook::libil2cpp::Type

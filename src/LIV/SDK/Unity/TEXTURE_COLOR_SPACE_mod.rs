@@ -3,9 +3,9 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_COLOR_SPACE {
     #[default]
-    LINEAR = 16777729u32,
-    SRGB = 33619970u32,
-    UNDEFINED = 131328u32,
+    LINEAR = 1u32,
+    SRGB = 2u32,
+    UNDEFINED = 0u32,
 }
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_COLOR_SPACE")]
 unsafe impl quest_hook::libil2cpp::Type for crate::LIV::SDK::Unity::TEXTURE_COLOR_SPACE {

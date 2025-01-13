@@ -245,14 +245,17 @@ for crate::System::Data::Listeners_1_Action_4<TElem, T1, T2, T3, T4> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "Action`4";
+    const CLASS_NAME: &'static str = "Listeners`1/Action`4";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "Action`4")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Data",
+                        "Listeners`1/Action`4",
+                    )
                     .unwrap()
                     .make_generic::<(TElem, T1, T2, T3, T4)>()
                     .unwrap()
@@ -418,14 +421,17 @@ for crate::System::Data::Listeners_1_Func_2<TElem, T1, TResult> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Data";
-    const CLASS_NAME: &'static str = "Func`2";
+    const CLASS_NAME: &'static str = "Listeners`1/Func`2";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("System.Data", "Func`2")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "System.Data",
+                        "Listeners`1/Func`2",
+                    )
                     .unwrap()
                     .make_generic::<(TElem, T1, TResult)>()
                     .unwrap()

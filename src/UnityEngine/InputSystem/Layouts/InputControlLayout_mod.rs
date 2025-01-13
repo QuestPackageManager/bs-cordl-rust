@@ -1438,7 +1438,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "Builder";
+    const CLASS_NAME: &'static str = "InputControlLayout/Builder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3203,7 +3203,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "ControlItemJson";
+    const CLASS_NAME: &'static str = "InputControlLayout/ControlItemJson";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3694,7 +3694,7 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundE
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.InputSystem.Layouts";
-    const CLASS_NAME: &'static str = "LayoutNotFoundException";
+    const CLASS_NAME: &'static str = "InputControlLayout/LayoutNotFoundException";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

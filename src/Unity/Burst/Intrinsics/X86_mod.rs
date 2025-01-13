@@ -748,7 +748,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Avx";
+    const CLASS_NAME: &'static str = "X86/Avx";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -2530,7 +2530,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Avx2";
+    const CLASS_NAME: &'static str = "X86/Avx2";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4242,7 +4242,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Bmi1";
+    const CLASS_NAME: &'static str = "X86/Bmi1";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4375,7 +4375,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Bmi2";
+    const CLASS_NAME: &'static str = "X86/Bmi2";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4478,7 +4478,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "F16C";
+    const CLASS_NAME: &'static str = "X86/F16C";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4573,7 +4573,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Fma";
+    const CLASS_NAME: &'static str = "X86/Fma";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5038,7 +5038,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Popcnt";
+    const CLASS_NAME: &'static str = "X86/Popcnt";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -5342,7 +5342,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Sse";
+    const CLASS_NAME: &'static str = "X86/Sse";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -6112,7 +6112,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Sse2";
+    const CLASS_NAME: &'static str = "X86/Sse2";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7757,7 +7757,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Sse3";
+    const CLASS_NAME: &'static str = "X86/Sse3";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -7881,7 +7881,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Sse4_1";
+    const CLASS_NAME: &'static str = "X86/Sse4_1";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8442,7 +8442,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Sse4_2";
+    const CLASS_NAME: &'static str = "X86/Sse4_2";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -8800,7 +8800,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Burst::Intrinsics::X86
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "Unity.Burst.Intrinsics";
-    const CLASS_NAME: &'static str = "Ssse3";
+    const CLASS_NAME: &'static str = "X86/Ssse3";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

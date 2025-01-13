@@ -32,7 +32,7 @@ for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "KeyframeSerializable";
+    const CLASS_NAME: &'static str = "VRControllersRecorder/SavedData/KeyframeSerializable";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -168,9 +168,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder {
 #[cfg(feature = "VRControllersRecorder")]
 impl crate::GlobalNamespace::VRControllersRecorder {
     pub const kHeaderChar: char = 'v';
-    pub const kRecorderVersion: u32 = 30209u32;
-    pub const kSavedDataRecorderVersion: u32 = 1979777280u32;
-    pub const kSavedDataWithOffsetRecorderVersion: u32 = 7733505u32;
+    pub const kRecorderVersion: u32 = 1u32;
+    pub const kSavedDataRecorderVersion: u32 = 0u32;
+    pub const kSavedDataWithOffsetRecorderVersion: u32 = 1u32;
     #[cfg(feature = "VRControllersRecorder+Keyframe")]
     pub type Keyframe = crate::GlobalNamespace::VRControllersRecorder_Keyframe;
     #[cfg(feature = "VRControllersRecorder+Mode")]
@@ -605,7 +605,7 @@ for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "Keyframe";
+    const CLASS_NAME: &'static str = "VRControllersRecorder/Keyframe";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -978,7 +978,7 @@ for crate::GlobalNamespace::VRControllersRecorder_SavedData {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SavedData";
+    const CLASS_NAME: &'static str = "VRControllersRecorder/SavedData";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1059,7 +1059,7 @@ for crate::GlobalNamespace::VRControllersRecorder_State {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "State";
+    const CLASS_NAME: &'static str = "VRControllersRecorder/State";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1348,7 +1348,7 @@ for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "TypeSerializationBinder";
+    const CLASS_NAME: &'static str = "VRControllersRecorder/TypeSerializationBinder";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

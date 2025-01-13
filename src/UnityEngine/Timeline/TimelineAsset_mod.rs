@@ -786,7 +786,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "EditorSettings";
+    const CLASS_NAME: &'static str = "TimelineAsset/EditorSettings";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -1016,7 +1016,7 @@ for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Timeline";
-    const CLASS_NAME: &'static str = "TimelineAssetUpgrade";
+    const CLASS_NAME: &'static str = "TimelineAsset/TimelineAssetUpgrade";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

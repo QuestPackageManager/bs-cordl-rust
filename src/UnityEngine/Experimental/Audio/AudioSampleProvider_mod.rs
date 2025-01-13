@@ -99,7 +99,7 @@ for crate::UnityEngine::Experimental::Audio::AudioSampleProvider_SampleFramesHan
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.Experimental.Audio";
-    const CLASS_NAME: &'static str = "SampleFramesHandler";
+    const CLASS_NAME: &'static str = "AudioSampleProvider/SampleFramesHandler";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -3263,7 +3263,7 @@ for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "BinaryExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/BinaryExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3316,7 +3316,7 @@ for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "BlockExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/BlockExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3369,7 +3369,7 @@ for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "CatchBlockProxy";
+    const CLASS_NAME: &'static str = "Expression/CatchBlockProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3421,7 +3421,7 @@ for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "ConditionalExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/ConditionalExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3474,7 +3474,7 @@ for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "ConstantExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/ConstantExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3527,7 +3527,7 @@ for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "DebugInfoExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/DebugInfoExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3580,7 +3580,7 @@ for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "DefaultExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/DefaultExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3635,7 +3635,7 @@ for crate::System::Linq::Expressions::Expression_ExtensionInfo {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "ExtensionInfo";
+    const CLASS_NAME: &'static str = "Expression/ExtensionInfo";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3686,7 +3686,7 @@ for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "GotoExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/GotoExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3739,7 +3739,7 @@ for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "IndexExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/IndexExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3792,7 +3792,7 @@ for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "InvocationExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/InvocationExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3845,7 +3845,7 @@ for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "LabelExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/LabelExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3898,7 +3898,7 @@ for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "LambdaExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/LambdaExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -3951,7 +3951,7 @@ for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "ListInitExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/ListInitExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4004,7 +4004,7 @@ for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "LoopExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/LoopExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4057,7 +4057,7 @@ for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "MemberExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/MemberExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4110,7 +4110,7 @@ for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "MemberInitExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/MemberInitExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4163,7 +4163,7 @@ for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "MethodCallExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/MethodCallExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4216,7 +4216,7 @@ for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "NewArrayExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/NewArrayExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4269,7 +4269,7 @@ for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "NewExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/NewExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4322,7 +4322,7 @@ for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "ParameterExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/ParameterExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4375,7 +4375,7 @@ for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "RuntimeVariablesExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/RuntimeVariablesExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4428,7 +4428,7 @@ for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "SwitchCaseProxy";
+    const CLASS_NAME: &'static str = "Expression/SwitchCaseProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4480,7 +4480,7 @@ for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "SwitchExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/SwitchExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4533,7 +4533,7 @@ for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "TryExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/TryExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4586,7 +4586,7 @@ for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "TypeBinaryExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/TypeBinaryExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
@@ -4639,7 +4639,7 @@ for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "System.Linq.Expressions";
-    const CLASS_NAME: &'static str = "UnaryExpressionProxy";
+    const CLASS_NAME: &'static str = "Expression/UnaryExpressionProxy";
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }

@@ -329,14 +329,17 @@ for crate::GlobalNamespace::StateBuffer_3_InterpolationDelegate<
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "InterpolationDelegate";
+    const CLASS_NAME: &'static str = "StateBuffer`3/InterpolationDelegate";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "InterpolationDelegate")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "StateBuffer`3/InterpolationDelegate",
+                    )
                     .unwrap()
                     .make_generic::<(TStateTable, TType, TState)>()
                     .unwrap()
@@ -545,14 +548,17 @@ for crate::GlobalNamespace::StateBuffer_3_SmoothingDelegate<TStateTable, TType, 
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "SmoothingDelegate";
+    const CLASS_NAME: &'static str = "StateBuffer`3/SmoothingDelegate";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
         > = ::std::sync::OnceLock::new();
         CLASS
             .get_or_init(|| {
-                quest_hook::libil2cpp::Il2CppClass::find("", "SmoothingDelegate")
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "",
+                        "StateBuffer`3/SmoothingDelegate",
+                    )
                     .unwrap()
                     .make_generic::<(TStateTable, TType, TState)>()
                     .unwrap()
