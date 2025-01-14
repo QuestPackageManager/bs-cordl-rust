@@ -55,32 +55,63 @@ impl crate::System::Net::WebReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginRead", (buffer, offset, _cordl_size, cb, state))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginRead")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginRead", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size, cb, state))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (disposing))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndRead(
         &mut self,
         r: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("EndRead", (r))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                i32,
+                1usize,
+            >("EndRead")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndRead", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (r)) };
         Ok(__cordl_ret.into())
     }
     pub fn FinishReading(
@@ -89,22 +120,37 @@ impl crate::System::Net::WebReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Threading::CancellationToken),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                1usize,
+            >("FinishReading")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FinishReading", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = __cordl_object.invoke("FinishReading", (cancellationToken))?;
+        > = unsafe { method.invoke_unchecked(self, (cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn Flush(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Flush", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Flush")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Flush", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetException(
@@ -113,11 +159,21 @@ impl crate::System::Net::WebReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("GetException", (e))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Exception>),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                1usize,
+            >("GetException")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetException", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked(self, (e))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -139,16 +195,29 @@ impl crate::System::Net::WebReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+                4usize,
+            >("ProcessReadAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessReadAsync", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
-            .invoke(
-                "ProcessReadAsync",
-                (buffer, offset, _cordl_size, cancellationToken),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, cancellationToken))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Read(
@@ -157,11 +226,25 @@ impl crate::System::Net::WebReadStream {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Read", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("Read")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Read", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsync(
@@ -173,13 +256,29 @@ impl crate::System::Net::WebReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+                4usize,
+            >("ReadAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAsync", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<i32>,
-        > = __cordl_object
-            .invoke("ReadAsync", (buffer, offset, _cordl_size, cancellationToken))?;
+        > = unsafe {
+            method
+                .invoke_unchecked(self, (buffer, offset, _cordl_size, cancellationToken))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Seek(
@@ -187,21 +286,34 @@ impl crate::System::Net::WebReadStream {
         offset: i64,
         origin: crate::System::IO::SeekOrigin,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("Seek", (offset, origin))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64, crate::System::IO::SeekOrigin), i64, 2usize>("Seek")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Seek", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked(self, (offset, origin))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetLength(
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLength", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("SetLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetLength", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write(
@@ -210,11 +322,25 @@ impl crate::System::Net::WebReadStream {
         offset: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (buffer, offset, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Write")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Write", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -222,32 +348,60 @@ impl crate::System::Net::WebReadStream {
         operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (operation, innerStream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (operation, innerStream))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_CanRead(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanRead", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_CanRead")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CanRead", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_CanSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanSeek", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_CanSeek")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CanSeek", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_CanWrite(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_CanWrite", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_CanWrite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CanWrite", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_InnerStream(
@@ -255,18 +409,33 @@ impl crate::System::Net::WebReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("get_InnerStream", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                0usize,
+            >("get_InnerStream")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_InnerStream", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("get_Length")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Length", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Operation(
@@ -274,29 +443,50 @@ impl crate::System::Net::WebReadStream {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation> = __cordl_object
-            .invoke("get_Operation", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                0usize,
+            >("get_Operation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Operation", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Position(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_Position", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("get_Position")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Position", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_Position(
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Position", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("set_Position")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Position", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

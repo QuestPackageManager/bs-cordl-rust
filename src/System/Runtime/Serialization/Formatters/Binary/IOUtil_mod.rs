@@ -45,8 +45,22 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::IOUtil {
         flag: crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
         target: crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FlagTest", (flag, target))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
+                    crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
+                ),
+                bool,
+                2usize,
+            >("FlagTest")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FlagTest", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (flag, target)) };
         Ok(__cordl_ret.into())
     }
     pub fn WriteStringWithCode(
@@ -55,8 +69,26 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::IOUtil {
             crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteStringWithCode", (value, sout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WriteStringWithCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteStringWithCode", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value, sout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteWithCode(
@@ -66,8 +98,27 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::IOUtil {
             crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteWithCode", (_cordl_type, value, sout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("WriteWithCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteWithCode", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_type, value, sout))
+        };
         Ok(__cordl_ret.into())
     }
 }

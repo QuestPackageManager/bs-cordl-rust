@@ -45,8 +45,25 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         elements: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ByteArrayCopy", (dst, src, elements))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ByteArrayCopy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByteArrayCopy", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (dst, src, elements))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllNetworkInterfaces(
@@ -60,16 +77,31 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::NetworkInformation::NetworkInterface,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetAllNetworkInterfaces")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllNetworkInterfaces", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
                     crate::System::Net::NetworkInformation::NetworkInterface,
                 >,
             >,
-        > = __cordl_object.invoke("GetAllNetworkInterfaces", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -82,16 +114,29 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn close(fd: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("close", (fd))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("close")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "close", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (fd)) };
         Ok(__cordl_ret.into())
     }
     pub fn ioctl_i32_AixIoctlRequest_ByRefMut0(
@@ -99,8 +144,25 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         request: crate::System::Net::NetworkInformation::AixIoctlRequest,
         arg: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ioctl", (fd, request, arg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::System::Net::NetworkInformation::AixIoctlRequest,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                i32,
+                3usize,
+            >("ioctl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ioctl", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (fd, request, arg))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ioctl_i32_AixIoctlRequest_ByRefMut1(
@@ -110,8 +172,27 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
             crate::System::Net::NetworkInformation::AixStructs::ifconf,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ioctl", (fd, request, arg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::System::Net::NetworkInformation::AixIoctlRequest,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Net::NetworkInformation::AixStructs::ifconf,
+                    >,
+                ),
+                i32,
+                3usize,
+            >("ioctl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ioctl", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (fd, request, arg))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ioctl_i32_AixIoctlRequest_ByRefMut2(
@@ -121,8 +202,27 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
             crate::System::Net::NetworkInformation::AixStructs::ifreq_flags,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ioctl", (fd, request, arg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::System::Net::NetworkInformation::AixIoctlRequest,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Net::NetworkInformation::AixStructs::ifreq_flags,
+                    >,
+                ),
+                i32,
+                3usize,
+            >("ioctl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ioctl", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (fd, request, arg))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ioctl_i32_AixIoctlRequest_ByRefMut3(
@@ -132,8 +232,27 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
             crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ioctl", (fd, request, arg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::System::Net::NetworkInformation::AixIoctlRequest,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu,
+                    >,
+                ),
+                i32,
+                3usize,
+            >("ioctl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ioctl", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (fd, request, arg))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn socket(
@@ -141,8 +260,21 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         _cordl_type: i32,
         protocol: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("socket", (family, _cordl_type, protocol))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::Net::NetworkInformation::AixAddressFamily, i32, i32),
+                i32,
+                3usize,
+            >("socket")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "socket", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (family, _cordl_type, protocol))
+        };
         Ok(__cordl_ret.into())
     }
 }

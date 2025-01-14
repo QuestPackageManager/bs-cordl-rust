@@ -52,11 +52,17 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_MergeArrayHandling(
@@ -64,11 +70,21 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Linq::MergeArrayHandling,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::MergeArrayHandling = __cordl_object
-            .invoke("get_MergeArrayHandling", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Newtonsoft::Json::Linq::MergeArrayHandling,
+                0usize,
+            >("get_MergeArrayHandling")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MergeArrayHandling", 0usize
+                )
+            });
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::MergeArrayHandling = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_MergeNullValueHandling(
@@ -76,54 +92,104 @@ impl crate::Newtonsoft::Json::Linq::JsonMergeSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::Newtonsoft::Json::Linq::MergeNullValueHandling,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::MergeNullValueHandling = __cordl_object
-            .invoke("get_MergeNullValueHandling", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Newtonsoft::Json::Linq::MergeNullValueHandling,
+                0usize,
+            >("get_MergeNullValueHandling")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MergeNullValueHandling", 0usize
+                )
+            });
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::MergeNullValueHandling = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_PropertyNameComparison(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::StringComparison> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::StringComparison = __cordl_object
-            .invoke("get_PropertyNameComparison", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::StringComparison,
+                0usize,
+            >("get_PropertyNameComparison")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_PropertyNameComparison", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::StringComparison = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_MergeArrayHandling(
         &mut self,
         value: crate::Newtonsoft::Json::Linq::MergeArrayHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MergeArrayHandling", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Newtonsoft::Json::Linq::MergeArrayHandling),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_MergeArrayHandling")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_MergeArrayHandling", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_MergeNullValueHandling(
         &mut self,
         value: crate::Newtonsoft::Json::Linq::MergeNullValueHandling,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_MergeNullValueHandling", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Newtonsoft::Json::Linq::MergeNullValueHandling),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_MergeNullValueHandling")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_MergeNullValueHandling", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_PropertyNameComparison(
         &mut self,
         value: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_PropertyNameComparison", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::StringComparison),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_PropertyNameComparison")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_PropertyNameComparison", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

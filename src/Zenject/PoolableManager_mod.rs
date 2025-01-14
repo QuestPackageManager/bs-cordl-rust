@@ -60,11 +60,33 @@ impl crate::Zenject::PoolableManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::PoolableManager_PoolableInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::PoolableManager_PoolableInfo = __cordl_object
-            .invoke("CreatePoolableInfo", (poolable, priorities))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::ModestTree::Util::ValuePair_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    i32,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                crate::Zenject::PoolableManager_PoolableInfo,
+                2usize,
+            >("CreatePoolableInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreatePoolableInfo", 2usize
+                )
+            });
+        let __cordl_ret: crate::Zenject::PoolableManager_PoolableInfo = unsafe {
+            method.invoke_unchecked(self, (poolable, priorities))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -93,21 +115,33 @@ impl crate::Zenject::PoolableManager {
     pub fn TriggerOnDespawned(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerOnDespawned", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("TriggerOnDespawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TriggerOnDespawned", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TriggerOnSpawned(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TriggerOnSpawned", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("TriggerOnSpawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TriggerOnSpawned", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreate(
@@ -119,16 +153,45 @@ impl crate::Zenject::PoolableManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("__zenCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__zenCreate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("__zenCreate", (P_0))?;
+        > = unsafe { method.invoke_unchecked((), (P_0)) };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("__zenCreateInjectTypeInfo", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+                0usize,
+            >("__zenCreateInjectTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__zenCreateInjectTypeInfo", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -149,11 +212,37 @@ impl crate::Zenject::PoolableManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (poolables, priorities))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::ModestTree::Util::ValuePair_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    i32,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (poolables, priorities))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -275,11 +364,21 @@ impl crate::Zenject::PoolableManager_PoolableInfo {
         poolable: quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
         priority: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (poolable, priority),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (poolable, priority))
+        };
         Ok(__cordl_ret.into())
     }
 }

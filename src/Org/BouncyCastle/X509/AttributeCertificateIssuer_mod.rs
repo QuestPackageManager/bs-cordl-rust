@@ -45,29 +45,52 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateIssuer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                0usize,
+            >("Clone")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clone", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Clone", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNames(
@@ -79,14 +102,27 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateIssuer {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                >,
+                0usize,
+            >("GetNames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNames", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = __cordl_object.invoke("GetNames", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrincipals(
@@ -98,24 +134,48 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateIssuer {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetPrincipals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPrincipals", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
             >,
-        > = __cordl_object.invoke("GetPrincipals", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn Match_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Match", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Match")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Match", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn Match_X509Certificate0(
@@ -124,10 +184,21 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateIssuer {
             crate::Org::BouncyCastle::X509::X509Certificate,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Match", (x509Cert))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::X509Certificate,
+                >),
+                bool,
+                1usize,
+            >("Match")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Match", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x509Cert)) };
         Ok(__cordl_ret.into())
     }
     pub fn MatchesDN(
@@ -139,10 +210,28 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateIssuer {
             crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("MatchesDN", (subject, targets))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::X509Name,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::GeneralNames,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("MatchesDN")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchesDN", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (subject, targets))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_AttCertIssuer0(
@@ -173,11 +262,23 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateIssuer {
             crate::Org::BouncyCastle::Asn1::X509::AttCertIssuer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (issuer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AttCertIssuer,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (issuer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_X509Name1(
@@ -186,11 +287,23 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateIssuer {
             crate::Org::BouncyCastle::Asn1::X509::X509Name,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (principal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Name,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (principal))
+        };
         Ok(__cordl_ret.into())
     }
 }

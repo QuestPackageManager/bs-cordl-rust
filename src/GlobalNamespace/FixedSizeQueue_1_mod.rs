@@ -65,11 +65,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (item))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (item))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_List_1_i32_1(
@@ -108,11 +114,26 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (data, queueSize))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (data, queueSize))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_0(
@@ -123,11 +144,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (queueSize))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (queueSize))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_data(
@@ -141,12 +168,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                >,
+                0usize,
+            >("get_data")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_data", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        > = __cordl_object.invoke("get_data", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

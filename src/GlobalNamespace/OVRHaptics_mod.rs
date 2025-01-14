@@ -45,8 +45,17 @@ impl crate::GlobalNamespace::OVRHaptics {
     #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
     pub type OVRHapticsOutput = crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput;
     pub fn Process() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -119,11 +128,21 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Clip(
@@ -131,41 +150,71 @@ impl crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
+                0usize,
+            >("get_Clip")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Clip", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OVRHapticsClip,
-        > = __cordl_object.invoke("get_Clip", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_ReadCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ReadCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_ReadCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ReadCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_Clip(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Clip", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_Clip")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Clip", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_ReadCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_ReadCount", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_ReadCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_ReadCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -220,80 +269,209 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics_Config {
 #[cfg(feature = "OVRHaptics+Config")]
 impl crate::GlobalNamespace::OVRHaptics_Config {
     pub fn Load() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Load", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Load")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Load", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_MaximumBufferSamplesCount() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_MaximumBufferSamplesCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_MaximumBufferSamplesCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MaximumBufferSamplesCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_MinimumBufferSamplesCount() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_MinimumBufferSamplesCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_MinimumBufferSamplesCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MinimumBufferSamplesCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_MinimumSafeSamplesQueued() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_MinimumSafeSamplesQueued", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_MinimumSafeSamplesQueued")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MinimumSafeSamplesQueued", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_OptimalBufferSamplesCount() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_OptimalBufferSamplesCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_OptimalBufferSamplesCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_OptimalBufferSamplesCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_SampleRateHz() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_SampleRateHz", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_SampleRateHz")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_SampleRateHz", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_SampleSizeInBytes() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_SampleSizeInBytes", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_SampleSizeInBytes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_SampleSizeInBytes", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_MaximumBufferSamplesCount(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_MaximumBufferSamplesCount", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_MaximumBufferSamplesCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_MaximumBufferSamplesCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_MinimumBufferSamplesCount(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_MinimumBufferSamplesCount", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_MinimumBufferSamplesCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_MinimumBufferSamplesCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_MinimumSafeSamplesQueued(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_MinimumSafeSamplesQueued", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_MinimumSafeSamplesQueued")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_MinimumSafeSamplesQueued", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_OptimalBufferSamplesCount(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_OptimalBufferSamplesCount", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_OptimalBufferSamplesCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_OptimalBufferSamplesCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_SampleRateHz(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_SampleRateHz", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_SampleRateHz")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_SampleRateHz", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_SampleSizeInBytes(
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_SampleSizeInBytes", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_SampleSizeInBytes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_SampleSizeInBytes", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -353,22 +531,38 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Mix(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Mix", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Mix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Mix", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -384,33 +578,59 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel {
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Preempt", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Preempt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Preempt", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Queue(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Queue", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Queue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Queue", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         outputIndex: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (outputIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (outputIndex))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -488,22 +708,38 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Mix(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Mix", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Mix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Mix", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -519,43 +755,75 @@ impl crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput {
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Preempt", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Preempt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Preempt", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Process", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Queue(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Queue", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRHapticsClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Queue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Queue", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         controller: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (controller))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (controller))
+        };
         Ok(__cordl_ret.into())
     }
 }

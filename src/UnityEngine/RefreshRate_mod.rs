@@ -100,22 +100,30 @@ impl crate::UnityEngine::RefreshRate {
         &mut self,
         other: crate::UnityEngine::RefreshRate,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CompareTo",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(crate::UnityEngine::RefreshRate), i32, 1usize>("CompareTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareTo", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::RefreshRate,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(crate::UnityEngine::RefreshRate), bool, 1usize>("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -123,17 +131,33 @@ impl crate::UnityEngine::RefreshRate {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f64, 0usize>("get_value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_value", 0usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

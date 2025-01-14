@@ -74,14 +74,32 @@ impl crate::Zenject::SignalBus {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DeclareSignal",
-                (identifier, missingHandlerResponse, forceAsync, asyncTickPriority),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::Nullable_1<
+                        crate::Zenject::SignalMissingHandlerResponses,
+                    >,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("DeclareSignal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeclareSignal", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (identifier, missingHandlerResponse, forceAsync, asyncTickPriority),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeclareSignal_Type_Il2CppObject_Nullable_1_1(
@@ -94,20 +112,39 @@ impl crate::Zenject::SignalBus {
         forceAsync: crate::System::Nullable_1<bool>,
         asyncTickPriority: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DeclareSignal",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    signalType,
-                    identifier,
-                    missingHandlerResponse,
-                    forceAsync,
-                    asyncTickPriority,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::Nullable_1<
+                        crate::Zenject::SignalMissingHandlerResponses,
+                    >,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<i32>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("DeclareSignal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeclareSignal", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        signalType,
+                        identifier,
+                        missingHandlerResponse,
+                        forceAsync,
+                        asyncTickPriority,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FireId_Il2CppObject1<TSignal>(
@@ -118,11 +155,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FireId", (identifier))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("FireId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FireId", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FireId_Il2CppObject2(
@@ -130,11 +177,24 @@ impl crate::Zenject::SignalBus {
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         signal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FireId", (identifier, signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("FireId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FireId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FireId_TSignal0<TSignal>(
@@ -146,11 +206,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("FireId", (identifier, signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    TSignal,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("FireId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FireId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Fire_1<TSignal>(
@@ -160,22 +233,38 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Fire", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Fire")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Fire", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Fire_Il2CppObject2(
         &mut self,
         signal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Fire", (signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Fire")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Fire", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Fire_TSignal0<TSignal>(
@@ -186,11 +275,17 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Fire", (signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(TSignal), quest_hook::libil2cpp::Void, 1usize>("Fire")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Fire", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeclaration_BindingId__cordl_bool1(
@@ -200,11 +295,21 @@ impl crate::Zenject::SignalBus {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration> = __cordl_object
-            .invoke("GetDeclaration", (signalId, requireDeclaration))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Zenject::BindingId, bool),
+                quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
+                2usize,
+            >("GetDeclaration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDeclaration", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration> = unsafe {
+            method.invoke_unchecked(self, (signalId, requireDeclaration))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeclaration_Type_Il2CppObject__cordl_bool0(
@@ -215,21 +320,41 @@ impl crate::Zenject::SignalBus {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration> = __cordl_object
-            .invoke("GetDeclaration", (signalType, identifier, requireDeclaration))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
+                3usize,
+            >("GetDeclaration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDeclaration", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration> = unsafe {
+            method.invoke_unchecked(self, (signalType, identifier, requireDeclaration))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LateDispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LateDispose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LateDispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LateDispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -273,11 +398,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SubscribeId", (identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubscribeId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SubscribeId_Il2CppObject_Action_1_1<TSignal>(
@@ -289,11 +427,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SubscribeId", (identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubscribeId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SubscribeId_Type_Il2CppObject_Action_1_2(
@@ -306,11 +457,31 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SubscribeId", (signalType, identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubscribeId", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SubscribeInternal_BindingId_Il2CppObject_Action_1_1(
@@ -323,11 +494,31 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SubscribeInternal", (signalId, token, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Zenject::BindingId,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SubscribeInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubscribeInternal", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalId, token, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SubscribeInternal_SignalSubscriptionId_Action_1_2(
@@ -339,11 +530,30 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SubscribeInternal", (id, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Zenject::SignalSubscriptionId,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SubscribeInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubscribeInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (id, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SubscribeInternal_Type_Il2CppObject_Il2CppObject_Action_1_0(
@@ -357,11 +567,32 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SubscribeInternal", (signalType, identifier, token, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SubscribeInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubscribeInternal", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, identifier, token, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subscribe_Action0<TSignal>(
@@ -372,11 +603,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Subscribe", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Subscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subscribe_Action_1_1<TSignal>(
@@ -387,11 +628,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Subscribe", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Subscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subscribe_Type_Action_1_2(
@@ -403,11 +654,30 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Subscribe", (signalType, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Subscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subscribe", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFireId_Il2CppObject1<TSignal>(
@@ -418,11 +688,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryFireId", (identifier))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("TryFireId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFireId", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFireId_Il2CppObject2(
@@ -430,11 +710,24 @@ impl crate::Zenject::SignalBus {
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         signal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryFireId", (identifier, signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TryFireId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFireId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFireId_TSignal0<TSignal>(
@@ -446,11 +739,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryFireId", (identifier, signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    TSignal,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TryFireId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFireId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFire_1<TSignal>(
@@ -460,22 +766,38 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryFire", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("TryFire")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFire", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFire_Il2CppObject2(
         &mut self,
         signal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryFire", (signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("TryFire")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFire", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFire_TSignal0<TSignal>(
@@ -486,11 +808,17 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryFire", (signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(TSignal), quest_hook::libil2cpp::Void, 1usize>("TryFire")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFire", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribeId_Il2CppObject_Action0<TSignal>(
@@ -502,11 +830,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribeId", (identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TryUnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribeId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribeId_Il2CppObject_Action_1_3<TSignal>(
@@ -518,11 +859,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribeId", (identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TryUnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribeId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribeId_Type_Il2CppObject_Action1(
@@ -531,11 +885,25 @@ impl crate::Zenject::SignalBus {
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribeId", (signalType, identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TryUnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribeId", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribeId_Type_Il2CppObject_Action_1_2(
@@ -548,11 +916,31 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribeId", (signalType, identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TryUnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribeId", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribe_Action0<TSignal>(
@@ -563,11 +951,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribe", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("TryUnsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribe_Action_1_3<TSignal>(
@@ -578,11 +976,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribe", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("TryUnsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribe_Type_Action1(
@@ -590,11 +998,24 @@ impl crate::Zenject::SignalBus {
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribe", (signalType, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TryUnsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribe", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryUnsubscribe_Type_Action_1_2(
@@ -606,11 +1027,30 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TryUnsubscribe", (signalType, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TryUnsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryUnsubscribe", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeId_Il2CppObject_Action0<TSignal>(
@@ -622,11 +1062,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnsubscribeId", (identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnsubscribeId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeId_Il2CppObject_Action_1_3<TSignal>(
@@ -638,11 +1091,24 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnsubscribeId", (identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnsubscribeId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeId_Type_Il2CppObject_Action1(
@@ -651,11 +1117,25 @@ impl crate::Zenject::SignalBus {
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnsubscribeId", (signalType, identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("UnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnsubscribeId", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeId_Type_Il2CppObject_Action_1_2(
@@ -668,11 +1148,31 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnsubscribeId", (signalType, identifier, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("UnsubscribeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnsubscribeId", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, identifier, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeInternal_BindingId_Il2CppObject__cordl_bool1(
@@ -681,11 +1181,25 @@ impl crate::Zenject::SignalBus {
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         throwIfMissing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnsubscribeInternal", (signalId, token, throwIfMissing))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Zenject::BindingId,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("UnsubscribeInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnsubscribeInternal", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalId, token, throwIfMissing))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeInternal_SignalSubscriptionId__cordl_bool2(
@@ -693,11 +1207,21 @@ impl crate::Zenject::SignalBus {
         id: crate::Zenject::SignalSubscriptionId,
         throwIfMissing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnsubscribeInternal", (id, throwIfMissing))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Zenject::SignalSubscriptionId, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UnsubscribeInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnsubscribeInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (id, throwIfMissing))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnsubscribeInternal_Type_Il2CppObject_Il2CppObject__cordl_bool0(
@@ -707,14 +1231,27 @@ impl crate::Zenject::SignalBus {
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         throwIfMissing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "UnsubscribeInternal",
-                (signalType, identifier, token, throwIfMissing),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("UnsubscribeInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnsubscribeInternal", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (signalType, identifier, token, throwIfMissing))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Unsubscribe_Action0<TSignal>(
@@ -725,11 +1262,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unsubscribe", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Unsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unsubscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Unsubscribe_Action_1_3<TSignal>(
@@ -740,11 +1287,21 @@ impl crate::Zenject::SignalBus {
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unsubscribe", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Unsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unsubscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Unsubscribe_Type_Action1(
@@ -752,11 +1309,24 @@ impl crate::Zenject::SignalBus {
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unsubscribe", (signalType, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Unsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unsubscribe", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Unsubscribe_Type_Action_1_2(
@@ -768,11 +1338,30 @@ impl crate::Zenject::SignalBus {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Unsubscribe", (signalType, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Unsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unsubscribe", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signalType, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreate(
@@ -784,16 +1373,45 @@ impl crate::Zenject::SignalBus {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("__zenCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__zenCreate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("__zenCreate", (P_0))?;
+        > = unsafe { method.invoke_unchecked((), (P_0)) };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("__zenCreateInjectTypeInfo", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+                0usize,
+            >("__zenCreateInjectTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__zenCreateInjectTypeInfo", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -813,28 +1431,55 @@ impl crate::Zenject::SignalBus {
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    signalDeclarations,
-                    parentBus,
-                    zenjectSettings,
-                    subscriptionPool,
-                    signalDeclarationFactory,
-                    container,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription_Pool>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration_Factory>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        signalDeclarations,
+                        parentBus,
+                        zenjectSettings,
+                        subscriptionPool,
+                        signalDeclarationFactory,
+                        container,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_NumSubscribers(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_NumSubscribers", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_NumSubscribers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_NumSubscribers", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_ParentBus(
@@ -842,11 +1487,21 @@ impl crate::Zenject::SignalBus {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus> = __cordl_object
-            .invoke("get_ParentBus", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
+                0usize,
+            >("get_ParentBus")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ParentBus", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

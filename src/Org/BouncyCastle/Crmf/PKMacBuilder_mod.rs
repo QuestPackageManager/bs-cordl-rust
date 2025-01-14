@@ -63,23 +63,42 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMacFactory>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMacFactory>,
+                1usize,
+            >("Build")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Build", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IMacFactory,
-        > = __cordl_object.invoke("Build", (password))?;
+        > = unsafe { method.invoke_unchecked(self, (password)) };
         Ok(__cordl_ret.into())
     }
     pub fn CheckIterationCountCeiling(
         &mut self,
         iterationCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckIterationCountCeiling", (iterationCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CheckIterationCountCeiling")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckIterationCountCeiling", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (iterationCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenCalculator(
@@ -91,12 +110,26 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMacFactory>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMacFactory>,
+                2usize,
+            >("GenCalculator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenCalculator", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IMacFactory,
-        > = __cordl_object.invoke("GenCalculator", (parameters, password))?;
+        > = unsafe { method.invoke_unchecked(self, (parameters, password)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -181,12 +214,21 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
+                1usize,
+            >("SetIterationCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIterationCount", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PKMacBuilder,
-        > = __cordl_object.invoke("SetIterationCount", (iterationCount))?;
+        > = unsafe { method.invoke_unchecked(self, (iterationCount)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetParameters(
@@ -197,12 +239,23 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
+                1usize,
+            >("SetParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetParameters", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PKMacBuilder,
-        > = __cordl_object.invoke("SetParameters", (parameters))?;
+        > = unsafe { method.invoke_unchecked(self, (parameters)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetSaltLength(
@@ -211,12 +264,21 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
+                1usize,
+            >("SetSaltLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSaltLength", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PKMacBuilder,
-        > = __cordl_object.invoke("SetSaltLength", (saltLength))?;
+        > = unsafe { method.invoke_unchecked(self, (saltLength)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetSecureRandom(
@@ -227,22 +289,39 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Security::SecureRandom,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crmf::PKMacBuilder>,
+                1usize,
+            >("SetSecureRandom")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSecureRandom", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::PKMacBuilder,
-        > = __cordl_object.invoke("SetSecureRandom", (random))?;
+        > = unsafe { method.invoke_unchecked(self, (random)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_AlgorithmIdentifier_i32_AlgorithmIdentifier_IPKMacPrimitivesProvider4(
@@ -258,19 +337,41 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    digestAlgorithmIdentifier,
-                    iterationCount,
-                    macAlgorithmIdentifier,
-                    provider,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        digestAlgorithmIdentifier,
+                        iterationCount,
+                        macAlgorithmIdentifier,
+                        provider,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IPKMacPrimitivesProvider1(
@@ -279,11 +380,23 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (provider))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IPKMacPrimitivesProvider_AlgorithmIdentifier_AlgorithmIdentifier2(
@@ -298,14 +411,35 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (provider, digestAlgorithmIdentifier, macAlgorithmIdentifier),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IPKMacPrimitivesProvider_i32_3(
@@ -315,11 +449,26 @@ impl crate::Org::BouncyCastle::Crmf::PKMacBuilder {
         >,
         maxIterations: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (provider, maxIterations))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (provider, maxIterations))
+        };
         Ok(__cordl_ret.into())
     }
 }

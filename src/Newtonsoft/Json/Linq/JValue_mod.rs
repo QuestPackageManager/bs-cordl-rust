@@ -50,12 +50,23 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::JsonCloneSettings,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                1usize,
+            >("CloneToken")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CloneToken", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JToken,
-        > = __cordl_object.invoke("CloneToken", (settings))?;
+        > = unsafe { method.invoke_unchecked(self, (settings)) };
         Ok(__cordl_ret.into())
     }
     pub fn Compare(
@@ -63,34 +74,88 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         objA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         objB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Compare", (valueType, objA, objB))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Linq::JTokenType,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                3usize,
+            >("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (valueType, objA, objB))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareBigInteger(
         i1: crate::System::Numerics::BigInteger,
         i2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareBigInteger", (i1, i2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Numerics::BigInteger,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                2usize,
+            >("CompareBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareBigInteger", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (i1, i2)) };
         Ok(__cordl_ret.into())
     }
     pub fn CompareFloat(
         objA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         objB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareFloat", (objA, objB))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                2usize,
+            >("CompareFloat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareFloat", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (objA, objB)) };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>),
+                i32,
+                1usize,
+            >("CompareTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareTo", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateComment(
@@ -98,18 +163,41 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                1usize,
+            >("CreateComment")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateComment", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JValue,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateComment", (value))?;
+        > = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNull() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                0usize,
+            >("CreateNull")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNull", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JValue,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateNull", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateString(
@@ -117,63 +205,122 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                1usize,
+            >("CreateString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JValue,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateString", (value))?;
+        > = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateUndefined() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                0usize,
+            >("CreateUndefined")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateUndefined", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JValue,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateUndefined", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn DeepEquals(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("DeepEquals", (node))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>),
+                bool,
+                1usize,
+            >("DeepEquals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeepEquals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (node)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_JValue0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeepHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetDeepHashCode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetDeepHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDeepHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetMetaObject(
@@ -184,27 +331,67 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Expression,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                1usize,
+            >("GetMetaObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMetaObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object.invoke("GetMetaObject", (parameter))?;
+        > = unsafe { method.invoke_unchecked(self, (parameter)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringValueType(
         current: crate::System::Nullable_1<crate::Newtonsoft::Json::Linq::JTokenType>,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStringValueType", (current))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::Nullable_1<crate::Newtonsoft::Json::Linq::JTokenType>),
+                crate::Newtonsoft::Json::Linq::JTokenType,
+                1usize,
+            >("GetStringValueType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStringValueType", 1usize
+                )
+            });
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = unsafe {
+            method.invoke_unchecked((), (current))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueType(
         current: crate::System::Nullable_1<crate::Newtonsoft::Json::Linq::JTokenType>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetValueType", (current, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Nullable_1<crate::Newtonsoft::Json::Linq::JTokenType>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                crate::Newtonsoft::Json::Linq::JTokenType,
+                2usize,
+            >("GetValueType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetValueType", 2usize
+                )
+            });
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = unsafe {
+            method.invoke_unchecked((), (current, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_DateTime9(
@@ -372,150 +559,280 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Operation", (operation, objA, objB, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Linq::Expressions::ExpressionType,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("Operation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Operation", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (operation, objA, objB, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_IComparable_CompareTo(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.IComparable.CompareTo", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                i32,
+                1usize,
+            >("System.IComparable.CompareTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IComparable.CompareTo", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_GetTypeCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TypeCode = __cordl_object
-            .invoke("System.IConvertible.GetTypeCode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::TypeCode,
+                0usize,
+            >("System.IConvertible.GetTypeCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.GetTypeCode", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::TypeCode = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToBoolean(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("System.IConvertible.ToBoolean", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                bool,
+                1usize,
+            >("System.IConvertible.ToBoolean")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToBoolean", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToByte(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u8 = __cordl_object
-            .invoke("System.IConvertible.ToByte", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                u8,
+                1usize,
+            >("System.IConvertible.ToByte")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToByte", 1usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToChar(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: char = __cordl_object
-            .invoke("System.IConvertible.ToChar", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                char,
+                1usize,
+            >("System.IConvertible.ToChar")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToChar", 1usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToDateTime(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::DateTime = __cordl_object
-            .invoke("System.IConvertible.ToDateTime", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                crate::System::DateTime,
+                1usize,
+            >("System.IConvertible.ToDateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToDateTime", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            method.invoke_unchecked(self, (provider))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToDecimal(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Decimal = __cordl_object
-            .invoke("System.IConvertible.ToDecimal", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                crate::System::Decimal,
+                1usize,
+            >("System.IConvertible.ToDecimal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToDecimal", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Decimal = unsafe {
+            method.invoke_unchecked(self, (provider))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToDouble(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object
-            .invoke("System.IConvertible.ToDouble", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                f64,
+                1usize,
+            >("System.IConvertible.ToDouble")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToDouble", 1usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToInt16(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i16 = __cordl_object
-            .invoke("System.IConvertible.ToInt16", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                i16,
+                1usize,
+            >("System.IConvertible.ToInt16")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToInt16", 1usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToInt32(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("System.IConvertible.ToInt32", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                i32,
+                1usize,
+            >("System.IConvertible.ToInt32")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToInt32", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToInt64(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object
-            .invoke("System.IConvertible.ToInt64", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                i64,
+                1usize,
+            >("System.IConvertible.ToInt64")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToInt64", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToSByte(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i8 = __cordl_object
-            .invoke("System.IConvertible.ToSByte", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                i8,
+                1usize,
+            >("System.IConvertible.ToSByte")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToSByte", 1usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToSingle(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("System.IConvertible.ToSingle", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                f32,
+                1usize,
+            >("System.IConvertible.ToSingle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToSingle", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToType(
@@ -525,46 +842,81 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("System.IConvertible.ToType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToType", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("System.IConvertible.ToType", (conversionType, provider))?;
+        > = unsafe { method.invoke_unchecked(self, (conversionType, provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToUInt16(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u16> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u16 = __cordl_object
-            .invoke("System.IConvertible.ToUInt16", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                u16,
+                1usize,
+            >("System.IConvertible.ToUInt16")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToUInt16", 1usize
+                )
+            });
+        let __cordl_ret: u16 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToUInt32(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("System.IConvertible.ToUInt32", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                u32,
+                1usize,
+            >("System.IConvertible.ToUInt32")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToUInt32", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToUInt64(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object
-            .invoke("System.IConvertible.ToUInt64", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                u64,
+                1usize,
+            >("System.IConvertible.ToUInt64")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.IConvertible.ToUInt64", 1usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (provider)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -572,12 +924,21 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_IFormatProvider2(
@@ -586,12 +947,21 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", (formatProvider))?;
+        > = unsafe { method.invoke_unchecked(self, (formatProvider)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString1(
@@ -600,12 +970,21 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", (format))?;
+        > = unsafe { method.invoke_unchecked(self, (format)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider3(
@@ -615,20 +994,46 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", (format, formatProvider))?;
+        > = unsafe { method.invoke_unchecked(self, (format, formatProvider)) };
         Ok(__cordl_ret.into())
     }
     pub fn ValuesEquals(
         v1: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
         v2: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValuesEquals", (v1, v2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                ),
+                bool,
+                2usize,
+            >("ValuesEquals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValuesEquals", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (v1, v2)) };
         Ok(__cordl_ret.into())
     }
     pub fn WriteTo(
@@ -640,11 +1045,30 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteTo", (writer, converters))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::JsonConverter,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WriteTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteTo", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (writer, converters))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteToAsync(
@@ -659,68 +1083,138 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                    crate::System::Threading::CancellationToken,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::JsonConverter,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                3usize,
+            >("WriteToAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteToAsync", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = __cordl_object
-            .invoke("WriteToAsync", (writer, cancellationToken, converters))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (writer, cancellationToken, converters))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTime9(
         &mut self,
         value: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::DateTime),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTimeOffset10(
         &mut self,
         value: crate::System::DateTimeOffset,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::DateTimeOffset),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Decimal4(
         &mut self,
         value: crate::System::Decimal,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Decimal),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Guid13(
         &mut self,
         value: crate::System::Guid,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Guid),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppObject16(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppObject_JTokenType0(
@@ -728,33 +1222,66 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         _cordl_type: crate::Newtonsoft::Json::Linq::JTokenType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value, _cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::Newtonsoft::Json::Linq::JTokenType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value, _cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString12(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_JValue2(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (other))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_JValue_JsonCloneSettings1(
@@ -764,116 +1291,202 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             crate::Newtonsoft::Json::Linq::JsonCloneSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (other, settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Linq::JsonCloneSettings,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (other, settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_TimeSpan15(
         &mut self,
         value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::TimeSpan),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Uri14(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Uri>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool11(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_char5(
         &mut self,
         value: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(char), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_8(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_7(
         &mut self,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_3(
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u64_6(
         &mut self,
         value: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_HasValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_HasValues", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_HasValues")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_HasValues", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Type(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = __cordl_object
-            .invoke("get_Type", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Newtonsoft::Json::Linq::JTokenType,
+                0usize,
+            >("get_Type")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Type", 0usize
+                )
+            });
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(
@@ -881,23 +1494,42 @@ impl crate::Newtonsoft::Json::Linq::JValue {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                0usize,
+            >("get_Value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Value", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_Value", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_Value(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Value", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_Value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Value", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1063,11 +1695,30 @@ impl crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryBinaryOperation", (instance, binder, arg, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Dynamic::BinaryOperationBinder,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("TryBinaryOperation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryBinaryOperation", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (instance, binder, arg, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvert(
@@ -1078,21 +1729,43 @@ impl crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryConvert", (instance, binder, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::ConvertBinder>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryConvert")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvert", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (instance, binder, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

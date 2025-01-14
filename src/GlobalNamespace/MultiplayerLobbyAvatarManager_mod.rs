@@ -65,11 +65,21 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     pub fn ActivateMultiplayerLobbyAvatarManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ActivateMultiplayerLobbyAvatarManager", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ActivateMultiplayerLobbyAvatarManager")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ActivateMultiplayerLobbyAvatarManager", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddPlayer(
@@ -78,21 +88,41 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
             crate::GlobalNamespace::IConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddPlayer", (connectedPlayer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddPlayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddPlayer", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (connectedPlayer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeactivateMultiplayerLobbyAvatarManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DeactivateMultiplayerLobbyAvatarManager", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("DeactivateMultiplayerLobbyAvatarManager")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeactivateMultiplayerLobbyAvatarManager", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleLobbyStateDataModelPlayerConnected(
@@ -101,11 +131,21 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
             crate::GlobalNamespace::IConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLobbyStateDataModelPlayerConnected", (connectedPlayer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleLobbyStateDataModelPlayerConnected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleLobbyStateDataModelPlayerConnected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (connectedPlayer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleLobbyStateDataModelPlayerDisconnected(
@@ -114,11 +154,21 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
             crate::GlobalNamespace::IConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleLobbyStateDataModelPlayerDisconnected", (connectedPlayer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleLobbyStateDataModelPlayerDisconnected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleLobbyStateDataModelPlayerDisconnected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (connectedPlayer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -126,11 +176,17 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
         innerCircleRadius: f32,
         minOuterCircleRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (innerCircleRadius, minOuterCircleRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32, f32), quest_hook::libil2cpp::Void, 2usize>("Init")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Init", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (innerCircleRadius, minOuterCircleRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -146,11 +202,21 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
             crate::GlobalNamespace::IConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemovePlayer", (connectedPlayer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemovePlayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemovePlayer", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (connectedPlayer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemovePlayerAndDestroy(
@@ -162,23 +228,42 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MultiplayerLobbyAvatarController,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                2usize,
+            >("RemovePlayerAndDestroy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemovePlayerAndDestroy", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = __cordl_object
-            .invoke("RemovePlayerAndDestroy", (userId, multiplayerAvatar))?;
+        > = unsafe { method.invoke_unchecked(self, (userId, multiplayerAvatar)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

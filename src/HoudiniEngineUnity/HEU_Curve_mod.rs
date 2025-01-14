@@ -76,46 +76,94 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
+                5usize,
+            >("CreateSetupCurve")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateSetupCurve", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_Curve,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateSetupCurve",
-                (parentAsset, isEditable, curveName, geoID, bGeoCurve),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (parentAsset, isEditable, curveName, geoID, bGeoCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DestroyAllData(
         &mut self,
         bIsRebuild: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DestroyAllData", (bIsRebuild))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("DestroyAllData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DestroyAllData", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bIsRebuild))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadAsDefaultPresetData(
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DownloadAsDefaultPresetData", (session))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DownloadAsDefaultPresetData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DownloadAsDefaultPresetData", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DownloadPresetData(
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DownloadPresetData", (session))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DownloadPresetData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DownloadPresetData", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DuplicateCurveNodeData(
@@ -127,25 +175,50 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::CurveNodeData,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("DuplicateCurveNodeData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DuplicateCurveNodeData", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
             >,
-        > = __cordl_object.invoke("DuplicateCurveNodeData", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateMesh(
         &mut self,
         inGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateMesh", (inGameObject))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GenerateMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateMesh", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inGameObject))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllPointTransforms(
@@ -157,14 +230,29 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::CurveNodeData,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetAllPointTransforms")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllPointTransforms", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
             >,
-        > = __cordl_object.invoke("GetAllPointTransforms", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllPoints(
@@ -174,52 +262,96 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector3,
+                    >,
+                >,
+                0usize,
+            >("GetAllPoints")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllPoints", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        > = __cordl_object.invoke("GetAllPoints", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurvePoint(
         &mut self,
         pointIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetCurvePoint", (pointIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), crate::UnityEngine::Vector3, 1usize>("GetCurvePoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCurvePoint", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (pointIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetInvertedTransformedDirection(
         &mut self,
         inPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetInvertedTransformedDirection", (inPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("GetInvertedTransformedDirection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInvertedTransformedDirection", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (inPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetInvertedTransformedPosition(
         &mut self,
         inPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetInvertedTransformedPosition", (inPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("GetInvertedTransformedPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInvertedTransformedPosition", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (inPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNumPoints(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetNumPoints", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetNumPoints")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNumPoints", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPointsString_List_1_0(
@@ -231,10 +363,27 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::CurveNodeData,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetPointsString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPointsString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPointsString", (points))?;
+        > = unsafe { method.invoke_unchecked((), (points)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPointsString_List_1_1(
@@ -244,32 +393,67 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector3,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetPointsString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPointsString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPointsString", (points))?;
+        > = unsafe { method.invoke_unchecked((), (points)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransformedPoint(
         &mut self,
         pointIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetTransformedPoint", (pointIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("GetTransformedPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTransformedPoint", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (pointIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTransformedPosition(
         &mut self,
         inPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetTransformedPosition", (inPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("GetTransformedPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTransformedPosition", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (inPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertices(
@@ -279,36 +463,66 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >,
+                0usize,
+            >("GetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertices", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        > = __cordl_object.invoke("GetVertices", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn IsEditable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsEditable", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("IsEditable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsEditable", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn IsEquivalentTo(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>),
+                bool,
+                1usize,
+            >("IsEquivalentTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsEquivalentTo", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsGeoCurve(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsGeoCurve", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("IsGeoCurve")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsGeoCurve", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -326,11 +540,27 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         rayDirection: crate::UnityEngine::Vector3,
         rayDistance: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProjectToColliders", (parentAsset, rayDirection, rayDistance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                    crate::UnityEngine::Vector3,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProjectToColliders")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProjectToColliders", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parentAsset, rayDirection, rayDistance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResetCurveParameters(
@@ -340,33 +570,70 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetCurveParameters", (session, parentAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ResetCurveParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResetCurveParameters", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, parentAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurveGeometryVisibility(
         &mut self,
         bVisible: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCurveGeometryVisibility", (bVisible))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetCurveGeometryVisibility")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCurveGeometryVisibility", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bVisible))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurveName(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCurveName", (name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetCurveName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCurveName", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurveNodeData(
@@ -377,11 +644,27 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCurveNodeData", (curveNodeData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::CurveNodeData,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetCurveNodeData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCurveNodeData", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (curveNodeData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurveParameterPreset(
@@ -394,11 +677,29 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCurveParameterPreset", (session, parentAsset, parameterPreset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetCurveParameterPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCurveParameterPreset", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, parentAsset, parameterPreset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurvePoint(
@@ -406,33 +707,63 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         pointIndex: i32,
         newPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCurvePoint", (pointIndex, newPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::Vector3),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetCurvePoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCurvePoint", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pointIndex, newPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetEditState(
         &mut self,
         editState: crate::HoudiniEngineUnity::HEU_Curve_CurveEditState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetEditState", (editState))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::HoudiniEngineUnity::HEU_Curve_CurveEditState),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetEditState")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetEditState", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (editState))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUploadParameterPreset(
         &mut self,
         bValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUploadParameterPreset", (bValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetUploadParameterPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUploadParameterPreset", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SyncFromParameters(
@@ -442,11 +773,28 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SyncFromParameters", (session, parentAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SyncFromParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SyncFromParameters", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, parentAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateCurve(
@@ -454,11 +802,26 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         partID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateCurve", (session, partID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UpdateCurve")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateCurve", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, partID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateCurveInputForCustomAttributes(
@@ -468,11 +831,28 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("UpdateCurveInputForCustomAttributes", (session, parentAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("UpdateCurveInputForCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateCurveInputForCustomAttributes", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (session, parentAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePoints(
@@ -480,11 +860,26 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         partID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdatePoints", (session, partID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UpdatePoints")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdatePoints", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, partID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadParameterPreset(
@@ -495,32 +890,66 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UploadParameterPreset", (session, geoID, parentAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("UploadParameterPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadParameterPreset", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, geoID, parentAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadPresetData(
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UploadPresetData", (session))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UploadPresetData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadPresetData", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_CurveName(
@@ -528,12 +957,21 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_CurveName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CurveName", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("get_CurveName", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_CurveNodeData(
@@ -545,14 +983,29 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::CurveNodeData,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_CurveNodeData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CurveNodeData", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
             >,
-        > = __cordl_object.invoke("get_CurveNodeData", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_EditState(
@@ -560,18 +1013,33 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     ) -> quest_hook::libil2cpp::Result<
         crate::HoudiniEngineUnity::HEU_Curve_CurveEditState,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::HoudiniEngineUnity::HEU_Curve_CurveEditState = __cordl_object
-            .invoke("get_EditState", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::HoudiniEngineUnity::HEU_Curve_CurveEditState,
+                0usize,
+            >("get_EditState")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_EditState", 0usize
+                )
+            });
+        let __cordl_ret: crate::HoudiniEngineUnity::HEU_Curve_CurveEditState = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_GeoID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_GeoID", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_GeoID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_GeoID", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Parameters(
@@ -579,12 +1047,21 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Parameters>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Parameters>,
+                0usize,
+            >("get_Parameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Parameters", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_Parameters,
-        > = __cordl_object.invoke("get_Parameters", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_ParentAsset(
@@ -592,12 +1069,21 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+                0usize,
+            >("get_ParentAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ParentAsset", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-        > = __cordl_object.invoke("get_ParentAsset", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

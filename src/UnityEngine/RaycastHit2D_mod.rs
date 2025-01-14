@@ -105,47 +105,77 @@ impl crate::UnityEngine::RaycastHit2D {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider2D>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider2D> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_collider",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider2D>,
+                0usize,
+            >("get_collider")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_collider", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider2D> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_distance(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_distance",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_distance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_distance", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_fraction(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_fraction",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_fraction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_fraction", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_normal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_normal",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_normal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_normal", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_point(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_point",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::UnityEngine::Vector2, 0usize>("get_point")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_point", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

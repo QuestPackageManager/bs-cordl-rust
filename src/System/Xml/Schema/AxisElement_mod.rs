@@ -49,11 +49,26 @@ impl crate::System::Xml::Schema::AxisElement {
         depth: i32,
         parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ForwardAxis>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("MoveToChild", (name, URN, depth, parent))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ForwardAxis>,
+                ),
+                bool,
+                4usize,
+            >("MoveToChild")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveToChild", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (name, URN, depth, parent))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MoveToParent(
@@ -61,11 +76,24 @@ impl crate::System::Xml::Schema::AxisElement {
         depth: i32,
         parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ForwardAxis>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveToParent", (depth, parent))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ForwardAxis>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("MoveToParent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveToParent", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (depth, parent))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -82,11 +110,17 @@ impl crate::System::Xml::Schema::AxisElement {
         &mut self,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetDepth", (depth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("SetDepth")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetDepth", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (depth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -94,11 +128,26 @@ impl crate::System::Xml::Schema::AxisElement {
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (node, depth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::DoubleLinkAxis,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (node, depth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_CurNode(
@@ -106,12 +155,21 @@ impl crate::System::Xml::Schema::AxisElement {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
+                0usize,
+            >("get_CurNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CurNode", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::DoubleLinkAxis,
-        > = __cordl_object.invoke("get_CurNode", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

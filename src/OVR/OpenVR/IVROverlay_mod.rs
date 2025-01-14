@@ -554,33 +554,63 @@ impl crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), crate::OVR::OpenVR::EVROverlayError, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -598,11 +628,24 @@ impl crate::OVR::OpenVR::IVROverlay__ClearOverlayTexture {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -664,32 +707,61 @@ impl crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                2usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -707,11 +779,24 @@ impl crate::OVR::OpenVR::IVROverlay__CloseMessageOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -780,14 +865,35 @@ impl crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pParams, pResults, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionParams_t,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionResults_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pParams, pResults, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -800,11 +906,29 @@ impl crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("EndInvoke", (pParams, pResults, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionParams_t,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionResults_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                bool,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pParams, pResults, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -817,11 +941,29 @@ impl crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
             crate::OVR::OpenVR::VROverlayIntersectionResults_t,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pParams, pResults))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionParams_t,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionResults_t,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pParams, pResults))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -839,11 +981,24 @@ impl crate::OVR::OpenVR::IVROverlay__ComputeOverlayIntersection {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -911,21 +1066,39 @@ impl crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    pchOverlayKey,
-                    pchOverlayFriendlyName,
-                    pMainHandle,
-                    pThumbnailHandle,
-                    callback,
-                    object,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        pchOverlayKey,
+                        pchOverlayFriendlyName,
+                        pMainHandle,
+                        pThumbnailHandle,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -934,11 +1107,25 @@ impl crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
         pThumbnailHandle: quest_hook::libil2cpp::ByRefMut<u64>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pMainHandle, pThumbnailHandle, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pMainHandle, pThumbnailHandle, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -950,14 +1137,35 @@ impl crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
         pMainHandle: quest_hook::libil2cpp::ByRefMut<u64>,
         pThumbnailHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (pchOverlayKey, pchOverlayFriendlyName, pMainHandle, pThumbnailHandle),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        pchOverlayKey,
+                        pchOverlayFriendlyName,
+                        pMainHandle,
+                        pThumbnailHandle,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -975,11 +1183,24 @@ impl crate::OVR::OpenVR::IVROverlay__CreateDashboardOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1044,14 +1265,31 @@ impl crate::OVR::OpenVR::IVROverlay__CreateOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (pchOverlayKey, pchOverlayName, pOverlayHandle, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (pchOverlayKey, pchOverlayName, pOverlayHandle, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -1059,11 +1297,24 @@ impl crate::OVR::OpenVR::IVROverlay__CreateOverlay {
         pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pOverlayHandle, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pOverlayHandle, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1072,11 +1323,26 @@ impl crate::OVR::OpenVR::IVROverlay__CreateOverlay {
         pchOverlayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (pchOverlayKey, pchOverlayName, pOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(self, (pchOverlayKey, pchOverlayName, pOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1094,11 +1360,24 @@ impl crate::OVR::OpenVR::IVROverlay__CreateOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1161,33 +1440,63 @@ impl crate::OVR::OpenVR::IVROverlay__DestroyOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), crate::OVR::OpenVR::EVROverlayError, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1205,11 +1514,24 @@ impl crate::OVR::OpenVR::IVROverlay__DestroyOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1272,11 +1594,30 @@ impl crate::OVR::OpenVR::IVROverlay__FindOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (pchOverlayKey, pOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (pchOverlayKey, pOverlayHandle, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -1284,11 +1625,24 @@ impl crate::OVR::OpenVR::IVROverlay__FindOverlay {
         pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pOverlayHandle, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pOverlayHandle, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1296,11 +1650,24 @@ impl crate::OVR::OpenVR::IVROverlay__FindOverlay {
         pchOverlayKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (pchOverlayKey, pOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pchOverlayKey, pOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1318,11 +1685,24 @@ impl crate::OVR::OpenVR::IVROverlay__FindOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1387,11 +1767,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, punProcessId, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, punProcessId, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -1399,11 +1798,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
         punProcessId: quest_hook::libil2cpp::ByRefMut<u32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (punProcessId, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (punProcessId, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1411,11 +1823,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
         ulOverlayHandle: u64,
         punProcessId: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, punProcessId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<u32>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, punProcessId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1433,11 +1855,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetDashboardOverlaySceneProcess {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1499,28 +1934,55 @@ impl crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                2usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                u64,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), u64, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1538,11 +2000,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetGamepadFocusOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1604,28 +2079,55 @@ impl crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                2usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                u64,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object.invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), u64, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1643,11 +2145,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetHighQualityOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1711,21 +2226,45 @@ impl crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (pchText, cchText, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (pchText, cchText, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                u32,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1733,10 +2272,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
         pchText: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         cchText: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", (pchText, cchText))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>, u32),
+                u32,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked(self, (pchText, cchText))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1754,11 +2304,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetKeyboardText {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1822,11 +2385,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pfAlpha, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pfAlpha, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -1834,11 +2412,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
         pfAlpha: quest_hook::libil2cpp::ByRefMut<f32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pfAlpha, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pfAlpha, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1846,11 +2437,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
         ulOverlayHandle: u64,
         pfAlpha: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pfAlpha))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<f32>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pfAlpha))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1868,11 +2469,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAlpha {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1939,20 +2553,37 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    pfMinDistanceInMeters,
-                    pfMaxDistanceInMeters,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pfMinDistanceInMeters,
+                        pfMaxDistanceInMeters,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -1961,14 +2592,29 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
         pfMaxDistanceInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "EndInvoke",
-                (pfMinDistanceInMeters, pfMaxDistanceInMeters, result),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (pfMinDistanceInMeters, pfMaxDistanceInMeters, result),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -1977,14 +2623,29 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
         pfMinDistanceInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
         pfMaxDistanceInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, pfMinDistanceInMeters, pfMaxDistanceInMeters),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pfMinDistanceInMeters, pfMaxDistanceInMeters),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2002,11 +2663,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayAutoCurveDistanceRangeInMeters {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2072,14 +2746,32 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pfRed, pfGreen, pfBlue, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pfRed, pfGreen, pfBlue, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -2089,11 +2781,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
         pfBlue: quest_hook::libil2cpp::ByRefMut<f32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pfRed, pfGreen, pfBlue, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pfRed, pfGreen, pfBlue, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -2103,11 +2810,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
         pfGreen: quest_hook::libil2cpp::ByRefMut<f32>,
         pfBlue: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pfRed, pfGreen, pfBlue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pfRed, pfGreen, pfBlue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2125,11 +2847,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayColor {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2196,14 +2931,32 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlay, eWhich, pvCenter, pfRadius, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::EDualAnalogWhich,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlay, eWhich, pvCenter, pfRadius, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -2212,11 +2965,25 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
         pfRadius: quest_hook::libil2cpp::ByRefMut<f32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pvCenter, pfRadius, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pvCenter, pfRadius, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -2226,11 +2993,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
         pvCenter: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
         pfRadius: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlay, eWhich, pvCenter, pfRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::EDualAnalogWhich,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlay, eWhich, pvCenter, pfRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2248,11 +3030,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayDualAnalogTransform {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2315,33 +3110,67 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (error, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::OVR::OpenVR::EVROverlayError,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (error, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::System::IntPtr,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         error: crate::OVR::OpenVR::EVROverlayError,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("Invoke", (error))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::OVR::OpenVR::EVROverlayError),
+                crate::System::IntPtr,
+                1usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked(self, (error))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2359,11 +3188,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayErrorNameFromEnum {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2428,14 +3270,31 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, eOverlayFlag, pbEnabled, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::VROverlayFlags,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, eOverlayFlag, pbEnabled, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -2443,11 +3302,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
         pbEnabled: quest_hook::libil2cpp::ByRefMut<bool>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pbEnabled, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pbEnabled, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -2456,11 +3328,25 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
         eOverlayFlag: crate::OVR::OpenVR::VROverlayFlags,
         pbEnabled: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, eOverlayFlag, pbEnabled))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::VROverlayFlags,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, eOverlayFlag, pbEnabled))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2478,11 +3364,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlag {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2546,11 +3445,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pFlags, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pFlags, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -2558,11 +3472,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
         pFlags: quest_hook::libil2cpp::ByRefMut<u32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pFlags, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pFlags, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -2570,11 +3497,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
         ulOverlayHandle: u64,
         pFlags: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pFlags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<u32>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pFlags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2592,11 +3529,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayFlags {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2663,22 +3613,41 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    pvBuffer,
-                    unBufferSize,
-                    punWidth,
-                    punHeight,
-                    callback,
-                    object,
+                    u64,
+                    crate::System::IntPtr,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                7usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pvBuffer,
+                        unBufferSize,
+                        punWidth,
+                        punHeight,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -2687,11 +3656,25 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
         punHeight: quest_hook::libil2cpp::ByRefMut<u32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (punWidth, punHeight, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (punWidth, punHeight, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -2702,14 +3685,31 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
         punWidth: quest_hook::libil2cpp::ByRefMut<u32>,
         punHeight: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, pvBuffer, unBufferSize, punWidth, punHeight),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::System::IntPtr,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                5usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 5usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pvBuffer, unBufferSize, punWidth, punHeight),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2727,11 +3727,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayImageData {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2797,11 +3810,32 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, peInputMethod, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayInputMethod,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, peInputMethod, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -2811,11 +3845,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (peInputMethod, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayInputMethod,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (peInputMethod, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -2825,11 +3874,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
             crate::OVR::OpenVR::VROverlayInputMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, peInputMethod))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayInputMethod,
+                    >,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, peInputMethod))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2847,11 +3911,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayInputMethod {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2917,14 +3994,32 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pchValue, unBufferSize, pError, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pchValue, unBufferSize, pError, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -2932,10 +4027,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (pError, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                u32,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked(self, (pError, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -2945,11 +4054,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
         unBufferSize: u32,
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pchValue, unBufferSize, pError))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                ),
+                u32,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pchValue, unBufferSize, pError),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2967,11 +4095,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayKey {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3037,11 +4178,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pvecMouseScale, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pvecMouseScale, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -3051,11 +4211,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pvecMouseScale, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pvecMouseScale, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -3063,11 +4236,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
         ulOverlayHandle: u64,
         pvecMouseScale: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pvecMouseScale))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pvecMouseScale))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3085,11 +4268,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayMouseScale {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3155,14 +4351,32 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayName {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pchValue, unBufferSize, pError, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pchValue, unBufferSize, pError, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -3170,10 +4384,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayName {
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (pError, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                u32,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked(self, (pError, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -3183,11 +4411,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayName {
         unBufferSize: u32,
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pchValue, unBufferSize, pError))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                ),
+                u32,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pchValue, unBufferSize, pError),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3205,11 +4452,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayName {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3276,22 +4536,41 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    pchValue,
-                    unBufferSize,
-                    pColor,
-                    pError,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                7usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pchValue,
+                        unBufferSize,
+                        pColor,
+                        pError,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -3300,11 +4579,25 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("EndInvoke", (pColor, pError, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                u32,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked(self, (pColor, pError, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -3315,14 +4608,31 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
         pColor: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
         pError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, pchValue, unBufferSize, pColor, pError),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVROverlayError>,
+                ),
+                u32,
+                5usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 5usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pchValue, unBufferSize, pColor, pError),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3340,11 +4650,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderModel {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3407,31 +4730,61 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                u32,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), u32, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3449,11 +4802,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayRenderingPid {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3517,11 +4883,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, punSortOrder, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, punSortOrder, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -3529,11 +4914,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
         punSortOrder: quest_hook::libil2cpp::ByRefMut<u32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (punSortOrder, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (punSortOrder, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -3541,11 +4939,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
         ulOverlayHandle: u64,
         punSortOrder: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, punSortOrder))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<u32>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, punSortOrder))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3563,11 +4971,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlaySortOrder {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3631,11 +5052,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pfTexelAspect, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pfTexelAspect, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -3643,11 +5083,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
         pfTexelAspect: quest_hook::libil2cpp::ByRefMut<f32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pfTexelAspect, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pfTexelAspect, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -3655,11 +5108,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
         ulOverlayHandle: u64,
         pfTexelAspect: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pfTexelAspect))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<f32>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pfTexelAspect))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3677,11 +5140,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexelAspect {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3754,26 +5230,51 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    pNativeTextureHandle,
-                    pNativeTextureRef,
-                    pWidth,
-                    pHeight,
-                    pNativeFormat,
-                    pAPIType,
-                    pColorSpace,
-                    pTextureBounds,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::ETextureType>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EColorSpace>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                11usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 11usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pNativeTextureHandle,
+                        pNativeTextureRef,
+                        pWidth,
+                        pHeight,
+                        pNativeFormat,
+                        pAPIType,
+                        pColorSpace,
+                        pTextureBounds,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -3789,23 +5290,45 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "EndInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    pNativeTextureHandle,
-                    pWidth,
-                    pHeight,
-                    pNativeFormat,
-                    pAPIType,
-                    pColorSpace,
-                    pTextureBounds,
-                    result,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::ETextureType>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EColorSpace>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
                 ),
-            )?;
+                crate::OVR::OpenVR::EVROverlayError,
+                8usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 8usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        pNativeTextureHandle,
+                        pWidth,
+                        pHeight,
+                        pNativeFormat,
+                        pAPIType,
+                        pColorSpace,
+                        pTextureBounds,
+                        result,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -3822,24 +5345,47 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
             crate::OVR::OpenVR::VRTextureBounds_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    pNativeTextureHandle,
-                    pNativeTextureRef,
-                    pWidth,
-                    pHeight,
-                    pNativeFormat,
-                    pAPIType,
-                    pColorSpace,
-                    pTextureBounds,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::ETextureType>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EColorSpace>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
                 ),
-            )?;
+                crate::OVR::OpenVR::EVROverlayError,
+                9usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 9usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pNativeTextureHandle,
+                        pNativeTextureRef,
+                        pWidth,
+                        pHeight,
+                        pNativeFormat,
+                        pAPIType,
+                        pColorSpace,
+                        pTextureBounds,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3857,11 +5403,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTexture {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -3927,14 +5486,32 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pOverlayTextureBounds, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pOverlayTextureBounds, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -3944,11 +5521,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pOverlayTextureBounds, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pOverlayTextureBounds, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -3958,11 +5550,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
             crate::OVR::OpenVR::VRTextureBounds_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pOverlayTextureBounds))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pOverlayTextureBounds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -3980,11 +5587,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureBounds {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4050,14 +5670,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, peTextureColorSpace, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EColorSpace>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, peTextureColorSpace, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4067,11 +5703,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (peTextureColorSpace, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EColorSpace>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (peTextureColorSpace, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -4081,11 +5730,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
             crate::OVR::OpenVR::EColorSpace,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, peTextureColorSpace))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EColorSpace>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, peTextureColorSpace))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4103,11 +5762,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureColorSpace {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4172,14 +5844,31 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pWidth, pHeight, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pWidth, pHeight, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4188,11 +5877,25 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
         pHeight: quest_hook::libil2cpp::ByRefMut<u32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pWidth, pHeight, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pWidth, pHeight, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -4201,11 +5904,25 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
         pWidth: quest_hook::libil2cpp::ByRefMut<u32>,
         pHeight: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pWidth, pHeight))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pWidth, pHeight))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4223,11 +5940,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTextureSize {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4296,20 +6026,39 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    peTrackingOrigin,
-                    pmatTrackingOriginToOverlayTransform,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        peTrackingOrigin,
+                        pmatTrackingOriginToOverlayTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4322,14 +6071,31 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "EndInvoke",
-                (peTrackingOrigin, pmatTrackingOriginToOverlayTransform, result),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (peTrackingOrigin, pmatTrackingOriginToOverlayTransform, result),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -4342,14 +6108,35 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, peTrackingOrigin, pmatTrackingOriginToOverlayTransform),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        peTrackingOrigin,
+                        pmatTrackingOriginToOverlayTransform,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4367,11 +6154,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformAbsolute {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4440,20 +6240,37 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    ulOverlayHandleParent,
-                    pmatParentOverlayToOverlayTransform,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        ulOverlayHandleParent,
+                        pmatParentOverlayToOverlayTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4464,14 +6281,29 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "EndInvoke",
-                (ulOverlayHandleParent, pmatParentOverlayToOverlayTransform, result),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandleParent, pmatParentOverlayToOverlayTransform, result),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -4482,18 +6314,33 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    ulOverlayHandleParent,
-                    pmatParentOverlayToOverlayTransform,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
                 ),
-            )?;
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        ulOverlayHandleParent,
+                        pmatParentOverlayToOverlayTransform,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4511,11 +6358,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformOverlayRelative {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4583,21 +6443,39 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    punDeviceIndex,
-                    pchComponentName,
-                    unComponentNameSize,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        punDeviceIndex,
+                        pchComponentName,
+                        unComponentNameSize,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4605,11 +6483,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
         punDeviceIndex: quest_hook::libil2cpp::ByRefMut<u32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (punDeviceIndex, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (punDeviceIndex, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -4619,14 +6510,35 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
         pchComponentName: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unComponentNameSize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, punDeviceIndex, pchComponentName, unComponentNameSize),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        punDeviceIndex,
+                        pchComponentName,
+                        unComponentNameSize,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4644,11 +6556,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceComponent {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4717,20 +6642,37 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    punTrackedDevice,
-                    pmatTrackedDeviceToOverlayTransform,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        punTrackedDevice,
+                        pmatTrackedDeviceToOverlayTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4741,14 +6683,29 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "EndInvoke",
-                (punTrackedDevice, pmatTrackedDeviceToOverlayTransform, result),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (punTrackedDevice, pmatTrackedDeviceToOverlayTransform, result),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -4759,14 +6716,33 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, punTrackedDevice, pmatTrackedDeviceToOverlayTransform),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        punTrackedDevice,
+                        pmatTrackedDeviceToOverlayTransform,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4784,11 +6760,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformTrackedDeviceRelative {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4854,14 +6843,32 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, peTransformType, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayTransformType,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, peTransformType, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4871,11 +6878,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (peTransformType, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayTransformType,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (peTransformType, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -4885,11 +6907,26 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
             crate::OVR::OpenVR::VROverlayTransformType,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, peTransformType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayTransformType,
+                    >,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, peTransformType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -4907,11 +6944,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayTransformType {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4975,14 +7025,30 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pfWidthInMeters, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pfWidthInMeters, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -4990,11 +7056,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
         pfWidthInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pfWidthInMeters, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pfWidthInMeters, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -5002,11 +7081,21 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
         ulOverlayHandle: u64,
         pfWidthInMeters: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pfWidthInMeters))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<f32>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pfWidthInMeters))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5024,11 +7113,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetOverlayWidthInMeters {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5090,28 +7192,55 @@ impl crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                2usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                u32,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), u32, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5129,11 +7258,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetPrimaryDashboardDevice {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5203,21 +7345,39 @@ impl crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    eTrackingOrigin,
-                    coordinatesInOverlay,
-                    pmatTransform,
-                    callback,
-                    object,
+                    u64,
+                    crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    crate::OVR::OpenVR::HmdVector2_t,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        eTrackingOrigin,
+                        coordinatesInOverlay,
+                        pmatTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -5227,11 +7387,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pmatTransform, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pmatTransform, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -5241,14 +7414,35 @@ impl crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
         coordinatesInOverlay: crate::OVR::OpenVR::HmdVector2_t,
         pmatTransform: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, eTrackingOrigin, coordinatesInOverlay, pmatTransform),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    crate::OVR::OpenVR::HmdVector2_t,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        eTrackingOrigin,
+                        coordinatesInOverlay,
+                        pmatTransform,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5266,11 +7460,24 @@ impl crate::OVR::OpenVR::IVROverlay__GetTransformForOverlayCoordinates {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5332,32 +7539,61 @@ impl crate::OVR::OpenVR::IVROverlay__HideKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                2usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5375,11 +7611,24 @@ impl crate::OVR::OpenVR::IVROverlay__HideKeyboard {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5440,33 +7689,63 @@ impl crate::OVR::OpenVR::IVROverlay__HideOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), crate::OVR::OpenVR::EVROverlayError, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5484,11 +7763,24 @@ impl crate::OVR::OpenVR::IVROverlay__HideOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5550,31 +7842,61 @@ impl crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                bool,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), bool, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5592,11 +7914,24 @@ impl crate::OVR::OpenVR::IVROverlay__IsActiveDashboardOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5658,28 +7993,55 @@ impl crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                2usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                bool,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5697,11 +8059,24 @@ impl crate::OVR::OpenVR::IVROverlay__IsDashboardVisible {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5764,31 +8139,61 @@ impl crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                bool,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), bool, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5806,11 +8211,24 @@ impl crate::OVR::OpenVR::IVROverlay__IsHoverTargetOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5873,31 +8291,61 @@ impl crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                bool,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (result)) };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), bool, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -5915,11 +8363,24 @@ impl crate::OVR::OpenVR::IVROverlay__IsOverlayVisible {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5983,22 +8444,47 @@ impl crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (eDirection, ulFrom, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::OVR::OpenVR::EOverlayDirection,
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (eDirection, ulFrom, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -6006,11 +8492,21 @@ impl crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
         eDirection: crate::OVR::OpenVR::EOverlayDirection,
         ulFrom: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (eDirection, ulFrom))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::OVR::OpenVR::EOverlayDirection, u64),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (eDirection, ulFrom))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6028,11 +8524,24 @@ impl crate::OVR::OpenVR::IVROverlay__MoveGamepadFocusToNeighbor {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6097,14 +8606,31 @@ impl crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pEvent, uncbVREvent, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pEvent, uncbVREvent, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -6112,10 +8638,24 @@ impl crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
         pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("EndInvoke", (pEvent, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                bool,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pEvent, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -6124,11 +8664,25 @@ impl crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
         pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
         uncbVREvent: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pEvent, uncbVREvent))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t>,
+                    u32,
+                ),
+                bool,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pEvent, uncbVREvent))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6146,11 +8700,24 @@ impl crate::OVR::OpenVR::IVROverlay__PollNextOverlayEvent {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6214,25 +8781,51 @@ impl crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pNativeTextureHandle, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pNativeTextureHandle, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -6240,11 +8833,21 @@ impl crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
         ulOverlayHandle: u64,
         pNativeTextureHandle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pNativeTextureHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, crate::System::IntPtr),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pNativeTextureHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6262,11 +8865,24 @@ impl crate::OVR::OpenVR::IVROverlay__ReleaseNativeOverlayHandle {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6332,22 +8948,48 @@ impl crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, unProcessId, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(self, (ulOverlayHandle, unProcessId, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -6355,11 +8997,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
         ulOverlayHandle: u64,
         unProcessId: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, unProcessId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, u32),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, unProcessId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6377,11 +9029,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetDashboardOverlaySceneProcess {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6444,33 +9109,63 @@ impl crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulNewFocusOverlay, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulNewFocusOverlay, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulNewFocusOverlay: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulNewFocusOverlay))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), crate::OVR::OpenVR::EVROverlayError, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulNewFocusOverlay))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6488,11 +9183,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetGamepadFocusOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6555,33 +9263,63 @@ impl crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), crate::OVR::OpenVR::EVROverlayError, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6599,11 +9337,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetHighQualityOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6668,22 +9419,47 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, avoidRect, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::HmdRect2_t,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, avoidRect, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -6691,11 +9467,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
         ulOverlayHandle: u64,
         avoidRect: crate::OVR::OpenVR::HmdRect2_t,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, avoidRect))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, crate::OVR::OpenVR::HmdRect2_t),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, avoidRect))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6713,11 +9499,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardPositionForOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6784,19 +9583,35 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    eTrackingOrigin,
-                    pmatTrackingOriginToKeyboardTransform,
-                    callback,
-                    object,
+                    crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        eTrackingOrigin,
+                        pmatTrackingOriginToKeyboardTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -6806,11 +9621,25 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (pmatTrackingOriginToKeyboardTransform, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (pmatTrackingOriginToKeyboardTransform, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -6820,11 +9649,28 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (eTrackingOrigin, pmatTrackingOriginToKeyboardTransform))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (eTrackingOrigin, pmatTrackingOriginToKeyboardTransform),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6842,11 +9688,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetKeyboardTransformAbsolute {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -6910,22 +9769,47 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, fAlpha, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    f32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, fAlpha, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -6933,11 +9817,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
         ulOverlayHandle: u64,
         fAlpha: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, fAlpha))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, f32),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, fAlpha))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -6955,11 +9849,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAlpha {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7026,31 +9933,58 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    fMinDistanceInMeters,
-                    fMaxDistanceInMeters,
-                    callback,
-                    object,
+                    u64,
+                    f32,
+                    f32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        fMinDistanceInMeters,
+                        fMaxDistanceInMeters,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7059,14 +9993,25 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
         fMinDistanceInMeters: f32,
         fMaxDistanceInMeters: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, fMinDistanceInMeters, fMaxDistanceInMeters),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, f32, f32),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, fMinDistanceInMeters, fMaxDistanceInMeters),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7084,11 +10029,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayAutoCurveDistanceRangeInMeters {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7154,25 +10112,53 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, fRed, fGreen, fBlue, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    f32,
+                    f32,
+                    f32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, fRed, fGreen, fBlue, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7182,11 +10168,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
         fGreen: f32,
         fBlue: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, fRed, fGreen, fBlue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, f32, f32, f32),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, fRed, fGreen, fBlue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7204,11 +10200,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayColor {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7275,25 +10284,53 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlay, eWhich, vCenter, fRadius, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::EDualAnalogWhich,
+                    crate::System::IntPtr,
+                    f32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlay, eWhich, vCenter, fRadius, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7303,11 +10340,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
         vCenter: crate::System::IntPtr,
         fRadius: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlay, eWhich, vCenter, fRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, crate::OVR::OpenVR::EDualAnalogWhich, crate::System::IntPtr, f32),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlay, eWhich, vCenter, fRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7325,11 +10372,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayDualAnalogTransform {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7394,25 +10454,52 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, eOverlayFlag, bEnabled, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::VROverlayFlags,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, eOverlayFlag, bEnabled, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7421,11 +10508,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
         eOverlayFlag: crate::OVR::OpenVR::VROverlayFlags,
         bEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, eOverlayFlag, bEnabled))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, crate::OVR::OpenVR::VROverlayFlags, bool),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, eOverlayFlag, bEnabled))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7443,11 +10540,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFlag {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7511,22 +10621,48 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pchFilePath, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(self, (ulOverlayHandle, pchFilePath, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7534,11 +10670,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
         ulOverlayHandle: u64,
         pchFilePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pchFilePath))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pchFilePath))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7556,11 +10702,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayFromFile {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7624,22 +10783,51 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, eInputMethod, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::VROverlayInputMethod,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, eInputMethod, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7647,11 +10835,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
         ulOverlayHandle: u64,
         eInputMethod: crate::OVR::OpenVR::VROverlayInputMethod,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, eInputMethod))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, crate::OVR::OpenVR::VROverlayInputMethod),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, eInputMethod))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7669,11 +10867,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayInputMethod {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7741,21 +10952,41 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    pMaskPrimitives,
-                    unNumMaskPrimitives,
-                    unPrimitiveSize,
-                    callback,
-                    object,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_t,
+                    >,
+                    u32,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                6usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pMaskPrimitives,
+                        unNumMaskPrimitives,
+                        unPrimitiveSize,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -7765,11 +10996,26 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pMaskPrimitives, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pMaskPrimitives, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7781,14 +11027,37 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
         unNumMaskPrimitives: u32,
         unPrimitiveSize: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, pMaskPrimitives, unNumMaskPrimitives, unPrimitiveSize),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VROverlayIntersectionMaskPrimitive_t,
+                    >,
+                    u32,
+                    u32,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                4usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 4usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pMaskPrimitives,
+                        unNumMaskPrimitives,
+                        unPrimitiveSize,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7806,11 +11075,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayIntersectionMask {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7876,11 +11158,30 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pvecMouseScale, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pvecMouseScale, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -7890,11 +11191,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pvecMouseScale, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pvecMouseScale, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -7902,11 +11216,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
         ulOverlayHandle: u64,
         pvecMouseScale: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pvecMouseScale))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdVector2_t>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pvecMouseScale))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -7924,11 +11248,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayMouseScale {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -7992,22 +11329,47 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayName {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pchName, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pchName, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8015,11 +11377,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayName {
         ulOverlayHandle: u64,
         pchName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pchName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pchName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8037,11 +11409,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayName {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8106,22 +11491,48 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (eDirection, ulFrom, ulTo, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::OVR::OpenVR::EOverlayDirection,
+                    u64,
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (eDirection, ulFrom, ulTo, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8130,11 +11541,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
         ulFrom: u64,
         ulTo: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (eDirection, ulFrom, ulTo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::OVR::OpenVR::EOverlayDirection, u64, u64),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (eDirection, ulFrom, ulTo))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8152,11 +11573,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayNeighbor {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8223,25 +11657,62 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pvBuffer, unWidth, unHeight, unDepth, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::System::IntPtr,
+                    u32,
+                    u32,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                7usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        pvBuffer,
+                        unWidth,
+                        unHeight,
+                        unDepth,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8252,11 +11723,25 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
         unHeight: u32,
         unDepth: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pvBuffer, unWidth, unHeight, unDepth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, crate::System::IntPtr, u32, u32, u32),
+                crate::OVR::OpenVR::EVROverlayError,
+                5usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 5usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pvBuffer, unWidth, unHeight, unDepth),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8274,11 +11759,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRaw {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8343,14 +11841,31 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pchRenderModel, pColor, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pchRenderModel, pColor, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -8358,11 +11873,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
         pColor: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pColor, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pColor, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8371,11 +11899,25 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
         pchRenderModel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pColor: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pchRenderModel, pColor))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pchRenderModel, pColor))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8393,11 +11935,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderModel {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8461,22 +12016,47 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, unPID, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, unPID, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8484,11 +12064,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
         ulOverlayHandle: u64,
         unPID: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, unPID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, u32),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, unPID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8506,11 +12096,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayRenderingPid {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8574,22 +12177,48 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, unSortOrder, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(self, (ulOverlayHandle, unSortOrder, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8597,11 +12226,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
         ulOverlayHandle: u64,
         unSortOrder: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, unSortOrder))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, u32),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, unSortOrder))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8619,11 +12258,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlaySortOrder {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8687,22 +12339,51 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, fTexelAspect, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    f32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, fTexelAspect, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8710,11 +12391,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
         ulOverlayHandle: u64,
         fTexelAspect: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, fTexelAspect))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, f32),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, fTexelAspect))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8732,11 +12423,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexelAspect {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8800,11 +12504,26 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, pTexture, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pTexture, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -8812,11 +12531,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
         pTexture: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pTexture, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pTexture, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8824,11 +12556,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
         ulOverlayHandle: u64,
         pTexture: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pTexture))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::Texture_t>),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pTexture))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8846,11 +12588,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTexture {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -8916,14 +12671,32 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, pOverlayTextureBounds, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, pOverlayTextureBounds, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -8933,11 +12706,26 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pOverlayTextureBounds, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pOverlayTextureBounds, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -8947,11 +12735,26 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
             crate::OVR::OpenVR::VRTextureBounds_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, pOverlayTextureBounds))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::VRTextureBounds_t,
+                    >,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, pOverlayTextureBounds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -8969,11 +12772,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureBounds {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9037,25 +12853,51 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, eTextureColorSpace, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::EColorSpace,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, eTextureColorSpace, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -9063,11 +12905,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
         ulOverlayHandle: u64,
         eTextureColorSpace: crate::OVR::OpenVR::EColorSpace,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, eTextureColorSpace))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, crate::OVR::OpenVR::EColorSpace),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, eTextureColorSpace))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9085,11 +12937,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTextureColorSpace {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9156,20 +13021,37 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    eTrackingOrigin,
-                    pmatTrackingOriginToOverlayTransform,
-                    callback,
-                    object,
+                    u64,
+                    crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        eTrackingOrigin,
+                        pmatTrackingOriginToOverlayTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -9179,11 +13061,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pmatTrackingOriginToOverlayTransform, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pmatTrackingOriginToOverlayTransform, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -9194,14 +13089,33 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, eTrackingOrigin, pmatTrackingOriginToOverlayTransform),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    crate::OVR::OpenVR::ETrackingUniverseOrigin,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        eTrackingOrigin,
+                        pmatTrackingOriginToOverlayTransform,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9219,11 +13133,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformAbsolute {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9292,20 +13219,37 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    ulOverlayHandleParent,
-                    pmatParentOverlayToOverlayTransform,
-                    callback,
-                    object,
+                    u64,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        ulOverlayHandleParent,
+                        pmatParentOverlayToOverlayTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -9315,11 +13259,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pmatParentOverlayToOverlayTransform, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pmatParentOverlayToOverlayTransform, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -9330,18 +13287,33 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    ulOverlayHandleParent,
-                    pmatParentOverlayToOverlayTransform,
+                    u64,
+                    u64,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
                 ),
-            )?;
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        ulOverlayHandleParent,
+                        pmatParentOverlayToOverlayTransform,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9359,11 +13331,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformOverlayRelative {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9430,25 +13415,52 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
-                (ulOverlayHandle, unDeviceIndex, pchComponentName, callback, object),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    u32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, unDeviceIndex, pchComponentName, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -9457,11 +13469,29 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
         unDeviceIndex: u32,
         pchComponentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, unDeviceIndex, pchComponentName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    u32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, unDeviceIndex, pchComponentName),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9479,11 +13509,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceComponent {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9552,20 +13595,37 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    unTrackedDevice,
-                    pmatTrackedDeviceToOverlayTransform,
-                    callback,
-                    object,
+                    u64,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                5usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        unTrackedDevice,
+                        pmatTrackedDeviceToOverlayTransform,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -9575,11 +13635,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (pmatTrackedDeviceToOverlayTransform, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (pmatTrackedDeviceToOverlayTransform, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -9590,14 +13663,33 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
             crate::OVR::OpenVR::HmdMatrix34_t,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
-                (ulOverlayHandle, unTrackedDevice, pmatTrackedDeviceToOverlayTransform),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdMatrix34_t>,
+                ),
+                crate::OVR::OpenVR::EVROverlayError,
+                3usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 3usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        unTrackedDevice,
+                        pmatTrackedDeviceToOverlayTransform,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9615,11 +13707,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayTransformTrackedDeviceRelative {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9683,22 +13788,51 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, fWidthInMeters, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    f32,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (ulOverlayHandle, fWidthInMeters, callback, object),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -9706,11 +13840,21 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
         ulOverlayHandle: u64,
         fWidthInMeters: f32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle, fWidthInMeters))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, f32),
+                crate::OVR::OpenVR::EVROverlayError,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, fWidthInMeters))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9728,11 +13872,24 @@ impl crate::OVR::OpenVR::IVROverlay__SetOverlayWidthInMeters {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9795,33 +13952,67 @@ impl crate::OVR::OpenVR::IVROverlay__ShowDashboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (pchOverlayToShow, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (pchOverlayToShow, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         pchOverlayToShow: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (pchOverlayToShow))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pchOverlayToShow))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9839,11 +14030,24 @@ impl crate::OVR::OpenVR::IVROverlay__ShowDashboard {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -9912,35 +14116,66 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    eInputMode,
-                    eLineInputMode,
-                    pchDescription,
-                    unCharMax,
-                    pchExistingText,
-                    bUseMinimalMode,
-                    uUserValue,
-                    callback,
-                    object,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                9usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        eInputMode,
+                        eLineInputMode,
+                        pchDescription,
+                        unCharMax,
+                        pchExistingText,
+                        bUseMinimalMode,
+                        uUserValue,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -9953,22 +14188,41 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
         bUseMinimalMode: bool,
         uUserValue: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    eInputMode,
-                    eLineInputMode,
-                    pchDescription,
-                    unCharMax,
-                    pchExistingText,
-                    bUseMinimalMode,
-                    uUserValue,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    u64,
                 ),
-            )?;
+                crate::OVR::OpenVR::EVROverlayError,
+                7usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 7usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        eInputMode,
+                        eLineInputMode,
+                        pchDescription,
+                        unCharMax,
+                        pchExistingText,
+                        bUseMinimalMode,
+                        uUserValue,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -9986,11 +14240,24 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboard {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -10059,36 +14326,68 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    eInputMode,
-                    eLineInputMode,
-                    pchDescription,
-                    unCharMax,
-                    pchExistingText,
-                    bUseMinimalMode,
-                    uUserValue,
-                    callback,
-                    object,
+                    u64,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                10usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 10usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        eInputMode,
+                        eLineInputMode,
+                        pchDescription,
+                        unCharMax,
+                        pchExistingText,
+                        bUseMinimalMode,
+                        uUserValue,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -10102,23 +14401,43 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
         bUseMinimalMode: bool,
         uUserValue: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke(
-                "Invoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    eInputMode,
-                    eLineInputMode,
-                    pchDescription,
-                    unCharMax,
-                    pchExistingText,
-                    bUseMinimalMode,
-                    uUserValue,
+                    u64,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    u64,
                 ),
-            )?;
+                crate::OVR::OpenVR::EVROverlayError,
+                8usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 8usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        eInputMode,
+                        eLineInputMode,
+                        pchDescription,
+                        unCharMax,
+                        pchExistingText,
+                        bUseMinimalMode,
+                        uUserValue,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -10136,11 +14455,24 @@ impl crate::OVR::OpenVR::IVROverlay__ShowKeyboardForOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -10208,34 +14540,64 @@ impl crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke(
-                "BeginInvoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    pchText,
-                    pchCaption,
-                    pchButton0Text,
-                    pchButton1Text,
-                    pchButton2Text,
-                    pchButton3Text,
-                    callback,
-                    object,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                8usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        pchText,
+                        pchCaption,
+                        pchButton0Text,
+                        pchButton1Text,
+                        pchButton2Text,
+                        pchButton3Text,
+                        callback,
+                        object,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::VRMessageOverlayResponse> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::VRMessageOverlayResponse = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::VRMessageOverlayResponse,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::VRMessageOverlayResponse = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -10247,21 +14609,39 @@ impl crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
         pchButton2Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pchButton3Text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::VRMessageOverlayResponse> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::VRMessageOverlayResponse = __cordl_object
-            .invoke(
-                "Invoke",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    pchText,
-                    pchCaption,
-                    pchButton0Text,
-                    pchButton1Text,
-                    pchButton2Text,
-                    pchButton3Text,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 ),
-            )?;
+                crate::OVR::OpenVR::VRMessageOverlayResponse,
+                6usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 6usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::VRMessageOverlayResponse = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        pchText,
+                        pchCaption,
+                        pchButton0Text,
+                        pchButton1Text,
+                        pchButton2Text,
+                        pchButton3Text,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -10279,11 +14659,24 @@ impl crate::OVR::OpenVR::IVROverlay__ShowMessageOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -10345,33 +14738,63 @@ impl crate::OVR::OpenVR::IVROverlay__ShowOverlay {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (ulOverlayHandle, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u64,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
         &mut self,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                crate::OVR::OpenVR::EVROverlayError,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
         &mut self,
         ulOverlayHandle: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = __cordl_object
-            .invoke("Invoke", (ulOverlayHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), crate::OVR::OpenVR::EVROverlayError, 1usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVROverlayError = unsafe {
+            method.invoke_unchecked(self, (ulOverlayHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -10389,11 +14812,24 @@ impl crate::OVR::OpenVR::IVROverlay__ShowOverlay {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }

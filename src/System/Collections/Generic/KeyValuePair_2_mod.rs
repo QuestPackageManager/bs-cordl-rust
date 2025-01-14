@@ -155,11 +155,24 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Deconstruct",
-            (key, value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<TKey>,
+                    quest_hook::libil2cpp::ByRefMut<TValue>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Deconstruct")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Deconstruct", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (key, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -173,9 +186,21 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -189,11 +214,17 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (key, value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(TKey, TValue), quest_hook::libil2cpp::Void, 2usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (key, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Key(&mut self) -> quest_hook::libil2cpp::Result<TKey>
@@ -203,11 +234,15 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TKey = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Key",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), TKey, 0usize>("get_Key")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Key", 0usize
+                )
+            });
+        let __cordl_ret: TKey = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<TValue>
@@ -217,11 +252,15 @@ impl<
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TValue = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Value",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), TValue, 0usize>("get_Value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Value", 0usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

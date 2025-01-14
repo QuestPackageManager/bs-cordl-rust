@@ -50,13 +50,27 @@ impl crate::System::Xml::Schema::XmlListConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("ChangeListType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ChangeListType", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("ChangeListType", (value, destinationType, nsResolver))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (value, destinationType, nsResolver))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ChangeType(
@@ -67,12 +81,27 @@ impl crate::System::Xml::Schema::XmlListConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("ChangeType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ChangeType", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ChangeType", (value, destinationType, nsResolver))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (value, destinationType, nsResolver))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create(
@@ -82,10 +111,23 @@ impl crate::System::Xml::Schema::XmlListConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueConverter>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlValueConverter,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueConverter>,
+                1usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlValueConverter,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (atomicConverter))?;
+        > = unsafe { method.invoke_unchecked((), (atomicConverter)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInvalidClrMappingException(
@@ -95,21 +137,43 @@ impl crate::System::Xml::Schema::XmlListConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CreateInvalidClrMappingException", (sourceType, destinationType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                2usize,
+            >("CreateInvalidClrMappingException")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateInvalidClrMappingException", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked(self, (sourceType, destinationType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsListType(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsListType", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                bool,
+                1usize,
+            >("IsListType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsListType", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn ListAsString(
@@ -119,12 +183,24 @@ impl crate::System::Xml::Schema::XmlListConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("ListAsString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ListAsString", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ListAsString", (list, nsResolver))?;
+        > = unsafe { method.invoke_unchecked(self, (list, nsResolver)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_XmlBaseConverter0(
@@ -169,14 +245,27 @@ impl crate::System::Xml::Schema::XmlListConverter {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+                1usize,
+            >("StringAsList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StringAsList", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = __cordl_object.invoke("StringAsList", (value))?;
+        > = unsafe { method.invoke_unchecked(self, (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToArray<T>(
@@ -190,12 +279,24 @@ impl crate::System::Xml::Schema::XmlListConverter {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                2usize,
+            >("ToArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToArray", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = __cordl_object.invoke("ToArray", (list, nsResolver))?;
+        > = unsafe { method.invoke_unchecked(self, (list, nsResolver)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToList(
@@ -205,11 +306,24 @@ impl crate::System::Xml::Schema::XmlListConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = __cordl_object
-            .invoke("ToList", (list, nsResolver))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                2usize,
+            >("ToList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToList", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
+            method.invoke_unchecked(self, (list, nsResolver))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlBaseConverter0(
@@ -218,11 +332,23 @@ impl crate::System::Xml::Schema::XmlListConverter {
             crate::System::Xml::Schema::XmlBaseConverter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (atomicConverter))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlBaseConverter,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (atomicConverter))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlBaseConverter_Type1(
@@ -232,22 +358,47 @@ impl crate::System::Xml::Schema::XmlListConverter {
         >,
         clrTypeDefault: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (atomicConverter, clrTypeDefault))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlBaseConverter,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (atomicConverter, clrTypeDefault))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlSchemaType2(
         &mut self,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (schemaType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (schemaType))
+        };
         Ok(__cordl_ret.into())
     }
 }

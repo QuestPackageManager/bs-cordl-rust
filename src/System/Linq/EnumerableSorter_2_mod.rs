@@ -92,10 +92,17 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareKeys", (index1, index2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, i32), i32, 2usize>("CompareKeys")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareKeys", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (index1, index2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeKeys(
@@ -111,11 +118,26 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ComputeKeys", (elements, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TElement>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ComputeKeys")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ComputeKeys", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (elements, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -157,11 +179,30 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keySelector, comparer, descending, next))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IComparer_1<TKey>,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::EnumerableSorter_1<TElement>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (keySelector, comparer, descending, next))
+        };
         Ok(__cordl_ret.into())
     }
 }

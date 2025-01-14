@@ -47,10 +47,21 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                1usize,
+            >("AnimationCoroutine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AnimationCoroutine", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AnimationCoroutine", (transitionAnimation))?;
+        > = unsafe { method.invoke_unchecked((), (transitionAnimation)) };
         Ok(__cordl_ret.into())
     }
     pub fn DoDismissTransition(
@@ -61,18 +72,37 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationDirection,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                4usize,
+            >("DoDismissTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DoDismissTransition", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "DoDismissTransition",
-                (
-                    toPresentViewController,
-                    toDismissViewController,
-                    animationDirection,
-                    moveOffsetMultiplier,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        toPresentViewController,
+                        toDismissViewController,
+                        animationDirection,
+                        moveOffsetMultiplier,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DoHorizontalTransition(
@@ -82,13 +112,35 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                3usize,
+            >("DoHorizontalTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DoHorizontalTransition", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "DoHorizontalTransition",
-                (toPresentViewController, toDismissViewController, moveOffsetMultiplier),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        toPresentViewController,
+                        toDismissViewController,
+                        moveOffsetMultiplier,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DoPresentTransition(
@@ -99,18 +151,37 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationDirection,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                4usize,
+            >("DoPresentTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DoPresentTransition", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "DoPresentTransition",
-                (
-                    toPresentViewController,
-                    toDismissViewController,
-                    animationDirection,
-                    moveOffsetMultiplier,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        toPresentViewController,
+                        toDismissViewController,
+                        animationDirection,
+                        moveOffsetMultiplier,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DoVerticalTransition(
@@ -120,24 +191,60 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                3usize,
+            >("DoVerticalTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DoVerticalTransition", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "DoVerticalTransition",
-                (toPresentViewController, toDismissViewController, moveOffsetMultiplier),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        toPresentViewController,
+                        toDismissViewController,
+                        moveOffsetMultiplier,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ImmediateTransition(
         toPresentViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         toDismissViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ImmediateTransition",
-                (toPresentViewController, toDismissViewController),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ImmediateTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ImmediateTransition", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked((), (toPresentViewController, toDismissViewController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -150,11 +257,17 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

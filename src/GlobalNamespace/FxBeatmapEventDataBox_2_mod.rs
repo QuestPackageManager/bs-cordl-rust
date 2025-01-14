@@ -85,14 +85,25 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TOut = __cordl_object
-            .invoke(
-                "CreateVfxBeatmapEventData",
-                (data, _cordl_time, groupId, elementId, distributionOffset),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (TIn, f32, i32, i32, f32),
+                TOut,
+                5usize,
+            >("CreateVfxBeatmapEventData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateVfxBeatmapEventData", 5usize
+                )
+            });
+        let __cordl_ret: TOut = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (data, _cordl_time, groupId, elementId, distributionOffset),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -157,24 +168,55 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Unpack",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    groupBoxBeat,
-                    groupId,
-                    elementId,
-                    durationOrderIndex,
-                    distributionOrderIndex,
-                    maxBeat,
-                    beatToTimeConverter,
-                    lightEventConverter,
-                    output,
+                    f32,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    f32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::IBeatToTimeConverter,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::IBeatmapLightEventConverter,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapEventData,
+                            >,
+                        >,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                9usize,
+            >("Unpack")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unpack", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        groupBoxBeat,
+                        groupId,
+                        elementId,
+                        durationOrderIndex,
+                        distributionOrderIndex,
+                        maxBeat,
+                        beatToTimeConverter,
+                        lightEventConverter,
+                        output,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -196,23 +238,45 @@ impl<
         TOut: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indexFilter,
-                    beatDistributionParamType,
-                    beatDistributionParam,
-                    eventDistributionParamType,
-                    eventDistributionParam,
-                    eventDistributionShouldAffectFirstBaseEvent,
-                    eventDistributionEaseType,
-                    fxBaseDataList,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
+                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                    f32,
+                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                    f32,
+                    bool,
+                    crate::GlobalNamespace::EaseType,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<TIn>,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indexFilter,
+                        beatDistributionParamType,
+                        beatDistributionParam,
+                        eventDistributionParamType,
+                        eventDistributionParam,
+                        eventDistributionShouldAffectFirstBaseEvent,
+                        eventDistributionEaseType,
+                        fxBaseDataList,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

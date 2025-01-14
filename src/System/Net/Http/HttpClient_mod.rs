@@ -52,11 +52,17 @@ impl crate::System::Net::Http::HttpClient {
         &mut self,
         disposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (disposing))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (disposing))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAsync(
@@ -70,14 +76,32 @@ impl crate::System::Net::Http::HttpClient {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                    crate::System::Net::Http::HttpCompletionOption,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpResponseMessage,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("GetAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
             >,
-        > = __cordl_object.invoke("GetAsync", (requestUri, completionOption))?;
+        > = unsafe { method.invoke_unchecked(self, (requestUri, completionOption)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringAsync(
@@ -90,14 +114,27 @@ impl crate::System::Net::Http::HttpClient {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Uri>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+                1usize,
+            >("GetStringAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStringAsync", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = __cordl_object.invoke("GetStringAsync", (requestUri))?;
+        > = unsafe { method.invoke_unchecked(self, (requestUri)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -129,15 +166,37 @@ impl crate::System::Net::Http::HttpClient {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::HttpRequestMessage,
+                    >,
+                    crate::System::Net::Http::HttpCompletionOption,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpResponseMessage,
+                        >,
+                    >,
+                >,
+                3usize,
+            >("SendAsyncWorker")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendAsyncWorker", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
             >,
-        > = __cordl_object
-            .invoke("SendAsyncWorker", (request, completionOption, cancellationToken))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (request, completionOption, cancellationToken))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsync_CancellationToken1(
@@ -151,14 +210,34 @@ impl crate::System::Net::Http::HttpClient {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::HttpRequestMessage,
+                    >,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpResponseMessage,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("SendAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
             >,
-        > = __cordl_object.invoke("SendAsync", (request, cancellationToken))?;
+        > = unsafe { method.invoke_unchecked(self, (request, cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsync_HttpCompletionOption0(
@@ -172,14 +251,34 @@ impl crate::System::Net::Http::HttpClient {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::HttpRequestMessage,
+                    >,
+                    crate::System::Net::Http::HttpCompletionOption,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpResponseMessage,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("SendAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
             >,
-        > = __cordl_object.invoke("SendAsync", (request, completionOption))?;
+        > = unsafe { method.invoke_unchecked(self, (request, completionOption)) };
         Ok(__cordl_ret.into())
     }
     pub fn SendAsync_HttpCompletionOption_CancellationToken2(
@@ -194,15 +293,37 @@ impl crate::System::Net::Http::HttpClient {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::HttpRequestMessage,
+                    >,
+                    crate::System::Net::Http::HttpCompletionOption,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpResponseMessage,
+                        >,
+                    >,
+                >,
+                3usize,
+            >("SendAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendAsync", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
             >,
-        > = __cordl_object
-            .invoke("SendAsync", (request, completionOption, cancellationToken))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (request, completionOption, cancellationToken))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __n__0(
@@ -216,24 +337,50 @@ impl crate::System::Net::Http::HttpClient {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::HttpRequestMessage,
+                    >,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpResponseMessage,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("<>n__0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<>n__0", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
             >,
-        > = __cordl_object.invoke("<>n__0", (request, cancellationToken))?;
+        > = unsafe { method.invoke_unchecked(self, (request, cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_HttpMessageHandler__cordl_bool1(
@@ -241,32 +388,61 @@ impl crate::System::Net::Http::HttpClient {
         handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
         disposeHandler: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (handler, disposeHandler))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::HttpMessageHandler,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (handler, disposeHandler))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_MaxResponseContentBufferSize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object
-            .invoke("get_MaxResponseContentBufferSize", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("get_MaxResponseContentBufferSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MaxResponseContentBufferSize", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_Timeout(
         &mut self,
         value: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Timeout", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::TimeSpan),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_Timeout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Timeout", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -76,11 +76,26 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddChangedElement", (ve, versionChangeType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::VersionChangeType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddChangedElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddChangedElement", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ve, versionChangeType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CancelAnimationsWithNoTransitionProperty(
@@ -92,32 +107,67 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelAnimationsWithNoTransitionProperty", (element, newStyle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::ComputedStyle,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CancelAnimationsWithNoTransitionProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CancelAnimationsWithNoTransitionProperty", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element, newStyle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ForceUpdateTransitions(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ForceUpdateTransitions", (element))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ForceUpdateTransitions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ForceUpdateTransitions", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -133,19 +183,47 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         >,
         info: crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnProcessMatchResult", (current, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("OnProcessMatchResult")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnProcessMatchResult", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (current, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareTraversal(
         &mut self,
         pixelsPerPoint: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareTraversal", (pixelsPerPoint))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PrepareTraversal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PrepareTraversal", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pixelsPerPoint))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessMatchedRules(
@@ -159,11 +237,30 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ComputedStyle> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::ComputedStyle = __cordl_object
-            .invoke("ProcessMatchedRules", (element, matchingSelectors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+                        >,
+                    >,
+                ),
+                crate::UnityEngine::UIElements::ComputedStyle,
+                2usize,
+            >("ProcessMatchedRules")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessMatchedRules", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::ComputedStyle = unsafe {
+            method.invoke_unchecked(self, (element, matchingSelectors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessMatchedVariables(
@@ -171,11 +268,26 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         rule: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessMatchedVariables", (sheet, rule))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleSheet,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ProcessMatchedVariables")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessMatchedVariables", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (sheet, rule))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessTransitions(
@@ -190,43 +302,98 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessTransitions", (element, oldStyle, newStyle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::ComputedStyle,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::ComputedStyle,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProcessTransitions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessTransitions", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element, oldStyle, newStyle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PropagateToChildren(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PropagateToChildren", (ve))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PropagateToChildren")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PropagateToChildren", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ve))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PropagateToParents(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PropagateToParents", (ve))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PropagateToParents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PropagateToParents", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ve))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldSkipElement(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ShouldSkipElement", (element))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElement,
+                >),
+                bool,
+                1usize,
+            >("ShouldSkipElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldSkipElement", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (element)) };
         Ok(__cordl_ret.into())
     }
     pub fn TraverseRecursive(
@@ -236,39 +403,75 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
         >,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TraverseRecursive", (element, depth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TraverseRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TraverseRecursive", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element, depth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentPixelsPerPoint(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_currentPixelsPerPoint", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_currentPixelsPerPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_currentPixelsPerPoint", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_currentPixelsPerPoint(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_currentPixelsPerPoint", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_currentPixelsPerPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_currentPixelsPerPoint", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

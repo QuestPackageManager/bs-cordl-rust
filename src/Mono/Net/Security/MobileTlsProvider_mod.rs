@@ -50,16 +50,36 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileAuthenticatedStream>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Security::Interface::MonoTlsSettings,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Net::Security::MobileAuthenticatedStream,
+                >,
+                4usize,
+            >("CreateSslStream")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateSslStream", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::MobileAuthenticatedStream,
-        > = __cordl_object
-            .invoke(
-                "CreateSslStream",
-                (sslStream, innerStream, leaveInnerStreamOpen, settings),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (sslStream, innerStream, leaveInnerStreamOpen, settings),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -90,33 +110,69 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
         >,
         status11: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "ValidateCertificate",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    validator,
-                    targetHost,
-                    serverMode,
-                    certificates,
-                    wantsChain,
-                    chain,
-                    errors,
-                    status11,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Net::Security::ChainValidationHelper,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Security::Cryptography::X509Certificates::X509Chain,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Net::Security::SslPolicyErrors,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
                 ),
-            )?;
+                bool,
+                8usize,
+            >("ValidateCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateCertificate", 8usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        validator,
+                        targetHost,
+                        serverMode,
+                        certificates,
+                        wantsChain,
+                        chain,
+                        errors,
+                        status11,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

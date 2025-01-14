@@ -102,48 +102,108 @@ impl crate::UnityEngine::LayerMask {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMask", (layerNames))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("GetMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMask", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (layerNames)) };
         Ok(__cordl_ret.into())
     }
     pub fn NameToLayer(
         layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NameToLayer", (layerName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                i32,
+                1usize,
+            >("NameToLayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NameToLayer", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (layerName)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_value", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_LayerMask0(
         mask: crate::UnityEngine::LayerMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (mask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::LayerMask),
+                i32,
+                1usize,
+            >("op_Implicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Implicit", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (mask)) };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_i32_1(
         intVal: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
-        let __cordl_ret: crate::UnityEngine::LayerMask = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (intVal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                crate::UnityEngine::LayerMask,
+                1usize,
+            >("op_Implicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Implicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::LayerMask = unsafe {
+            method.invoke_unchecked((), (intVal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_value(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_value",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_value", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

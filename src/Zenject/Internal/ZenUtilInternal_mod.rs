@@ -41,23 +41,63 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     pub fn AddStateMachineBehaviourAutoInjectersInScene(
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddStateMachineBehaviourAutoInjectersInScene", (scene))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::SceneManagement::Scene),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddStateMachineBehaviourAutoInjectersInScene")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddStateMachineBehaviourAutoInjectersInScene", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (scene))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddStateMachineBehaviourAutoInjectersUnderGameObject(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddStateMachineBehaviourAutoInjectersUnderGameObject", (root))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddStateMachineBehaviourAutoInjectersUnderGameObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddStateMachineBehaviourAutoInjectersUnderGameObject", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (root))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AreFunctionsEqual(
         left: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         right: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AreFunctionsEqual", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+                    quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+                ),
+                bool,
+                2usize,
+            >("AreFunctionsEqual")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AreFunctionsEqual", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (left, right)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllSceneContexts() -> quest_hook::libil2cpp::Result<
@@ -67,20 +107,49 @@ impl crate::Zenject::Internal::ZenUtilInternal {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+                    >,
+                >,
+                0usize,
+            >("GetAllSceneContexts")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllSceneContexts", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAllSceneContexts", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInheritanceDelta(
         derived: quest_hook::libil2cpp::Gc<crate::System::Type>,
         parent: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInheritanceDelta", (derived, parent))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                i32,
+                2usize,
+            >("GetInheritanceDelta")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInheritanceDelta", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (derived, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInjectableMonoBehavioursInScene(
@@ -91,8 +160,28 @@ impl crate::Zenject::Internal::ZenUtilInternal {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInjectableMonoBehavioursInScene", (scene, monoBehaviours))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::SceneManagement::Scene,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetInjectableMonoBehavioursInScene")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInjectableMonoBehavioursInScene", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (scene, monoBehaviours))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetInjectableMonoBehavioursUnderGameObject(
@@ -103,11 +192,28 @@ impl crate::Zenject::Internal::ZenUtilInternal {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetInjectableMonoBehavioursUnderGameObject",
-                (gameObject, injectableComponents),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetInjectableMonoBehavioursUnderGameObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInjectableMonoBehavioursUnderGameObject", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (gameObject, injectableComponents))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetInjectableMonoBehavioursUnderGameObjectInternal(
@@ -118,11 +224,28 @@ impl crate::Zenject::Internal::ZenUtilInternal {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetInjectableMonoBehavioursUnderGameObjectInternal",
-                (gameObject, injectableComponents),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetInjectableMonoBehavioursUnderGameObjectInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInjectableMonoBehavioursUnderGameObjectInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (gameObject, injectableComponents))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRootGameObjects(
@@ -134,26 +257,63 @@ impl crate::Zenject::Internal::ZenUtilInternal {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::SceneManagement::Scene),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    >,
+                >,
+                1usize,
+            >("GetRootGameObjects")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRootGameObjects", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRootGameObjects", (scene))?;
+        > = unsafe { method.invoke_unchecked((), (scene)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsInjectableMonoBehaviourType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsInjectableMonoBehaviourType", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                bool,
+                1usize,
+            >("IsInjectableMonoBehaviourType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsInjectableMonoBehaviourType", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsNull(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsNull", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("IsNull")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsNull", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj)) };
         Ok(__cordl_ret.into())
     }
 }

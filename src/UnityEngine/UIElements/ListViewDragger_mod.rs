@@ -60,33 +60,59 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         &mut self,
         dragPosition: crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyDragAndDropUI", (dragPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::ListViewDragger_DragPosition),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ApplyDragAndDropUI")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyDragAndDropUI", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (dragPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CanStartDrag(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CanStartDrag", (pointerPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(crate::UnityEngine::Vector3), bool, 1usize>("CanStartDrag")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CanStartDrag", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pointerPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearDragAndDropUI(
         &mut self,
         dragCancelled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearDragAndDropUI", (dragCancelled))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ClearDragAndDropUI")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearDragAndDropUI", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (dragCancelled))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHoverBarTopPosition(
@@ -95,10 +121,21 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::ReusableCollectionItem,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetHoverBarTopPosition", (item))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >),
+                f32,
+                1usize,
+            >("GetHoverBarTopPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHoverBarTopPosition", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (item)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviousAndNextItemsIgnoringDraggedItems(
@@ -107,14 +144,25 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         previousItemId: quest_hook::libil2cpp::ByRefMut<i32>,
         nextItemId: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "GetPreviousAndNextItemsIgnoringDraggedItems",
-                (insertAtIndex, previousItemId, nextItemId),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetPreviousAndNextItemsIgnoringDraggedItems")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPreviousAndNextItemsIgnoringDraggedItems", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (insertAtIndex, previousItemId, nextItemId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRecycledItem(
@@ -123,12 +171,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
+                1usize,
+            >("GetRecycledItem")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRecycledItem", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ReusableCollectionItem,
-        > = __cordl_object.invoke("GetRecycledItem", (pointerPosition))?;
+        > = unsafe { method.invoke_unchecked(self, (pointerPosition)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVisualMode(
@@ -138,33 +197,68 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DragVisualMode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = __cordl_object
-            .invoke("GetVisualMode", (pointerPosition, dragPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+                    >,
+                ),
+                crate::UnityEngine::UIElements::DragVisualMode,
+                2usize,
+            >("GetVisualMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVisualMode", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::DragVisualMode = unsafe {
+            method.invoke_unchecked(self, (pointerPosition, dragPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleAutoExpansion(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAutoExpansion", (pointerPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleAutoExpansion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleAutoExpansion", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pointerPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleDragAndScroll(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleDragAndScroll", (pointerPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleDragAndScroll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleDragAndScroll", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pointerPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleSiblingInsertionAtAvailableDepthsAndChangeTargetIfNeeded(
@@ -174,14 +268,28 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         >,
         pointerPosition: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "HandleSiblingInsertionAtAvailableDepthsAndChangeTargetIfNeeded",
-                (dragPosition, pointerPosition),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+                    >,
+                    crate::UnityEngine::Vector2,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("HandleSiblingInsertionAtAvailableDepthsAndChangeTargetIfNeeded")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "HandleSiblingInsertionAtAvailableDepthsAndChangeTargetIfNeeded",
+                    2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (dragPosition, pointerPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleTreePosition(
@@ -191,22 +299,47 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleTreePosition", (pointerPosition, dragPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Vector2,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("HandleTreePosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleTreePosition", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pointerPosition, dragPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeDragAndDropArgs(
         &mut self,
         dragPosition: crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::DragAndDropArgs> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::DragAndDropArgs = __cordl_object
-            .invoke("MakeDragAndDropArgs", (dragPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::ListViewDragger_DragPosition),
+                crate::UnityEngine::UIElements::DragAndDropArgs,
+                1usize,
+            >("MakeDragAndDropArgs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeDragAndDropArgs", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::DragAndDropArgs = unsafe {
+            method.invoke_unchecked(self, (dragPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -224,11 +357,21 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         &mut self,
         pointerPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDrop", (pointerPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnDrop")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnDrop", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pointerPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PlaceHoverBarAt(
@@ -237,11 +380,21 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         indentationPadding: f32,
         siblingBottom: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PlaceHoverBarAt", (top, indentationPadding, siblingBottom))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32, f32, f32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("PlaceHoverBarAt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PlaceHoverBarAt", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (top, indentationPadding, siblingBottom))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PlaceHoverBarAtElement(
@@ -250,22 +403,44 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::ReusableCollectionItem,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PlaceHoverBarAtElement", (item))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PlaceHoverBarAtElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PlaceHoverBarAtElement", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (item))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartDrag(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = __cordl_object
-            .invoke("StartDrag", (pointerPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3),
+                crate::UnityEngine::UIElements::StartDragArgs,
+                1usize,
+            >("StartDrag")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartDrag", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StartDragArgs = unsafe {
+            method.invoke_unchecked(self, (pointerPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDragPosition(
@@ -275,22 +450,47 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetDragPosition", (pointerPosition, dragPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Vector2,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetDragPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetDragPosition", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (pointerPosition, dragPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateDrag(
         &mut self,
         pointerPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateDrag", (pointerPosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UpdateDrag")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateDrag", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pointerPosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ApplyDragAndDropUI_g__GeometryChangedCallback_27_0(
@@ -299,11 +499,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::GeometryChangedEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<ApplyDragAndDropUI>g__GeometryChangedCallback|27_0", (e))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::GeometryChangedEvent,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("<ApplyDragAndDropUI>g__GeometryChangedCallback|27_0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<ApplyDragAndDropUI>g__GeometryChangedCallback|27_0", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (e))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -312,11 +524,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::BaseVerticalCollectionView,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (listView))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (listView))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_dragAndDropController(
@@ -326,12 +550,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::ICollectionDragAndDropController,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+                >,
+                0usize,
+            >("get_dragAndDropController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_dragAndDropController", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ICollectionDragAndDropController,
-        > = __cordl_object.invoke("get_dragAndDropController", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetScrollView(
@@ -339,12 +574,21 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
+                0usize,
+            >("get_targetScrollView")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_targetScrollView", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ScrollView,
-        > = __cordl_object.invoke("get_targetScrollView", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetView(
@@ -354,12 +598,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::BaseVerticalCollectionView,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+                >,
+                0usize,
+            >("get_targetView")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_targetView", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::BaseVerticalCollectionView,
-        > = __cordl_object.invoke("get_targetView", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_dragAndDropController(
@@ -368,11 +623,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
             crate::UnityEngine::UIElements::ICollectionDragAndDropController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dragAndDropController", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ICollectionDragAndDropController,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_dragAndDropController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_dragAndDropController", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -499,30 +766,50 @@ impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_ListViewDragger_DragPosition0(
         &mut self,
         other: crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::ListViewDragger_DragPosition),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

@@ -39,99 +39,263 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VarIntExtensions {
 #[cfg(feature = "VarIntExtensions")]
 impl crate::GlobalNamespace::VarIntExtensions {
     pub fn GetSize_i32_0(val: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSize", (val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("GetSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSize", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (val)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSize_i64_2(val: i64) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSize", (val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i64), i32, 1usize>("GetSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSize", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (val)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSize_u32_1(val: u32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSize", (val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(u32), i32, 1usize>("GetSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSize", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (val)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSize_u64_3(val: u64) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSize", (val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(u64), i32, 1usize>("GetSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSize", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (val)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVarInt(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVarInt", (reader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
+                i32,
+                1usize,
+            >("GetVarInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVarInt", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVarLong(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVarLong", (reader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
+                i64,
+                1usize,
+            >("GetVarLong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVarLong", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVarUInt(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVarUInt", (reader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
+                u32,
+                1usize,
+            >("GetVarUInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVarUInt", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVarULong(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVarULong", (reader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
+                u64,
+                1usize,
+            >("GetVarULong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVarULong", 1usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn PutVarInt(
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PutVarInt", (writer, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PutVarInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PutVarInt", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (writer, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PutVarLong(
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         val: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PutVarLong", (writer, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                    i64,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PutVarLong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PutVarLong", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (writer, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PutVarUInt(
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         val: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PutVarUInt", (writer, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PutVarUInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PutVarUInt", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (writer, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PutVarULong(
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         val: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PutVarULong", (writer, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+                    u64,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PutVarULong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PutVarULong", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (writer, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetVarUInt(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         value: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetVarUInt", (reader, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                ),
+                bool,
+                2usize,
+            >("TryGetVarUInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetVarUInt", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (reader, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetVarULong(
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
         value: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetVarULong", (reader, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                ),
+                bool,
+                2usize,
+            >("TryGetVarULong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetVarULong", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (reader, value)) };
         Ok(__cordl_ret.into())
     }
 }

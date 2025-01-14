@@ -57,10 +57,19 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CheckPath", (path))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                bool,
+                1usize,
+            >("CheckPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckPath", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (path)) };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractAssembly(
@@ -71,12 +80,23 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ExtractAssembly")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExtractAssembly", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ExtractAssembly", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNotNull(
@@ -86,12 +106,26 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Xml::SmallXmlParser_IAttrList,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GetNotNull")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNotNull", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("GetNotNull", (attrs, name))?;
+        > = unsafe { method.invoke_unchecked(self, (attrs, name)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -107,44 +141,84 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         &mut self,
         ch: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnChars", (ch))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnChars")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnChars", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ch))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnEndElement(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEndElement", (name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnEndElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnEndElement", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnEndParsing(
         &mut self,
         parser: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEndParsing", (parser))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnEndParsing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnEndParsing", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parser))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnIgnorableWhitespace(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnIgnorableWhitespace", (s))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnIgnorableWhitespace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnIgnorableWhitespace", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (s))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnProcessingInstruction(
@@ -152,11 +226,24 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnProcessingInstruction", (name, text))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("OnProcessingInstruction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnProcessingInstruction", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name, text))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnStartElement(
@@ -164,22 +251,45 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStartElement", (name, attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("OnStartElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnStartElement", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name, attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnStartParsing(
         &mut self,
         parser: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStartParsing", (parser))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnStartParsing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnStartParsing", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parser))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseElement(
@@ -187,22 +297,45 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParseElement", (name, attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ParseElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseElement", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name, attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseTime(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("ParseTime", (s))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::System::TimeSpan,
+                1usize,
+            >("ParseTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseTime", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::TimeSpan = unsafe {
+            method.invoke_unchecked(self, (s))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadChannel(
@@ -210,33 +343,68 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
         isTemplate: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadChannel", (attrs, isTemplate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Xml::SmallXmlParser_IAttrList,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReadChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadChannel", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs, isTemplate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadClientActivated(
         &mut self,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadClientActivated", (attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReadClientActivated")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadClientActivated", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadClientWellKnown(
         &mut self,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadClientWellKnown", (attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReadClientWellKnown")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadClientWellKnown", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadCustomProviderData(
@@ -244,11 +412,24 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadCustomProviderData", (name, attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReadCustomProviderData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadCustomProviderData", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name, attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadInteropXml(
@@ -256,33 +437,68 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
         isElement: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadInteropXml", (attrs, isElement))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Xml::SmallXmlParser_IAttrList,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReadInteropXml")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadInteropXml", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs, isElement))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadLifetine(
         &mut self,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadLifetine", (attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReadLifetine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadLifetine", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadPreload(
         &mut self,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadPreload", (attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReadPreload")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadPreload", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadProvider(
@@ -293,34 +509,71 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::ProviderData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Xml::SmallXmlParser_IAttrList,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::ProviderData,
+                >,
+                3usize,
+            >("ReadProvider")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadProvider", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::ProviderData,
-        > = __cordl_object.invoke("ReadProvider", (name, attrs, isTemplate))?;
+        > = unsafe { method.invoke_unchecked(self, (name, attrs, isTemplate)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadServiceActivated(
         &mut self,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadServiceActivated", (attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReadServiceActivated")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadServiceActivated", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadServiceWellKnown(
         &mut self,
         attrs: quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadServiceWellKnown", (attrs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::Xml::SmallXmlParser_IAttrList>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReadServiceWellKnown")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadServiceWellKnown", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attrs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidatePath(
@@ -332,22 +585,47 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidatePath", (element, paths))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ValidatePath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidatePath", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element, paths))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         onlyDelayedChannels: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (onlyDelayedChannels))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (onlyDelayedChannels))
+        };
         Ok(__cordl_ret.into())
     }
 }

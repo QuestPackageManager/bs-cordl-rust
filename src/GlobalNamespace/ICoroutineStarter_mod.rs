@@ -44,22 +44,42 @@ impl crate::GlobalNamespace::ICoroutineStarter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine> = __cordl_object
-            .invoke("StartCoroutine", (routine))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
+                1usize,
+            >("StartCoroutine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartCoroutine", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine> = unsafe {
+            method.invoke_unchecked(self, (routine))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StopCoroutine(
         &mut self,
         routine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopCoroutine", (routine))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("StopCoroutine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StopCoroutine", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (routine))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

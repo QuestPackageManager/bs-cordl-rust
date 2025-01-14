@@ -120,11 +120,30 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         >,
         deviceCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AllocateAll",
-            (devices, deviceCount),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AllocateAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AllocateAll", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (devices, deviceCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeSizeOfSingleStateBuffer(
@@ -135,18 +154,46 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         >,
         deviceCount: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ComputeSizeOfSingleStateBuffer", (devices, deviceCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        >,
+                    >,
+                    i32,
+                ),
+                u32,
+                2usize,
+            >("ComputeSizeOfSingleStateBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ComputeSizeOfSingleStateBuffer", 2usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked((), (devices, deviceCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FreeAll(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FreeAll",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("FreeAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FreeAll", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBackBufferForDevice(
@@ -154,10 +201,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetBackBufferForDevice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBackBufferForDevice", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBackBufferForDevice", (deviceIndex))?;
+        > = unsafe { method.invoke_unchecked((), (deviceIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDoubleBuffersFor(
@@ -166,11 +224,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetDoubleBuffersFor",
-            (updateType),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::InputSystem::LowLevel::InputUpdateType),
+                crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
+                1usize,
+            >("GetDoubleBuffersFor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDoubleBuffersFor", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers = unsafe {
+            method.invoke_unchecked(self, (updateType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFrontBufferForDevice(
@@ -178,10 +246,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetFrontBufferForDevice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFrontBufferForDevice", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFrontBufferForDevice", (deviceIndex))?;
+        > = unsafe { method.invoke_unchecked((), (deviceIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn MigrateAll(
@@ -194,11 +273,31 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         deviceCount: i32,
         oldBuffers: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MigrateAll",
-            (devices, deviceCount, oldBuffers),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("MigrateAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MigrateAll", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (devices, deviceCount, oldBuffers))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MigrateDoubleBuffer(
@@ -211,11 +310,32 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         deviceCount: i32,
         oldBuffer: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MigrateDoubleBuffer",
-                (newBuffer, devices, deviceCount, oldBuffer),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("MigrateDoubleBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MigrateDoubleBuffer", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (newBuffer, devices, deviceCount, oldBuffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MigrateSingleBuffer(
@@ -228,19 +348,58 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
         deviceCount: i32,
         oldBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MigrateSingleBuffer",
-                (newBuffer, devices, deviceCount, oldBuffer),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("MigrateSingleBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MigrateSingleBuffer", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (newBuffer, devices, deviceCount, oldBuffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NextDeviceOffset(
         currentOffset: u32,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NextDeviceOffset", (currentOffset, device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputDevice,
+                    >,
+                ),
+                u32,
+                2usize,
+            >("NextDeviceOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NextDeviceOffset", 2usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked((), (currentOffset, device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUpDeviceToBufferMappings(
@@ -253,19 +412,56 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetUpDeviceToBufferMappings",
-                (deviceCount, bufferPtr, sizePerBuffer, mappingTableSizePerBuffer),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    u32,
+                    u32,
+                ),
+                crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers,
+                4usize,
+            >("SetUpDeviceToBufferMappings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUpDeviceToBufferMappings", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (deviceCount, bufferPtr, sizePerBuffer, mappingTableSizePerBuffer),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwitchTo(
         buffers: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers,
         update: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SwitchTo", (buffers, update))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers,
+                    crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SwitchTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SwitchTo", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (buffers, update))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -380,13 +576,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetBackBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBackBuffer", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBackBuffer",
-            (deviceIndex),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (deviceIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFrontBuffer(
@@ -395,13 +599,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetFrontBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFrontBuffer", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetFrontBuffer",
-            (deviceIndex),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (deviceIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetBackBuffer(
@@ -409,11 +621,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers 
         deviceIndex: i32,
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetBackBuffer",
-            (deviceIndex, ptr),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetBackBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetBackBuffer", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (deviceIndex, ptr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetFrontBuffer(
@@ -421,30 +643,50 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers_DoubleBuffers 
         deviceIndex: i32,
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetFrontBuffer",
-            (deviceIndex, ptr),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetFrontBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetFrontBuffer", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (deviceIndex, ptr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwapBuffers(
         &mut self,
         deviceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SwapBuffers",
-            (deviceIndex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("SwapBuffers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SwapBuffers", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (deviceIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_valid",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_valid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_valid", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

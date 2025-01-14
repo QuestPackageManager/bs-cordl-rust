@@ -44,9 +44,21 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("Decode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decode", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Decode", (data))?;
+        > = unsafe { method.invoke_unchecked((), (data)) };
         Ok(__cordl_ret.into())
     }
     pub fn Decode_Il2CppString1(
@@ -54,17 +66,43 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("Decode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decode", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Decode", (data))?;
+        > = unsafe { method.invoke_unchecked((), (data)) };
         Ok(__cordl_ret.into())
     }
     pub fn Decode_Il2CppString_Stream2(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Decode", (data, outStream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                i32,
+                2usize,
+            >("Decode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decode", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, outStream)) };
         Ok(__cordl_ret.into())
     }
     pub fn Encode_Il2CppArray0(
@@ -72,17 +110,43 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("Encode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Encode", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Encode", (data))?;
+        > = unsafe { method.invoke_unchecked((), (data)) };
         Ok(__cordl_ret.into())
     }
     pub fn Encode_Stream2(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Encode", (data, outStream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                i32,
+                2usize,
+            >("Encode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Encode", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (data, outStream)) };
         Ok(__cordl_ret.into())
     }
     pub fn Encode_i32_i32_1(
@@ -92,10 +156,25 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                3usize,
+            >("Encode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Encode", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Encode", (data, off, length))?;
+        > = unsafe { method.invoke_unchecked((), (data, off, length)) };
         Ok(__cordl_ret.into())
     }
     pub fn Encode_i32_i32_Stream3(
@@ -104,8 +183,26 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64 {
         length: i32,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Encode", (data, off, length, outStream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                i32,
+                4usize,
+            >("Encode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Encode", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (data, off, length, outStream))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -120,10 +217,21 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToBase64String")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToBase64String", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBase64String", (data))?;
+        > = unsafe { method.invoke_unchecked((), (data)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToBase64String_i32_i32_1(
@@ -133,20 +241,41 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("ToBase64String")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToBase64String", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBase64String", (data, off, length))?;
+        > = unsafe { method.invoke_unchecked((), (data, off, length)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

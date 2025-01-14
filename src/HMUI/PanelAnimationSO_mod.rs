@@ -56,11 +56,24 @@ impl crate::HMUI::PanelAnimationSO {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteAnimation", (go, finishedCallback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ExecuteAnimation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteAnimation", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (go, finishedCallback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteAnimation_CanvasGroup_Action2(
@@ -69,11 +82,25 @@ impl crate::HMUI::PanelAnimationSO {
         parentCanvasGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteAnimation", (go, parentCanvasGroup, finishedCallback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ExecuteAnimation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteAnimation", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (go, parentCanvasGroup, finishedCallback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteAnimation_CanvasGroup__cordl_bool_Action3(
@@ -83,25 +110,51 @@ impl crate::HMUI::PanelAnimationSO {
         instant: bool,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ExecuteAnimation",
-                (go, parentCanvasGroup, instant, finishedCallback),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ExecuteAnimation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteAnimation", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (go, parentCanvasGroup, instant, finishedCallback),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteAnimation_GameObject0(
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ExecuteAnimation", (go))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ExecuteAnimation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteAnimation", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (go))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -114,11 +167,17 @@ impl crate::HMUI::PanelAnimationSO {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

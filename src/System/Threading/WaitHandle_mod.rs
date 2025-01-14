@@ -54,42 +54,66 @@ impl crate::System::Threading::WaitHandle {
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Close", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose__cordl_bool0(
         &mut self,
         explicitDisposing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", (explicitDisposing))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (explicitDisposing))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Init", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalWaitOne(
@@ -100,11 +124,37 @@ impl crate::System::Threading::WaitHandle {
         hasThreadAffinity: bool,
         exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InternalWaitOne",
-                (waitableSafeHandle, millisecondsTimeout, hasThreadAffinity, exitContext),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::InteropServices::SafeHandle,
+                    >,
+                    i64,
+                    bool,
+                    bool,
+                ),
+                bool,
+                4usize,
+            >("InternalWaitOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalWaitOne", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        waitableSafeHandle,
+                        millisecondsTimeout,
+                        hasThreadAffinity,
+                        exitContext,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -120,26 +170,64 @@ impl crate::System::Threading::WaitHandle {
             crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetHandleInternal", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetHandleInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetHandleInternal", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowAbandonedMutexException_0() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ThrowAbandonedMutexException", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ThrowAbandonedMutexException")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowAbandonedMutexException", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowAbandonedMutexException_i32_WaitHandle1(
         location: i32,
         handle: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ThrowAbandonedMutexException", (location, handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, quest_hook::libil2cpp::Gc<crate::System::Threading::WaitHandle>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ThrowAbandonedMutexException")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowAbandonedMutexException", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (location, handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitAny_TimeSpan1(
@@ -151,8 +239,31 @@ impl crate::System::Threading::WaitHandle {
         timeout: crate::System::TimeSpan,
         exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WaitAny", (waitHandles, timeout, exitContext))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::WaitHandle,
+                            >,
+                        >,
+                    >,
+                    crate::System::TimeSpan,
+                    bool,
+                ),
+                i32,
+                3usize,
+            >("WaitAny")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitAny", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (waitHandles, timeout, exitContext))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitAny_i32_0(
@@ -164,8 +275,31 @@ impl crate::System::Threading::WaitHandle {
         millisecondsTimeout: i32,
         exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WaitAny", (waitHandles, millisecondsTimeout, exitContext))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::WaitHandle,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    bool,
+                ),
+                i32,
+                3usize,
+            >("WaitAny")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitAny", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (waitHandles, millisecondsTimeout, exitContext))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitMultiple(
@@ -178,11 +312,36 @@ impl crate::System::Threading::WaitHandle {
         exitContext: bool,
         WaitAll: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "WaitMultiple",
-                (waitHandles, millisecondsTimeout, exitContext, WaitAll),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::WaitHandle,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    bool,
+                    bool,
+                ),
+                i32,
+                4usize,
+            >("WaitMultiple")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitMultiple", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (waitHandles, millisecondsTimeout, exitContext, WaitAll),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitOneNative(
@@ -193,28 +352,64 @@ impl crate::System::Threading::WaitHandle {
         hasThreadAffinity: bool,
         exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "WaitOneNative",
-                (waitableSafeHandle, millisecondsTimeout, hasThreadAffinity, exitContext),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::InteropServices::SafeHandle,
+                    >,
+                    u32,
+                    bool,
+                    bool,
+                ),
+                i32,
+                4usize,
+            >("WaitOneNative")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitOneNative", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        waitableSafeHandle,
+                        millisecondsTimeout,
+                        hasThreadAffinity,
+                        exitContext,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitOne_2(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("WaitOne", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("WaitOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitOne", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn WaitOne_TimeSpan4(
         &mut self,
         timeout: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("WaitOne", (timeout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(crate::System::TimeSpan), bool, 1usize>("WaitOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitOne", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (timeout)) };
         Ok(__cordl_ret.into())
     }
     pub fn WaitOne_TimeSpan__cordl_bool1(
@@ -222,21 +417,34 @@ impl crate::System::Threading::WaitHandle {
         timeout: crate::System::TimeSpan,
         exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("WaitOne", (timeout, exitContext))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(crate::System::TimeSpan, bool), bool, 2usize>("WaitOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitOne", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (timeout, exitContext))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitOne_i32_3(
         &mut self,
         millisecondsTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("WaitOne", (millisecondsTimeout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), bool, 1usize>("WaitOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitOne", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (millisecondsTimeout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitOne_i32__cordl_bool0(
@@ -244,11 +452,17 @@ impl crate::System::Threading::WaitHandle {
         millisecondsTimeout: i32,
         exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("WaitOne", (millisecondsTimeout, exitContext))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, bool), bool, 2usize>("WaitOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitOne", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (millisecondsTimeout, exitContext))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitOne_i64__cordl_bool5(
@@ -256,11 +470,17 @@ impl crate::System::Threading::WaitHandle {
         timeout: i64,
         exitContext: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("WaitOne", (timeout, exitContext))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64, bool), bool, 2usize>("WaitOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitOne", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (timeout, exitContext))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Wait_internal(
@@ -269,18 +489,42 @@ impl crate::System::Threading::WaitHandle {
         waitAll: bool,
         ms: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Wait_internal", (handles, numHandles, waitAll, ms))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("Wait_internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Wait_internal", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (handles, numHandles, waitAll, ms))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_SafeWaitHandle(
@@ -288,23 +532,44 @@ impl crate::System::Threading::WaitHandle {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Microsoft::Win32::SafeHandles::SafeWaitHandle>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
+                >,
+                0usize,
+            >("get_SafeWaitHandle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_SafeWaitHandle", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Microsoft::Win32::SafeHandles::SafeWaitHandle,
-        > = __cordl_object.invoke("get_SafeWaitHandle", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_Handle(
         &mut self,
         value: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Handle", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_Handle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Handle", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

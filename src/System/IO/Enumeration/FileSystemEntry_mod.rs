@@ -124,18 +124,41 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         originalRootDirectory: crate::System::ReadOnlySpan_1<char>,
         pathBuffer: crate::System::Span_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
-        let __cordl_ret: crate::System::IO::FileAttributes = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Initialize",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    entry,
-                    directoryEntry,
-                    directory,
-                    rootDirectory,
-                    originalRootDirectory,
-                    pathBuffer,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::IO::Enumeration::FileSystemEntry,
+                    >,
+                    crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Span_1<char>,
                 ),
-            )?;
+                crate::System::IO::FileAttributes,
+                6usize,
+            >("Initialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize", 6usize
+                )
+            });
+        let __cordl_ret: crate::System::IO::FileAttributes = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        entry,
+                        directoryEntry,
+                        directory,
+                        rootDirectory,
+                        originalRootDirectory,
+                        pathBuffer,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToFileSystemInfo(
@@ -143,11 +166,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToFileSystemInfo",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+                0usize,
+            >("ToFileSystemInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToFileSystemInfo", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToFullPath(
@@ -155,9 +188,21 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToFullPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToFullPath", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToFullPath", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToSpecifiedFullPath(
@@ -165,114 +210,216 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToSpecifiedFullPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToSpecifiedFullPath", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToSpecifiedFullPath",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Attributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
-        let __cordl_ret: crate::System::IO::FileAttributes = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Attributes",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::IO::FileAttributes,
+                0usize,
+            >("get_Attributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Attributes", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::IO::FileAttributes = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Directory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Directory",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::ReadOnlySpan_1<char>,
+                0usize,
+            >("get_Directory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Directory", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_FileName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_FileName",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::ReadOnlySpan_1<char>,
+                0usize,
+            >("get_FileName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_FileName", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_FullPath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_FullPath",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::ReadOnlySpan_1<char>,
+                0usize,
+            >("get_FullPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_FullPath", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsDirectory",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_IsDirectory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_IsDirectory", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_OriginalRootDirectory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_OriginalRootDirectory",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::ReadOnlySpan_1<char>,
+                0usize,
+            >("get_OriginalRootDirectory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_OriginalRootDirectory", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_RootDirectory(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_RootDirectory",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::ReadOnlySpan_1<char>,
+                0usize,
+            >("get_RootDirectory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_RootDirectory", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_Directory(
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Directory",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_Directory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Directory", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_OriginalRootDirectory(
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_OriginalRootDirectory",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_OriginalRootDirectory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_OriginalRootDirectory", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_RootDirectory(
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_RootDirectory",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_RootDirectory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_RootDirectory", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

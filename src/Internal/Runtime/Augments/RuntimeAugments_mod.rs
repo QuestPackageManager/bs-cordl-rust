@@ -42,8 +42,21 @@ impl crate::Internal::Runtime::Augments::RuntimeAugments {
     pub fn ReportUnhandledException(
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReportUnhandledException", (exception))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Exception>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReportUnhandledException")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReportUnhandledException", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (exception))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Callbacks() -> quest_hook::libil2cpp::Result<
@@ -51,9 +64,23 @@ impl crate::Internal::Runtime::Augments::RuntimeAugments {
             crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks,
+                >,
+                0usize,
+            >("get_Callbacks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Callbacks", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Callbacks", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

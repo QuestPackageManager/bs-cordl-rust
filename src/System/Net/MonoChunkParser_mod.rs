@@ -58,11 +58,25 @@ impl crate::System::Net::MonoChunkParser {
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
-            .invoke("GetChunkSize", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                crate::System::Net::MonoChunkParser_State,
+                3usize,
+            >("GetChunkSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetChunkSize", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::Net::MonoChunkParser_State = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalWrite(
@@ -71,11 +85,25 @@ impl crate::System::Net::MonoChunkParser {
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InternalWrite", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InternalWrite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalWrite", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -93,11 +121,25 @@ impl crate::System::Net::MonoChunkParser {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Read", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("Read")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Read", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBody(
@@ -106,11 +148,25 @@ impl crate::System::Net::MonoChunkParser {
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
-            .invoke("ReadBody", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                crate::System::Net::MonoChunkParser_State,
+                3usize,
+            >("ReadBody")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBody", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::Net::MonoChunkParser_State = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadCRLF(
@@ -119,11 +175,25 @@ impl crate::System::Net::MonoChunkParser {
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
-            .invoke("ReadCRLF", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                crate::System::Net::MonoChunkParser_State,
+                3usize,
+            >("ReadCRLF")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadCRLF", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::Net::MonoChunkParser_State = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFromChunks(
@@ -132,11 +202,25 @@ impl crate::System::Net::MonoChunkParser {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("ReadFromChunks", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("ReadFromChunks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadFromChunks", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTrailer(
@@ -145,11 +229,25 @@ impl crate::System::Net::MonoChunkParser {
         offset: quest_hook::libil2cpp::ByRefMut<i32>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::MonoChunkParser_State> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::MonoChunkParser_State = __cordl_object
-            .invoke("ReadTrailer", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                crate::System::Net::MonoChunkParser_State,
+                3usize,
+            >("ReadTrailer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTrailer", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::Net::MonoChunkParser_State = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveChunkExtension(
@@ -157,17 +255,41 @@ impl crate::System::Net::MonoChunkParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("RemoveChunkExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveChunkExtension", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveChunkExtension", (input))?;
+        > = unsafe { method.invoke_unchecked((), (input)) };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowProtocolViolation(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ThrowProtocolViolation", (message))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ThrowProtocolViolation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowProtocolViolation", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (message))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write(
@@ -176,43 +298,82 @@ impl crate::System::Net::MonoChunkParser {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Write", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Write")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Write", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         headers: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (headers))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (headers))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_ChunkLeft(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_ChunkLeft", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_ChunkLeft")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ChunkLeft", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_DataAvailable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_DataAvailable", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_DataAvailable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_DataAvailable", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_WantMore(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_WantMore", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_WantMore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_WantMore", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }
@@ -282,22 +443,46 @@ impl crate::System::Net::MonoChunkParser_Chunk {
         offset: i32,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Read", (buffer, offset, _cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("Read")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Read", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (buffer, offset, _cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         chunk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (chunk))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (chunk))
+        };
         Ok(__cordl_ret.into())
     }
 }

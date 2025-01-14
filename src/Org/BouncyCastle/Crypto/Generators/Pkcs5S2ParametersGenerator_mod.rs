@@ -51,11 +51,27 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
         outBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         outOff: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("F", (S, c, iBuf, outBytes, outOff))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("F")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "F", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (S, c, iBuf, outBytes, outOff))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedKey(
@@ -64,12 +80,21 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("GenerateDerivedKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDerivedKey", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("GenerateDerivedKey", (dkLen))?;
+        > = unsafe { method.invoke_unchecked(self, (dkLen)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedMacParameters(
@@ -78,12 +103,23 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ICipherParameters,
+                >,
+                1usize,
+            >("GenerateDerivedMacParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDerivedMacParameters", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = __cordl_object.invoke("GenerateDerivedMacParameters", (keySize))?;
+        > = unsafe { method.invoke_unchecked(self, (keySize)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_Il2CppString_i32_1(
@@ -93,12 +129,23 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ICipherParameters,
+                >,
+                2usize,
+            >("GenerateDerivedParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDerivedParameters", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = __cordl_object.invoke("GenerateDerivedParameters", (algorithm, keySize))?;
+        > = unsafe { method.invoke_unchecked(self, (algorithm, keySize)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
@@ -109,13 +156,27 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ICipherParameters,
+                >,
+                3usize,
+            >("GenerateDerivedParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDerivedParameters", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = __cordl_object
-            .invoke("GenerateDerivedParameters", (algorithm, keySize, ivSize))?;
+        > = unsafe { method.invoke_unchecked(self, (algorithm, keySize, ivSize)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_i32_0(
@@ -124,12 +185,23 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ICipherParameters,
+                >,
+                1usize,
+            >("GenerateDerivedParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDerivedParameters", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = __cordl_object.invoke("GenerateDerivedParameters", (keySize))?;
+        > = unsafe { method.invoke_unchecked(self, (keySize)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDerivedParameters_i32_i32_2(
@@ -139,12 +211,23 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ICipherParameters,
+                >,
+                2usize,
+            >("GenerateDerivedParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDerivedParameters", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
-        > = __cordl_object.invoke("GenerateDerivedParameters", (keySize, ivSize))?;
+        > = unsafe { method.invoke_unchecked(self, (keySize, ivSize)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -166,22 +249,38 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S2ParametersGenerator {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IDigest1(
         &mut self,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (digest))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (digest))
+        };
         Ok(__cordl_ret.into())
     }
 }

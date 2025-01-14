@@ -58,16 +58,31 @@ impl crate::System::Linq::Expressions::RuntimeVariablesExpression {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::ParameterExpression,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_Variables")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Variables", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
                 quest_hook::libil2cpp::Gc<
                     crate::System::Linq::Expressions::ParameterExpression,
                 >,
             >,
-        > = __cordl_object.invoke("get_Variables", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

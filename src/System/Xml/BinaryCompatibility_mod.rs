@@ -39,8 +39,15 @@ impl std::ops::DerefMut for crate::System::Xml::BinaryCompatibility {
 #[cfg(feature = "System+Xml+BinaryCompatibility")]
 impl crate::System::Xml::BinaryCompatibility {
     pub fn get_TargetsAtLeast_Desktop_V4_5_2() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_TargetsAtLeast_Desktop_V4_5_2", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_TargetsAtLeast_Desktop_V4_5_2")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_TargetsAtLeast_Desktop_V4_5_2", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

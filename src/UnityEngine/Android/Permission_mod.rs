@@ -98,17 +98,39 @@ impl crate::UnityEngine::Android::Permission {
     pub fn GetUnityPermissions() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+                0usize,
+            >("GetUnityPermissions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUnityPermissions", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AndroidJavaObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUnityPermissions", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn HasUserAuthorizedPermission(
         permission: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HasUserAuthorizedPermission", (permission))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                bool,
+                1usize,
+            >("HasUserAuthorizedPermission")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasUserAuthorizedPermission", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (permission)) };
         Ok(__cordl_ret.into())
     }
     pub fn RequestUserPermission(
@@ -117,8 +139,26 @@ impl crate::UnityEngine::Android::Permission {
             crate::UnityEngine::Android::PermissionCallbacks,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RequestUserPermission", (permission, callbacks))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Android::PermissionCallbacks,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RequestUserPermission")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RequestUserPermission", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (permission, callbacks))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RequestUserPermissions(
@@ -131,8 +171,32 @@ impl crate::UnityEngine::Android::Permission {
             crate::UnityEngine::Android::PermissionCallbacks,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RequestUserPermissions", (permissions, callbacks))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Android::PermissionCallbacks,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RequestUserPermissions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RequestUserPermissions", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (permissions, callbacks))
+        };
         Ok(__cordl_ret.into())
     }
 }

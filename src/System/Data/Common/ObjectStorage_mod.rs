@@ -55,12 +55,24 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    crate::System::Data::AggregateType,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("Aggregate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Aggregate", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Aggregate", (records, kind))?;
+        > = unsafe { method.invoke_unchecked(self, (records, kind)) };
         Ok(__cordl_ret.into())
     }
     pub fn Compare(
@@ -68,10 +80,17 @@ impl crate::System::Data::Common::ObjectStorage {
         recordNo1: i32,
         recordNo2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (recordNo1, recordNo2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, i32), i32, 2usize>("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (recordNo1, recordNo2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareTo(
@@ -79,10 +98,24 @@ impl crate::System::Data::Common::ObjectStorage {
         valueNo1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         valueNo2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (valueNo1, valueNo2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                2usize,
+            >("CompareTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareTo", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (valueNo1, valueNo2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareValueTo(
@@ -90,11 +123,21 @@ impl crate::System::Data::Common::ObjectStorage {
         recordNo1: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CompareValueTo", (recordNo1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                i32,
+                2usize,
+            >("CompareValueTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareValueTo", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (recordNo1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareWithFamilies(
@@ -102,11 +145,24 @@ impl crate::System::Data::Common::ObjectStorage {
         valueNo1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         valueNo2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CompareWithFamilies", (valueNo1, valueNo2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                2usize,
+            >("CompareWithFamilies")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareWithFamilies", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (valueNo1, valueNo2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertObjectToXml_Il2CppObject0(
@@ -115,12 +171,21 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ConvertObjectToXml")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertObjectToXml", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ConvertObjectToXml", (value))?;
+        > = unsafe { method.invoke_unchecked(self, (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertObjectToXml_XmlWriter_XmlRootAttribute1(
@@ -131,11 +196,27 @@ impl crate::System::Data::Common::ObjectStorage {
             crate::System::Xml::Serialization::XmlRootAttribute,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ConvertObjectToXml", (value, xmlWriter, xmlAttrib))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Serialization::XmlRootAttribute,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ConvertObjectToXml")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertObjectToXml", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value, xmlWriter, xmlAttrib))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertXmlToObject_Il2CppString0(
@@ -144,12 +225,21 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("ConvertXmlToObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertXmlToObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ConvertXmlToObject", (s))?;
+        > = unsafe { method.invoke_unchecked(self, (s)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertXmlToObject_XmlReader_XmlRootAttribute1(
@@ -161,12 +251,26 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Serialization::XmlRootAttribute,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("ConvertXmlToObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertXmlToObject", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ConvertXmlToObject", (xmlReader, xmlAttrib))?;
+        > = unsafe { method.invoke_unchecked(self, (xmlReader, xmlAttrib)) };
         Ok(__cordl_ret.into())
     }
     pub fn Copy(
@@ -174,11 +278,17 @@ impl crate::System::Data::Common::ObjectStorage {
         recordNo1: i32,
         recordNo2: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Copy", (recordNo1, recordNo2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, i32), quest_hook::libil2cpp::Void, 2usize>("Copy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Copy", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (recordNo1, recordNo2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyValue(
@@ -188,11 +298,26 @@ impl crate::System::Data::Common::ObjectStorage {
         nullbits: quest_hook::libil2cpp::Gc<crate::System::Collections::BitArray>,
         storeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyValue", (record, store, nullbits, storeIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::BitArray>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("CopyValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyValue", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (record, store, nullbits, storeIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Get(
@@ -201,12 +326,21 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("Get")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Get", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("Get", (recordNo))?;
+        > = unsafe { method.invoke_unchecked(self, (recordNo)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetEmptyStorage(
@@ -215,12 +349,21 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetEmptyStorage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEmptyStorage", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("GetEmptyStorage", (recordCount))?;
+        > = unsafe { method.invoke_unchecked(self, (recordCount)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFamily(
@@ -229,11 +372,21 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Data::Common::ObjectStorage_Families,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Data::Common::ObjectStorage_Families = __cordl_object
-            .invoke("GetFamily", (dataType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                crate::System::Data::Common::ObjectStorage_Families,
+                1usize,
+            >("GetFamily")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFamily", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::Common::ObjectStorage_Families = unsafe {
+            method.invoke_unchecked(self, (dataType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetXmlSerializer_Type0(
@@ -241,10 +394,23 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Serialization::XmlSerializer,
+                >,
+                1usize,
+            >("GetXmlSerializer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetXmlSerializer", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::XmlSerializer,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetXmlSerializer", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetXmlSerializer_XmlRootAttribute1(
@@ -255,17 +421,40 @@ impl crate::System::Data::Common::ObjectStorage {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Serialization::XmlRootAttribute,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Serialization::XmlSerializer,
+                >,
+                2usize,
+            >("GetXmlSerializer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetXmlSerializer", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Serialization::XmlSerializer,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetXmlSerializer", (_cordl_type, attribute))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, attribute)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsNull(&mut self, record: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsNull", (record))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), bool, 1usize>("IsNull")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsNull", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (record)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -283,22 +472,38 @@ impl crate::System::Data::Common::ObjectStorage {
         recordNo: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Set", (recordNo, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Set")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Set", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (recordNo, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCapacity(
         &mut self,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCapacity", (capacity))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("SetCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCapacity", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (capacity))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStorage(
@@ -306,18 +511,44 @@ impl crate::System::Data::Common::ObjectStorage {
         store: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         nullbits: quest_hook::libil2cpp::Gc<crate::System::Collections::BitArray>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetStorage", (store, nullbits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::BitArray>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetStorage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStorage", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (store, nullbits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn VerifyIDynamicMetaObjectProvider(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("VerifyIDynamicMetaObjectProvider", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("VerifyIDynamicMetaObjectProvider")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "VerifyIDynamicMetaObjectProvider", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -325,11 +556,24 @@ impl crate::System::Data::Common::ObjectStorage {
         column: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (column, _cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (column, _cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -495,10 +739,32 @@ impl crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (x, y))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::Collections::Generic::KeyValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Serialization::XmlRootAttribute,
+                        >,
+                    >,
+                    crate::System::Collections::Generic::KeyValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Serialization::XmlRootAttribute,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x, y)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(
@@ -510,10 +776,24 @@ impl crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Serialization::XmlRootAttribute,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -526,11 +806,17 @@ impl crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

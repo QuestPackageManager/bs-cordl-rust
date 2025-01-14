@@ -81,11 +81,17 @@ impl crate::Zenject::ZenjectSettings {
     pub fn _ctor_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ValidationErrorResponses_RootResolveMethods__cordl_bool__cordl_bool_ZenjectSettings_SignalSettings0(
@@ -98,40 +104,76 @@ impl crate::Zenject::ZenjectSettings {
             crate::Zenject::ZenjectSettings_SignalSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    validationErrorResponse,
-                    validationRootResolveMethod,
-                    displayWarningWhenResolvingDuringInstall,
-                    ensureDeterministicDestructionOrderOnApplicationQuit,
-                    signalSettings,
+                    crate::Zenject::ValidationErrorResponses,
+                    crate::Zenject::RootResolveMethods,
+                    bool,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::ZenjectSettings_SignalSettings,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        validationErrorResponse,
+                        validationRootResolveMethod,
+                        displayWarningWhenResolvingDuringInstall,
+                        ensureDeterministicDestructionOrderOnApplicationQuit,
+                        signalSettings,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_DisplayWarningWhenResolvingDuringInstall(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_DisplayWarningWhenResolvingDuringInstall", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                bool,
+                0usize,
+            >("get_DisplayWarningWhenResolvingDuringInstall")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_DisplayWarningWhenResolvingDuringInstall", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_EnsureDeterministicDestructionOrderOnApplicationQuit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_EnsureDeterministicDestructionOrderOnApplicationQuit", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                bool,
+                0usize,
+            >("get_EnsureDeterministicDestructionOrderOnApplicationQuit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_EnsureDeterministicDestructionOrderOnApplicationQuit",
+                    0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Signals(
@@ -139,32 +181,63 @@ impl crate::Zenject::ZenjectSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings_SignalSettings>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ZenjectSettings_SignalSettings,
+                >,
+                0usize,
+            >("get_Signals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Signals", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ZenjectSettings_SignalSettings,
-        > = __cordl_object.invoke("get_Signals", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationErrorResponse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::ValidationErrorResponses> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::ValidationErrorResponses = __cordl_object
-            .invoke("get_ValidationErrorResponse", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Zenject::ValidationErrorResponses,
+                0usize,
+            >("get_ValidationErrorResponse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ValidationErrorResponse", 0usize
+                )
+            });
+        let __cordl_ret: crate::Zenject::ValidationErrorResponses = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidationRootResolveMethod(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::RootResolveMethods> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::RootResolveMethods = __cordl_object
-            .invoke("get_ValidationRootResolveMethod", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Zenject::RootResolveMethods,
+                0usize,
+            >("get_ValidationRootResolveMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ValidationRootResolveMethod", 0usize
+                )
+            });
+        let __cordl_ret: crate::Zenject::RootResolveMethods = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -258,26 +331,61 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("__zenCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__zenCreate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("__zenCreate", (P_0))?;
+        > = unsafe { method.invoke_unchecked((), (P_0)) };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("__zenCreateInjectTypeInfo", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+                0usize,
+            >("__zenCreateInjectTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__zenCreateInjectTypeInfo", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_SignalDefaultSyncModes_SignalMissingHandlerResponses__cordl_bool_i32_0(
@@ -287,59 +395,103 @@ impl crate::Zenject::ZenjectSettings_SignalSettings {
         requireStrictUnsubscribe: bool,
         defaultAsyncTickPriority: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    defaultSyncMode,
-                    missingHandlerDefaultResponse,
-                    requireStrictUnsubscribe,
-                    defaultAsyncTickPriority,
+                    crate::Zenject::SignalDefaultSyncModes,
+                    crate::Zenject::SignalMissingHandlerResponses,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        defaultSyncMode,
+                        missingHandlerDefaultResponse,
+                        requireStrictUnsubscribe,
+                        defaultAsyncTickPriority,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_DefaultAsyncTickPriority(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("get_DefaultAsyncTickPriority", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_DefaultAsyncTickPriority")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_DefaultAsyncTickPriority", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_DefaultSyncMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::SignalDefaultSyncModes> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::SignalDefaultSyncModes = __cordl_object
-            .invoke("get_DefaultSyncMode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Zenject::SignalDefaultSyncModes,
+                0usize,
+            >("get_DefaultSyncMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_DefaultSyncMode", 0usize
+                )
+            });
+        let __cordl_ret: crate::Zenject::SignalDefaultSyncModes = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_MissingHandlerDefaultResponse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::SignalMissingHandlerResponses> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Zenject::SignalMissingHandlerResponses = __cordl_object
-            .invoke("get_MissingHandlerDefaultResponse", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Zenject::SignalMissingHandlerResponses,
+                0usize,
+            >("get_MissingHandlerDefaultResponse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MissingHandlerDefaultResponse", 0usize
+                )
+            });
+        let __cordl_ret: crate::Zenject::SignalMissingHandlerResponses = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_RequireStrictUnsubscribe(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_RequireStrictUnsubscribe", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_RequireStrictUnsubscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_RequireStrictUnsubscribe", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

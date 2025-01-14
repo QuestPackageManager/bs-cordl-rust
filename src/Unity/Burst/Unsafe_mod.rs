@@ -46,8 +46,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddByteOffset", (source, byteOffset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, crate::System::IntPtr),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                2usize,
+            >("AddByteOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddByteOffset", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source, byteOffset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_ByRefMut_IntPtr2<T>(
@@ -58,8 +71,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (source, elementOffset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, crate::System::IntPtr),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                2usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source, elementOffset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_ByRefMut_i32_0<T>(
@@ -70,8 +96,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (source, elementOffset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, i32),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                2usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source, elementOffset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_Il2CppObject_i32_1<T>(
@@ -84,10 +123,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (source, elementOffset))?;
+        > = unsafe { method.invoke_unchecked((), (source, elementOffset)) };
         Ok(__cordl_ret.into())
     }
     pub fn AreSame<T>(
@@ -98,8 +148,19 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AreSame", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, quest_hook::libil2cpp::ByRefMut<T>),
+                bool,
+                2usize,
+            >("AreSame")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AreSame", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (left, right)) };
         Ok(__cordl_ret.into())
     }
     pub fn AsPointer<T>(
@@ -111,9 +172,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("AsPointer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsPointer", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("AsPointer", (value))?;
+        > = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn AsRef_ByRefMut1<T>(
@@ -123,8 +196,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsRef", (source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                1usize,
+            >("AsRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsRef", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AsRef_Il2CppObject0<T>(
@@ -134,8 +220,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsRef", (source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                1usize,
+            >("AsRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsRef", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn As_ByRefMut1<TFrom, TTo>(
@@ -147,8 +246,21 @@ impl crate::Unity::Burst::Unsafe {
         TTo: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<TTo> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("As", (source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<TFrom>),
+                quest_hook::libil2cpp::ByRefMut<TTo>,
+                1usize,
+            >("As")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "As", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<TTo> = unsafe {
+            method.invoke_unchecked((), (source))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn As_Il2CppObject0<T>(
@@ -158,8 +270,19 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("As", (o))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                T,
+                1usize,
+            >("As")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "As", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (o)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByteOffset<T>(
@@ -170,8 +293,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ByteOffset", (origin, target))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, quest_hook::libil2cpp::ByRefMut<T>),
+                crate::System::IntPtr,
+                2usize,
+            >("ByteOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByteOffset", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (origin, target))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyBlockUnaligned_ByRefMut_ByRefMut1(
@@ -179,8 +315,25 @@ impl crate::Unity::Burst::Unsafe {
         source: quest_hook::libil2cpp::ByRefMut<u8>,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyBlockUnaligned", (destination, source, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u8>,
+                    quest_hook::libil2cpp::ByRefMut<u8>,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CopyBlockUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyBlockUnaligned", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, source, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyBlockUnaligned_Il2CppObject_Il2CppObject0(
@@ -188,8 +341,25 @@ impl crate::Unity::Burst::Unsafe {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyBlockUnaligned", (destination, source, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CopyBlockUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyBlockUnaligned", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, source, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyBlock_ByRefMut_ByRefMut1(
@@ -197,8 +367,25 @@ impl crate::Unity::Burst::Unsafe {
         source: quest_hook::libil2cpp::ByRefMut<u8>,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyBlock", (destination, source, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<u8>,
+                    quest_hook::libil2cpp::ByRefMut<u8>,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CopyBlock")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyBlock", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, source, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyBlock_Il2CppObject_Il2CppObject0(
@@ -206,8 +393,25 @@ impl crate::Unity::Burst::Unsafe {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyBlock", (destination, source, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CopyBlock")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyBlock", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, source, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Copy_ByRefMut_Il2CppObject1<T>(
@@ -218,8 +422,24 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Copy", (destination, source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<T>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Copy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Copy", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, source))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Copy_Il2CppObject_ByRefMut0<T>(
@@ -230,8 +450,24 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Copy", (destination, source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::ByRefMut<T>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Copy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Copy", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, source))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitBlockUnaligned_ByRefMut1(
@@ -239,8 +475,21 @@ impl crate::Unity::Burst::Unsafe {
         value: u8,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitBlockUnaligned", (startAddress, value, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<u8>, u8, u32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InitBlockUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitBlockUnaligned", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (startAddress, value, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitBlockUnaligned_Il2CppObject0(
@@ -248,8 +497,25 @@ impl crate::Unity::Burst::Unsafe {
         value: u8,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitBlockUnaligned", (startAddress, value, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u8,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InitBlockUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitBlockUnaligned", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (startAddress, value, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitBlock_ByRefMut1(
@@ -257,8 +523,21 @@ impl crate::Unity::Burst::Unsafe {
         value: u8,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitBlock", (startAddress, value, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<u8>, u8, u32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InitBlock")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitBlock", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (startAddress, value, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitBlock_Il2CppObject0(
@@ -266,8 +545,25 @@ impl crate::Unity::Burst::Unsafe {
         value: u8,
         byteCount: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitBlock", (startAddress, value, byteCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u8,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InitBlock")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitBlock", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (startAddress, value, byteCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsAddressGreaterThan<T>(
@@ -278,8 +574,19 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsAddressGreaterThan", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, quest_hook::libil2cpp::ByRefMut<T>),
+                bool,
+                2usize,
+            >("IsAddressGreaterThan")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsAddressGreaterThan", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (left, right)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsAddressLessThan<T>(
@@ -290,8 +597,19 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsAddressLessThan", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, quest_hook::libil2cpp::ByRefMut<T>),
+                bool,
+                2usize,
+            >("IsAddressLessThan")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsAddressLessThan", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (left, right)) };
         Ok(__cordl_ret.into())
     }
     pub fn Read<T>(
@@ -301,8 +619,19 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Read", (source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                T,
+                1usize,
+            >("Read")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Read", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUnaligned_ByRefMut1<T>(
@@ -312,8 +641,19 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadUnaligned", (source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<u8>),
+                T,
+                1usize,
+            >("ReadUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadUnaligned", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUnaligned_Il2CppObject0<T>(
@@ -323,8 +663,19 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadUnaligned", (source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                T,
+                1usize,
+            >("ReadUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadUnaligned", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn SizeOf<T>() -> quest_hook::libil2cpp::Result<i32>
@@ -332,8 +683,15 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SizeOf", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("SizeOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SizeOf", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn SubtractByteOffset<T>(
@@ -344,8 +702,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SubtractByteOffset", (source, byteOffset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, crate::System::IntPtr),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                2usize,
+            >("SubtractByteOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubtractByteOffset", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source, byteOffset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract_ByRefMut_IntPtr2<T>(
@@ -356,8 +727,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Subtract", (source, elementOffset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, crate::System::IntPtr),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                2usize,
+            >("Subtract")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subtract", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source, elementOffset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract_ByRefMut_i32_0<T>(
@@ -368,8 +752,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Subtract", (source, elementOffset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, i32),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                2usize,
+            >("Subtract")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subtract", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (source, elementOffset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subtract_Il2CppObject_i32_1<T>(
@@ -382,10 +779,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("Subtract")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subtract", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Subtract", (source, elementOffset))?;
+        > = unsafe { method.invoke_unchecked((), (source, elementOffset)) };
         Ok(__cordl_ret.into())
     }
     pub fn Unbox<T>(
@@ -395,8 +803,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Unbox", (_cordl_box))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                1usize,
+            >("Unbox")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unbox", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (_cordl_box))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write<T>(
@@ -407,8 +828,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Write", (destination, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, T),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Write")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Write", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteUnaligned_ByRefMut1<T>(
@@ -419,8 +853,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteUnaligned", (destination, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<u8>, T),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WriteUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteUnaligned", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteUnaligned_Il2CppObject0<T>(
@@ -431,8 +878,21 @@ impl crate::Unity::Burst::Unsafe {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteUnaligned", (destination, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, T),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WriteUnaligned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteUnaligned", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (destination, value))
+        };
         Ok(__cordl_ret.into())
     }
 }

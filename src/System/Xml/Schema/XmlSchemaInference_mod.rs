@@ -69,25 +69,51 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectTable,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttribute,
+                >,
+                8usize,
+            >("AddAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddAttribute", 8usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaAttribute,
-        > = __cordl_object
-            .invoke(
-                "AddAttribute",
-                (
-                    localName,
-                    prefix,
-                    childURI,
-                    attrValue,
-                    bCreatingNewType,
-                    parentSchema,
-                    addLocation,
-                    compiledAttributes,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        localName,
+                        prefix,
+                        childURI,
+                        attrValue,
+                        bCreatingNewType,
+                        parentSchema,
+                        addLocation,
+                        compiledAttributes,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddElement(
@@ -103,23 +129,43 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                6usize,
+            >("AddElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddElement", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = __cordl_object
-            .invoke(
-                "AddElement",
-                (
-                    localName,
-                    prefix,
-                    childURI,
-                    parentSchema,
-                    addLocation,
-                    positionWithinCollection,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        localName,
+                        prefix,
+                        childURI,
+                        parentSchema,
+                        addLocation,
+                        positionWithinCollection,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckSimpleContentExtension(
@@ -130,12 +176,25 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
             crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaComplexType,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+                >,
+                1usize,
+            >("CheckSimpleContentExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckSimpleContentExtension", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
-        > = __cordl_object.invoke("CheckSimpleContentExtension", (ct))?;
+        > = unsafe { method.invoke_unchecked(self, (ct)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNewElementforChoice(
@@ -146,12 +205,23 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaElement,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                1usize,
+            >("CreateNewElementforChoice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNewElementforChoice", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = __cordl_object.invoke("CreateNewElementforChoice", (copyElement))?;
+        > = unsafe { method.invoke_unchecked(self, (copyElement)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateXmlSchema(
@@ -160,12 +230,21 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                1usize,
+            >("CreateXmlSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateXmlSchema", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchema,
-        > = __cordl_object.invoke("CreateXmlSchema", (targetNS))?;
+        > = unsafe { method.invoke_unchecked(self, (targetNS)) };
         Ok(__cordl_ret.into())
     }
     pub fn DateTime(
@@ -173,8 +252,23 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         bDate: bool,
         bTime: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DateTime", (s, bDate, bTime))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    bool,
+                ),
+                i32,
+                3usize,
+            >("DateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DateTime", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (s, bDate, bTime)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindAttribute(
@@ -184,12 +278,26 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttribute,
+                >,
+                2usize,
+            >("FindAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindAttribute", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaAttribute,
-        > = __cordl_object.invoke("FindAttribute", (attributes, attrName))?;
+        > = unsafe { method.invoke_unchecked(self, (attributes, attrName)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindAttributeRef(
@@ -200,13 +308,27 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAttribute>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttribute,
+                >,
+                3usize,
+            >("FindAttributeRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindAttributeRef", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaAttribute,
-        > = __cordl_object
-            .invoke("FindAttributeRef", (attributes, attributeName, nsURI))?;
+        > = unsafe { method.invoke_unchecked(self, (attributes, attributeName, nsURI)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindElement(
@@ -218,12 +340,26 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                2usize,
+            >("FindElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindElement", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = __cordl_object.invoke("FindElement", (elements, elementName))?;
+        > = unsafe { method.invoke_unchecked(self, (elements, elementName)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindElementRef(
@@ -236,12 +372,27 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                3usize,
+            >("FindElementRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindElementRef", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = __cordl_object.invoke("FindElementRef", (elements, elementName, nsURI))?;
+        > = unsafe { method.invoke_unchecked(self, (elements, elementName, nsURI)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindGlobalElement(
@@ -254,13 +405,29 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                3usize,
+            >("FindGlobalElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindGlobalElement", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = __cordl_object
-            .invoke("FindGlobalElement", (namespaceURI, localName, parentSchema))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (namespaceURI, localName, parentSchema))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindMatchingElement(
@@ -275,24 +442,45 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaComplexType,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+                7usize,
+            >("FindMatchingElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindMatchingElement", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaElement,
-        > = __cordl_object
-            .invoke(
-                "FindMatchingElement",
-                (
-                    bCreatingNewType,
-                    xtr,
-                    ct,
-                    lastUsedSeqItem,
-                    bParticleChanged,
-                    parentSchema,
-                    setMaxoccurs,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        bCreatingNewType,
+                        xtr,
+                        ct,
+                        lastUsedSeqItem,
+                        bParticleChanged,
+                        parentSchema,
+                        setMaxoccurs,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEffectiveSchemaType(
@@ -302,19 +490,44 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaElement,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+                2usize,
+            >("GetEffectiveSchemaType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEffectiveSchemaType", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaType,
-        > = __cordl_object.invoke("GetEffectiveSchemaType", (elem, bCreatingNewType))?;
+        > = unsafe { method.invoke_unchecked(self, (elem, bCreatingNewType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSchemaType(
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSchemaType", (qname))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>),
+                i32,
+                1usize,
+            >("GetSchemaType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSchemaType", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (qname)) };
         Ok(__cordl_ret.into())
     }
     pub fn InferElement(
@@ -323,11 +536,27 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         bCreatingNewType: bool,
         parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InferElement", (xse, bCreatingNewType, parentSchema))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaElement,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InferElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InferElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (xse, bCreatingNewType, parentSchema))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InferSchema(
@@ -336,12 +565,21 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+                1usize,
+            >("InferSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InferSchema", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaSet,
-        > = __cordl_object.invoke("InferSchema", (instanceDocument))?;
+        > = unsafe { method.invoke_unchecked(self, (instanceDocument)) };
         Ok(__cordl_ret.into())
     }
     pub fn InferSchema1(
@@ -351,20 +589,48 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+                2usize,
+            >("InferSchema1")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InferSchema1", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaSet,
-        > = __cordl_object.invoke("InferSchema1", (instanceDocument, schemas))?;
+        > = unsafe { method.invoke_unchecked(self, (instanceDocument, schemas)) };
         Ok(__cordl_ret.into())
     }
     pub fn InferSimpleType(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         bNeedsRangeCheck: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InferSimpleType", (s, bNeedsRangeCheck))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                i32,
+                2usize,
+            >("InferSimpleType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InferSimpleType", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (s, bNeedsRangeCheck))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeExistingAttributesOptional(
@@ -374,11 +640,28 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
             crate::System::Xml::Schema::XmlSchemaObjectCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MakeExistingAttributesOptional", (ct, attributesInInstance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaComplexType,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("MakeExistingAttributesOptional")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeExistingAttributesOptional", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ct, attributesInInstance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MoveAttributes_XmlSchemaComplexType_XmlSchemaSimpleContentExtension__cordl_bool1(
@@ -389,11 +672,29 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         >,
         bCreatingNewType: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveAttributes", (ct, simpleContentExtension, bCreatingNewType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaComplexType,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("MoveAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveAttributes", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ct, simpleContentExtension, bCreatingNewType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MoveAttributes_XmlSchemaSimpleContentExtension_XmlSchemaComplexType0(
@@ -403,11 +704,28 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         >,
         ct: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MoveAttributes", (scExtension, ct))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaSimpleContentExtension,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaComplexType,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("MoveAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveAttributes", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (scExtension, ct))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -428,14 +746,34 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         bCreatingNewType: bool,
         parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ProcessAttributes",
-                (xse, effectiveSchemaType, bCreatingNewType, parentSchema),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Schema::XmlSchemaElement,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ProcessAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessAttributes", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (xse, effectiveSchemaType, bCreatingNewType, parentSchema),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RefineSimpleType(
@@ -445,12 +783,24 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                2usize,
+            >("RefineSimpleType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RefineSimpleType", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::XmlQualifiedName,
-        > = __cordl_object.invoke("RefineSimpleType", (s, iTypeFlags))?;
+        > = unsafe { method.invoke_unchecked(self, (s, iTypeFlags)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetMinMaxOccurs(
@@ -458,11 +808,26 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         el: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
         setMaxOccurs: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMinMaxOccurs", (el, setMaxOccurs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaElement,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetMinMaxOccurs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMinMaxOccurs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (el, setMaxOccurs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwitchUseToOptional(
@@ -474,21 +839,44 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
             crate::System::Xml::Schema::XmlSchemaObjectCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SwitchUseToOptional", (attributes, attributesInInstance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SwitchUseToOptional")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SwitchUseToOptional", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attributes, attributesInInstance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Occurrence(
@@ -496,33 +884,63 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Xml::Schema::XmlSchemaInference_InferenceOption,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption = __cordl_object
-            .invoke("get_Occurrence", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Xml::Schema::XmlSchemaInference_InferenceOption,
+                0usize,
+            >("get_Occurrence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Occurrence", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_Occurrence(
         &mut self,
         value: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_Occurrence", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Xml::Schema::XmlSchemaInference_InferenceOption),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_Occurrence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Occurrence", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_TypeInference(
         &mut self,
         value: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_TypeInference", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Xml::Schema::XmlSchemaInference_InferenceOption),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_TypeInference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_TypeInference", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

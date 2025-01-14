@@ -50,18 +50,36 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
         prevBpmChangeData: crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
         beat: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CalculateTime", (prevBpmChangeData, beat))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData, f32),
+                f32,
+                2usize,
+            >("CalculateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CalculateTime", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (prevBpmChangeData, beat))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertBeatToTime(
         &mut self,
         beat: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("ConvertBeatToTime", (beat))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32), f32, 1usize>("ConvertBeatToTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertBeatToTime", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (beat)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_AudioSaveData2(
@@ -110,11 +128,17 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Reset", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_AudioSaveData2(
@@ -123,11 +147,23 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (audioSaveData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::BeatmapLevelSaveDataVersion4::AudioSaveData,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (audioSaveData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_IReadOnlyList_1_0(
@@ -141,11 +177,30 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (startBpm, events))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    f32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (startBpm, events))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_IReadOnlyList_1_1(
@@ -159,11 +214,30 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (startBpm, bpmEventsSaveData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    f32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion3::BpmChangeEventData,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (startBpm, bpmEventsSaveData))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -301,11 +375,18 @@ impl crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData {
         bpmChangeStartBpmTime: f32,
         bpm: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (bpmChangeStartTime, bpmChangeStartBpmTime, bpm),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32, f32, f32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (bpmChangeStartTime, bpmChangeStartBpmTime, bpm))
+        };
         Ok(__cordl_ret.into())
     }
 }

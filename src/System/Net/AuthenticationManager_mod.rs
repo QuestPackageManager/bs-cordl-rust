@@ -45,8 +45,25 @@ impl crate::System::Net::AuthenticationManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Authenticate", (challenge, request, credentials))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+                3usize,
+            >("Authenticate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Authenticate", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = unsafe {
+            method.invoke_unchecked((), (challenge, request, credentials))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DoAuthenticate(
@@ -56,15 +73,45 @@ impl crate::System::Net::AuthenticationManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DoAuthenticate", (challenge, request, credentials))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+                3usize,
+            >("DoAuthenticate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DoAuthenticate", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = unsafe {
+            method.invoke_unchecked((), (challenge, request, credentials))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureModules() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EnsureModules", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("EnsureModules")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureModules", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreAuthenticate(
@@ -73,8 +120,24 @@ impl crate::System::Net::AuthenticationManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PreAuthenticate", (request, credentials))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+                2usize,
+            >("PreAuthenticate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreAuthenticate", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = unsafe {
+            method.invoke_unchecked((), (request, credentials))
+        };
         Ok(__cordl_ret.into())
     }
 }

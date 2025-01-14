@@ -58,11 +58,21 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCrl", (other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddCrl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCrl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (other))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddCrlEntry_X509Extensions2(
@@ -75,11 +85,29 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCrlEntry", (userCertificate, revocationDate, extensions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::BigInteger,
+                    >,
+                    crate::System::DateTime,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddCrlEntry")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCrlEntry", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (userCertificate, revocationDate, extensions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddCrlEntry_i32_0(
@@ -90,11 +118,27 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         revocationDate: crate::System::DateTime,
         reason: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCrlEntry", (userCertificate, revocationDate, reason))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::BigInteger,
+                    >,
+                    crate::System::DateTime,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddCrlEntry")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCrlEntry", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (userCertificate, revocationDate, reason))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddCrlEntry_i32_DateTime1(
@@ -106,14 +150,32 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         reason: i32,
         invalidityDate: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddCrlEntry",
-                (userCertificate, revocationDate, reason, invalidityDate),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::BigInteger,
+                    >,
+                    crate::System::DateTime,
+                    i32,
+                    crate::System::DateTime,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("AddCrlEntry")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCrlEntry", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (userCertificate, revocationDate, reason, invalidityDate),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddExtension_DerObjectIdentifier_Asn1Encodable1(
@@ -126,11 +188,29 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, extensionValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddExtension", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (oid, critical, extensionValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddExtension_DerObjectIdentifier_Il2CppArray3(
@@ -141,11 +221,27 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         critical: bool,
         extensionValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, extensionValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddExtension", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (oid, critical, extensionValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Il2CppString_Asn1Encodable0(
@@ -156,11 +252,27 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, extensionValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddExtension", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (oid, critical, extensionValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddExtension_Il2CppString_Il2CppArray2(
@@ -169,11 +281,25 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
         critical: bool,
         extensionValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddExtension", (oid, critical, extensionValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddExtension", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (oid, critical, extensionValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateCertList(
@@ -183,12 +309,23 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList,
+                >,
+                0usize,
+            >("GenerateCertList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateCertList", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList,
-        > = __cordl_object.invoke("GenerateCertList", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateJcaObject(
@@ -203,12 +340,29 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::TbsCertificateList,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
+                3usize,
+            >("GenerateJcaObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateJcaObject", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Crl,
-        > = __cordl_object.invoke("GenerateJcaObject", (tbsCrl, algId, signature))?;
+        > = unsafe { method.invoke_unchecked(self, (tbsCrl, algId, signature)) };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_AsymmetricKeyParameter0(
@@ -219,12 +373,23 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
+                1usize,
+            >("Generate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Generate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Crl,
-        > = __cordl_object.invoke("Generate", (privateKey))?;
+        > = unsafe { method.invoke_unchecked(self, (privateKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_AsymmetricKeyParameter_SecureRandom1(
@@ -238,12 +403,28 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Security::SecureRandom,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
+                2usize,
+            >("Generate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Generate", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Crl,
-        > = __cordl_object.invoke("Generate", (privateKey, random))?;
+        > = unsafe { method.invoke_unchecked(self, (privateKey, random)) };
         Ok(__cordl_ret.into())
     }
     pub fn Generate_ISignatureFactory2(
@@ -254,12 +435,23 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
+                1usize,
+            >("Generate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Generate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::X509Crl,
-        > = __cordl_object.invoke("Generate", (signatureCalculatorFactory))?;
+        > = unsafe { method.invoke_unchecked(self, (signatureCalculatorFactory)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -272,33 +464,61 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Reset", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIssuerDN(
         &mut self,
         issuer: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetIssuerDN", (issuer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Name,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetIssuerDN")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIssuerDN", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (issuer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNextUpdate(
         &mut self,
         date: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNextUpdate", (date))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::DateTime),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetNextUpdate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNextUpdate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (date))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSignatureAlgorithm(
@@ -307,32 +527,58 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSignatureAlgorithm", (signatureAlgorithm))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetSignatureAlgorithm")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSignatureAlgorithm", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (signatureAlgorithm))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetThisUpdate(
         &mut self,
         date: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetThisUpdate", (date))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::DateTime),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetThisUpdate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetThisUpdate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (date))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_SignatureAlgNames(
@@ -340,12 +586,21 @@ impl crate::Org::BouncyCastle::X509::X509V2CrlGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+                0usize,
+            >("get_SignatureAlgNames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_SignatureAlgNames", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerable,
-        > = __cordl_object.invoke("get_SignatureAlgNames", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

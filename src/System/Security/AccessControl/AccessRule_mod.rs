@@ -77,21 +77,41 @@ impl crate::System::Security::AccessControl::AccessRule {
         propagationFlags: crate::System::Security::AccessControl::PropagationFlags,
         _cordl_type: crate::System::Security::AccessControl::AccessControlType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    identity,
-                    accessMask,
-                    isInherited,
-                    inheritanceFlags,
-                    propagationFlags,
-                    _cordl_type,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Principal::IdentityReference,
+                    >,
+                    i32,
+                    bool,
+                    crate::System::Security::AccessControl::InheritanceFlags,
+                    crate::System::Security::AccessControl::PropagationFlags,
+                    crate::System::Security::AccessControl::AccessControlType,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        identity,
+                        accessMask,
+                        isInherited,
+                        inheritanceFlags,
+                        propagationFlags,
+                        _cordl_type,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_AccessControlType(
@@ -99,11 +119,21 @@ impl crate::System::Security::AccessControl::AccessRule {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::AccessControl::AccessControlType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Security::AccessControl::AccessControlType = __cordl_object
-            .invoke("get_AccessControlType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Security::AccessControl::AccessControlType,
+                0usize,
+            >("get_AccessControlType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_AccessControlType", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Security::AccessControl::AccessControlType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

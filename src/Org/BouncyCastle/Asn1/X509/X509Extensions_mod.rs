@@ -47,10 +47,21 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equivalent", (other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+                >),
+                bool,
+                1usize,
+            >("Equivalent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equivalent", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCriticalExtensionOids(
@@ -64,16 +75,31 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetCriticalExtensionOids")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCriticalExtensionOids", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
                 >,
             >,
-        > = __cordl_object.invoke("GetCriticalExtensionOids", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtensionOids_0(
@@ -87,16 +113,31 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetExtensionOids")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtensionOids", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
                 >,
             >,
-        > = __cordl_object.invoke("GetExtensionOids", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtensionOids__cordl_bool1(
@@ -111,16 +152,31 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetExtensionOids")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtensionOids", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
                 >,
             >,
-        > = __cordl_object.invoke("GetExtensionOids", (isCritical))?;
+        > = unsafe { method.invoke_unchecked(self, (isCritical)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtensionParsedValue_DerObjectIdentifier1(
@@ -131,12 +187,23 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+                1usize,
+            >("GetExtensionParsedValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtensionParsedValue", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = __cordl_object.invoke("GetExtensionParsedValue", (oid))?;
+        > = unsafe { method.invoke_unchecked(self, (oid)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtensionParsedValue_X509Extensions_DerObjectIdentifier0(
@@ -149,10 +216,28 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+                2usize,
+            >("GetExtensionParsedValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtensionParsedValue", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetExtensionParsedValue", (extensions, oid))?;
+        > = unsafe { method.invoke_unchecked((), (extensions, oid)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtension_DerObjectIdentifier1(
@@ -163,12 +248,25 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extension>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Extension,
+                >,
+                1usize,
+            >("GetExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtension", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509Extension,
-        > = __cordl_object.invoke("GetExtension", (oid))?;
+        > = unsafe { method.invoke_unchecked(self, (oid)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtension_X509Extensions_DerObjectIdentifier0(
@@ -181,10 +279,30 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extension>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Extension,
+                >,
+                2usize,
+            >("GetExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtension", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509Extension,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetExtension", (extensions, oid))?;
+        > = unsafe { method.invoke_unchecked((), (extensions, oid)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
@@ -193,10 +311,28 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extensions>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+                >,
+                2usize,
+            >("GetInstance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInstance", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInstance", (obj, explicitly))?;
+        > = unsafe { method.invoke_unchecked((), (obj, explicitly)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInstance_Il2CppObject1(
@@ -204,9 +340,23 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Extensions>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+                >,
+                1usize,
+            >("GetInstance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInstance", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        > = unsafe { method.invoke_unchecked((), (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNonCriticalExtensionOids(
@@ -220,16 +370,31 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetNonCriticalExtensionOids")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNonCriticalExtensionOids", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
                 >,
             >,
-        > = __cordl_object.invoke("GetNonCriticalExtensionOids", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New_ArrayList_ArrayList6(
@@ -304,12 +469,21 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                0usize,
+            >("Oids")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Oids", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = __cordl_object.invoke("Oids", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToAsn1Object(
@@ -317,12 +491,21 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+                0usize,
+            >("ToAsn1Object")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToAsn1Object", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Object,
-        > = __cordl_object.invoke("ToAsn1Object", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToOidArray(
@@ -336,13 +519,31 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("ToOidArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToOidArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
                     crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToOidArray", (oids))?;
+        > = unsafe { method.invoke_unchecked((), (oids)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ArrayList_ArrayList6(
@@ -350,11 +551,24 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         oids: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         values: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oids, values))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (oids, values))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ArrayList_Hashtable5(
@@ -362,44 +576,89 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ordering, extensions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ordering, extensions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1Sequence0(
         &mut self,
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (seq))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (seq))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Hashtable4(
         &mut self,
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (extensions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (extensions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IDictionary1(
         &mut self,
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (extensions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (extensions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IList_IDictionary2(
@@ -407,11 +666,24 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         ordering: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (ordering, extensions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ordering, extensions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IList_IList3(
@@ -419,11 +691,24 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
         oids: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oids, values))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (oids, values))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_ExtensionOids(
@@ -431,12 +716,21 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+                0usize,
+            >("get_ExtensionOids")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ExtensionOids", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerable,
-        > = __cordl_object.invoke("get_ExtensionOids", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

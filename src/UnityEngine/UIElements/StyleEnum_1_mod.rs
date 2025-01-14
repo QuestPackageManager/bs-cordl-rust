@@ -127,11 +127,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_StyleEnum_1_0(
@@ -142,11 +150,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::StyleEnum_1<T>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
@@ -154,11 +170,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -170,9 +190,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_StyleKeyword1(
@@ -183,11 +215,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (keyword),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::StyleKeyword),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (keyword))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_T0(
@@ -198,11 +240,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_T_StyleKeyword2(
@@ -214,11 +262,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v, keyword),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (T, crate::UnityEngine::UIElements::StyleKeyword),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v, keyword))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_keyword(
@@ -228,11 +286,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_keyword",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::UIElements::StyleKeyword,
+                0usize,
+            >("get_keyword")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_keyword", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleKeyword = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<T>
@@ -240,11 +308,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_value",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), T, 0usize>("get_value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_value", 0usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality(
@@ -255,8 +327,22 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Equality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleEnum_1<T>,
+                    crate::UnityEngine::UIElements::StyleEnum_1<T>,
+                ),
+                bool,
+                2usize,
+            >("op_Equality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Equality", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_StyleKeyword0(
@@ -266,8 +352,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleEnum_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (keyword))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::StyleKeyword),
+                crate::UnityEngine::UIElements::StyleEnum_1<T>,
+                1usize,
+            >("op_Implicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Implicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleEnum_1<T> = unsafe {
+            method.invoke_unchecked((), (keyword))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit_T1(
@@ -277,8 +376,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleEnum_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T),
+                crate::UnityEngine::UIElements::StyleEnum_1<T>,
+                1usize,
+            >("op_Implicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Implicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleEnum_1<T> = unsafe {
+            method.invoke_unchecked((), (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
@@ -289,8 +401,22 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleEnum_1
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Inequality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleEnum_1<T>,
+                    crate::UnityEngine::UIElements::StyleEnum_1<T>,
+                ),
+                bool,
+                2usize,
+            >("op_Inequality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Inequality", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
         Ok(__cordl_ret.into())
     }
 }

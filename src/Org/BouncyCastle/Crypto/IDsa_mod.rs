@@ -48,14 +48,29 @@ impl crate::Org::BouncyCastle::Crypto::IDsa {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Org::BouncyCastle::Math::BigInteger,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GenerateSignature")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateSignature", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
             >,
-        > = __cordl_object.invoke("GenerateSignature", (message))?;
+        > = unsafe { method.invoke_unchecked(self, (message)) };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -65,11 +80,26 @@ impl crate::Org::BouncyCastle::Crypto::IDsa {
             crate::Org::BouncyCastle::Crypto::ICipherParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (forSigning, parameters))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::ICipherParameters,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Init")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Init", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (forSigning, parameters))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn VerifySignature(
@@ -78,11 +108,27 @@ impl crate::Org::BouncyCastle::Crypto::IDsa {
         r: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("VerifySignature", (message, r, s))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::BigInteger,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                ),
+                bool,
+                3usize,
+            >("VerifySignature")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "VerifySignature", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (message, r, s))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -95,12 +141,21 @@ impl crate::Org::BouncyCastle::Crypto::IDsa {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_AlgorithmName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_AlgorithmName", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("get_AlgorithmName", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

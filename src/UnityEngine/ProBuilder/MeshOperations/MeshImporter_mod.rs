@@ -61,10 +61,26 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
             crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Import", (go, importSettings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Import", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (go, importSettings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Import_MeshImportSettings1(
@@ -73,11 +89,23 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
             crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Import", (importSettings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::MeshOperations::MeshImportSettings,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Import", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (importSettings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_GameObject0(
@@ -121,11 +149,21 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
         &mut self,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (gameObject))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (gameObject))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Mesh_Il2CppArray_ProBuilderMesh1(
@@ -140,11 +178,31 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (sourceMesh, sourceMaterials, destination))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (sourceMesh, sourceMaterials, destination))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ProBuilderMesh2(
@@ -153,11 +211,23 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (destination))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (destination))
+        };
         Ok(__cordl_ret.into())
     }
 }

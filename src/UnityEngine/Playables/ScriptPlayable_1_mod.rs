@@ -129,10 +129,23 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::IPlayableBehaviour,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("CloneScriptInstance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CloneScriptInstance", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CloneScriptInstance", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn CloneScriptInstanceFromEngineObject(
@@ -144,10 +157,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("CloneScriptInstanceFromEngineObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CloneScriptInstanceFromEngineObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CloneScriptInstanceFromEngineObject", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn CloneScriptInstanceFromIClonable(
@@ -159,10 +183,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::ICloneable>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("CloneScriptInstanceFromIClonable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CloneScriptInstanceFromIClonable", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CloneScriptInstanceFromIClonable", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHandle(
@@ -174,8 +209,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateHandle", (graph, _cordl_template, inputCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Playables::PlayableGraph, T, i32),
+                crate::UnityEngine::Playables::PlayableHandle,
+                3usize,
+            >("CreateHandle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateHandle", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
+            method.invoke_unchecked((), (graph, _cordl_template, inputCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateScriptInstance() -> quest_hook::libil2cpp::Result<
@@ -185,10 +233,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                0usize,
+            >("CreateScriptInstance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateScriptInstance", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateScriptInstance", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn Create_T_i32_1(
@@ -202,8 +261,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (graph, _cordl_template, inputCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Playables::PlayableGraph, T, i32),
+                crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+                3usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = unsafe {
+            method.invoke_unchecked((), (graph, _cordl_template, inputCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create_i32_0(
@@ -216,8 +288,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (graph, inputCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Playables::PlayableGraph, i32),
+                crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+                2usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = unsafe {
+            method.invoke_unchecked((), (graph, inputCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
@@ -228,11 +313,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::ScriptPlayable_1<T>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBehaviour(&mut self) -> quest_hook::libil2cpp::Result<T>
@@ -240,11 +333,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetBehaviour",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), T, 0usize>("GetBehaviour")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBehaviour", 0usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
@@ -254,11 +351,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHandle",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Playables::PlayableHandle,
+                0usize,
+            >("GetHandle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHandle", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -269,11 +376,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (handle),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::PlayableHandle),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Null() -> quest_hook::libil2cpp::Result<
@@ -283,8 +400,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_Null", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+                0usize,
+            >("get_Null")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Null", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit(
@@ -296,8 +426,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Explicit", (playable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Playables::Playable),
+                crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+                1usize,
+            >("op_Explicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Explicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = unsafe {
+            method.invoke_unchecked((), (playable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
@@ -307,8 +450,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (playable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Playables::ScriptPlayable_1<T>),
+                crate::UnityEngine::Playables::Playable,
+                1usize,
+            >("op_Implicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Implicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
+            method.invoke_unchecked((), (playable))
+        };
         Ok(__cordl_ret.into())
     }
 }

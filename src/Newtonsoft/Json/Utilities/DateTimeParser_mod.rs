@@ -119,11 +119,25 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         startIndex: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Parse",
-            (text, startIndex, length),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
+                    i32,
+                ),
+                bool,
+                3usize,
+            >("Parse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Parse", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (text, startIndex, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Parse2Digit(
@@ -131,11 +145,19 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         start: i32,
         num: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Parse2Digit",
-            (start, num),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::ByRefMut<i32>),
+                bool,
+                2usize,
+            >("Parse2Digit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Parse2Digit", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (start, num)) };
         Ok(__cordl_ret.into())
     }
     pub fn Parse4Digit(
@@ -143,11 +165,19 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         start: i32,
         num: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Parse4Digit",
-            (start, num),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::ByRefMut<i32>),
+                bool,
+                2usize,
+            >("Parse4Digit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Parse4Digit", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (start, num)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseChar(
@@ -155,49 +185,73 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeParser {
         start: i32,
         ch: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseChar",
-            (start, ch),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, char), bool, 2usize>("ParseChar")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseChar", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (start, ch)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseDate(&mut self, start: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseDate",
-            (start),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), bool, 1usize>("ParseDate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseDate", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (start)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseTime(
         &mut self,
         start: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseTime",
-            (start),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<i32>),
+                bool,
+                1usize,
+            >("ParseTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseTime", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (start)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseTimeAndZoneAndWhitespace(
         &mut self,
         start: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseTimeAndZoneAndWhitespace",
-            (start),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), bool, 1usize>("ParseTimeAndZoneAndWhitespace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseTimeAndZoneAndWhitespace", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (start)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseZone(&mut self, start: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseZone",
-            (start),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), bool, 1usize>("ParseZone")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseZone", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (start)) };
         Ok(__cordl_ret.into())
     }
 }

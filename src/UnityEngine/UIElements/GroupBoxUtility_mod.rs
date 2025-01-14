@@ -44,10 +44,21 @@ impl crate::UnityEngine::UIElements::GroupBoxUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupManager>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBox>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupManager>,
+                1usize,
+            >("FindOrCreateGroupManager")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindOrCreateGroupManager", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IGroupManager,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindOrCreateGroupManager", (groupBox))?;
+        > = unsafe { method.invoke_unchecked((), (groupBox)) };
         Ok(__cordl_ret.into())
     }
     pub fn OnGroupBoxDetachedFromPanel(
@@ -55,8 +66,23 @@ impl crate::UnityEngine::UIElements::GroupBoxUtility {
             crate::UnityEngine::UIElements::DetachFromPanelEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnGroupBoxDetachedFromPanel", (evt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::DetachFromPanelEvent,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnGroupBoxDetachedFromPanel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnGroupBoxDetachedFromPanel", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (evt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnOptionSelected<T>(
@@ -66,8 +92,21 @@ impl crate::UnityEngine::UIElements::GroupBoxUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnOptionSelected", (selectedOption))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnOptionSelected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnOptionSelected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (selectedOption))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnPanelDestroyed(
@@ -75,8 +114,23 @@ impl crate::UnityEngine::UIElements::GroupBoxUtility {
             crate::UnityEngine::UIElements::BaseVisualElementPanel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnPanelDestroyed", (panel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnPanelDestroyed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnPanelDestroyed", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (panel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterGroupBoxOption<T>(
@@ -86,8 +140,21 @@ impl crate::UnityEngine::UIElements::GroupBoxUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterGroupBoxOption", (option))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RegisterGroupBoxOption")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterGroupBoxOption", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (option))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterGroupBoxOption<T>(
@@ -97,8 +164,21 @@ impl crate::UnityEngine::UIElements::GroupBoxUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnregisterGroupBoxOption", (option))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UnregisterGroupBoxOption")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnregisterGroupBoxOption", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (option))
+        };
         Ok(__cordl_ret.into())
     }
 }

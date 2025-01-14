@@ -46,11 +46,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         edgeToBeAligned: crate::UnityEngine::ProBuilder::Edge,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AlignEdges",
-                (mesh, faceToMove, edgeToAlignTo, edgeToBeAligned, channel),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    crate::UnityEngine::ProBuilder::Edge,
+                    crate::UnityEngine::ProBuilder::Edge,
+                    i32,
+                ),
+                bool,
+                5usize,
+            >("AlignEdges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AlignEdges", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (mesh, faceToMove, edgeToAlignTo, edgeToBeAligned, channel),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyUVs(
@@ -61,8 +83,30 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         channel: i32,
         applyToMesh: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyUVs", (mesh, uvs, channel, applyToMesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, uvs, channel, applyToMesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AutoStitch(
@@ -71,16 +115,54 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         f2: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AutoStitch", (mesh, f1, f2, channel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    i32,
+                ),
+                bool,
+                4usize,
+            >("AutoStitch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AutoStitch", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (mesh, f1, f2, channel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CollapseUVs(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CollapseUVs", (mesh, indexes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CollapseUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CollapseUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, indexes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindMinimalUV(
@@ -91,8 +173,28 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         xMin: f32,
         yMin: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindMinimalUV", (uvs, indices, xMin, yMin))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    f32,
+                    f32,
+                ),
+                crate::UnityEngine::Vector2,
+                4usize,
+            >("FindMinimalUV")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindMinimalUV", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            method.invoke_unchecked((), (uvs, indices, xMin, yMin))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FitUVs(
@@ -104,9 +206,25 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                1usize,
+            >("FitUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FitUVs", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FitUVs", (uvs))?;
+        > = unsafe { method.invoke_unchecked((), (uvs)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVs(
@@ -117,10 +235,28 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                2usize,
+            >("GetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVs", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUVs", (mesh, channel))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, channel)) };
         Ok(__cordl_ret.into())
     }
     pub fn ProjectFacesAuto(
@@ -132,8 +268,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         >,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProjectFacesAuto", (mesh, faces, channel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProjectFacesAuto")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProjectFacesAuto", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, faces, channel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProjectFacesBox_Vector2_i32_1(
@@ -146,8 +307,34 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         lowerLeftAnchor: crate::UnityEngine::Vector2,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProjectFacesBox", (mesh, faces, lowerLeftAnchor, channel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                    crate::UnityEngine::Vector2,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ProjectFacesBox")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProjectFacesBox", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, faces, lowerLeftAnchor, channel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProjectFacesBox_i32_0(
@@ -159,8 +346,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         >,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProjectFacesBox", (mesh, faces, channel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProjectFacesBox")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProjectFacesBox", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, faces, channel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProjectFacesSphere(
@@ -168,8 +380,27 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProjectFacesSphere", (pb, indexes, channel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProjectFacesSphere")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProjectFacesSphere", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (pb, indexes, channel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SewUVs(
@@ -177,8 +408,27 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         delta: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SewUVs", (mesh, indexes, delta))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SewUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SewUVs", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, indexes, delta))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SplitUVs_ProBuilderMesh_IEnumerable_1_0(
@@ -187,8 +437,28 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SplitUVs", (mesh, indexes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SplitUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SplitUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, indexes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SplitUVs_ProBuilderMesh_IEnumerable_1_1(
@@ -199,8 +469,32 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::UVEditing {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SplitUVs", (mesh, faces))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SplitUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SplitUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, faces))
+        };
         Ok(__cordl_ret.into())
     }
 }

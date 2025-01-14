@@ -47,11 +47,21 @@ impl crate::GlobalNamespace::INoteVisualModifierTypeProvider {
     pub fn get_noteVisualModifierType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteVisualModifierType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::NoteVisualModifierType = __cordl_object
-            .invoke("get_noteVisualModifierType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::NoteVisualModifierType,
+                0usize,
+            >("get_noteVisualModifierType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_noteVisualModifierType", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::NoteVisualModifierType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

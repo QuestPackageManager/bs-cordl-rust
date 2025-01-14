@@ -41,25 +41,61 @@ impl crate::Mono::DependencyInjector {
     pub fn ReflectionLoad() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
+                0usize,
+            >("ReflectionLoad")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReflectionLoad", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::ISystemDependencyProvider,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReflectionLoad", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn Register(
         provider: quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Register", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Register")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Register", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (provider))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_SystemProvider() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
+                0usize,
+            >("get_SystemProvider")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_SystemProvider", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::ISystemDependencyProvider,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_SystemProvider", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

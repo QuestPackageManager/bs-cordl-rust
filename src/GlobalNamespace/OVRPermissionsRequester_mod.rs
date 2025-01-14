@@ -48,10 +48,23 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     pub fn BuildPermissionCallbacks() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::PermissionCallbacks>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Android::PermissionCallbacks,
+                >,
+                0usize,
+            >("BuildPermissionCallbacks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildPermissionCallbacks", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Android::PermissionCallbacks,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("BuildPermissionCallbacks", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPermissionId(
@@ -59,24 +72,57 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetPermissionId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPermissionId", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPermissionId", (permission))?;
+        > = unsafe { method.invoke_unchecked((), (permission)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsPermissionGranted(
         permission: crate::GlobalNamespace::OVRPermissionsRequester_Permission,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsPermissionGranted", (permission))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
+                bool,
+                1usize,
+            >("IsPermissionGranted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsPermissionGranted", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (permission)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsPermissionSupportedByPlatform(
         permission: crate::GlobalNamespace::OVRPermissionsRequester_Permission,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsPermissionSupportedByPlatform", (permission))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
+                bool,
+                1usize,
+            >("IsPermissionSupportedByPlatform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsPermissionSupportedByPlatform", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (permission)) };
         Ok(__cordl_ret.into())
     }
     pub fn Request(
@@ -86,8 +132,25 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Request", (permissions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Request")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Request", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (permissions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RequestPermissions(
@@ -97,15 +160,43 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RequestPermissions", (permissions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RequestPermissions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RequestPermissions", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (permissions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldRequestPermission(
         permission: crate::GlobalNamespace::OVRPermissionsRequester_Permission,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldRequestPermission", (permission))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::OVRPermissionsRequester_Permission),
+                bool,
+                1usize,
+            >("ShouldRequestPermission")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldRequestPermission", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (permission)) };
         Ok(__cordl_ret.into())
     }
     pub fn add_PermissionGranted(
@@ -115,8 +206,25 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("add_PermissionGranted", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("add_PermissionGranted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "add_PermissionGranted", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn remove_PermissionGranted(
@@ -126,8 +234,25 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("remove_PermissionGranted", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("remove_PermissionGranted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "remove_PermissionGranted", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

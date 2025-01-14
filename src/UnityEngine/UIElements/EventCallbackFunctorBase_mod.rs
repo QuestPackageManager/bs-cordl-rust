@@ -46,11 +46,24 @@ impl crate::UnityEngine::UIElements::EventCallbackFunctorBase {
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         propagationPhase: crate::UnityEngine::UIElements::PropagationPhase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (evt, propagationPhase))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+                    crate::UnityEngine::UIElements::PropagationPhase,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (evt, propagationPhase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsEquivalentTo(
@@ -59,11 +72,25 @@ impl crate::UnityEngine::UIElements::EventCallbackFunctorBase {
         callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsEquivalentTo", (eventTypeId, callback, phase))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i64,
+                    quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+                    crate::UnityEngine::UIElements::CallbackPhase,
+                ),
+                bool,
+                3usize,
+            >("IsEquivalentTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsEquivalentTo", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (eventTypeId, callback, phase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -80,11 +107,21 @@ impl crate::UnityEngine::UIElements::EventCallbackFunctorBase {
         &mut self,
         propagationPhase: crate::UnityEngine::UIElements::PropagationPhase,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("PhaseMatches", (propagationPhase))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::PropagationPhase),
+                bool,
+                1usize,
+            >("PhaseMatches")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PhaseMatches", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (propagationPhase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -92,31 +129,64 @@ impl crate::UnityEngine::UIElements::EventCallbackFunctorBase {
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (phase, invokePolicy))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::UIElements::CallbackPhase,
+                    crate::UnityEngine::UIElements::InvokePolicy,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (phase, invokePolicy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_invokePolicy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::InvokePolicy> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::InvokePolicy = __cordl_object
-            .invoke("get_invokePolicy", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::UIElements::InvokePolicy,
+                0usize,
+            >("get_invokePolicy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_invokePolicy", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::InvokePolicy = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_phase(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::CallbackPhase> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::CallbackPhase = __cordl_object
-            .invoke("get_phase", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::UIElements::CallbackPhase,
+                0usize,
+            >("get_phase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_phase", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::CallbackPhase = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

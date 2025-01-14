@@ -47,12 +47,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+                1usize,
+            >("CreateSigner")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateSigner", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISigner,
-        > = __cordl_object.invoke("CreateSigner", (privateKey))?;
+        > = unsafe { method.invoke_unchecked(self, (privateKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSigner_SignatureAndHashAlgorithm_AsymmetricKeyParameter1(
@@ -66,12 +77,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+                2usize,
+            >("CreateSigner")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateSigner", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISigner,
-        > = __cordl_object.invoke("CreateSigner", (algorithm, privateKey))?;
+        > = unsafe { method.invoke_unchecked(self, (algorithm, privateKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateVerifyer_AsymmetricKeyParameter0(
@@ -82,12 +109,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+                1usize,
+            >("CreateVerifyer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateVerifyer", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISigner,
-        > = __cordl_object.invoke("CreateVerifyer", (publicKey))?;
+        > = unsafe { method.invoke_unchecked(self, (publicKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateVerifyer_SignatureAndHashAlgorithm_AsymmetricKeyParameter1(
@@ -101,12 +139,28 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ISigner>,
+                2usize,
+            >("CreateVerifyer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateVerifyer", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::ISigner,
-        > = __cordl_object.invoke("CreateVerifyer", (algorithm, publicKey))?;
+        > = unsafe { method.invoke_unchecked(self, (algorithm, publicKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateRawSignature_AsymmetricKeyParameter_Il2CppArray0(
@@ -118,12 +172,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                2usize,
+            >("GenerateRawSignature")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateRawSignature", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("GenerateRawSignature", (privateKey, md5AndSha1))?;
+        > = unsafe { method.invoke_unchecked(self, (privateKey, md5AndSha1)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateRawSignature_SignatureAndHashAlgorithm_AsymmetricKeyParameter_Il2CppArray1(
@@ -138,13 +206,29 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                3usize,
+            >("GenerateRawSignature")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateRawSignature", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object
-            .invoke("GenerateRawSignature", (algorithm, privateKey, hash))?;
+        > = unsafe { method.invoke_unchecked(self, (algorithm, privateKey, hash)) };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -153,11 +237,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
             crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Init", (context))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Init")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Init", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (context))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsValidPublicKey(
@@ -166,10 +262,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValidPublicKey", (publicKey))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                >),
+                bool,
+                1usize,
+            >("IsValidPublicKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValidPublicKey", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (publicKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn VerifyRawSignature_Il2CppArray_AsymmetricKeyParameter_Il2CppArray0(
@@ -180,11 +287,27 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
         >,
         md5AndSha1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("VerifyRawSignature", (sigBytes, publicKey, md5AndSha1))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                bool,
+                3usize,
+            >("VerifyRawSignature")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "VerifyRawSignature", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (sigBytes, publicKey, md5AndSha1))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn VerifyRawSignature_SignatureAndHashAlgorithm_Il2CppArray_AsymmetricKeyParameter_Il2CppArray1(
@@ -198,11 +321,30 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSigner {
         >,
         hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("VerifyRawSignature", (algorithm, sigBytes, publicKey, hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                bool,
+                4usize,
+            >("VerifyRawSignature")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "VerifyRawSignature", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (algorithm, sigBytes, publicKey, hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

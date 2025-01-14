@@ -49,11 +49,17 @@ impl crate::LiteNetLib::Utils::NtpRequest {
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Close", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Close")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Close", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create_IPAddress_Action_1_1(
@@ -66,10 +72,30 @@ impl crate::LiteNetLib::Utils::NtpRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::LiteNetLib::Utils::NtpPacket,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+                2usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::Utils::NtpRequest,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (ipAddress, onRequestComplete))?;
+        > = unsafe { method.invoke_unchecked((), (ipAddress, onRequestComplete)) };
         Ok(__cordl_ret.into())
     }
     pub fn Create_IPEndPoint_Action_1_0(
@@ -82,10 +108,30 @@ impl crate::LiteNetLib::Utils::NtpRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::LiteNetLib::Utils::NtpPacket,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+                2usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::Utils::NtpRequest,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (endPoint, onRequestComplete))?;
+        > = unsafe { method.invoke_unchecked((), (endPoint, onRequestComplete)) };
         Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppString_Action_1_3(
@@ -98,10 +144,32 @@ impl crate::LiteNetLib::Utils::NtpRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::LiteNetLib::Utils::NtpPacket,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+                2usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::Utils::NtpRequest,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (ntpServerAddress, onRequestComplete))?;
+        > = unsafe {
+            method.invoke_unchecked((), (ntpServerAddress, onRequestComplete))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppString_i32_Action_1_2(
@@ -115,10 +183,33 @@ impl crate::LiteNetLib::Utils::NtpRequest {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::LiteNetLib::Utils::NtpPacket,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+                3usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::LiteNetLib::Utils::NtpRequest,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (ntpServerAddress, port, onRequestComplete))?;
+        > = unsafe {
+            method.invoke_unchecked((), (ntpServerAddress, port, onRequestComplete))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_INetSocketListener_OnMessageReceived(
@@ -128,14 +219,26 @@ impl crate::LiteNetLib::Utils::NtpRequest {
         errorCode: crate::System::Net::Sockets::SocketError,
         remoteEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "LiteNetLib.INetSocketListener.OnMessageReceived",
-                (data, length, errorCode, remoteEndPoint),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    crate::System::Net::Sockets::SocketError,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("LiteNetLib.INetSocketListener.OnMessageReceived")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LiteNetLib.INetSocketListener.OnMessageReceived", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (data, length, errorCode, remoteEndPoint))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -155,11 +258,17 @@ impl crate::LiteNetLib::Utils::NtpRequest {
     pub fn Send(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Send")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Send", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -171,11 +280,30 @@ impl crate::LiteNetLib::Utils::NtpRequest {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (endPoint, onRequestComplete))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::LiteNetLib::Utils::NtpPacket,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (endPoint, onRequestComplete))
+        };
         Ok(__cordl_ret.into())
     }
 }

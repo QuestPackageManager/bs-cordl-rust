@@ -75,8 +75,34 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         >,
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddBindingOverrideJsonTo", (actions, binding, list, action))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::IInputActionCollection2,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("AddBindingOverrideJsonTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddBindingOverrideJsonTo", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actions, binding, list, action))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverride_InputActionMap_InputBinding4(
@@ -85,8 +111,26 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         >,
         bindingOverride: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverride", (actionMap, bindingOverride))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                i32,
+                2usize,
+            >("ApplyBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverride", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (actionMap, bindingOverride))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverride_InputActionMap_i32_InputBinding5(
@@ -96,8 +140,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         bindingIndex: i32,
         bindingOverride: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverride", (actionMap, bindingIndex, bindingOverride))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    i32,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverride", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actionMap, bindingIndex, bindingOverride))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverride_InputAction_Il2CppString_Il2CppString_Il2CppString0(
@@ -106,16 +169,54 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         group: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverride", (action, newPath, group, path))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, newPath, group, path))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverride_InputAction_InputBinding1(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         bindingOverride: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverride", (action, bindingOverride))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ApplyBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverride", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, bindingOverride))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverride_InputAction_i32_Il2CppString3(
@@ -123,8 +224,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         bindingIndex: i32,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverride", (action, bindingIndex, path))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverride", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, bindingIndex, path))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverride_InputAction_i32_InputBinding2(
@@ -132,8 +252,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         bindingIndex: i32,
         bindingOverride: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverride", (action, bindingIndex, bindingOverride))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    i32,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverride", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, bindingIndex, bindingOverride))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverrides(
@@ -146,16 +285,56 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverrides", (actionMap, overrides))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::InputSystem::InputBinding,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ApplyBindingOverrides")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverrides", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actionMap, overrides))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverridesOnMatchingControls_InputAction0(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverridesOnMatchingControls", (action, control))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                i32,
+                2usize,
+            >("ApplyBindingOverridesOnMatchingControls")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverridesOnMatchingControls", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (action, control)) };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyBindingOverridesOnMatchingControls_InputActionMap1(
@@ -164,8 +343,28 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         >,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyBindingOverridesOnMatchingControls", (actionMap, control))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                i32,
+                2usize,
+            >("ApplyBindingOverridesOnMatchingControls")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyBindingOverridesOnMatchingControls", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (actionMap, control))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputActionAsset_Expression_1_TValue_InputBinding2<
@@ -189,8 +388,34 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyParameterOverride", (asset, expr, value, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionAsset,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TObject, TValue>,
+                            >,
+                        >,
+                    >,
+                    TValue,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (asset, expr, value, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputActionAsset_Il2CppString_PrimitiveValue_InputBinding4(
@@ -201,8 +426,28 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyParameterOverride", (asset, name, value, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionAsset,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (asset, name, value, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputActionMap_Expression_1_TValue_InputBinding1<
@@ -226,8 +471,34 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyParameterOverride", (actionMap, expr, value, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TObject, TValue>,
+                            >,
+                        >,
+                    >,
+                    TValue,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actionMap, expr, value, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputActionMap_Il2CppString_PrimitiveValue_InputBinding3(
@@ -238,8 +509,28 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyParameterOverride", (actionMap, name, value, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actionMap, name, value, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputActionState_i32_ByRefMut_ByRefMut_InputActionRebindingExtensions_ParameterOverride7(
@@ -257,17 +548,45 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         parameterOverridesCount: quest_hook::libil2cpp::ByRefMut<i32>,
         parameterOverride: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ApplyParameterOverride",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    state,
-                    mapIndex,
-                    parameterOverrides,
-                    parameterOverridesCount,
-                    parameterOverride,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionState,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        state,
+                        mapIndex,
+                        parameterOverrides,
+                        parameterOverridesCount,
+                        parameterOverride,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputAction_Expression_1_TValue_InputBinding0<
@@ -289,8 +608,34 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyParameterOverride", (action, expr, value, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TObject, TValue>,
+                            >,
+                        >,
+                    >,
+                    TValue,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, expr, value, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputAction_Il2CppString_PrimitiveValue_InputBinding5(
@@ -299,8 +644,28 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyParameterOverride", (action, name, value, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, name, value, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyParameterOverride_InputAction_Il2CppString_PrimitiveValue_i32_6(
@@ -309,8 +674,28 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
         bindingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyParameterOverride", (action, name, value, bindingIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyParameterOverride", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, name, value, bindingIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeferBindingResolution() -> quest_hook::libil2cpp::Result<
@@ -318,10 +703,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper,
+                >,
+                0usize,
+            >("DeferBindingResolution")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeferBindingResolution", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeferBindingResolution", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ExtractParameterOverride<TObject, TValue>(
@@ -341,8 +739,31 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExtractParameterOverride", (expr, bindingMask, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TObject, TValue>,
+                            >,
+                        >,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                ),
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                3usize,
+            >("ExtractParameterOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExtractParameterOverride", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride = unsafe {
+            method.invoke_unchecked((), (expr, bindingMask, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingDisplayString_InputBinding_DisplayStringOptions_Il2CppString0(
@@ -352,10 +773,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("GetBindingDisplayString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingDisplayString", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingDisplayString", (action, options, group))?;
+        > = unsafe { method.invoke_unchecked((), (action, options, group)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingDisplayString_InputBinding_InputBinding_DisplayStringOptions1(
@@ -365,10 +803,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                    crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("GetBindingDisplayString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingDisplayString", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingDisplayString", (action, bindingMask, options))?;
+        > = unsafe { method.invoke_unchecked((), (action, bindingMask, options)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingDisplayString_i32_ByRefMut_ByRefMut_InputBinding_DisplayStringOptions3(
@@ -384,13 +839,39 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                5usize,
+            >("GetBindingDisplayString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingDisplayString", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetBindingDisplayString",
-                (action, bindingIndex, deviceLayoutName, controlPath, options),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (action, bindingIndex, deviceLayoutName, controlPath, options),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingDisplayString_i32_InputBinding_DisplayStringOptions2(
@@ -400,10 +881,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    i32,
+                    crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("GetBindingDisplayString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingDisplayString", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingDisplayString", (action, bindingIndex, options))?;
+        > = unsafe { method.invoke_unchecked((), (action, bindingIndex, options)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingForControl(
@@ -412,18 +910,54 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
+                2usize,
+            >("GetBindingForControl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingForControl", 2usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::InputBinding,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingForControl", (action, control))?;
+        > = unsafe { method.invoke_unchecked((), (action, control)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingIndexForControl(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingIndexForControl", (action, control))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                i32,
+                2usize,
+            >("GetBindingIndexForControl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingIndexForControl", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (action, control)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingIndex_InputActionMap_InputBinding1(
@@ -432,8 +966,26 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         >,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingIndex", (actionMap, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                i32,
+                2usize,
+            >("GetBindingIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingIndex", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (actionMap, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingIndex_InputAction_Il2CppString_Il2CppString2(
@@ -441,16 +993,53 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         group: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingIndex", (action, group, path))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                i32,
+                3usize,
+            >("GetBindingIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingIndex", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (action, group, path))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindingIndex_InputAction_InputBinding0(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBindingIndex", (action, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                i32,
+                2usize,
+            >("GetBindingIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindingIndex", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (action, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetParameterValue_Expression_1_InputBinding3<TObject, TValue>(
@@ -468,8 +1057,33 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::Nullable_1<TValue> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParameterValue", (action, expr, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TObject, TValue>,
+                            >,
+                        >,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                crate::System::Nullable_1<TValue>,
+                3usize,
+            >("GetParameterValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParameterValue", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::Nullable_1<TValue> = unsafe {
+            method.invoke_unchecked((), (action, expr, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetParameterValue_Il2CppString_InputBinding0(
@@ -481,10 +1095,29 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                >,
+                3usize,
+            >("GetParameterValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParameterValue", 3usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParameterValue", (action, name, bindingMask))?;
+        > = unsafe { method.invoke_unchecked((), (action, name, bindingMask)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetParameterValue_Il2CppString_i32_2(
@@ -496,10 +1129,29 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                >,
+                3usize,
+            >("GetParameterValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParameterValue", 3usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParameterValue", (action, name, bindingIndex))?;
+        > = unsafe { method.invoke_unchecked((), (action, name, bindingIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetParameterValue_InputActionRebindingExtensions_ParameterOverride1(
@@ -510,10 +1162,28 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                ),
+                crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                >,
+                2usize,
+            >("GetParameterValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParameterValue", 2usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParameterValue", (action, parameterOverride))?;
+        > = unsafe { method.invoke_unchecked((), (action, parameterOverride)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBindingOverridesFromJsonInternal(
@@ -522,8 +1192,26 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         >,
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadBindingOverridesFromJsonInternal", (actions, json))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::IInputActionCollection2,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("LoadBindingOverridesFromJsonInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBindingOverridesFromJsonInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actions, json))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBindingOverridesFromJson_IInputActionCollection2_0(
@@ -533,8 +1221,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         removeExisting: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadBindingOverridesFromJson", (actions, json, removeExisting))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::IInputActionCollection2,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("LoadBindingOverridesFromJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBindingOverridesFromJson", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actions, json, removeExisting))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBindingOverridesFromJson_InputAction1(
@@ -542,8 +1249,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         removeExisting: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadBindingOverridesFromJson", (action, json, removeExisting))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("LoadBindingOverridesFromJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBindingOverridesFromJson", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, json, removeExisting))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PerformInteractiveRebinding(
@@ -554,10 +1280,28 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                2usize,
+            >("PerformInteractiveRebinding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PerformInteractiveRebinding", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PerformInteractiveRebinding", (action, bindingIndex))?;
+        > = unsafe { method.invoke_unchecked((), (action, bindingIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveAllBindingOverrides_IInputActionCollection2_0(
@@ -565,15 +1309,45 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::IInputActionCollection2,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveAllBindingOverrides", (actions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::IInputActionCollection2,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveAllBindingOverrides")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveAllBindingOverrides", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveAllBindingOverrides_InputAction1(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveAllBindingOverrides", (action))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputAction,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveAllBindingOverrides")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveAllBindingOverrides", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveBindingOverride_InputActionMap_InputBinding2(
@@ -582,24 +1356,78 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         >,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveBindingOverride", (actionMap, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemoveBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveBindingOverride", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actionMap, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveBindingOverride_InputAction_InputBinding1(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveBindingOverride", (action, bindingMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemoveBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveBindingOverride", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, bindingMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveBindingOverride_InputAction_i32_0(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
         bindingIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveBindingOverride", (action, bindingIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputAction,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemoveBindingOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveBindingOverride", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (action, bindingIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveBindingOverrides(
@@ -612,8 +1440,30 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveBindingOverrides", (actionMap, overrides))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::InputSystem::InputBinding,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemoveBindingOverrides")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveBindingOverrides", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (actionMap, overrides))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SaveBindingOverridesAsJson_IInputActionCollection2_0(
@@ -623,10 +1473,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::IInputActionCollection2,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("SaveBindingOverridesAsJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SaveBindingOverridesAsJson", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SaveBindingOverridesAsJson", (actions))?;
+        > = unsafe { method.invoke_unchecked((), (actions)) };
         Ok(__cordl_ret.into())
     }
     pub fn SaveBindingOverridesAsJson_InputAction1(
@@ -634,10 +1497,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputAction,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("SaveBindingOverridesAsJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SaveBindingOverridesAsJson", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SaveBindingOverridesAsJson", (action))?;
+        > = unsafe { method.invoke_unchecked((), (action)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -707,21 +1583,33 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindin
     pub fn Acquire(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Acquire", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Acquire")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Acquire", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -734,11 +1622,17 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindin
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1005,11 +1899,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetEnumerator",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator,
+                0usize,
+            >("GetEnumerator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEnumerator", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IEnumerable_UnityEngine_InputSystem_InputActionRebindingExtensions_Parameter__GetEnumerator(
@@ -1021,15 +1925,31 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerator_1<
+                        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+                    >,
+                >,
+                0usize,
+            >(
+                "System.Collections.Generic.IEnumerable<UnityEngine.InputSystem.InputActionRebindingExtensions.Parameter>.GetEnumerator",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.Collections.Generic.IEnumerable<UnityEngine.InputSystem.InputActionRebindingExtensions.Parameter>.GetEnumerator",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerator_1<
                 crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
             >,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.Generic.IEnumerable<UnityEngine.InputSystem.InputActionRebindingExtensions.Parameter>.GetEnumerator",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -1037,13 +1957,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                0usize,
+            >("System.Collections.IEnumerable.GetEnumerator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.Collections.IEnumerable.GetEnumerator", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerable.GetEnumerator",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1054,11 +1982,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
         parameter: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
         mapIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (state, parameter, mapIndex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionState,
+                    >,
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (state, parameter, mapIndex))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1256,64 +2200,100 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindParameter(
         &mut self,
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "FindParameter",
-            (instance),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("FindParameter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindParameter", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (instance)) };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveNext",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("MoveNext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveNext", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn MoveToNextBinding(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveToNextBinding",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("MoveToNextBinding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveToNextBinding", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn MoveToNextInteraction(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveToNextInteraction",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("MoveToNextInteraction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveToNextInteraction", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn MoveToNextProcessor(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveToNextProcessor",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("MoveToNextProcessor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveToNextProcessor", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Reset",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Reset", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerator_get_Current(
@@ -1321,13 +2301,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                0usize,
+            >("System.Collections.IEnumerator.get_Current")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.Collections.IEnumerator.get_Current", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.Collections.IEnumerator.get_Current",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1338,11 +2326,27 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
         parameter: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
         mapIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (state, parameter, mapIndex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionState,
+                    >,
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (state, parameter, mapIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Current(
@@ -1350,11 +2354,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Current",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+                0usize,
+            >("get_Current")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Current", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1571,19 +2585,47 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                        >,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputBinding,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                >,
+                5usize,
+            >("Find")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Find", 5usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Find",
-                (
-                    overrides,
-                    overrideCount,
-                    binding,
-                    parameterName,
-                    objectRegistrationName,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        overrides,
+                        overrideCount,
+                        binding,
+                        parameterName,
+                        objectRegistrationName,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Find_InputActionMap_ByRefMut_Il2CppString0(
@@ -1602,13 +2644,38 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputActionMap,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputBinding,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                >,
+                4usize,
+            >("Find")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Find", 4usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Find",
-                (actionMap, binding, parameterName, objectRegistrationName),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (actionMap, binding, parameterName, objectRegistrationName),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PickMoreSpecificOne(
@@ -1623,10 +2690,30 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Nullable_1<
+                        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                    >,
+                    crate::System::Nullable_1<
+                        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                    >,
+                ),
+                crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
+                >,
+                2usize,
+            >("PickMoreSpecificOne")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickMoreSpecificOne", 2usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PickMoreSpecificOne", (first, second))?;
+        > = unsafe { method.invoke_unchecked((), (first, second)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_InputBinding_PrimitiveValue1(
@@ -1638,11 +2725,30 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (objectRegistrationName, parameterName, bindingMask, value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (objectRegistrationName, parameterName, bindingMask, value),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_InputBinding_PrimitiveValue0(
@@ -1651,21 +2757,45 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (parameterName, bindingMask, value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::InputBinding,
+                    crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parameterName, bindingMask, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_objectType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_objectType",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                0usize,
+            >("get_objectType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_objectType", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1828,51 +2958,91 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         score: f32,
         magnitude: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddCandidate", (control, score, magnitude))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    f32,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddCandidate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCandidate", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (control, score, magnitude))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Cancel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Cancel", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cancel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Cancel", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Complete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Complete", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Complete")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Complete", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Finalize", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePathForControl(
@@ -1881,12 +3051,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputControl,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GeneratePathForControl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GeneratePathForControl", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("GeneratePathForControl", (control))?;
+        > = unsafe { method.invoke_unchecked(self, (control)) };
         Ok(__cordl_ret.into())
     }
     pub fn HavePathMatch(
@@ -1900,28 +3081,65 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         >,
         pathCount: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HavePathMatch", (control, paths, pathCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    i32,
+                ),
+                bool,
+                3usize,
+            >("HavePathMatch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HavePathMatch", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (control, paths, pathCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HookOnAfterUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HookOnAfterUpdate", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("HookOnAfterUpdate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HookOnAfterUpdate", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HookOnEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HookOnEvent", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("HookOnEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HookOnEvent", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1934,11 +3152,17 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     pub fn OnAfterUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnAfterUpdate", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnAfterUpdate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnAfterUpdate", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnApplyBinding(
@@ -1956,22 +3180,46 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("OnApplyBinding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnApplyBinding", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("OnApplyBinding", (callback))?;
+        > = unsafe { method.invoke_unchecked(self, (callback)) };
         Ok(__cordl_ret.into())
     }
     pub fn OnCancel_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCancel", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnCancel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnCancel", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnCancel_Action_1_0(
@@ -1988,22 +3236,45 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("OnCancel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnCancel", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("OnCancel", (callback))?;
+        > = unsafe { method.invoke_unchecked(self, (callback)) };
         Ok(__cordl_ret.into())
     }
     pub fn OnComplete_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnComplete", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnComplete")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnComplete", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnComplete_Action_1_0(
@@ -2020,12 +3291,29 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("OnComplete")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnComplete", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("OnComplete", (callback))?;
+        > = unsafe { method.invoke_unchecked(self, (callback)) };
         Ok(__cordl_ret.into())
     }
     pub fn OnComputeScore(
@@ -2042,12 +3330,31 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Func_3<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::InputControl,
+                        >,
+                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                        f32,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("OnComputeScore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnComputeScore", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("OnComputeScore", (callback))?;
+        > = unsafe { method.invoke_unchecked(self, (callback)) };
         Ok(__cordl_ret.into())
     }
     pub fn OnEvent(
@@ -2055,11 +3362,26 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEvent", (eventPtr, device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputDevice,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("OnEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnEvent", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (eventPtr, device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnGeneratePath(
@@ -2075,12 +3397,30 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Func_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::InputControl,
+                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("OnGeneratePath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnGeneratePath", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("OnGeneratePath", (callback))?;
+        > = unsafe { method.invoke_unchecked(self, (callback)) };
         Ok(__cordl_ret.into())
     }
     pub fn OnMatchWaitForAnother(
@@ -2091,12 +3431,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("OnMatchWaitForAnother")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnMatchWaitForAnother", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("OnMatchWaitForAnother", (seconds))?;
+        > = unsafe { method.invoke_unchecked(self, (seconds)) };
         Ok(__cordl_ret.into())
     }
     pub fn OnPotentialMatch(
@@ -2113,23 +3464,52 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("OnPotentialMatch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnPotentialMatch", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("OnPotentialMatch", (callback))?;
+        > = unsafe { method.invoke_unchecked(self, (callback)) };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveCandidate(
         &mut self,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveCandidate", (control))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputControl,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveCandidate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveCandidate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (control))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
@@ -2139,32 +3519,63 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                0usize,
+            >("Reset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Reset", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("Reset", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ResetAfterMatchCompleted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ResetAfterMatchCompleted", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ResetAfterMatchCompleted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResetAfterMatchCompleted", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SortCandidatesByScore(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SortCandidatesByScore", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("SortCandidatesByScore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SortCandidatesByScore", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -2174,42 +3585,79 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                0usize,
+            >("Start")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Start", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("Start", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfRebindInProgress(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ThrowIfRebindInProgress", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ThrowIfRebindInProgress")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowIfRebindInProgress", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnhookOnAfterUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnhookOnAfterUpdate", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("UnhookOnAfterUpdate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnhookOnAfterUpdate", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnhookOnEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UnhookOnEvent", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UnhookOnEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnhookOnEvent", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithAction(
@@ -2220,12 +3668,25 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputAction,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithAction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithAction", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithAction", (action))?;
+        > = unsafe { method.invoke_unchecked(self, (action)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithBindingGroup(
@@ -2236,12 +3697,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithBindingGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithBindingGroup", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithBindingGroup", (group))?;
+        > = unsafe { method.invoke_unchecked(self, (group)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithBindingMask(
@@ -2254,12 +3726,25 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::InputBinding,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithBindingMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithBindingMask", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithBindingMask", (bindingMask))?;
+        > = unsafe { method.invoke_unchecked(self, (bindingMask)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithCancelingThrough_Il2CppString0(
@@ -2270,12 +3755,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithCancelingThrough")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithCancelingThrough", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithCancelingThrough", (binding))?;
+        > = unsafe { method.invoke_unchecked(self, (binding)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithCancelingThrough_InputControl1(
@@ -2286,12 +3782,25 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputControl,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithCancelingThrough")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithCancelingThrough", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithCancelingThrough", (control))?;
+        > = unsafe { method.invoke_unchecked(self, (control)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithControlsExcluding(
@@ -2302,12 +3811,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithControlsExcluding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithControlsExcluding", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithControlsExcluding", (path))?;
+        > = unsafe { method.invoke_unchecked(self, (path)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithControlsHavingToMatchPath(
@@ -2318,12 +3838,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithControlsHavingToMatchPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithControlsHavingToMatchPath", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithControlsHavingToMatchPath", (path))?;
+        > = unsafe { method.invoke_unchecked(self, (path)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithExpectedControlType_2<TControl>(
@@ -2337,12 +3868,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                0usize,
+            >("WithExpectedControlType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithExpectedControlType", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithExpectedControlType", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn WithExpectedControlType_Il2CppString0(
@@ -2353,12 +3895,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithExpectedControlType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithExpectedControlType", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithExpectedControlType", (layoutName))?;
+        > = unsafe { method.invoke_unchecked(self, (layoutName)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithExpectedControlType_Type1(
@@ -2369,12 +3922,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithExpectedControlType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithExpectedControlType", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithExpectedControlType", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithMagnitudeHavingToBeGreaterThan(
@@ -2385,12 +3949,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithMagnitudeHavingToBeGreaterThan")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithMagnitudeHavingToBeGreaterThan", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithMagnitudeHavingToBeGreaterThan", (magnitude))?;
+        > = unsafe { method.invoke_unchecked(self, (magnitude)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithMatchingEventsBeingSuppressed(
@@ -2401,12 +3976,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithMatchingEventsBeingSuppressed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithMatchingEventsBeingSuppressed", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithMatchingEventsBeingSuppressed", (value))?;
+        > = unsafe { method.invoke_unchecked(self, (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithRebindAddingNewBinding(
@@ -2417,12 +4003,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithRebindAddingNewBinding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithRebindAddingNewBinding", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithRebindAddingNewBinding", (group))?;
+        > = unsafe { method.invoke_unchecked(self, (group)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithTargetBinding(
@@ -2433,12 +4030,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithTargetBinding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithTargetBinding", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithTargetBinding", (bindingIndex))?;
+        > = unsafe { method.invoke_unchecked(self, (bindingIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithTimeout(
@@ -2449,12 +4057,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                1usize,
+            >("WithTimeout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithTimeout", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithTimeout", (timeInSeconds))?;
+        > = unsafe { method.invoke_unchecked(self, (timeInSeconds)) };
         Ok(__cordl_ret.into())
     }
     pub fn WithoutGeneralizingPathOfSelectedControl(
@@ -2464,12 +4083,23 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                0usize,
+            >("WithoutGeneralizingPathOfSelectedControl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithoutGeneralizingPathOfSelectedControl", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithoutGeneralizingPathOfSelectedControl", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn WithoutIgnoringNoisyControls(
@@ -2479,22 +4109,39 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                0usize,
+            >("WithoutIgnoringNoisyControls")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithoutIgnoringNoisyControls", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        > = __cordl_object.invoke("WithoutIgnoringNoisyControls", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_action(
@@ -2502,12 +4149,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+                0usize,
+            >("get_action")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_action", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputAction,
-        > = __cordl_object.invoke("get_action", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_bindingMask(
@@ -2515,19 +4171,33 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputBinding>,
+                0usize,
+            >("get_bindingMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_bindingMask", 0usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::InputBinding,
-        > = __cordl_object.invoke("get_bindingMask", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_canceled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canceled", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_canceled")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_canceled", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_candidates(
@@ -2537,19 +4207,37 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::InputControlList_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                >,
+                0usize,
+            >("get_candidates")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_candidates", 0usize
+                )
+            });
         let __cordl_ret: crate::UnityEngine::InputSystem::InputControlList_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        > = __cordl_object.invoke("get_candidates", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_completed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_completed", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_completed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_completed", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_expectedControlType(
@@ -2557,12 +4245,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_expectedControlType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_expectedControlType", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("get_expectedControlType", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_magnitudes(
@@ -2570,12 +4267,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<f32>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<f32>,
+                0usize,
+            >("get_magnitudes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_magnitudes", 0usize
+                )
+            });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             f32,
-        > = __cordl_object.invoke("get_magnitudes", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_scores(
@@ -2583,12 +4289,21 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<f32>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<f32>,
+                0usize,
+            >("get_scores")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_scores", 0usize
+                )
+            });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             f32,
-        > = __cordl_object.invoke("get_scores", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedControl(
@@ -2596,33 +4311,57 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                0usize,
+            >("get_selectedControl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_selectedControl", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
-        > = __cordl_object.invoke("get_selectedControl", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_startTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f64 = __cordl_object.invoke("get_startTime", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f64, 0usize>("get_startTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_startTime", 0usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_started(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_started", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_started")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_started", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_timeout(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_timeout", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_timeout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_timeout", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

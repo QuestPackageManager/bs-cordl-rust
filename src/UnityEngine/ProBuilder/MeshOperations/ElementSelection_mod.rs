@@ -47,10 +47,21 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+                1usize,
+            >("EdgeRingNext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EdgeRingNext", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::WingedEdge,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EdgeRingNext", (edge))?;
+        > = unsafe { method.invoke_unchecked((), (edge)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindHoles_List_1_HashSet_1_1(
@@ -75,6 +86,39 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::WingedEdge,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::WingedEdge,
+                                >,
+                            >,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("FindHoles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindHoles", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
@@ -85,8 +129,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindHoles", (wings, common))?;
+        > = unsafe { method.invoke_unchecked((), (wings, common)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindHoles_ProBuilderMesh_IEnumerable_1_0(
@@ -105,6 +148,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::ProBuilder::Edge,
+                            >,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("FindHoles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindHoles", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
@@ -113,8 +183,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindHoles", (mesh, indexes))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, indexes)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindNextEdgeInHole(
@@ -123,10 +192,26 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+                2usize,
+            >("FindNextEdgeInHole")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindNextEdgeInHole", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::WingedEdge,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindNextEdgeInHole", (wing, common))?;
+        > = unsafe { method.invoke_unchecked((), (wing, common)) };
         Ok(__cordl_ret.into())
     }
     pub fn FloodSelection(
@@ -144,12 +229,39 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                3usize,
+            >("FloodSelection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FloodSelection", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FloodSelection", (mesh, faces, maxAngleDiff))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces, maxAngleDiff)) };
         Ok(__cordl_ret.into())
     }
     pub fn Flood_ProBuilderMesh_WingedEdge_Vector3_f32_HashSet_1_1(
@@ -163,8 +275,37 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Flood", (pb, wing, wingNrm, maxAngle, selection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    crate::UnityEngine::Vector3,
+                    f32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("Flood")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Flood", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (pb, wing, wingNrm, maxAngle, selection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Flood_WingedEdge_HashSet_1_0(
@@ -175,8 +316,32 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Flood", (wing, selection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Flood")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Flood", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (wing, selection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetConnectedEdges(
@@ -187,10 +352,30 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::UnityEngine::ProBuilder::Edge,
+                    >,
+                >,
+                2usize,
+            >("GetConnectedEdges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetConnectedEdges", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetConnectedEdges", (mesh, indexes))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, indexes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeLoop(
@@ -206,8 +391,37 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeLoop", (mesh, edges, _cordl_loop))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::ProBuilder::Edge,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("GetEdgeLoop")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeLoop", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (mesh, edges, _cordl_loop))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeLoopInternal(
@@ -219,8 +433,31 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeLoopInternal", (start, startIndex, used))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            crate::UnityEngine::ProBuilder::EdgeLookup,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("GetEdgeLoopInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeLoopInternal", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (start, startIndex, used))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeLoopInternalIterative(
@@ -232,8 +469,31 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeLoopInternalIterative", (start, edge, used))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    crate::UnityEngine::ProBuilder::Edge,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            crate::UnityEngine::ProBuilder::EdgeLookup,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetEdgeLoopInternalIterative")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeLoopInternalIterative", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (start, edge, used))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeLoopIterative(
@@ -249,8 +509,37 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeLoopIterative", (mesh, edges, _cordl_loop))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::ProBuilder::Edge,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("GetEdgeLoopIterative")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeLoopIterative", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (mesh, edges, _cordl_loop))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeRing(
@@ -267,12 +556,36 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        crate::UnityEngine::ProBuilder::Edge,
+                    >,
+                >,
+                2usize,
+            >("GetEdgeRing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeRing", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeRing", (pb, edges))?;
+        > = unsafe { method.invoke_unchecked((), (pb, edges)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeRingIterative(
@@ -289,12 +602,36 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        crate::UnityEngine::ProBuilder::Edge,
+                    >,
+                >,
+                2usize,
+            >("GetEdgeRingIterative")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeRingIterative", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeRingIterative", (pb, edges))?;
+        > = unsafe { method.invoke_unchecked((), (pb, edges)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceLoop_List_1_Face1(
@@ -312,12 +649,37 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::WingedEdge,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                3usize,
+            >("GetFaceLoop")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFaceLoop", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceLoop", (wings, face, ring))?;
+        > = unsafe { method.invoke_unchecked((), (wings, face, ring)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceLoop_ProBuilderMesh_Il2CppArray0(
@@ -335,12 +697,39 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                3usize,
+            >("GetFaceLoop")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFaceLoop", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceLoop", (mesh, faces, ring))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces, ring)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceRingAndLoop(
@@ -357,12 +746,38 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                2usize,
+            >("GetFaceRingAndLoop")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFaceRingAndLoop", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceRingAndLoop", (mesh, faces))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNeighborFaces_Edge1(
@@ -378,6 +793,32 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::ProBuilder::Edge,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("GetNeighborFaces")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNeighborFaces", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::ProBuilder::SimpleTuple_2<
@@ -385,8 +826,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
                     crate::UnityEngine::ProBuilder::Edge,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNeighborFaces", (mesh, edge))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, edge)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNeighborFaces_Edge_List_1_0(
@@ -398,8 +838,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNeighborFaces", (mesh, edge, neighborFaces))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::ProBuilder::Edge,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetNeighborFaces")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNeighborFaces", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, edge, neighborFaces))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNeighborFaces_Il2CppArray2(
@@ -412,12 +877,32 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                2usize,
+            >("GetNeighborFaces")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNeighborFaces", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNeighborFaces", (mesh, indexes))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, indexes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPerimeterEdges_IEnumerable_1_0(
@@ -434,12 +919,38 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        crate::UnityEngine::ProBuilder::Edge,
+                    >,
+                >,
+                2usize,
+            >("GetPerimeterEdges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPerimeterEdges", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::ProBuilder::Edge,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPerimeterEdges", (mesh, faces))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPerimeterEdges_IList_1_1(
@@ -452,10 +963,30 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                2usize,
+            >("GetPerimeterEdges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPerimeterEdges", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPerimeterEdges", (mesh, edges))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, edges)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPerimeterFaces(
@@ -472,12 +1003,38 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                2usize,
+            >("GetPerimeterFaces")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPerimeterFaces", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPerimeterFaces", (mesh, faces))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPerimeterVertices(
@@ -489,10 +1046,31 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                3usize,
+            >("GetPerimeterVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPerimeterVertices", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPerimeterVertices", (mesh, indexes, universal_edges_all))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, indexes, universal_edges_all)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpokes(
@@ -506,12 +1084,35 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::WingedEdge,
+                        >,
+                    >,
+                >,
+                3usize,
+            >("GetSpokes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSpokes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSpokes", (wing, sharedIndex, allowHoles))?;
+        > = unsafe { method.invoke_unchecked((), (wing, sharedIndex, allowHoles)) };
         Ok(__cordl_ret.into())
     }
     pub fn GrowSelection(
@@ -529,12 +1130,39 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                3usize,
+            >("GrowSelection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GrowSelection", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GrowSelection", (mesh, faces, maxAngleDiff))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces, maxAngleDiff)) };
         Ok(__cordl_ret.into())
     }
     pub fn NextSpoke(
@@ -544,10 +1172,27 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ElementSelection {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+                3usize,
+            >("NextSpoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NextSpoke", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::WingedEdge,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NextSpoke", (wing, pivot, opp))?;
+        > = unsafe { method.invoke_unchecked((), (wing, pivot, opp)) };
         Ok(__cordl_ret.into())
     }
 }

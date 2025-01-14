@@ -40,21 +40,34 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRDriverManager {
 #[cfg(feature = "OVR+OpenVR+CVRDriverManager")]
 impl crate::OVR::OpenVR::CVRDriverManager {
     pub fn GetDriverCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetDriverCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), u32, 0usize>("GetDriverCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDriverCount", 0usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDriverHandle(
         &mut self,
         pchDriverName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u64 = __cordl_object
-            .invoke("GetDriverHandle", (pchDriverName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                u64,
+                1usize,
+            >("GetDriverHandle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDriverHandle", 1usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked(self, (pchDriverName)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDriverName(
@@ -63,11 +76,25 @@ impl crate::OVR::OpenVR::CVRDriverManager {
         pchValue: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unBufferSize: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("GetDriverName", (nDriver, pchValue, unBufferSize))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                ),
+                u32,
+                3usize,
+            >("GetDriverName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDriverName", 3usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked(self, (nDriver, pchValue, unBufferSize))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -83,11 +110,21 @@ impl crate::OVR::OpenVR::CVRDriverManager {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pInterface))
+        };
         Ok(__cordl_ret.into())
     }
 }

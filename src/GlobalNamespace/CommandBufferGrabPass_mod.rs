@@ -51,25 +51,51 @@ impl crate::GlobalNamespace::CommandBufferGrabPass {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::CommandBufferOwners,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("CamerasDict")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CamerasDict", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
             >,
-        > = __cordl_object.invoke("CamerasDict", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn CommandBufferCameraEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::CameraEvent> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::CameraEvent = __cordl_object
-            .invoke("CommandBufferCameraEvent", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Rendering::CameraEvent,
+                0usize,
+            >("CommandBufferCameraEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CommandBufferCameraEvent", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::CameraEvent = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCommandBuffer(
@@ -78,12 +104,21 @@ impl crate::GlobalNamespace::CommandBufferGrabPass {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+                1usize,
+            >("CreateCommandBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateCommandBuffer", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Rendering::CommandBuffer,
-        > = __cordl_object.invoke("CreateCommandBuffer", (camera))?;
+        > = unsafe { method.invoke_unchecked(self, (camera)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -96,11 +131,17 @@ impl crate::GlobalNamespace::CommandBufferGrabPass {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

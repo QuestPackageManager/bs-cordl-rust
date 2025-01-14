@@ -47,12 +47,23 @@ impl crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                0usize,
+            >("AsCached")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsCached", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("AsCached", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn AsSingle(
@@ -62,12 +73,23 @@ impl crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                0usize,
+            >("AsSingle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsSingle", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("AsSingle", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn AsTransient(
@@ -77,12 +99,23 @@ impl crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                0usize,
+            >("AsTransient")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsTransient", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("AsTransient", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -98,11 +131,21 @@ impl crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder {
         &mut self,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bindInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bindInfo))
+        };
         Ok(__cordl_ret.into())
     }
 }

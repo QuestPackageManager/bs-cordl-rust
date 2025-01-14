@@ -52,11 +52,26 @@ impl crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent = __cordl_object
-            .invoke("CreateEvent", (category, eventType, frame, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
+                    i32,
+                    i32,
+                ),
+                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                4usize,
+            >("CreateEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateEvent", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent = unsafe {
+            method.invoke_unchecked(self, (category, eventType, frame, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -69,11 +84,17 @@ impl crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

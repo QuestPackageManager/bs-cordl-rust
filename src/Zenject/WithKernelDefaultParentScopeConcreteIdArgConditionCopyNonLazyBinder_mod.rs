@@ -70,12 +70,23 @@ impl crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLa
             crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                0usize,
+            >("WithKernel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithKernel", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("WithKernel", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn WithKernel_1<TKernel>(
@@ -89,12 +100,23 @@ impl crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLa
         TKernel: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                0usize,
+            >("WithKernel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithKernel", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("WithKernel", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -104,11 +126,26 @@ impl crate::Zenject::WithKernelDefaultParentScopeConcreteIdArgConditionCopyNonLa
         >,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (subContainerBindInfo, bindInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::SubContainerCreatorBindInfo,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (subContainerBindInfo, bindInfo))
+        };
         Ok(__cordl_ret.into())
     }
 }

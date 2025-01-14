@@ -46,8 +46,25 @@ impl crate::UnityEngine::Timeline::TimelineCreateUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateAnimationClipForTrack", (name, track, isLegacy))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                3usize,
+            >("CreateAnimationClipForTrack")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateAnimationClipForTrack", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip> = unsafe {
+            method.invoke_unchecked((), (name, track, isLegacy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateUniqueActorName(
@@ -60,34 +77,102 @@ impl crate::UnityEngine::Timeline::TimelineCreateUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ScriptableObject,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GenerateUniqueActorName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateUniqueActorName", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateUniqueActorName", (tracks, name))?;
+        > = unsafe { method.invoke_unchecked((), (tracks, name)) };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveAssetFromObject(
         childAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         masterAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveAssetFromObject", (childAsset, masterAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemoveAssetFromObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveAssetFromObject", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (childAsset, masterAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SaveAssetIntoObject(
         childAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         masterAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SaveAssetIntoObject", (childAsset, masterAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SaveAssetIntoObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SaveAssetIntoObject", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (childAsset, masterAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateParentTrack(
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         childType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValidateParentTrack", (parent, childType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                bool,
+                2usize,
+            >("ValidateParentTrack")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateParentTrack", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (parent, childType))
+        };
         Ok(__cordl_ret.into())
     }
 }

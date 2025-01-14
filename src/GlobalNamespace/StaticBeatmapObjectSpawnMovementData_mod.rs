@@ -50,20 +50,51 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
         noteLinesCount: i32,
         noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Get2DNoteOffset", (noteLineIndex, noteLinesCount, noteLineLayer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, crate::GlobalNamespace::NoteLineLayer),
+                crate::UnityEngine::Vector2,
+                3usize,
+            >("Get2DNoteOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Get2DNoteOffset", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            method.invoke_unchecked((), (noteLineIndex, noteLinesCount, noteLineLayer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LineYPosForLineLayer(
         lineLayer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LineYPosForLineLayer", (lineLayer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::NoteLineLayer),
+                f32,
+                1usize,
+            >("LineYPosForLineLayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LineYPosForLineLayer", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (lineLayer)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_layerHeight() -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_layerHeight", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), f32, 0usize>("get_layerHeight")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_layerHeight", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

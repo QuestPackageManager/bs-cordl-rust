@@ -52,12 +52,29 @@ impl crate::System::ComponentModel::ITypedList {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::ComponentModel::PropertyDescriptor,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                1usize,
+            >("GetItemProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetItemProperties", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = __cordl_object.invoke("GetItemProperties", (listAccessors))?;
+        > = unsafe { method.invoke_unchecked(self, (listAccessors)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetListName(
@@ -72,12 +89,27 @@ impl crate::System::ComponentModel::ITypedList {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::ComponentModel::PropertyDescriptor,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetListName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetListName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("GetListName", (listAccessors))?;
+        > = unsafe { method.invoke_unchecked(self, (listAccessors)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

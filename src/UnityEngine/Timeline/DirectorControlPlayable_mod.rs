@@ -56,12 +56,32 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Playables::PlayableGraph,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Playables::PlayableDirector,
+                    >,
+                ),
+                crate::UnityEngine::Playables::ScriptPlayable_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Timeline::DirectorControlPlayable,
+                    >,
+                >,
+                2usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 2usize
+                )
+            });
         let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::Timeline::DirectorControlPlayable,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (graph, director))?;
+        > = unsafe { method.invoke_unchecked((), (graph, director)) };
         Ok(__cordl_ret.into())
     }
     pub fn DetectDiscontinuity(
@@ -69,21 +89,43 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("DetectDiscontinuity", (playable, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::Playable,
+                    crate::UnityEngine::Playables::FrameData,
+                ),
+                bool,
+                2usize,
+            >("DetectDiscontinuity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DetectDiscontinuity", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (playable, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DetectOutOfSync(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("DetectOutOfSync", (playable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::Playable),
+                bool,
+                1usize,
+            >("DetectOutOfSync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DetectOutOfSync", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (playable)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -98,11 +140,24 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBehaviourPause", (playable, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::Playable,
+                    crate::UnityEngine::Playables::FrameData,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("OnBehaviourPause")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnBehaviourPause", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (playable, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnBehaviourPlay(
@@ -110,22 +165,45 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBehaviourPlay", (playable, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::Playable,
+                    crate::UnityEngine::Playables::FrameData,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("OnBehaviourPlay")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnBehaviourPlay", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (playable, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnPlayableDestroy(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPlayableDestroy", (playable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::Playable),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnPlayableDestroy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnPlayableDestroy", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (playable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareFrame(
@@ -133,11 +211,24 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         playable: crate::UnityEngine::Playables::Playable,
         info: crate::UnityEngine::Playables::FrameData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrepareFrame", (playable, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::Playable,
+                    crate::UnityEngine::Playables::FrameData,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PrepareFrame")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PrepareFrame", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (playable, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessFrame(
@@ -146,22 +237,42 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         info: crate::UnityEngine::Playables::FrameData,
         playerData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessFrame", (playable, info, playerData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::Playable,
+                    crate::UnityEngine::Playables::FrameData,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProcessFrame")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessFrame", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (playable, info, playerData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SyncSpeed(
         &mut self,
         speed: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SyncSpeed", (speed))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>("SyncSpeed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SyncSpeed", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (speed))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SyncStart(
@@ -169,11 +280,21 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SyncStart", (graph, _cordl_time))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::PlayableGraph, f64),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SyncStart")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SyncStart", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (graph, _cordl_time))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SyncStop(
@@ -181,32 +302,58 @@ impl crate::UnityEngine::Timeline::DirectorControlPlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         _cordl_time: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SyncStop", (graph, _cordl_time))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::PlayableGraph, f64),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SyncStop")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SyncStop", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (graph, _cordl_time))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateTime(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateTime", (playable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::Playable),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UpdateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateTime", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (playable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

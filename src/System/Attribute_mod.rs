@@ -42,18 +42,43 @@ impl crate::System::Attribute {
         thisValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         thatValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AreFieldValuesEqual", (thisValue, thatValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                bool,
+                2usize,
+            >("AreFieldValuesEqual")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AreFieldValuesEqual", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (thisValue, thatValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttribute_Assembly2(
@@ -62,8 +87,24 @@ impl crate::System::Attribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttribute", (element, attributeType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                2usize,
+            >("GetCustomAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttribute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = unsafe {
+            method.invoke_unchecked((), (element, attributeType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttribute_Assembly__cordl_bool3(
@@ -73,8 +114,25 @@ impl crate::System::Attribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttribute", (element, attributeType, inherit))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                3usize,
+            >("GetCustomAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttribute", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = unsafe {
+            method.invoke_unchecked((), (element, attributeType, inherit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttribute_MemberInfo0(
@@ -83,8 +141,24 @@ impl crate::System::Attribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttribute", (element, attributeType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                2usize,
+            >("GetCustomAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttribute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = unsafe {
+            method.invoke_unchecked((), (element, attributeType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttribute_MemberInfo__cordl_bool1(
@@ -94,8 +168,25 @@ impl crate::System::Attribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttribute", (element, attributeType, inherit))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                3usize,
+            >("GetCustomAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttribute", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = unsafe {
+            method.invoke_unchecked((), (element, attributeType, inherit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_Assembly10(
@@ -107,12 +198,27 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                1usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element))?;
+        > = unsafe { method.invoke_unchecked((), (element)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_Assembly_Type8(
@@ -125,12 +231,30 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                2usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, attributeType))?;
+        > = unsafe { method.invoke_unchecked((), (element, attributeType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_Assembly_Type__cordl_bool9(
@@ -144,12 +268,31 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                3usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, attributeType, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, attributeType, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_Assembly__cordl_bool11(
@@ -162,12 +305,27 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>, bool),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                2usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo2(
@@ -179,12 +337,27 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                1usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element))?;
+        > = unsafe { method.invoke_unchecked((), (element)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo_Type0(
@@ -197,12 +370,30 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                2usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, _cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (element, _cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo_Type__cordl_bool1(
@@ -216,12 +407,31 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                3usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, _cordl_type, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, _cordl_type, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_MemberInfo__cordl_bool3(
@@ -234,12 +444,27 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>, bool),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                2usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_Module_Type__cordl_bool7(
@@ -253,12 +478,31 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                3usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, attributeType, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, attributeType, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_Module__cordl_bool6(
@@ -271,12 +515,27 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>, bool),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                2usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_ParameterInfo_Type__cordl_bool4(
@@ -290,12 +549,31 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                3usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, attributeType, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, attributeType, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomAttributes_ParameterInfo__cordl_bool5(
@@ -308,19 +586,42 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                2usize,
+            >("GetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCustomAttributes", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCustomAttributes", (element, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetCustomAttributes_EventInfo1(
@@ -334,12 +635,31 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                3usize,
+            >("InternalGetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalGetCustomAttributes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalGetCustomAttributes", (element, _cordl_type, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, _cordl_type, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetCustomAttributes_PropertyInfo0(
@@ -353,12 +673,31 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                3usize,
+            >("InternalGetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalGetCustomAttributes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalGetCustomAttributes", (element, _cordl_type, inherit))?;
+        > = unsafe { method.invoke_unchecked((), (element, _cordl_type, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn InternalIsDefined_EventInfo1(
@@ -366,8 +705,25 @@ impl crate::System::Attribute {
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalIsDefined", (element, attributeType, inherit))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("InternalIsDefined")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalIsDefined", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (element, attributeType, inherit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalIsDefined_PropertyInfo0(
@@ -375,8 +731,25 @@ impl crate::System::Attribute {
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalIsDefined", (element, attributeType, inherit))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("InternalIsDefined")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalIsDefined", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (element, attributeType, inherit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalParamGetCustomAttributes(
@@ -390,30 +763,67 @@ impl crate::System::Attribute {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >,
+                3usize,
+            >("InternalParamGetCustomAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalParamGetCustomAttributes", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Attribute>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InternalParamGetCustomAttributes",
-                (parameter, attributeType, inherit),
-            )?;
+        > = unsafe { method.invoke_unchecked((), (parameter, attributeType, inherit)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsDefaultAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsDefaultAttribute", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("IsDefaultAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsDefaultAttribute", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn IsDefined_MemberInfo_Type0(
         element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsDefined", (element, attributeType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                bool,
+                2usize,
+            >("IsDefined")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsDefined", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (element, attributeType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsDefined__cordl_bool1(
@@ -421,18 +831,44 @@ impl crate::System::Attribute {
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsDefined", (element, attributeType, inherit))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("IsDefined")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsDefined", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (element, attributeType, inherit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Match(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Match", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Match")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Match", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -445,11 +881,17 @@ impl crate::System::Attribute {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_TypeId(
@@ -457,12 +899,21 @@ impl crate::System::Attribute {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                0usize,
+            >("get_TypeId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_TypeId", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_TypeId", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

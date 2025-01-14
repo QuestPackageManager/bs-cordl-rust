@@ -39,8 +39,15 @@ impl std::ops::DerefMut for crate::System::Text::Normalization {
 #[cfg(feature = "System+Text+Normalization")]
 impl crate::System::Text::Normalization {
     pub fn CharMapIdx(cp: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CharMapIdx", (cp))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("CharMapIdx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CharMapIdx", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cp)) };
         Ok(__cordl_ret.into())
     }
     pub fn CombineHangul(
@@ -48,8 +55,23 @@ impl crate::System::Text::Normalization {
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         current: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineHangul", (sb, s, current))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("CombineHangul")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineHangul", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (sb, s, current)) };
         Ok(__cordl_ret.into())
     }
     pub fn Combine_Il2CppString0(
@@ -59,8 +81,25 @@ impl crate::System::Text::Normalization {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Combine", (source, start, checkType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                3usize,
+            >("Combine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Combine", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
+            method.invoke_unchecked((), (source, start, checkType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Combine_StringBuilder1(
@@ -68,8 +107,25 @@ impl crate::System::Text::Normalization {
         i: i32,
         checkType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Combine", (sb, i, checkType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Combine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Combine", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, i, checkType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Compose(
@@ -78,10 +134,21 @@ impl crate::System::Text::Normalization {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("Compose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compose", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Compose", (source, checkType))?;
+        > = unsafe { method.invoke_unchecked((), (source, checkType)) };
         Ok(__cordl_ret.into())
     }
     pub fn DecomposeChar(
@@ -96,8 +163,34 @@ impl crate::System::Text::Normalization {
         checkType: i32,
         start: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DecomposeChar", (sb, buf, s, i, checkType, start))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<i32>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("DecomposeChar")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DecomposeChar", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, buf, s, i, checkType, start))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Decompose_ByRefMut_i32_1(
@@ -107,8 +200,27 @@ impl crate::System::Text::Normalization {
         >,
         checkType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Decompose", (source, sb, checkType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Decompose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decompose", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (source, sb, checkType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Decompose_i32_0(
@@ -117,10 +229,21 @@ impl crate::System::Text::Normalization {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("Decompose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decompose", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Decompose", (source, checkType))?;
+        > = unsafe { method.invoke_unchecked((), (source, checkType)) };
         Ok(__cordl_ret.into())
     }
     pub fn Fetch(
@@ -128,8 +251,23 @@ impl crate::System::Text::Normalization {
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Fetch", (sb, s, i))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("Fetch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Fetch", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (sb, s, i)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCanonical(
@@ -138,8 +276,26 @@ impl crate::System::Text::Normalization {
         bufIdx: i32,
         checkType: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCanonical", (c, buf, bufIdx, checkType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("GetCanonical")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCanonical", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (c, buf, bufIdx, checkType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCanonicalHangul(
@@ -147,27 +303,63 @@ impl crate::System::Text::Normalization {
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         bufIdx: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCanonicalHangul", (s, buf, bufIdx))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("GetCanonicalHangul")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCanonicalHangul", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (s, buf, bufIdx)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCombiningClass(c: i32) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCombiningClass", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), u8, 1usize>("GetCombiningClass")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCombiningClass", 1usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (c)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrimaryCompositeFromMapIndex(
         src: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPrimaryCompositeFromMapIndex", (src))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("GetPrimaryCompositeFromMapIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPrimaryCompositeFromMapIndex", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (src)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPrimaryCompositeHelperIndex(
         cp: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPrimaryCompositeHelperIndex", (cp))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("GetPrimaryCompositeHelperIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPrimaryCompositeHelperIndex", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (cp)) };
         Ok(__cordl_ret.into())
     }
     pub fn Normalize_NormalizationForm0(
@@ -176,10 +368,24 @@ impl crate::System::Text::Normalization {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Text::NormalizationForm,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("Normalize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Normalize", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Normalize", (source, normalizationForm))?;
+        > = unsafe { method.invoke_unchecked((), (source, normalizationForm)) };
         Ok(__cordl_ret.into())
     }
     pub fn Normalize_i32_1(
@@ -188,23 +394,54 @@ impl crate::System::Text::Normalization {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("Normalize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Normalize", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Normalize", (source, _cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (source, _cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn PropValue(cp: i32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PropValue", (cp))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), u32, 1usize>("PropValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PropValue", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (cp)) };
         Ok(__cordl_ret.into())
     }
     pub fn QuickCheck(
         c: char,
         _cordl_type: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::Text::NormalizationCheck> {
-        let __cordl_ret: crate::System::Text::NormalizationCheck = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("QuickCheck", (c, _cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (char, i32),
+                crate::System::Text::NormalizationCheck,
+                2usize,
+            >("QuickCheck")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "QuickCheck", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::Text::NormalizationCheck = unsafe {
+            method.invoke_unchecked((), (c, _cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReorderCanonical(
@@ -214,8 +451,27 @@ impl crate::System::Text::Normalization {
         >,
         start: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReorderCanonical", (src, sb, start))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ReorderCanonical")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReorderCanonical", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (src, sb, start))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryCompose(
@@ -223,8 +479,17 @@ impl crate::System::Text::Normalization {
         starter: i32,
         candidate: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryCompose", (i, starter, candidate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32, i32), i32, 3usize>("TryCompose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryCompose", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (i, starter, candidate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryComposeWithPreviousStarter(
@@ -232,8 +497,23 @@ impl crate::System::Text::Normalization {
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         current: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryComposeWithPreviousStarter", (sb, s, current))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("TryComposeWithPreviousStarter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryComposeWithPreviousStarter", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (sb, s, current)) };
         Ok(__cordl_ret.into())
     }
     pub fn load_normalization_resource(
@@ -244,18 +524,39 @@ impl crate::System::Text::Normalization {
         mapIdxToComposite: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
         combiningClass: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "load_normalization_resource",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    props,
-                    mappedChars,
-                    charMapIndex,
-                    helperIndex,
-                    mapIdxToComposite,
-                    combiningClass,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("load_normalization_resource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "load_normalization_resource", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        props,
+                        mappedChars,
+                        charMapIndex,
+                        helperIndex,
+                        mapIdxToComposite,
+                        combiningClass,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

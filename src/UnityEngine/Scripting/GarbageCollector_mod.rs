@@ -44,22 +44,61 @@ impl crate::UnityEngine::Scripting::GarbageCollector {
     pub fn GetMode() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Scripting::GarbageCollector_Mode,
     > {
-        let __cordl_ret: crate::UnityEngine::Scripting::GarbageCollector_Mode = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::Scripting::GarbageCollector_Mode,
+                0usize,
+            >("GetMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMode", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Scripting::GarbageCollector_Mode = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMode(
         mode: crate::UnityEngine::Scripting::GarbageCollector_Mode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetMode", (mode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Scripting::GarbageCollector_Mode),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMode", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_GCMode(
         value: crate::UnityEngine::Scripting::GarbageCollector_Mode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_GCMode", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Scripting::GarbageCollector_Mode),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_GCMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_GCMode", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

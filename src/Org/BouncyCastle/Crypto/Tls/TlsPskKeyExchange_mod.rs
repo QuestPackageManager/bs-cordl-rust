@@ -90,11 +90,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateClientKeyExchange", (output))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GenerateClientKeyExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateClientKeyExchange", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (output))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateOtherSecret(
@@ -103,12 +113,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("GenerateOtherSecret")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateOtherSecret", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("GenerateOtherSecret", (pskLength))?;
+        > = unsafe { method.invoke_unchecked(self, (pskLength)) };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePremasterSecret(
@@ -116,12 +135,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                0usize,
+            >("GeneratePremasterSecret")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GeneratePremasterSecret", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("GeneratePremasterSecret", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateServerKeyExchange(
@@ -129,12 +157,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                0usize,
+            >("GenerateServerKeyExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateServerKeyExchange", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("GenerateServerKeyExchange", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New_DHParameters_Il2CppArray0(
@@ -227,22 +264,44 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
             crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessClientCredentials", (clientCredentials))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ProcessClientCredentials")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessClientCredentials", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clientCredentials))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessClientKeyExchange(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessClientKeyExchange", (input))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ProcessClientKeyExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessClientKeyExchange", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (input))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessServerCertificate(
@@ -251,11 +310,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
             crate::Org::BouncyCastle::Crypto::Tls::Certificate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessServerCertificate", (serverCertificate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ProcessServerCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessServerCertificate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (serverCertificate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessServerCredentials(
@@ -264,32 +335,64 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
             crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessServerCredentials", (serverCredentials))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Tls::TlsCredentials,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ProcessServerCredentials")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessServerCredentials", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (serverCredentials))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessServerKeyExchange(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessServerKeyExchange", (input))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ProcessServerKeyExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessServerKeyExchange", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (input))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SkipServerCredentials(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SkipServerCredentials", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("SkipServerCredentials")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SkipServerCredentials", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateCertificateRequest(
@@ -298,11 +401,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
             crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateCertificateRequest", (certificateRequest))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Tls::CertificateRequest,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ValidateCertificateRequest")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateCertificateRequest", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (certificateRequest))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateRsaPublicKey(
@@ -315,12 +430,25 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
+                >,
+                1usize,
+            >("ValidateRsaPublicKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateRsaPublicKey", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters,
-        > = __cordl_object.invoke("ValidateRsaPublicKey", (key))?;
+        > = unsafe { method.invoke_unchecked(self, (key)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DHParameters_Il2CppArray0(
@@ -346,23 +474,49 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    keyExchange,
-                    supportedSignatureAlgorithms,
-                    pskIdentity,
-                    pskIdentityManager,
-                    dhParameters,
-                    namedCurves,
-                    clientECPointFormats,
-                    serverECPointFormats,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        keyExchange,
+                        supportedSignatureAlgorithms,
+                        pskIdentity,
+                        pskIdentityManager,
+                        dhParameters,
+                        namedCurves,
+                        clientECPointFormats,
+                        serverECPointFormats,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_TlsDHVerifier_DHParameters_Il2CppArray1(
@@ -391,34 +545,67 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPskKeyExchange {
             quest_hook::libil2cpp::Il2CppArray<u8>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    keyExchange,
-                    supportedSignatureAlgorithms,
-                    pskIdentity,
-                    pskIdentityManager,
-                    dhVerifier,
-                    dhParameters,
-                    namedCurves,
-                    clientECPointFormats,
-                    serverECPointFormats,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentity,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::TlsPskIdentityManager,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                9usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        keyExchange,
+                        supportedSignatureAlgorithms,
+                        pskIdentity,
+                        pskIdentityManager,
+                        dhVerifier,
+                        dhParameters,
+                        namedCurves,
+                        clientECPointFormats,
+                        serverECPointFormats,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_RequiresServerKeyExchange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_RequiresServerKeyExchange", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_RequiresServerKeyExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_RequiresServerKeyExchange", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

@@ -44,8 +44,25 @@ impl crate::BGLib::DotnetExtension::IntegerExtensions {
         uNumber: quest_hook::libil2cpp::ByRefMut<u32>,
         isNegative: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToUInt", (number, uNumber, isNegative))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ToUInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToUInt", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (number, uNumber, isNegative))
+        };
         Ok(__cordl_ret.into())
     }
 }

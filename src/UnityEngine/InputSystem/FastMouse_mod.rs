@@ -48,13 +48,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousebackButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousebackButton", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousebackButton", (kButtonLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseclickCount(
@@ -66,13 +81,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::IntegerControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMouseclickCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouseclickCount", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMouseclickCount", (kIntegerLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedelta(
@@ -84,12 +114,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::DeltaControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedelta")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedelta", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousedelta", (kDeltaLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltadown(
@@ -99,13 +145,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedeltadown")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedeltadown", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousedeltadown", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltaleft(
@@ -115,13 +176,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedeltaleft")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedeltaleft", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousedeltaleft", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltaright(
@@ -131,13 +207,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedeltaright")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedeltaright", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousedeltaright", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltaup(
@@ -147,12 +238,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedeltaup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedeltaup", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousedeltaup", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltax(
@@ -162,12 +269,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedeltax")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedeltax", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousedeltax", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedeltay(
@@ -177,12 +300,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedeltay")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedeltay", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousedeltay", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousedisplayIndex(
@@ -194,13 +333,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::IntegerControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousedisplayIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousedisplayIndex", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousedisplayIndex", (kIntegerLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kIntegerLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseforwardButton(
@@ -212,13 +366,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMouseforwardButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouseforwardButton", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMouseforwardButton", (kButtonLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseleftButton(
@@ -230,13 +399,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMouseleftButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouseleftButton", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMouseleftButton", (kButtonLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousemiddleButton(
@@ -248,13 +432,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousemiddleButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousemiddleButton", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousemiddleButton", (kButtonLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepointerId(
@@ -266,13 +465,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::IntegerControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousepointerId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousepointerId", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::IntegerControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousepointerId", (kDigitalLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kDigitalLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseposition(
@@ -284,13 +498,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::Vector2Control,
+                >,
+                2usize,
+            >("Initialize_ctrlMouseposition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouseposition", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMouseposition", (kVector2Layout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepositionx(
@@ -300,13 +529,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousepositionx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousepositionx", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousepositionx", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepositiony(
@@ -316,13 +560,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousepositiony")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousepositiony", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousepositiony", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepress(
@@ -334,12 +593,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousepress")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousepress", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousepress", (kButtonLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousepressure(
@@ -349,13 +624,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousepressure")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousepressure", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousepressure", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseradius(
@@ -367,13 +657,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::Vector2Control,
+                >,
+                2usize,
+            >("Initialize_ctrlMouseradius")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouseradius", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::Vector2Control,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMouseradius", (kVector2Layout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kVector2Layout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseradiusx(
@@ -383,12 +688,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMouseradiusx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouseradiusx", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object.invoke("Initialize_ctrlMouseradiusx", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouseradiusy(
@@ -398,12 +719,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMouseradiusy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouseradiusy", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object.invoke("Initialize_ctrlMouseradiusy", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMouserightButton(
@@ -415,13 +752,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::ButtonControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMouserightButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMouserightButton", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::ButtonControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMouserightButton", (kButtonLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kButtonLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescroll(
@@ -433,12 +785,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::DeltaControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousescroll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousescroll", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::DeltaControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousescroll", (kDeltaLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kDeltaLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrolldown(
@@ -448,13 +816,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousescrolldown")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousescrolldown", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousescrolldown", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollleft(
@@ -464,13 +847,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousescrollleft")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousescrollleft", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousescrollleft", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollright(
@@ -480,13 +878,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousescrollright")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousescrollright", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousescrollright", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollup(
@@ -496,13 +909,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousescrollup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousescrollup", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object
-            .invoke("Initialize_ctrlMousescrollup", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrollx(
@@ -512,12 +940,28 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousescrollx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousescrollx", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousescrollx", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize_ctrlMousescrolly(
@@ -527,20 +971,52 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Controls::AxisControl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Controls::AxisControl,
+                >,
+                2usize,
+            >("Initialize_ctrlMousescrolly")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize_ctrlMousescrolly", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
-        > = __cordl_object.invoke("Initialize_ctrlMousescrolly", (kAxisLayout, parent))?;
+        > = unsafe { method.invoke_unchecked(self, (kAxisLayout, parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn MergeForward(
         currentEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MergeForward", (currentEventPtr, nextEventPtr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                ),
+                bool,
+                2usize,
+            >("MergeForward")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MergeForward", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (currentEventPtr, nextEventPtr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -553,22 +1029,38 @@ impl crate::UnityEngine::InputSystem::FastMouse {
     pub fn OnNextUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnNextUpdate", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnNextUpdate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnNextUpdate", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnStateEvent(
         &mut self,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnStateEvent", (eventPtr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::InputSystem::LowLevel::InputEventPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnStateEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnStateEvent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (eventPtr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_IEventMerger_MergeForward(
@@ -576,51 +1068,90 @@ impl crate::UnityEngine::InputSystem::FastMouse {
         currentEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "UnityEngine.InputSystem.LowLevel.IEventMerger.MergeForward",
-                (currentEventPtr, nextEventPtr),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                ),
+                bool,
+                2usize,
+            >("UnityEngine.InputSystem.LowLevel.IEventMerger.MergeForward")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnityEngine.InputSystem.LowLevel.IEventMerger.MergeForward",
+                    2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (currentEventPtr, nextEventPtr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnNextUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnNextUpdate",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >(
+                "UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnNextUpdate",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnNextUpdate",
+                    0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent(
         &mut self,
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::InputSystem::LowLevel::InputEventPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(
                 "UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnStateEvent",
-                (eventPtr),
-            )?;
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnStateEvent",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (eventPtr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

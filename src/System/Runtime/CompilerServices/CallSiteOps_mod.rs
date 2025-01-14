@@ -49,8 +49,26 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddRule", (site, rule))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                    >,
+                    T,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddRule")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddRule", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (site, rule))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Bind<T>(
@@ -70,8 +88,35 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Bind", (binder, site, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::CallSiteBinder,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                T,
+                3usize,
+            >("Bind")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Bind", 3usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (binder, site, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearMatch(
@@ -79,8 +124,23 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             crate::System::Runtime::CompilerServices::CallSite,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearMatch", (site))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ClearMatch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearMatch", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (site))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMatchmaker<T>(
@@ -96,10 +156,25 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                >,
+                1usize,
+            >("CreateMatchmaker")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateMatchmaker", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateMatchmaker", (site))?;
+        > = unsafe { method.invoke_unchecked((), (site)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCachedRules<T>(
@@ -113,10 +188,23 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                1usize,
+            >("GetCachedRules")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCachedRules", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCachedRules", (cache))?;
+        > = unsafe { method.invoke_unchecked((), (cache)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetMatch(
@@ -124,8 +212,21 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             crate::System::Runtime::CompilerServices::CallSite,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMatch", (site))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite,
+                >),
+                bool,
+                1usize,
+            >("GetMatch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMatch", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (site)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRuleCache<T>(
@@ -141,10 +242,25 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+                >,
+                1usize,
+            >("GetRuleCache")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRuleCache", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::RuleCache_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRuleCache", (site))?;
+        > = unsafe { method.invoke_unchecked((), (site)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRules<T>(
@@ -158,9 +274,23 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                1usize,
+            >("GetRules")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRules", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetRules", (site))?;
+        > = unsafe { method.invoke_unchecked((), (site)) };
         Ok(__cordl_ret.into())
     }
     pub fn MoveRule<T>(
@@ -174,8 +304,27 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MoveRule", (cache, rule, i))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+                    >,
+                    T,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("MoveRule")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveRule", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (cache, rule, i))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNotMatched(
@@ -183,8 +332,21 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             crate::System::Runtime::CompilerServices::CallSite,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetNotMatched", (site))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite,
+                >),
+                bool,
+                1usize,
+            >("SetNotMatched")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNotMatched", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (site)) };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateRules<T>(
@@ -197,8 +359,26 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UpdateRules", (_cordl_this, matched))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UpdateRules")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateRules", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_this, matched))
+        };
         Ok(__cordl_ret.into())
     }
 }

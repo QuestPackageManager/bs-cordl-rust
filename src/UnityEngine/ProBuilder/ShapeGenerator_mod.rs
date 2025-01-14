@@ -45,10 +45,26 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::ShapeType,
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                2usize,
+            >("CreateShape")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateShape", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateShape", (shape, pivotType))?;
+        > = unsafe { method.invoke_unchecked((), (shape, pivotType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateArch(
@@ -66,25 +82,53 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
+                    i32,
+                    bool,
+                    bool,
+                    bool,
+                    bool,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                11usize,
+            >("GenerateArch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateArch", 11usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateArch",
-                (
-                    pivotType,
-                    angle,
-                    radius,
-                    width,
-                    depth,
-                    radialCuts,
-                    insideFaces,
-                    outsideFaces,
-                    frontFaces,
-                    backFaces,
-                    endCaps,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        pivotType,
+                        angle,
+                        radius,
+                        width,
+                        depth,
+                        radialCuts,
+                        insideFaces,
+                        outsideFaces,
+                        frontFaces,
+                        backFaces,
+                        endCaps,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateCone(
@@ -95,10 +139,25 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                4usize,
+            >("GenerateCone")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateCone", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateCone", (pivotType, radius, height, subdivAxis))?;
+        > = unsafe {
+            method.invoke_unchecked((), (pivotType, radius, height, subdivAxis))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateCube(
@@ -107,10 +166,26 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    crate::UnityEngine::Vector3,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                2usize,
+            >("GenerateCube")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateCube", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateCube", (pivotType, _cordl_size))?;
+        > = unsafe { method.invoke_unchecked((), (pivotType, _cordl_size)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateCurvedStair(
@@ -124,21 +199,45 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                7usize,
+            >("GenerateCurvedStair")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateCurvedStair", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateCurvedStair",
-                (
-                    pivotType,
-                    stairWidth,
-                    height,
-                    innerRadius,
-                    circumference,
-                    steps,
-                    buildSides,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        pivotType,
+                        stairWidth,
+                        height,
+                        innerRadius,
+                        circumference,
+                        steps,
+                        buildSides,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateCylinder(
@@ -151,13 +250,29 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::PivotLocation, i32, f32, f32, i32, i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                6usize,
+            >("GenerateCylinder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateCylinder", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateCylinder",
-                (pivotType, axisDivisions, radius, height, heightCuts, smoothing),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (pivotType, axisDivisions, radius, height, heightCuts, smoothing),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDoor(
@@ -170,13 +285,29 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, f32, f32, f32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                6usize,
+            >("GenerateDoor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDoor", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateDoor",
-                (pivotType, totalWidth, totalHeight, ledgeHeight, legWidth, depth),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (pivotType, totalWidth, totalHeight, ledgeHeight, legWidth, depth),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateIcosahedron(
@@ -188,13 +319,29 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::PivotLocation, f32, i32, bool, bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                5usize,
+            >("GenerateIcosahedron")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateIcosahedron", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateIcosahedron",
-                (pivotType, radius, subdivisions, weldVertices, manualUvs),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (pivotType, radius, subdivisions, weldVertices, manualUvs),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePipe(
@@ -207,13 +354,29 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::PivotLocation, f32, f32, f32, i32, i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                6usize,
+            >("GeneratePipe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GeneratePipe", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GeneratePipe",
-                (pivotType, radius, height, thickness, subdivAxis, subdivHeight),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (pivotType, radius, height, thickness, subdivAxis, subdivHeight),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePlane(
@@ -226,13 +389,36 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    f32,
+                    f32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::ProBuilder::Axis,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                6usize,
+            >("GeneratePlane")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GeneratePlane", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GeneratePlane",
-                (pivotType, width, height, widthCuts, heightCuts, axis),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (pivotType, width, height, widthCuts, heightCuts, axis),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GeneratePrism(
@@ -241,10 +427,26 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    crate::UnityEngine::Vector3,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                2usize,
+            >("GeneratePrism")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GeneratePrism", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GeneratePrism", (pivotType, _cordl_size))?;
+        > = unsafe { method.invoke_unchecked((), (pivotType, _cordl_size)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateStair_Vector3_i32__cordl_bool0(
@@ -255,10 +457,30 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    crate::UnityEngine::Vector3,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                4usize,
+            >("GenerateStair")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateStair", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateStair", (pivotType, _cordl_size, steps, buildSides))?;
+        > = unsafe {
+            method.invoke_unchecked((), (pivotType, _cordl_size, steps, buildSides))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateStair_i32_f32_f32_f32__cordl_bool__cordl_bool__cordl_bool1(
@@ -273,22 +495,47 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    i32,
+                    f32,
+                    f32,
+                    f32,
+                    bool,
+                    bool,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                8usize,
+            >("GenerateStair")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateStair", 8usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateStair",
-                (
-                    pivotType,
-                    steps,
-                    width,
-                    height,
-                    depth,
-                    sidesGoToFloor,
-                    generateBack,
-                    platformsOnly,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        pivotType,
+                        steps,
+                        width,
+                        height,
+                        depth,
+                        sidesGoToFloor,
+                        generateBack,
+                        platformsOnly,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateTorus(
@@ -304,23 +551,49 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::PivotLocation,
+                    i32,
+                    i32,
+                    f32,
+                    f32,
+                    bool,
+                    f32,
+                    f32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                9usize,
+            >("GenerateTorus")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateTorus", 9usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateTorus",
-                (
-                    pivotType,
-                    rows,
-                    columns,
-                    innerRadius,
-                    outerRadius,
-                    smooth,
-                    horizontalCircumference,
-                    verticalCircumference,
-                    manualUvs,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        pivotType,
+                        rows,
+                        columns,
+                        innerRadius,
+                        outerRadius,
+                        smooth,
+                        horizontalCircumference,
+                        verticalCircumference,
+                        manualUvs,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCirclePoints(
@@ -334,13 +607,29 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, f32, f32, crate::UnityEngine::Quaternion, f32),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >,
+                5usize,
+            >("GetCirclePoints")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCirclePoints", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetCirclePoints",
-                (segments, radius, circumference, rotation, offset),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (segments, radius, circumference, rotation, offset),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SubdivideIcosahedron(
@@ -353,10 +642,28 @@ impl crate::UnityEngine::ProBuilder::ShapeGenerator {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >,
+                2usize,
+            >("SubdivideIcosahedron")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SubdivideIcosahedron", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SubdivideIcosahedron", (vertices, radius))?;
+        > = unsafe { method.invoke_unchecked((), (vertices, radius)) };
         Ok(__cordl_ret.into())
     }
 }

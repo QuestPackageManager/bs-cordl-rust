@@ -45,11 +45,17 @@ impl crate::GlobalNamespace::OVRComposition {
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Cleanup", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Cleanup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Cleanup", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompositionMethod(
@@ -57,22 +63,42 @@ impl crate::GlobalNamespace::OVRComposition {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRManager_CompositionMethod,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = __cordl_object
-            .invoke("CompositionMethod", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::OVRManager_CompositionMethod,
+                0usize,
+            >("CompositionMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompositionMethod", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeCameraTrackingSpacePose(
         &mut self,
         extrinsics: crate::GlobalNamespace::OVRPlugin_CameraExtrinsics,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRPose = __cordl_object
-            .invoke("ComputeCameraTrackingSpacePose", (extrinsics))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::OVRPlugin_CameraExtrinsics),
+                crate::GlobalNamespace::OVRPose,
+                1usize,
+            >("ComputeCameraTrackingSpacePose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ComputeCameraTrackingSpacePose", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = unsafe {
+            method.invoke_unchecked(self, (extrinsics))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeCameraWorldSpacePose(
@@ -80,11 +106,24 @@ impl crate::GlobalNamespace::OVRComposition {
         extrinsics: crate::GlobalNamespace::OVRPlugin_CameraExtrinsics,
         mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRPose = __cordl_object
-            .invoke("ComputeCameraWorldSpacePose", (extrinsics, mainCamera))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::GlobalNamespace::OVRPlugin_CameraExtrinsics,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                ),
+                crate::GlobalNamespace::OVRPose,
+                2usize,
+            >("ComputeCameraWorldSpacePose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ComputeCameraWorldSpacePose", 2usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = unsafe {
+            method.invoke_unchecked(self, (extrinsics, mainCamera))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -103,11 +142,17 @@ impl crate::GlobalNamespace::OVRComposition {
     pub fn RecenterPose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecenterPose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RecenterPose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecenterPose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RefreshCameraRig(
@@ -115,11 +160,24 @@ impl crate::GlobalNamespace::OVRComposition {
         parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RefreshCameraRig", (parentObject, mainCamera))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RefreshCameraRig")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RefreshCameraRig", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parentObject, mainCamera))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
@@ -131,11 +189,32 @@ impl crate::GlobalNamespace::OVRComposition {
         >,
         trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", (gameObject, mainCamera, configuration, trackingOrigin))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                    >,
+                    crate::GlobalNamespace::OVRManager_TrackingOrigin,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("Update")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Update", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (gameObject, mainCamera, configuration, trackingOrigin),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -146,11 +225,27 @@ impl crate::GlobalNamespace::OVRComposition {
             crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (parentObject, mainCamera, configuration))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parentObject, mainCamera, configuration))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -45,8 +45,21 @@ impl crate::TMPro::TMP_MaterialManager {
     pub fn AddFallbackMaterialReference(
         targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddFallbackMaterialReference", (targetMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddFallbackMaterialReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddFallbackMaterialReference", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (targetMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddMaskingMaterial(
@@ -54,30 +67,89 @@ impl crate::TMPro::TMP_MaterialManager {
         stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         stencilID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddMaskingMaterial", (baseMaterial, stencilMaterial, stencilID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddMaskingMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddMaskingMaterial", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (baseMaterial, stencilMaterial, stencilID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CleanupFallbackMaterials() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CleanupFallbackMaterials", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("CleanupFallbackMaterials")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CleanupFallbackMaterials", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearMaterials() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearMaterials", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ClearMaterials")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearMaterials", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyMaterialPresetProperties(
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         destination: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyMaterialPresetProperties", (source, destination))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CopyMaterialPresetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyMaterialPresetProperties", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (source, destination))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindRootSortOverrideCanvas(
@@ -85,8 +157,21 @@ impl crate::TMPro::TMP_MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindRootSortOverrideCanvas", (start))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                1usize,
+            >("FindRootSortOverrideCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindRootSortOverrideCanvas", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = unsafe {
+            method.invoke_unchecked((), (start))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBaseMaterial(
@@ -94,8 +179,21 @@ impl crate::TMPro::TMP_MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBaseMaterial", (stencilMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                1usize,
+            >("GetBaseMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBaseMaterial", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (stencilMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFallbackMaterial_Material1(
@@ -104,8 +202,24 @@ impl crate::TMPro::TMP_MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFallbackMaterial", (sourceMaterial, targetMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                2usize,
+            >("GetFallbackMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFallbackMaterial", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (sourceMaterial, targetMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFallbackMaterial_TMP_FontAsset_i32_0(
@@ -115,8 +229,25 @@ impl crate::TMPro::TMP_MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFallbackMaterial", (fontAsset, sourceMaterial, atlasIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                3usize,
+            >("GetFallbackMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFallbackMaterial", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (fontAsset, sourceMaterial, atlasIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMaterialForRendering(
@@ -125,15 +256,42 @@ impl crate::TMPro::TMP_MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMaterialForRendering", (graphic, baseMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                2usize,
+            >("GetMaterialForRendering")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMaterialForRendering", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (graphic, baseMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStencilID(
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStencilID", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                i32,
+                1usize,
+            >("GetStencilID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStencilID", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStencilMaterial(
@@ -142,48 +300,135 @@ impl crate::TMPro::TMP_MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStencilMaterial", (baseMaterial, stencilID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                2usize,
+            >("GetStencilMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStencilMaterial", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (baseMaterial, stencilID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnPreRender() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnPreRender", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnPreRender")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnPreRender", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseBaseMaterial(
         baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReleaseBaseMaterial", (baseMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReleaseBaseMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleaseBaseMaterial", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (baseMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseFallbackMaterial(
         fallbackMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReleaseFallbackMaterial", (fallbackMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReleaseFallbackMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleaseFallbackMaterial", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (fallbackMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseStencilMaterial(
         stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReleaseStencilMaterial", (stencilMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReleaseStencilMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleaseStencilMaterial", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (stencilMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveFallbackMaterialReference(
         targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveFallbackMaterialReference", (targetMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveFallbackMaterialReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveFallbackMaterialReference", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (targetMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveStencilMaterial(
         stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveStencilMaterial", (stencilMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveStencilMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveStencilMaterial", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (stencilMaterial))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStencil(
@@ -192,8 +437,21 @@ impl crate::TMPro::TMP_MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStencil", (material, stencilID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                2usize,
+            >("SetStencil")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStencil", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (material, stencilID))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -262,11 +520,17 @@ impl crate::TMPro::TMP_MaterialManager_FallbackMaterial {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -335,11 +599,17 @@ impl crate::TMPro::TMP_MaterialManager_MaskingMaterial {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -198,8 +198,21 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("BuildLayoutNamespace", (senderId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                crate::UnityEngine::InputSystem::Utilities::InternedString,
+                1usize,
+            >("BuildLayoutNamespace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildLayoutNamespace", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = unsafe {
+            method.invoke_unchecked((), (senderId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeData<TData>(
@@ -209,8 +222,19 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TData = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeserializeData", (data))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                TData,
+                1usize,
+            >("DeserializeData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeserializeData", 1usize
+                )
+            });
+        let __cordl_ret: TData = unsafe { method.invoke_unchecked((), (data)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindLocalDeviceId(
@@ -218,22 +242,32 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         remoteDeviceId: i32,
         senderIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("FindLocalDeviceId", (remoteDeviceId, senderIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, i32), i32, 2usize>("FindLocalDeviceId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindLocalDeviceId", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (remoteDeviceId, senderIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindOrCreateSenderRecord(
         &mut self,
         senderId: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("FindOrCreateSenderRecord", (senderId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), i32, 1usize>("FindOrCreateSenderRecord")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindOrCreateSenderRecord", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (senderId)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -252,53 +286,101 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         &mut self,
         participantId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveRemoteDevices", (participantId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveRemoteDevices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveRemoteDevices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (participantId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Send(
         &mut self,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Send", (msg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::InputSystem::InputRemoting_Message),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Send")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Send", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (msg))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendAllDevices(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendAllDevices", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SendAllDevices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendAllDevices", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendAllGeneratedLayouts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendAllGeneratedLayouts", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("SendAllGeneratedLayouts")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendAllGeneratedLayouts", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendDevice(
         &mut self,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendDevice", (device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputDevice,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SendDevice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendDevice", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendDeviceChange(
@@ -306,11 +388,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         change: crate::UnityEngine::InputSystem::InputDeviceChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendDeviceChange", (device, change))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputDevice,
+                    >,
+                    crate::UnityEngine::InputSystem::InputDeviceChange,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SendDeviceChange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendDeviceChange", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (device, change))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendEvent(
@@ -318,32 +415,67 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendEvent", (eventPtr, device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputDevice,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SendEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendEvent", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (eventPtr, device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendInitialMessages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendInitialMessages", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("SendInitialMessages")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendInitialMessages", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendLayout(
         &mut self,
         layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendLayout", (layoutName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SendLayout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendLayout", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (layoutName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendLayoutChange(
@@ -351,11 +483,24 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         layout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         change: crate::UnityEngine::InputSystem::InputControlLayoutChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendLayoutChange", (layout, change))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::InputControlLayoutChange,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SendLayoutChange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendLayoutChange", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (layout, change))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SerializeData<TData>(
@@ -367,30 +512,53 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (TData),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("SerializeData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SerializeData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SerializeData", (data))?;
+        > = unsafe { method.invoke_unchecked((), (data)) };
         Ok(__cordl_ret.into())
     }
     pub fn StartSending(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StartSending", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StartSending")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartSending", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StopSending(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StopSending", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("StopSending")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StopSending", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Subscribe(
@@ -403,52 +571,95 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = __cordl_object
-            .invoke("Subscribe", (observer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::IObserver_1<
+                        crate::UnityEngine::InputSystem::InputRemoting_Message,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+                1usize,
+            >("Subscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
+            method.invoke_unchecked(self, (observer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnCompleted(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >(
+                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnCompleted",
+                    0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnError(
         &mut self,
         error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnError",
-                (error),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Exception>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnError")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnError",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (error))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_IObserver_UnityEngine_InputSystem_InputRemoting_Message__OnNext(
         &mut self,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext",
-                (msg),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::InputSystem::InputRemoting_Message),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.IObserver<UnityEngine.InputSystem.InputRemoting.Message>.OnNext",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (msg))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDeviceByRemoteId(
@@ -458,13 +669,21 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                2usize,
+            >("TryGetDeviceByRemoteId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetDeviceByRemoteId", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputDevice,
-        > = __cordl_object
-            .invoke("TryGetDeviceByRemoteId", (remoteDeviceId, senderIndex))?;
+        > = unsafe { method.invoke_unchecked(self, (remoteDeviceId, senderIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -474,11 +693,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         >,
         startSendingOnConnect: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (manager, startSendingOnConnect))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputManager,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (manager, startSendingOnConnect))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_manager(
@@ -486,30 +720,50 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputManager>,
+                0usize,
+            >("get_manager")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_manager", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputManager,
-        > = __cordl_object.invoke("get_manager", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_sending(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_sending", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_sending")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_sending", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_sending(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_sending", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_sending")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_sending", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -620,8 +874,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputDevice,
+                >),
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+                1usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
+            method.invoke_unchecked((), (device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
@@ -630,8 +899,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
         >,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver, msg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputRemoting,
+                    >,
+                    crate::UnityEngine::InputSystem::InputRemoting_Message,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver, msg))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -691,8 +978,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
             crate::UnityEngine::InputSystem::InputRemoting,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputRemoting,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -754,8 +1056,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
         >,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver, msg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputRemoting,
+                    >,
+                    crate::UnityEngine::InputSystem::InputRemoting_Message,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver, msg))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1114,8 +1434,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputDevice,
+                >),
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+                1usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
+            method.invoke_unchecked((), (device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
@@ -1124,8 +1459,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
         >,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver, msg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputRemoting,
+                    >,
+                    crate::UnityEngine::InputSystem::InputRemoting_Message,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver, msg))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1186,8 +1539,21 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (events, eventCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+                2usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
+            method.invoke_unchecked((), (events, eventCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateResetEvent(
@@ -1196,8 +1562,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateResetEvent", (device, isHardReset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputDevice,
+                    >,
+                    bool,
+                ),
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+                2usize,
+            >("CreateResetEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateResetEvent", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
+            method.invoke_unchecked((), (device, isHardReset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateStateEvent(
@@ -1205,8 +1589,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateStateEvent", (device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputDevice,
+                >),
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+                1usize,
+            >("CreateStateEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateStateEvent", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
+            method.invoke_unchecked((), (device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
@@ -1215,8 +1614,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
         >,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver, msg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputRemoting,
+                    >,
+                    crate::UnityEngine::InputSystem::InputRemoting_Message,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver, msg))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1281,10 +1698,28 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputRemoting,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::System::Nullable_1<
+                    crate::UnityEngine::InputSystem::InputRemoting_Message,
+                >,
+                2usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 2usize
+                )
+            });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::InputSystem::InputRemoting_Message,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (sender, layoutName))?;
+        > = unsafe { method.invoke_unchecked((), (sender, layoutName)) };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
@@ -1293,8 +1728,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
         >,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver, msg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputRemoting,
+                    >,
+                    crate::UnityEngine::InputSystem::InputRemoting_Message,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver, msg))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1573,8 +2026,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputDevice,
+                >),
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+                1usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = unsafe {
+            method.invoke_unchecked((), (device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Process(
@@ -1583,8 +2051,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
         >,
         msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver, msg))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputRemoting,
+                    >,
+                    crate::UnityEngine::InputSystem::InputRemoting_Message,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver, msg))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1645,8 +2131,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
             crate::UnityEngine::InputSystem::InputRemoting,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputRemoting,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1707,8 +2208,23 @@ impl crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
             crate::UnityEngine::InputSystem::InputRemoting,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Process", (receiver))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputRemoting,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Process")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Process", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (receiver))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1772,11 +2288,17 @@ impl crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1789,11 +2311,17 @@ impl crate::UnityEngine::InputSystem::InputRemoting_Subscriber {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

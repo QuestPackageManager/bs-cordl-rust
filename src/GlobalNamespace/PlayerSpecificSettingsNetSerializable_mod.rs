@@ -51,11 +51,21 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Deserialize", (reader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Deserialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Deserialize", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -107,21 +117,37 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (writer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Serialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Serialize", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (writer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString_Il2CppString__cordl_bool__cordl_bool_f32_f32_Color_Color_Color_Color_Color_Color_Color1(
@@ -140,28 +166,53 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
         environmentColor0Boost: crate::UnityEngine::Color,
         environmentColor1Boost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    userId,
-                    userName,
-                    leftHanded,
-                    automaticPlayerHeight,
-                    playerHeight,
-                    headPosToPlayerHeightOffset,
-                    saberAColor,
-                    saberBColor,
-                    obstaclesColor,
-                    environmentColor0,
-                    environmentColor1,
-                    environmentColor0Boost,
-                    environmentColor1Boost,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    bool,
+                    f32,
+                    f32,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                13usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 13usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        userId,
+                        userName,
+                        leftHanded,
+                        automaticPlayerHeight,
+                        playerHeight,
+                        headPosToPlayerHeightOffset,
+                        saberAColor,
+                        saberBColor,
+                        obstaclesColor,
+                        environmentColor0,
+                        environmentColor1,
+                        environmentColor0Boost,
+                        environmentColor1Boost,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

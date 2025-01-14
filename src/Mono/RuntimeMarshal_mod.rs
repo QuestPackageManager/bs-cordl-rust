@@ -39,8 +39,15 @@ impl std::ops::DerefMut for crate::Mono::RuntimeMarshal {
 #[cfg(feature = "Mono+RuntimeMarshal")]
 impl crate::Mono::RuntimeMarshal {
     pub fn AsciHexDigitValue(c: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsciHexDigitValue", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("AsciHexDigitValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsciHexDigitValue", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (c)) };
         Ok(__cordl_ret.into())
     }
     pub fn DecodeBlobArray(
@@ -48,33 +55,84 @@ impl crate::Mono::RuntimeMarshal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("DecodeBlobArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DecodeBlobArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DecodeBlobArray", (ptr))?;
+        > = unsafe { method.invoke_unchecked((), (ptr)) };
         Ok(__cordl_ret.into())
     }
     pub fn DecodeBlobSize(
         in_ptr: crate::System::IntPtr,
         out_ptr: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DecodeBlobSize", (in_ptr, out_ptr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                ),
+                i32,
+                2usize,
+            >("DecodeBlobSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DecodeBlobSize", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (in_ptr, out_ptr)) };
         Ok(__cordl_ret.into())
     }
     pub fn FreeAssemblyName(
         name: quest_hook::libil2cpp::ByRefMut<crate::Mono::MonoAssemblyName>,
         freeStruct: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FreeAssemblyName", (name, freeStruct))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::Mono::MonoAssemblyName>, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("FreeAssemblyName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FreeAssemblyName", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (name, freeStruct))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MarshalString(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::Mono::SafeStringMarshal> {
-        let __cordl_ret: crate::Mono::SafeStringMarshal = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MarshalString", (str))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::Mono::SafeStringMarshal,
+                1usize,
+            >("MarshalString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MarshalString", 1usize
+                )
+            });
+        let __cordl_ret: crate::Mono::SafeStringMarshal = unsafe {
+            method.invoke_unchecked((), (str))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PtrToUtf8String(
@@ -82,10 +140,21 @@ impl crate::Mono::RuntimeMarshal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("PtrToUtf8String")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PtrToUtf8String", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PtrToUtf8String", (ptr))?;
+        > = unsafe { method.invoke_unchecked((), (ptr)) };
         Ok(__cordl_ret.into())
     }
 }

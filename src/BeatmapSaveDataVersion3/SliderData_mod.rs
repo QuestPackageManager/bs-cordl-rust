@@ -93,37 +93,65 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
         tailCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
         sliderMidAnchorMode: crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    colorType,
-                    headBeat,
-                    headLine,
-                    headLayer,
-                    headControlPointLengthMultiplier,
-                    headCutDirection,
-                    tailBeat,
-                    tailLine,
-                    tailLayer,
-                    tailControlPointLengthMultiplier,
-                    tailCutDirection,
-                    sliderMidAnchorMode,
+                    crate::BeatmapSaveDataCommon::NoteColorType,
+                    f32,
+                    i32,
+                    i32,
+                    f32,
+                    crate::BeatmapSaveDataCommon::NoteCutDirection,
+                    f32,
+                    i32,
+                    i32,
+                    f32,
+                    crate::BeatmapSaveDataCommon::NoteCutDirection,
+                    crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                12usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 12usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        colorType,
+                        headBeat,
+                        headLine,
+                        headLayer,
+                        headControlPointLengthMultiplier,
+                        headCutDirection,
+                        tailBeat,
+                        tailLine,
+                        tailLayer,
+                        tailControlPointLengthMultiplier,
+                        tailCutDirection,
+                        sliderMidAnchorMode,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_headControlPointLengthMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("get_headControlPointLengthMultiplier", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_headControlPointLengthMultiplier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_headControlPointLengthMultiplier", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_sliderMidAnchorMode(
@@ -131,31 +159,55 @@ impl crate::BeatmapSaveDataVersion3::SliderData {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::SliderMidAnchorMode = __cordl_object
-            .invoke("get_sliderMidAnchorMode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
+                0usize,
+            >("get_sliderMidAnchorMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_sliderMidAnchorMode", 0usize
+                )
+            });
+        let __cordl_ret: crate::BeatmapSaveDataCommon::SliderMidAnchorMode = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_tailControlPointLengthMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("get_tailControlPointLengthMultiplier", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_tailControlPointLengthMultiplier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_tailControlPointLengthMultiplier", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_tailCutDirection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::NoteCutDirection> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = __cordl_object
-            .invoke("get_tailCutDirection", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::BeatmapSaveDataCommon::NoteCutDirection,
+                0usize,
+            >("get_tailCutDirection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_tailCutDirection", 0usize
+                )
+            });
+        let __cordl_ret: crate::BeatmapSaveDataCommon::NoteCutDirection = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

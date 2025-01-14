@@ -45,17 +45,44 @@ impl crate::UnityEngine::ProBuilder::TransformUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+                2usize,
+            >("InverseTransformVertex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InverseTransformVertex", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Vertex,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InverseTransformVertex", (transform, vertex))?;
+        > = unsafe { method.invoke_unchecked((), (transform, vertex)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReparentChildren(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReparentChildren", (t))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReparentChildren")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReparentChildren", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (t))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TransformVertex(
@@ -64,17 +91,44 @@ impl crate::UnityEngine::ProBuilder::TransformUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+                2usize,
+            >("TransformVertex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TransformVertex", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Vertex,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TransformVertex", (transform, vertex))?;
+        > = unsafe { method.invoke_unchecked((), (transform, vertex)) };
         Ok(__cordl_ret.into())
     }
     pub fn UnparentChildren(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnparentChildren", (t))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UnparentChildren")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnparentChildren", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (t))
+        };
         Ok(__cordl_ret.into())
     }
 }

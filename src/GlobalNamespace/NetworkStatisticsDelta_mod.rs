@@ -129,25 +129,39 @@ impl crate::GlobalNamespace::NetworkStatisticsDelta {
         encryptionProcessingTimeDelta: i64,
         decryptionProcessingTimeDelta: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (
-                packetsSentDelta,
-                packetsReceivedDelta,
-                bytesSentDelta,
-                bytesReceivedDelta,
-                packetsLostDelta,
-                packetsSentEncryptedDelta,
-                packetsSentPlaintextDelta,
-                packetsSentRejectedDelta,
-                packetsReceivedEncryptedDelta,
-                packetsReceivedPlaintextDelta,
-                packetsReceivedRejectedDelta,
-                encryptionProcessingTimeDelta,
-                decryptionProcessingTimeDelta,
-            ),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i64, i64, i64, i64, i64, i64, i64, i64, i64, i64, i64, i64, i64),
+                quest_hook::libil2cpp::Void,
+                13usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 13usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        packetsSentDelta,
+                        packetsReceivedDelta,
+                        bytesSentDelta,
+                        bytesReceivedDelta,
+                        packetsLostDelta,
+                        packetsSentEncryptedDelta,
+                        packetsSentPlaintextDelta,
+                        packetsSentRejectedDelta,
+                        packetsReceivedEncryptedDelta,
+                        packetsReceivedPlaintextDelta,
+                        packetsReceivedRejectedDelta,
+                        encryptionProcessingTimeDelta,
+                        decryptionProcessingTimeDelta,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

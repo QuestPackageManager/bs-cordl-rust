@@ -90,32 +90,58 @@ impl crate::HMUI::FlowCoordinator {
         addedToHierarchy: bool,
         screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Activate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool, bool, bool),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Activate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Activate", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (firstActivation, addedToHierarchy, screenSystemEnabling),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BackButtonWasPressed", (topViewController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("BackButtonWasPressed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BackButtonWasPressed", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (topViewController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CanPressBackButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanPressBackButton", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("CanPressBackButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CanPressBackButton", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn Deactivate(
@@ -123,11 +149,21 @@ impl crate::HMUI::FlowCoordinator {
         removedFromHierarchy: bool,
         screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Deactivate", (removedFromHierarchy, screenSystemDisabling))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Deactivate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Deactivate", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DidActivate(
@@ -136,14 +172,25 @@ impl crate::HMUI::FlowCoordinator {
         addedToHierarchy: bool,
         screenSystemEnabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DidActivate",
-                (firstActivation, addedToHierarchy, screenSystemEnabling),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool, bool, bool),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("DidActivate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DidActivate", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (firstActivation, addedToHierarchy, screenSystemEnabling),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DidDeactivate(
@@ -151,11 +198,21 @@ impl crate::HMUI::FlowCoordinator {
         removedFromHierarchy: bool,
         screenSystemDisabling: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DidDeactivate", (removedFromHierarchy, screenSystemDisabling))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("DidDeactivate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DidDeactivate", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (removedFromHierarchy, screenSystemDisabling))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DismissChildFlowCoordinatorsRecursively(
@@ -164,13 +221,21 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                1usize,
+            >("DismissChildFlowCoordinatorsRecursively")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DismissChildFlowCoordinatorsRecursively", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = __cordl_object
-            .invoke("DismissChildFlowCoordinatorsRecursively", (immediately))?;
+        > = unsafe { method.invoke_unchecked(self, (immediately)) };
         Ok(__cordl_ret.into())
     }
     pub fn DismissChildViewControllersRecursively(
@@ -179,13 +244,21 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                1usize,
+            >("DismissChildViewControllersRecursively")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DismissChildViewControllersRecursively", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = __cordl_object
-            .invoke("DismissChildViewControllersRecursively", (immediately))?;
+        > = unsafe { method.invoke_unchecked(self, (immediately)) };
         Ok(__cordl_ret.into())
     }
     pub fn DismissFlowCoordinator(
@@ -195,14 +268,30 @@ impl crate::HMUI::FlowCoordinator {
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DismissFlowCoordinator",
-                (flowCoordinator, animationDirection, finishedCallback, immediately),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                    crate::HMUI::ViewController_AnimationDirection,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("DismissFlowCoordinator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DismissFlowCoordinator", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (flowCoordinator, animationDirection, finishedCallback, immediately),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DismissViewController(
@@ -214,54 +303,113 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationDirection,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                4usize,
+            >("DismissViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DismissViewController", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = __cordl_object
-            .invoke(
-                "DismissViewController",
-                (viewController, animationDirection, finishedCallback, immediately),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (viewController, animationDirection, finishedCallback, immediately),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleScreenSystemBackButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleScreenSystemBackButtonWasPressed", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("HandleScreenSystemBackButtonWasPressed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleScreenSystemBackButtonWasPressed", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitialViewControllerWasPresented(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitialViewControllerWasPresented", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("InitialViewControllerWasPresented")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitialViewControllerWasPresented", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsFlowCoordinatorInHierarchy(
         &mut self,
         flowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsFlowCoordinatorInHierarchy", (flowCoordinator))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>),
+                bool,
+                1usize,
+            >("IsFlowCoordinatorInHierarchy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsFlowCoordinatorInHierarchy", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (flowCoordinator))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Log(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Log", (message))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Log")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Log", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (message))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -279,14 +427,29 @@ impl crate::HMUI::FlowCoordinator {
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PopViewControllerFromNavigationController",
-                (navigationController, finishedCallback, immediately),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("PopViewControllerFromNavigationController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopViewControllerFromNavigationController", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (navigationController, finishedCallback, immediately),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopViewControllersFromNavigationController(
@@ -298,19 +461,35 @@ impl crate::HMUI::FlowCoordinator {
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PopViewControllersFromNavigationController",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    navigationController,
-                    numberOfControllers,
-                    finishedCallback,
-                    immediately,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("PopViewControllersFromNavigationController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopViewControllersFromNavigationController", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        navigationController,
+                        numberOfControllers,
+                        finishedCallback,
+                        immediately,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PresentFlowCoordinator(
@@ -321,20 +500,37 @@ impl crate::HMUI::FlowCoordinator {
         immediately: bool,
         replaceTopViewController: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PresentFlowCoordinator",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    flowCoordinator,
-                    finishedCallback,
-                    animationDirection,
-                    immediately,
-                    replaceTopViewController,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    crate::HMUI::ViewController_AnimationDirection,
+                    bool,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("PresentFlowCoordinator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PresentFlowCoordinator", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        flowCoordinator,
+                        finishedCallback,
+                        animationDirection,
+                        immediately,
+                        replaceTopViewController,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PresentTitle(
@@ -342,11 +538,24 @@ impl crate::HMUI::FlowCoordinator {
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PresentTitle", (title, animationType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::HMUI::ViewController_AnimationType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PresentTitle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PresentTitle", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (title, animationType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PresentViewController(
@@ -356,14 +565,30 @@ impl crate::HMUI::FlowCoordinator {
         animationDirection: crate::HMUI::ViewController_AnimationDirection,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PresentViewController",
-                (viewController, finishedCallback, animationDirection, immediately),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    crate::HMUI::ViewController_AnimationDirection,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("PresentViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PresentViewController", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (viewController, finishedCallback, animationDirection, immediately),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProvideInitialViewControllers(
@@ -378,20 +603,37 @@ impl crate::HMUI::FlowCoordinator {
         >,
         topScreenViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ProvideInitialViewControllers",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    mainViewController,
-                    leftScreenViewController,
-                    rightScreenViewController,
-                    bottomScreenViewController,
-                    topScreenViewController,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("ProvideInitialViewControllers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProvideInitialViewControllers", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        mainViewController,
+                        leftScreenViewController,
+                        rightScreenViewController,
+                        bottomScreenViewController,
+                        topScreenViewController,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PushViewControllerToNavigationController(
@@ -403,14 +645,30 @@ impl crate::HMUI::FlowCoordinator {
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "PushViewControllerToNavigationController",
-                (navigationController, viewController, finishedCallback, immediately),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("PushViewControllerToNavigationController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PushViewControllerToNavigationController", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (navigationController, viewController, finishedCallback, immediately),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReplaceChildFlowCoordinator(
@@ -420,14 +678,30 @@ impl crate::HMUI::FlowCoordinator {
         animationDirection: crate::HMUI::ViewController_AnimationDirection,
         immediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ReplaceChildFlowCoordinator",
-                (flowCoordinator, finishedCallback, animationDirection, immediately),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    crate::HMUI::ViewController_AnimationDirection,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ReplaceChildFlowCoordinator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReplaceChildFlowCoordinator", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (flowCoordinator, finishedCallback, animationDirection, immediately),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReplaceTopViewController_Action_ViewController_AnimationType_ViewController_AnimationDirection0(
@@ -437,14 +711,30 @@ impl crate::HMUI::FlowCoordinator {
         animationType: crate::HMUI::ViewController_AnimationType,
         animationDirection: crate::HMUI::ViewController_AnimationDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ReplaceTopViewController",
-                (viewController, finishedCallback, animationType, animationDirection),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    crate::HMUI::ViewController_AnimationType,
+                    crate::HMUI::ViewController_AnimationDirection,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ReplaceTopViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReplaceTopViewController", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (viewController, finishedCallback, animationType, animationDirection),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReplaceTopViewController_FlowCoordinator_FlowCoordinator_Action_ViewController_AnimationType_ViewController_AnimationDirection1(
@@ -458,21 +748,39 @@ impl crate::HMUI::FlowCoordinator {
         animationType: crate::HMUI::ViewController_AnimationType,
         animationDirection: crate::HMUI::ViewController_AnimationDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ReplaceTopViewController",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    viewController,
-                    originalOwnerFlowCoordinator,
-                    newOwnerFlowCoordinator,
-                    finishedCallback,
-                    animationType,
-                    animationDirection,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    crate::HMUI::ViewController_AnimationType,
+                    crate::HMUI::ViewController_AnimationDirection,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("ReplaceTopViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReplaceTopViewController", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        viewController,
+                        originalOwnerFlowCoordinator,
+                        newOwnerFlowCoordinator,
+                        finishedCallback,
+                        animationType,
+                        animationDirection,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetBottomScreenViewController(
@@ -480,22 +788,45 @@ impl crate::HMUI::FlowCoordinator {
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetBottomScreenViewController", (viewController, animationType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetBottomScreenViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetBottomScreenViewController", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (viewController, animationType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetGlobalUserInteraction(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetGlobalUserInteraction", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetGlobalUserInteraction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetGlobalUserInteraction", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetLeftScreenViewController(
@@ -503,11 +834,24 @@ impl crate::HMUI::FlowCoordinator {
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetLeftScreenViewController", (viewController, animationType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetLeftScreenViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetLeftScreenViewController", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (viewController, animationType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetRightScreenViewController(
@@ -515,11 +859,24 @@ impl crate::HMUI::FlowCoordinator {
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetRightScreenViewController", (viewController, animationType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetRightScreenViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetRightScreenViewController", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (viewController, animationType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTitle(
@@ -527,11 +884,24 @@ impl crate::HMUI::FlowCoordinator {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTitle", (value, animationType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::HMUI::ViewController_AnimationType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetTitle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTitle", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value, animationType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTopScreenViewController(
@@ -539,11 +909,24 @@ impl crate::HMUI::FlowCoordinator {
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTopScreenViewController", (viewController, animationType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetTopScreenViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTopScreenViewController", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (viewController, animationType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetViewControllerToNavigationController(
@@ -553,14 +936,24 @@ impl crate::HMUI::FlowCoordinator {
         >,
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetViewControllerToNavigationController",
-                (navigationController, viewController),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetViewControllerToNavigationController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetViewControllerToNavigationController", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (navigationController, viewController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetViewControllersToNavigationController(
@@ -574,14 +967,28 @@ impl crate::HMUI::FlowCoordinator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetViewControllersToNavigationController",
-                (navigationController, viewControllers),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::NavigationController>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetViewControllersToNavigationController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetViewControllersToNavigationController", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (navigationController, viewControllers))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TopViewControllerWillChange(
@@ -590,34 +997,65 @@ impl crate::HMUI::FlowCoordinator {
         newViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "TopViewControllerWillChange",
-                (oldViewController, newViewController, animationType),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                    crate::HMUI::ViewController_AnimationType,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TopViewControllerWillChange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TopViewControllerWillChange", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (oldViewController, newViewController, animationType),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TransitionDidFinish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionDidFinish", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("TransitionDidFinish")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TransitionDidFinish", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TransitionDidStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("TransitionDidStart", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("TransitionDidStart")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TransitionDidStart", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn YoungestChildFlowCoordinatorOrSelf(
@@ -625,52 +1063,94 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator> = __cordl_object
-            .invoke("YoungestChildFlowCoordinatorOrSelf", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                0usize,
+            >("YoungestChildFlowCoordinatorOrSelf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "YoungestChildFlowCoordinatorOrSelf", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __ExternalActivate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__ExternalActivate", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("__ExternalActivate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__ExternalActivate", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __ExternalDeactivate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__ExternalDeactivate", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("__ExternalDeactivate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__ExternalDeactivate", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __StartOnScreenSystem(
         &mut self,
         screenSystem: quest_hook::libil2cpp::Gc<crate::HMUI::ScreenSystem>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__StartOnScreenSystem", (screenSystem))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::HMUI::ScreenSystem>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("__StartOnScreenSystem")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__StartOnScreenSystem", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (screenSystem))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_childFlowCoordinator(
@@ -678,25 +1158,45 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator> = __cordl_object
-            .invoke("get_childFlowCoordinator", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                0usize,
+            >("get_childFlowCoordinator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_childFlowCoordinator", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_isActivated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isActivated", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isActivated")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isActivated", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_isInTransition(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isInTransition", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isInTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isInTransition", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_rightScreenViewController(
@@ -704,18 +1204,33 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController> = __cordl_object
-            .invoke("get_rightScreenViewController", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                0usize,
+            >("get_rightScreenViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_rightScreenViewController", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_showBackButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_showBackButton", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_showBackButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_showBackButton", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_title(
@@ -723,12 +1238,21 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_title")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_title", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("get_title", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_topViewController(
@@ -736,22 +1260,42 @@ impl crate::HMUI::FlowCoordinator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController> = __cordl_object
-            .invoke("get_topViewController", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                0usize,
+            >("get_topViewController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_topViewController", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_showBackButton(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_showBackButton", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_showBackButton")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_showBackButton", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

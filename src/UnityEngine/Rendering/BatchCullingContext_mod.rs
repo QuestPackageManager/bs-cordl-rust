@@ -136,24 +136,53 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
         inReceiverPlaneOffset: i32,
         inReceiverPlaneCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (
-                inCullingPlanes,
-                inCullingSplits,
-                inLodParameters,
-                inLocalToWorldMatrix,
-                inViewType,
-                inProjectionType,
-                inBatchCullingFlags,
-                inViewID,
-                inCullingLayerMask,
-                inSceneCullingMask,
-                inReceiverPlaneOffset,
-                inReceiverPlaneCount,
-            ),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Plane>,
+                    crate::Unity::Collections::NativeArray_1<
+                        crate::UnityEngine::Rendering::CullingSplit,
+                    >,
+                    crate::UnityEngine::Rendering::LODParameters,
+                    crate::UnityEngine::Matrix4x4,
+                    crate::UnityEngine::Rendering::BatchCullingViewType,
+                    crate::UnityEngine::Rendering::BatchCullingProjectionType,
+                    crate::UnityEngine::Rendering::BatchCullingFlags,
+                    u64,
+                    u32,
+                    u64,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                12usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 12usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        inCullingPlanes,
+                        inCullingSplits,
+                        inLodParameters,
+                        inLocalToWorldMatrix,
+                        inViewType,
+                        inProjectionType,
+                        inBatchCullingFlags,
+                        inViewID,
+                        inCullingLayerMask,
+                        inSceneCullingMask,
+                        inReceiverPlaneOffset,
+                        inReceiverPlaneCount,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

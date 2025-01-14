@@ -41,11 +41,21 @@ impl crate::System::IAsyncDisposable {
     pub fn DisposeAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = __cordl_object
-            .invoke("DisposeAsync", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Threading::Tasks::ValueTask,
+                0usize,
+            >("DisposeAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DisposeAsync", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

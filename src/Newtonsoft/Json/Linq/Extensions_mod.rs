@@ -53,12 +53,29 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("Ancestors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Ancestors", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Ancestors", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn AncestorsAndSelf<T>(
@@ -76,12 +93,29 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("AncestorsAndSelf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AncestorsAndSelf", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AncestorsAndSelf", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn AsJEnumerable_IEnumerable_1_0(
@@ -97,12 +131,31 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("AsJEnumerable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsJEnumerable", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsJEnumerable", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn AsJEnumerable_IEnumerable_1_1<T>(
@@ -116,10 +169,25 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>,
+                >,
+                1usize,
+            >("AsJEnumerable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsJEnumerable", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsJEnumerable", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Children_IEnumerable_1_0<T>(
@@ -137,11 +205,29 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("Children")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Children", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Children", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Children_IEnumerable_1_1<T, U>(
@@ -157,9 +243,25 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<U>,
+                >,
+                1usize,
+            >("Children")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Children", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Children", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Convert_IEnumerable_1_0<T, U>(
@@ -175,9 +277,25 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<U>,
+                >,
+                1usize,
+            >("Convert")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Convert", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Convert", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Convert_T1<T, U>(token: T) -> quest_hook::libil2cpp::Result<U>
@@ -187,8 +305,15 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: U = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Convert", (token))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(T), U, 1usize>("Convert")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Convert", 1usize
+                )
+            });
+        let __cordl_ret: U = unsafe { method.invoke_unchecked((), (token)) };
         Ok(__cordl_ret.into())
     }
     pub fn Descendants<T>(
@@ -206,12 +331,29 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("Descendants")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Descendants", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Descendants", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn DescendantsAndSelf<T>(
@@ -229,12 +371,29 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("DescendantsAndSelf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DescendantsAndSelf", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DescendantsAndSelf", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Properties(
@@ -250,12 +409,33 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Linq::JProperty,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("Properties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Properties", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JProperty>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Properties", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Value_IEnumerable_1_0<U>(
@@ -269,8 +449,23 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: U = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Value", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >),
+                U,
+                1usize,
+            >("Value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Value", 1usize
+                )
+            });
+        let __cordl_ret: U = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn Value_IEnumerable_1_1<T, U>(
@@ -284,8 +479,21 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: U = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Value", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                U,
+                1usize,
+            >("Value")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Value", 1usize
+                )
+            });
+        let __cordl_ret: U = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn Values_IEnumerable_1_1(
@@ -301,11 +509,31 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("Values")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Values", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Values", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Values_IEnumerable_1_3<U>(
@@ -321,9 +549,27 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<U>,
+                >,
+                1usize,
+            >("Values")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Values", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Values", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn Values_Il2CppObject0(
@@ -340,12 +586,36 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                2usize,
+            >("Values")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Values", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Values", (source, key))?;
+        > = unsafe { method.invoke_unchecked((), (source, key)) };
         Ok(__cordl_ret.into())
     }
     pub fn Values_Il2CppObject2<U>(
@@ -362,10 +632,32 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<U>,
+                >,
+                2usize,
+            >("Values")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Values", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Values", (source, key))?;
+        > = unsafe { method.invoke_unchecked((), (source, key)) };
         Ok(__cordl_ret.into())
     }
     pub fn Values_Il2CppObject4<T, U>(
@@ -382,10 +674,28 @@ impl crate::Newtonsoft::Json::Linq::Extensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<U>,
+                >,
+                2usize,
+            >("Values")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Values", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<U>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Values", (source, key))?;
+        > = unsafe { method.invoke_unchecked((), (source, key)) };
         Ok(__cordl_ret.into())
     }
 }

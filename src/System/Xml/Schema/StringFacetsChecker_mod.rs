@@ -47,11 +47,25 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CheckBuiltInFacets", (s, typeCode, verifyUri))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Xml::Schema::XmlTypeCode,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                3usize,
+            >("CheckBuiltInFacets")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckBuiltInFacets", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked(self, (s, typeCode, verifyUri))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_Il2CppObject0(
@@ -63,11 +77,26 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CheckValueFacets", (value, datatype))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaDatatype,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                2usize,
+            >("CheckValueFacets")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckValueFacets", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked(self, (value, datatype))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_Il2CppString1(
@@ -79,11 +108,26 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CheckValueFacets", (value, datatype))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaDatatype,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                2usize,
+            >("CheckValueFacets")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckValueFacets", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked(self, (value, datatype))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckValueFacets_Il2CppString__cordl_bool2(
@@ -96,11 +140,27 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = __cordl_object
-            .invoke("CheckValueFacets", (value, datatype, verifyUri))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaDatatype,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                3usize,
+            >("CheckValueFacets")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckValueFacets", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked(self, (value, datatype, verifyUri))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchEnumeration_Il2CppObject0(
@@ -111,11 +171,27 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("MatchEnumeration", (value, enumeration, datatype))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaDatatype,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("MatchEnumeration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchEnumeration", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (value, enumeration, datatype))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchEnumeration_Il2CppString1(
@@ -126,11 +202,27 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             crate::System::Xml::Schema::XmlSchemaDatatype,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("MatchEnumeration", (value, enumeration, datatype))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaDatatype,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("MatchEnumeration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchEnumeration", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (value, enumeration, datatype))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -143,20 +235,39 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_LanguagePattern() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Text::RegularExpressions::Regex,
+                >,
+                0usize,
+            >("get_LanguagePattern")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_LanguagePattern", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::Regex,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_LanguagePattern", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

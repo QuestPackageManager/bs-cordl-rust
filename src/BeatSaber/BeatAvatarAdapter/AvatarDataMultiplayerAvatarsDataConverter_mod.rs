@@ -46,10 +46,21 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::MultiplayerAvatarData),
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+                1usize,
+            >("CreateAvatarData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateAvatarData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::BeatAvatarSDK::AvatarData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateAvatarData", (multiplayerAvatarsData))?;
+        > = unsafe { method.invoke_unchecked((), (multiplayerAvatarsData)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMultiplayerAvatarsData(
@@ -57,8 +68,21 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConver
             crate::BeatSaber::BeatAvatarSDK::AvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarData> {
-        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarData = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateMultiplayerAvatarsData", (avatarData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>),
+                crate::GlobalNamespace::MultiplayerAvatarData,
+                1usize,
+            >("CreateMultiplayerAvatarsData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateMultiplayerAvatarsData", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarData = unsafe {
+            method.invoke_unchecked((), (avatarData))
+        };
         Ok(__cordl_ret.into())
     }
 }

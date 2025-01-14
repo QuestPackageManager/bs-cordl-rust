@@ -79,54 +79,101 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     pub fn OVRMixedRealityCaptureConfiguration_get_capturingCameraDevice(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRManager_CameraDevice> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRManager_CameraDevice = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_capturingCameraDevice",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                crate::GlobalNamespace::OVRManager_CameraDevice,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_capturingCameraDevice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_capturingCameraDevice",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_CameraDevice = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeyColor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeyColor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Color,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_chromaKeyColor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_chromaKeyColor",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeySimilarity(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeySimilarity", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_chromaKeySimilarity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_chromaKeySimilarity",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeySmoothRange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeySmoothRange", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_chromaKeySmoothRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_chromaKeySmoothRange",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_chromaKeySpillRange(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_chromaKeySpillRange", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_chromaKeySpillRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_chromaKeySpillRange",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_compositionMethod(
@@ -134,149 +181,271 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRManager_CompositionMethod,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_compositionMethod", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::OVRManager_CompositionMethod,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_compositionMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_compositionMethod",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_CompositionMethod = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_depthQuality(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRManager_DepthQuality> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRManager_DepthQuality = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_depthQuality", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::OVRManager_DepthQuality,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_depthQuality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_depthQuality", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_DepthQuality = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_dynamicCullingMask(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_dynamicCullingMask", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                bool,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_dynamicCullingMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_dynamicCullingMask",
+                    0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_dynamicLightingDepthVariationClampingValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_dynamicLightingDepthVariationClampingValue",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                f32,
+                0usize,
+            >(
+                "OVRMixedRealityCaptureConfiguration.get_dynamicLightingDepthVariationClampingValue",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_dynamicLightingDepthVariationClampingValue",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_dynamicLightingSmoothFactor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_dynamicLightingSmoothFactor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_dynamicLightingSmoothFactor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_dynamicLightingSmoothFactor",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_enableMixedReality(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_enableMixedReality", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                bool,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_enableMixedReality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_enableMixedReality",
+                    0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_externalCompositionBackdropColorQuest(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorQuest",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                crate::UnityEngine::Color,
+                0usize,
+            >(
+                "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorQuest",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorQuest",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_externalCompositionBackdropColorRift(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorRift",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                crate::UnityEngine::Color,
+                0usize,
+            >(
+                "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorRift",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_externalCompositionBackdropColorRift",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_extraHiddenLayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_extraHiddenLayers", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::LayerMask,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_extraHiddenLayers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_extraHiddenLayers",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::LayerMask = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_extraVisibleLayers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_extraVisibleLayers", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::LayerMask,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_extraVisibleLayers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_extraVisibleLayers",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::LayerMask = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_flipCameraFrameHorizontally(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameHorizontally",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                bool,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_flipCameraFrameHorizontally")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameHorizontally",
+                    0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_flipCameraFrameVertically(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameVertically",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                bool,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_flipCameraFrameVertically")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_flipCameraFrameVertically",
+                    0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_handPoseStateLatency(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_handPoseStateLatency", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_handPoseStateLatency")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_handPoseStateLatency",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_instantiateMixedRealityCameraGameObject(
@@ -286,16 +455,27 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
             crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+                >,
+                0usize,
+            >(
+                "OVRMixedRealityCaptureConfiguration.get_instantiateMixedRealityCameraGameObject",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_instantiateMixedRealityCameraGameObject",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
-        > = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_instantiateMixedRealityCameraGameObject",
-                (),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_mrcActivationMode(
@@ -303,99 +483,165 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRManager_MrcActivationMode,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRManager_MrcActivationMode = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_mrcActivationMode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::OVRManager_MrcActivationMode,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_mrcActivationMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_mrcActivationMode",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_MrcActivationMode = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_sandwichCompositionBufferedFrames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionBufferedFrames",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                i32,
+                0usize,
+            >(
+                "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionBufferedFrames",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionBufferedFrames",
+                    0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_sandwichCompositionRenderLatency(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionRenderLatency",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_sandwichCompositionRenderLatency")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_sandwichCompositionRenderLatency",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_useDynamicLighting(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.get_useDynamicLighting", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                bool,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_useDynamicLighting")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.get_useDynamicLighting",
+                    0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenApplyDepthCulling(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenApplyDepthCulling",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                bool,
+                0usize,
+            >(
+                "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenApplyDepthCulling",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenApplyDepthCulling",
+                    0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenBottomY(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenBottomY",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenBottomY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenBottomY",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenDepthTolerance(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenDepthTolerance",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenDepthTolerance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenDepthTolerance",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenTopY(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenTopY",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                f32,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenTopY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenTopY",
+                    0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_get_virtualGreenScreenType(
@@ -403,260 +649,431 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRManager_VirtualGreenScreenType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::OVRManager_VirtualGreenScreenType = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenType",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (),
-            )?;
+                crate::GlobalNamespace::OVRManager_VirtualGreenScreenType,
+                0usize,
+            >("OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.get_virtualGreenScreenType",
+                    0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_VirtualGreenScreenType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_capturingCameraDevice(
         &mut self,
         value: crate::GlobalNamespace::OVRManager_CameraDevice,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_capturingCameraDevice",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::OVRManager_CameraDevice),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_capturingCameraDevice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_capturingCameraDevice",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeyColor(
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.set_chromaKeyColor", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_chromaKeyColor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_chromaKeyColor",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeySimilarity(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_chromaKeySimilarity",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_chromaKeySimilarity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_chromaKeySimilarity",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeySmoothRange(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_chromaKeySmoothRange",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_chromaKeySmoothRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_chromaKeySmoothRange",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_chromaKeySpillRange(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_chromaKeySpillRange",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_chromaKeySpillRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_chromaKeySpillRange",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_compositionMethod(
         &mut self,
         value: crate::GlobalNamespace::OVRManager_CompositionMethod,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_compositionMethod",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::OVRManager_CompositionMethod),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_compositionMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_compositionMethod",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_depthQuality(
         &mut self,
         value: crate::GlobalNamespace::OVRManager_DepthQuality,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OVRMixedRealityCaptureConfiguration.set_depthQuality", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::OVRManager_DepthQuality),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_depthQuality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_depthQuality", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_dynamicCullingMask(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_dynamicCullingMask",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_dynamicCullingMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_dynamicCullingMask",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_dynamicLightingDepthVariationClampingValue(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(
                 "OVRMixedRealityCaptureConfiguration.set_dynamicLightingDepthVariationClampingValue",
-                (value),
-            )?;
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_dynamicLightingDepthVariationClampingValue",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_dynamicLightingSmoothFactor(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_dynamicLightingSmoothFactor",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_dynamicLightingSmoothFactor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_dynamicLightingSmoothFactor",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_enableMixedReality(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_enableMixedReality",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_enableMixedReality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_enableMixedReality",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_externalCompositionBackdropColorQuest(
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(
                 "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorQuest",
-                (value),
-            )?;
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorQuest",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_externalCompositionBackdropColorRift(
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(
                 "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorRift",
-                (value),
-            )?;
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_externalCompositionBackdropColorRift",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_extraHiddenLayers(
         &mut self,
         value: crate::UnityEngine::LayerMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_extraHiddenLayers",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::LayerMask),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_extraHiddenLayers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_extraHiddenLayers",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_extraVisibleLayers(
         &mut self,
         value: crate::UnityEngine::LayerMask,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_extraVisibleLayers",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::LayerMask),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_extraVisibleLayers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_extraVisibleLayers",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_flipCameraFrameHorizontally(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameHorizontally",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_flipCameraFrameHorizontally")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameHorizontally",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_flipCameraFrameVertically(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameVertically",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_flipCameraFrameVertically")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_flipCameraFrameVertically",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_handPoseStateLatency(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_handPoseStateLatency",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_handPoseStateLatency")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_handPoseStateLatency",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_instantiateMixedRealityCameraGameObject(
@@ -665,150 +1082,252 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureSettings {
             crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(
                 "OVRMixedRealityCaptureConfiguration.set_instantiateMixedRealityCameraGameObject",
-                (value),
-            )?;
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_instantiateMixedRealityCameraGameObject",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_mrcActivationMode(
         &mut self,
         value: crate::GlobalNamespace::OVRManager_MrcActivationMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_mrcActivationMode",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::OVRManager_MrcActivationMode),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_mrcActivationMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_mrcActivationMode",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_sandwichCompositionBufferedFrames(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(
                 "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionBufferedFrames",
-                (value),
-            )?;
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionBufferedFrames",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_sandwichCompositionRenderLatency(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionRenderLatency",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_sandwichCompositionRenderLatency")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_sandwichCompositionRenderLatency",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_useDynamicLighting(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_useDynamicLighting",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_useDynamicLighting")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OVRMixedRealityCaptureConfiguration.set_useDynamicLighting",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenApplyDepthCulling(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(
                 "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenApplyDepthCulling",
-                (value),
-            )?;
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenApplyDepthCulling",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenBottomY(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenBottomY",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenBottomY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenBottomY",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenDepthTolerance(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenDepthTolerance",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenDepthTolerance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenDepthTolerance",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenTopY(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenTopY",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenTopY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenTopY",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OVRMixedRealityCaptureConfiguration_set_virtualGreenScreenType(
         &mut self,
         value: crate::GlobalNamespace::OVRManager_VirtualGreenScreenType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenType",
-                (value),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::OVRManager_VirtualGreenScreenType),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "OVRMixedRealityCaptureConfiguration.set_virtualGreenScreenType",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

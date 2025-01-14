@@ -48,11 +48,32 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
             crate::GlobalNamespace::BeatmapCharacteristicCollection,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
-        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ToBeatmapKey",
-                (beatmapKeySerializable, beatmapCharacteristicCollection),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+                    >,
+                ),
+                crate::GlobalNamespace::BeatmapKey,
+                2usize,
+            >("ToBeatmapKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToBeatmapKey", 2usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (beatmapKeySerializable, beatmapCharacteristicCollection),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToIdentifier(
@@ -60,10 +81,23 @@ impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BeatmapKey),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                >,
+                1usize,
+            >("ToIdentifier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToIdentifier", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapKeyNetSerializable,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToIdentifier", (beatmapKey))?;
+        > = unsafe { method.invoke_unchecked((), (beatmapKey)) };
         Ok(__cordl_ret.into())
     }
 }

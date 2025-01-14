@@ -41,11 +41,21 @@ impl crate::UnityEngine::Playables::IPlayable {
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = __cordl_object
-            .invoke("GetHandle", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Playables::PlayableHandle,
+                0usize,
+            >("GetHandle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHandle", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

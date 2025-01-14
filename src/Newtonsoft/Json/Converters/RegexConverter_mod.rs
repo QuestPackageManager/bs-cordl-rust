@@ -45,10 +45,19 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                bool,
+                1usize,
+            >("CanConvert")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CanConvert", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (objectType)) };
         Ok(__cordl_ret.into())
     }
     pub fn HasFlag(
@@ -56,20 +65,43 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
         options: crate::System::Text::RegularExpressions::RegexOptions,
         flag: crate::System::Text::RegularExpressions::RegexOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (options, flag))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::Text::RegularExpressions::RegexOptions,
+                    crate::System::Text::RegularExpressions::RegexOptions,
+                ),
+                bool,
+                2usize,
+            >("HasFlag")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasFlag", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (options, flag))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsRegex(
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsRegex", (objectType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                bool,
+                1usize,
+            >("IsRegex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsRegex", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (objectType)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -88,13 +120,29 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("ReadJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadJson", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
+        > = unsafe {
+            method
+                .invoke_unchecked(self, (reader, objectType, existingValue, serializer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadRegexObject(
@@ -104,12 +152,26 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Text::RegularExpressions::Regex,
+                >,
+                2usize,
+            >("ReadRegexObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadRegexObject", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::Regex,
-        > = __cordl_object.invoke("ReadRegexObject", (reader, serializer))?;
+        > = unsafe { method.invoke_unchecked(self, (reader, serializer)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadRegexString(
@@ -118,12 +180,21 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("ReadRegexString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadRegexString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ReadRegexString", (reader))?;
+        > = unsafe { method.invoke_unchecked(self, (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn WriteBson(
@@ -131,11 +202,26 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonWriter>,
         regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteBson", (writer, regex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonWriter>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Text::RegularExpressions::Regex,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WriteBson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteBson", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (writer, regex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteJson_Il2CppObject0(
@@ -144,11 +230,25 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteJson", (writer, value, serializer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("WriteJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteJson", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (writer, value, serializer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteJson_Regex1(
@@ -157,21 +257,43 @@ impl crate::Newtonsoft::Json::Converters::RegexConverter {
         regex: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
         serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteJson", (writer, regex, serializer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Text::RegularExpressions::Regex,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("WriteJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteJson", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (writer, regex, serializer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

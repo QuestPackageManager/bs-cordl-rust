@@ -49,8 +49,25 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
-        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AcquireReadOnlyMeshData", (meshes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    >,
+                >),
+                crate::UnityEngine::Mesh_MeshDataArray,
+                1usize,
+            >("AcquireReadOnlyMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcquireReadOnlyMeshData", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = unsafe {
+            method.invoke_unchecked((), (meshes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AcquireReadOnlyMeshData_List_1_2(
@@ -60,15 +77,45 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
-        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AcquireReadOnlyMeshData", (meshes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    >,
+                >),
+                crate::UnityEngine::Mesh_MeshDataArray,
+                1usize,
+            >("AcquireReadOnlyMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcquireReadOnlyMeshData", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = unsafe {
+            method.invoke_unchecked((), (meshes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AcquireReadOnlyMeshData_Mesh0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
-        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AcquireReadOnlyMeshData", (mesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
+                crate::UnityEngine::Mesh_MeshDataArray,
+                1usize,
+            >("AcquireReadOnlyMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcquireReadOnlyMeshData", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = unsafe {
+            method.invoke_unchecked((), (mesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddBlendShapeFrame(
@@ -85,21 +132,57 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "AddBlendShapeFrame",
-                (shapeName, frameWeight, deltaVertices, deltaNormals, deltaTangents),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    f32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("AddBlendShapeFrame")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddBlendShapeFrame", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (shapeName, frameWeight, deltaVertices, deltaNormals, deltaTangents),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AllocateWritableMeshData(
         meshCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
-        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AllocateWritableMeshData", (meshCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                crate::UnityEngine::Mesh_MeshDataArray,
+                1usize,
+            >("AllocateWritableMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AllocateWritableMeshData", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = unsafe {
+            method.invoke_unchecked((), (meshCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyAndDisposeWritableMeshData_Il2CppArray1(
@@ -111,8 +194,29 @@ impl crate::UnityEngine::Mesh {
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyAndDisposeWritableMeshData", (data, meshes, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Mesh_MeshDataArray,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        >,
+                    >,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyAndDisposeWritableMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyAndDisposeWritableMeshData", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (data, meshes, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyAndDisposeWritableMeshData_List_1_2(
@@ -124,8 +228,29 @@ impl crate::UnityEngine::Mesh {
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyAndDisposeWritableMeshData", (data, meshes, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Mesh_MeshDataArray,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        >,
+                    >,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyAndDisposeWritableMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyAndDisposeWritableMeshData", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (data, meshes, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyAndDisposeWritableMeshData_Mesh0(
@@ -133,8 +258,25 @@ impl crate::UnityEngine::Mesh {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyAndDisposeWritableMeshData", (data, mesh, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Mesh_MeshDataArray,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyAndDisposeWritableMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyAndDisposeWritableMeshData", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (data, mesh, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckCanAccessSubmesh(
@@ -142,33 +284,47 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         errorAboutTriangles: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckCanAccessSubmesh", (submesh, errorAboutTriangles))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, bool), bool, 2usize>("CheckCanAccessSubmesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckCanAccessSubmesh", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (submesh, errorAboutTriangles))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckCanAccessSubmeshIndices(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckCanAccessSubmeshIndices", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), bool, 1usize>("CheckCanAccessSubmeshIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckCanAccessSubmeshIndices", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn CheckCanAccessSubmeshTriangles(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckCanAccessSubmeshTriangles", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), bool, 1usize>("CheckCanAccessSubmeshTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckCanAccessSubmeshTriangles", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn CheckIndicesArrayRange(
@@ -177,53 +333,87 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckIndicesArrayRange", (valuesLength, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CheckIndicesArrayRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckIndicesArrayRange", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (valuesLength, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearBlendShapes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearBlendShapes", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearBlendShapes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearBlendShapes", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearImpl(
         &mut self,
         keepVertexLayout: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearImpl", (keepVertexLayout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("ClearImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (keepVertexLayout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clear_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clear__cordl_bool0(
         &mut self,
         keepVertexLayout: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Clear", (keepVertexLayout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (keepVertexLayout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineMeshesImpl(
@@ -235,14 +425,34 @@ impl crate::UnityEngine::Mesh {
         useMatrices: bool,
         hasLightmapData: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "CombineMeshesImpl",
-                (combine, mergeSubMeshes, useMatrices, hasLightmapData),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::CombineInstance,
+                        >,
+                    >,
+                    bool,
+                    bool,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("CombineMeshesImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineMeshesImpl", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (combine, mergeSubMeshes, useMatrices, hasLightmapData),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineMeshes_Il2CppArray3(
@@ -251,11 +461,25 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::CombineInstance>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CombineMeshes", (combine))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::UnityEngine::CombineInstance,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CombineMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineMeshes", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (combine))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineMeshes__cordl_bool2(
@@ -265,11 +489,28 @@ impl crate::UnityEngine::Mesh {
         >,
         mergeSubMeshes: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CombineMeshes", (combine, mergeSubMeshes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::CombineInstance,
+                        >,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CombineMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineMeshes", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (combine, mergeSubMeshes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineMeshes__cordl_bool__cordl_bool1(
@@ -280,11 +521,29 @@ impl crate::UnityEngine::Mesh {
         mergeSubMeshes: bool,
         useMatrices: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CombineMeshes", (combine, mergeSubMeshes, useMatrices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::CombineInstance,
+                        >,
+                    >,
+                    bool,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CombineMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineMeshes", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (combine, mergeSubMeshes, useMatrices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineMeshes__cordl_bool__cordl_bool__cordl_bool0(
@@ -296,21 +555,52 @@ impl crate::UnityEngine::Mesh {
         useMatrices: bool,
         hasLightmapData: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "CombineMeshes",
-                (combine, mergeSubMeshes, useMatrices, hasLightmapData),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::CombineInstance,
+                        >,
+                    >,
+                    bool,
+                    bool,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("CombineMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineMeshes", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (combine, mergeSubMeshes, useMatrices, hasLightmapData),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DefaultDimensionForChannel(
         channel: crate::UnityEngine::Rendering::VertexAttribute,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DefaultDimensionForChannel", (channel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                i32,
+                1usize,
+            >("DefaultDimensionForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DefaultDimensionForChannel", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (channel)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromInstanceID(
@@ -318,8 +608,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromInstanceID", (id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                1usize,
+            >("FromInstanceID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromInstanceID", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
+            method.invoke_unchecked((), (id))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllBoneWeights(
@@ -327,29 +630,51 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::NativeArray_1<crate::UnityEngine::BoneWeight1>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Unity::Collections::NativeArray_1<
+                    crate::UnityEngine::BoneWeight1,
+                >,
+                0usize,
+            >("GetAllBoneWeights")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllBoneWeights", 0usize
+                )
+            });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<
             crate::UnityEngine::BoneWeight1,
-        > = __cordl_object.invoke("GetAllBoneWeights", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllBoneWeightsArray(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("GetAllBoneWeightsArray", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::System::IntPtr, 0usize>("GetAllBoneWeightsArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllBoneWeightsArray", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllBoneWeightsArraySize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetAllBoneWeightsArraySize", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetAllBoneWeightsArraySize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllBoneWeightsArraySize", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllocArrayFromChannelImpl(
@@ -358,11 +683,25 @@ impl crate::UnityEngine::Mesh {
         format: crate::UnityEngine::Rendering::VertexAttributeFormat,
         dim: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = __cordl_object
-            .invoke("GetAllocArrayFromChannelImpl", (channel, format, dim))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Array>,
+                3usize,
+            >("GetAllocArrayFromChannelImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllocArrayFromChannelImpl", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = unsafe {
+            method.invoke_unchecked(self, (channel, format, dim))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllocArrayFromChannel_VertexAttribute1<T>(
@@ -375,12 +714,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                1usize,
+            >("GetAllocArrayFromChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllocArrayFromChannel", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = __cordl_object.invoke("GetAllocArrayFromChannel", (channel))?;
+        > = unsafe { method.invoke_unchecked(self, (channel)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllocArrayFromChannel_VertexAttributeFormat_i32_0<T>(
@@ -395,12 +743,25 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                3usize,
+            >("GetAllocArrayFromChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllocArrayFromChannel", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = __cordl_object.invoke("GetAllocArrayFromChannel", (channel, format, dim))?;
+        > = unsafe { method.invoke_unchecked(self, (channel, format, dim)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetArrayFromChannelImpl(
@@ -410,38 +771,69 @@ impl crate::UnityEngine::Mesh {
         dim: i32,
         values: quest_hook::libil2cpp::Gc<crate::System::Array>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetArrayFromChannelImpl", (channel, format, dim, values))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("GetArrayFromChannelImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetArrayFromChannelImpl", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, format, dim, values))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBaseVertex(&mut self, submesh: i32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetBaseVertex", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), u32, 1usize>("GetBaseVertex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBaseVertex", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBaseVertexImpl(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetBaseVertexImpl", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), u32, 1usize>("GetBaseVertexImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBaseVertexImpl", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindposesArray(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("GetBindposesArray", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::System::IntPtr, 0usize>("GetBindposesArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindposesArray", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindposesNonAllocImpl(
@@ -452,11 +844,25 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetBindposesNonAllocImpl", (values))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetBindposesNonAllocImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindposesNonAllocImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (values))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindposes_0(
@@ -464,12 +870,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Matrix4x4>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Matrix4x4>,
+                0usize,
+            >("GetBindposes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindposes", 0usize
+                )
+            });
         let __cordl_ret: crate::Unity::Collections::NativeArray_1<
             crate::UnityEngine::Matrix4x4,
-        > = __cordl_object.invoke("GetBindposes", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBindposes_List_1_1(
@@ -478,11 +893,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetBindposes", (bindposes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Matrix4x4,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetBindposes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBindposes", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bindposes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeBufferImpl(
@@ -491,22 +920,42 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetBlendShapeBufferImpl", (layout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                1usize,
+            >("GetBlendShapeBufferImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeBufferImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, (layout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeBufferRange(
         &mut self,
         blendShapeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::BlendShapeBufferRange> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::BlendShapeBufferRange = __cordl_object
-            .invoke("GetBlendShapeBufferRange", (blendShapeIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::BlendShapeBufferRange,
+                1usize,
+            >("GetBlendShapeBufferRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeBufferRange", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::BlendShapeBufferRange = unsafe {
+            method.invoke_unchecked(self, (blendShapeIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeBuffer_1(
@@ -514,11 +963,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetBlendShapeBuffer", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                0usize,
+            >("GetBlendShapeBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeBuffer", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeBuffer_BlendShapeBufferLayout0(
@@ -527,22 +986,36 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetBlendShapeBuffer", (layout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::BlendShapeBufferLayout),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                1usize,
+            >("GetBlendShapeBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeBuffer", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, (layout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeFrameCount(
         &mut self,
         shapeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetBlendShapeFrameCount", (shapeIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), i32, 1usize>("GetBlendShapeFrameCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeFrameCount", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (shapeIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeFrameVertices(
@@ -559,14 +1032,37 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "GetBlendShapeFrameVertices",
-                (shapeIndex, frameIndex, deltaVertices, deltaNormals, deltaTangents),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("GetBlendShapeFrameVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeFrameVertices", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (shapeIndex, frameIndex, deltaVertices, deltaNormals, deltaTangents),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeFrameWeight(
@@ -574,22 +1070,38 @@ impl crate::UnityEngine::Mesh {
         shapeIndex: i32,
         frameIndex: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetBlendShapeFrameWeight", (shapeIndex, frameIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, i32), f32, 2usize>("GetBlendShapeFrameWeight")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeFrameWeight", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked(self, (shapeIndex, frameIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeIndex(
         &mut self,
         blendShapeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetBlendShapeIndex", (blendShapeName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                i32,
+                1usize,
+            >("GetBlendShapeIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeIndex", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (blendShapeName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeName(
@@ -598,23 +1110,42 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetBlendShapeName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("GetBlendShapeName", (shapeIndex))?;
+        > = unsafe { method.invoke_unchecked(self, (shapeIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeOffsetInternal(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::BlendShape> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::BlendShape = __cordl_object
-            .invoke("GetBlendShapeOffsetInternal", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::BlendShape,
+                1usize,
+            >("GetBlendShapeOffsetInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeOffsetInternal", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::BlendShape = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlendShapeOffsetInternal_Injected(
@@ -622,11 +1153,21 @@ impl crate::UnityEngine::Mesh {
         index: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::BlendShape>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetBlendShapeOffsetInternal_Injected", (index, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::BlendShape>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetBlendShapeOffsetInternal_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlendShapeOffsetInternal_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (index, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoneWeightBuffer(
@@ -635,11 +1176,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetBoneWeightBuffer", (layout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::SkinWeights),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                1usize,
+            >("GetBoneWeightBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBoneWeightBuffer", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, (layout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoneWeightBufferImpl(
@@ -648,21 +1199,35 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetBoneWeightBufferImpl", (bonesPerVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                1usize,
+            >("GetBoneWeightBufferImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBoneWeightBufferImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, (bonesPerVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoneWeightBufferLayoutInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetBoneWeightBufferLayoutInternal", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetBoneWeightBufferLayoutInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBoneWeightBufferLayoutInternal", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoneWeights(
@@ -671,11 +1236,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::BoneWeight>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetBoneWeights", (boneWeights))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::BoneWeight,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetBoneWeights")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBoneWeights", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (boneWeights))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoneWeightsImpl(
@@ -685,12 +1264,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
+                >,
+                0usize,
+            >("GetBoneWeightsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBoneWeightsImpl", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
-        > = __cordl_object.invoke("GetBoneWeightsImpl", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBoneWeightsNonAllocImpl(
@@ -701,31 +1291,63 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetBoneWeightsNonAllocImpl", (values))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::BoneWeight,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetBoneWeightsNonAllocImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBoneWeightsNonAllocImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (values))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBonesPerVertex(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = __cordl_object
-            .invoke("GetBonesPerVertex", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Unity::Collections::NativeArray_1<u8>,
+                0usize,
+            >("GetBonesPerVertex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBonesPerVertex", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBonesPerVertexArray(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("GetBonesPerVertexArray", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::System::IntPtr, 0usize>("GetBonesPerVertexArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBonesPerVertexArray", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColors_List_1_0(
@@ -734,11 +1356,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetColors", (colors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Color,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (colors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColors_List_1_1(
@@ -747,11 +1383,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetColors", (colors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Color32,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (colors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexBuffer(
@@ -759,11 +1409,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetIndexBuffer", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                0usize,
+            >("GetIndexBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexBuffer", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexBufferImpl(
@@ -771,45 +1431,75 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetIndexBufferImpl", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                0usize,
+            >("GetIndexBufferImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexBufferImpl", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexCount(&mut self, submesh: i32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetIndexCount", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), u32, 1usize>("GetIndexCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexCount", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexCountImpl(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetIndexCountImpl", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), u32, 1usize>("GetIndexCountImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexCountImpl", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexStart(&mut self, submesh: i32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetIndexStart", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), u32, 1usize>("GetIndexStart")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexStart", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexStartImpl(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetIndexStartImpl", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), u32, 1usize>("GetIndexStartImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexStartImpl", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndicesImpl(
@@ -819,12 +1509,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, bool),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                2usize,
+            >("GetIndicesImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndicesImpl", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object.invoke("GetIndicesImpl", (submesh, applyBaseVertex))?;
+        > = unsafe { method.invoke_unchecked(self, (submesh, applyBaseVertex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndicesNonAllocImpl(
@@ -835,11 +1534,29 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetIndicesNonAllocImpl", (values, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<i32>,
+                        >,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetIndicesNonAllocImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndicesNonAllocImpl", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (values, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndicesNonAllocImpl16(
@@ -850,11 +1567,29 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetIndicesNonAllocImpl16", (values, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u16>,
+                        >,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetIndicesNonAllocImpl16")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndicesNonAllocImpl16", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (values, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndices_List_1_i32_2(
@@ -864,11 +1599,26 @@ impl crate::UnityEngine::Mesh {
         >,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetIndices", (indices, submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndices", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (indices, submesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndices_List_1_i32__cordl_bool3(
@@ -879,11 +1629,27 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetIndices", (indices, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndices", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (indices, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndices_List_1_i32__cordl_bool4(
@@ -894,11 +1660,27 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetIndices", (indices, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u16>,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndices", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (indices, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndices_i32_0(
@@ -907,12 +1689,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                1usize,
+            >("GetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndices", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object.invoke("GetIndices", (submesh))?;
+        > = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndices_i32__cordl_bool1(
@@ -922,12 +1713,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, bool),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                2usize,
+            >("GetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndices", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object.invoke("GetIndices", (submesh, applyBaseVertex))?;
+        > = unsafe { method.invoke_unchecked(self, (submesh, applyBaseVertex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetListForChannel_List_1_i32_VertexAttribute_i32_0<T>(
@@ -943,11 +1743,28 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetListForChannel", (buffer, capacity, channel, dim))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("GetListForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetListForChannel", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (buffer, capacity, channel, dim))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetListForChannel_VertexAttributeFormat1<T>(
@@ -964,32 +1781,66 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetListForChannel", (buffer, capacity, channel, dim, channelType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    i32,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("GetListForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetListForChannel", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (buffer, capacity, channel, dim, channelType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeIndexBufferPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("GetNativeIndexBufferPtr", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::System::IntPtr, 0usize>("GetNativeIndexBufferPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNativeIndexBufferPtr", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeVertexBufferPtr(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::IntPtr = __cordl_object
-            .invoke("GetNativeVertexBufferPtr", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::System::IntPtr,
+                1usize,
+            >("GetNativeVertexBufferPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNativeVertexBufferPtr", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNormals(
@@ -998,11 +1849,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetNormals", (normals))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector3,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNormals", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (normals))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSubMesh(
@@ -1011,11 +1876,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::SubMeshDescriptor,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::SubMeshDescriptor = __cordl_object
-            .invoke("GetSubMesh", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Rendering::SubMeshDescriptor,
+                1usize,
+            >("GetSubMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSubMesh", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::SubMeshDescriptor = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSubMesh_Injected(
@@ -1025,11 +1900,26 @@ impl crate::UnityEngine::Mesh {
             crate::UnityEngine::Rendering::SubMeshDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetSubMesh_Injected", (index, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Rendering::SubMeshDescriptor,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetSubMesh_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSubMesh_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (index, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTangents(
@@ -1038,51 +1928,94 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTangents", (tangents))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector4,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTangents", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (tangents))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTopology(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::MeshTopology = __cordl_object
-            .invoke("GetTopology", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::MeshTopology,
+                1usize,
+            >("GetTopology")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTopology", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::MeshTopology = unsafe {
+            method.invoke_unchecked(self, (submesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTopologyImpl(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::MeshTopology = __cordl_object
-            .invoke("GetTopologyImpl", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::MeshTopology,
+                1usize,
+            >("GetTopologyImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTopologyImpl", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::MeshTopology = unsafe {
+            method.invoke_unchecked(self, (submesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTotalIndexCount(&mut self) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object.invoke("GetTotalIndexCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), u32, 0usize>("GetTotalIndexCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTotalIndexCount", 0usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrianglesCountImpl(
         &mut self,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("GetTrianglesCountImpl", (submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), u32, 1usize>("GetTrianglesCountImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTrianglesCountImpl", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrianglesImpl(
@@ -1092,12 +2025,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, bool),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                2usize,
+            >("GetTrianglesImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTrianglesImpl", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object.invoke("GetTrianglesImpl", (submesh, applyBaseVertex))?;
+        > = unsafe { method.invoke_unchecked(self, (submesh, applyBaseVertex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrianglesNonAllocImpl(
@@ -1108,11 +2050,29 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTrianglesNonAllocImpl", (values, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<i32>,
+                        >,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetTrianglesNonAllocImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTrianglesNonAllocImpl", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (values, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTrianglesNonAllocImpl16(
@@ -1123,11 +2083,29 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTrianglesNonAllocImpl16", (values, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u16>,
+                        >,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetTrianglesNonAllocImpl16")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTrianglesNonAllocImpl16", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (values, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTriangles_List_1_i32_2(
@@ -1137,11 +2115,26 @@ impl crate::UnityEngine::Mesh {
         >,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTriangles", (triangles, submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTriangles", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (triangles, submesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTriangles_List_1_i32__cordl_bool3(
@@ -1152,11 +2145,27 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTriangles", (triangles, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTriangles", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (triangles, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTriangles_List_1_i32__cordl_bool4(
@@ -1167,11 +2176,27 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetTriangles", (triangles, submesh, applyBaseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u16>,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTriangles", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (triangles, submesh, applyBaseVertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTriangles_i32_0(
@@ -1180,12 +2205,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                1usize,
+            >("GetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTriangles", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object.invoke("GetTriangles", (submesh))?;
+        > = unsafe { method.invoke_unchecked(self, (submesh)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTriangles_i32__cordl_bool1(
@@ -1195,30 +2229,56 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, bool),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                2usize,
+            >("GetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTriangles", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object.invoke("GetTriangles", (submesh, applyBaseVertex))?;
+        > = unsafe { method.invoke_unchecked(self, (submesh, applyBaseVertex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVChannel(
         uvIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::VertexAttribute> {
-        let __cordl_ret: crate::UnityEngine::Rendering::VertexAttribute = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUVChannel", (uvIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                crate::UnityEngine::Rendering::VertexAttribute,
+                1usize,
+            >("GetUVChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVChannel", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::VertexAttribute = unsafe {
+            method.invoke_unchecked((), (uvIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVDistributionMetric(
         &mut self,
         uvSetIndex: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetUVDistributionMetric", (uvSetIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), f32, 1usize>("GetUVDistributionMetric")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVDistributionMetric", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (uvSetIndex)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVsImpl<T>(
@@ -1231,11 +2291,27 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetUVsImpl", (uvIndex, uvs, dim))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetUVsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVsImpl", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (uvIndex, uvs, dim))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVs_i32_List_1_0(
@@ -1245,11 +2321,28 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVs_i32_List_1_1(
@@ -1259,11 +2352,28 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVs_i32_List_1_2(
@@ -1273,11 +2383,28 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector4,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttribute(
@@ -1286,29 +2413,52 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::VertexAttributeDescriptor,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::VertexAttributeDescriptor = __cordl_object
-            .invoke("GetVertexAttribute", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                1usize,
+            >("GetVertexAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttribute", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::VertexAttributeDescriptor = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributeCountImpl(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetVertexAttributeCountImpl", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetVertexAttributeCountImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributeCountImpl", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributeDimension(
         &mut self,
         attr: crate::UnityEngine::Rendering::VertexAttribute,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetVertexAttributeDimension", (attr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                i32,
+                1usize,
+            >("GetVertexAttributeDimension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributeDimension", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attr)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributeFormat(
@@ -1317,33 +2467,59 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::VertexAttributeFormat,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::VertexAttributeFormat = __cordl_object
-            .invoke("GetVertexAttributeFormat", (attr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                crate::UnityEngine::Rendering::VertexAttributeFormat,
+                1usize,
+            >("GetVertexAttributeFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributeFormat", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::VertexAttributeFormat = unsafe {
+            method.invoke_unchecked(self, (attr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributeOffset(
         &mut self,
         attr: crate::UnityEngine::Rendering::VertexAttribute,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetVertexAttributeOffset", (attr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                i32,
+                1usize,
+            >("GetVertexAttributeOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributeOffset", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attr)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributeStream(
         &mut self,
         attr: crate::UnityEngine::Rendering::VertexAttribute,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetVertexAttributeStream", (attr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                i32,
+                1usize,
+            >("GetVertexAttributeStream")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributeStream", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attr)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttribute_Injected(
@@ -1353,21 +2529,46 @@ impl crate::UnityEngine::Mesh {
             crate::UnityEngine::Rendering::VertexAttributeDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetVertexAttribute_Injected", (index, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetVertexAttribute_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttribute_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (index, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributesAlloc(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = __cordl_object
-            .invoke("GetVertexAttributesAlloc", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Array>,
+                0usize,
+            >("GetVertexAttributesAlloc")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributesAlloc", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributesArray(
@@ -1378,11 +2579,23 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetVertexAttributesArray", (attributes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("GetVertexAttributesArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributesArray", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributesList(
@@ -1393,11 +2606,23 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetVertexAttributesList", (attributes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("GetVertexAttributesList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributesList", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributes_0(
@@ -1409,14 +2634,27 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                    >,
+                >,
+                0usize,
+            >("GetVertexAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributes", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::Rendering::VertexAttributeDescriptor,
             >,
-        > = __cordl_object.invoke("GetVertexAttributes", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributes_Il2CppArray1(
@@ -1427,11 +2665,23 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetVertexAttributes", (attributes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("GetVertexAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributes", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexAttributes_List_1_2(
@@ -1442,11 +2692,23 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetVertexAttributes", (attributes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("GetVertexAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexAttributes", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexBuffer(
@@ -1455,11 +2717,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetVertexBuffer", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                1usize,
+            >("GetVertexBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexBuffer", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexBufferImpl(
@@ -1468,21 +2740,36 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = __cordl_object
-            .invoke("GetVertexBufferImpl", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+                1usize,
+            >("GetVertexBufferImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexBufferImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer> = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexBufferStride(
         &mut self,
         stream: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetVertexBufferStride", (stream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), i32, 1usize>("GetVertexBufferStride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexBufferStride", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (stream)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertices(
@@ -1491,28 +2778,56 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetVertices", (vertices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector3,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vertices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HasBoneWeights(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasBoneWeights", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("HasBoneWeights")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasBoneWeights", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn HasVertexAttribute(
         &mut self,
         attr: crate::UnityEngine::Rendering::VertexAttribute,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasVertexAttribute", (attr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                bool,
+                1usize,
+            >("HasVertexAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasVertexAttribute", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (attr)) };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetBoneWeights(
@@ -1522,14 +2837,25 @@ impl crate::UnityEngine::Mesh {
         weights: crate::System::IntPtr,
         weightsSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "InternalSetBoneWeights",
-                (bonesPerVertex, bonesPerVertexSize, weights, weightsSize),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::IntPtr, i32, crate::System::IntPtr, i32),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("InternalSetBoneWeights")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalSetBoneWeights", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (bonesPerVertex, bonesPerVertexSize, weights, weightsSize),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetIndexBufferData(
@@ -1541,14 +2867,32 @@ impl crate::UnityEngine::Mesh {
         elemSize: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "InternalSetIndexBufferData",
-                (data, dataStart, meshBufferStart, count, elemSize, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::IntPtr,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("InternalSetIndexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalSetIndexBufferData", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (data, dataStart, meshBufferStart, count, elemSize, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetIndexBufferDataFromArray(
@@ -1560,14 +2904,32 @@ impl crate::UnityEngine::Mesh {
         elemSize: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "InternalSetIndexBufferDataFromArray",
-                (data, dataStart, meshBufferStart, count, elemSize, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("InternalSetIndexBufferDataFromArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalSetIndexBufferDataFromArray", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (data, dataStart, meshBufferStart, count, elemSize, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetVertexBufferData(
@@ -1580,14 +2942,33 @@ impl crate::UnityEngine::Mesh {
         elemSize: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "InternalSetVertexBufferData",
-                (stream, data, dataStart, meshBufferStart, count, elemSize, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    crate::System::IntPtr,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("InternalSetVertexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalSetVertexBufferData", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (stream, data, dataStart, meshBufferStart, count, elemSize, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetVertexBufferDataFromArray(
@@ -1600,51 +2981,101 @@ impl crate::UnityEngine::Mesh {
         elemSize: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "InternalSetVertexBufferDataFromArray",
-                (stream, data, dataStart, meshBufferStart, count, elemSize, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("InternalSetVertexBufferDataFromArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalSetVertexBufferDataFromArray", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (stream, data, dataStart, meshBufferStart, count, elemSize, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_Create(
         mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Internal_Create", (mono))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Internal_Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_Create", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mono))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MarkDynamic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MarkDynamic", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MarkDynamic")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MarkDynamic", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MarkDynamicImpl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MarkDynamicImpl", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MarkDynamicImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MarkDynamicImpl", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MarkModified(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MarkModified", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("MarkModified")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MarkModified", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1657,178 +3088,332 @@ impl crate::UnityEngine::Mesh {
     pub fn Optimize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Optimize", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Optimize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Optimize", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OptimizeImpl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OptimizeImpl", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OptimizeImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OptimizeImpl", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OptimizeIndexBuffers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OptimizeIndexBuffers", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("OptimizeIndexBuffers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OptimizeIndexBuffers", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OptimizeIndexBuffersImpl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OptimizeIndexBuffersImpl", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("OptimizeIndexBuffersImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OptimizeIndexBuffersImpl", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OptimizeReorderVertexBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OptimizeReorderVertexBuffer", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("OptimizeReorderVertexBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OptimizeReorderVertexBuffer", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OptimizeReorderVertexBufferImpl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OptimizeReorderVertexBufferImpl", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("OptimizeReorderVertexBufferImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OptimizeReorderVertexBufferImpl", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PrintErrorCantAccessChannel(
         &mut self,
         ch: crate::UnityEngine::Rendering::VertexAttribute,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrintErrorCantAccessChannel", (ch))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::VertexAttribute),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PrintErrorCantAccessChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PrintErrorCantAccessChannel", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ch))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PrintErrorCantAccessIndices(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PrintErrorCantAccessIndices", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("PrintErrorCantAccessIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PrintErrorCantAccessIndices", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateBoundsImpl(
         &mut self,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateBoundsImpl", (flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::MeshUpdateFlags),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateBoundsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateBoundsImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateBounds_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateBounds", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RecalculateBounds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateBounds", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateBounds_MeshUpdateFlags1(
         &mut self,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateBounds", (flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::MeshUpdateFlags),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateBounds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateBounds", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateNormalsImpl(
         &mut self,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateNormalsImpl", (flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::MeshUpdateFlags),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateNormalsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateNormalsImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateNormals_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateNormals", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("RecalculateNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateNormals", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateNormals_MeshUpdateFlags1(
         &mut self,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateNormals", (flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::MeshUpdateFlags),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateNormals", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateTangentsImpl(
         &mut self,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateTangentsImpl", (flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::MeshUpdateFlags),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateTangentsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateTangentsImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateTangents_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateTangents", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("RecalculateTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateTangents", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateTangents_MeshUpdateFlags1(
         &mut self,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateTangents", (flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::MeshUpdateFlags),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateTangents", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateUVDistributionMetric(
@@ -1836,11 +3421,21 @@ impl crate::UnityEngine::Mesh {
         uvSetIndex: i32,
         uvAreaThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateUVDistributionMetric", (uvSetIndex, uvAreaThreshold))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, f32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RecalculateUVDistributionMetric")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateUVDistributionMetric", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (uvSetIndex, uvAreaThreshold))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateUVDistributionMetricImpl(
@@ -1848,36 +3443,63 @@ impl crate::UnityEngine::Mesh {
         uvSetIndex: i32,
         uvAreaThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "RecalculateUVDistributionMetricImpl",
-                (uvSetIndex, uvAreaThreshold),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, f32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RecalculateUVDistributionMetricImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateUVDistributionMetricImpl", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (uvSetIndex, uvAreaThreshold))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateUVDistributionMetrics(
         &mut self,
         uvAreaThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateUVDistributionMetrics", (uvAreaThreshold))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateUVDistributionMetrics")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateUVDistributionMetrics", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (uvAreaThreshold))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecalculateUVDistributionMetricsImpl(
         &mut self,
         uvAreaThreshold: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RecalculateUVDistributionMetricsImpl", (uvAreaThreshold))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RecalculateUVDistributionMetricsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecalculateUVDistributionMetricsImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (uvAreaThreshold))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetAllSubMeshesAtOnceFromArray(
@@ -1891,11 +3513,30 @@ impl crate::UnityEngine::Mesh {
         count: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetAllSubMeshesAtOnceFromArray", (desc, start, count, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Rendering::SubMeshDescriptor,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetAllSubMeshesAtOnceFromArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAllSubMeshesAtOnceFromArray", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, start, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetAllSubMeshesAtOnceFromNativeArray(
@@ -1905,14 +3546,26 @@ impl crate::UnityEngine::Mesh {
         count: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetAllSubMeshesAtOnceFromNativeArray",
-                (desc, start, count, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::IntPtr,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetAllSubMeshesAtOnceFromNativeArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAllSubMeshesAtOnceFromNativeArray", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, start, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetArrayForChannelImpl(
@@ -1926,23 +3579,43 @@ impl crate::UnityEngine::Mesh {
         valuesCount: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetArrayForChannelImpl",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    channel,
-                    format,
-                    dim,
-                    values,
-                    arraySize,
-                    valuesStart,
-                    valuesCount,
-                    flags,
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("SetArrayForChannelImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetArrayForChannelImpl", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        channel,
+                        format,
+                        dim,
+                        values,
+                        arraySize,
+                        valuesStart,
+                        valuesCount,
+                        flags,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetArrayForChannel_Il2CppArray_MeshUpdateFlags1<T>(
@@ -1955,11 +3628,25 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetArrayForChannel", (channel, values, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetArrayForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetArrayForChannel", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, values, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetArrayForChannel_VertexAttributeFormat_i32_Il2CppArray_MeshUpdateFlags0<T>(
@@ -1974,11 +3661,27 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetArrayForChannel", (channel, format, dim, values, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetArrayForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetArrayForChannel", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, format, dim, values, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetBoneWeights(
@@ -1988,11 +3691,26 @@ impl crate::UnityEngine::Mesh {
             crate::UnityEngine::BoneWeight1,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetBoneWeights", (bonesPerVertex, weights))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<u8>,
+                    crate::Unity::Collections::NativeArray_1<
+                        crate::UnityEngine::BoneWeight1,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetBoneWeights")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetBoneWeights", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bonesPerVertex, weights))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetBoneWeightsImpl(
@@ -2001,11 +3719,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetBoneWeightsImpl", (weights))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetBoneWeightsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetBoneWeightsImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (weights))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_Il2CppArray3(
@@ -2014,11 +3744,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_Il2CppArray9(
@@ -2027,11 +3769,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_Il2CppArray_i32_i32_10(
@@ -2042,11 +3796,27 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_Il2CppArray_i32_i32_4(
@@ -2057,11 +3827,27 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_Il2CppArray_i32_i32_MeshUpdateFlags11(
@@ -2073,11 +3859,28 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_Il2CppArray_i32_i32_MeshUpdateFlags5(
@@ -2089,11 +3892,28 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_List_1_0(
@@ -2102,11 +3922,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Color,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_List_1_6(
@@ -2115,11 +3949,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Color32,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_List_1_i32_i32_1(
@@ -2130,11 +3978,29 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Color,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_List_1_i32_i32_7(
@@ -2145,11 +4011,29 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Color32,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_List_1_i32_i32_MeshUpdateFlags2(
@@ -2161,11 +4045,30 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Color,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_List_1_i32_i32_MeshUpdateFlags8(
@@ -2177,11 +4080,30 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Color32,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_NativeArray_1_12<T>(
@@ -2192,11 +4114,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_NativeArray_1_i32_i32_13<T>(
@@ -2209,11 +4141,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColors_NativeArray_1_i32_i32_MeshUpdateFlags14<T>(
@@ -2227,11 +4169,26 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColors", (inColors, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColors", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inColors, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndexBufferData_Il2CppArray1<T>(
@@ -2246,14 +4203,28 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndexBufferData",
-                (data, dataStart, meshBufferStart, count, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndexBufferData", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (data, dataStart, meshBufferStart, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndexBufferData_List_1_2<T>(
@@ -2268,14 +4239,30 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndexBufferData",
-                (data, dataStart, meshBufferStart, count, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndexBufferData", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (data, dataStart, meshBufferStart, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndexBufferData_NativeArray_1_0<T>(
@@ -2290,14 +4277,28 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndexBufferData",
-                (data, dataStart, meshBufferStart, count, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndexBufferData", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (data, dataStart, meshBufferStart, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndexBufferParams(
@@ -2305,11 +4306,21 @@ impl crate::UnityEngine::Mesh {
         indexCount: i32,
         format: crate::UnityEngine::Rendering::IndexFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetIndexBufferParams", (indexCount, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::Rendering::IndexFormat),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetIndexBufferParams")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndexBufferParams", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (indexCount, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndicesImpl(
@@ -2323,23 +4334,43 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndicesImpl",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    submesh,
-                    topology,
-                    indicesFormat,
-                    indices,
-                    arrayStart,
-                    arraySize,
-                    calculateBounds,
-                    baseVertex,
+                    i32,
+                    crate::UnityEngine::MeshTopology,
+                    crate::UnityEngine::Rendering::IndexFormat,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    i32,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("SetIndicesImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndicesImpl", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        submesh,
+                        topology,
+                        indicesFormat,
+                        indices,
+                        arrayStart,
+                        arraySize,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndicesNativeArrayImpl(
@@ -2353,23 +4384,43 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndicesNativeArrayImpl",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    submesh,
-                    topology,
-                    indicesFormat,
-                    indices,
-                    arrayStart,
-                    arraySize,
-                    calculateBounds,
-                    baseVertex,
+                    i32,
+                    crate::UnityEngine::MeshTopology,
+                    crate::UnityEngine::Rendering::IndexFormat,
+                    crate::System::IntPtr,
+                    i32,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("SetIndicesNativeArrayImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndicesNativeArrayImpl", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        submesh,
+                        topology,
+                        indicesFormat,
+                        indices,
+                        arrayStart,
+                        arraySize,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_Il2CppArray_MeshTopology0(
@@ -2378,11 +4429,25 @@ impl crate::UnityEngine::Mesh {
         topology: crate::UnityEngine::MeshTopology,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetIndices", (indices, topology, submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (indices, topology, submesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_Il2CppArray_MeshTopology__cordl_bool1(
@@ -2392,11 +4457,26 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         calculateBounds: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetIndices", (indices, topology, submesh, calculateBounds))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (indices, topology, submesh, calculateBounds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_Il2CppArray_MeshTopology__cordl_bool_i32_2(
@@ -2407,14 +4487,31 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
-                (indices, topology, submesh, calculateBounds, baseVertex),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (indices, topology, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_Il2CppArray_MeshTopology__cordl_bool_i32_4(
@@ -2425,14 +4522,31 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
-                (indices, topology, submesh, calculateBounds, baseVertex),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (indices, topology, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_Il2CppArray_i32_MeshTopology_i32__cordl_bool_i32_3(
@@ -2445,22 +4559,41 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indices,
-                    indicesStart,
-                    indicesLength,
-                    topology,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indices,
+                        indicesStart,
+                        indicesLength,
+                        topology,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_Il2CppArray_i32_MeshTopology_i32__cordl_bool_i32_5(
@@ -2473,22 +4606,41 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indices,
-                    indicesStart,
-                    indicesLength,
-                    topology,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indices,
+                        indicesStart,
+                        indicesLength,
+                        topology,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_List_1_MeshTopology__cordl_bool_i32_10(
@@ -2501,14 +4653,33 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
-                (indices, topology, submesh, calculateBounds, baseVertex),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u16>,
+                    >,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (indices, topology, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_List_1_MeshTopology__cordl_bool_i32_8(
@@ -2521,14 +4692,33 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
-                (indices, topology, submesh, calculateBounds, baseVertex),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (indices, topology, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_List_1_i32_MeshTopology_i32__cordl_bool_i32_11(
@@ -2543,22 +4733,43 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indices,
-                    indicesStart,
-                    indicesLength,
-                    topology,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u16>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indices,
+                        indicesStart,
+                        indicesLength,
+                        topology,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_List_1_i32_MeshTopology_i32__cordl_bool_i32_9(
@@ -2573,22 +4784,43 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indices,
-                    indicesStart,
-                    indicesLength,
-                    topology,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indices,
+                        indicesStart,
+                        indicesLength,
+                        topology,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_NativeArray_1_MeshTopology__cordl_bool_i32_6<T>(
@@ -2603,14 +4835,31 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
-                (indices, topology, submesh, calculateBounds, baseVertex),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (indices, topology, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndices_NativeArray_1_i32_MeshTopology_i32__cordl_bool_i32_7<T>(
@@ -2627,22 +4876,41 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetIndices",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indices,
-                    indicesStart,
-                    indicesLength,
-                    topology,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::MeshTopology,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("SetIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndices", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indices,
+                        indicesStart,
+                        indicesLength,
+                        topology,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetListForChannel_List_1_i32_MeshUpdateFlags1<T>(
@@ -2659,11 +4927,29 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetListForChannel", (channel, values, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetListForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetListForChannel", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, values, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetListForChannel_VertexAttributeFormat_List_1_i32_i32_MeshUpdateFlags0<T>(
@@ -2682,14 +4968,35 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetListForChannel",
-                (channel, format, dim, values, start, length, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("SetListForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetListForChannel", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (channel, format, dim, values, start, length, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNativeArrayForChannelImpl(
@@ -2703,23 +5010,43 @@ impl crate::UnityEngine::Mesh {
         valuesCount: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetNativeArrayForChannelImpl",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    channel,
-                    format,
-                    dim,
-                    values,
-                    arraySize,
-                    valuesStart,
-                    valuesCount,
-                    flags,
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                    crate::System::IntPtr,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("SetNativeArrayForChannelImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNativeArrayForChannelImpl", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        channel,
+                        format,
+                        dim,
+                        values,
+                        arraySize,
+                        valuesStart,
+                        valuesCount,
+                        flags,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_Il2CppArray3(
@@ -2728,11 +5055,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_Il2CppArray_i32_i32_4(
@@ -2743,11 +5082,27 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_Il2CppArray_i32_i32_MeshUpdateFlags5(
@@ -2759,11 +5114,28 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_List_1_0(
@@ -2772,11 +5144,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector3,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_List_1_i32_i32_1(
@@ -2787,11 +5173,29 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_List_1_i32_i32_MeshUpdateFlags2(
@@ -2803,11 +5207,30 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_NativeArray_1_6<T>(
@@ -2818,11 +5241,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_NativeArray_1_i32_i32_7<T>(
@@ -2835,11 +5268,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetNormals_NativeArray_1_i32_i32_MeshUpdateFlags8<T>(
@@ -2853,11 +5296,26 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetNormals", (inNormals, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetNormals", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inNormals, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSizedArrayForChannel(
@@ -2871,23 +5329,43 @@ impl crate::UnityEngine::Mesh {
         valuesCount: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetSizedArrayForChannel",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    channel,
-                    format,
-                    dim,
-                    values,
-                    valuesArrayLength,
-                    valuesStart,
-                    valuesCount,
-                    flags,
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("SetSizedArrayForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSizedArrayForChannel", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        channel,
+                        format,
+                        dim,
+                        values,
+                        valuesArrayLength,
+                        valuesStart,
+                        valuesCount,
+                        flags,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSizedNativeArrayForChannel(
@@ -2901,23 +5379,43 @@ impl crate::UnityEngine::Mesh {
         valuesCount: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetSizedNativeArrayForChannel",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    channel,
-                    format,
-                    dim,
-                    values,
-                    valuesArrayLength,
-                    valuesStart,
-                    valuesCount,
-                    flags,
+                    crate::UnityEngine::Rendering::VertexAttribute,
+                    crate::UnityEngine::Rendering::VertexAttributeFormat,
+                    i32,
+                    crate::System::IntPtr,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("SetSizedNativeArrayForChannel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSizedNativeArrayForChannel", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        channel,
+                        format,
+                        dim,
+                        values,
+                        valuesArrayLength,
+                        valuesStart,
+                        valuesCount,
+                        flags,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMesh(
@@ -2926,11 +5424,25 @@ impl crate::UnityEngine::Mesh {
         desc: crate::UnityEngine::Rendering::SubMeshDescriptor,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMesh", (index, desc, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    crate::UnityEngine::Rendering::SubMeshDescriptor,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetSubMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMesh", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (index, desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMesh_Injected(
@@ -2941,11 +5453,27 @@ impl crate::UnityEngine::Mesh {
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMesh_Injected", (index, desc, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Rendering::SubMeshDescriptor,
+                    >,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetSubMesh_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMesh_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (index, desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshes_Il2CppArray_MeshUpdateFlags1(
@@ -2957,11 +5485,28 @@ impl crate::UnityEngine::Mesh {
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMeshes", (desc, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Rendering::SubMeshDescriptor,
+                        >,
+                    >,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetSubMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshes", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshes_Il2CppArray_i32_i32_MeshUpdateFlags0(
@@ -2975,11 +5520,30 @@ impl crate::UnityEngine::Mesh {
         count: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMeshes", (desc, start, count, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Rendering::SubMeshDescriptor,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetSubMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshes", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, start, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshes_List_1_MeshUpdateFlags3(
@@ -2991,11 +5555,28 @@ impl crate::UnityEngine::Mesh {
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMeshes", (desc, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Rendering::SubMeshDescriptor,
+                        >,
+                    >,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetSubMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshes", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshes_List_1_i32_i32_MeshUpdateFlags2(
@@ -3009,11 +5590,30 @@ impl crate::UnityEngine::Mesh {
         count: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMeshes", (desc, start, count, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Rendering::SubMeshDescriptor,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetSubMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshes", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, start, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshes_NativeArray_1_MeshUpdateFlags5<T>(
@@ -3025,11 +5625,24 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMeshes", (desc, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetSubMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshes", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshes_NativeArray_1_i32_i32_MeshUpdateFlags4<T>(
@@ -3043,11 +5656,26 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSubMeshes", (desc, start, count, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetSubMeshes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshes", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc, start, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_Il2CppArray3(
@@ -3056,11 +5684,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_Il2CppArray_i32_i32_4(
@@ -3071,11 +5711,27 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_Il2CppArray_i32_i32_MeshUpdateFlags5(
@@ -3087,11 +5743,28 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_List_1_0(
@@ -3100,11 +5773,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector4,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_List_1_i32_i32_1(
@@ -3115,11 +5802,29 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector4,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_List_1_i32_i32_MeshUpdateFlags2(
@@ -3131,11 +5836,30 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector4,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_NativeArray_1_6<T>(
@@ -3146,11 +5870,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_NativeArray_1_i32_i32_7<T>(
@@ -3163,11 +5897,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTangents_NativeArray_1_i32_i32_MeshUpdateFlags8<T>(
@@ -3181,11 +5925,26 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTangents", (inTangents, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTangents", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inTangents, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTrianglesImpl(
@@ -3199,23 +5958,43 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetTrianglesImpl",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    submesh,
-                    indicesFormat,
-                    triangles,
-                    trianglesArrayLength,
-                    start,
-                    length,
-                    calculateBounds,
-                    baseVertex,
+                    i32,
+                    crate::UnityEngine::Rendering::IndexFormat,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    i32,
+                    i32,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("SetTrianglesImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTrianglesImpl", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        submesh,
+                        indicesFormat,
+                        triangles,
+                        trianglesArrayLength,
+                        start,
+                        length,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_Il2CppArray0(
@@ -3223,11 +6002,24 @@ impl crate::UnityEngine::Mesh {
         triangles: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (triangles, submesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_Il2CppArray__cordl_bool1(
@@ -3236,11 +6028,25 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         calculateBounds: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh, calculateBounds))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (triangles, submesh, calculateBounds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_Il2CppArray__cordl_bool_i32_2(
@@ -3250,11 +6056,30 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh, calculateBounds, baseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (triangles, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_Il2CppArray__cordl_bool_i32_4(
@@ -3264,11 +6089,30 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh, calculateBounds, baseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (triangles, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_Il2CppArray_i32_i32__cordl_bool_i32_3(
@@ -3280,21 +6124,39 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetTriangles",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    triangles,
-                    trianglesStart,
-                    trianglesLength,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                    i32,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        triangles,
+                        trianglesStart,
+                        trianglesLength,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_Il2CppArray_i32_i32__cordl_bool_i32_5(
@@ -3306,21 +6168,39 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetTriangles",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    triangles,
-                    trianglesStart,
-                    trianglesLength,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    i32,
+                    i32,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        triangles,
+                        trianglesStart,
+                        trianglesLength,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_List_1_6(
@@ -3330,11 +6210,26 @@ impl crate::UnityEngine::Mesh {
         >,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (triangles, submesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_List_1__cordl_bool7(
@@ -3345,11 +6240,27 @@ impl crate::UnityEngine::Mesh {
         submesh: i32,
         calculateBounds: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh, calculateBounds))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (triangles, submesh, calculateBounds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_List_1__cordl_bool_i32_10(
@@ -3361,11 +6272,32 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh, calculateBounds, baseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u16>,
+                    >,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (triangles, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_List_1__cordl_bool_i32_8(
@@ -3377,11 +6309,32 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTriangles", (triangles, submesh, calculateBounds, baseVertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (triangles, submesh, calculateBounds, baseVertex),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_List_1_i32_i32__cordl_bool_i32_11(
@@ -3395,21 +6348,41 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetTriangles",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    triangles,
-                    trianglesStart,
-                    trianglesLength,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u16>,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        triangles,
+                        trianglesStart,
+                        trianglesLength,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTriangles_List_1_i32_i32__cordl_bool_i32_9(
@@ -3423,21 +6396,41 @@ impl crate::UnityEngine::Mesh {
         calculateBounds: bool,
         baseVertex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetTriangles",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    triangles,
-                    trianglesStart,
-                    trianglesLength,
-                    submesh,
-                    calculateBounds,
-                    baseVertex,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<i32>,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                    bool,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTriangles", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        triangles,
+                        trianglesStart,
+                        trianglesLength,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray10(
@@ -3447,11 +6440,26 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray11(
@@ -3461,11 +6469,26 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray9(
@@ -3475,11 +6498,26 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray_i32_i32_12(
@@ -3491,11 +6529,28 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray_i32_i32_14(
@@ -3507,11 +6562,28 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray_i32_i32_16(
@@ -3523,11 +6595,28 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray_i32_i32_MeshUpdateFlags13(
@@ -3540,11 +6629,29 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray_i32_i32_MeshUpdateFlags15(
@@ -3557,11 +6664,29 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_Il2CppArray_i32_i32_MeshUpdateFlags17(
@@ -3574,11 +6699,29 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_0(
@@ -3588,11 +6731,28 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_1(
@@ -3602,11 +6762,28 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_2(
@@ -3616,11 +6793,28 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector4,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_i32_i32_3(
@@ -3632,11 +6826,30 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_i32_i32_5(
@@ -3648,11 +6861,30 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_i32_i32_7(
@@ -3664,11 +6896,30 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector4,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_i32_i32_MeshUpdateFlags4(
@@ -3681,11 +6932,31 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_i32_i32_MeshUpdateFlags6(
@@ -3698,11 +6969,31 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_List_1_i32_i32_MeshUpdateFlags8(
@@ -3715,11 +7006,31 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector4,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_NativeArray_1_18<T>(
@@ -3731,11 +7042,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::Unity::Collections::NativeArray_1<T>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_NativeArray_1_i32_i32_19<T>(
@@ -3749,11 +7070,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::Unity::Collections::NativeArray_1<T>, i32, i32),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUVs_NativeArray_1_i32_i32_MeshUpdateFlags20<T>(
@@ -3768,11 +7099,27 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUVs", (channel, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUVs", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (channel, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUvsImpl_Array1(
@@ -3784,11 +7131,32 @@ impl crate::UnityEngine::Mesh {
         arraySize: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUvsImpl", (uvIndex, dim, uvs, arrayStart, arraySize, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetUvsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUvsImpl", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (uvIndex, dim, uvs, arrayStart, arraySize, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUvsImpl_List_1_0<T>(
@@ -3804,11 +7172,30 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetUvsImpl", (uvIndex, dim, uvs, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetUvsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUvsImpl", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (uvIndex, dim, uvs, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferData_Il2CppArray1<T>(
@@ -3824,14 +7211,32 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetVertexBufferData",
-                (data, dataStart, meshBufferStart, count, stream, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetVertexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferData", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (data, dataStart, meshBufferStart, count, stream, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferData_List_1_2<T>(
@@ -3847,14 +7252,34 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetVertexBufferData",
-                (data, dataStart, meshBufferStart, count, stream, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetVertexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferData", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (data, dataStart, meshBufferStart, count, stream, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferData_NativeArray_1_0<T>(
@@ -3870,14 +7295,32 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetVertexBufferData",
-                (data, dataStart, meshBufferStart, count, stream, flags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("SetVertexBufferData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferData", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (data, dataStart, meshBufferStart, count, stream, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferParamsFromArray(
@@ -3889,11 +7332,28 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertexBufferParamsFromArray", (vertexCount, attributes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetVertexBufferParamsFromArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferParamsFromArray", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vertexCount, attributes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferParamsFromPtr(
@@ -3902,14 +7362,21 @@ impl crate::UnityEngine::Mesh {
         attributesPtr: crate::System::IntPtr,
         attributesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "SetVertexBufferParamsFromPtr",
-                (vertexCount, attributesPtr, attributesCount),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::System::IntPtr, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetVertexBufferParamsFromPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferParamsFromPtr", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vertexCount, attributesPtr, attributesCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferParams_Il2CppArray0(
@@ -3921,11 +7388,28 @@ impl crate::UnityEngine::Mesh {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertexBufferParams", (vertexCount, attributes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetVertexBufferParams")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferParams", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vertexCount, attributes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferParams_NativeArray_1_1(
@@ -3935,11 +7419,26 @@ impl crate::UnityEngine::Mesh {
             crate::UnityEngine::Rendering::VertexAttributeDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertexBufferParams", (vertexCount, attributes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    crate::Unity::Collections::NativeArray_1<
+                        crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetVertexBufferParams")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferParams", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vertexCount, attributes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_Il2CppArray3(
@@ -3948,11 +7447,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_Il2CppArray_i32_i32_4(
@@ -3963,11 +7474,27 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_Il2CppArray_i32_i32_MeshUpdateFlags5(
@@ -3979,11 +7506,28 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_List_1_0(
@@ -3992,11 +7536,25 @@ impl crate::UnityEngine::Mesh {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::Vector3,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_List_1_i32_i32_1(
@@ -4007,11 +7565,29 @@ impl crate::UnityEngine::Mesh {
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_List_1_i32_i32_MeshUpdateFlags2(
@@ -4023,11 +7599,30 @@ impl crate::UnityEngine::Mesh {
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_NativeArray_1_6<T>(
@@ -4038,11 +7633,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_NativeArray_1_i32_i32_7<T>(
@@ -4055,11 +7660,21 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Collections::NativeArray_1<T>, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertices_NativeArray_1_i32_i32_MeshUpdateFlags8<T>(
@@ -4073,50 +7688,92 @@ impl crate::UnityEngine::Mesh {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetVertices", (inVertices, start, length, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<T>,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertices", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (inVertices, start, length, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadMeshData(
         &mut self,
         markNoLongerReadable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UploadMeshData", (markNoLongerReadable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("UploadMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadMeshData", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (markNoLongerReadable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadMeshDataImpl(
         &mut self,
         markNoLongerReadable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UploadMeshDataImpl", (markNoLongerReadable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UploadMeshDataImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadMeshDataImpl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (markNoLongerReadable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_bindposeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_bindposeCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_bindposeCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_bindposeCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_bindposes(
@@ -4126,19 +7783,35 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                >,
+                0usize,
+            >("get_bindposes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_bindposes", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
-        > = __cordl_object.invoke("get_bindposes", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_blendShapeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_blendShapeCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_blendShapeCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_blendShapeCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_boneWeights(
@@ -4148,40 +7821,72 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
+                >,
+                0usize,
+            >("get_boneWeights")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_boneWeights", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
-        > = __cordl_object.invoke("get_boneWeights", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_bounds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Bounds = __cordl_object
-            .invoke("get_bounds", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::UnityEngine::Bounds, 0usize>("get_bounds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_bounds", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_bounds_Injected(
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_bounds_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("get_bounds_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_bounds_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_canAccess(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_canAccess", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_canAccess")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_canAccess", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_colors(
@@ -4191,12 +7896,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                >,
+                0usize,
+            >("get_colors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_colors", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-        > = __cordl_object.invoke("get_colors", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_colors32(
@@ -4206,39 +7922,75 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+                >,
+                0usize,
+            >("get_colors32")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_colors32", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
-        > = __cordl_object.invoke("get_colors32", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_indexBufferTarget(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::GraphicsBuffer_Target> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::GraphicsBuffer_Target = __cordl_object
-            .invoke("get_indexBufferTarget", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::GraphicsBuffer_Target,
+                0usize,
+            >("get_indexBufferTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_indexBufferTarget", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::GraphicsBuffer_Target = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_indexFormat(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::IndexFormat> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Rendering::IndexFormat = __cordl_object
-            .invoke("get_indexFormat", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Rendering::IndexFormat,
+                0usize,
+            >("get_indexFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_indexFormat", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::IndexFormat = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_isReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isReadable", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isReadable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isReadable", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_normals(
@@ -4248,29 +8000,55 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >,
+                0usize,
+            >("get_normals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_normals", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        > = __cordl_object.invoke("get_normals", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_skinWeightBufferLayout(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SkinWeights> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::SkinWeights = __cordl_object
-            .invoke("get_skinWeightBufferLayout", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::SkinWeights,
+                0usize,
+            >("get_skinWeightBufferLayout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_skinWeightBufferLayout", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::SkinWeights = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_subMeshCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_subMeshCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_subMeshCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_subMeshCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_tangents(
@@ -4280,12 +8058,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                >,
+                0usize,
+            >("get_tangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_tangents", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
-        > = __cordl_object.invoke("get_tangents", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_triangles(
@@ -4293,12 +8082,21 @@ impl crate::UnityEngine::Mesh {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                0usize,
+            >("get_triangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_triangles", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = __cordl_object.invoke("get_triangles", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv(
@@ -4308,12 +8106,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv2(
@@ -4323,12 +8132,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv2")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv2", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv2", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv3(
@@ -4338,12 +8158,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv3")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv3", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv3", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv4(
@@ -4353,12 +8184,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv4")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv4", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv4", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv5(
@@ -4368,12 +8210,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv5")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv5", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv5", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv6(
@@ -4383,12 +8236,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv6")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv6", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv6", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv7(
@@ -4398,12 +8262,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv7")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv7", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv7", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_uv8(
@@ -4413,43 +8288,79 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                0usize,
+            >("get_uv8")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_uv8", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = __cordl_object.invoke("get_uv8", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_vertexAttributeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_vertexAttributeCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_vertexAttributeCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_vertexAttributeCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_vertexBufferCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_vertexBufferCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_vertexBufferCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_vertexBufferCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_vertexBufferTarget(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::GraphicsBuffer_Target> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::GraphicsBuffer_Target = __cordl_object
-            .invoke("get_vertexBufferTarget", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::GraphicsBuffer_Target,
+                0usize,
+            >("get_vertexBufferTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_vertexBufferTarget", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::GraphicsBuffer_Target = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_vertexCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_vertexCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_vertexCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_vertexCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_vertices(
@@ -4459,12 +8370,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >,
+                0usize,
+            >("get_vertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_vertices", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-        > = __cordl_object.invoke("get_vertices", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_bindposes(
@@ -4473,11 +8395,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_bindposes", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_bindposes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_bindposes", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_boneWeights(
@@ -4486,33 +8420,65 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_boneWeights", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::BoneWeight>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_boneWeights")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_boneWeights", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_bounds(
         &mut self,
         value: crate::UnityEngine::Bounds,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_bounds", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Bounds),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_bounds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_bounds", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_bounds_Injected(
         &mut self,
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_bounds_Injected", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_bounds_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_bounds_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_colors(
@@ -4521,11 +8487,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_colors", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_colors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_colors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_colors32(
@@ -4534,33 +8512,65 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_colors32", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_colors32")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_colors32", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_indexBufferTarget(
         &mut self,
         value: crate::UnityEngine::GraphicsBuffer_Target,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_indexBufferTarget", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::GraphicsBuffer_Target),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_indexBufferTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_indexBufferTarget", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_indexFormat(
         &mut self,
         value: crate::UnityEngine::Rendering::IndexFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_indexFormat", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::IndexFormat),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_indexFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_indexFormat", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_normals(
@@ -4569,22 +8579,44 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_normals", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_normals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_normals", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_subMeshCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_subMeshCount", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_subMeshCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_subMeshCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_tangents(
@@ -4593,22 +8625,44 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_tangents", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_tangents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_tangents", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_triangles(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_triangles", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_triangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_triangles", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv(
@@ -4617,11 +8671,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv2(
@@ -4630,11 +8696,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv2", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv2")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv2", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv3(
@@ -4643,11 +8721,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv3", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv3")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv3", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv4(
@@ -4656,11 +8746,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv4", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv4")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv4", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv5(
@@ -4669,11 +8771,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv5", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv5")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv5", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv6(
@@ -4682,11 +8796,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv6", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv6")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv6", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv7(
@@ -4695,11 +8821,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv7", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv7")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv7", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_uv8(
@@ -4708,22 +8846,44 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_uv8", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_uv8")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_uv8", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_vertexBufferTarget(
         &mut self,
         value: crate::UnityEngine::GraphicsBuffer_Target,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_vertexBufferTarget", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::GraphicsBuffer_Target),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_vertexBufferTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_vertexBufferTarget", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_vertices(
@@ -4732,11 +8892,23 @@ impl crate::UnityEngine::Mesh {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_vertices", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_vertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_vertices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -4853,32 +9025,77 @@ impl crate::UnityEngine::Mesh_MeshData {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetIndexData",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Unity::Collections::NativeArray_1<T>,
+                0usize,
+            >("GetIndexData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexData", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexDataPtr(
         _cordl_self: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetIndexDataPtr", (_cordl_self))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("GetIndexDataPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexDataPtr", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_self))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndexDataSize(
         _cordl_self: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetIndexDataSize", (_cordl_self))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                u64,
+                1usize,
+            >("GetIndexDataSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndexDataSize", 1usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (_cordl_self)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexBufferCount(
         _cordl_self: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVertexBufferCount", (_cordl_self))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                i32,
+                1usize,
+            >("GetVertexBufferCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexBufferCount", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (_cordl_self)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexData<T>(
@@ -4889,27 +9106,63 @@ impl crate::UnityEngine::Mesh_MeshData {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetVertexData",
-            (stream),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::Unity::Collections::NativeArray_1<T>,
+                1usize,
+            >("GetVertexData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexData", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
+            method.invoke_unchecked(self, (stream))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexDataPtr(
         _cordl_self: crate::System::IntPtr,
         stream: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVertexDataPtr", (_cordl_self, stream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("GetVertexDataPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexDataPtr", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_self, stream))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexDataSize(
         _cordl_self: crate::System::IntPtr,
         stream: i32,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVertexDataSize", (_cordl_self, stream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                u64,
+                2usize,
+            >("GetVertexDataSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexDataSize", 2usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe {
+            method.invoke_unchecked((), (_cordl_self, stream))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndexBufferParams(
@@ -4917,11 +9170,21 @@ impl crate::UnityEngine::Mesh_MeshData {
         indexCount: i32,
         format: crate::UnityEngine::Rendering::IndexFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetIndexBufferParams",
-            (indexCount, format),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::Rendering::IndexFormat),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetIndexBufferParams")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndexBufferParams", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (indexCount, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIndexBufferParamsImpl(
@@ -4929,8 +9192,21 @@ impl crate::UnityEngine::Mesh_MeshData {
         indexCount: i32,
         indexFormat: crate::UnityEngine::Rendering::IndexFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetIndexBufferParamsImpl", (_cordl_self, indexCount, indexFormat))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, crate::UnityEngine::Rendering::IndexFormat),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetIndexBufferParamsImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIndexBufferParamsImpl", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_self, indexCount, indexFormat))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMesh(
@@ -4939,19 +9215,46 @@ impl crate::UnityEngine::Mesh_MeshData {
         desc: crate::UnityEngine::Rendering::SubMeshDescriptor,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetSubMesh",
-            (index, desc, flags),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    crate::UnityEngine::Rendering::SubMeshDescriptor,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetSubMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMesh", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (index, desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshCount(
         _cordl_self: crate::System::IntPtr,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetSubMeshCount", (_cordl_self, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetSubMeshCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshCount", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_self, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshImpl(
@@ -4960,8 +9263,26 @@ impl crate::UnityEngine::Mesh_MeshData {
         desc: crate::UnityEngine::Rendering::SubMeshDescriptor,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetSubMeshImpl", (_cordl_self, index, desc, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    i32,
+                    crate::UnityEngine::Rendering::SubMeshDescriptor,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetSubMeshImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshImpl", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_self, index, desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMeshImpl_Injected(
@@ -4972,8 +9293,28 @@ impl crate::UnityEngine::Mesh_MeshData {
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetSubMeshImpl_Injected", (_cordl_self, index, desc, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Rendering::SubMeshDescriptor,
+                    >,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetSubMeshImpl_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubMeshImpl_Injected", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_self, index, desc, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferParams(
@@ -4985,11 +9326,28 @@ impl crate::UnityEngine::Mesh_MeshData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetVertexBufferParams",
-            (vertexCount, attributes),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetVertexBufferParams")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferParams", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vertexCount, attributes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferParamsFromArray(
@@ -5001,30 +9359,62 @@ impl crate::UnityEngine::Mesh_MeshData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetVertexBufferParamsFromArray",
-                (_cordl_self, vertexCount, attributes),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetVertexBufferParamsFromArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetVertexBufferParamsFromArray", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_self, vertexCount, attributes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_vertexBufferCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_vertexBufferCount",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_vertexBufferCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_vertexBufferCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_subMeshCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_subMeshCount",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_subMeshCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_subMeshCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -5131,8 +9521,24 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AcquireReadOnlyMeshData", (mesh, datas))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AcquireReadOnlyMeshData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcquireReadOnlyMeshData", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, datas))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AcquireReadOnlyMeshDatas(
@@ -5144,8 +9550,29 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AcquireReadOnlyMeshDatas", (meshes, datas, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AcquireReadOnlyMeshDatas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcquireReadOnlyMeshDatas", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (meshes, datas, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyToMeshAndDispose(
@@ -5153,11 +9580,24 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ApplyToMeshAndDispose",
-            (mesh, flags),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ApplyToMeshAndDispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyToMeshAndDispose", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (mesh, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyToMeshImpl(
@@ -5165,8 +9605,25 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         data: crate::System::IntPtr,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyToMeshImpl", (mesh, data, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    crate::System::IntPtr,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyToMeshImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyToMeshImpl", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, data, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyToMeshesAndDispose(
@@ -5178,11 +9635,28 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ApplyToMeshesAndDispose",
-            (meshes, flags),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        >,
+                    >,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ApplyToMeshesAndDispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyToMeshesAndDispose", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (meshes, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyToMeshesImpl(
@@ -5195,34 +9669,88 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         count: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyToMeshesImpl", (meshes, datas, count, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    crate::UnityEngine::Rendering::MeshUpdateFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ApplyToMeshesImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyToMeshesImpl", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (meshes, datas, count, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNewMeshDatas(
         datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateNewMeshDatas", (datas, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CreateNewMeshDatas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNewMeshDatas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (datas, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Dispose",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseMeshDatas(
         datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReleaseMeshDatas", (datas, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReleaseMeshDatas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleaseMeshDatas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (datas, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_i32__cordl_bool1(
@@ -5235,11 +9763,29 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         meshesCount: i32,
         checkReadWrite: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (meshes, meshesCount, checkReadWrite),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                        >,
+                    >,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (meshes, meshesCount, checkReadWrite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Mesh__cordl_bool0(
@@ -5247,41 +9793,67 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         checkReadWrite: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (mesh, checkReadWrite),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (mesh, checkReadWrite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_2(
         &mut self,
         meshesCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (meshesCount),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (meshesCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshData> {
-        let __cordl_ret: crate::UnityEngine::Mesh_MeshData = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), crate::UnityEngine::Mesh_MeshData, 1usize>("get_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Item", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshData = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Length",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_Length")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Length", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

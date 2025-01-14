@@ -39,8 +39,15 @@ impl std::ops::DerefMut for crate::UnityEngine::HumanTrait {
 #[cfg(feature = "UnityEngine+HumanTrait")]
 impl crate::UnityEngine::HumanTrait {
     pub fn GetBoneIndexFromMono(humanId: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBoneIndexFromMono", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("GetBoneIndexFromMono")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBoneIndexFromMono", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (humanId)) };
         Ok(__cordl_ret.into())
     }
 }

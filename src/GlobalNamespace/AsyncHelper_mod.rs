@@ -47,10 +47,27 @@ impl crate::GlobalNamespace::AsyncHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+                1usize,
+            >("AnyTaskTrueNonAlloc")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AnyTaskTrueNonAlloc", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AnyTaskTrueNonAlloc", (tasks))?;
+        > = unsafe { method.invoke_unchecked((), (tasks)) };
         Ok(__cordl_ret.into())
     }
     pub fn RunSync_Func_1_0(
@@ -60,8 +77,25 @@ impl crate::GlobalNamespace::AsyncHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RunSync", (asyncTask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Func_1<
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RunSync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RunSync", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (asyncTask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RunSync_Func_1_1<T>(
@@ -75,8 +109,25 @@ impl crate::GlobalNamespace::AsyncHelper {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RunSync", (asyncTask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Func_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
+                    >,
+                >),
+                T,
+                1usize,
+            >("RunSync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RunSync", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (asyncTask)) };
         Ok(__cordl_ret.into())
     }
 }

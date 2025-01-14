@@ -42,30 +42,87 @@ impl crate::UnityEngine::UIElements::EventDispatchUtilities {
     pub fn ExecuteDefaultAction(
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExecuteDefaultAction", (evt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ExecuteDefaultAction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteDefaultAction", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (evt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleEventAcrossPropagationPath(
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HandleEventAcrossPropagationPath", (evt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleEventAcrossPropagationPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleEventAcrossPropagationPath", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (evt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PropagateEvent(
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PropagateEvent", (evt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PropagateEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PropagateEvent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (evt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PropagateToIMGUIContainer(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PropagateToIMGUIContainer", (root, evt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PropagateToIMGUIContainer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PropagateToIMGUIContainer", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (root, evt))
+        };
         Ok(__cordl_ret.into())
     }
 }

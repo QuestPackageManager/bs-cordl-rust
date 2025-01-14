@@ -42,8 +42,19 @@ impl crate::UnityEngine::Rendering::CameraEventUtils {
     pub fn IsValid(
         value: crate::UnityEngine::Rendering::CameraEvent,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsValid", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Rendering::CameraEvent),
+                bool,
+                1usize,
+            >("IsValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValid", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
 }

@@ -43,8 +43,21 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ActivateCompatibilityMouseEvents", (panel, pointerId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ActivateCompatibilityMouseEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ActivateCompatibilityMouseEvents", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (panel, pointerId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CapturePointer(
@@ -53,8 +66,26 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         >,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CapturePointer", (handler, pointerId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::IEventHandler,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CapturePointer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CapturePointer", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, pointerId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCapturingElement(
@@ -63,10 +94,21 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
+                2usize,
+            >("GetCapturingElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCapturingElement", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IEventHandler,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCapturingElement", (panel, pointerId))?;
+        > = unsafe { method.invoke_unchecked((), (panel, pointerId)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStateFor(
@@ -74,10 +116,25 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerDispatchState>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::IEventHandler,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::PointerDispatchState,
+                >,
+                1usize,
+            >("GetStateFor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStateFor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerDispatchState,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStateFor", (handler))?;
+        > = unsafe { method.invoke_unchecked((), (handler)) };
         Ok(__cordl_ret.into())
     }
     pub fn HasPointerCapture(
@@ -86,24 +143,68 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         >,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HasPointerCapture", (handler, pointerId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::IEventHandler,
+                    >,
+                    i32,
+                ),
+                bool,
+                2usize,
+            >("HasPointerCapture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasPointerCapture", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (handler, pointerId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreventCompatibilityMouseEvents(
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PreventCompatibilityMouseEvents", (panel, pointerId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PreventCompatibilityMouseEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreventCompatibilityMouseEvents", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (panel, pointerId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessPointerCapture(
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProcessPointerCapture", (panel, pointerId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ProcessPointerCapture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessPointerCapture", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (panel, pointerId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleasePointer_IEventHandler0(
@@ -112,24 +213,71 @@ impl crate::UnityEngine::UIElements::PointerCaptureHelper {
         >,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReleasePointer", (handler, pointerId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::IEventHandler,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReleasePointer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleasePointer", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, pointerId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleasePointer_IPanel1(
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReleasePointer", (panel, pointerId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReleasePointer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleasePointer", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (panel, pointerId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldSendCompatibilityMouseEvents(
         panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldSendCompatibilityMouseEvents", (panel, evt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::IPointerEvent,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("ShouldSendCompatibilityMouseEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldSendCompatibilityMouseEvents", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (panel, evt)) };
         Ok(__cordl_ret.into())
     }
 }

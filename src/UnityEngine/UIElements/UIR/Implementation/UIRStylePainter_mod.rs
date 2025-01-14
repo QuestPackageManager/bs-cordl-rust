@@ -118,12 +118,26 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                2usize,
+            >("AdjustSpriteWinding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustSpriteWinding", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u16>,
-        > = __cordl_object.invoke("AdjustSpriteWinding", (vertices, indices))?;
+        > = unsafe { method.invoke_unchecked(self, (vertices, indices)) };
         Ok(__cordl_ret.into())
     }
     pub fn AllocRawVertsIndices(
@@ -136,13 +150,29 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u32,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+                3usize,
+            >("AllocRawVertsIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AllocRawVertsIndices", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
-        > = __cordl_object
-            .invoke("AllocRawVertsIndices", (vertexCount, indexCount, allocatorData))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (vertexCount, indexCount, allocatorData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AllocThroughDrawMesh(
@@ -155,13 +185,29 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u32,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+                3usize,
+            >("AllocThroughDrawMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AllocThroughDrawMesh", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
-        > = __cordl_object
-            .invoke("AllocThroughDrawMesh", (vertexCount, indexCount, allocatorData))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (vertexCount, indexCount, allocatorData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyInset(
@@ -171,32 +217,69 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         >,
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyInset", (rectParams, tex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ApplyInset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyInset", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rectParams, tex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyVisualElementClipping(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ApplyVisualElementClipping", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ApplyVisualElementClipping")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyVisualElementClipping", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Begin(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Begin", (ve))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Begin")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Begin", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ve))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildEntryFromNativeMesh(
@@ -210,23 +293,43 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         uvRegion: crate::UnityEngine::Rect,
         addFlags: crate::UnityEngine::UIElements::UIR::VertexFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "BuildEntryFromNativeMesh",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    meshData,
-                    texture,
-                    textureId,
-                    isAtlas,
-                    material,
-                    flags,
-                    uvRegion,
-                    addFlags,
+                    crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                    crate::UnityEngine::UIElements::TextureId,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
+                    crate::UnityEngine::Rect,
+                    crate::UnityEngine::UIElements::UIR::VertexFlags,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("BuildEntryFromNativeMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildEntryFromNativeMesh", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        meshData,
+                        texture,
+                        textureId,
+                        isAtlas,
+                        material,
+                        flags,
+                        uvRegion,
+                        addFlags,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildGradientEntryFromNativeMesh(
@@ -234,33 +337,66 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         meshData: crate::UnityEngine::UIElements::MeshWriteDataInterface,
         svgTextureId: crate::UnityEngine::UIElements::TextureId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildGradientEntryFromNativeMesh", (meshData, svgTextureId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                    crate::UnityEngine::UIElements::TextureId,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("BuildGradientEntryFromNativeMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildGradientEntryFromNativeMesh", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (meshData, svgTextureId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildRawEntryFromNativeMesh(
         &mut self,
         meshData: crate::UnityEngine::UIElements::MeshWriteDataInterface,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildRawEntryFromNativeMesh", (meshData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::MeshWriteDataInterface),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("BuildRawEntryFromNativeMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildRawEntryFromNativeMesh", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (meshData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawBorder(
         &mut self,
         borderParams: crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawBorder", (borderParams))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DrawBorder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawBorder", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (borderParams))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawImmediate(
@@ -268,11 +404,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         cullingEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawImmediate", (callback, cullingEnabled))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("DrawImmediate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawImmediate", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callback, cullingEnabled))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawMesh(
@@ -285,24 +431,54 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+                5usize,
+            >("DrawMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawMesh", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
-        > = __cordl_object
-            .invoke("DrawMesh", (vertexCount, indexCount, texture, material, flags))?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (vertexCount, indexCount, texture, material, flags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawRectangle(
         &mut self,
         rectParams: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawRectangle", (rectParams))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DrawRectangle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawRectangle", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rectParams))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawRectangleRepeat(
@@ -311,36 +487,67 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         totalRect: crate::UnityEngine::Rect,
         scaledPixelsPerPoint: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "DrawRectangleRepeat",
-                (rectParams, totalRect, scaledPixelsPerPoint),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+                    crate::UnityEngine::Rect,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("DrawRectangleRepeat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawRectangleRepeat", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rectParams, totalRect, scaledPixelsPerPoint))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawSprite(
         &mut self,
         rectParams: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawSprite", (rectParams))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DrawSprite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawSprite", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rectParams))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawText(
         &mut self,
         te: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawText", (te))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DrawText")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawText", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (te))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawTextInfo(
@@ -351,62 +558,128 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         offset: crate::UnityEngine::Vector2,
         useHints: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawTextInfo", (textInfo, offset, useHints))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::TextInfo,
+                    >,
+                    crate::UnityEngine::Vector2,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("DrawTextInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawTextInfo", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (textInfo, offset, useHints))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawVectorImage(
         &mut self,
         rectParams: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawVectorImage", (rectParams))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DrawVectorImage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawVectorImage", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rectParams))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawVisualElementBackground(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawVisualElementBackground", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("DrawVisualElementBackground")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawVisualElementBackground", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawVisualElementBorder(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DrawVisualElementBorder", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("DrawVisualElementBorder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawVisualElementBorder", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateStencilClipEntryForRoundedRectBackground(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateStencilClipEntryForRoundedRectBackground", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("GenerateStencilClipEntryForRoundedRectBackground")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateStencilClipEntryForRoundedRectBackground", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateStencilClipEntryForSVGBackground(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateStencilClipEntryForSVGBackground", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("GenerateStencilClipEntryForSVGBackground")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateStencilClipEntryForSVGBackground", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPooledMeshWriteData(
@@ -414,12 +687,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+                0usize,
+            >("GetPooledMeshWriteData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPooledMeshWriteData", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshWriteData,
-        > = __cordl_object.invoke("GetPooledMeshWriteData", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn LandClipRegisterMesh(
@@ -430,11 +712,27 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         indices: crate::Unity::Collections::NativeSlice_1<u16>,
         indexOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LandClipRegisterMesh", (vertices, indices, indexOffset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Collections::NativeSlice_1<
+                        crate::UnityEngine::UIElements::Vertex,
+                    >,
+                    crate::Unity::Collections::NativeSlice_1<u16>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("LandClipRegisterMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LandClipRegisterMesh", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vertices, indices, indexOffset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LandClipUnregisterMeshDrawCommand(
@@ -443,11 +741,23 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LandClipUnregisterMeshDrawCommand", (cmd))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("LandClipUnregisterMeshDrawCommand")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LandClipUnregisterMeshDrawCommand", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (cmd))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphics(
@@ -459,21 +769,39 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         finalVertexCount: quest_hook::libil2cpp::ByRefMut<i32>,
         finalIndexCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "MakeVectorGraphics",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    rectParams,
-                    isUsingGradients,
-                    svgTexture,
-                    settingIndexOffset,
-                    finalVertexCount,
-                    finalIndexCount,
+                    crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+                    bool,
+                    crate::UnityEngine::UIElements::TextureId,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("MakeVectorGraphics")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeVectorGraphics", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        rectParams,
+                        isUsingGradients,
+                        svgTexture,
+                        settingIndexOffset,
+                        finalVertexCount,
+                        finalIndexCount,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -490,11 +818,17 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Reset", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Reset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Reset", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StampRectangleWithSubRect(
@@ -503,11 +837,25 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         targetRect: crate::UnityEngine::Rect,
         targetUV: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StampRectangleWithSubRect", (rectParams, targetRect, targetUV))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+                    crate::UnityEngine::Rect,
+                    crate::UnityEngine::Rect,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("StampRectangleWithSubRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StampRectangleWithSubRect", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rectParams, targetRect, targetUV))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryAtlasTexture(
@@ -523,24 +871,56 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
             crate::UnityEngine::UIElements::UIR::VertexFlags,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "TryAtlasTexture",
-                (texture, flags, outUVRegion, outIsAtlas, outTextureId, outAddFlags),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                    crate::UnityEngine::UIElements::MeshGenerationContext_MeshFlags,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::TextureId,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::UIR::VertexFlags,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("TryAtlasTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryAtlasTexture", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (texture, flags, outUVRegion, outIsAtlas, outTextureId, outAddFlags),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateMeshWriteData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateMeshWriteData", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ValidateMeshWriteData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateMeshWriteData", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -549,11 +929,23 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
             crate::UnityEngine::UIElements::UIR::RenderChain,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (renderChain))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::RenderChain,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (renderChain))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_closingInfo(
@@ -561,11 +953,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo = __cordl_object
-            .invoke("get_closingInfo", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo,
+                0usize,
+            >("get_closingInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_closingInfo", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentElement(
@@ -573,12 +975,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                0usize,
+            >("get_currentElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_currentElement", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_currentElement", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_entries(
@@ -590,14 +1001,27 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
+                    >,
+                >,
+                0usize,
+            >("get_entries")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_entries", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
             >,
-        > = __cordl_object.invoke("get_entries", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_meshGenerationContext(
@@ -605,26 +1029,47 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshGenerationContext>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::MeshGenerationContext,
+                >,
+                0usize,
+            >("get_meshGenerationContext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_meshGenerationContext", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MeshGenerationContext,
-        > = __cordl_object.invoke("get_meshGenerationContext", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_totalIndices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_totalIndices", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_totalIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_totalIndices", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_totalVertices(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_totalVertices", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_totalVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_totalVertices", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_visualElement(
@@ -632,45 +1077,86 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                0usize,
+            >("get_visualElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_visualElement", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
-        > = __cordl_object.invoke("get_visualElement", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_currentElement(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_currentElement", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_currentElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_currentElement", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_totalIndices(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_totalIndices", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_totalIndices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_totalIndices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_totalVertices(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_totalVertices", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_totalVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_totalVertices", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

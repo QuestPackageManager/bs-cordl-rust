@@ -47,12 +47,23 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cmp::RevocationDetails>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Cmp::RevocationDetails,
+                >,
+                0usize,
+            >("Build")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Build", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::RevocationDetails,
-        > = __cordl_object.invoke("Build", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -70,12 +81,25 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder {
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Name,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+                >,
+                1usize,
+            >("SetIssuer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIssuer", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
-        > = __cordl_object.invoke("SetIssuer", (issuer))?;
+        > = unsafe { method.invoke_unchecked(self, (issuer)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetPublicKey(
@@ -88,12 +112,25 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder {
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+                >,
+                1usize,
+            >("SetPublicKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetPublicKey", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
-        > = __cordl_object.invoke("SetPublicKey", (publicKey))?;
+        > = unsafe { method.invoke_unchecked(self, (publicKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetSerialNumber(
@@ -106,12 +143,23 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder {
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+                >,
+                1usize,
+            >("SetSerialNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSerialNumber", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
-        > = __cordl_object.invoke("SetSerialNumber", (serialNumber))?;
+        > = unsafe { method.invoke_unchecked(self, (serialNumber)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetSubject(
@@ -124,22 +172,41 @@ impl crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder {
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::X509Name,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
+                >,
+                1usize,
+            >("SetSubject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSubject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Cmp::RevocationDetailsBuilder,
-        > = __cordl_object.invoke("SetSubject", (subject))?;
+        > = unsafe { method.invoke_unchecked(self, (subject)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

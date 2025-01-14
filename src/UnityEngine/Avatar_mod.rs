@@ -39,43 +39,74 @@ impl std::ops::DerefMut for crate::UnityEngine::Avatar {
 #[cfg(feature = "UnityEngine+Avatar")]
 impl crate::UnityEngine::Avatar {
     pub fn GetAxisLength(&mut self, humanId: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("GetAxisLength", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), f32, 1usize>("GetAxisLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAxisLength", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (humanId)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLimitSign(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetLimitSign", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), crate::UnityEngine::Vector3, 1usize>("GetLimitSign")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLimitSign", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (humanId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPostRotation(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("GetPostRotation", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Quaternion,
+                1usize,
+            >("GetPostRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPostRotation", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreRotation(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("GetPreRotation", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Quaternion,
+                1usize,
+            >("GetPreRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPreRotation", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetZYPostQ(
@@ -84,11 +115,21 @@ impl crate::UnityEngine::Avatar {
         parentQ: crate::UnityEngine::Quaternion,
         q: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("GetZYPostQ", (humanId, parentQ, q))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::Quaternion, crate::UnityEngine::Quaternion),
+                crate::UnityEngine::Quaternion,
+                3usize,
+            >("GetZYPostQ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetZYPostQ", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId, parentQ, q))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetZYRoll(
@@ -96,33 +137,57 @@ impl crate::UnityEngine::Avatar {
         humanId: i32,
         uvw: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("GetZYRoll", (humanId, uvw))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::Vector3),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("GetZYRoll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetZYRoll", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId, uvw))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetAxisLength(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("Internal_GetAxisLength", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), f32, 1usize>("Internal_GetAxisLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetAxisLength", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (humanId)) };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetLimitSign(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("Internal_GetLimitSign", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("Internal_GetLimitSign")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetLimitSign", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (humanId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetLimitSign_Injected(
@@ -130,22 +195,42 @@ impl crate::UnityEngine::Avatar {
         humanId: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetLimitSign_Injected", (humanId, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Internal_GetLimitSign_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetLimitSign_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (humanId, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetPostRotation(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("Internal_GetPostRotation", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Quaternion,
+                1usize,
+            >("Internal_GetPostRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetPostRotation", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetPostRotation_Injected(
@@ -153,22 +238,42 @@ impl crate::UnityEngine::Avatar {
         humanId: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetPostRotation_Injected", (humanId, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Internal_GetPostRotation_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetPostRotation_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (humanId, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetPreRotation(
         &mut self,
         humanId: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("Internal_GetPreRotation", (humanId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::Quaternion,
+                1usize,
+            >("Internal_GetPreRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetPreRotation", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetPreRotation_Injected(
@@ -176,11 +281,21 @@ impl crate::UnityEngine::Avatar {
         humanId: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetPreRotation_Injected", (humanId, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Internal_GetPreRotation_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetPreRotation_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (humanId, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetZYPostQ(
@@ -189,11 +304,21 @@ impl crate::UnityEngine::Avatar {
         parentQ: crate::UnityEngine::Quaternion,
         q: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("Internal_GetZYPostQ", (humanId, parentQ, q))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::Quaternion, crate::UnityEngine::Quaternion),
+                crate::UnityEngine::Quaternion,
+                3usize,
+            >("Internal_GetZYPostQ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetZYPostQ", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId, parentQ, q))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetZYPostQ_Injected(
@@ -203,11 +328,26 @@ impl crate::UnityEngine::Avatar {
         q: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetZYPostQ_Injected", (humanId, parentQ, q, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("Internal_GetZYPostQ_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetZYPostQ_Injected", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (humanId, parentQ, q, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetZYRoll(
@@ -215,11 +355,21 @@ impl crate::UnityEngine::Avatar {
         humanId: i32,
         uvw: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Quaternion = __cordl_object
-            .invoke("Internal_GetZYRoll", (humanId, uvw))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::Vector3),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("Internal_GetZYRoll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetZYRoll", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked(self, (humanId, uvw))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetZYRoll_Injected(
@@ -228,11 +378,25 @@ impl crate::UnityEngine::Avatar {
         uvw: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Internal_GetZYRoll_Injected", (humanId, uvw, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Internal_GetZYRoll_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_GetZYRoll_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (humanId, uvw, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -248,11 +412,21 @@ impl crate::UnityEngine::Avatar {
         min: f32,
         max: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMuscleMinMax", (muscleId, min, max))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, f32, f32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetMuscleMinMax")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMuscleMinMax", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (muscleId, min, max))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetParameter(
@@ -260,56 +434,102 @@ impl crate::UnityEngine::Avatar {
         parameterId: i32,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParameter", (parameterId, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, f32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetParameter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetParameter", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parameterId, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_humanDescription(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::HumanDescription> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::HumanDescription = __cordl_object
-            .invoke("get_humanDescription", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::HumanDescription,
+                0usize,
+            >("get_humanDescription")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_humanDescription", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::HumanDescription = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_humanDescription_Injected(
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::HumanDescription>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("get_humanDescription_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::HumanDescription>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("get_humanDescription_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_humanDescription_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_isHuman(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isHuman", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isHuman")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isHuman", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_isValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_isValid", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isValid", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

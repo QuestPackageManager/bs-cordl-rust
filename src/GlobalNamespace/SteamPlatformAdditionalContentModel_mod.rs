@@ -58,22 +58,42 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult = __cordl_object
-            .invoke("CheckForNewEntitlementsAsync", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
+                0usize,
+            >("CheckForNewEntitlementsAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckForNewEntitlementsAsync", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelDataVersion(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelDataVersion = __cordl_object
-            .invoke("GetLevelDataVersion", (levelId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::GlobalNamespace::BeatmapLevelDataVersion,
+                1usize,
+            >("GetLevelDataVersion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelDataVersion", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelDataVersion = unsafe {
+            method.invoke_unchecked(self, (levelId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelDataVersionInternalAsync(
@@ -87,14 +107,30 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::BeatmapLevelDataVersion,
+                    >,
+                >,
+                2usize,
+            >("GetLevelDataVersionInternalAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelDataVersionInternalAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::BeatmapLevelDataVersion,
             >,
-        > = __cordl_object.invoke("GetLevelDataVersionInternalAsync", (levelId, token))?;
+        > = unsafe { method.invoke_unchecked(self, (levelId, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelEntitlementStatusInternalAsync(
@@ -108,18 +144,30 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::EntitlementStatus,
+                    >,
+                >,
+                2usize,
+            >("GetLevelEntitlementStatusInternalAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelEntitlementStatusInternalAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = __cordl_object
-            .invoke(
-                "GetLevelEntitlementStatusInternalAsync",
-                (levelId, cancellationToken),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (levelId, cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelProductData(
@@ -130,12 +178,23 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+                >,
+                1usize,
+            >("GetLevelProductData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelProductData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
-        > = __cordl_object.invoke("GetLevelProductData", (levelId))?;
+        > = unsafe { method.invoke_unchecked(self, (levelId)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPackEntitlementStatusInternalAsync(
@@ -149,18 +208,30 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::EntitlementStatus,
+                    >,
+                >,
+                2usize,
+            >("GetPackEntitlementStatusInternalAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPackEntitlementStatusInternalAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = __cordl_object
-            .invoke(
-                "GetPackEntitlementStatusInternalAsync",
-                (packId, cancellationToken),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (packId, cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRedirectedLevelPackProductData(
@@ -172,44 +243,86 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<u32>>,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::System::Nullable_1<u32>,
+                    >,
+                >,
+                2usize,
+            >("GetRedirectedLevelPackProductData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRedirectedLevelPackProductData", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<u32>>,
-        > = __cordl_object
-            .invoke("GetRedirectedLevelPackProductData", (packId, cancellationToken))?;
+        > = unsafe { method.invoke_unchecked(self, (packId, cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn HasLevelEntitlement(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasLevelEntitlement", (levelId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                bool,
+                1usize,
+            >("HasLevelEntitlement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasLevelEntitlement", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelId)) };
         Ok(__cordl_ret.into())
     }
     pub fn HasLevelPackEntitlement(
         &mut self,
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("HasLevelPackEntitlement", (levelPackId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                bool,
+                1usize,
+            >("HasLevelPackEntitlement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasLevelPackEntitlement", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (levelPackId)) };
         Ok(__cordl_ret.into())
     }
     pub fn InvalidateDataInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvalidateDataInternal", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("InvalidateDataInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvalidateDataInternal", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsDataValidAsync(
@@ -218,12 +331,21 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Threading::CancellationToken),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+                1usize,
+            >("IsDataValidAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsDataValidAsync", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<bool>,
-        > = __cordl_object.invoke("IsDataValidAsync", (cancellationToken))?;
+        > = unsafe { method.invoke_unchecked(self, (cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsPackBetterBuyThanLevelAsync(
@@ -237,15 +359,30 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
+                    >,
+                >,
+                2usize,
+            >("IsPackBetterBuyThanLevelAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsPackBetterBuyThanLevelAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
             >,
-        > = __cordl_object
-            .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
+        > = unsafe { method.invoke_unchecked(self, (levelPackId, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -259,11 +396,17 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
         &mut self,
         bundleId: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenBundleUrl", (bundleId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>("OpenBundleUrl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpenBundleUrl", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bundleId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpenLevelPackProductStoreAsync(
@@ -277,15 +420,30 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::OpenProductStoreResult,
+                    >,
+                >,
+                2usize,
+            >("OpenLevelPackProductStoreAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpenLevelPackProductStoreAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::OpenProductStoreResult,
             >,
-        > = __cordl_object
-            .invoke("OpenLevelPackProductStoreAsync", (levelPackId, token))?;
+        > = unsafe { method.invoke_unchecked(self, (levelPackId, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn OpenLevelProductStoreAsync(
@@ -299,36 +457,72 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::OpenProductStoreResult,
+                    >,
+                >,
+                2usize,
+            >("OpenLevelProductStoreAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpenLevelProductStoreAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::OpenProductStoreResult,
             >,
-        > = __cordl_object.invoke("OpenLevelProductStoreAsync", (levelId, token))?;
+        > = unsafe { method.invoke_unchecked(self, (levelId, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn OpenProductStore(
         &mut self,
         appId: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenProductStore", (appId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OpenProductStore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpenProductStore", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (appId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpenStore(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OpenStore", (uri))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OpenStore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpenStore", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (uri))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _HasLevelPackEntitlement_b__22_0(
@@ -337,21 +531,39 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("<HasLevelPackEntitlement>b__22_0", (levelProductData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
+                >),
+                bool,
+                1usize,
+            >("<HasLevelPackEntitlement>b__22_0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<HasLevelPackEntitlement>b__22_0", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (levelProductData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

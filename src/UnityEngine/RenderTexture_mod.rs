@@ -39,20 +39,31 @@ impl std::ops::DerefMut for crate::UnityEngine::RenderTexture {
 #[cfg(feature = "UnityEngine+RenderTexture")]
 impl crate::UnityEngine::RenderTexture {
     pub fn Create(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Create", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn DiscardContents_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DiscardContents", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("DiscardContents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DiscardContents", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DiscardContents__cordl_bool__cordl_bool0(
@@ -60,39 +71,82 @@ impl crate::UnityEngine::RenderTexture {
         discardColor: bool,
         discardDepth: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("DiscardContents", (discardColor, discardDepth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("DiscardContents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DiscardContents", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (discardColor, discardDepth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetActive() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetActive", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                0usize,
+            >("GetActive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetActive", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColorBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderBuffer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RenderBuffer = __cordl_object
-            .invoke("GetColorBuffer", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::RenderBuffer,
+                0usize,
+            >("GetColorBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColorBuffer", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderBuffer = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColorBuffer_Injected(
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RenderBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetColorBuffer_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RenderBuffer>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetColorBuffer_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColorBuffer_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColorFormat(
@@ -101,11 +155,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = __cordl_object
-            .invoke("GetColorFormat", (suppressWarnings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                1usize,
+            >("GetColorFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColorFormat", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked(self, (suppressWarnings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCompatibleFormat(
@@ -114,8 +178,24 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCompatibleFormat", (renderTextureFormat, readWrite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                ),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                2usize,
+            >("GetCompatibleFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCompatibleFormat", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked((), (renderTextureFormat, readWrite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultColorFormat(
@@ -123,8 +203,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDefaultColorFormat", (format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Experimental::Rendering::DefaultFormat),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                1usize,
+            >("GetDefaultColorFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDefaultColorFormat", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked((), (format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultDepthStencilFormat(
@@ -133,29 +226,62 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDefaultDepthStencilFormat", (format, depth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Experimental::Rendering::DefaultFormat, i32),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                2usize,
+            >("GetDefaultDepthStencilFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDefaultDepthStencilFormat", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked((), (format, depth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDepthBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderBuffer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RenderBuffer = __cordl_object
-            .invoke("GetDepthBuffer", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::RenderBuffer,
+                0usize,
+            >("GetDepthBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDepthBuffer", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderBuffer = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDepthBuffer_Injected(
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RenderBuffer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetDepthBuffer_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RenderBuffer>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetDepthBuffer_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDepthBuffer_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDepthStencilFormatLegacy_DefaultFormat2(
@@ -164,8 +290,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDepthStencilFormatLegacy", (depthBits, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, crate::UnityEngine::Experimental::Rendering::DefaultFormat),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                2usize,
+            >("GetDepthStencilFormatLegacy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDepthStencilFormatLegacy", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked((), (depthBits, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDepthStencilFormatLegacy_GraphicsFormat0(
@@ -174,8 +313,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDepthStencilFormatLegacy", (depthBits, colorFormat))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                2usize,
+            >("GetDepthStencilFormatLegacy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDepthStencilFormatLegacy", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked((), (depthBits, colorFormat))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDepthStencilFormatLegacy_RenderTextureFormat1(
@@ -184,8 +336,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDepthStencilFormatLegacy", (depthBits, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, crate::UnityEngine::RenderTextureFormat),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                2usize,
+            >("GetDepthStencilFormatLegacy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDepthStencilFormatLegacy", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked((), (depthBits, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDepthStencilFormatLegacy__cordl_bool3(
@@ -194,29 +359,64 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDepthStencilFormatLegacy", (depthBits, requestedShadowMap))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, bool),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                2usize,
+            >("GetDepthStencilFormatLegacy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDepthStencilFormatLegacy", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked((), (depthBits, requestedShadowMap))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescriptor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderTextureDescriptor> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RenderTextureDescriptor = __cordl_object
-            .invoke("GetDescriptor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::RenderTextureDescriptor,
+                0usize,
+            >("GetDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDescriptor", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderTextureDescriptor = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescriptor_Injected(
         &mut self,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RenderTextureDescriptor>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetDescriptor_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::UnityEngine::RenderTextureDescriptor,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetDescriptor_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDescriptor_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporaryImpl(
@@ -231,20 +431,43 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetTemporaryImpl",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    width,
-                    height,
-                    depthStencilFormat,
-                    colorFormat,
-                    antiAliasing,
-                    memorylessMode,
-                    vrUsage,
-                    useDynamicScale,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    i32,
+                    crate::UnityEngine::RenderTextureMemoryless,
+                    crate::UnityEngine::VRTextureUsage,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                8usize,
+            >("GetTemporaryImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporaryImpl", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        width,
+                        height,
+                        depthStencilFormat,
+                        colorFormat,
+                        antiAliasing,
+                        memorylessMode,
+                        vrUsage,
+                        useDynamicScale,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_Internal(
@@ -252,8 +475,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTemporary_Internal", (desc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::RenderTextureDescriptor),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                1usize,
+            >("GetTemporary_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary_Internal", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (desc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_Internal_Injected(
@@ -263,8 +499,23 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTemporary_Internal_Injected", (desc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::UnityEngine::RenderTextureDescriptor,
+                >),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                1usize,
+            >("GetTemporary_Internal_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary_Internal_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (desc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_RenderTextureDescriptor0(
@@ -272,8 +523,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTemporary", (desc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::RenderTextureDescriptor),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                1usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (desc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_8(
@@ -282,8 +546,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTemporary", (width, height))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                2usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (width, height))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_i32_7(
@@ -293,8 +570,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTemporary", (width, height, depthBuffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                3usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (width, height, depthBuffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_i32_RenderTextureFormat6(
@@ -305,8 +595,21 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTemporary", (width, height, depthBuffer, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, i32, crate::UnityEngine::RenderTextureFormat),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                4usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (width, height, depthBuffer, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite5(
@@ -318,8 +621,27 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTemporary", (width, height, depthBuffer, format, readWrite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                5usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (width, height, depthBuffer, format, readWrite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_4(
@@ -332,11 +654,32 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetTemporary",
-                (width, height, depthBuffer, format, readWrite, antiAliasing),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                6usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (width, height, depthBuffer, format, readWrite, antiAliasing),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_RenderTextureMemoryless3(
@@ -350,19 +693,41 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetTemporary",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    width,
-                    height,
-                    depthBuffer,
-                    format,
-                    readWrite,
-                    antiAliasing,
-                    memorylessMode,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                    i32,
+                    crate::UnityEngine::RenderTextureMemoryless,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                7usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        width,
+                        height,
+                        depthBuffer,
+                        format,
+                        readWrite,
+                        antiAliasing,
+                        memorylessMode,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_RenderTextureMemoryless_VRTextureUsage2(
@@ -377,20 +742,43 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetTemporary",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    width,
-                    height,
-                    depthBuffer,
-                    format,
-                    readWrite,
-                    antiAliasing,
-                    memorylessMode,
-                    vrUsage,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                    i32,
+                    crate::UnityEngine::RenderTextureMemoryless,
+                    crate::UnityEngine::VRTextureUsage,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                8usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        width,
+                        height,
+                        depthBuffer,
+                        format,
+                        readWrite,
+                        antiAliasing,
+                        memorylessMode,
+                        vrUsage,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_RenderTextureMemoryless_VRTextureUsage__cordl_bool1(
@@ -406,21 +794,45 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetTemporary",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    width,
-                    height,
-                    depthBuffer,
-                    format,
-                    readWrite,
-                    antiAliasing,
-                    memorylessMode,
-                    vrUsage,
-                    useDynamicScale,
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                    i32,
+                    crate::UnityEngine::RenderTextureMemoryless,
+                    crate::UnityEngine::VRTextureUsage,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                9usize,
+            >("GetTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTemporary", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        width,
+                        height,
+                        depthBuffer,
+                        format,
+                        readWrite,
+                        antiAliasing,
+                        memorylessMode,
+                        vrUsage,
+                        useDynamicScale,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
@@ -432,25 +844,64 @@ impl crate::UnityEngine::RenderTexture {
         readWrite: crate::UnityEngine::RenderTextureReadWrite,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Initialize", (width, height, depth, format, readWrite, mipCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("Initialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (width, height, depth, format, readWrite, mipCount),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_Create(
         rt: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Internal_Create", (rt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Internal_Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Internal_Create", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (rt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsCreated", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("IsCreated")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsCreated", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -595,58 +1046,116 @@ impl crate::UnityEngine::RenderTexture {
     pub fn Release(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Release", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Release", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReleaseTemporary(
         temp: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReleaseTemporary", (temp))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ReleaseTemporary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleaseTemporary", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (temp))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetActive(
         rt: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetActive", (rt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetActive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetActive", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (rt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetColorFormat(
         &mut self,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetColorFormat", (format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetColorFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetColorFormat", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMipMapCount(
         &mut self,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetMipMapCount", (count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("SetMipMapCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMipMapCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetRenderTextureDescriptor(
         &mut self,
         desc: crate::UnityEngine::RenderTextureDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetRenderTextureDescriptor", (desc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::RenderTextureDescriptor),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetRenderTextureDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetRenderTextureDescriptor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetRenderTextureDescriptor_Injected(
@@ -655,61 +1164,122 @@ impl crate::UnityEngine::RenderTexture {
             crate::UnityEngine::RenderTextureDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetRenderTextureDescriptor_Injected", (desc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::UnityEngine::RenderTextureDescriptor,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetRenderTextureDescriptor_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetRenderTextureDescriptor_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSRGBReadWrite(
         &mut self,
         srgb: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetSRGBReadWrite", (srgb))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetSRGBReadWrite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSRGBReadWrite", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (srgb))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateRenderTextureDesc(
         desc: crate::UnityEngine::RenderTextureDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValidateRenderTextureDesc", (desc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::RenderTextureDescriptor),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ValidateRenderTextureDesc")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateRenderTextureDesc", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (desc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_RenderTexture2(
         &mut self,
         textureToCopy: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (textureToCopy))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (textureToCopy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_RenderTextureDescriptor1(
         &mut self,
         desc: crate::UnityEngine::RenderTextureDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (desc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::RenderTextureDescriptor),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (desc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_GraphicsFormat_GraphicsFormat7(
@@ -719,11 +1289,27 @@ impl crate::UnityEngine::RenderTexture {
         colorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         depthStencilFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, colorFormat, depthStencilFormat))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (width, height, colorFormat, depthStencilFormat))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_GraphicsFormat_GraphicsFormat_i32_6(
@@ -734,14 +1320,31 @@ impl crate::UnityEngine::RenderTexture {
         depthStencilFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
-                (width, height, colorFormat, depthStencilFormat, mipCount),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (width, height, colorFormat, depthStencilFormat, mipCount),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_10(
@@ -750,11 +1353,17 @@ impl crate::UnityEngine::RenderTexture {
         height: i32,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32, i32, i32), quest_hook::libil2cpp::Void, 3usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (width, height, depth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_DefaultFormat3(
@@ -764,11 +1373,26 @@ impl crate::UnityEngine::RenderTexture {
         depth: i32,
         format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (width, height, depth, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_GraphicsFormat4(
@@ -778,11 +1402,26 @@ impl crate::UnityEngine::RenderTexture {
         depth: i32,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (width, height, depth, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_GraphicsFormat_i32_5(
@@ -793,11 +1432,27 @@ impl crate::UnityEngine::RenderTexture {
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth, format, mipCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (width, height, depth, format, mipCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_RenderTextureFormat9(
@@ -807,11 +1462,21 @@ impl crate::UnityEngine::RenderTexture {
         depth: i32,
         format: crate::UnityEngine::RenderTextureFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, i32, i32, crate::UnityEngine::RenderTextureFormat),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (width, height, depth, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite8(
@@ -822,11 +1487,27 @@ impl crate::UnityEngine::RenderTexture {
         format: crate::UnityEngine::RenderTextureFormat,
         readWrite: crate::UnityEngine::RenderTextureReadWrite,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth, format, readWrite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    crate::UnityEngine::RenderTextureFormat,
+                    crate::UnityEngine::RenderTextureReadWrite,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (width, height, depth, format, readWrite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_RenderTextureFormat_i32_11(
@@ -837,45 +1518,93 @@ impl crate::UnityEngine::RenderTexture {
         format: crate::UnityEngine::RenderTextureFormat,
         mipCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (width, height, depth, format, mipCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, i32, i32, crate::UnityEngine::RenderTextureFormat, i32),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (width, height, depth, format, mipCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_active() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_active", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                0usize,
+            >("get_active")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_active", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_antiAliasing(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_antiAliasing", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_antiAliasing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_antiAliasing", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_colorBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderBuffer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RenderBuffer = __cordl_object
-            .invoke("get_colorBuffer", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::RenderBuffer,
+                0usize,
+            >("get_colorBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_colorBuffer", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderBuffer = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_depthBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderBuffer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RenderBuffer = __cordl_object
-            .invoke("get_depthBuffer", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::RenderBuffer,
+                0usize,
+            >("get_depthBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_depthBuffer", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderBuffer = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_depthStencilFormat(
@@ -883,31 +1612,61 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = __cordl_object
-            .invoke("get_depthStencilFormat", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                0usize,
+            >("get_depthStencilFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_depthStencilFormat", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_descriptor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderTextureDescriptor> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RenderTextureDescriptor = __cordl_object
-            .invoke("get_descriptor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::RenderTextureDescriptor,
+                0usize,
+            >("get_descriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_descriptor", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderTextureDescriptor = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_format(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderTextureFormat> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::RenderTextureFormat = __cordl_object
-            .invoke("get_format", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::RenderTextureFormat,
+                0usize,
+            >("get_format")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_format", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderTextureFormat = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_graphicsFormat(
@@ -915,126 +1674,228 @@ impl crate::UnityEngine::RenderTexture {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = __cordl_object
-            .invoke("get_graphicsFormat", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+                0usize,
+            >("get_graphicsFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_graphicsFormat", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_height", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_height")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_height", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_sRGB(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_sRGB", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_sRGB")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_sRGB", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_vrUsage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::VRTextureUsage> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::VRTextureUsage = __cordl_object
-            .invoke("get_vrUsage", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::UnityEngine::VRTextureUsage, 0usize>("get_vrUsage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_vrUsage", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::VRTextureUsage = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_width")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_width", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_active(
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_active", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_active")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_active", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_antiAliasing(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_antiAliasing", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_antiAliasing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_antiAliasing", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_depthStencilFormat(
         &mut self,
         value: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_depthStencilFormat", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_depthStencilFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_depthStencilFormat", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_dimension(
         &mut self,
         value: crate::UnityEngine::Rendering::TextureDimension,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dimension", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Rendering::TextureDimension),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_dimension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_dimension", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_graphicsFormat(
         &mut self,
         value: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_graphicsFormat", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Experimental::Rendering::GraphicsFormat),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_graphicsFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_graphicsFormat", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_height(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_height", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_height")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_height", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_useMipMap(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useMipMap", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_useMipMap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_useMipMap", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_width(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_width", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_width")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_width", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

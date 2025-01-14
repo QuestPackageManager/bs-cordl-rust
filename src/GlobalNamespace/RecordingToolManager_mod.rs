@@ -97,10 +97,17 @@ impl crate::GlobalNamespace::RecordingToolManager {
         Ok(__cordl_object.into())
     }
     pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Run")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Run", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _Run_b__15_0(
@@ -112,14 +119,32 @@ impl crate::GlobalNamespace::RecordingToolManager {
             crate::GlobalNamespace::LevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "<Run>b__15_0",
-                (StandardLevelScenesTransitionSetupDataSO, LevelCompletionResults),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::LevelCompletionResults,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("<Run>b__15_0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<Run>b__15_0", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (StandardLevelScenesTransitionSetupDataSO, LevelCompletionResults),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -141,28 +166,59 @@ impl crate::GlobalNamespace::RecordingToolManager {
             crate::GlobalNamespace::PlayerDataModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    processor,
-                    beatmapCharacteristicCollection,
-                    diContainer,
-                    menuTransitionsHelper,
-                    environmentsListModel,
-                    playerDataModel,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::RecordingToolConfigurationProcessor,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MenuTransitionsHelper,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::EnvironmentsListModel,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        processor,
+                        beatmapCharacteristicCollection,
+                        diContainer,
+                        menuTransitionsHelper,
+                        environmentsListModel,
+                        playerDataModel,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_showRecordingToolScene(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_showRecordingToolScene", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_showRecordingToolScene")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_showRecordingToolScene", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

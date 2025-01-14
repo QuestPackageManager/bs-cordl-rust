@@ -66,12 +66,23 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("UnderTransformGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnderTransformGroup", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("UnderTransformGroup", (transformGroupname))?;
+        > = unsafe { method.invoke_unchecked(self, (transformGroupname)) };
         Ok(__cordl_ret.into())
     }
     pub fn UnderTransform_Func_2_1(
@@ -87,12 +98,28 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Func_2<
+                        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("UnderTransform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnderTransform", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("UnderTransform", (parentGetter))?;
+        > = unsafe { method.invoke_unchecked(self, (parentGetter)) };
         Ok(__cordl_ret.into())
     }
     pub fn UnderTransform_Transform0(
@@ -103,12 +130,23 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("UnderTransform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnderTransform", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("UnderTransform", (parent))?;
+        > = unsafe { method.invoke_unchecked(self, (parent)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -118,11 +156,26 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
             crate::Zenject::GameObjectCreationParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bindInfo, gameObjectInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::GameObjectCreationParameters,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (bindInfo, gameObjectInfo))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_GameObjectInfo(
@@ -130,23 +183,44 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
+                0usize,
+            >("get_GameObjectInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_GameObjectInfo", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::GameObjectCreationParameters,
-        > = __cordl_object.invoke("get_GameObjectInfo", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_GameObjectInfo(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_GameObjectInfo", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Zenject::GameObjectCreationParameters,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_GameObjectInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_GameObjectInfo", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

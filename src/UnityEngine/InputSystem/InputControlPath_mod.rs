@@ -58,10 +58,21 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("CleanSlashes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CleanSlashes", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CleanSlashes", (pathComponent))?;
+        > = unsafe { method.invoke_unchecked((), (pathComponent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Combine(
@@ -70,10 +81,26 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("Combine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Combine", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Combine", (parent, path))?;
+        > = unsafe { method.invoke_unchecked((), (parent, path)) };
         Ok(__cordl_ret.into())
     }
     pub fn ControlLayoutMatchesPathComponent(
@@ -84,8 +111,28 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             crate::UnityEngine::InputSystem::InputControlPath_PathParser,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ControlLayoutMatchesPathComponent", (controlItem, parser))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("ControlLayoutMatchesPathComponent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ControlLayoutMatchesPathComponent", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (controlItem, parser))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindControlLayoutRecursive_Il2CppString0(
@@ -96,10 +143,26 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("FindControlLayoutRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindControlLayoutRecursive", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindControlLayoutRecursive", (parser, layoutName))?;
+        > = unsafe { method.invoke_unchecked((), (parser, layoutName)) };
         Ok(__cordl_ret.into())
     }
     pub fn FindControlLayoutRecursive_InputControlLayout1(
@@ -112,10 +175,28 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("FindControlLayoutRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindControlLayoutRecursive", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindControlLayoutRecursive", (parser, layout))?;
+        > = unsafe { method.invoke_unchecked((), (parser, layout)) };
         Ok(__cordl_ret.into())
     }
     pub fn MatchByUsageAtDeviceRootRecursive<TControl>(
@@ -131,11 +212,35 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MatchByUsageAtDeviceRootRecursive",
-                (device, path, indexInPath, matches, matchMultiple),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputDevice,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+                    >,
+                    bool,
+                ),
+                TControl,
+                5usize,
+            >("MatchByUsageAtDeviceRootRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchByUsageAtDeviceRootRecursive", 5usize
+                )
+            });
+        let __cordl_ret: TControl = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (device, path, indexInPath, matches, matchMultiple),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchChildrenRecursive<TControl>(
@@ -153,11 +258,35 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MatchChildrenRecursive",
-                (control, path, indexInPath, matches, matchMultiple),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+                    >,
+                    bool,
+                ),
+                TControl,
+                5usize,
+            >("MatchChildrenRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchChildrenRecursive", 5usize
+                )
+            });
+        let __cordl_ret: TControl = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (control, path, indexInPath, matches, matchMultiple),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchControlComponent(
@@ -169,11 +298,33 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         >,
         matchAlias: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MatchControlComponent",
-                (expectedControlComponent, controlItem, matchAlias),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+                    >,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("MatchControlComponent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchControlComponent", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (expectedControlComponent, controlItem, matchAlias),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchControlsRecursive<TControl>(
@@ -191,11 +342,35 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MatchControlsRecursive",
-                (control, path, indexInPath, matches, matchMultiple),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+                    >,
+                    bool,
+                ),
+                TControl,
+                5usize,
+            >("MatchControlsRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchControlsRecursive", 5usize
+                )
+            });
+        let __cordl_ret: TControl = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (control, path, indexInPath, matches, matchMultiple),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchPathComponent(
@@ -205,27 +380,83 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         componentType: crate::UnityEngine::InputSystem::InputControlPath_PathComponentType,
         startIndexInComponent: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MatchPathComponent",
-                (component, path, indexInPath, componentType, startIndexInComponent),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    crate::UnityEngine::InputSystem::InputControlPath_PathComponentType,
+                    i32,
+                ),
+                bool,
+                5usize,
+            >("MatchPathComponent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchPathComponent", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (component, path, indexInPath, componentType, startIndexInComponent),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Matches(
         expected: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Matches", (expected, control))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("Matches")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Matches", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (expected, control))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchesPrefix(
         expected: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MatchesPrefix", (expected, control))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("MatchesPrefix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchesPrefix", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (expected, control))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchesRecursive(
@@ -237,8 +468,29 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         >,
         prefixOnly: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MatchesRecursive", (parser, currentControl, prefixOnly))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("MatchesRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchesRecursive", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (parser, currentControl, prefixOnly))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Parse(
@@ -250,27 +502,70 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+                    >,
+                >,
+                1usize,
+            >("Parse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Parse", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (path))?;
+        > = unsafe { method.invoke_unchecked((), (path)) };
         Ok(__cordl_ret.into())
     }
     pub fn PathComponentCanYieldMultipleMatches(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         indexInPath: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PathComponentCanYieldMultipleMatches", (path, indexInPath))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
+                bool,
+                2usize,
+            >("PathComponentCanYieldMultipleMatches")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PathComponentCanYieldMultipleMatches", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (path, indexInPath))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StringMatches(
         str: crate::UnityEngine::InputSystem::Utilities::Substring,
         matchTo: crate::UnityEngine::InputSystem::Utilities::InternedString,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("StringMatches", (str, matchTo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::Substring,
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                ),
+                bool,
+                2usize,
+            >("StringMatches")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StringMatches", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (str, matchTo)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToHumanReadableString_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions_InputControl1(
@@ -286,13 +581,39 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                5usize,
+            >("ToHumanReadableString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToHumanReadableString", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ToHumanReadableString",
-                (path, deviceLayoutName, controlPath, options, control),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (path, deviceLayoutName, controlPath, options, control),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToHumanReadableString_InputControlPath_HumanReadableStringOptions_InputControl0(
@@ -302,10 +623,27 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("ToHumanReadableString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToHumanReadableString", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToHumanReadableString", (path, options, control))?;
+        > = unsafe { method.invoke_unchecked((), (path, options, control)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindChild_InputControl_Il2CppString_i32_0(
@@ -317,10 +655,27 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                3usize,
+            >("TryFindChild")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFindChild", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryFindChild", (control, path, indexInPath))?;
+        > = unsafe { method.invoke_unchecked((), (control, path, indexInPath)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindChild_InputControl_Il2CppString_i32_1<TControl>(
@@ -334,8 +689,27 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryFindChild", (control, path, indexInPath))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                TControl,
+                3usize,
+            >("TryFindChild")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFindChild", 3usize
+                )
+            });
+        let __cordl_ret: TControl = unsafe {
+            method.invoke_unchecked((), (control, path, indexInPath))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindControl_InputControl_Il2CppString_i32_0(
@@ -347,10 +721,27 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                3usize,
+            >("TryFindControl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFindControl", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryFindControl", (control, path, indexInPath))?;
+        > = unsafe { method.invoke_unchecked((), (control, path, indexInPath)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindControl_InputControl_Il2CppString_i32_1<TControl>(
@@ -364,8 +755,27 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryFindControl", (control, path, indexInPath))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                TControl,
+                3usize,
+            >("TryFindControl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFindControl", 3usize
+                )
+            });
+        let __cordl_ret: TControl = unsafe {
+            method.invoke_unchecked((), (control, path, indexInPath))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindControls_ByRefMut_i32_1(
@@ -380,8 +790,34 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         >,
         indexInPath: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryFindControls", (control, path, matches, indexInPath))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputControl,
+                            >,
+                        >,
+                    >,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("TryFindControls")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFindControls", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (control, path, matches, indexInPath))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindControls_i32_0(
@@ -397,12 +833,35 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::InputControl,
+                        >,
+                    >,
+                >,
+                3usize,
+            >("TryFindControls")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFindControls", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryFindControls", (control, path, indexInPath))?;
+        > = unsafe { method.invoke_unchecked((), (control, path, indexInPath)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryFindControls_i32_ByRefMut2<TControl>(
@@ -419,8 +878,30 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryFindControls", (control, path, indexInPath, matches))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputControl,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+                    >,
+                ),
+                i32,
+                4usize,
+            >("TryFindControls")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryFindControls", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (control, path, indexInPath, matches))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetControlLayout(
@@ -428,10 +909,21 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("TryGetControlLayout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetControlLayout", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetControlLayout", (path))?;
+        > = unsafe { method.invoke_unchecked((), (path)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDeviceLayout(
@@ -439,10 +931,21 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("TryGetDeviceLayout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetDeviceLayout", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetDeviceLayout", (path))?;
+        > = unsafe { method.invoke_unchecked((), (path)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetDeviceUsages(
@@ -454,12 +957,27 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+                1usize,
+            >("TryGetDeviceUsages")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetDeviceUsages", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetDeviceUsages", (path))?;
+        > = unsafe { method.invoke_unchecked((), (path)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -678,19 +1196,45 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         pathElement: crate::UnityEngine::InputSystem::Utilities::Substring,
         element: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ComparePathElementToString", (pathElement, element))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::Substring,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                bool,
+                2usize,
+            >("ComparePathElementToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ComparePathElementToString", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (pathElement, element))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Matches(
         &mut self,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Matches",
-            (control),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputControl,
+                >),
+                bool,
+                1usize,
+            >("Matches")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Matches", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (control)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToHumanReadableString_Il2CppString_Il2CppString_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions0(
@@ -709,19 +1253,43 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                5usize,
+            >("ToHumanReadableString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToHumanReadableString", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToHumanReadableString",
-            (
-                parentLayoutName,
-                parentControlPath,
-                referencedLayoutName,
-                controlPath,
-                options,
-            ),
-        )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        parentLayoutName,
+                        parentControlPath,
+                        referencedLayoutName,
+                        controlPath,
+                        options,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToHumanReadableString_Substring1(
@@ -729,10 +1297,21 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::InputSystem::Utilities::Substring),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToHumanReadableString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToHumanReadableString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToHumanReadableString", (substring))?;
+        > = unsafe { method.invoke_unchecked((), (substring)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_displayName(
@@ -740,25 +1319,45 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_displayName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_displayName", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_displayName", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_isDoubleWildcard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isDoubleWildcard",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isDoubleWildcard")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isDoubleWildcard", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_isWildcard(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isWildcard",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isWildcard")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isWildcard", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_layout(
@@ -766,9 +1365,21 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_layout")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_layout", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_layout", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_name(
@@ -776,9 +1387,21 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_name")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_name", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_name", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_usages(
@@ -790,11 +1413,27 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+                0usize,
+            >("get_usages")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_usages", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_usages", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }
@@ -1000,11 +1639,15 @@ for crate::UnityEngine::InputSystem::InputControlPath_PathParser {
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
 impl crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     pub fn MoveToNextComponent(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MoveToNextComponent",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("MoveToNextComponent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveToNextComponent", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseComponentPart(
@@ -1013,30 +1656,54 @@ impl crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::Substring = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ParseComponentPart",
-            (terminator),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (char),
+                crate::UnityEngine::InputSystem::Utilities::Substring,
+                1usize,
+            >("ParseComponentPart")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseComponentPart", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::Substring = unsafe {
+            method.invoke_unchecked(self, (terminator))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (path),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (path))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_isAtEnd(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isAtEnd",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isAtEnd")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isAtEnd", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

@@ -46,11 +46,21 @@ impl crate::Unity::Properties::IConstructor {
     pub fn get_InstantiationKind(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Properties::InstantiationKind> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Unity::Properties::InstantiationKind = __cordl_object
-            .invoke("get_InstantiationKind", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::Unity::Properties::InstantiationKind,
+                0usize,
+            >("get_InstantiationKind")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_InstantiationKind", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Properties::InstantiationKind = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -113,59 +113,115 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indexFilter,
-                    beatDistributionParam,
-                    beatDistributionParamType,
-                    gapDistributionParam,
-                    gapDistributionParamType,
-                    gapDistributionShouldAffectFirstBaseEvent,
-                    gapDistributionEaseType,
-                    axis,
-                    flipTranslation,
-                    lightTranslationBaseDataList,
+                    quest_hook::libil2cpp::Gc<
+                        crate::BeatmapSaveDataVersion3::IndexFilter,
+                    >,
+                    f32,
+                    crate::BeatmapSaveDataCommon::DistributionParamType,
+                    f32,
+                    crate::BeatmapSaveDataCommon::DistributionParamType,
+                    bool,
+                    crate::BeatmapSaveDataCommon::EaseType,
+                    crate::BeatmapSaveDataCommon::Axis,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+                            >,
+                        >,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                10usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 10usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indexFilter,
+                        beatDistributionParam,
+                        beatDistributionParamType,
+                        gapDistributionParam,
+                        gapDistributionParamType,
+                        gapDistributionShouldAffectFirstBaseEvent,
+                        gapDistributionEaseType,
+                        axis,
+                        flipTranslation,
+                        lightTranslationBaseDataList,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_axis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::Axis> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::Axis = __cordl_object
-            .invoke("get_axis", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::BeatmapSaveDataCommon::Axis, 0usize>("get_axis")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_axis", 0usize
+                )
+            });
+        let __cordl_ret: crate::BeatmapSaveDataCommon::Axis = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_flipTranslation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_flipTranslation", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_flipTranslation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_flipTranslation", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_gapDistributionEaseType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = __cordl_object
-            .invoke("get_gapDistributionEaseType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::BeatmapSaveDataCommon::EaseType,
+                0usize,
+            >("get_gapDistributionEaseType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_gapDistributionEaseType", 0usize
+                )
+            });
+        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_gapDistributionParam(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_gapDistributionParam", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_gapDistributionParam")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_gapDistributionParam", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_gapDistributionParamType(
@@ -173,21 +229,39 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
     ) -> quest_hook::libil2cpp::Result<
         crate::BeatmapSaveDataCommon::DistributionParamType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = __cordl_object
-            .invoke("get_gapDistributionParamType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::BeatmapSaveDataCommon::DistributionParamType,
+                0usize,
+            >("get_gapDistributionParamType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_gapDistributionParamType", 0usize
+                )
+            });
+        let __cordl_ret: crate::BeatmapSaveDataCommon::DistributionParamType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_gapDistributionShouldAffectFirstBaseEvent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_gapDistributionShouldAffectFirstBaseEvent", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                bool,
+                0usize,
+            >("get_gapDistributionShouldAffectFirstBaseEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_gapDistributionShouldAffectFirstBaseEvent", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_lightTranslationBaseDataList(
@@ -201,16 +275,31 @@ impl crate::BeatmapSaveDataVersion3::LightTranslationEventBox {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IReadOnlyList_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_lightTranslationBaseDataList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_lightTranslationBaseDataList", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
                 quest_hook::libil2cpp::Gc<
                     crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
                 >,
             >,
-        > = __cordl_object.invoke("get_lightTranslationBaseDataList", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

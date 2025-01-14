@@ -63,10 +63,21 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("AreValuesEqual", (other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayerSpecificSettings,
+                >),
+                bool,
+                1usize,
+            >("AreValuesEqual")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AreValuesEqual", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn CopyWith(
@@ -102,37 +113,77 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<f32>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<f32>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<f32>,
+                    crate::System::Nullable_1<
+                        crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+                    >,
+                    crate::System::Nullable_1<f32>,
+                    crate::System::Nullable_1<f32>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<bool>,
+                    crate::System::Nullable_1<crate::GlobalNamespace::ArcVisibilityType>,
+                    crate::System::Nullable_1<
+                        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                    >,
+                    crate::System::Nullable_1<
+                        crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                    >,
+                    crate::System::Nullable_1<f32>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayerSpecificSettings,
+                >,
+                20usize,
+            >("CopyWith")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyWith", 20usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
-        > = __cordl_object
-            .invoke(
-                "CopyWith",
-                (
-                    leftHanded,
-                    playerHeight,
-                    automaticPlayerHeight,
-                    sfxVolume,
-                    reduceDebris,
-                    noTextsAndHuds,
-                    noFailEffects,
-                    advancedHud,
-                    autoRestart,
-                    saberTrailIntensity,
-                    noteJumpDurationTypeSettings,
-                    noteJumpFixedDuration,
-                    noteJumpStartBeatOffset,
-                    hideNoteSpawnEffect,
-                    adaptiveSfx,
-                    arcsHapticFeedback,
-                    arcsVisible,
-                    environmentEffectsFilterDefaultPreset,
-                    environmentEffectsFilterExpertPlusPreset,
-                    headsetHapticIntensity,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        leftHanded,
+                        playerHeight,
+                        automaticPlayerHeight,
+                        sfxVolume,
+                        reduceDebris,
+                        noTextsAndHuds,
+                        noFailEffects,
+                        advancedHud,
+                        autoRestart,
+                        saberTrailIntensity,
+                        noteJumpDurationTypeSettings,
+                        noteJumpFixedDuration,
+                        noteJumpStartBeatOffset,
+                        hideNoteSpawnEffect,
+                        adaptiveSfx,
+                        arcsHapticFeedback,
+                        arcsVisible,
+                        environmentEffectsFilterDefaultPreset,
+                        environmentEffectsFilterExpertPlusPreset,
+                        headsetHapticIntensity,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentEffectsFilterPreset(
@@ -141,11 +192,21 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = __cordl_object
-            .invoke("GetEnvironmentEffectsFilterPreset", (difficulty))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::BeatmapDifficulty),
+                crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                1usize,
+            >("GetEnvironmentEffectsFilterPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEnvironmentEffectsFilterPreset", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = unsafe {
+            method.invoke_unchecked(self, (difficulty))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -210,11 +271,17 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor__cordl_bool_f32__cordl_bool_f32__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool_f32_NoteJumpDurationTypeSettings_f32_f32__cordl_bool__cordl_bool__cordl_bool_ArcVisibilityType_EnvironmentEffectsFilterPreset_EnvironmentEffectsFilterPreset_f32_1(
@@ -240,80 +307,147 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
         environmentEffectsFilterExpertPlusPreset: crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
         headsetHapticIntensity: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    leftHanded,
-                    playerHeight,
-                    automaticPlayerHeight,
-                    sfxVolume,
-                    reduceDebris,
-                    noTextsAndHuds,
-                    noFailEffects,
-                    advancedHud,
-                    autoRestart,
-                    saberTrailIntensity,
-                    noteJumpDurationTypeSettings,
-                    noteJumpFixedDuration,
-                    noteJumpStartBeatOffset,
-                    hideNoteSpawnEffect,
-                    adaptiveSfx,
-                    arcsHapticFeedback,
-                    arcsVisible,
-                    environmentEffectsFilterDefaultPreset,
-                    environmentEffectsFilterExpertPlusPreset,
-                    headsetHapticIntensity,
+                    bool,
+                    f32,
+                    bool,
+                    f32,
+                    bool,
+                    bool,
+                    bool,
+                    bool,
+                    bool,
+                    f32,
+                    crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+                    f32,
+                    f32,
+                    bool,
+                    bool,
+                    bool,
+                    crate::GlobalNamespace::ArcVisibilityType,
+                    crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                    crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                    f32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                20usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 20usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        leftHanded,
+                        playerHeight,
+                        automaticPlayerHeight,
+                        sfxVolume,
+                        reduceDebris,
+                        noTextsAndHuds,
+                        noFailEffects,
+                        advancedHud,
+                        autoRestart,
+                        saberTrailIntensity,
+                        noteJumpDurationTypeSettings,
+                        noteJumpFixedDuration,
+                        noteJumpStartBeatOffset,
+                        hideNoteSpawnEffect,
+                        adaptiveSfx,
+                        arcsHapticFeedback,
+                        arcsVisible,
+                        environmentEffectsFilterDefaultPreset,
+                        environmentEffectsFilterExpertPlusPreset,
+                        headsetHapticIntensity,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_adaptiveSfx(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_adaptiveSfx", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_adaptiveSfx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_adaptiveSfx", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_advancedHud(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_advancedHud", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_advancedHud")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_advancedHud", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_arcVisibility(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ArcVisibilityType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::ArcVisibilityType = __cordl_object
-            .invoke("get_arcVisibility", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::ArcVisibilityType,
+                0usize,
+            >("get_arcVisibility")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_arcVisibility", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::ArcVisibilityType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_arcsHapticFeedback(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_arcsHapticFeedback", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_arcsHapticFeedback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_arcsHapticFeedback", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_autoRestart(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_autoRestart", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_autoRestart")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_autoRestart", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_automaticPlayerHeight(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_automaticPlayerHeight", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_automaticPlayerHeight")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_automaticPlayerHeight", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_environmentEffectsFilterDefaultPreset(
@@ -321,11 +455,21 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = __cordl_object
-            .invoke("get_environmentEffectsFilterDefaultPreset", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                0usize,
+            >("get_environmentEffectsFilterDefaultPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_environmentEffectsFilterDefaultPreset", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_environmentEffectsFilterExpertPlusPreset(
@@ -333,46 +477,81 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = __cordl_object
-            .invoke("get_environmentEffectsFilterExpertPlusPreset", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::EnvironmentEffectsFilterPreset,
+                0usize,
+            >("get_environmentEffectsFilterExpertPlusPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_environmentEffectsFilterExpertPlusPreset", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentEffectsFilterPreset = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_headsetHapticIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_headsetHapticIntensity", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_headsetHapticIntensity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_headsetHapticIntensity", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_hideNoteSpawnEffect(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_hideNoteSpawnEffect", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_hideNoteSpawnEffect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_hideNoteSpawnEffect", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_leftHanded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_leftHanded", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_leftHanded")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_leftHanded", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_noFailEffects(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_noFailEffects", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_noFailEffects")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_noFailEffects", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_noTextsAndHuds(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_noTextsAndHuds", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_noTextsAndHuds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_noTextsAndHuds", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_noteJumpDurationTypeSettings(
@@ -380,53 +559,93 @@ impl crate::GlobalNamespace::PlayerSpecificSettings {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::NoteJumpDurationTypeSettings,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::NoteJumpDurationTypeSettings = __cordl_object
-            .invoke("get_noteJumpDurationTypeSettings", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::NoteJumpDurationTypeSettings,
+                0usize,
+            >("get_noteJumpDurationTypeSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_noteJumpDurationTypeSettings", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::NoteJumpDurationTypeSettings = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_noteJumpFixedDuration(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpFixedDuration", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_noteJumpFixedDuration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_noteJumpFixedDuration", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_noteJumpStartBeatOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_noteJumpStartBeatOffset", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_noteJumpStartBeatOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_noteJumpStartBeatOffset", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_playerHeight(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_playerHeight", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_playerHeight")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_playerHeight", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_reduceDebris(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_reduceDebris", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_reduceDebris")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_reduceDebris", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_saberTrailIntensity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_saberTrailIntensity", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_saberTrailIntensity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_saberTrailIntensity", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_sfxVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_sfxVolume", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_sfxVolume")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_sfxVolume", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

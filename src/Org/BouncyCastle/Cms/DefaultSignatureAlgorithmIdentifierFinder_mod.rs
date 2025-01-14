@@ -51,10 +51,28 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
             crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+                >,
+                2usize,
+            >("CreatePssParams")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreatePssParams", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreatePssParams", (hashAlgId, saltSize))?;
+        > = unsafe { method.invoke_unchecked((), (hashAlgId, saltSize)) };
         Ok(__cordl_ret.into())
     }
     pub fn Find(
@@ -65,12 +83,23 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                >,
+                1usize,
+            >("Find")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Find", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        > = __cordl_object.invoke("Find", (sigAlgName))?;
+        > = unsafe { method.invoke_unchecked(self, (sigAlgName)) };
         Ok(__cordl_ret.into())
     }
     pub fn Generate(
@@ -82,10 +111,23 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                >,
+                1usize,
+            >("Generate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Generate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Generate", (signatureAlgorithm))?;
+        > = unsafe { method.invoke_unchecked((), (signatureAlgorithm)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -98,11 +140,17 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

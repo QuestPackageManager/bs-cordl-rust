@@ -125,13 +125,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::AttributeCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetAttributes",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::AttributeCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetAttributes",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetClassName(
@@ -139,13 +150,22 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetClassName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetClassName",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetClassName",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetComponentName(
@@ -153,13 +173,22 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetComponentName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetComponentName",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetComponentName",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetConverter(
@@ -167,13 +196,22 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetConverter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetConverter",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeConverter,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetConverter",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent(
@@ -181,13 +219,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptor,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptor,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty(
@@ -195,13 +244,25 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::PropertyDescriptor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptor,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEditor(
@@ -210,13 +271,21 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEditor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEditor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetEditor",
-            (editorBaseType),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (editorBaseType)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_0(
@@ -226,13 +295,23 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEvents", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetEvents",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_Il2CppArray1(
@@ -247,13 +326,27 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEvents", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetEvents",
-            (attributes),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_0(
@@ -263,13 +356,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_Il2CppArray1(
@@ -284,13 +388,28 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
-            (attributes),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetPropertyOwner(
@@ -299,13 +418,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner",
-            (pd),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (pd)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -315,11 +445,26 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultEx
         >,
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (node, instance),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (node, instance))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -469,13 +614,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::AttributeCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetAttributes",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::AttributeCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetAttributes",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetClassName(
@@ -483,13 +639,22 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetClassName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetClassName",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetClassName",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetComponentName(
@@ -497,13 +662,22 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetComponentName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetComponentName",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetComponentName",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetConverter(
@@ -511,13 +685,22 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetConverter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetConverter",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeConverter,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetConverter",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent(
@@ -525,13 +708,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptor,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptor,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty(
@@ -539,13 +733,25 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::PropertyDescriptor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptor,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEditor(
@@ -554,13 +760,21 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEditor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEditor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetEditor",
-            (editorBaseType),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (editorBaseType)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_0(
@@ -570,13 +784,23 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEvents", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetEvents",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_Il2CppArray1(
@@ -591,13 +815,27 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEvents", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetEvents",
-            (attributes),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_0(
@@ -607,13 +845,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_Il2CppArray1(
@@ -628,13 +877,28 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
-            (attributes),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetPropertyOwner(
@@ -643,13 +907,24 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner",
-            (pd),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (pd)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -660,11 +935,27 @@ impl crate::System::ComponentModel::TypeDescriptionNode_TypeDescriptor_DefaultTy
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (node, objectType, instance),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (node, objectType, instance))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -749,15 +1040,46 @@ impl crate::System::ComponentModel::TypeDescriptor {
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddProvider", (provider, _cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::ComponentModel::TypeDescriptionProvider,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddProvider")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddProvider", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (provider, _cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckDefaultProvider(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CheckDefaultProvider", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CheckDefaultProvider")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckDefaultProvider", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInstance(
@@ -776,10 +1098,38 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("CreateInstance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateInstance", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateInstance", (provider, objectType, argTypes, args))?;
+        > = unsafe {
+            method.invoke_unchecked((), (provider, objectType, argTypes, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FilterMembers(
@@ -792,10 +1142,28 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                2usize,
+            >("FilterMembers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FilterMembers", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ArrayList,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FilterMembers", (members, attributes))?;
+        > = unsafe { method.invoke_unchecked((), (members, attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssociation(
@@ -804,10 +1172,24 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("GetAssociation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAssociation", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAssociation", (_cordl_type, primary))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, primary)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttributes_Il2CppObject1(
@@ -815,10 +1197,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::AttributeCollection,
+                >,
+                1usize,
+            >("GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAttributes", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::AttributeCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAttributes", (component))?;
+        > = unsafe { method.invoke_unchecked((), (component)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttributes_Il2CppObject__cordl_bool2(
@@ -827,10 +1222,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::AttributeCollection,
+                >,
+                2usize,
+            >("GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAttributes", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::AttributeCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAttributes", (component, noCustomTypeDesc))?;
+        > = unsafe { method.invoke_unchecked((), (component, noCustomTypeDesc)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttributes_Type0(
@@ -838,10 +1246,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::AttributeCollection,
+                >,
+                1usize,
+            >("GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAttributes", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::AttributeCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAttributes", (componentType))?;
+        > = unsafe { method.invoke_unchecked((), (componentType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCache(
@@ -849,10 +1270,21 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                1usize,
+            >("GetCache")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCache", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IDictionary,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCache", (instance))?;
+        > = unsafe { method.invoke_unchecked((), (instance)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetConverter(
@@ -860,10 +1292,21 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
+                1usize,
+            >("GetConverter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetConverter", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeConverter,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetConverter", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescriptor_Il2CppObject__cordl_bool1(
@@ -872,10 +1315,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::ICustomTypeDescriptor,
+                >,
+                2usize,
+            >("GetDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDescriptor", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ICustomTypeDescriptor,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDescriptor", (component, noCustomTypeDesc))?;
+        > = unsafe { method.invoke_unchecked((), (component, noCustomTypeDesc)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescriptor_Type_Il2CppString0(
@@ -884,10 +1340,26 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::ICustomTypeDescriptor,
+                >,
+                2usize,
+            >("GetDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDescriptor", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ICustomTypeDescriptor,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDescriptor", (_cordl_type, typeName))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, typeName)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetEvents_Il2CppObject1(
@@ -897,10 +1369,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                1usize,
+            >("GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEvents", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEvents", (component))?;
+        > = unsafe { method.invoke_unchecked((), (component)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetEvents_Il2CppObject_Il2CppArray__cordl_bool2(
@@ -916,10 +1401,33 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                        >,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                3usize,
+            >("GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEvents", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEvents", (component, attributes, noCustomTypeDesc))?;
+        > = unsafe {
+            method.invoke_unchecked((), (component, attributes, noCustomTypeDesc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEvents_Type0(
@@ -929,10 +1437,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                1usize,
+            >("GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEvents", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEvents", (componentType))?;
+        > = unsafe { method.invoke_unchecked((), (componentType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtendedDescriptor(
@@ -940,10 +1461,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::ICustomTypeDescriptor,
+                >,
+                1usize,
+            >("GetExtendedDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtendedDescriptor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ICustomTypeDescriptor,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetExtendedDescriptor", (component))?;
+        > = unsafe { method.invoke_unchecked((), (component)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtenderCollisionSuffix(
@@ -953,17 +1487,43 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::MemberDescriptor,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetExtenderCollisionSuffix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtenderCollisionSuffix", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetExtenderCollisionSuffix", (member))?;
+        > = unsafe { method.invoke_unchecked((), (member)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNodeForBaseType(
         searchType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNodeForBaseType", (searchType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                1usize,
+            >("GetNodeForBaseType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNodeForBaseType", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked((), (searchType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertiesImpl(
@@ -980,13 +1540,38 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                        >,
+                    >,
+                    bool,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                4usize,
+            >("GetPropertiesImpl")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPropertiesImpl", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetPropertiesImpl",
-                (component, attributes, noCustomTypeDesc, noAttributes),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (component, attributes, noCustomTypeDesc, noAttributes),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetProperties_Il2CppObject1(
@@ -996,10 +1581,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                1usize,
+            >("GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetProperties", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetProperties", (component))?;
+        > = unsafe { method.invoke_unchecked((), (component)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetProperties_Il2CppObject_Il2CppArray3(
@@ -1014,10 +1612,30 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                2usize,
+            >("GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetProperties", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetProperties", (component, attributes))?;
+        > = unsafe { method.invoke_unchecked((), (component, attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetProperties_Il2CppObject_Il2CppArray__cordl_bool4(
@@ -1033,10 +1651,33 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                        >,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                3usize,
+            >("GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetProperties", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetProperties", (component, attributes, noCustomTypeDesc))?;
+        > = unsafe {
+            method.invoke_unchecked((), (component, attributes, noCustomTypeDesc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetProperties_Il2CppObject__cordl_bool2(
@@ -1047,10 +1688,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                2usize,
+            >("GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetProperties", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetProperties", (component, noCustomTypeDesc))?;
+        > = unsafe { method.invoke_unchecked((), (component, noCustomTypeDesc)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetProperties_Type0(
@@ -1060,10 +1714,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                1usize,
+            >("GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetProperties", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetProperties", (componentType))?;
+        > = unsafe { method.invoke_unchecked((), (componentType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetProviderRecursive(
@@ -1071,17 +1738,43 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeDescriptionProvider>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::TypeDescriptionProvider,
+                >,
+                1usize,
+            >("GetProviderRecursive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetProviderRecursive", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeDescriptionProvider,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetProviderRecursive", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetReflectionType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetReflectionType", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                1usize,
+            >("GetReflectionType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetReflectionType", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked((), (_cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NodeFor_Il2CppObject2(
@@ -1091,10 +1784,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+                >,
+                1usize,
+            >("NodeFor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NodeFor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NodeFor", (instance))?;
+        > = unsafe { method.invoke_unchecked((), (instance)) };
         Ok(__cordl_ret.into())
     }
     pub fn NodeFor_Il2CppObject__cordl_bool3(
@@ -1105,10 +1811,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+                >,
+                2usize,
+            >("NodeFor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NodeFor", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NodeFor", (instance, createDelegator))?;
+        > = unsafe { method.invoke_unchecked((), (instance, createDelegator)) };
         Ok(__cordl_ret.into())
     }
     pub fn NodeFor_Type0(
@@ -1118,10 +1837,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+                >,
+                1usize,
+            >("NodeFor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NodeFor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NodeFor", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn NodeFor_Type__cordl_bool1(
@@ -1132,10 +1864,23 @@ impl crate::System::ComponentModel::TypeDescriptor {
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+                >,
+                2usize,
+            >("NodeFor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NodeFor", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NodeFor", (_cordl_type, createDelegator))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type, createDelegator)) };
         Ok(__cordl_ret.into())
     }
     pub fn PipelineAttributeFilter(
@@ -1151,13 +1896,33 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                5usize,
+            >("PipelineAttributeFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PipelineAttributeFilter", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PipelineAttributeFilter",
-                (pipelineType, members, filter, instance, cache),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (pipelineType, members, filter, instance, cache))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PipelineFilter(
@@ -1168,10 +1933,28 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                4usize,
+            >("PipelineFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PipelineFilter", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PipelineFilter", (pipelineType, members, instance, cache))?;
+        > = unsafe {
+            method.invoke_unchecked((), (pipelineType, members, instance, cache))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PipelineInitialize(
@@ -1181,10 +1964,25 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                3usize,
+            >("PipelineInitialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PipelineInitialize", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PipelineInitialize", (pipelineType, members, cache))?;
+        > = unsafe { method.invoke_unchecked((), (pipelineType, members, cache)) };
         Ok(__cordl_ret.into())
     }
     pub fn PipelineMerge(
@@ -1196,27 +1994,73 @@ impl crate::System::ComponentModel::TypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                5usize,
+            >("PipelineMerge")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PipelineMerge", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PipelineMerge",
-                (pipelineType, primary, secondary, instance, cache),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (pipelineType, primary, secondary, instance, cache),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RaiseRefresh(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RaiseRefresh", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RaiseRefresh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RaiseRefresh", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Refresh", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Refresh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Refresh", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldHideMember(
@@ -1225,34 +2069,98 @@ impl crate::System::ComponentModel::TypeDescriptor {
         >,
         attribute: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldHideMember", (member, attribute))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::ComponentModel::MemberDescriptor,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                ),
+                bool,
+                2usize,
+            >("ShouldHideMember")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldHideMember", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (member, attribute))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SortDescriptorArray(
         infos: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SortDescriptorArray", (infos))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SortDescriptorArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SortDescriptorArray", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (infos))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_ComObjectType() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Type>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_ComObjectType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                0usize,
+            >("get_ComObjectType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ComObjectType", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_InterfaceType() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Type>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_InterfaceType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                0usize,
+            >("get_InterfaceType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_InterfaceType", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_MetadataVersion() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_MetadataVersion", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_MetadataVersion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_MetadataVersion", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }
@@ -1325,10 +2233,23 @@ impl crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValid", (filter))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >),
+                bool,
+                1usize,
+            >("IsValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValid", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (filter)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1358,11 +2279,28 @@ impl crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
             crate::System::Collections::ICollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (filter, filteredMembers))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (filter, filteredMembers))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1430,10 +2368,23 @@ impl crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
             crate::System::ComponentModel::Design::ITypeDescriptorFilterService,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsValid", (filterService))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::Design::ITypeDescriptorFilterService,
+                >),
+                bool,
+                1usize,
+            >("IsValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValid", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (filterService))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -1459,11 +2410,26 @@ impl crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
             crate::System::Collections::ICollection,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (filterService, filteredMembers))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::ComponentModel::Design::ITypeDescriptorFilterService,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (filterService, filteredMembers))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1583,10 +2549,22 @@ impl crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                2usize,
+            >("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (left, right)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1599,11 +2577,17 @@ impl crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1699,13 +2683,24 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::AttributeCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetAttributes",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::AttributeCollection,
-        > = __cordl_object
-            .invoke("System.ComponentModel.ICustomTypeDescriptor.GetAttributes", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetClassName(
@@ -1713,13 +2708,22 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetClassName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetClassName",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object
-            .invoke("System.ComponentModel.ICustomTypeDescriptor.GetClassName", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetComponentName(
@@ -1727,13 +2731,22 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetComponentName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetComponentName",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object
-            .invoke("System.ComponentModel.ICustomTypeDescriptor.GetComponentName", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetConverter(
@@ -1741,13 +2754,22 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetConverter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetConverter",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::TypeConverter,
-        > = __cordl_object
-            .invoke("System.ComponentModel.ICustomTypeDescriptor.GetConverter", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent(
@@ -1755,13 +2777,24 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::EventDescriptor>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptor,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptor,
-        > = __cordl_object
-            .invoke("System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty(
@@ -1769,16 +2802,25 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::PropertyDescriptor>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptor,
-        > = __cordl_object
-            .invoke(
-                "System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty",
-                (),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEditor(
@@ -1787,16 +2829,21 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEditor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEditor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "System.ComponentModel.ICustomTypeDescriptor.GetEditor",
-                (editorBaseType),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (editorBaseType)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_0(
@@ -1806,13 +2853,23 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEvents", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = __cordl_object
-            .invoke("System.ComponentModel.ICustomTypeDescriptor.GetEvents", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetEvents_Il2CppArray1(
@@ -1827,16 +2884,27 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
             crate::System::ComponentModel::EventDescriptorCollection,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::EventDescriptorCollection,
+                >,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetEvents", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::EventDescriptorCollection,
-        > = __cordl_object
-            .invoke(
-                "System.ComponentModel.ICustomTypeDescriptor.GetEvents",
-                (attributes),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_0(
@@ -1846,13 +2914,24 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                0usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
+                    0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = __cordl_object
-            .invoke("System.ComponentModel.ICustomTypeDescriptor.GetProperties", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetProperties_Il2CppArray1(
@@ -1867,16 +2946,28 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
             crate::System::ComponentModel::PropertyDescriptorCollection,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptorCollection,
+                >,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::PropertyDescriptorCollection,
-        > = __cordl_object
-            .invoke(
-                "System.ComponentModel.ICustomTypeDescriptor.GetProperties",
-                (attributes),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (attributes)) };
         Ok(__cordl_ret.into())
     }
     pub fn System_ComponentModel_ICustomTypeDescriptor_GetPropertyOwner(
@@ -1885,16 +2976,24 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::PropertyDescriptor,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner",
-                (pd),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (pd)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -1906,11 +3005,28 @@ impl crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
             crate::System::ComponentModel::ICustomTypeDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (primary, secondary))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::ComponentModel::ICustomTypeDescriptor,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::ComponentModel::ICustomTypeDescriptor,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (primary, secondary))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -2012,13 +3128,38 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("CreateInstance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateInstance", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("CreateInstance", (provider, objectType, argTypes, args))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (provider, objectType, argTypes, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCache(
@@ -2027,12 +3168,21 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                1usize,
+            >("GetCache")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCache", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IDictionary,
-        > = __cordl_object.invoke("GetCache", (instance))?;
+        > = unsafe { method.invoke_unchecked(self, (instance)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtendedTypeDescriptor(
@@ -2041,12 +3191,23 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::ICustomTypeDescriptor,
+                >,
+                1usize,
+            >("GetExtendedTypeDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtendedTypeDescriptor", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ICustomTypeDescriptor,
-        > = __cordl_object.invoke("GetExtendedTypeDescriptor", (instance))?;
+        > = unsafe { method.invoke_unchecked(self, (instance)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetExtenderProviders(
@@ -2061,16 +3222,31 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::ComponentModel::IExtenderProvider,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetExtenderProviders")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExtenderProviders", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
                     crate::System::ComponentModel::IExtenderProvider,
                 >,
             >,
-        > = __cordl_object.invoke("GetExtenderProviders", (instance))?;
+        > = unsafe { method.invoke_unchecked(self, (instance)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetReflectionType(
@@ -2078,11 +3254,24 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
-            .invoke("GetReflectionType", (objectType, instance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                2usize,
+            >("GetReflectionType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetReflectionType", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked(self, (objectType, instance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeDescriptor(
@@ -2092,12 +3281,26 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::ICustomTypeDescriptor,
+                >,
+                2usize,
+            >("GetTypeDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTypeDescriptor", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::ComponentModel::ICustomTypeDescriptor,
-        > = __cordl_object.invoke("GetTypeDescriptor", (objectType, instance))?;
+        > = unsafe { method.invoke_unchecked(self, (objectType, instance)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -2117,11 +3320,23 @@ impl crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
             crate::System::ComponentModel::TypeDescriptionProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (provider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::ComponentModel::TypeDescriptionProvider,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (provider))
+        };
         Ok(__cordl_ret.into())
     }
 }

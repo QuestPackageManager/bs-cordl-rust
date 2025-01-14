@@ -46,8 +46,29 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         >,
         t: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Http::Headers::Token>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseStringElement", (lexer, parsedValue, t))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Net::Http::Headers::Token,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryParseStringElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseStringElement", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (lexer, parsedValue, t))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParse_ByRefMut1(
@@ -61,8 +82,33 @@ impl crate::System::Net::Http::Headers::CollectionParser {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParse", (input, minimalCount, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryParse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParse", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (input, minimalCount, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParse_ElementTryParser_1_ByRefMut0<T>(
@@ -79,8 +125,32 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParse", (input, minimalCount, parser, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::Headers::ElementTryParser_1<T>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("TryParse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParse", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (input, minimalCount, parser, result))
+        };
         Ok(__cordl_ret.into())
     }
 }

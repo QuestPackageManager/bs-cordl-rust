@@ -39,25 +39,59 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Trace {
 #[cfg(feature = "System+Diagnostics+Trace")]
 impl crate::System::Diagnostics::Trace {
     pub fn get_AutoFlush() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_AutoFlush", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_AutoFlush")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_AutoFlush", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_CorrelationManager() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Diagnostics::CorrelationManager>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Diagnostics::CorrelationManager,
+                >,
+                0usize,
+            >("get_CorrelationManager")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CorrelationManager", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Diagnostics::CorrelationManager,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_CorrelationManager", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Listeners() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Diagnostics::TraceListenerCollection>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Diagnostics::TraceListenerCollection,
+                >,
+                0usize,
+            >("get_Listeners")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Listeners", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Diagnostics::TraceListenerCollection,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Listeners", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

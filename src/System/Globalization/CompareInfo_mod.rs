@@ -52,11 +52,24 @@ impl crate::System::Globalization::CompareInfo {
         string1: crate::System::ReadOnlySpan_1<char>,
         string2: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CompareOptionIgnoreCase", (string1, string2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                ),
+                i32,
+                2usize,
+            >("CompareOptionIgnoreCase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareOptionIgnoreCase", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (string1, string2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareOrdinalIgnoreCase_Il2CppString_i32_i32_Il2CppString_i32_i32_0(
@@ -67,19 +80,50 @@ impl crate::System::Globalization::CompareInfo {
         indexB: i32,
         lengthB: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CompareOrdinalIgnoreCase",
-                (strA, indexA, lengthA, strB, indexB, lengthB),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                6usize,
+            >("CompareOrdinalIgnoreCase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareOrdinalIgnoreCase", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (strA, indexA, lengthA, strB, indexB, lengthB))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareOrdinalIgnoreCase_ReadOnlySpan_1_ReadOnlySpan_1_1(
         strA: crate::System::ReadOnlySpan_1<char>,
         strB: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareOrdinalIgnoreCase", (strA, strB))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                ),
+                i32,
+                2usize,
+            >("CompareOrdinalIgnoreCase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareOrdinalIgnoreCase", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (strA, strB)) };
         Ok(__cordl_ret.into())
     }
     pub fn CompareStringOrdinalIgnoreCase(
@@ -88,11 +132,26 @@ impl crate::System::Globalization::CompareInfo {
         pString2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length2: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CompareStringOrdinalIgnoreCase",
-                (pString1, length1, pString2, length2),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("CompareStringOrdinalIgnoreCase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareStringOrdinalIgnoreCase", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (pString1, length1, pString2, length2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareString_Il2CppString0(
@@ -101,11 +160,25 @@ impl crate::System::Globalization::CompareInfo {
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CompareString", (string1, string2, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                3usize,
+            >("CompareString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareString", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (string1, string2, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareString_ReadOnlySpan_1_1(
@@ -114,11 +187,25 @@ impl crate::System::Globalization::CompareInfo {
         string2: crate::System::ReadOnlySpan_1<char>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CompareString", (string1, string2, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                3usize,
+            >("CompareString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareString", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (string1, string2, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Compare_Il2CppString_Il2CppString0(
@@ -126,10 +213,24 @@ impl crate::System::Globalization::CompareInfo {
         string1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Compare", (string1, string2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                i32,
+                2usize,
+            >("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (string1, string2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Compare_Il2CppString_Il2CppString_CompareOptions1(
@@ -138,11 +239,25 @@ impl crate::System::Globalization::CompareInfo {
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Compare", (string1, string2, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                3usize,
+            >("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (string1, string2, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Compare_Il2CppString_i32_i32_Il2CppString_i32_i32_CompareOptions3(
@@ -155,14 +270,33 @@ impl crate::System::Globalization::CompareInfo {
         length2: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "Compare",
-                (string1, offset1, length1, string2, offset2, length2, options),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                7usize,
+            >("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 7usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (string1, offset1, length1, string2, offset2, length2, options),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Compare_ReadOnlySpan_1_Il2CppString_CompareOptions2(
@@ -171,11 +305,25 @@ impl crate::System::Globalization::CompareInfo {
         string2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Compare", (string1, string2, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                3usize,
+            >("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (string1, string2, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSortKey(
@@ -185,12 +333,24 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+                2usize,
+            >("CreateSortKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateSortKey", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = __cordl_object.invoke("CreateSortKey", (source, options))?;
+        > = unsafe { method.invoke_unchecked(self, (source, options)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateSortKeyCore(
@@ -200,12 +360,24 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+                2usize,
+            >("CreateSortKeyCore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateSortKeyCore", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = __cordl_object.invoke("CreateSortKeyCore", (source, options))?;
+        > = unsafe { method.invoke_unchecked(self, (source, options)) };
         Ok(__cordl_ret.into())
     }
     pub fn EndsWith_Il2CppString_Il2CppString0(
@@ -214,11 +386,25 @@ impl crate::System::Globalization::CompareInfo {
         suffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("EndsWith", (source, suffix, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("EndsWith")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndsWith", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (source, suffix, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndsWith_ReadOnlySpan_1_ReadOnlySpan_1_1(
@@ -227,21 +413,44 @@ impl crate::System::Globalization::CompareInfo {
         suffix: crate::System::ReadOnlySpan_1<char>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("EndsWith", (source, suffix, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("EndsWith")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndsWith", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (source, suffix, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCollator(
@@ -249,12 +458,21 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::ISimpleCollator>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::ISimpleCollator>,
+                0usize,
+            >("GetCollator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCollator", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::ISimpleCollator,
-        > = __cordl_object.invoke("GetCollator", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCompareInfo(
@@ -262,10 +480,21 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
+                1usize,
+            >("GetCompareInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCompareInfo", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::CompareInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCompareInfo", (name))?;
+        > = unsafe { method.invoke_unchecked((), (name)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCodeOfString(
@@ -273,11 +502,24 @@ impl crate::System::Globalization::CompareInfo {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetHashCodeOfString", (source, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                2usize,
+            >("GetHashCodeOfString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCodeOfString", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCodeOfStringCore(
@@ -285,18 +527,36 @@ impl crate::System::Globalization::CompareInfo {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("GetHashCodeOfStringCore", (source, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                2usize,
+            >("GetHashCodeOfStringCore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCodeOfStringCore", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode_Il2CppString_CompareOptions1(
@@ -304,17 +564,42 @@ impl crate::System::Globalization::CompareInfo {
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (source, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                2usize,
+            >("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIgnoreCaseHash(
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetIgnoreCaseHash", (source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                i32,
+                1usize,
+            >("GetIgnoreCaseHash")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIgnoreCaseHash", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSortKey(
@@ -324,12 +609,24 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+                2usize,
+            >("GetSortKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSortKey", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = __cordl_object.invoke("GetSortKey", (source, options))?;
+        > = unsafe { method.invoke_unchecked(self, (source, options)) };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfCore(
@@ -341,14 +638,32 @@ impl crate::System::Globalization::CompareInfo {
         options: crate::System::Globalization::CompareOptions,
         matchLengthPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "IndexOfCore",
-                (source, target, startIndex, count, options, matchLengthPtr),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                6usize,
+            >("IndexOfCore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOfCore", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (source, target, startIndex, count, options, matchLengthPtr),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfOrdinal(
@@ -359,11 +674,27 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("IndexOfOrdinal", (source, value, startIndex, count, ignoreCase))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    bool,
+                ),
+                i32,
+                5usize,
+            >("IndexOfOrdinal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOfOrdinal", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, value, startIndex, count, ignoreCase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfOrdinalCore(
@@ -373,11 +704,27 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "IndexOfOrdinalCore",
-                (source, value, startIndex, count, ignoreCase),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    bool,
+                ),
+                i32,
+                5usize,
+            >("IndexOfOrdinalCore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOfOrdinalCore", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (source, value, startIndex, count, ignoreCase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf_CompareOptions0(
@@ -386,11 +733,25 @@ impl crate::System::Globalization::CompareInfo {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("IndexOf", (source, value, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                3usize,
+            >("IndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOf", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, value, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf_i32_i32_CompareOptions1(
@@ -401,22 +762,48 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("IndexOf", (source, value, startIndex, count, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                5usize,
+            >("IndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOf", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, value, startIndex, count, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitSort(
         &mut self,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InitSort", (culture))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("InitSort")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitSort", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (culture))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvariantCreateSortKey(
@@ -426,12 +813,24 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+                2usize,
+            >("InvariantCreateSortKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvariantCreateSortKey", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = __cordl_object.invoke("InvariantCreateSortKey", (source, options))?;
+        > = unsafe { method.invoke_unchecked(self, (source, options)) };
         Ok(__cordl_ret.into())
     }
     pub fn InvariantFindString(
@@ -442,11 +841,32 @@ impl crate::System::Globalization::CompareInfo {
         ignoreCase: bool,
         start: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InvariantFindString",
-                (source, sourceCount, value, valueCount, ignoreCase, start),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    bool,
+                    bool,
+                ),
+                i32,
+                6usize,
+            >("InvariantFindString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvariantFindString", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (source, sourceCount, value, valueCount, ignoreCase, start),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvariantIndexOf(
@@ -456,8 +876,27 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InvariantIndexOf", (source, value, startIndex, count, ignoreCase))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    bool,
+                ),
+                i32,
+                5usize,
+            >("InvariantIndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvariantIndexOf", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (source, value, startIndex, count, ignoreCase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvariantLastIndexOf(
@@ -467,16 +906,39 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InvariantLastIndexOf",
-                (source, value, startIndex, count, ignoreCase),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    bool,
+                ),
+                i32,
+                5usize,
+            >("InvariantLastIndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvariantLastIndexOf", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (source, value, startIndex, count, ignoreCase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvariantToUpper(c: char) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InvariantToUpper", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char), char, 1usize>("InvariantToUpper")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvariantToUpper", 1usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (c)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsPrefix(
@@ -485,11 +947,25 @@ impl crate::System::Globalization::CompareInfo {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsPrefix", (source, prefix, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("IsPrefix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsPrefix", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (source, prefix, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSuffix_Il2CppString_Il2CppString0(
@@ -498,11 +974,25 @@ impl crate::System::Globalization::CompareInfo {
         suffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsSuffix", (source, suffix, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("IsSuffix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsSuffix", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (source, suffix, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSuffix_ReadOnlySpan_1_ReadOnlySpan_1_1(
@@ -511,11 +1001,25 @@ impl crate::System::Globalization::CompareInfo {
         suffix: crate::System::ReadOnlySpan_1<char>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsSuffix", (source, suffix, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("IsSuffix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsSuffix", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (source, suffix, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LastIndexOfCore(
@@ -526,11 +1030,27 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("LastIndexOfCore", (source, target, startIndex, count, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                5usize,
+            >("LastIndexOfCore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LastIndexOfCore", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, target, startIndex, count, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LastIndexOfOrdinal(
@@ -541,14 +1061,27 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "LastIndexOfOrdinal",
-                (source, value, startIndex, count, ignoreCase),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    bool,
+                ),
+                i32,
+                5usize,
+            >("LastIndexOfOrdinal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LastIndexOfOrdinal", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, value, startIndex, count, ignoreCase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LastIndexOfOrdinalCore(
@@ -558,11 +1091,27 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "LastIndexOfOrdinalCore",
-                (source, value, startIndex, count, ignoreCase),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    bool,
+                ),
+                i32,
+                5usize,
+            >("LastIndexOfOrdinalCore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LastIndexOfOrdinalCore", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (source, value, startIndex, count, ignoreCase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LastIndexOf_CompareOptions0(
@@ -571,11 +1120,25 @@ impl crate::System::Globalization::CompareInfo {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("LastIndexOf", (source, value, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                3usize,
+            >("LastIndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LastIndexOf", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, value, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LastIndexOf_i32_i32_CompareOptions1(
@@ -586,11 +1149,27 @@ impl crate::System::Globalization::CompareInfo {
         count: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("LastIndexOf", (source, value, startIndex, count, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                5usize,
+            >("LastIndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LastIndexOf", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (source, value, startIndex, count, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -612,44 +1191,80 @@ impl crate::System::Globalization::CompareInfo {
     pub fn OnDeserialized_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeserialized", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDeserialized")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnDeserialized", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnDeserialized_StreamingContext0(
         &mut self,
         ctx: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeserialized", (ctx))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Runtime::Serialization::StreamingContext),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnDeserialized")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnDeserialized", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ctx))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnDeserializing(
         &mut self,
         ctx: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeserializing", (ctx))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Runtime::Serialization::StreamingContext),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnDeserializing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnDeserializing", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ctx))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnSerializing(
         &mut self,
         ctx: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnSerializing", (ctx))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Runtime::Serialization::StreamingContext),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnSerializing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnSerializing", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ctx))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartsWith(
@@ -658,25 +1273,48 @@ impl crate::System::Globalization::CompareInfo {
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("StartsWith", (source, prefix, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("StartsWith")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartsWith", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (source, prefix, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Runtime_Serialization_IDeserializationCallback_OnDeserialization(
         &mut self,
         sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
-                (sender),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("System.Runtime.Serialization.IDeserializationCallback.OnDeserialization")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "System.Runtime.Serialization.IDeserializationCallback.OnDeserialization",
+                    1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (sender))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -684,33 +1322,58 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_CultureInfo0(
         &mut self,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (culture))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (culture))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Name(
@@ -718,17 +1381,33 @@ impl crate::System::Globalization::CompareInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_Name")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Name", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("get_Name", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_UseManagedCollation() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_UseManagedCollation", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_UseManagedCollation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_UseManagedCollation", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn internal_compare(
@@ -740,11 +1419,33 @@ impl crate::System::Globalization::CompareInfo {
         length2: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "internal_compare",
-                (str1, offset1, length1, str2, offset2, length2, options),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                7usize,
+            >("internal_compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_compare", 7usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (str1, offset1, length1, str2, offset2, length2, options),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internal_compare_icall(
@@ -754,8 +1455,27 @@ impl crate::System::Globalization::CompareInfo {
         length2: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("internal_compare_icall", (str1, length1, str2, length2, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                5usize,
+            >("internal_compare_icall")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_compare_icall", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (str1, length1, str2, length2, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internal_compare_managed(
@@ -768,14 +1488,33 @@ impl crate::System::Globalization::CompareInfo {
         length2: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "internal_compare_managed",
-                (str1, offset1, length1, str2, offset2, length2, options),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                7usize,
+            >("internal_compare_managed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_compare_managed", 7usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (str1, offset1, length1, str2, offset2, length2, options),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internal_compare_switch(
@@ -788,14 +1527,33 @@ impl crate::System::Globalization::CompareInfo {
         length2: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke(
-                "internal_compare_switch",
-                (str1, offset1, length1, str2, offset2, length2, options),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                7usize,
+            >("internal_compare_switch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_compare_switch", 7usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (str1, offset1, length1, str2, offset2, length2, options),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internal_index(
@@ -805,8 +1563,27 @@ impl crate::System::Globalization::CompareInfo {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         first: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("internal_index", (source, sindex, count, value, first))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                ),
+                i32,
+                5usize,
+            >("internal_index")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_index", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (source, sindex, count, value, first))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internal_index_icall(
@@ -817,11 +1594,32 @@ impl crate::System::Globalization::CompareInfo {
         value_length: i32,
         first: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "internal_index_icall",
-                (source, sindex, count, value, value_length, first),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    bool,
+                ),
+                i32,
+                6usize,
+            >("internal_index_icall")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_index_icall", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (source, sindex, count, value, value_length, first),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internal_index_managed(
@@ -833,11 +1631,28 @@ impl crate::System::Globalization::CompareInfo {
         opt: crate::System::Globalization::CompareOptions,
         first: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("internal_index_managed", (s1, sindex, count, s2, opt, first))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                    bool,
+                ),
+                i32,
+                6usize,
+            >("internal_index_managed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_index_managed", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (s1, sindex, count, s2, opt, first))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internal_index_switch(
@@ -849,11 +1664,28 @@ impl crate::System::Globalization::CompareInfo {
         opt: crate::System::Globalization::CompareOptions,
         first: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("internal_index_switch", (s1, sindex, count, s2, opt, first))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                    bool,
+                ),
+                i32,
+                6usize,
+            >("internal_index_switch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internal_index_switch", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (s1, sindex, count, s2, opt, first))
+        };
         Ok(__cordl_ret.into())
     }
 }

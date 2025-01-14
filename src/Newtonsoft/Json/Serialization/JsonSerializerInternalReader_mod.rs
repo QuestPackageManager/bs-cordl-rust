@@ -55,11 +55,25 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddReference", (reader, id, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddReference", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader, id, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculatePropertyDetails(
@@ -90,26 +104,63 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         gottenCurrentValue: quest_hook::libil2cpp::ByRefMut<bool>,
         ignoredValue: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "CalculatePropertyDetails",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    property,
-                    propertyConverter,
-                    containerContract,
-                    containerProperty,
-                    reader,
-                    target,
-                    useExistingValue,
-                    currentValue,
-                    propertyContract,
-                    gottenCurrentValue,
-                    ignoredValue,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Serialization::JsonContract,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
                 ),
-            )?;
+                bool,
+                11usize,
+            >("CalculatePropertyDetails")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CalculatePropertyDetails", 11usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        property,
+                        propertyConverter,
+                        containerContract,
+                        containerProperty,
+                        reader,
+                        target,
+                        useExistingValue,
+                        currentValue,
+                        propertyContract,
+                        gottenCurrentValue,
+                        ignoredValue,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckPropertyName(
@@ -117,11 +168,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CheckPropertyName", (reader, memberName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                bool,
+                2usize,
+            >("CheckPropertyName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckPropertyName", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (reader, memberName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CoerceEmptyStringToNull(
@@ -131,8 +195,27 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CoerceEmptyStringToNull", (objectType, contract, s))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                bool,
+                3usize,
+            >("CoerceEmptyStringToNull")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CoerceEmptyStringToNull", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (objectType, contract, s))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDynamic(
@@ -148,12 +231,30 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonDynamicContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("CreateDynamic")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDynamic", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("CreateDynamic", (reader, contract, member, id))?;
+        > = unsafe { method.invoke_unchecked(self, (reader, contract, member, id)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateISerializable(
@@ -169,13 +270,30 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("CreateISerializable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateISerializable", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("CreateISerializable", (reader, contract, member, id))?;
+        > = unsafe { method.invoke_unchecked(self, (reader, contract, member, id)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateISerializableItem(
@@ -191,13 +309,32 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonISerializableContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("CreateISerializableItem")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateISerializableItem", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("CreateISerializableItem", (token, _cordl_type, contract, member))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (token, _cordl_type, contract, member))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateJObject(
@@ -206,12 +343,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                1usize,
+            >("CreateJObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateJObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JToken,
-        > = __cordl_object.invoke("CreateJObject", (reader))?;
+        > = unsafe { method.invoke_unchecked(self, (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateJToken(
@@ -223,12 +369,26 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                2usize,
+            >("CreateJToken")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateJToken", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JToken,
-        > = __cordl_object.invoke("CreateJToken", (reader, contract))?;
+        > = unsafe { method.invoke_unchecked(self, (reader, contract)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateList(
@@ -246,16 +406,38 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                6usize,
+            >("CreateList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateList", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "CreateList",
-                (reader, objectType, contract, member, existingValue, id),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (reader, objectType, contract, member, existingValue, id),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNewDictionary(
@@ -268,16 +450,30 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                3usize,
+            >("CreateNewDictionary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNewDictionary", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IDictionary,
-        > = __cordl_object
-            .invoke(
-                "CreateNewDictionary",
-                (reader, contract, createdFromNonDefaultCreator),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(self, (reader, contract, createdFromNonDefaultCreator))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNewList(
@@ -290,11 +486,28 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = __cordl_object
-            .invoke("CreateNewList", (reader, contract, createdFromNonDefaultCreator))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                3usize,
+            >("CreateNewList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNewList", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
+            method
+                .invoke_unchecked(self, (reader, contract, createdFromNonDefaultCreator))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNewObject(
@@ -314,23 +527,47 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                6usize,
+            >("CreateNewObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNewObject", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "CreateNewObject",
-                (
-                    reader,
-                    objectContract,
-                    containerMember,
-                    containerProperty,
-                    id,
-                    createdFromNonDefaultCreator,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        reader,
+                        objectContract,
+                        containerMember,
+                        containerProperty,
+                        id,
+                        createdFromNonDefaultCreator,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateObject(
@@ -353,24 +590,51 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                7usize,
+            >("CreateObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateObject", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "CreateObject",
-                (
-                    reader,
-                    objectType,
-                    contract,
-                    member,
-                    containerContract,
-                    containerMember,
-                    existingValue,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        reader,
+                        objectType,
+                        contract,
+                        member,
+                        containerContract,
+                        containerMember,
+                        existingValue,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateObjectUsingCreatorWithParameters(
@@ -391,16 +655,43 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                5usize,
+            >("CreateObjectUsingCreatorWithParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateObjectUsingCreatorWithParameters", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "CreateObjectUsingCreatorWithParameters",
-                (reader, contract, containerProperty, creator, id),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (reader, contract, containerProperty, creator, id),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateValueInternal(
@@ -423,24 +714,51 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                7usize,
+            >("CreateValueInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateValueInternal", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "CreateValueInternal",
-                (
-                    reader,
-                    objectType,
-                    contract,
-                    member,
-                    containerContract,
-                    containerMember,
-                    existingValue,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        reader,
+                        objectType,
+                        contract,
+                        member,
+                        containerContract,
+                        containerMember,
+                        existingValue,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Deserialize(
@@ -451,13 +769,27 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("Deserialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Deserialize", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("Deserialize", (reader, objectType, checkAdditionalContent))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (reader, objectType, checkAdditionalContent))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeConvertable(
@@ -469,16 +801,28 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("DeserializeConvertable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeserializeConvertable", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "DeserializeConvertable",
-                (converter, reader, objectType, existingValue),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked(self, (converter, reader, objectType, existingValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndProcessProperty(
@@ -495,22 +839,45 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         presence: crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
         setDefaultValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "EndProcessProperty",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    newObject,
-                    reader,
-                    contract,
-                    initialDepth,
-                    property,
-                    presence,
-                    setDefaultValue,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("EndProcessProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndProcessProperty", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        newObject,
+                        reader,
+                        contract,
+                        initialDepth,
+                        property,
+                        presence,
+                        setDefaultValue,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureArrayContract(
@@ -525,13 +892,29 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonArrayContract,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+                >,
+                3usize,
+            >("EnsureArrayContract")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureArrayContract", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonArrayContract,
-        > = __cordl_object
-            .invoke("EnsureArrayContract", (reader, objectType, contract))?;
+        > = unsafe { method.invoke_unchecked(self, (reader, objectType, contract)) };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureType(
@@ -546,13 +929,31 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                5usize,
+            >("EnsureType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureType", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("EnsureType", (reader, value, culture, contract, targetType))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (reader, value, culture, contract, targetType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetContract(
@@ -561,12 +962,23 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonContract,
+                >,
+                1usize,
+            >("GetContract")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetContract", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonContract,
-        > = __cordl_object.invoke("GetContract", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetContractSafe(
@@ -575,12 +987,23 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonContract,
+                >,
+                1usize,
+            >("GetContractSafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetContractSafe", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonContract,
-        > = __cordl_object.invoke("GetContractSafe", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetConverter(
@@ -600,16 +1023,38 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+                4usize,
+            >("GetConverter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetConverter", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::JsonConverter,
-        > = __cordl_object
-            .invoke(
-                "GetConverter",
-                (contract, memberConverter, containerContract, containerProperty),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (contract, memberConverter, containerContract, containerProperty),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetExpectedDescription(
@@ -620,12 +1065,23 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonContract,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetExpectedDescription")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExpectedDescription", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("GetExpectedDescription", (contract))?;
+        > = unsafe { method.invoke_unchecked(self, (contract)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInternalSerializer(
@@ -635,12 +1091,23 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
+                >,
+                0usize,
+            >("GetInternalSerializer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInternalSerializer", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::JsonSerializerProxy,
-        > = __cordl_object.invoke("GetInternalSerializer", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn HandleError(
@@ -649,11 +1116,25 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         readPastError: bool,
         initialDepth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleError", (reader, readPastError, initialDepth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("HandleError")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleError", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader, readPastError, initialDepth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HasFlag(
@@ -661,10 +1142,22 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         value: crate::Newtonsoft::Json::DefaultValueHandling,
         flag: crate::Newtonsoft::Json::DefaultValueHandling,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (value, flag))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Newtonsoft::Json::DefaultValueHandling,
+                    crate::Newtonsoft::Json::DefaultValueHandling,
+                ),
+                bool,
+                2usize,
+            >("HasFlag")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasFlag", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (value, flag)) };
         Ok(__cordl_ret.into())
     }
     pub fn HasNoDefinedType(
@@ -673,10 +1166,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonContract,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("HasNoDefinedType", (contract))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonContract,
+                >),
+                bool,
+                1usize,
+            >("HasNoDefinedType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HasNoDefinedType", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (contract)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -696,11 +1200,27 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeserialized", (reader, contract, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("OnDeserialized")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnDeserialized", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader, contract, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnDeserializing(
@@ -711,11 +1231,27 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnDeserializing", (reader, contract, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("OnDeserializing")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnDeserializing", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader, contract, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Populate(
@@ -723,11 +1259,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Populate", (reader, target))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Populate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Populate", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader, target))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopulateDictionary(
@@ -744,16 +1293,37 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonDictionaryContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                5usize,
+            >("PopulateDictionary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopulateDictionary", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "PopulateDictionary",
-                (dictionary, reader, contract, containerProperty, id),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (dictionary, reader, contract, containerProperty, id),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopulateList(
@@ -770,13 +1340,34 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                5usize,
+            >("PopulateList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopulateList", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("PopulateList", (list, reader, contract, containerProperty, id))?;
+        > = unsafe {
+            method
+                .invoke_unchecked(self, (list, reader, contract, containerProperty, id))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopulateMultidimensionalArray(
@@ -793,16 +1384,34 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonArrayContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                5usize,
+            >("PopulateMultidimensionalArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopulateMultidimensionalArray", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke(
-                "PopulateMultidimensionalArray",
-                (list, reader, contract, containerProperty, id),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(self, (list, reader, contract, containerProperty, id))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopulateObject(
@@ -819,13 +1428,33 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                5usize,
+            >("PopulateObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopulateObject", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("PopulateObject", (newObject, reader, contract, member, id))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (newObject, reader, contract, member, id))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadExtensionDataValue(
@@ -840,12 +1469,29 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("ReadExtensionDataValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadExtensionDataValue", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("ReadExtensionDataValue", (contract, member, reader))?;
+        > = unsafe { method.invoke_unchecked(self, (contract, member, reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadMetadataProperties(
@@ -876,24 +1522,61 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "ReadMetadataProperties",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    reader,
-                    objectType,
-                    contract,
-                    member,
-                    containerContract,
-                    containerMember,
-                    existingValue,
-                    newValue,
-                    id,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Serialization::JsonContract,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
                 ),
-            )?;
+                bool,
+                9usize,
+            >("ReadMetadataProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadMetadataProperties", 9usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        reader,
+                        objectType,
+                        contract,
+                        member,
+                        containerContract,
+                        containerMember,
+                        existingValue,
+                        newValue,
+                        id,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadMetadataPropertiesToken(
@@ -924,24 +1607,63 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "ReadMetadataPropertiesToken",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    reader,
-                    objectType,
-                    contract,
-                    member,
-                    containerContract,
-                    containerMember,
-                    existingValue,
-                    newValue,
-                    id,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Linq::JTokenReader,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Serialization::JsonContract,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
                 ),
-            )?;
+                bool,
+                9usize,
+            >("ReadMetadataPropertiesToken")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadMetadataPropertiesToken", 9usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        reader,
+                        objectType,
+                        contract,
+                        member,
+                        containerContract,
+                        containerMember,
+                        existingValue,
+                        newValue,
+                        id,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolvePropertyAndCreatorValues(
@@ -963,20 +1685,46 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+                        >,
+                    >,
+                >,
+                4usize,
+            >("ResolvePropertyAndCreatorValues")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolvePropertyAndCreatorValues", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
                 >,
             >,
-        > = __cordl_object
-            .invoke(
-                "ResolvePropertyAndCreatorValues",
-                (contract, containerProperty, reader, objectType),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (contract, containerProperty, reader, objectType),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveTypeName(
@@ -1001,22 +1749,53 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         qualifiedTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ResolveTypeName",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    reader,
-                    objectType,
-                    contract,
-                    member,
-                    containerContract,
-                    containerMember,
-                    qualifiedTypeName,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Newtonsoft::Json::Serialization::JsonContract,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("ResolveTypeName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveTypeName", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        reader,
+                        objectType,
+                        contract,
+                        member,
+                        containerContract,
+                        containerMember,
+                        qualifiedTypeName,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetExtensionData(
@@ -1031,11 +1810,31 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         memberName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetExtensionData", (contract, member, reader, memberName, o))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SetExtensionData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetExtensionData", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (contract, member, reader, memberName, o))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetPropertyPresence(
@@ -1053,11 +1852,34 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPropertyPresence", (reader, property, requiredProperties))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::JsonProperty,
+                            >,
+                            crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetPropertyPresence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetPropertyPresence", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader, property, requiredProperties))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetPropertyValue(
@@ -1077,21 +1899,45 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "SetPropertyValue",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    property,
-                    propertyConverter,
-                    containerContract,
-                    containerProperty,
-                    reader,
-                    target,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContainerContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                bool,
+                6usize,
+            >("SetPropertyValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetPropertyValue", 6usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        property,
+                        propertyConverter,
+                        containerContract,
+                        containerProperty,
+                        reader,
+                        target,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldDeserialize(
@@ -1102,11 +1948,27 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ShouldDeserialize", (reader, property, target))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                bool,
+                3usize,
+            >("ShouldDeserialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldDeserialize", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (reader, property, target))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldSetPropertyValue(
@@ -1119,11 +1981,29 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         >,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("ShouldSetPropertyValue", (property, contract, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                bool,
+                3usize,
+            >("ShouldSetPropertyValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldSetPropertyValue", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (property, contract, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowUnexpectedEndException(
@@ -1135,25 +2015,49 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         currentObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "ThrowUnexpectedEndException",
-                (reader, contract, currentObject, message),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::JsonContract,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ThrowUnexpectedEndException")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowUnexpectedEndException", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (reader, contract, currentObject, message))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (serializer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (serializer))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -1245,11 +2149,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creato
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name))
+        };
         Ok(__cordl_ret.into())
     }
 }

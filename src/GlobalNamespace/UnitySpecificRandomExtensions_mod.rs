@@ -42,15 +42,41 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
     pub fn InsideUnitSphere(
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InsideUnitSphere", (random))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Random>),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("InsideUnitSphere")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InsideUnitSphere", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (random))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnUnitSphere(
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnUnitSphere", (random))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Random>),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("OnUnitSphere")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnUnitSphere", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (random))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -75,8 +75,24 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         bounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
         position: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindBoxSurfaceRotation", (bounds, position))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+                    crate::UnityEngine::Vector3,
+                ),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("FindBoxSurfaceRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindBoxSurfaceRotation", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (bounds, position))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectBounds(
@@ -84,8 +100,25 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         start: crate::UnityEngine::Vector3,
         end: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IntersectBounds", (bounds, start, end))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Bounds,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                ),
+                bool,
+                3usize,
+            >("IntersectBounds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IntersectBounds", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (bounds, start, end))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectBoxSurfacePose(
@@ -94,8 +127,26 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         end: crate::UnityEngine::Vector3,
         hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IntersectBoxSurfacePose", (bounds, start, end, hit))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                ),
+                bool,
+                4usize,
+            >("IntersectBoxSurfacePose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IntersectBoxSurfacePose", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (bounds, start, end, hit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectBoxSurfacePosition(
@@ -104,8 +155,26 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         end: crate::UnityEngine::Vector3,
         hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IntersectBoxSurfacePosition", (bounds, start, end, hit))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                ),
+                bool,
+                4usize,
+            >("IntersectBoxSurfacePosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IntersectBoxSurfacePosition", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (bounds, start, end, hit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IntersectSaberWithObstacles(
@@ -118,11 +187,33 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
         intersectObstacleSurface: quest_hook::libil2cpp::ByRefMut<bool>,
         hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "IntersectSaberWithObstacles",
-                (saber, obstacles, intersectObstacleSurface, hit),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleController,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                ),
+                bool,
+                4usize,
+            >("IntersectSaberWithObstacles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IntersectSaberWithObstacles", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked((), (saber, obstacles, intersectObstacleSurface, hit))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -135,31 +226,49 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Start", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Start", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Update", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn add_sparkleEffectDidEndEvent(
@@ -168,11 +277,23 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
             crate::System::Action_1<crate::GlobalNamespace::SaberType>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_sparkleEffectDidEndEvent", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("add_sparkleEffectDidEndEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "add_sparkleEffectDidEndEvent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn add_sparkleEffectDidStartEvent(
@@ -181,11 +302,23 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
             crate::System::Action_1<crate::GlobalNamespace::SaberType>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("add_sparkleEffectDidStartEvent", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("add_sparkleEffectDidStartEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "add_sparkleEffectDidStartEvent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn remove_sparkleEffectDidEndEvent(
@@ -194,11 +327,23 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
             crate::System::Action_1<crate::GlobalNamespace::SaberType>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_sparkleEffectDidEndEvent", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("remove_sparkleEffectDidEndEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "remove_sparkleEffectDidEndEvent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn remove_sparkleEffectDidStartEvent(
@@ -207,11 +352,23 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
             crate::System::Action_1<crate::GlobalNamespace::SaberType>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("remove_sparkleEffectDidStartEvent", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("remove_sparkleEffectDidStartEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "remove_sparkleEffectDidStartEvent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,12 +47,23 @@ impl crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                1usize,
+            >("CreateDigest")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDigest", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IDigest,
-        > = __cordl_object.invoke("CreateDigest", (digestAlg))?;
+        > = unsafe { method.invoke_unchecked(self, (digestAlg)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateMac(
@@ -63,12 +74,23 @@ impl crate::Org::BouncyCastle::Crmf::IPKMacPrimitivesProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+                1usize,
+            >("CreateMac")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateMac", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IMac,
-        > = __cordl_object.invoke("CreateMac", (macAlg))?;
+        > = unsafe { method.invoke_unchecked(self, (macAlg)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

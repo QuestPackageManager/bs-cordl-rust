@@ -119,11 +119,25 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Action>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateContinuationWrapper",
-                (continuation, invokeAction, innerTask),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Action>,
+                3usize,
+            >("CreateContinuationWrapper")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateContinuationWrapper", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = unsafe {
+            method.invoke_unchecked((), (continuation, invokeAction, innerTask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCompletionAction(
@@ -137,11 +151,28 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Action>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetCompletionAction",
-            (taskForTracing, runnerToInitialize),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Action>,
+                2usize,
+            >("GetCompletionAction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCompletionAction", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = unsafe {
+            method.invoke_unchecked(self, (taskForTracing, runnerToInitialize))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OutputAsyncCausalityEvents(
@@ -151,11 +182,24 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Action>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "OutputAsyncCausalityEvents",
-            (innerTask, continuation),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Action>,
+                2usize,
+            >("OutputAsyncCausalityEvents")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OutputAsyncCausalityEvents", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = unsafe {
+            method.invoke_unchecked(self, (innerTask, continuation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PostBoxInitialization(
@@ -168,11 +212,29 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
         >,
         builtTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "PostBoxInitialization",
-            (stateMachine, runner, builtTask),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("PostBoxInitialization")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PostBoxInitialization", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (stateMachine, runner, builtTask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStateMachine(
@@ -181,11 +243,23 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
             crate::System::Runtime::CompilerServices::IAsyncStateMachine,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetStateMachine",
-            (stateMachine),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetStateMachine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStateMachine", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (stateMachine))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowAsync(
@@ -194,8 +268,26 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
             crate::System::Threading::SynchronizationContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ThrowAsync", (exception, targetContext))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::SynchronizationContext,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ThrowAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowAsync", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (exception, targetContext))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetContinuationTask(
@@ -203,10 +295,21 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                1usize,
+            >("TryGetContinuationTask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetContinuationTask", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetContinuationTask", (action))?;
+        > = unsafe { method.invoke_unchecked((), (action)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -269,11 +372,17 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuati
     pub fn Invoke(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -293,11 +402,25 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuati
         invokeAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
         innerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (continuation, invokeAction, innerTask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (continuation, invokeAction, innerTask))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -363,8 +486,21 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRu
     pub fn InvokeMoveNext(
         stateMachine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InvokeMoveNext", (stateMachine))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("InvokeMoveNext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvokeMoveNext", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (stateMachine))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -380,10 +516,17 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRu
         Ok(__cordl_object.into())
     }
     pub fn Run(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Run", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Run")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Run", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -393,11 +536,28 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRu
             crate::System::Runtime::CompilerServices::IAsyncStateMachine,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (context, stateMachine))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::ExecutionContext,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::CompilerServices::IAsyncStateMachine,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (context, stateMachine))
+        };
         Ok(__cordl_ret.into())
     }
 }

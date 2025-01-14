@@ -107,30 +107,50 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
         &mut self,
         other: crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_featureLookupFlags(
@@ -138,11 +158,21 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_featureLookupFlags",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags,
+                0usize,
+            >("get_featureLookupFlags")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_featureLookupFlags", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontFeatureLookupFlags = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_firstAdjustmentRecord(
@@ -150,11 +180,21 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_firstAdjustmentRecord",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
+                0usize,
+            >("get_firstAdjustmentRecord")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_firstAdjustmentRecord", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_secondAdjustmentRecord(
@@ -162,11 +202,21 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_secondAdjustmentRecord",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
+                0usize,
+            >("get_secondAdjustmentRecord")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_secondAdjustmentRecord", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

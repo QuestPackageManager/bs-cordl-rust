@@ -55,11 +55,21 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
         &mut self,
         callingConvention: crate::System::Runtime::InteropServices::CallingConvention,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (callingConvention))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Runtime::InteropServices::CallingConvention),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (callingConvention))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_CallingConvention(
@@ -67,11 +77,21 @@ impl crate::System::Runtime::InteropServices::UnmanagedFunctionPointerAttribute 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::InteropServices::CallingConvention,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Runtime::InteropServices::CallingConvention = __cordl_object
-            .invoke("get_CallingConvention", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Runtime::InteropServices::CallingConvention,
+                0usize,
+            >("get_CallingConvention")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CallingConvention", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Runtime::InteropServices::CallingConvention = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

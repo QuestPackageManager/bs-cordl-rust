@@ -46,8 +46,21 @@ impl crate::UnityEngine::UI::StencilMaterial {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (baseMat, stencilID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                2usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (baseMat, stencilID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_StencilOp_CompareFunction_ColorWriteMask1(
@@ -59,11 +72,31 @@ impl crate::UnityEngine::UI::StencilMaterial {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Add",
-                (baseMat, stencilID, operation, compareFunction, colorWriteMask),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    i32,
+                    crate::UnityEngine::Rendering::StencilOp,
+                    crate::UnityEngine::Rendering::CompareFunction,
+                    crate::UnityEngine::Rendering::ColorWriteMask,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                5usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (baseMat, stencilID, operation, compareFunction, colorWriteMask),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_StencilOp_CompareFunction_ColorWriteMask_i32_i32_2(
@@ -77,39 +110,99 @@ impl crate::UnityEngine::UI::StencilMaterial {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Add",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    baseMat,
-                    stencilID,
-                    operation,
-                    compareFunction,
-                    colorWriteMask,
-                    readMask,
-                    writeMask,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    i32,
+                    crate::UnityEngine::Rendering::StencilOp,
+                    crate::UnityEngine::Rendering::CompareFunction,
+                    crate::UnityEngine::Rendering::ColorWriteMask,
+                    i32,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                7usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        baseMat,
+                        stencilID,
+                        operation,
+                        compareFunction,
+                        colorWriteMask,
+                        readMask,
+                        writeMask,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearAll() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearAll", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("ClearAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearAll", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LogWarningWhenNotInBatchmode(
         warning: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LogWarningWhenNotInBatchmode", (warning, context))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("LogWarningWhenNotInBatchmode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LogWarningWhenNotInBatchmode", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (warning, context))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Remove(
         customMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Remove", (customMat))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Remove")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Remove", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (customMat))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -183,11 +276,17 @@ impl crate::UnityEngine::UI::StencilMaterial_MatEntry {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

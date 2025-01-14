@@ -42,8 +42,24 @@ impl crate::System::IOSelector {
         handle: crate::System::IntPtr,
         job: quest_hook::libil2cpp::Gc<crate::System::IOSelectorJob>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (handle, job))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<crate::System::IOSelectorJob>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handle, job))
+        };
         Ok(__cordl_ret.into())
     }
 }

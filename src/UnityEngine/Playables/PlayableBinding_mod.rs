@@ -116,19 +116,49 @@ impl crate::UnityEngine::Playables::PlayableBinding {
             crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableBinding> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableBinding = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateInternal", (name, sourceObject, sourceType, createFunction))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod,
+                    >,
+                ),
+                crate::UnityEngine::Playables::PlayableBinding,
+                4usize,
+            >("CreateInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateInternal", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableBinding = unsafe {
+            method.invoke_unchecked((), (name, sourceObject, sourceType, createFunction))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateOutput(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "CreateOutput",
-            (graph),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::PlayableGraph),
+                crate::UnityEngine::Playables::PlayableOutput,
+                1usize,
+            >("CreateOutput")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateOutput", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = unsafe {
+            method.invoke_unchecked(self, (graph))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_sourceObject(
@@ -136,11 +166,21 @@ impl crate::UnityEngine::Playables::PlayableBinding {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_sourceObject",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                0usize,
+            >("get_sourceObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_sourceObject", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_streamName(
@@ -148,9 +188,21 @@ impl crate::UnityEngine::Playables::PlayableBinding {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_streamName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_streamName", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_streamName", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }
@@ -202,11 +254,24 @@ impl crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = __cordl_object
-            .invoke("Invoke", (graph, name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::PlayableGraph,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::UnityEngine::Playables::PlayableOutput,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = unsafe {
+            method.invoke_unchecked(self, (graph, name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -224,11 +289,24 @@ impl crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }

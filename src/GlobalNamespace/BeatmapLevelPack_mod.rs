@@ -65,11 +65,21 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
         &mut self,
         levelToAdd: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddAdditionalBeatmapLevel", (levelToAdd))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddAdditionalBeatmapLevel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddAdditionalBeatmapLevel", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (levelToAdd))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AllBeatmapLevels(
@@ -81,24 +91,47 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    >,
+                >,
+                0usize,
+            >("AllBeatmapLevels")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AllBeatmapLevels", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
-        > = __cordl_object.invoke("AllBeatmapLevels", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ClearAdditionalBeatmapLevels(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ClearAdditionalBeatmapLevels", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ClearAdditionalBeatmapLevels")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearAdditionalBeatmapLevels", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateLevelPackForFiltering(
@@ -110,10 +143,25 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+                1usize,
+            >("CreateLevelPackForFiltering")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateLevelPackForFiltering", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPack,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateLevelPackForFiltering", (beatmapLevels))?;
+        > = unsafe { method.invoke_unchecked((), (beatmapLevels)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -156,11 +204,25 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetAdditionalBeatmapLevels", (additionalBeatmapLevels))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetAdditionalBeatmapLevels")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAdditionalBeatmapLevels", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (additionalBeatmapLevels))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -178,23 +240,49 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
         >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    packID,
-                    packName,
-                    shortPackName,
-                    coverImage,
-                    smallCoverImage,
-                    packBuyOption,
-                    beatmapLevels,
-                    contentRating,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                    crate::GlobalNamespace::PackBuyOption,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
+                            >,
+                        >,
+                    >,
+                    crate::GlobalNamespace::PlayerSensitivityFlag,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        packID,
+                        packName,
+                        shortPackName,
+                        coverImage,
+                        smallCoverImage,
+                        packBuyOption,
+                        beatmapLevels,
+                        contentRating,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

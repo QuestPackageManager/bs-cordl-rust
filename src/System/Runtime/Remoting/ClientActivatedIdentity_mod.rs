@@ -53,12 +53,30 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
             crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Messaging::IMessage,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Remoting::Messaging::IMessageSink,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
+                >,
+                2usize,
+            >("AsyncObjectProcessMessage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsyncObjectProcessMessage", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageCtrl,
-        > = __cordl_object.invoke("AsyncObjectProcessMessage", (msg, replySink))?;
+        > = unsafe { method.invoke_unchecked(self, (msg, replySink)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetServerObject(
@@ -66,11 +84,21 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject> = __cordl_object
-            .invoke("GetServerObject", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
+                0usize,
+            >("GetServerObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetServerObject", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -86,22 +114,38 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
     pub fn OnLifetimeExpired(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnLifetimeExpired", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnLifetimeExpired")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnLifetimeExpired", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetClientProxy(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetClientProxy", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetClientProxy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetClientProxy", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SyncObjectProcessMessage(
@@ -112,12 +156,25 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Messaging::IMessage,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Messaging::IMessage,
+                >,
+                1usize,
+            >("SyncObjectProcessMessage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SyncObjectProcessMessage", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessage,
-        > = __cordl_object.invoke("SyncObjectProcessMessage", (msg))?;
+        > = unsafe { method.invoke_unchecked(self, (msg)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -125,11 +182,24 @@ impl crate::System::Runtime::Remoting::ClientActivatedIdentity {
         objectUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (objectUri, objectType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (objectUri, objectType))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,8 +47,21 @@ impl crate::Oculus::Platform::PlatformInternal {
     pub fn CrashApplication() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CrashApplication", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("CrashApplication")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CrashApplication", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeStandaloneAsync(
@@ -63,14 +76,31 @@ impl crate::Oculus::Platform::PlatformInternal {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u64, quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::PlatformInitialize,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("InitializeStandaloneAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitializeStandaloneAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::PlatformInitialize,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitializeStandaloneAsync", (appID, accessToken))?;
+        > = unsafe { method.invoke_unchecked((), (appID, accessToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseMessageHandle(
@@ -79,8 +109,21 @@ impl crate::Oculus::Platform::PlatformInternal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseMessageHandle", (messageHandle, messageType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::Oculus::Platform::Message_MessageType),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+                2usize,
+            >("ParseMessageHandle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseMessageHandle", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = unsafe {
+            method.invoke_unchecked((), (messageHandle, messageType))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -143,8 +186,27 @@ impl crate::Oculus::Platform::PlatformInternal_HTTP {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetHttpTransferUpdateCallback", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Message_1_Callback<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::HttpTransferUpdate,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetHttpTransferUpdateCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetHttpTransferUpdateCallback", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (callback))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -366,14 +428,35 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::Oculus::Platform::ServiceProvider,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::LinkedAccountList,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetLinkedAccounts")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLinkedAccounts", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::LinkedAccountList,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLinkedAccounts", (providers))?;
+        > = unsafe { method.invoke_unchecked((), (providers)) };
         Ok(__cordl_ret.into())
     }
 }

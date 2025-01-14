@@ -46,23 +46,76 @@ impl crate::UnityEngine::ProBuilder::Projection {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        let __cordl_ret: crate::UnityEngine::Plane = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindBestPlane", (points, indexes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                ),
+                crate::UnityEngine::Plane,
+                2usize,
+            >("FindBestPlane")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindBestPlane", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Plane = unsafe {
+            method.invoke_unchecked((), (points, indexes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindBestPlane_ProBuilderMesh_i32_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         textureGroup: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Plane> {
-        let __cordl_ret: crate::UnityEngine::Plane = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindBestPlane", (mesh, textureGroup))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    i32,
+                ),
+                crate::UnityEngine::Plane,
+                2usize,
+            >("FindBestPlane")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindBestPlane", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Plane = unsafe {
+            method.invoke_unchecked((), (mesh, textureGroup))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTangentToAxis(
         axis: crate::UnityEngine::ProBuilder::ProjectionAxis,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTangentToAxis", (axis))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::ProjectionAxis),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("GetTangentToAxis")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTangentToAxis", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (axis))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_IList_1_IList_1_0(
@@ -77,10 +130,32 @@ impl crate::UnityEngine::ProBuilder::Projection {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                2usize,
+            >("PlanarProject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PlanarProject", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PlanarProject", (positions, indexes))?;
+        > = unsafe { method.invoke_unchecked((), (positions, indexes)) };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_IList_1_IList_1_Vector3_1(
@@ -96,10 +171,33 @@ impl crate::UnityEngine::ProBuilder::Projection {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    crate::UnityEngine::Vector3,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                3usize,
+            >("PlanarProject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PlanarProject", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PlanarProject", (positions, indexes, direction))?;
+        > = unsafe { method.invoke_unchecked((), (positions, indexes, direction)) };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_IList_1_IList_1_Vector3_List_1_2(
@@ -114,8 +212,36 @@ impl crate::UnityEngine::ProBuilder::Projection {
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PlanarProject", (positions, indexes, direction, results))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("PlanarProject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PlanarProject", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (positions, indexes, direction, results))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_ProBuilderMesh_Face_Vector3_4(
@@ -123,8 +249,27 @@ impl crate::UnityEngine::ProBuilder::Projection {
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         projection: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PlanarProject", (mesh, face, projection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    crate::UnityEngine::Vector3,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("PlanarProject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PlanarProject", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, face, projection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PlanarProject_ProBuilderMesh_i32_AutoUnwrapSettings3(
@@ -132,15 +277,47 @@ impl crate::UnityEngine::ProBuilder::Projection {
         textureGroup: i32,
         unwrapSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PlanarProject", (mesh, textureGroup, unwrapSettings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    i32,
+                    crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("PlanarProject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PlanarProject", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, textureGroup, unwrapSettings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProjectionAxisToVector(
         axis: crate::UnityEngine::ProBuilder::ProjectionAxis,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProjectionAxisToVector", (axis))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::ProjectionAxis),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("ProjectionAxisToVector")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProjectionAxisToVector", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (axis))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Sort(
@@ -153,10 +330,32 @@ impl crate::UnityEngine::ProBuilder::Projection {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    crate::UnityEngine::ProBuilder::SortMethod,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<
+                        crate::UnityEngine::Vector2,
+                    >,
+                >,
+                2usize,
+            >("Sort")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Sort", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Sort", (verts, method))?;
+        > = unsafe { method.invoke_unchecked((), (verts, method)) };
         Ok(__cordl_ret.into())
     }
     pub fn SphericalProject(
@@ -171,17 +370,52 @@ impl crate::UnityEngine::ProBuilder::Projection {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
+                2usize,
+            >("SphericalProject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SphericalProject", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SphericalProject", (vertices, indexes))?;
+        > = unsafe { method.invoke_unchecked((), (vertices, indexes)) };
         Ok(__cordl_ret.into())
     }
     pub fn VectorToProjectionAxis(
         direction: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::ProjectionAxis> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::ProjectionAxis = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("VectorToProjectionAxis", (direction))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector3),
+                crate::UnityEngine::ProBuilder::ProjectionAxis,
+                1usize,
+            >("VectorToProjectionAxis")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "VectorToProjectionAxis", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::ProjectionAxis = unsafe {
+            method.invoke_unchecked((), (direction))
+        };
         Ok(__cordl_ret.into())
     }
 }

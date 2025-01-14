@@ -51,8 +51,31 @@ impl crate::TMPro::TMP_FontUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SearchForCharacterInternal", (fonts, unicode, character))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                        >,
+                    >,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                3usize,
+            >("SearchForCharacterInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SearchForCharacterInternal", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
+            method.invoke_unchecked((), (fonts, unicode, character))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SearchForCharacterInternal_TMP_FontAsset0(
@@ -64,8 +87,27 @@ impl crate::TMPro::TMP_FontUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SearchForCharacterInternal", (font, unicode, character))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                3usize,
+            >("SearchForCharacterInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SearchForCharacterInternal", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
+            method.invoke_unchecked((), (font, unicode, character))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SearchForCharacter_List_1_1(
@@ -81,8 +123,31 @@ impl crate::TMPro::TMP_FontUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SearchForCharacter", (fonts, unicode, character))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                        >,
+                    >,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                3usize,
+            >("SearchForCharacter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SearchForCharacter", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
+            method.invoke_unchecked((), (fonts, unicode, character))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SearchForCharacter_TMP_FontAsset0(
@@ -94,8 +159,27 @@ impl crate::TMPro::TMP_FontUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SearchForCharacter", (font, unicode, character))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                    u32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                3usize,
+            >("SearchForCharacter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SearchForCharacter", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
+            method.invoke_unchecked((), (font, unicode, character))
+        };
         Ok(__cordl_ret.into())
     }
 }

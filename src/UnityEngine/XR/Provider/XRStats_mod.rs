@@ -43,8 +43,25 @@ impl crate::UnityEngine::XR::Provider::XRStats {
         tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetStat", (xrSubsystem, tag, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::IntegratedSubsystem>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                ),
+                bool,
+                3usize,
+            >("TryGetStat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetStat", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (xrSubsystem, tag, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetStat_Internal(
@@ -52,8 +69,25 @@ impl crate::UnityEngine::XR::Provider::XRStats {
         tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetStat_Internal", (ptr, tag, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                ),
+                bool,
+                3usize,
+            >("TryGetStat_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetStat_Internal", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (ptr, tag, value))
+        };
         Ok(__cordl_ret.into())
     }
 }

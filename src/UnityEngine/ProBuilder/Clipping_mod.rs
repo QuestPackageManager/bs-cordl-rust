@@ -47,8 +47,21 @@ impl crate::UnityEngine::ProBuilder::Clipping {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::Clipping_OutCode,
     > {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::Clipping_OutCode = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ComputeOutCode", (rect, x, y))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Rect, f32, f32),
+                crate::UnityEngine::ProBuilder::Clipping_OutCode,
+                3usize,
+            >("ComputeOutCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ComputeOutCode", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Clipping_OutCode = unsafe {
+            method.invoke_unchecked((), (rect, x, y))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RectContainsLineSegment(
@@ -58,8 +71,21 @@ impl crate::UnityEngine::ProBuilder::Clipping {
         x1: f32,
         y1: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RectContainsLineSegment", (rect, x0, y0, x1, y1))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Rect, f32, f32, f32, f32),
+                bool,
+                5usize,
+            >("RectContainsLineSegment")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RectContainsLineSegment", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (rect, x0, y0, x1, y1))
+        };
         Ok(__cordl_ret.into())
     }
 }

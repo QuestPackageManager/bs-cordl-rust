@@ -60,11 +60,21 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         &mut self,
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildRefNamespaces", (schema))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("BuildRefNamespaces")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildRefNamespaces", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (schema))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckRefinedAttributeGroup(
@@ -73,11 +83,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaAttributeGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedAttributeGroup", (attributeGroup))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CheckRefinedAttributeGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckRefinedAttributeGroup", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attributeGroup))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckRefinedComplexType(
@@ -86,44 +108,88 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaComplexType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedComplexType", (ctype))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaComplexType,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CheckRefinedComplexType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckRefinedComplexType", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (ctype))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckRefinedGroup(
         &mut self,
         group: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedGroup", (group))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CheckRefinedGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckRefinedGroup", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (group))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CheckRefinedSimpleType(
         &mut self,
         stype: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CheckRefinedSimpleType", (stype))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaSimpleType,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CheckRefinedSimpleType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckRefinedSimpleType", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (stype))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Cleanup(
         &mut self,
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Cleanup", (schema))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Cleanup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Cleanup", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (schema))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CountGroupSelfReference(
@@ -133,11 +199,24 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         >,
         name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("CountGroupSelfReference", (items, name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                ),
+                i32,
+                2usize,
+            >("CountGroupSelfReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CountGroupSelfReference", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (items, name)) };
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
@@ -147,11 +226,28 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         loadExternals: bool,
         xsc: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaCollection>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("Execute", (schema, targetNamespace, loadExternals, xsc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaCollection,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (schema, targetNamespace, loadExternals, xsc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSchemaEntity(
@@ -160,11 +256,21 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("GetSchemaEntity", (ruri))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Uri>),
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                1usize,
+            >("GetSchemaEntity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSchemaEntity", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
+            method.invoke_unchecked(self, (ruri))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadExternals(
@@ -172,11 +278,26 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
         xsc: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaCollection>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadExternals", (schema, xsc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaCollection,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("LoadExternals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadExternals", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (schema, xsc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -198,11 +319,25 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         compositor: crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Preprocess", (schema, targetNamespace, compositor))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Preprocess")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Preprocess", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (schema, targetNamespace, compositor))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessAnnotation(
@@ -211,11 +346,21 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAnnotation", (schemaObject))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessAnnotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessAnnotation", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (schemaObject))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessAttribute(
@@ -224,11 +369,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaAttribute,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttribute", (attribute))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttribute,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessAttribute", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attribute))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessAttributeContent(
@@ -237,11 +394,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaAttribute,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttributeContent", (attribute))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttribute,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessAttributeContent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessAttributeContent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attribute))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessAttributeGroup(
@@ -250,11 +419,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaAttributeGroup,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttributeGroup", (attributeGroup))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessAttributeGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessAttributeGroup", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attributeGroup))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessAttributes(
@@ -267,11 +448,31 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         >,
         parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessAttributes", (attributes, anyAttribute, parent))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObjectCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObject,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("PreprocessAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessAttributes", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attributes, anyAttribute, parent))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessComplexType(
@@ -281,44 +482,93 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         >,
         local: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessComplexType", (complexType, local))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaComplexType,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PreprocessComplexType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessComplexType", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (complexType, local))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessElement(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessElement", (element))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessElement", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessElementContent(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessElementContent", (element))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessElementContent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessElementContent", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessGroup(
         &mut self,
         group: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessGroup", (group))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessGroup", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (group))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessIdentityConstraint(
@@ -327,11 +577,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessIdentityConstraint", (constraint))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessIdentityConstraint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessIdentityConstraint", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (constraint))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessLocalAttribute(
@@ -340,22 +602,46 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaAttribute,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessLocalAttribute", (attribute))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaAttribute,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessLocalAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessLocalAttribute", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (attribute))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessLocalElement(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessLocalElement", (element))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessLocalElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessLocalElement", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (element))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessNotation(
@@ -364,11 +650,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaNotation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessNotation", (notation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaNotation,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessNotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessNotation", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (notation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessParticle(
@@ -377,11 +675,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaParticle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessParticle", (particle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaParticle,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessParticle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessParticle", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (particle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessRedefine(
@@ -390,11 +700,23 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::XmlSchemaRedefine,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessRedefine", (redefine))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Schema::XmlSchemaRedefine,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("PreprocessRedefine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessRedefine", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (redefine))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PreprocessSimpleType(
@@ -404,11 +726,26 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         >,
         local: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("PreprocessSimpleType", (simpleType, local))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaSimpleType,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PreprocessSimpleType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PreprocessSimpleType", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (simpleType, local))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveSchemaLocationUri(
@@ -418,11 +755,24 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         >,
         location: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = __cordl_object
-            .invoke("ResolveSchemaLocationUri", (enclosingSchema, location))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                2usize,
+            >("ResolveSchemaLocationUri")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveSchemaLocationUri", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = unsafe {
+            method.invoke_unchecked(self, (enclosingSchema, location))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetParent(
@@ -430,33 +780,70 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         child: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
         parent: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetParent", (child, parent))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObject,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObject,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetParent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetParent", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (child, parent))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateIdAttribute(
         &mut self,
         xso: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateIdAttribute", (xso))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ValidateIdAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateIdAttribute", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (xso))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateNameAttribute(
         &mut self,
         xso: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateNameAttribute", (xso))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ValidateNameAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateNameAttribute", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (xso))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateQNameAttribute(
@@ -465,11 +852,27 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
         attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ValidateQNameAttribute", (xso, attributeName, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::XmlSchemaObject,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ValidateQNameAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateQNameAttribute", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (xso, attributeName, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -480,22 +883,48 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
             crate::System::Xml::Schema::ValidationEventHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nameTable, schemaNames, eventHandler))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Xml::Schema::ValidationEventHandler,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (nameTable, schemaNames, eventHandler))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_XmlResolver(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_XmlResolver", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_XmlResolver")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_XmlResolver", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

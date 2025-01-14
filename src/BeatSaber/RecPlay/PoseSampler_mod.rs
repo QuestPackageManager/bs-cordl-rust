@@ -45,8 +45,29 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         _cordl_time: f32,
         nearest: i32,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::FrameSample> {
-        let __cordl_ret: crate::BeatSaber::RecPlay::FrameSample = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindPoseSample", (frames, _cordl_time, nearest))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::BeatSaber::RecPlay::PoseFrame,
+                        >,
+                    >,
+                    f32,
+                    i32,
+                ),
+                crate::BeatSaber::RecPlay::FrameSample,
+                3usize,
+            >("FindPoseSample")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindPoseSample", 3usize
+                )
+            });
+        let __cordl_ret: crate::BeatSaber::RecPlay::FrameSample = unsafe {
+            method.invoke_unchecked((), (frames, _cordl_time, nearest))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InterpolatePoseSample(
@@ -55,8 +76,30 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         >,
         sample: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::RecPlay::FrameSample>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InterpolatePoseSample", (frames, sample))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::BeatSaber::RecPlay::PoseFrame,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::BeatSaber::RecPlay::FrameSample,
+                    >,
+                ),
+                crate::UnityEngine::Pose,
+                2usize,
+            >("InterpolatePoseSample")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InterpolatePoseSample", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
+            method.invoke_unchecked((), (frames, sample))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SamplePose(
@@ -66,8 +109,29 @@ impl crate::BeatSaber::RecPlay::PoseSampler {
         _cordl_time: f32,
         nearest: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SamplePose", (frames, _cordl_time, nearest))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::BeatSaber::RecPlay::PoseFrame,
+                        >,
+                    >,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                crate::UnityEngine::Pose,
+                3usize,
+            >("SamplePose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SamplePose", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
+            method.invoke_unchecked((), (frames, _cordl_time, nearest))
+        };
         Ok(__cordl_ret.into())
     }
 }

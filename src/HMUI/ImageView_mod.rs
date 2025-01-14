@@ -68,25 +68,53 @@ impl crate::HMUI::ImageView {
         skewFactor: f32,
         skewOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AddQuadWithHorizontalGradient",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    vertexHelper,
-                    posMin,
-                    posMax,
-                    color0,
-                    color1,
-                    uv0Min,
-                    uv0Max,
-                    uv1Min,
-                    uv1Max,
-                    elementWidthScale,
-                    curvedUIRadius,
-                    skewFactor,
-                    skewOffset,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Color32,
+                    crate::UnityEngine::Color32,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                13usize,
+            >("AddQuadWithHorizontalGradient")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddQuadWithHorizontalGradient", 13usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        vertexHelper,
+                        posMin,
+                        posMax,
+                        color0,
+                        color1,
+                        uv0Min,
+                        uv0Max,
+                        uv1Min,
+                        uv1Max,
+                        elementWidthScale,
+                        curvedUIRadius,
+                        skewFactor,
+                        skewOffset,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddQuadWithVerticalGradient(
@@ -104,25 +132,53 @@ impl crate::HMUI::ImageView {
         skewFactor: f32,
         skewOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AddQuadWithVerticalGradient",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    vertexHelper,
-                    posMin,
-                    posMax,
-                    color0,
-                    color1,
-                    uv0Min,
-                    uv0Max,
-                    uv1Min,
-                    uv1Max,
-                    elementWidthScale,
-                    curvedUIRadius,
-                    skewFactor,
-                    skewOffset,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Color32,
+                    crate::UnityEngine::Color32,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                13usize,
+            >("AddQuadWithVerticalGradient")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddQuadWithVerticalGradient", 13usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        vertexHelper,
+                        posMin,
+                        posMax,
+                        color0,
+                        color1,
+                        uv0Min,
+                        uv0Max,
+                        uv1Min,
+                        uv1Max,
+                        elementWidthScale,
+                        curvedUIRadius,
+                        skewFactor,
+                        skewOffset,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddQuad_Il2CppArray_Color32_Il2CppArray0(
@@ -135,8 +191,30 @@ impl crate::HMUI::ImageView {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddQuad", (vertexHelper, quadPositions, color, quadUVs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    crate::UnityEngine::Color32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("AddQuad")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddQuad", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (vertexHelper, quadPositions, color, quadUVs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddQuad_Vector2_Vector2_Color32_Vector2_Vector2_Vector2_Vector2_f32_f32_f32_f32_2(
@@ -153,24 +231,51 @@ impl crate::HMUI::ImageView {
         skewFactor: f32,
         skewOffset: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AddQuad",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    vertexHelper,
-                    posMin,
-                    posMax,
-                    color,
-                    uv0Min,
-                    uv0Max,
-                    uv1Min,
-                    uv1Max,
-                    elementWidthScale,
-                    curvedUIRadius,
-                    skewFactor,
-                    skewOffset,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Color32,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                12usize,
+            >("AddQuad")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddQuad", 12usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        vertexHelper,
+                        posMin,
+                        posMax,
+                        color,
+                        uv0Min,
+                        uv0Max,
+                        uv1Min,
+                        uv1Max,
+                        elementWidthScale,
+                        curvedUIRadius,
+                        skewFactor,
+                        skewOffset,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddQuad_Vector2_Vector2_Color32_Vector2_Vector2_f32_f32_1(
@@ -183,20 +288,43 @@ impl crate::HMUI::ImageView {
         elementWidthScale: f32,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AddQuad",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    vertexHelper,
-                    posMin,
-                    posMax,
-                    color,
-                    uvMin,
-                    uvMax,
-                    elementWidthScale,
-                    curvedUIRadius,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Color32,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    f32,
+                    f32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("AddQuad")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddQuad", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        vertexHelper,
+                        posMin,
+                        posMax,
+                        color,
+                        uvMin,
+                        uvMax,
+                        elementWidthScale,
+                        curvedUIRadius,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateFilledSprite(
@@ -205,11 +333,25 @@ impl crate::HMUI::ImageView {
         preserveAspect: bool,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateFilledSprite", (toFill, preserveAspect, curvedUIRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+                    bool,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GenerateFilledSprite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateFilledSprite", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (toFill, preserveAspect, curvedUIRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateSimpleSprite(
@@ -218,11 +360,25 @@ impl crate::HMUI::ImageView {
         lPreserveAspect: bool,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateSimpleSprite", (vh, lPreserveAspect, curvedUIRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+                    bool,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GenerateSimpleSprite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateSimpleSprite", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (vh, lPreserveAspect, curvedUIRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateSlicedSprite(
@@ -230,11 +386,21 @@ impl crate::HMUI::ImageView {
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateSlicedSprite", (toFill, curvedUIRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>, f32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GenerateSlicedSprite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateSlicedSprite", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (toFill, curvedUIRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateTiledSprite(
@@ -242,38 +408,80 @@ impl crate::HMUI::ImageView {
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         curvedUIRadius: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GenerateTiledSprite", (toFill, curvedUIRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>, f32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GenerateTiledSprite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateTiledSprite", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (toFill, curvedUIRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAdjustedBorders(
         border: crate::UnityEngine::Vector4,
         rect: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAdjustedBorders", (border, rect))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector4, crate::UnityEngine::Rect),
+                crate::UnityEngine::Vector4,
+                2usize,
+            >("GetAdjustedBorders")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAdjustedBorders", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            method.invoke_unchecked((), (border, rect))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDrawingDimensions(
         &mut self,
         shouldPreserveAspect: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
-            .invoke("GetDrawingDimensions", (shouldPreserveAspect))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                crate::UnityEngine::Vector4,
+                1usize,
+            >("GetDrawingDimensions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDrawingDimensions", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            method.invoke_unchecked(self, (shouldPreserveAspect))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNumberOfElements(
         curvedUIRadius: f32,
         width: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNumberOfElements", (curvedUIRadius, width))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32), i32, 2usize>("GetNumberOfElements")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNumberOfElements", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (curvedUIRadius, width))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -286,22 +494,38 @@ impl crate::HMUI::ImageView {
     pub fn OnEnable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnEnable", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnEnable", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnPopulateMesh(
         &mut self,
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnPopulateMesh", (toFill))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnPopulateMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnPopulateMesh", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (toFill))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RadialCut_Il2CppArray0(
@@ -315,8 +539,31 @@ impl crate::HMUI::ImageView {
         invert: bool,
         corner: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RadialCut", (xy, uv, fill, invert, corner))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    f32,
+                    bool,
+                    i32,
+                ),
+                bool,
+                5usize,
+            >("RadialCut")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RadialCut", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (xy, uv, fill, invert, corner))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RadialCut_f32_1(
@@ -328,137 +575,248 @@ impl crate::HMUI::ImageView {
         invert: bool,
         corner: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RadialCut", (xy, cos, sin, invert, corner))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    f32,
+                    f32,
+                    bool,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("RadialCut")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RadialCut", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (xy, cos, sin, invert, corner))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __Refresh(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("__Refresh", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("__Refresh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__Refresh", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_color(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_color", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_color0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color0", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_color0", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_color1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("get_color1", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::UnityEngine::Color, 0usize>("get_color1")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_color1", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_gradient(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("get_gradient", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_gradient")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_gradient", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_skew(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_skew", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_skew")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_skew", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_useScriptableObjectColors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("get_useScriptableObjectColors", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_useScriptableObjectColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_useScriptableObjectColors", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_color(
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_color")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_color", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_color0(
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color0", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_color0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_color0", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_color1(
         &mut self,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_color1", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_color1")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_color1", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_gradient(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_gradient", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), quest_hook::libil2cpp::Void, 1usize>("set_gradient")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_gradient", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_useScriptableObjectColors(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_useScriptableObjectColors", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_useScriptableObjectColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_useScriptableObjectColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

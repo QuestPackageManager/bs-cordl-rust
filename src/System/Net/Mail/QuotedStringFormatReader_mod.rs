@@ -43,8 +43,17 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
         allowUnicode: bool,
         ch: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsValidQtext", (allowUnicode, ch))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(bool, char), bool, 2usize>("IsValidQtext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValidQtext", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (allowUnicode, ch))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadReverseQuoted(
@@ -52,8 +61,25 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
         index: i32,
         permitUnicode: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadReverseQuoted", (data, index, permitUnicode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    bool,
+                ),
+                i32,
+                3usize,
+            >("ReadReverseQuoted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadReverseQuoted", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (data, index, permitUnicode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadReverseUnQuoted(
@@ -62,11 +88,27 @@ impl crate::System::Net::Mail::QuotedStringFormatReader {
         permitUnicode: bool,
         expectCommaDelimiter: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ReadReverseUnQuoted",
-                (data, index, permitUnicode, expectCommaDelimiter),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    bool,
+                    bool,
+                ),
+                i32,
+                4usize,
+            >("ReadReverseUnQuoted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadReverseUnQuoted", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked((), (data, index, permitUnicode, expectCommaDelimiter))
+        };
         Ok(__cordl_ret.into())
     }
 }

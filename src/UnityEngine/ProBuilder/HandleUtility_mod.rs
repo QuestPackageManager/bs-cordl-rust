@@ -55,8 +55,42 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FaceRaycastBothCullModes", (worldRay, mesh, back, front))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                            crate::UnityEngine::Vector3,
+                        >,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("FaceRaycastBothCullModes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FaceRaycastBothCullModes", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (worldRay, mesh, back, front))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FaceRaycast_CullingMode_HashSet_1_2(
@@ -76,8 +110,43 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FaceRaycast", (InWorldRay, mesh, hits, cullingMode, ignore))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::RaycastHit,
+                                >,
+                            >,
+                        >,
+                    >,
+                    crate::UnityEngine::ProBuilder::CullingMode,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                5usize,
+            >("FaceRaycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FaceRaycast", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (InWorldRay, mesh, hits, cullingMode, ignore))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FaceRaycast_HashSet_1_0(
@@ -92,8 +161,38 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FaceRaycast", (worldRay, mesh, hit, ignore))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::RaycastHit,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("FaceRaycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FaceRaycast", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (worldRay, mesh, hit, ignore))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FaceRaycast_f32_CullingMode_HashSet_1_1(
@@ -110,11 +209,44 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FaceRaycast",
-                (worldRay, mesh, hit, distance, cullingMode, ignore),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::RaycastHit,
+                        >,
+                    >,
+                    f32,
+                    crate::UnityEngine::ProBuilder::CullingMode,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::HashSet_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                6usize,
+            >("FaceRaycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FaceRaycast", 6usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (worldRay, mesh, hit, distance, cullingMode, ignore),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetActiveElementPosition_ProBuilderMesh_IEnumerable_1_0(
@@ -125,8 +257,32 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetActiveElementPosition", (mesh, faces))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                crate::UnityEngine::Vector3,
+                2usize,
+            >("GetActiveElementPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetActiveElementPosition", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (mesh, faces))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetActiveElementPosition_ProBuilderMesh_IEnumerable_1_1(
@@ -137,8 +293,30 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetActiveElementPosition", (mesh, edges))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                ),
+                crate::UnityEngine::Vector3,
+                2usize,
+            >("GetActiveElementPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetActiveElementPosition", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (mesh, edges))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetActiveElementPosition_ProBuilderMesh_IEnumerable_1_2(
@@ -147,16 +325,54 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetActiveElementPosition", (mesh, vertices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<i32>,
+                    >,
+                ),
+                crate::UnityEngine::Vector3,
+                2usize,
+            >("GetActiveElementPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetActiveElementPosition", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (mesh, vertices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeRotation_Edge1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeRotation", (mesh, edge))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::ProBuilder::Edge,
+                ),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("GetEdgeRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeRotation", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (mesh, edge))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEdgeRotation_HandleOrientation_IEnumerable_1_0(
@@ -168,16 +384,57 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEdgeRotation", (mesh, orientation, edges))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::ProBuilder::HandleOrientation,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            crate::UnityEngine::ProBuilder::Edge,
+                        >,
+                    >,
+                ),
+                crate::UnityEngine::Quaternion,
+                3usize,
+            >("GetEdgeRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEdgeRotation", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (mesh, orientation, edges))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceRotation_Face1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceRotation", (mesh, face))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                ),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("GetFaceRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFaceRotation", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (mesh, face))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceRotation_HandleOrientation_IEnumerable_1_0(
@@ -189,8 +446,33 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceRotation", (mesh, orientation, faces))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::ProBuilder::HandleOrientation,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                crate::UnityEngine::Quaternion,
+                3usize,
+            >("GetFaceRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFaceRotation", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (mesh, orientation, faces))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRotation(
@@ -199,8 +481,28 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRotation", (mesh, indices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<i32>,
+                    >,
+                ),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("GetRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRotation", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (mesh, indices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexRotation_HandleOrientation_IEnumerable_1_0(
@@ -210,24 +512,79 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVertexRotation", (mesh, orientation, vertices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::ProBuilder::HandleOrientation,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<i32>,
+                    >,
+                ),
+                crate::UnityEngine::Quaternion,
+                3usize,
+            >("GetVertexRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexRotation", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (mesh, orientation, vertices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVertexRotation_i32_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         vertex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVertexRotation", (mesh, vertex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    i32,
+                ),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("GetVertexRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVertexRotation", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (mesh, vertex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InverseTransformRay(
         transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         InWorldRay: crate::UnityEngine::Ray,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Ray> {
-        let __cordl_ret: crate::UnityEngine::Ray = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InverseTransformRay", (transform, InWorldRay))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    crate::UnityEngine::Ray,
+                ),
+                crate::UnityEngine::Ray,
+                2usize,
+            >("InverseTransformRay")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InverseTransformRay", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Ray = unsafe {
+            method.invoke_unchecked((), (transform, InWorldRay))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MeshRaycast_GameObject_ByRefMut_f32_0(
@@ -238,8 +595,30 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         >,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MeshRaycast", (InWorldRay, gameObject, hit, distance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::RaycastHit,
+                        >,
+                    >,
+                    f32,
+                ),
+                bool,
+                4usize,
+            >("MeshRaycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MeshRaycast", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (InWorldRay, gameObject, hit, distance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MeshRaycast_Il2CppArray_Il2CppArray_ByRefMut_f32_1(
@@ -253,8 +632,33 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         >,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MeshRaycast", (InRay, mesh, triangles, hit, distance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::RaycastHit,
+                        >,
+                    >,
+                    f32,
+                ),
+                bool,
+                5usize,
+            >("MeshRaycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MeshRaycast", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (InRay, mesh, triangles, hit, distance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PointIsOccluded(
@@ -262,8 +666,27 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         worldPoint: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PointIsOccluded", (cam, pb, worldPoint))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::Vector3,
+                ),
+                bool,
+                3usize,
+            >("PointIsOccluded")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PointIsOccluded", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (cam, pb, worldPoint))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ScreenToGuiPoint(
@@ -271,8 +694,25 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         point: crate::UnityEngine::Vector3,
         pixelsPerPoint: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ScreenToGuiPoint", (camera, point, pixelsPerPoint))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Vector3,
+                    f32,
+                ),
+                crate::UnityEngine::Vector3,
+                3usize,
+            >("ScreenToGuiPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ScreenToGuiPoint", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (camera, point, pixelsPerPoint))
+        };
         Ok(__cordl_ret.into())
     }
 }

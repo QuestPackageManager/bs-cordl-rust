@@ -54,11 +54,23 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddNode", (node))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddNode", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (node))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindSearchNode(
@@ -69,12 +81,23 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f64),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                >,
+                1usize,
+            >("FindSearchNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindSearchNode", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = __cordl_object.invoke("FindSearchNode", (x))?;
+        > = unsafe { method.invoke_unchecked(self, (x)) };
         Ok(__cordl_ret.into())
     }
     pub fn LocateNode_TriangulationPoint0(
@@ -87,12 +110,25 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                >,
+                1usize,
+            >("LocateNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LocateNode", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = __cordl_object.invoke("LocateNode", (point))?;
+        > = unsafe { method.invoke_unchecked(self, (point)) };
         Ok(__cordl_ret.into())
     }
     pub fn LocateNode_f64_1(
@@ -103,12 +139,23 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f64),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                >,
+                1usize,
+            >("LocateNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LocateNode", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = __cordl_object.invoke("LocateNode", (x))?;
+        > = unsafe { method.invoke_unchecked(self, (x)) };
         Ok(__cordl_ret.into())
     }
     pub fn LocatePoint(
@@ -121,12 +168,25 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                >,
+                1usize,
+            >("LocatePoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LocatePoint", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
-        > = __cordl_object.invoke("LocatePoint", (point))?;
+        > = unsafe { method.invoke_unchecked(self, (point)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -149,11 +209,23 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("RemoveNode", (node))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveNode", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (node))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -161,12 +233,21 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -178,11 +259,28 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFront {
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (head, tail))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (head, tail))
+        };
         Ok(__cordl_ret.into())
     }
 }

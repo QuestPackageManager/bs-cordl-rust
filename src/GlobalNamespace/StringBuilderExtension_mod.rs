@@ -44,8 +44,21 @@ impl crate::GlobalNamespace::StringBuilderExtension {
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         number: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AppendNumber", (sb, number))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>, i32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AppendNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AppendNumber", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, number))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AppendNumber_u32__cordl_bool1(
@@ -53,8 +66,25 @@ impl crate::GlobalNamespace::StringBuilderExtension {
         uNumber: u32,
         isNegative: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AppendNumber", (sb, uNumber, isNegative))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AppendNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AppendNumber", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, uNumber, isNegative))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Swap(
@@ -62,8 +92,25 @@ impl crate::GlobalNamespace::StringBuilderExtension {
         startIndex: i32,
         endIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Swap", (sb, startIndex, endIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Swap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Swap", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, startIndex, endIndex))
+        };
         Ok(__cordl_ret.into())
     }
 }

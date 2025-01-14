@@ -76,13 +76,31 @@ impl<
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IComparer_1<TKey>,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::IOrderedEnumerable_1<TElement>,
+                >,
+                3usize,
+            >("CreateOrderedEnumerable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateOrderedEnumerable", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::IOrderedEnumerable_1<TElement>,
-        > = __cordl_object
-            .invoke("CreateOrderedEnumerable", (keySelector, comparer, descending))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (keySelector, comparer, descending))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

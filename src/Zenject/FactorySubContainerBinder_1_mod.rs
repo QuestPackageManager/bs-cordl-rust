@@ -76,12 +76,27 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("ByMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByMethod", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("ByMethod", (installerMethod))?;
+        > = unsafe { method.invoke_unchecked(self, (installerMethod)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByNewContextPrefab(
@@ -96,12 +111,23 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("ByNewContextPrefab")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByNewContextPrefab", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("ByNewContextPrefab", (prefab))?;
+        > = unsafe { method.invoke_unchecked(self, (prefab)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByNewContextPrefabResource(
@@ -116,12 +142,23 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("ByNewContextPrefabResource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByNewContextPrefabResource", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("ByNewContextPrefabResource", (resourcePath))?;
+        > = unsafe { method.invoke_unchecked(self, (resourcePath)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByNewGameObjectMethod(
@@ -140,12 +177,27 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("ByNewGameObjectMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByNewGameObjectMethod", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("ByNewGameObjectMethod", (installerMethod))?;
+        > = unsafe { method.invoke_unchecked(self, (installerMethod)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefab(
@@ -160,12 +212,23 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("ByNewPrefab")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByNewPrefab", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("ByNewPrefab", (prefab))?;
+        > = unsafe { method.invoke_unchecked(self, (prefab)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabMethod(
@@ -185,12 +248,30 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                2usize,
+            >("ByNewPrefabMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByNewPrefabMethod", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("ByNewPrefabMethod", (prefab, installerMethod))?;
+        > = unsafe { method.invoke_unchecked(self, (prefab, installerMethod)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabResource(
@@ -205,12 +286,23 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                1usize,
+            >("ByNewPrefabResource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByNewPrefabResource", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("ByNewPrefabResource", (resourcePath))?;
+        > = unsafe { method.invoke_unchecked(self, (resourcePath)) };
         Ok(__cordl_ret.into())
     }
     pub fn ByNewPrefabResourceMethod(
@@ -230,13 +322,30 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
+                >,
+                2usize,
+            >("ByNewPrefabResourceMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ByNewPrefabResourceMethod", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
-        > = __cordl_object
-            .invoke("ByNewPrefabResourceMethod", (resourcePath, installerMethod))?;
+        > = unsafe { method.invoke_unchecked(self, (resourcePath, installerMethod)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -269,11 +378,30 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (bindContainer, bindInfo, factoryBindInfo, subIdentifier))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (bindContainer, bindInfo, factoryBindInfo, subIdentifier),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

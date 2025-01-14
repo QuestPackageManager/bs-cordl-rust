@@ -49,16 +49,39 @@ impl crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers {
         >,
         noteJumpValue: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetNoteJumpValues",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    playerSpecificSettings,
-                    defaultNoteJumpStartBeatOffset,
-                    noteJumpValueType,
-                    noteJumpValue,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::PlayerSpecificSettings,
+                    >,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteJumpValueType,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("GetNoteJumpValues")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNoteJumpValues", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        playerSpecificSettings,
+                        defaultNoteJumpStartBeatOffset,
+                        noteJumpValueType,
+                        noteJumpValue,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

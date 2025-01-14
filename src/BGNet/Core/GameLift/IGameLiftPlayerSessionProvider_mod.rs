@@ -60,28 +60,55 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::IAuthenticationTokenProvider,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::BeatmapLevelSelectionMask,
+                    crate::GlobalNamespace::GameplayServerConfiguration,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                        >,
+                    >,
+                >,
+                7usize,
+            >("GetGameLiftPlayerSessionInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetGameLiftPlayerSessionInfo", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     crate::BGNet::Core::GameLift::PlayerSessionInfo,
                 >,
             >,
-        > = __cordl_object
-            .invoke(
-                "GetGameLiftPlayerSessionInfo",
-                (
-                    authenticationTokenProvider,
-                    userId,
-                    beatmapLevelSelectionMask,
-                    gameplayServerConfiguration,
-                    secret,
-                    code,
-                    cancellationToken,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        authenticationTokenProvider,
+                        userId,
+                        beatmapLevelSelectionMask,
+                        gameplayServerConfiguration,
+                        secret,
+                        code,
+                        cancellationToken,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

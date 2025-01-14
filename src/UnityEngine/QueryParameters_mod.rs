@@ -105,18 +105,45 @@ impl crate::UnityEngine::QueryParameters {
         hitTriggers: crate::UnityEngine::QueryTriggerInteraction,
         hitBackfaces: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (layerMask, hitMultipleFaces, hitTriggers, hitBackfaces),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, bool, crate::UnityEngine::QueryTriggerInteraction, bool),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (layerMask, hitMultipleFaces, hitTriggers, hitBackfaces),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Default() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::QueryParameters,
     > {
-        let __cordl_ret: crate::UnityEngine::QueryParameters = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_Default", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::QueryParameters,
+                0usize,
+            >("get_Default")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Default", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::QueryParameters = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }

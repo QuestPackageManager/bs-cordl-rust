@@ -155,11 +155,15 @@ for crate::IgnoranceThirdparty::Volatile_PaddedLong {
 #[cfg(feature = "IgnoranceThirdparty+Volatile+PaddedLong")]
 impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
     pub fn AtomicAddAndGet(&mut self, delta: i64) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AtomicAddAndGet",
-            (delta),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), i64, 1usize>("AtomicAddAndGet")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AtomicAddAndGet", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, (delta)) };
         Ok(__cordl_ret.into())
     }
     pub fn AtomicCompareExchange(
@@ -167,70 +171,104 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
         newValue: i64,
         comparand: i64,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AtomicCompareExchange",
-            (newValue, comparand),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64, i64), bool, 2usize>("AtomicCompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AtomicCompareExchange", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (newValue, comparand))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AtomicDecrementAndGet(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AtomicDecrementAndGet",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("AtomicDecrementAndGet")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AtomicDecrementAndGet", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn AtomicExchange(
         &mut self,
         newValue: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AtomicExchange",
-            (newValue),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), i64, 1usize>("AtomicExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AtomicExchange", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, (newValue)) };
         Ok(__cordl_ret.into())
     }
     pub fn AtomicIncrementAndGet(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AtomicIncrementAndGet",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("AtomicIncrementAndGet")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AtomicIncrementAndGet", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAcquireFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadAcquireFence",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("ReadAcquireFence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAcquireFence", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadCompilerOnlyFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadCompilerOnlyFence",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("ReadCompilerOnlyFence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadCompilerOnlyFence", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFullFence(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadFullFence",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("ReadFullFence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadFullFence", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadUnfenced(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ReadUnfenced",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("ReadUnfenced")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadUnfenced", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -238,64 +276,114 @@ impl crate::IgnoranceThirdparty::Volatile_PaddedLong {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn WriteCompilerOnlyFence(
         &mut self,
         newValue: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteCompilerOnlyFence",
-            (newValue),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i64),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("WriteCompilerOnlyFence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteCompilerOnlyFence", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (newValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteFullFence(
         &mut self,
         newValue: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteFullFence",
-            (newValue),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("WriteFullFence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteFullFence", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (newValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteReleaseFence(
         &mut self,
         newValue: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteReleaseFence",
-            (newValue),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i64),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("WriteReleaseFence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteReleaseFence", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (newValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteUnfenced(
         &mut self,
         newValue: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WriteUnfenced",
-            (newValue),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>("WriteUnfenced")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteUnfenced", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (newValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

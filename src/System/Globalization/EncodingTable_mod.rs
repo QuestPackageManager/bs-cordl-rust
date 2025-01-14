@@ -44,8 +44,21 @@ impl crate::System::Globalization::EncodingTable {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::InternalEncodingDataItem,
     > {
-        let __cordl_ret: crate::System::Globalization::InternalEncodingDataItem = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ENC", (name, cp))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, u16),
+                crate::System::Globalization::InternalEncodingDataItem,
+                2usize,
+            >("ENC")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ENC", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::Globalization::InternalEncodingDataItem = unsafe {
+            method.invoke_unchecked((), (name, cp))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCodePageDataItem(
@@ -53,22 +66,53 @@ impl crate::System::Globalization::EncodingTable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::CodePageDataItem>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Globalization::CodePageDataItem,
+                >,
+                1usize,
+            >("GetCodePageDataItem")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCodePageDataItem", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::CodePageDataItem,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCodePageDataItem", (codepage))?;
+        > = unsafe { method.invoke_unchecked((), (codepage)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCodePageFromName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCodePageFromName", (name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                i32,
+                1usize,
+            >("GetCodePageFromName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCodePageFromName", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNumEncodingItems() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNumEncodingItems", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("GetNumEncodingItems")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNumEncodingItems", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn MapCodePageDataItem(
@@ -79,15 +123,44 @@ impl crate::System::Globalization::EncodingTable {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::InternalCodePageDataItem,
     > {
-        let __cordl_ret: crate::System::Globalization::InternalCodePageDataItem = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MapCodePageDataItem", (cp, fcp, names, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u16,
+                    u16,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u32,
+                ),
+                crate::System::Globalization::InternalCodePageDataItem,
+                4usize,
+            >("MapCodePageDataItem")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MapCodePageDataItem", 4usize
+                )
+            });
+        let __cordl_ret: crate::System::Globalization::InternalCodePageDataItem = unsafe {
+            method.invoke_unchecked((), (cp, fcp, names, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn internalGetCodePageFromName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("internalGetCodePageFromName", (name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                i32,
+                1usize,
+            >("internalGetCodePageFromName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "internalGetCodePageFromName", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (name)) };
         Ok(__cordl_ret.into())
     }
 }

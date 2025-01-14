@@ -43,11 +43,21 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         numberOfPlayers: i32,
         layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetAngleBetweenPlayersWithEvenAdjustment",
-                (numberOfPlayers, layout),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, crate::GlobalNamespace::MultiplayerPlayerLayout),
+                f32,
+                2usize,
+            >("GetAngleBetweenPlayersWithEvenAdjustment")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAngleBetweenPlayersWithEvenAdjustment", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (numberOfPlayers, layout))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocalPlayerIndex(
@@ -58,8 +68,30 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         >,
         localPlayer: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLocalPlayerIndex", (otherPlayers, localPlayer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                ),
+                i32,
+                2usize,
+            >("GetLocalPlayerIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLocalPlayerIndex", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (otherPlayers, localPlayer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOuterCirclePositionAngleForPlayer(
@@ -67,19 +99,42 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         localPlayerIndex: i32,
         angleBetweenPlayers: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetOuterCirclePositionAngleForPlayer",
-                (playerIndex, localPlayerIndex, angleBetweenPlayers),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, f32),
+                f32,
+                3usize,
+            >("GetOuterCirclePositionAngleForPlayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOuterCirclePositionAngleForPlayer", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (playerIndex, localPlayerIndex, angleBetweenPlayers),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOuterCircleRadius(
         angleBetweenPlayers: f32,
         innerCircleRadius: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOuterCircleRadius", (angleBetweenPlayers, innerCircleRadius))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32), f32, 2usize>("GetOuterCircleRadius")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOuterCircleRadius", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (angleBetweenPlayers, innerCircleRadius))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayerWorldPosition(
@@ -87,11 +142,25 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
         outerCirclePositionAngle: f32,
         layout: crate::GlobalNamespace::MultiplayerPlayerLayout,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetPlayerWorldPosition",
-                (outerCircleRadius, outerCirclePositionAngle, layout),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, crate::GlobalNamespace::MultiplayerPlayerLayout),
+                crate::UnityEngine::Vector3,
+                3usize,
+            >("GetPlayerWorldPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPlayerWorldPosition", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (outerCircleRadius, outerCirclePositionAngle, layout),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SortPlayers(
@@ -101,8 +170,27 @@ impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SortPlayers", (players))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IConnectedPlayer,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SortPlayers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SortPlayers", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (players))
+        };
         Ok(__cordl_ret.into())
     }
 }

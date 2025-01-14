@@ -100,8 +100,15 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineUtilities")]
 impl crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
     pub fn MaxValue(a: i32, b: i32, c: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MaxValue", (a, b, c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32, i32), i32, 3usize>("MaxValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MaxValue", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (a, b, c)) };
         Ok(__cordl_ret.into())
     }
 }

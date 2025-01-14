@@ -46,8 +46,21 @@ impl crate::GlobalNamespace::CubemapHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create2DTextureFromCubemap", (src))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                1usize,
+            >("Create2DTextureFromCubemap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create2DTextureFromCubemap", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (src))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDownsampledCubemap(
@@ -56,31 +69,89 @@ impl crate::GlobalNamespace::CubemapHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateDownsampledCubemap", (src, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                2usize,
+            >("CreateDownsampledCubemap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDownsampledCubemap", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (src, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Downsample(
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Downsample", (src, dest))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Downsample")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Downsample", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (src, dest))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DrawCubemapFace(
         cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         cubemapFace: crate::UnityEngine::CubemapFace,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DrawCubemapFace", (cubemap, cubemapFace))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                    crate::UnityEngine::CubemapFace,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("DrawCubemapFace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DrawCubemapFace", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (cubemap, cubemapFace))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_cubemapHelpersMaterial() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_cubemapHelpersMaterial", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                0usize,
+            >("get_cubemapHelpersMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_cubemapHelpersMaterial", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }

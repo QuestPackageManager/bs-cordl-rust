@@ -43,55 +43,123 @@ impl crate::GlobalNamespace::MathfExtra {
         b: f32,
         precision: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Approximately", (a, b, precision))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32, f32), bool, 3usize>("Approximately")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Approximately", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (a, b, precision))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MaxAbs(a: f32, b: f32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MaxAbs", (a, b))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32), f32, 2usize>("MaxAbs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MaxAbs", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (a, b)) };
         Ok(__cordl_ret.into())
     }
     pub fn Repeat(t: i32, length: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Repeat", (t, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32), i32, 2usize>("Repeat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Repeat", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (t, length)) };
         Ok(__cordl_ret.into())
     }
     pub fn Round_Vector4_1(
         value: crate::UnityEngine::Vector4,
         digits: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Round", (value, digits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector4, i32),
+                crate::UnityEngine::Vector4,
+                2usize,
+            >("Round")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Round", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            method.invoke_unchecked((), (value, digits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Round_f32_0(value: f32, decimals: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Round", (value, decimals))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, i32), f32, 2usize>("Round")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Round", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (value, decimals)) };
         Ok(__cordl_ret.into())
     }
     pub fn ShortestAngleDifference(
         from: f32,
         to: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShortestAngleDifference", (from, to))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32), f32, 2usize>("ShortestAngleDifference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShortestAngleDifference", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (from, to)) };
         Ok(__cordl_ret.into())
     }
     pub fn _cordl_Mod_f32_f32_0(
         value: f32,
         _cordl_mod: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Mod", (value, _cordl_mod))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32), f32, 2usize>("Mod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Mod", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (value, _cordl_mod))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _cordl_Mod_i32_i32_1(
         value: i32,
         _cordl_mod: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Mod", (value, _cordl_mod))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32), i32, 2usize>("Mod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Mod", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (value, _cordl_mod))
+        };
         Ok(__cordl_ret.into())
     }
 }

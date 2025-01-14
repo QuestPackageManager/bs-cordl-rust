@@ -63,10 +63,21 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
     pub fn CreateFromAddressables() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentsListModel>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentsListModel>,
+                0usize,
+            >("CreateFromAddressables")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateFromAddressables", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentsListModel,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateFromAddressables", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllEnvironmentInfosWithType(
@@ -79,14 +90,29 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::EnvironmentType),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::EnvironmentInfoSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetAllEnvironmentInfosWithType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllEnvironmentInfosWithType", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
             >,
-        > = __cordl_object.invoke("GetAllEnvironmentInfosWithType", (environmentType))?;
+        > = unsafe { method.invoke_unchecked(self, (environmentType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentInfoBySerializedName(
@@ -97,13 +123,21 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                1usize,
+            >("GetEnvironmentInfoBySerializedName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEnvironmentInfoBySerializedName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
-        > = __cordl_object
-            .invoke("GetEnvironmentInfoBySerializedName", (environmentSerializedName))?;
+        > = unsafe { method.invoke_unchecked(self, (environmentSerializedName)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentInfoBySerializedNameSafe(
@@ -114,16 +148,21 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                1usize,
+            >("GetEnvironmentInfoBySerializedNameSafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEnvironmentInfoBySerializedNameSafe", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
-        > = __cordl_object
-            .invoke(
-                "GetEnvironmentInfoBySerializedNameSafe",
-                (environmentSerializedName),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (environmentSerializedName)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFirstEnvironmentInfoWithType(
@@ -132,12 +171,21 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::EnvironmentType),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                1usize,
+            >("GetFirstEnvironmentInfoWithType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFirstEnvironmentInfoWithType", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
-        > = __cordl_object.invoke("GetFirstEnvironmentInfoWithType", (environmentType))?;
+        > = unsafe { method.invoke_unchecked(self, (environmentType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLastEnvironmentInfoWithType(
@@ -146,12 +194,21 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::EnvironmentType),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                1usize,
+            >("GetLastEnvironmentInfoWithType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLastEnvironmentInfoWithType", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
-        > = __cordl_object.invoke("GetLastEnvironmentInfoWithType", (environmentType))?;
+        > = unsafe { method.invoke_unchecked(self, (environmentType)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -175,11 +232,27 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (envInfoSOs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::EnvironmentInfoSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (envInfoSOs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_environmentInfos(
@@ -191,14 +264,29 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IReadOnlyList_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::EnvironmentInfoSO,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_environmentInfos")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_environmentInfos", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
             >,
-        > = __cordl_object.invoke("get_environmentInfos", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_loggerPrefix(
@@ -206,12 +294,21 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("get_loggerPrefix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_loggerPrefix", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("get_loggerPrefix", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_normalEnvironmentNames(
@@ -223,14 +320,27 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+                0usize,
+            >("get_normalEnvironmentNames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_normalEnvironmentNames", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = __cordl_object.invoke("get_normalEnvironmentNames", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_normalEnvironmentSerializedNames(
@@ -242,14 +352,27 @@ impl crate::GlobalNamespace::EnvironmentsListModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+                0usize,
+            >("get_normalEnvironmentSerializedNames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_normalEnvironmentSerializedNames", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = __cordl_object.invoke("get_normalEnvironmentSerializedNames", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

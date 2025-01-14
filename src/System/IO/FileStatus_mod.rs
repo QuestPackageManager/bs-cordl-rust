@@ -104,11 +104,21 @@ impl crate::System::IO::FileStatus {
         path: crate::System::ReadOnlySpan_1<char>,
         continueOnError: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "EnsureStatInitialized",
-            (path, continueOnError),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("EnsureStatInitialized")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureStatInitialized", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (path, continueOnError))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAttributes(
@@ -116,22 +126,43 @@ impl crate::System::IO::FileStatus {
         path: crate::System::ReadOnlySpan_1<char>,
         fileName: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
-        let __cordl_ret: crate::System::IO::FileAttributes = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetAttributes",
-            (path, fileName),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::ReadOnlySpan_1<char>,
+                ),
+                crate::System::IO::FileAttributes,
+                2usize,
+            >("GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAttributes", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IO::FileAttributes = unsafe {
+            method.invoke_unchecked(self, (path, fileName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetExists(
         &mut self,
         path: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetExists",
-            (path),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                bool,
+                1usize,
+            >("GetExists")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetExists", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (path)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLastWriteTime(
@@ -139,11 +170,21 @@ impl crate::System::IO::FileStatus {
         path: crate::System::ReadOnlySpan_1<char>,
         continueOnError: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
-        let __cordl_ret: crate::System::DateTimeOffset = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetLastWriteTime",
-            (path, continueOnError),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>, bool),
+                crate::System::DateTimeOffset,
+                2usize,
+            >("GetLastWriteTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLastWriteTime", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTimeOffset = unsafe {
+            method.invoke_unchecked(self, (path, continueOnError))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLength(
@@ -151,19 +192,42 @@ impl crate::System::IO::FileStatus {
         path: crate::System::ReadOnlySpan_1<char>,
         continueOnError: bool,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetLength",
-            (path, continueOnError),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>, bool),
+                i64,
+                2usize,
+            >("GetLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLength", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked(self, (path, continueOnError))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
         status: quest_hook::libil2cpp::ByRefMut<crate::System::IO::FileStatus>,
         isDirectory: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Initialize", (status, isDirectory))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::System::IO::FileStatus>, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Initialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Initialize", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (status, isDirectory))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsReadOnly(
@@ -171,22 +235,42 @@ impl crate::System::IO::FileStatus {
         path: crate::System::ReadOnlySpan_1<char>,
         continueOnError: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "IsReadOnly",
-            (path, continueOnError),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>, bool),
+                bool,
+                2usize,
+            >("IsReadOnly")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsReadOnly", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (path, continueOnError))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Refresh(
         &mut self,
         path: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Refresh",
-            (path),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Refresh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Refresh", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (path))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnixTimeToDateTimeOffset(
@@ -194,30 +278,54 @@ impl crate::System::IO::FileStatus {
         seconds: i64,
         nanoseconds: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
-        let __cordl_ret: crate::System::DateTimeOffset = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "UnixTimeToDateTimeOffset",
-            (seconds, nanoseconds),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i64, i64),
+                crate::System::DateTimeOffset,
+                2usize,
+            >("UnixTimeToDateTimeOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnixTimeToDateTimeOffset", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTimeOffset = unsafe {
+            method.invoke_unchecked(self, (seconds, nanoseconds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_InitiallyDirectory(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_InitiallyDirectory",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_InitiallyDirectory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_InitiallyDirectory", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_InitiallyDirectory(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_InitiallyDirectory",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_InitiallyDirectory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_InitiallyDirectory", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

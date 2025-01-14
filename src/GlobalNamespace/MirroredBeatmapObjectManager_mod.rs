@@ -110,44 +110,80 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Finalize", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Finalize", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleDidHideAllBeatmapObjects(
         &mut self,
         hide: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleDidHideAllBeatmapObjects", (hide))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleDidHideAllBeatmapObjects")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleDidHideAllBeatmapObjects", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (hide))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasDespawned(
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasDespawned", (noteController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleNoteWasDespawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleNoteWasDespawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (noteController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasSpawned(
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleNoteWasSpawned", (noteController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleNoteWasSpawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleNoteWasSpawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (noteController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleObstacleWasDespawned(
@@ -156,11 +192,21 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
             crate::GlobalNamespace::ObstacleController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstacleWasDespawned", (obstacleController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleObstacleWasDespawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleObstacleWasDespawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (obstacleController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleObstacleWasSpawned(
@@ -169,11 +215,21 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
             crate::GlobalNamespace::ObstacleController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleObstacleWasSpawned", (obstacleController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleObstacleWasSpawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleObstacleWasSpawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (obstacleController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleSliderWasDespawned(
@@ -182,11 +238,21 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
             crate::GlobalNamespace::SliderController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSliderWasDespawned", (sliderController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleSliderWasDespawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleSliderWasDespawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (sliderController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleSliderWasSpawned(
@@ -195,11 +261,21 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
             crate::GlobalNamespace::SliderController,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSliderWasSpawned", (sliderController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("HandleSliderWasSpawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleSliderWasSpawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (sliderController))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -226,32 +302,75 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
             crate::GlobalNamespace::MirroredSliderController_Pool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Init",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    beatmapObjectManager,
-                    mirroredBasicGameNotePool,
-                    burstSliderHeadGameNotePool,
-                    burstSliderGameNotePool,
-                    mirroredBombNotePool,
-                    mirroredObstaclePool,
-                    mirroredSlidersPool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapObjectManager,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MirroredGameNoteController_Pool,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MirroredGameNoteController_Pool,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MirroredGameNoteController_Pool,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MirroredBombNoteController_Pool,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MirroredObstacleController_Pool,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MirroredSliderController_Pool,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("Init")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Init", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        beatmapObjectManager,
+                        mirroredBasicGameNotePool,
+                        burstSliderHeadGameNotePool,
+                        burstSliderGameNotePool,
+                        mirroredBombNotePool,
+                        mirroredObstaclePool,
+                        mirroredSlidersPool,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvalidateGameNotePools(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("InvalidateGameNotePools", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("InvalidateGameNotePools")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvalidateGameNotePools", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -264,11 +383,17 @@ impl crate::GlobalNamespace::MirroredBeatmapObjectManager {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

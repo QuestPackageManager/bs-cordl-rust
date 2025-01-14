@@ -43,10 +43,21 @@ impl crate::LiteNetLib::NetUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::LiteNetLib::LocalAddrType),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetLocalIp")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLocalIp", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLocalIp", (addrType))?;
+        > = unsafe { method.invoke_unchecked((), (addrType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocalIpList_IList_1_LocalAddrType1(
@@ -57,8 +68,30 @@ impl crate::LiteNetLib::NetUtils {
         >,
         addrType: crate::LiteNetLib::LocalAddrType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLocalIpList", (targetList, addrType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    crate::LiteNetLib::LocalAddrType,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetLocalIpList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLocalIpList", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (targetList, addrType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocalIpList_LocalAddrType0(
@@ -70,12 +103,27 @@ impl crate::LiteNetLib::NetUtils {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::LiteNetLib::LocalAddrType),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+                1usize,
+            >("GetLocalIpList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLocalIpList", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLocalIpList", (addrType))?;
+        > = unsafe { method.invoke_unchecked((), (addrType)) };
         Ok(__cordl_ret.into())
     }
     pub fn MakeEndPoint(
@@ -84,23 +132,58 @@ impl crate::LiteNetLib::NetUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MakeEndPoint", (hostStr, port))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, i32),
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                2usize,
+            >("MakeEndPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeEndPoint", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = unsafe {
+            method.invoke_unchecked((), (hostStr, port))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PrintInterfaceInfos() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PrintInterfaceInfos", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("PrintInterfaceInfos")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PrintInterfaceInfos", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RelativeSequenceNumber(
         number: i32,
         expected: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RelativeSequenceNumber", (number, expected))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32), i32, 2usize>("RelativeSequenceNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RelativeSequenceNumber", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (number, expected))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveAddress_AddressFamily1(
@@ -109,8 +192,24 @@ impl crate::LiteNetLib::NetUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ResolveAddress", (hostStr, addressFamily))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Net::Sockets::AddressFamily,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                2usize,
+            >("ResolveAddress")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveAddress", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress> = unsafe {
+            method.invoke_unchecked((), (hostStr, addressFamily))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveAddress_Il2CppString0(
@@ -118,8 +217,21 @@ impl crate::LiteNetLib::NetUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ResolveAddress", (hostStr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                1usize,
+            >("ResolveAddress")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveAddress", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress> = unsafe {
+            method.invoke_unchecked((), (hostStr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveAddresses(
@@ -131,12 +243,27 @@ impl crate::LiteNetLib::NetUtils {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                    >,
+                >,
+                1usize,
+            >("ResolveAddresses")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveAddresses", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ResolveAddresses", (hostStr))?;
+        > = unsafe { method.invoke_unchecked((), (hostStr)) };
         Ok(__cordl_ret.into())
     }
 }

@@ -106,8 +106,26 @@ impl crate::UnityEngine::UIElements::ColorPage {
         >,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ColorPage> {
-        let __cordl_ret: crate::UnityEngine::UIElements::ColorPage = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Init", (renderChain, alloc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    crate::UnityEngine::UIElements::UIR::BMPAlloc,
+                ),
+                crate::UnityEngine::UIElements::ColorPage,
+                2usize,
+            >("Init")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Init", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::ColorPage = unsafe {
+            method.invoke_unchecked((), (renderChain, alloc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToNativeColorPage(
@@ -115,11 +133,21 @@ impl crate::UnityEngine::UIElements::ColorPage {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToNativeColorPage",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                0usize,
+            >("ToNativeColorPage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToNativeColorPage", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

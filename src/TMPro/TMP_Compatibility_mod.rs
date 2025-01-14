@@ -43,8 +43,21 @@ impl crate::TMPro::TMP_Compatibility {
     pub fn ConvertTextAlignmentEnumValues(
         oldValue: crate::TMPro::TextAlignmentOptions,
     ) -> quest_hook::libil2cpp::Result<crate::TMPro::TextAlignmentOptions> {
-        let __cordl_ret: crate::TMPro::TextAlignmentOptions = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertTextAlignmentEnumValues", (oldValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::TMPro::TextAlignmentOptions),
+                crate::TMPro::TextAlignmentOptions,
+                1usize,
+            >("ConvertTextAlignmentEnumValues")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertTextAlignmentEnumValues", 1usize
+                )
+            });
+        let __cordl_ret: crate::TMPro::TextAlignmentOptions = unsafe {
+            method.invoke_unchecked((), (oldValue))
+        };
         Ok(__cordl_ret.into())
     }
 }

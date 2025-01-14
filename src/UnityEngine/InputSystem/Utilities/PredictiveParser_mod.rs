@@ -105,11 +105,21 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AcceptInt",
-            (str),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AcceptInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcceptInt", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (str))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AcceptSingleChar(
@@ -117,11 +127,19 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         str: crate::System::ReadOnlySpan_1<char>,
         c: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AcceptSingleChar",
-            (str, c),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>, char),
+                bool,
+                2usize,
+            >("AcceptSingleChar")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcceptSingleChar", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (str, c)) };
         Ok(__cordl_ret.into())
     }
     pub fn AcceptString(
@@ -129,22 +147,43 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         input: crate::System::ReadOnlySpan_1<char>,
         output: quest_hook::libil2cpp::ByRefMut<crate::System::ReadOnlySpan_1<char>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "AcceptString",
-            (input, output),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::ReadOnlySpan_1<char>>,
+                ),
+                bool,
+                2usize,
+            >("AcceptString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AcceptString", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (input, output))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExpectInt(
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ExpectInt",
-            (str),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                i32,
+                1usize,
+            >("ExpectInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExpectInt", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (str)) };
         Ok(__cordl_ret.into())
     }
     pub fn ExpectSingleChar(
@@ -152,22 +191,42 @@ impl crate::UnityEngine::InputSystem::Utilities::PredictiveParser {
         str: crate::System::ReadOnlySpan_1<char>,
         c: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ExpectSingleChar",
-            (str, c),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>, char),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ExpectSingleChar")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExpectSingleChar", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (str, c))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExpectString(
         &mut self,
         str: crate::System::ReadOnlySpan_1<char>,
     ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ExpectString",
-            (str),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::ReadOnlySpan_1<char>),
+                crate::System::ReadOnlySpan_1<char>,
+                1usize,
+            >("ExpectString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExpectString", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = unsafe {
+            method.invoke_unchecked(self, (str))
+        };
         Ok(__cordl_ret.into())
     }
 }

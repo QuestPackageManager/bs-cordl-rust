@@ -50,10 +50,23 @@ impl crate::System::Linq::Expressions::ArrayBuilderExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::Collections::Generic::ArrayBuilder_1<T>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+                >,
+                1usize,
+            >("ToReadOnly")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToReadOnly", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToReadOnly", (builder))?;
+        > = unsafe { method.invoke_unchecked((), (builder)) };
         Ok(__cordl_ret.into())
     }
 }

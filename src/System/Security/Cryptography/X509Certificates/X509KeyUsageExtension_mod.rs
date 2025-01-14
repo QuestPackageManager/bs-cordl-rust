@@ -51,11 +51,23 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
             crate::System::Security::Cryptography::AsnEncodedData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CopyFrom", (asnEncodedData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::AsnEncodedData,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CopyFrom")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyFrom", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (asnEncodedData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Decode(
@@ -64,11 +76,21 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::AsnDecodeStatus,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Security::Cryptography::AsnDecodeStatus = __cordl_object
-            .invoke("Decode", (extension))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                crate::System::Security::Cryptography::AsnDecodeStatus,
+                1usize,
+            >("Decode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decode", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Security::Cryptography::AsnDecodeStatus = unsafe {
+            method.invoke_unchecked(self, (extension))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Encode(
@@ -76,12 +98,21 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                0usize,
+            >("Encode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Encode", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("Encode", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetValidFlags(
@@ -90,11 +121,21 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags = __cordl_object
-            .invoke("GetValidFlags", (flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags),
+                crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags,
+                1usize,
+            >("GetValidFlags")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetValidFlags", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags = unsafe {
+            method.invoke_unchecked(self, (flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -132,22 +173,37 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", (multiLine))?;
+        > = unsafe { method.invoke_unchecked(self, (multiLine)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_AsnEncodedData__cordl_bool1(
@@ -157,11 +213,26 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
         >,
         critical: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (encodedKeyUsage, critical))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::AsnEncodedData,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (encodedKeyUsage, critical))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_X509KeyUsageFlags__cordl_bool2(
@@ -169,11 +240,24 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
         keyUsages: crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags,
         critical: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keyUsages, critical))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (keyUsages, critical))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_KeyUsages(
@@ -181,11 +265,21 @@ impl crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtens
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags = __cordl_object
-            .invoke("get_KeyUsages", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags,
+                0usize,
+            >("get_KeyUsages")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_KeyUsages", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509KeyUsageFlags = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

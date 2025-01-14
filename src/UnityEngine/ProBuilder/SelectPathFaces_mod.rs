@@ -45,10 +45,26 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                2usize,
+            >("Dijkstra")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dijkstra", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Dijkstra", (mesh, start))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, start)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinimalPath(
@@ -58,10 +74,27 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<i32>,
+                >,
+                3usize,
+            >("GetMinimalPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMinimalPath", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMinimalPath", (predecessors, start, end))?;
+        > = unsafe { method.invoke_unchecked((), (predecessors, start, end)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPath(
@@ -71,10 +104,29 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<i32>,
+                >,
+                3usize,
+            >("GetPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPath", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPath", (mesh, start, end))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, start, end)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetWeight(
@@ -82,8 +134,27 @@ impl crate::UnityEngine::ProBuilder::SelectPathFaces {
         face2: i32,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetWeight", (face1, face2, mesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                ),
+                f32,
+                3usize,
+            >("GetWeight")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetWeight", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (face1, face2, mesh))
+        };
         Ok(__cordl_ret.into())
     }
 }

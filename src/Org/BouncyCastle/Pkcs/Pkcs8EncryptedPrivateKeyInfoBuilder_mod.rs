@@ -54,12 +54,25 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
             crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ICipherBuilder,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo,
+                >,
+                1usize,
+            >("Build")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Build", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo,
-        > = __cordl_object.invoke("Build", (encryptor))?;
+        > = unsafe { method.invoke_unchecked(self, (encryptor)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray0(
@@ -86,11 +99,21 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
         &mut self,
         privateKeyInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (privateKeyInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (privateKeyInfo))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_PrivateKeyInfo1(
@@ -99,11 +122,23 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfoBuilder {
             crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (privateKeyInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (privateKeyInfo))
+        };
         Ok(__cordl_ret.into())
     }
 }

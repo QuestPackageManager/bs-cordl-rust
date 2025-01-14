@@ -41,29 +41,81 @@ impl crate::UnityEngine::Sprites::DataUtility {
     pub fn GetInnerUV(
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInnerUV", (sprite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
+                crate::UnityEngine::Vector4,
+                1usize,
+            >("GetInnerUV")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInnerUV", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            method.invoke_unchecked((), (sprite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMinSize(
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMinSize", (sprite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
+                crate::UnityEngine::Vector2,
+                1usize,
+            >("GetMinSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMinSize", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            method.invoke_unchecked((), (sprite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOuterUV(
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOuterUV", (sprite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
+                crate::UnityEngine::Vector4,
+                1usize,
+            >("GetOuterUV")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOuterUV", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            method.invoke_unchecked((), (sprite))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPadding(
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
-        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPadding", (sprite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>),
+                crate::UnityEngine::Vector4,
+                1usize,
+            >("GetPadding")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPadding", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            method.invoke_unchecked((), (sprite))
+        };
         Ok(__cordl_ret.into())
     }
 }

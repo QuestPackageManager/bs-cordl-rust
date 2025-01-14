@@ -41,8 +41,21 @@ impl crate::UnityEngine::Screen {
     pub fn GetScreenOrientation() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ScreenOrientation,
     > {
-        let __cordl_ret: crate::UnityEngine::ScreenOrientation = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetScreenOrientation", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::ScreenOrientation,
+                0usize,
+            >("GetScreenOrientation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetScreenOrientation", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ScreenOrientation = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetResolution_FullScreenMode_RefreshRate0(
@@ -51,11 +64,30 @@ impl crate::UnityEngine::Screen {
         fullscreenMode: crate::UnityEngine::FullScreenMode,
         preferredRefreshRate: crate::UnityEngine::RefreshRate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetResolution",
-                (width, height, fullscreenMode, preferredRefreshRate),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    i32,
+                    crate::UnityEngine::FullScreenMode,
+                    crate::UnityEngine::RefreshRate,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetResolution")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetResolution", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (width, height, fullscreenMode, preferredRefreshRate),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetResolution_Injected(
@@ -66,11 +98,30 @@ impl crate::UnityEngine::Screen {
             crate::UnityEngine::RefreshRate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetResolution_Injected",
-                (width, height, fullscreenMode, preferredRefreshRate),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    i32,
+                    crate::UnityEngine::FullScreenMode,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RefreshRate>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetResolution_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetResolution_Injected", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (width, height, fullscreenMode, preferredRefreshRate),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetResolution__cordl_bool2(
@@ -78,8 +129,21 @@ impl crate::UnityEngine::Screen {
         height: i32,
         fullscreen: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetResolution", (width, height, fullscreen))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, bool),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetResolution")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetResolution", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (width, height, fullscreen))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetResolution__cordl_bool_i32_1(
@@ -88,44 +152,118 @@ impl crate::UnityEngine::Screen {
         fullscreen: bool,
         preferredRefreshRate: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetResolution", (width, height, fullscreen, preferredRefreshRate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, bool, i32),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetResolution")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetResolution", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked((), (width, height, fullscreen, preferredRefreshRate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentResolution() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Resolution,
     > {
-        let __cordl_ret: crate::UnityEngine::Resolution = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_currentResolution", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::Resolution,
+                0usize,
+            >("get_currentResolution")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_currentResolution", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Resolution = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentResolution_Injected(
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Resolution>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_currentResolution_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Resolution>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("get_currentResolution_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_currentResolution_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_dpi() -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_dpi", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), f32, 0usize>("get_dpi")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_dpi", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_fullScreen() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_fullScreen", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_fullScreen")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_fullScreen", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_height() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_height", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_height")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_height", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_orientation() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ScreenOrientation,
     > {
-        let __cordl_ret: crate::UnityEngine::ScreenOrientation = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_orientation", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::ScreenOrientation,
+                0usize,
+            >("get_orientation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_orientation", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ScreenOrientation = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_resolutions() -> quest_hook::libil2cpp::Result<
@@ -133,22 +271,55 @@ impl crate::UnityEngine::Screen {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Resolution>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Resolution>,
+                >,
+                0usize,
+            >("get_resolutions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_resolutions", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Resolution>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_resolutions", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_width() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_width", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("get_width")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_width", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_fullScreen(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_fullScreen", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_fullScreen")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_fullScreen", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

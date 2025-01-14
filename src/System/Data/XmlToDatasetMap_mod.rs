@@ -58,11 +58,27 @@ impl crate::System::Data::XmlToDatasetMap {
             crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AddColumnSchema", (col, nameTable, columns))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("AddColumnSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddColumnSchema", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (col, nameTable, columns))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddColumnSchema_XmlNameTable_DataColumn1(
@@ -73,11 +89,27 @@ impl crate::System::Data::XmlToDatasetMap {
             crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("AddColumnSchema", (nameTable, col, columns))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("AddColumnSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddColumnSchema", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (nameTable, col, columns))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddTableSchema_DataTable_XmlNameTable0(
@@ -87,12 +119,26 @@ impl crate::System::Data::XmlToDatasetMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::XmlToDatasetMap_TableSchemaInfo>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
+                >,
+                2usize,
+            >("AddTableSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddTableSchema", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
-        > = __cordl_object.invoke("AddTableSchema", (table, nameTable))?;
+        > = unsafe { method.invoke_unchecked(self, (table, nameTable)) };
         Ok(__cordl_ret.into())
     }
     pub fn AddTableSchema_XmlNameTable_DataTable1(
@@ -102,12 +148,26 @@ impl crate::System::Data::XmlToDatasetMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::XmlToDatasetMap_TableSchemaInfo>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
+                >,
+                2usize,
+            >("AddTableSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddTableSchema", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::XmlToDatasetMap_TableSchemaInfo,
-        > = __cordl_object.invoke("AddTableSchema", (nameTable, table))?;
+        > = unsafe { method.invoke_unchecked(self, (nameTable, table)) };
         Ok(__cordl_ret.into())
     }
     pub fn BuildIdentityMap_DataSet_XmlNameTable0(
@@ -115,11 +175,24 @@ impl crate::System::Data::XmlToDatasetMap {
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildIdentityMap", (dataSet, nameTable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("BuildIdentityMap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildIdentityMap", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (dataSet, nameTable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildIdentityMap_DataTable_XmlNameTable2(
@@ -127,11 +200,24 @@ impl crate::System::Data::XmlToDatasetMap {
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildIdentityMap", (dataTable, nameTable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("BuildIdentityMap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildIdentityMap", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (dataTable, nameTable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildIdentityMap_XmlNameTable_DataSet1(
@@ -139,11 +225,24 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildIdentityMap", (nameTable, dataSet))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("BuildIdentityMap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildIdentityMap", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (nameTable, dataSet))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildIdentityMap_XmlNameTable_DataTable3(
@@ -151,11 +250,24 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BuildIdentityMap", (nameTable, dataTable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("BuildIdentityMap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildIdentityMap", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (nameTable, dataTable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColumnSchema_DataTable_XmlReader__cordl_bool1(
@@ -166,13 +278,27 @@ impl crate::System::Data::XmlToDatasetMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("GetColumnSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColumnSchema", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object
-            .invoke("GetColumnSchema", (table, dataReader, fIgnoreNamespace))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (table, dataReader, fIgnoreNamespace))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColumnSchema_XmlNode__cordl_bool0(
@@ -182,12 +308,21 @@ impl crate::System::Data::XmlToDatasetMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>, bool),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("GetColumnSchema")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColumnSchema", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("GetColumnSchema", (node, fIgnoreNamespace))?;
+        > = unsafe { method.invoke_unchecked(self, (node, fIgnoreNamespace)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSchemaForNode(
@@ -197,12 +332,21 @@ impl crate::System::Data::XmlToDatasetMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>, bool),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("GetSchemaForNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSchemaForNode", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("GetSchemaForNode", (node, fIgnoreNamespace))?;
+        > = unsafe { method.invoke_unchecked(self, (node, fIgnoreNamespace)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSelfAndDescendants(
@@ -211,12 +355,21 @@ impl crate::System::Data::XmlToDatasetMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+                1usize,
+            >("GetSelfAndDescendants")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSelfAndDescendants", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ArrayList,
-        > = __cordl_object.invoke("GetSelfAndDescendants", (dt))?;
+        > = unsafe { method.invoke_unchecked(self, (dt)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTableForNode(
@@ -226,11 +379,21 @@ impl crate::System::Data::XmlToDatasetMap {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable> = __cordl_object
-            .invoke("GetTableForNode", (node, fIgnoreNamespace))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>, bool),
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                2usize,
+            >("GetTableForNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTableForNode", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable> = unsafe {
+            method.invoke_unchecked(self, (node, fIgnoreNamespace))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HandleSpecialColumn(
@@ -241,18 +404,45 @@ impl crate::System::Data::XmlToDatasetMap {
             crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleSpecialColumn", (col, nameTable, columns))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("HandleSpecialColumn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HandleSpecialColumn", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (col, nameTable, columns))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsMappedColumn(
         c: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsMappedColumn", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>),
+                bool,
+                1usize,
+            >("IsMappedColumn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsMappedColumn", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_DataSet_XmlNameTable0(
@@ -300,11 +490,24 @@ impl crate::System::Data::XmlToDatasetMap {
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataSet, nameTable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (dataSet, nameTable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DataTable_XmlNameTable2(
@@ -312,11 +515,24 @@ impl crate::System::Data::XmlToDatasetMap {
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataTable, nameTable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (dataTable, nameTable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlNameTable_DataSet1(
@@ -324,11 +540,24 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nameTable, dataSet))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (nameTable, dataSet))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlNameTable_DataTable3(
@@ -336,11 +565,24 @@ impl crate::System::Data::XmlToDatasetMap {
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (nameTable, dataTable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (nameTable, dataTable))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -411,11 +653,21 @@ impl crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
         &mut self,
         tableSchema: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (tableSchema))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (tableSchema))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -486,11 +738,17 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
         &mut self,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (capacity))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (capacity))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_DataTable2(
@@ -499,12 +757,21 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("get_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Item", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_Item", (table))?;
+        > = unsafe { method.invoke_unchecked(self, (table)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_Il2CppString3(
@@ -513,12 +780,21 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("get_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Item", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_Item", (name))?;
+        > = unsafe { method.invoke_unchecked(self, (name)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_XmlNode0(
@@ -527,12 +803,21 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("get_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Item", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_Item", (node))?;
+        > = unsafe { method.invoke_unchecked(self, (node)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item_XmlReader1(
@@ -541,12 +826,21 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("get_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Item", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = __cordl_object.invoke("get_Item", (dataReader))?;
+        > = unsafe { method.invoke_unchecked(self, (dataReader)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -607,17 +901,31 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -635,11 +943,24 @@ impl crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
         localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         namespaceURI: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (localName, namespaceURI))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (localName, namespaceURI))
+        };
         Ok(__cordl_ret.into())
     }
 }

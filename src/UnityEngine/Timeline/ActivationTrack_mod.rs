@@ -46,10 +46,15 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
     #[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
     pub type PostPlaybackState = crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState;
     pub fn CanCompileClips(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("CanCompileClips", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("CanCompileClips")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CanCompileClips", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTrackMixer(
@@ -58,11 +63,25 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
-            .invoke("CreateTrackMixer", (graph, go, inputCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::PlayableGraph,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    i32,
+                ),
+                crate::UnityEngine::Playables::Playable,
+                3usize,
+            >("CreateTrackMixer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateTrackMixer", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
+            method.invoke_unchecked(self, (graph, go, inputCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GatherProperties(
@@ -74,11 +93,28 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
             crate::UnityEngine::Timeline::IPropertyCollector,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GatherProperties", (director, driver))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Playables::PlayableDirector,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Timeline::IPropertyCollector,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GatherProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GatherProperties", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (director, driver))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -92,31 +128,53 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCreateClip", (clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnCreateClip")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnCreateClip", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateTrackMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateTrackMode", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("UpdateTrackMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateTrackMode", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_postPlaybackState(
@@ -124,22 +182,42 @@ impl crate::UnityEngine::Timeline::ActivationTrack {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState = __cordl_object
-            .invoke("get_postPlaybackState", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
+                0usize,
+            >("get_postPlaybackState")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_postPlaybackState", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_postPlaybackState(
         &mut self,
         value: crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_postPlaybackState", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Timeline::ActivationTrack_PostPlaybackState),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_postPlaybackState")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_postPlaybackState", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -48,12 +48,23 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterface {
             crate::System::Net::NetworkInformation::IPInterfaceProperties,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::IPInterfaceProperties,
+                >,
+                0usize,
+            >("GetIPProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIPProperties", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::NetworkInformation::IPInterfaceProperties,
-        > = __cordl_object.invoke("GetIPProperties", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -73,11 +84,25 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterface {
         ifa_flags: u32,
         ifru_mtu: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, ifa_flags, ifru_mtu))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (name, ifa_flags, ifru_mtu))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_OperationalStatus(
@@ -85,11 +110,21 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterface {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Net::NetworkInformation::OperationalStatus,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Net::NetworkInformation::OperationalStatus = __cordl_object
-            .invoke("get_OperationalStatus", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Net::NetworkInformation::OperationalStatus,
+                0usize,
+            >("get_OperationalStatus")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_OperationalStatus", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Net::NetworkInformation::OperationalStatus = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -54,8 +54,29 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddDistinct", (list, value, comparer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<T>,
+                    >,
+                    T,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEqualityComparer_1<T>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("AddDistinct")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddDistinct", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (list, value, comparer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddDistinct_IList_1_T0<T>(
@@ -66,8 +87,24 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddDistinct", (list, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<T>,
+                    >,
+                    T,
+                ),
+                bool,
+                2usize,
+            >("AddDistinct")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddDistinct", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (list, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn AddRange<T>(
@@ -82,8 +119,28 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddRange", (initial, collection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<T>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddRange", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (initial, collection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddRangeDistinct<T>(
@@ -99,8 +156,31 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddRangeDistinct", (list, values, comparer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEqualityComparer_1<T>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("AddRangeDistinct")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddRangeDistinct", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (list, values, comparer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ArrayEmpty<T>() -> quest_hook::libil2cpp::Result<
@@ -110,9 +190,21 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                0usize,
+            >("ArrayEmpty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ArrayEmpty", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ArrayEmpty", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn Contains<T>(
@@ -126,8 +218,29 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Contains", (list, value, comparer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    T,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::IEqualityComparer,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("Contains")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Contains", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (list, value, comparer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsValue<TSource>(
@@ -143,8 +256,29 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ContainsValue", (source, value, comparer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<TSource>,
+                    >,
+                    TSource,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEqualityComparer_1<TSource>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("ContainsValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ContainsValue", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (source, value, comparer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyFromJaggedToMultidimensionalArray(
@@ -152,11 +286,25 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         multidimensionalArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
         indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CopyFromJaggedToMultidimensionalArray",
-                (values, multidimensionalArray, indices),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<crate::System::Array>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CopyFromJaggedToMultidimensionalArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyFromJaggedToMultidimensionalArray", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (values, multidimensionalArray, indices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FastReverse<T>(
@@ -166,8 +314,23 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FastReverse", (list))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<T>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("FastReverse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FastReverse", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (list))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDimensions(
@@ -176,10 +339,23 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>, i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<i32>,
+                >,
+                2usize,
+            >("GetDimensions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDimensions", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDimensions", (values, dimensionsCount))?;
+        > = unsafe { method.invoke_unchecked((), (values, dimensionsCount)) };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
@@ -192,8 +368,26 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOf", (collection, predicate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
+                ),
+                i32,
+                2usize,
+            >("IndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOf", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (collection, predicate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfReference<T>(
@@ -204,15 +398,42 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOfReference", (list, item))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    T,
+                ),
+                i32,
+                2usize,
+            >("IndexOfReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOfReference", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (list, item)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsDictionaryType(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsDictionaryType", (_cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                bool,
+                1usize,
+            >("IsDictionaryType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsDictionaryType", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsNullOrEmpty<T>(
@@ -224,8 +445,21 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsNullOrEmpty", (collection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::ICollection_1<T>,
+                >),
+                bool,
+                1usize,
+            >("IsNullOrEmpty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsNullOrEmpty", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (collection)) };
         Ok(__cordl_ret.into())
     }
     pub fn JaggedArrayGetValue(
@@ -234,10 +468,24 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("JaggedArrayGetValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "JaggedArrayGetValue", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("JaggedArrayGetValue", (values, indices))?;
+        > = unsafe { method.invoke_unchecked((), (values, indices)) };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveEnumerableCollectionConstructor_Type1(
@@ -247,13 +495,31 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+                3usize,
+            >("ResolveEnumerableCollectionConstructor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveEnumerableCollectionConstructor", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ConstructorInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ResolveEnumerableCollectionConstructor",
-                (collectionType, collectionItemType, constructorArgumentType),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (collectionType, collectionItemType, constructorArgumentType),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveEnumerableCollectionConstructor_Type_Type0(
@@ -262,13 +528,24 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+                2usize,
+            >("ResolveEnumerableCollectionConstructor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveEnumerableCollectionConstructor", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ConstructorInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ResolveEnumerableCollectionConstructor",
-                (collectionType, collectionItemType),
-            )?;
+        > = unsafe { method.invoke_unchecked((), (collectionType, collectionItemType)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToMultidimensionalArray(
@@ -276,8 +553,25 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         rank: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToMultidimensionalArray", (values, _cordl_type, rank))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Array>,
+                3usize,
+            >("ToMultidimensionalArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToMultidimensionalArray", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = unsafe {
+            method.invoke_unchecked((), (values, _cordl_type, rank))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,10 +50,26 @@ impl crate::System::Resources::ManifestBasedResourceGroveler {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Resources::UltimateResourceFallbackLocation,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                2usize,
+            >("GetNeutralResourcesLanguage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNeutralResourcesLanguage", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::CultureInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNeutralResourcesLanguage", (a, fallbackLocation))?;
+        > = unsafe { method.invoke_unchecked((), (a, fallbackLocation)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNeutralResourcesLanguageAttribute(
@@ -63,11 +79,27 @@ impl crate::System::Resources::ManifestBasedResourceGroveler {
         >,
         fallbackLocation: quest_hook::libil2cpp::ByRefMut<i16>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetNeutralResourcesLanguageAttribute",
-                (assembly, cultureName, fallbackLocation),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i16>,
+                ),
+                bool,
+                3usize,
+            >("GetNeutralResourcesLanguageAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNeutralResourcesLanguageAttribute", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assembly, cultureName, fallbackLocation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -87,11 +119,23 @@ impl crate::System::Resources::ManifestBasedResourceGroveler {
             crate::System::Resources::ResourceManager_ResourceManagerMediator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (mediator))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Resources::ResourceManager_ResourceManagerMediator,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (mediator))
+        };
         Ok(__cordl_ret.into())
     }
 }

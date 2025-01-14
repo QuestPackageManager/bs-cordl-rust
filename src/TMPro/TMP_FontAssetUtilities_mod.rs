@@ -48,18 +48,39 @@ impl crate::TMPro::TMP_FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetCharacterFromFontAsset",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    unicode,
-                    sourceFontAsset,
-                    includeFallbacks,
-                    fontStyle,
-                    fontWeight,
-                    isAlternativeTypeface,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                    bool,
+                    crate::TMPro::FontStyles,
+                    crate::TMPro::FontWeight,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                6usize,
+            >("GetCharacterFromFontAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharacterFromFontAsset", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        sourceFontAsset,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacterFromFontAsset_Internal(
@@ -72,18 +93,39 @@ impl crate::TMPro::TMP_FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetCharacterFromFontAsset_Internal",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    unicode,
-                    sourceFontAsset,
-                    includeFallbacks,
-                    fontStyle,
-                    fontWeight,
-                    isAlternativeTypeface,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                    bool,
+                    crate::TMPro::FontStyles,
+                    crate::TMPro::FontWeight,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                6usize,
+            >("GetCharacterFromFontAsset_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharacterFromFontAsset_Internal", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        sourceFontAsset,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacterFromFontAssets(
@@ -101,19 +143,45 @@ impl crate::TMPro::TMP_FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetCharacterFromFontAssets",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    unicode,
-                    sourceFontAsset,
-                    fontAssets,
-                    includeFallbacks,
-                    fontStyle,
-                    fontWeight,
-                    isAlternativeTypeface,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                        >,
+                    >,
+                    bool,
+                    crate::TMPro::FontStyles,
+                    crate::TMPro::FontWeight,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                7usize,
+            >("GetCharacterFromFontAssets")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharacterFromFontAssets", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        sourceFontAsset,
+                        fontAssets,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpriteCharacterFromSpriteAsset(
@@ -123,11 +191,21 @@ impl crate::TMPro::TMP_FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetSpriteCharacterFromSpriteAsset",
-                (unicode, spriteAsset, includeFallbacks),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32, quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>, bool),
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                3usize,
+            >("GetSpriteCharacterFromSpriteAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSpriteCharacterFromSpriteAsset", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter> = unsafe {
+            method.invoke_unchecked((), (unicode, spriteAsset, includeFallbacks))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpriteCharacterFromSpriteAsset_Internal(
@@ -137,11 +215,21 @@ impl crate::TMPro::TMP_FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetSpriteCharacterFromSpriteAsset_Internal",
-                (unicode, spriteAsset, includeFallbacks),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32, quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>, bool),
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                3usize,
+            >("GetSpriteCharacterFromSpriteAsset_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSpriteCharacterFromSpriteAsset_Internal", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter> = unsafe {
+            method.invoke_unchecked((), (unicode, spriteAsset, includeFallbacks))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -154,19 +242,37 @@ impl crate::TMPro::TMP_FontAssetUtilities {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_instance() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAssetUtilities>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAssetUtilities>,
+                0usize,
+            >("get_instance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_instance", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::TMPro::TMP_FontAssetUtilities,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

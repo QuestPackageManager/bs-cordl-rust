@@ -50,8 +50,23 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAwaiter", (asyncOperationHandle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                    T,
+                >),
+                crate::System::Runtime::CompilerServices::TaskAwaiter_1<T>,
+                1usize,
+            >("GetAwaiter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAwaiter", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<T> = unsafe {
+            method.invoke_unchecked((), (asyncOperationHandle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContent<T>(
@@ -63,10 +78,23 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<T>,
+                >,
+                1usize,
+            >("LoadContent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadContent", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadContent", (label))?;
+        > = unsafe { method.invoke_unchecked((), (label)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContentAsync<T>(
@@ -86,14 +114,33 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AddressableAssets::IKeyEvaluator,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<T>,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("LoadContentAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadContentAsync", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
                     crate::System::Collections::Generic::IList_1<T>,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadContentAsync", (label))?;
+        > = unsafe { method.invoke_unchecked((), (label)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContentOperation<T>(
@@ -107,10 +154,25 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<T>,
+                    >,
+                >,
+                1usize,
+            >("LoadContentOperation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadContentOperation", 1usize
+                )
+            });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadContentOperation", (label))?;
+        > = unsafe { method.invoke_unchecked((), (label)) };
         Ok(__cordl_ret.into())
     }
 }

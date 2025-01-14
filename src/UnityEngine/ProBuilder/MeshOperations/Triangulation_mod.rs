@@ -49,8 +49,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SortAndTriangulate", (points, indexes, convex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
+                    >,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("SortAndTriangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SortAndTriangulate", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (points, indexes, convex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TriangulateVertices_IList_1__cordl_bool__cordl_bool0(
@@ -65,8 +90,36 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         unordered: bool,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TriangulateVertices", (vertices, triangles, unordered, convex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Vertex,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
+                    >,
+                    bool,
+                    bool,
+                ),
+                bool,
+                4usize,
+            >("TriangulateVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TriangulateVertices", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (vertices, triangles, unordered, convex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TriangulateVertices_Il2CppArray_Il2CppArray1(
@@ -84,8 +137,39 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TriangulateVertices", (vertices, triangles, holes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TriangulateVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TriangulateVertices", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (vertices, triangles, holes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TriangulateVertices_Il2CppArray__cordl_bool__cordl_bool2(
@@ -98,8 +182,32 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         unordered: bool,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TriangulateVertices", (vertices, triangles, unordered, convex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
+                    >,
+                    bool,
+                    bool,
+                ),
+                bool,
+                4usize,
+            >("TriangulateVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TriangulateVertices", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (vertices, triangles, unordered, convex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_ByRefMut__cordl_bool0(
@@ -111,8 +219,33 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         >,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (points, indexes, convex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
+                    >,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (points, indexes, convex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_IList_1_ByRefMut1(
@@ -132,8 +265,41 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (points, holes, indexes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (points, holes, indexes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_triangulationContext() -> quest_hook::libil2cpp::Result<
@@ -141,10 +307,23 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+                >,
+                0usize,
+            >("get_triangulationContext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_triangulationContext", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_triangulationContext", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

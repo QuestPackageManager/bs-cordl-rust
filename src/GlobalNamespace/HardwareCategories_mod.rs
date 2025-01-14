@@ -41,15 +41,41 @@ impl crate::GlobalNamespace::HardwareCategories {
     pub fn GetHardwareCategory() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::HardwareCategory,
     > {
-        let __cordl_ret: crate::GlobalNamespace::HardwareCategory = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetHardwareCategory", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::GlobalNamespace::HardwareCategory,
+                0usize,
+            >("GetHardwareCategory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHardwareCategory", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::HardwareCategory = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHardwareCategoryWithEditorOverride() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::HardwareCategory,
     > {
-        let __cordl_ret: crate::GlobalNamespace::HardwareCategory = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetHardwareCategoryWithEditorOverride", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::GlobalNamespace::HardwareCategory,
+                0usize,
+            >("GetHardwareCategoryWithEditorOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHardwareCategoryWithEditorOverride", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::HardwareCategory = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }

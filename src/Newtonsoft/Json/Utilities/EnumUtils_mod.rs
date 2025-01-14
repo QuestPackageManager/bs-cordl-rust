@@ -52,11 +52,37 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         valueSubstringLength: i32,
         comparison: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
-        let __cordl_ret: crate::System::Nullable_1<i32> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FindIndexByName",
-                (enumNames, value, valueIndex, valueSubstringLength, comparison),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::StringComparison,
+                ),
+                crate::System::Nullable_1<i32>,
+                5usize,
+            >("FindIndexByName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindIndexByName", 5usize
+                )
+            });
+        let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (enumNames, value, valueIndex, valueSubstringLength, comparison),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumValuesAndNames(
@@ -64,10 +90,21 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::EnumInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::EnumInfo>,
+                1usize,
+            >("GetEnumValuesAndNames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEnumValuesAndNames", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Utilities::EnumInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEnumValuesAndNames", (enumType))?;
+        > = unsafe { method.invoke_unchecked((), (enumType)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFlagsValues<T>(
@@ -79,10 +116,23 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<T>,
+                >,
+                1usize,
+            >("GetFlagsValues")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFlagsValues", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFlagsValues", (value))?;
+        > = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeValuesAndNames(
@@ -95,10 +145,26 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::EnumInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::NamingStrategy,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::EnumInfo>,
+                1usize,
+            >("InitializeValuesAndNames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitializeValuesAndNames", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Utilities::EnumInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitializeValuesAndNames", (key))?;
+        > = unsafe { method.invoke_unchecked((), (key)) };
         Ok(__cordl_ret.into())
     }
     pub fn InternalFlagsFormat(
@@ -107,10 +173,26 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Utilities::EnumInfo,
+                    >,
+                    u64,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("InternalFlagsFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalFlagsFormat", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalFlagsFormat", (entry, result))?;
+        > = unsafe { method.invoke_unchecked((), (entry, result)) };
         Ok(__cordl_ret.into())
     }
     pub fn MatchName(
@@ -129,18 +211,51 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
         valueSubstringLength: i32,
         comparison: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
-        let __cordl_ret: crate::System::Nullable_1<i32> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MatchName",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    value,
-                    enumNames,
-                    resolvedNames,
-                    valueIndex,
-                    valueSubstringLength,
-                    comparison,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    crate::System::StringComparison,
                 ),
-            )?;
+                crate::System::Nullable_1<i32>,
+                6usize,
+            >("MatchName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchName", 6usize
+                )
+            });
+        let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        value,
+                        enumNames,
+                        resolvedNames,
+                        valueIndex,
+                        valueSubstringLength,
+                        comparison,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseEnum(
@@ -153,17 +268,49 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::NamingStrategy,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("ParseEnum")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseEnum", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseEnum", (enumType, namingStrategy, value, disallowNumber))?;
+        > = unsafe {
+            method
+                .invoke_unchecked((), (enumType, namingStrategy, value, disallowNumber))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToUInt64(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToUInt64", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                u64,
+                1usize,
+            >("ToUInt64")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToUInt64", 1usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryToString_NamingStrategy1(
@@ -176,8 +323,30 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryToString", (enumType, value, namingStrategy, name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Serialization::NamingStrategy,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("TryToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryToString", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (enumType, value, namingStrategy, name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryToString__cordl_bool0(
@@ -188,8 +357,28 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryToString", (enumType, value, camelCase, name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    bool,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                ),
+                bool,
+                4usize,
+            >("TryToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryToString", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (enumType, value, camelCase, name))
+        };
         Ok(__cordl_ret.into())
     }
 }

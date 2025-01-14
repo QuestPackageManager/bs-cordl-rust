@@ -48,8 +48,26 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddBloomFilterEntry", (bitMask, value, hashCount, hashBits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    T,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                T,
+                4usize,
+            >("AddBloomFilterEntry")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddBloomFilterEntry", 4usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (bitMask, value, hashCount, hashBits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddBloomFilterEntryHash<T>(
@@ -62,8 +80,21 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddBloomFilterEntryHash", (bitMask, hash, hashCount, hashBits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T, u32, i32, i32),
+                T,
+                4usize,
+            >("AddBloomFilterEntryHash")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddBloomFilterEntryHash", 4usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (bitMask, hash, hashCount, hashBits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsBloomFilterEntry<T>(
@@ -76,8 +107,26 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ContainsBloomFilterEntry", (bitMask, value, hashCount, hashBits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    T,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                bool,
+                4usize,
+            >("ContainsBloomFilterEntry")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ContainsBloomFilterEntry", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (bitMask, value, hashCount, hashBits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsBloomFilterEntryHash<T>(
@@ -90,11 +139,21 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ContainsBloomFilterEntryHash",
-                (bitMask, hash, hashCount, hashBits),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T, u32, i32, i32),
+                bool,
+                4usize,
+            >("ContainsBloomFilterEntryHash")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ContainsBloomFilterEntryHash", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (bitMask, hash, hashCount, hashBits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToBloomFilter_IEnumerable_1_1<T>(
@@ -110,8 +169,31 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBloomFilter", (strings, hashCount, hashBits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                T,
+                3usize,
+            >("ToBloomFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToBloomFilter", 3usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (strings, hashCount, hashBits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToBloomFilter_IEnumerable_1_2<T>(
@@ -125,8 +207,27 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBloomFilter", (hashes, hashCount, hashBits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<u32>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                T,
+                3usize,
+            >("ToBloomFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToBloomFilter", 3usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (hashes, hashCount, hashBits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToBloomFilter_Il2CppString0<T>(
@@ -138,8 +239,25 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBloomFilter", (value, hashCount, hashBits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                T,
+                3usize,
+            >("ToBloomFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToBloomFilter", 3usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (value, hashCount, hashBits))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -44,16 +44,48 @@ impl crate::GlobalNamespace::TransformExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindChildRecursively", (parent, name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                2usize,
+            >("FindChildRecursively")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindChildRecursively", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = unsafe {
+            method.invoke_unchecked((), (parent, name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InverseTransformRotation(
         trans: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         worldRotation: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InverseTransformRotation", (trans, worldRotation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    crate::UnityEngine::Quaternion,
+                ),
+                crate::UnityEngine::Quaternion,
+                2usize,
+            >("InverseTransformRotation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InverseTransformRotation", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (trans, worldRotation))
+        };
         Ok(__cordl_ret.into())
     }
 }

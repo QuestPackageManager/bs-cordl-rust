@@ -49,10 +49,21 @@ impl crate::System::CurrentSystemTimeZone {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::DaylightTime>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::DaylightTime>,
+                1usize,
+            >("CreateDaylightChanges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDaylightChanges", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::DaylightTime,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateDaylightChanges", (year))?;
+        > = unsafe { method.invoke_unchecked((), (year)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCachedDaylightChanges(
@@ -61,12 +72,21 @@ impl crate::System::CurrentSystemTimeZone {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::DaylightTime>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::DaylightTime>,
+                1usize,
+            >("GetCachedDaylightChanges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCachedDaylightChanges", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::DaylightTime,
-        > = __cordl_object.invoke("GetCachedDaylightChanges", (year))?;
+        > = unsafe { method.invoke_unchecked(self, (year)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDaylightChanges(
@@ -75,12 +95,21 @@ impl crate::System::CurrentSystemTimeZone {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::DaylightTime>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::DaylightTime>,
+                1usize,
+            >("GetDaylightChanges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDaylightChanges", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::DaylightTime,
-        > = __cordl_object.invoke("GetDaylightChanges", (year))?;
+        > = unsafe { method.invoke_unchecked(self, (year)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTimeZoneData(
@@ -97,19 +126,59 @@ impl crate::System::CurrentSystemTimeZone {
         >,
         daylight_inverted: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTimeZoneData", (year, data, names, daylight_inverted))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<i64>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                bool,
+                4usize,
+            >("GetTimeZoneData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTimeZoneData", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (year, data, names, daylight_inverted))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUtcOffset(
         &mut self,
         _cordl_time: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("GetUtcOffset", (_cordl_time))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::DateTime),
+                crate::System::TimeSpan,
+                1usize,
+            >("GetUtcOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUtcOffset", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::TimeSpan = unsafe {
+            method.invoke_unchecked(self, (_cordl_time))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -122,11 +191,17 @@ impl crate::System::CurrentSystemTimeZone {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

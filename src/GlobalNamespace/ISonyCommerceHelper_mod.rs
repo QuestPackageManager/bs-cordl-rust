@@ -57,15 +57,30 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+                    >,
+                >,
+                2usize,
+            >("DisplayCategoryBrowseDialogAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DisplayCategoryBrowseDialogAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
             >,
-        > = __cordl_object
-            .invoke("DisplayCategoryBrowseDialogAsync", (categoryLabel, token))?;
+        > = unsafe { method.invoke_unchecked(self, (categoryLabel, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn DisplayProductBrowseDialogAsync(
@@ -79,15 +94,30 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+                    >,
+                >,
+                2usize,
+            >("DisplayProductBrowseDialogAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DisplayProductBrowseDialogAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
             >,
-        > = __cordl_object
-            .invoke("DisplayProductBrowseDialogAsync", (productLabel, token))?;
+        > = unsafe { method.invoke_unchecked(self, (productLabel, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAdditionalContentEntitlementsAsync(
@@ -100,15 +130,27 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Threading::CancellationToken),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+                    >,
+                >,
+                1usize,
+            >("GetAdditionalContentEntitlementsAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAdditionalContentEntitlementsAsync", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
             >,
-        > = __cordl_object
-            .invoke("GetAdditionalContentEntitlementsAsync", (cancellationToken))?;
+        > = unsafe { method.invoke_unchecked(self, (cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

@@ -72,8 +72,26 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             crate::UnityEngine::TextCore::Text::TextColorGradient,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddColorGradientPreset", (hashCode, spriteAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::TextColorGradient,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddColorGradientPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddColorGradientPreset", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (hashCode, spriteAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddColorGradientPreset_Internal(
@@ -83,11 +101,26 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             crate::UnityEngine::TextCore::Text::TextColorGradient,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddColorGradientPreset_Internal", (hashCode, spriteAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::TextColorGradient,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddColorGradientPreset_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddColorGradientPreset_Internal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (hashCode, spriteAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddFontAsset(
@@ -95,8 +128,23 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddFontAsset", (fontAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::FontAsset,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddFontAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddFontAsset", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (fontAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddFontAssetInternal(
@@ -105,19 +153,44 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFontAssetInternal", (fontAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::FontAsset,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddFontAssetInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddFontAssetInternal", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (fontAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddFontMaterial(
         hashCode: i32,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddFontMaterial", (hashCode, material))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddFontMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddFontMaterial", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (hashCode, material))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddFontMaterialInternal(
@@ -125,11 +198,21 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
         hashCode: i32,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddFontMaterialInternal", (hashCode, material))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddFontMaterialInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddFontMaterialInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (hashCode, material))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddSpriteAsset(
@@ -138,8 +221,26 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             crate::UnityEngine::TextCore::Text::SpriteAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddSpriteAsset", (hashCode, spriteAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::SpriteAsset,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddSpriteAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddSpriteAsset", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (hashCode, spriteAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddSpriteAssetInternal(
@@ -149,11 +250,26 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             crate::UnityEngine::TextCore::Text::SpriteAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddSpriteAssetInternal", (hashCode, spriteAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::SpriteAsset,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddSpriteAssetInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddSpriteAssetInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (hashCode, spriteAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -171,8 +287,28 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetColorGradientPreset", (hashCode, gradientPreset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::TextColorGradient,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetColorGradientPreset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetColorGradientPreset", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (hashCode, gradientPreset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetColorGradientPresetInternal(
@@ -184,11 +320,28 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetColorGradientPresetInternal", (hashCode, gradientPreset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::TextColorGradient,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetColorGradientPresetInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetColorGradientPresetInternal", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (hashCode, gradientPreset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetFontAsset(
@@ -197,8 +350,28 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetFontAsset", (hashCode, fontAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::FontAsset,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetFontAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetFontAsset", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (hashCode, fontAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetFontAssetInternal(
@@ -208,11 +381,28 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetFontAssetInternal", (hashCode, fontAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::FontAsset,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetFontAssetInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetFontAssetInternal", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (hashCode, fontAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetMaterial(
@@ -221,8 +411,26 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetMaterial", (hashCode, material))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetMaterial", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (hashCode, material))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetMaterialInternal(
@@ -232,11 +440,26 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetMaterialInternal", (hashCode, material))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetMaterialInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetMaterialInternal", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (hashCode, material))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSpriteAsset(
@@ -245,8 +468,28 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetSpriteAsset", (hashCode, spriteAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::SpriteAsset,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetSpriteAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetSpriteAsset", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (hashCode, spriteAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSpriteAssetInternal(
@@ -256,21 +499,44 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("TryGetSpriteAssetInternal", (hashCode, spriteAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::SpriteAsset,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetSpriteAssetInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetSpriteAssetInternal", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (hashCode, spriteAsset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_instance() -> quest_hook::libil2cpp::Result<
@@ -278,9 +544,23 @@ impl crate::UnityEngine::TextCore::Text::MaterialReferenceManager {
             crate::UnityEngine::TextCore::Text::MaterialReferenceManager,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::MaterialReferenceManager,
+                >,
+                0usize,
+            >("get_instance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_instance", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::MaterialReferenceManager,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

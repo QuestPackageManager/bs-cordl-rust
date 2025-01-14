@@ -42,8 +42,21 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
     pub fn ReadColor(
         binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadColor", (binaryReader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
+                crate::UnityEngine::Color,
+                1usize,
+            >("ReadColor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadColor", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked((), (binaryReader))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadListOf<T>(
@@ -61,31 +74,91 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Func_2<
+                            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+                            T,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<T>,
+                >,
+                2usize,
+            >("ReadListOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadListOf", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadListOf", (binaryReader, elementReader))?;
+        > = unsafe { method.invoke_unchecked((), (binaryReader, elementReader)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadPose(
         binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadPose", (binaryReader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
+                crate::UnityEngine::Pose,
+                1usize,
+            >("ReadPose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadPose", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
+            method.invoke_unchecked((), (binaryReader))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadQuaternion(
         binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadQuaternion", (binaryReader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
+                crate::UnityEngine::Quaternion,
+                1usize,
+            >("ReadQuaternion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadQuaternion", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            method.invoke_unchecked((), (binaryReader))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadVector3(
         binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadVector3", (binaryReader))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("ReadVector3")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadVector3", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (binaryReader))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteListOf<T>(
@@ -102,40 +175,128 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteListOf", (binaryWriter, list, elementWriter))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                            T,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("WriteListOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteListOf", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (binaryWriter, list, elementWriter))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write_Color0(
         binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Write", (binaryWriter, color))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                    crate::UnityEngine::Color,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Write")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Write", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (binaryWriter, color))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write_Pose3(
         binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
         pose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Write", (binaryWriter, pose))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                    crate::UnityEngine::Pose,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Write")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Write", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (binaryWriter, pose))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write_Quaternion2(
         binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
         quaternion: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Write", (binaryWriter, quaternion))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                    crate::UnityEngine::Quaternion,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Write")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Write", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (binaryWriter, quaternion))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Write_Vector3_1(
         binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
         vector: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Write", (binaryWriter, vector))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                    crate::UnityEngine::Vector3,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Write")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Write", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (binaryWriter, vector))
+        };
         Ok(__cordl_ret.into())
     }
 }

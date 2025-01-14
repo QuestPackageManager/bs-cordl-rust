@@ -49,11 +49,29 @@ impl crate::System::Globalization::ISimpleCollator {
         len2: i32,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("Compare", (s1, idx1, len1, s2, idx2, len2, options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                7usize,
+            >("Compare")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Compare", 7usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (s1, idx1, len1, s2, idx2, len2, options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSortKey(
@@ -63,12 +81,24 @@ impl crate::System::Globalization::ISimpleCollator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+                2usize,
+            >("GetSortKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSortKey", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
-        > = __cordl_object.invoke("GetSortKey", (source, options))?;
+        > = unsafe { method.invoke_unchecked(self, (source, options)) };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
@@ -79,11 +109,27 @@ impl crate::System::Globalization::ISimpleCollator {
         length: i32,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("IndexOf", (s, target, start, length, opt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                5usize,
+            >("IndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOf", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (s, target, start, length, opt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsPrefix(
@@ -92,10 +138,25 @@ impl crate::System::Globalization::ISimpleCollator {
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsPrefix", (src, target, opt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("IsPrefix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsPrefix", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (src, target, opt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsSuffix(
@@ -104,10 +165,25 @@ impl crate::System::Globalization::ISimpleCollator {
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsSuffix", (src, target, opt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                bool,
+                3usize,
+            >("IsSuffix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsSuffix", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (src, target, opt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LastIndexOf(
@@ -118,11 +194,27 @@ impl crate::System::Globalization::ISimpleCollator {
         length: i32,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object
-            .invoke("LastIndexOf", (s, target, start, length, opt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    crate::System::Globalization::CompareOptions,
+                ),
+                i32,
+                5usize,
+            >("LastIndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LastIndexOf", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (s, target, start, length, opt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

@@ -123,8 +123,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CheckIf_T_IsUnmanagedOrThrow", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("CheckIf_T_IsUnmanagedOrThrow")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CheckIf_T_IsUnmanagedOrThrow", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreatePartiallyUnsafeWithHashCode<TSubContext>(
@@ -137,8 +150,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         TSubContext: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOrCreatePartiallyUnsafeWithHashCode", (alignment, hashCode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32, i64),
+                crate::Unity::Burst::SharedStatic_1<T>,
+                2usize,
+            >("GetOrCreatePartiallyUnsafeWithHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOrCreatePartiallyUnsafeWithHashCode", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = unsafe {
+            method.invoke_unchecked((), (alignment, hashCode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreatePartiallyUnsafeWithSubHashCode<TContext>(
@@ -151,11 +177,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         TContext: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetOrCreatePartiallyUnsafeWithSubHashCode",
-                (alignment, subHashCode),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32, i64),
+                crate::Unity::Burst::SharedStatic_1<T>,
+                2usize,
+            >("GetOrCreatePartiallyUnsafeWithSubHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOrCreatePartiallyUnsafeWithSubHashCode", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = unsafe {
+            method.invoke_unchecked((), (alignment, subHashCode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreateUnsafe(
@@ -167,8 +203,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOrCreateUnsafe", (alignment, hashCode, subHashCode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32, i64, i64),
+                crate::Unity::Burst::SharedStatic_1<T>,
+                3usize,
+            >("GetOrCreateUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOrCreateUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = unsafe {
+            method.invoke_unchecked((), (alignment, hashCode, subHashCode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreate_Type_Type_u32_3(
@@ -180,8 +229,25 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOrCreate", (contextType, subContextType, alignment))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    u32,
+                ),
+                crate::Unity::Burst::SharedStatic_1<T>,
+                3usize,
+            >("GetOrCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOrCreate", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = unsafe {
+            method.invoke_unchecked((), (contextType, subContextType, alignment))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreate_Type_u32_2(
@@ -192,8 +258,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOrCreate", (contextType, alignment))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>, u32),
+                crate::Unity::Burst::SharedStatic_1<T>,
+                2usize,
+            >("GetOrCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOrCreate", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = unsafe {
+            method.invoke_unchecked((), (contextType, alignment))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreate_u32_0<TContext>(
@@ -205,8 +284,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         TContext: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOrCreate", (alignment))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32),
+                crate::Unity::Burst::SharedStatic_1<T>,
+                1usize,
+            >("GetOrCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOrCreate", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = unsafe {
+            method.invoke_unchecked((), (alignment))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOrCreate_u32_1<TContext, TSubContext>(
@@ -220,8 +312,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         TSubContext: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOrCreate", (alignment))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32),
+                crate::Unity::Burst::SharedStatic_1<T>,
+                1usize,
+            >("GetOrCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOrCreate", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Burst::SharedStatic_1<T> = unsafe {
+            method.invoke_unchecked((), (alignment))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -232,11 +337,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (buffer),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (buffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Data(
@@ -246,11 +361,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Data",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::ByRefMut<T>, 0usize>("get_Data")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Data", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_UnsafeDataPointer(
@@ -262,13 +383,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Burst::SharedStatic_1<T> {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                0usize,
+            >("get_UnsafeDataPointer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_UnsafeDataPointer", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_UnsafeDataPointer",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

@@ -48,10 +48,19 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
         &mut self,
         sessionInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ConfirmCheckSum", (sessionInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                bool,
+                1usize,
+            >("ConfirmCheckSum")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConfirmCheckSum", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (sessionInfo)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDataStream(
@@ -62,11 +71,23 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("GetDataStream", (privKey))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                1usize,
+            >("GetDataStream")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDataStream", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
+            method.invoke_unchecked(self, (privKey))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetKeyCipher(
@@ -74,10 +95,23 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+                >,
+                1usize,
+            >("GetKeyCipher")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetKeyCipher", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::IBufferedCipher,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetKeyCipher", (algorithm))?;
+        > = unsafe { method.invoke_unchecked((), (algorithm)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSymmetricAlgorithm(
@@ -88,11 +122,23 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
     ) -> quest_hook::libil2cpp::Result<
         crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag = __cordl_object
-            .invoke("GetSymmetricAlgorithm", (privKey))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+                >),
+                crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+                1usize,
+            >("GetSymmetricAlgorithm")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSymmetricAlgorithm", 1usize
+                )
+            });
+        let __cordl_ret: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag = unsafe {
+            method.invoke_unchecked(self, (privKey))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -116,8 +162,27 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
         _cordl_size: i32,
         mpiEnc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProcessEncodedMpi", (cipher, _cordl_size, mpiEnc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProcessEncodedMpi")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessEncodedMpi", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (cipher, _cordl_size, mpiEnc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RecoverSessionData(
@@ -128,12 +193,23 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
+                >),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("RecoverSessionData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RecoverSessionData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = __cordl_object.invoke("RecoverSessionData", (privKey))?;
+        > = unsafe { method.invoke_unchecked(self, (privKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -145,18 +221,40 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
             crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (keyData, encData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Bcpg::InputStreamPacket,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (keyData, encData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_KeyId(&mut self) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i64 = __cordl_object.invoke("get_KeyId", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i64, 0usize>("get_KeyId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_KeyId", 0usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

@@ -43,8 +43,21 @@ impl crate::UnityEngine::ScreenCapture {
     pub fn CaptureScreenshot_Il2CppString0(
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CaptureScreenshot", (filename))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CaptureScreenshot")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CaptureScreenshot", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (filename))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CaptureScreenshot_i32_ScreenCapture_StereoScreenCaptureMode1(
@@ -52,8 +65,25 @@ impl crate::UnityEngine::ScreenCapture {
         superSize: i32,
         CaptureMode: crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CaptureScreenshot", (filename, superSize, CaptureMode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CaptureScreenshot")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CaptureScreenshot", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (filename, superSize, CaptureMode))
+        };
         Ok(__cordl_ret.into())
     }
 }

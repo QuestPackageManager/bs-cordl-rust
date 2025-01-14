@@ -45,8 +45,26 @@ impl crate::UnityEngine::UI::MultipleDisplayUtilities {
         >,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRelativeMousePositionForDrag", (eventData, position))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::PointerEventData,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+                ),
+                bool,
+                2usize,
+            >("GetRelativeMousePositionForDrag")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRelativeMousePositionForDrag", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (eventData, position))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRelativeMousePositionForRaycast(
@@ -54,15 +72,43 @@ impl crate::UnityEngine::UI::MultipleDisplayUtilities {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRelativeMousePositionForRaycast", (eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::PointerEventData,
+                >),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("GetRelativeMousePositionForRaycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRelativeMousePositionForRaycast", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RelativeMouseAtScaled(
         position: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RelativeMouseAtScaled", (position))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector2),
+                crate::UnityEngine::Vector3,
+                1usize,
+            >("RelativeMouseAtScaled")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RelativeMouseAtScaled", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (position))
+        };
         Ok(__cordl_ret.into())
     }
 }

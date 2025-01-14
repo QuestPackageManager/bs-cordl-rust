@@ -62,8 +62,19 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TDerived = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstallFromResource", (container))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
+                TDerived,
+                1usize,
+            >("InstallFromResource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InstallFromResource", 1usize
+                )
+            });
+        let __cordl_ret: TDerived = unsafe { method.invoke_unchecked((), (container)) };
         Ok(__cordl_ret.into())
     }
     pub fn InstallFromResource_DiContainer_Il2CppArray2(
@@ -78,8 +89,30 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TDerived = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstallFromResource", (container, extraArgs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                TDerived,
+                2usize,
+            >("InstallFromResource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InstallFromResource", 2usize
+                )
+            });
+        let __cordl_ret: TDerived = unsafe {
+            method.invoke_unchecked((), (container, extraArgs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstallFromResource_Il2CppString_DiContainer1(
@@ -90,8 +123,24 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TDerived = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstallFromResource", (resourcePath, container))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                ),
+                TDerived,
+                2usize,
+            >("InstallFromResource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InstallFromResource", 2usize
+                )
+            });
+        let __cordl_ret: TDerived = unsafe {
+            method.invoke_unchecked((), (resourcePath, container))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstallFromResource_Il2CppString_DiContainer_Il2CppArray3(
@@ -107,8 +156,31 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TDerived = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstallFromResource", (resourcePath, container, extraArgs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                ),
+                TDerived,
+                3usize,
+            >("InstallFromResource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InstallFromResource", 3usize
+                )
+            });
+        let __cordl_ret: TDerived = unsafe {
+            method.invoke_unchecked((), (resourcePath, container, extraArgs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -129,8 +201,21 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("__zenCreateInjectTypeInfo", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+                0usize,
+            >("__zenCreateInjectTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "__zenCreateInjectTypeInfo", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -138,11 +223,17 @@ impl<TDerived: quest_hook::libil2cpp::Type> crate::Zenject::MonoInstaller_1<TDer
         TDerived: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

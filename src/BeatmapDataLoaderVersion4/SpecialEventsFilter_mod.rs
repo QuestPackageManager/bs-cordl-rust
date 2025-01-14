@@ -48,11 +48,21 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
         &mut self,
         basicBeatmapEventType: crate::BeatmapSaveDataCommon::BeatmapEventType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsEventValid", (basicBeatmapEventType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::BeatmapSaveDataCommon::BeatmapEventType),
+                bool,
+                1usize,
+            >("IsEventValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsEventValid", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (basicBeatmapEventType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -78,11 +88,32 @@ impl crate::BeatmapDataLoaderVersion4::SpecialEventsFilter {
             crate::GlobalNamespace::EnvironmentKeywords,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (basicEventTypesWithKeywords, environmentKeywords))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::EnvironmentKeywords,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (basicEventTypesWithKeywords, environmentKeywords),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

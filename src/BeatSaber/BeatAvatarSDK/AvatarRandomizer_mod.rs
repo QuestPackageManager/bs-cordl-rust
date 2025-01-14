@@ -47,8 +47,28 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
             crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RandomizeAll", (avatarData, avatarPartsModel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RandomizeAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RandomizeAll", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (avatarData, avatarPartsModel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RandomizeColors(
@@ -56,8 +76,21 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
             crate::BeatSaber::BeatAvatarSDK::AvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RandomizeColors", (avatarData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RandomizeColors")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RandomizeColors", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (avatarData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RandomizeModels(
@@ -68,8 +101,28 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
             crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RandomizeModels", (avatarData, avatarPartsModel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RandomizeModels")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RandomizeModels", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (avatarData, avatarPartsModel))
+        };
         Ok(__cordl_ret.into())
     }
 }

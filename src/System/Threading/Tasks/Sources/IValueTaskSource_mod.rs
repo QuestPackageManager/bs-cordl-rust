@@ -43,11 +43,17 @@ impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
         &mut self,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetResult", (token))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i16), quest_hook::libil2cpp::Void, 1usize>("GetResult")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetResult", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (token))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStatus(
@@ -56,11 +62,21 @@ impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = __cordl_object
-            .invoke("GetStatus", (token))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i16),
+                crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus,
+                1usize,
+            >("GetStatus")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStatus", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Threading::Tasks::Sources::ValueTaskSourceStatus = unsafe {
+            method.invoke_unchecked(self, (token))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnCompleted(
@@ -74,11 +90,32 @@ impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
         token: i16,
         flags: crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCompleted", (continuation, state, token, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_1<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i16,
+                    crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("OnCompleted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnCompleted", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (continuation, state, token, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

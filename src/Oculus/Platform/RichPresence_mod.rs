@@ -41,8 +41,21 @@ impl crate::Oculus::Platform::RichPresence {
     pub fn Clear() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Clear", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                0usize,
+            >("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDestinations() -> quest_hook::libil2cpp::Result<
@@ -54,14 +67,31 @@ impl crate::Oculus::Platform::RichPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::DestinationList,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetDestinations")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDestinations", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::DestinationList,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDestinations", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextDestinationListPage(
@@ -75,14 +105,33 @@ impl crate::Oculus::Platform::RichPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::DestinationList,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::DestinationList,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetNextDestinationListPage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNextDestinationListPage", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::DestinationList,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNextDestinationListPage", (list))?;
+        > = unsafe { method.invoke_unchecked((), (list)) };
         Ok(__cordl_ret.into())
     }
     pub fn Set(
@@ -92,8 +141,23 @@ impl crate::Oculus::Platform::RichPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Set", (richPresenceOptions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::RichPresenceOptions,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("Set")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Set", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (richPresenceOptions))
+        };
         Ok(__cordl_ret.into())
     }
 }

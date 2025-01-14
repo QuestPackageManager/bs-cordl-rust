@@ -41,8 +41,21 @@ impl crate::Oculus::Haptics::Utils {
     pub fn ControllerToFfiController(
         controller: crate::Oculus::Haptics::Controller,
     ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Controller> {
-        let __cordl_ret: crate::Oculus::Haptics::Ffi_Controller = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ControllerToFfiController", (controller))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Oculus::Haptics::Controller),
+                crate::Oculus::Haptics::Ffi_Controller,
+                1usize,
+            >("ControllerToFfiController")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ControllerToFfiController", 1usize
+                )
+            });
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Controller = unsafe {
+            method.invoke_unchecked((), (controller))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Map(
@@ -52,8 +65,17 @@ impl crate::Oculus::Haptics::Utils {
         outMin: i32,
         outMax: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Map", (input, inMin, inMax, outMin, outMax))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32, i32, i32, i32), f32, 5usize>("Map")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Map", 5usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (input, inMin, inMax, outMin, outMax))
+        };
         Ok(__cordl_ret.into())
     }
 }

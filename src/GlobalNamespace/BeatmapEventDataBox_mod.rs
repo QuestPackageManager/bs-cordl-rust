@@ -55,11 +55,26 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         distributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "BeatDistributionParamToStep",
-                (distributionParam, distributionParamType, count),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    f32,
+                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                    i32,
+                ),
+                f32,
+                3usize,
+            >("BeatDistributionParamToStep")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeatDistributionParamToStep", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method
+                .invoke_unchecked((), (distributionParam, distributionParamType, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EventDistributionParamToStep(
@@ -69,11 +84,31 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         count: i32,
         easeType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "EventDistributionParamToStep",
-                (index, distributionParam, distributionParamType, count, easeType),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    f32,
+                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                    i32,
+                    crate::GlobalNamespace::EaseType,
+                ),
+                f32,
+                5usize,
+            >("EventDistributionParamToStep")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EventDistributionParamToStep", 5usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (index, distributionParam, distributionParamType, count, easeType),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatStep_IndexFilter_BeatmapEventDataBox_DistributionParamType_f32_f32_1(
@@ -82,27 +117,52 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         distributionParam: f32,
         lastBaseEventRelativeBeat: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetBeatStep",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    indexFilter,
-                    distributionParamType,
-                    distributionParam,
-                    lastBaseEventRelativeBeat,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
+                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                    f32,
+                    f32,
                 ),
-            )?;
+                f32,
+                4usize,
+            >("GetBeatStep")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatStep", 4usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        indexFilter,
+                        distributionParamType,
+                        distributionParam,
+                        lastBaseEventRelativeBeat,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatStep_f32_0(
         &mut self,
         lastBaseEventRelativeBeat: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetBeatStep", (lastBaseEventRelativeBeat))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32), f32, 1usize>("GetBeatStep")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatStep", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked(self, (lastBaseEventRelativeBeat))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDistribution(
@@ -110,11 +170,17 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         isFirstBaseDataEvent: bool,
         distributionOrderIndex: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object
-            .invoke("GetDistribution", (isFirstBaseDataEvent, distributionOrderIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool, i32), f32, 2usize>("GetDistribution")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDistribution", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked(self, (isFirstBaseDataEvent, distributionOrderIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -163,24 +229,55 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "Unpack",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    groupBoxBeat,
-                    groupId,
-                    elementId,
-                    durationOrderIndex,
-                    distributionOrderIndex,
-                    maxBeat,
-                    beatToTimeConverter,
-                    lightEventConverter,
-                    output,
+                    f32,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    f32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::IBeatToTimeConverter,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::IBeatmapLightEventConverter,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapEventData,
+                            >,
+                        >,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                9usize,
+            >("Unpack")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unpack", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        groupBoxBeat,
+                        groupId,
+                        elementId,
+                        durationOrderIndex,
+                        distributionOrderIndex,
+                        maxBeat,
+                        beatToTimeConverter,
+                        lightEventConverter,
+                        output,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -193,29 +290,53 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    indexFilter,
-                    beatDistributionParamType,
-                    beatDistributionParam,
-                    eventDistributionParamType,
-                    eventDistributionParam,
-                    eventDistributionShouldAffectFirstBaseEvent,
-                    eventDistributionEaseType,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
+                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                    f32,
+                    crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                    f32,
+                    bool,
+                    crate::GlobalNamespace::EaseType,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        indexFilter,
+                        beatDistributionParamType,
+                        beatDistributionParam,
+                        eventDistributionParamType,
+                        eventDistributionParam,
+                        eventDistributionShouldAffectFirstBaseEvent,
+                        eventDistributionEaseType,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_beatStep(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_beatStep", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_beatStep")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_beatStep", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_indexFilter(
@@ -223,19 +344,33 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
+                0usize,
+            >("get_indexFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_indexFilter", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IndexFilter,
-        > = __cordl_object.invoke("get_indexFilter", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_subtypeIdentifier(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_subtypeIdentifier", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_subtypeIdentifier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_subtypeIdentifier", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

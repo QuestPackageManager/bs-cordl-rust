@@ -48,10 +48,23 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachineFactory {
             crate::GlobalNamespace::GameplayServerFiniteStateMachine,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::GameplayServerFiniteStateMachine,
+                >,
+                1usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayServerFiniteStateMachine,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (initParams))?;
+        > = unsafe { method.invoke_unchecked((), (initParams)) };
         Ok(__cordl_ret.into())
     }
 }

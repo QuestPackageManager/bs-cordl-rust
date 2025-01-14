@@ -41,24 +41,69 @@ impl crate::System::Net::EndPointManager {
     pub fn AddListener(
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddListener", (listener))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddListener")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddListener", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (listener))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddPrefix(
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddPrefix", (prefix, listener))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddPrefix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddPrefix", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (prefix, listener))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddPrefixInternal(
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddPrefixInternal", (p, listener))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddPrefixInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddPrefixInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (p, listener))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEPListener(
@@ -69,41 +114,118 @@ impl crate::System::Net::EndPointManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
+                4usize,
+            >("GetEPListener")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEPListener", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::EndPointListener,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEPListener", (host, port, listener, secure))?;
+        > = unsafe { method.invoke_unchecked((), (host, port, listener, secure)) };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveEndPoint(
         epl: quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
         ep: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveEndPoint", (epl, ep))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemoveEndPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveEndPoint", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (epl, ep))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveListener(
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveListener", (listener))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveListener")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveListener", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (listener))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemovePrefix(
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemovePrefix", (prefix, listener))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemovePrefix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemovePrefix", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (prefix, listener))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RemovePrefixInternal(
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemovePrefixInternal", (prefix, listener))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RemovePrefixInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemovePrefixInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (prefix, listener))
+        };
         Ok(__cordl_ret.into())
     }
 }

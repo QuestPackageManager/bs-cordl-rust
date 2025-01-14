@@ -41,8 +41,19 @@ impl crate::UnityEngine::Timeline::WeightUtility {
     pub fn NormalizeMixer(
         mixer: crate::UnityEngine::Playables::Playable,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NormalizeMixer", (mixer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Playables::Playable),
+                f32,
+                1usize,
+            >("NormalizeMixer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NormalizeMixer", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (mixer)) };
         Ok(__cordl_ret.into())
     }
 }

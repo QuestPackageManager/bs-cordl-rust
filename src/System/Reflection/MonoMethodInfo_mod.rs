@@ -106,36 +106,101 @@ impl crate::System::Reflection::MonoMethodInfo {
     pub fn GetAttributes(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::Reflection::MethodAttributes> {
-        let __cordl_ret: crate::System::Reflection::MethodAttributes = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAttributes", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::Reflection::MethodAttributes,
+                1usize,
+            >("GetAttributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAttributes", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Reflection::MethodAttributes = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCallingConvention(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::Reflection::CallingConventions> {
-        let __cordl_ret: crate::System::Reflection::CallingConventions = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCallingConvention", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::Reflection::CallingConventions,
+                1usize,
+            >("GetCallingConvention")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCallingConvention", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Reflection::CallingConventions = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDeclaringType(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDeclaringType", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                1usize,
+            >("GetDeclaringType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDeclaringType", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodImplementationFlags(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::Reflection::MethodImplAttributes> {
-        let __cordl_ret: crate::System::Reflection::MethodImplAttributes = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMethodImplementationFlags", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::Reflection::MethodImplAttributes,
+                1usize,
+            >("GetMethodImplementationFlags")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMethodImplementationFlags", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Reflection::MethodImplAttributes = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodInfo(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::Reflection::MonoMethodInfo> {
-        let __cordl_ret: crate::System::Reflection::MonoMethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMethodInfo", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::Reflection::MonoMethodInfo,
+                1usize,
+            >("GetMethodInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMethodInfo", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Reflection::MonoMethodInfo = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetParametersInfo(
@@ -148,12 +213,32 @@ impl crate::System::Reflection::MonoMethodInfo {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Reflection::ParameterInfo,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("GetParametersInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParametersInfo", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParametersInfo", (handle, member))?;
+        > = unsafe { method.invoke_unchecked((), (handle, member)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetReturnParameterInfo(
@@ -161,32 +246,87 @@ impl crate::System::Reflection::MonoMethodInfo {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Reflection::RuntimeMethodInfo,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                1usize,
+            >("GetReturnParameterInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetReturnParameterInfo", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::ParameterInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetReturnParameterInfo", (method))?;
+        > = unsafe { method.invoke_unchecked((), (method)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetReturnType(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetReturnType", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                1usize,
+            >("GetReturnType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetReturnType", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_method_attributes(
         handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_method_attributes", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                i32,
+                1usize,
+            >("get_method_attributes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_method_attributes", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (handle)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_method_info(
         handle: crate::System::IntPtr,
         info: quest_hook::libil2cpp::ByRefMut<crate::System::Reflection::MonoMethodInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_method_info", (handle, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Reflection::MonoMethodInfo,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("get_method_info")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_method_info", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handle, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_parameter_info(
@@ -199,12 +339,32 @@ impl crate::System::Reflection::MonoMethodInfo {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Reflection::ParameterInfo,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("get_parameter_info")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_parameter_info", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_parameter_info", (handle, member))?;
+        > = unsafe { method.invoke_unchecked((), (handle, member)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_retval_marshal(
@@ -214,10 +374,23 @@ impl crate::System::Reflection::MonoMethodInfo {
             crate::System::Runtime::InteropServices::MarshalAsAttribute,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::InteropServices::MarshalAsAttribute,
+                >,
+                1usize,
+            >("get_retval_marshal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_retval_marshal", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::InteropServices::MarshalAsAttribute,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_retval_marshal", (handle))?;
+        > = unsafe { method.invoke_unchecked((), (handle)) };
         Ok(__cordl_ret.into())
     }
 }

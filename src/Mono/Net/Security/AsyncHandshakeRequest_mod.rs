@@ -57,11 +57,21 @@ impl crate::Mono::Net::Security::AsyncHandshakeRequest {
     ) -> quest_hook::libil2cpp::Result<
         crate::Mono::Net::Security::AsyncOperationStatus,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus = __cordl_object
-            .invoke("Run", (status))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Mono::Net::Security::AsyncOperationStatus),
+                crate::Mono::Net::Security::AsyncOperationStatus,
+                1usize,
+            >("Run")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Run", 1usize
+                )
+            });
+        let __cordl_ret: crate::Mono::Net::Security::AsyncOperationStatus = unsafe {
+            method.invoke_unchecked(self, (status))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -71,11 +81,26 @@ impl crate::Mono::Net::Security::AsyncHandshakeRequest {
         >,
         sync: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (parent, sync))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Net::Security::MobileAuthenticatedStream,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (parent, sync))
+        };
         Ok(__cordl_ret.into())
     }
 }

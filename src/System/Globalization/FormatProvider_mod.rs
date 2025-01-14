@@ -53,20 +53,47 @@ impl crate::System::Globalization::FormatProvider {
         digits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FormatBigInteger",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    sb,
-                    precision,
-                    scale,
-                    sign,
-                    format,
-                    numberFormatInfo,
-                    digits,
-                    startIndex,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    i32,
+                    i32,
+                    bool,
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("FormatBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatBigInteger", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        sb,
+                        precision,
+                        scale,
+                        sign,
+                        format,
+                        numberFormatInfo,
+                        digits,
+                        startIndex,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryStringToBigInteger(
@@ -80,11 +107,35 @@ impl crate::System::Globalization::FormatProvider {
         scale: quest_hook::libil2cpp::ByRefMut<i32>,
         sign: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryStringToBigInteger",
-                (s, styles, numberFormatInfo, receiver, precision, scale, sign),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Globalization::NumberStyles,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                bool,
+                7usize,
+            >("TryStringToBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryStringToBigInteger", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (s, styles, numberFormatInfo, receiver, precision, scale, sign),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -144,8 +195,19 @@ impl crate::System::Globalization::FormatProvider_Number {
         format: crate::System::ReadOnlySpan_1<char>,
         section: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindSection", (format, section))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::ReadOnlySpan_1<char>, i32),
+                i32,
+                2usize,
+            >("FindSection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindSection", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (format, section)) };
         Ok(__cordl_ret.into())
     }
     pub fn FormatCurrency(
@@ -157,8 +219,33 @@ impl crate::System::Globalization::FormatProvider_Number {
         nMaxDigits: i32,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FormatCurrency", (sb, number, nMinDigits, nMaxDigits, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("FormatCurrency")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatCurrency", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, number, nMinDigits, nMaxDigits, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatExponent(
@@ -169,11 +256,36 @@ impl crate::System::Globalization::FormatProvider_Number {
         minDigits: i32,
         positiveSign: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FormatExponent",
-                (sb, info, value, expChar, minDigits, positiveSign),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    i32,
+                    char,
+                    i32,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("FormatExponent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatExponent", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (sb, info, value, expChar, minDigits, positiveSign),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatFixed(
@@ -188,11 +300,49 @@ impl crate::System::Globalization::FormatProvider_Number {
         sDecimal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FormatFixed",
-                (sb, number, nMinDigits, nMaxDigits, info, groupDigits, sDecimal, sGroup),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("FormatFixed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatFixed", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        sb,
+                        number,
+                        nMinDigits,
+                        nMaxDigits,
+                        info,
+                        groupDigits,
+                        sDecimal,
+                        sGroup,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatGeneral(
@@ -206,11 +356,47 @@ impl crate::System::Globalization::FormatProvider_Number {
         expChar: char,
         bSuppressScientific: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FormatGeneral",
-                (sb, number, nMinDigits, nMaxDigits, info, expChar, bSuppressScientific),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    char,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("FormatGeneral")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatGeneral", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        sb,
+                        number,
+                        nMinDigits,
+                        nMaxDigits,
+                        info,
+                        expChar,
+                        bSuppressScientific,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatNumber(
@@ -222,8 +408,33 @@ impl crate::System::Globalization::FormatProvider_Number {
         nMaxDigits: i32,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FormatNumber", (sb, number, nMinDigits, nMaxDigits, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("FormatNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatNumber", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, number, nMinDigits, nMaxDigits, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatPercent(
@@ -235,8 +446,33 @@ impl crate::System::Globalization::FormatProvider_Number {
         nMaxDigits: i32,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FormatPercent", (sb, number, nMinDigits, nMaxDigits, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("FormatPercent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatPercent", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, number, nMinDigits, nMaxDigits, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatScientific(
@@ -249,11 +485,38 @@ impl crate::System::Globalization::FormatProvider_Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         expChar: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FormatScientific",
-                (sb, number, nMinDigits, nMaxDigits, info, expChar),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    char,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("FormatScientific")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatScientific", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (sb, number, nMinDigits, nMaxDigits, info, expChar),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Int32ToDecChars(
@@ -262,13 +525,38 @@ impl crate::System::Globalization::FormatProvider_Number {
         value: u32,
         digits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Int32ToDecChars", (buffer, index, value, digits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    u32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("Int32ToDecChars")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Int32ToDecChars", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (buffer, index, value, digits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsWhite(ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsWhite", (ch))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char), bool, 1usize>("IsWhite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsWhite", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ch)) };
         Ok(__cordl_ret.into())
     }
     pub fn MatchChars_Il2CppObject1(
@@ -278,10 +566,25 @@ impl crate::System::Globalization::FormatProvider_Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("MatchChars")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchChars", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MatchChars", (p, pEnd, str))?;
+        > = unsafe { method.invoke_unchecked((), (p, pEnd, str)) };
         Ok(__cordl_ret.into())
     }
     pub fn MatchChars_Il2CppString0(
@@ -291,10 +594,25 @@ impl crate::System::Globalization::FormatProvider_Number {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("MatchChars")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchChars", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MatchChars", (p, pEnd, str))?;
+        > = unsafe { method.invoke_unchecked((), (p, pEnd, str)) };
         Ok(__cordl_ret.into())
     }
     pub fn NumberToString(
@@ -307,11 +625,35 @@ impl crate::System::Globalization::FormatProvider_Number {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         isDecimal: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "NumberToString",
-                (sb, number, format, nMaxDigits, info, isDecimal),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    char,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("NumberToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NumberToString", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked((), (sb, number, format, nMaxDigits, info, isDecimal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NumberToStringFormat(
@@ -322,16 +664,54 @@ impl crate::System::Globalization::FormatProvider_Number {
         format: crate::System::ReadOnlySpan_1<char>,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NumberToStringFormat", (sb, number, format, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Text::ValueStringBuilder,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("NumberToStringFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NumberToStringFormat", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (sb, number, format, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseFormatSpecifier(
         format: crate::System::ReadOnlySpan_1<char>,
         digits: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseFormatSpecifier", (format, digits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                char,
+                2usize,
+            >("ParseFormatSpecifier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseFormatSpecifier", 2usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (format, digits)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseNumber(
@@ -349,11 +729,39 @@ impl crate::System::Globalization::FormatProvider_Number {
         >,
         parseDecimal: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ParseNumber",
-                (str, strEnd, options, number, sb, numfmt, parseDecimal),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::Globalization::NumberStyles,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    bool,
+                ),
+                bool,
+                7usize,
+            >("ParseNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseNumber", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (str, strEnd, options, number, sb, numfmt, parseDecimal),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RoundNumber(
@@ -362,16 +770,45 @@ impl crate::System::Globalization::FormatProvider_Number {
         >,
         pos: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RoundNumber", (number, pos))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RoundNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RoundNumber", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (number, pos))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TrailingZeros(
         s: crate::System::ReadOnlySpan_1<char>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TrailingZeros", (s, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::ReadOnlySpan_1<char>, i32),
+                bool,
+                2usize,
+            >("TrailingZeros")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TrailingZeros", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (s, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryStringToNumber(
@@ -386,18 +823,50 @@ impl crate::System::Globalization::FormatProvider_Number {
         >,
         parseDecimal: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryStringToNumber",
-                (str, options, number, sb, numfmt, parseDecimal),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Globalization::NumberStyles,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::Number_FormatProvider_NumberBuffer,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    bool,
+                ),
+                bool,
+                6usize,
+            >("TryStringToNumber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryStringToNumber", 6usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, options, number, sb, numfmt, parseDecimal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn wcslen(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("wcslen", (s))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                i32,
+                1usize,
+            >("wcslen")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "wcslen", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (s)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -522,9 +991,21 @@ impl crate::System::Globalization::Number_FormatProvider_NumberBuffer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                0usize,
+            >("get_digits")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_digits", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_digits", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

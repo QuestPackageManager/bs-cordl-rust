@@ -44,12 +44,21 @@ impl crate::Unity::Burst::IFunctionPointer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Unity::Burst::IFunctionPointer>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<crate::Unity::Burst::IFunctionPointer>,
+                1usize,
+            >("FromIntPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromIntPtr", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Burst::IFunctionPointer,
-        > = __cordl_object.invoke("FromIntPtr", (ptr))?;
+        > = unsafe { method.invoke_unchecked(self, (ptr)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

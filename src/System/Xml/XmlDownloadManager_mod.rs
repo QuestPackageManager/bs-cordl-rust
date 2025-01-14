@@ -50,11 +50,28 @@ impl crate::System::Xml::XmlDownloadManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("GetNonFileStream", (uri, credentials, proxy, cachePolicy))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Cache::RequestCachePolicy,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                4usize,
+            >("GetNonFileStream")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNonFileStream", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
+            method.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNonFileStreamAsync(
@@ -72,15 +89,36 @@ impl crate::System::Xml::XmlDownloadManager {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Cache::RequestCachePolicy,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                    >,
+                >,
+                4usize,
+            >("GetNonFileStreamAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNonFileStreamAsync", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
             >,
-        > = __cordl_object
-            .invoke("GetNonFileStreamAsync", (uri, credentials, proxy, cachePolicy))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStream(
@@ -94,11 +132,28 @@ impl crate::System::Xml::XmlDownloadManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
-            .invoke("GetStream", (uri, credentials, proxy, cachePolicy))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Cache::RequestCachePolicy,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                4usize,
+            >("GetStream")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStream", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = unsafe {
+            method.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStreamAsync(
@@ -116,15 +171,36 @@ impl crate::System::Xml::XmlDownloadManager {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Cache::RequestCachePolicy,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                    >,
+                >,
+                4usize,
+            >("GetStreamAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStreamAsync", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
             >,
-        > = __cordl_object
-            .invoke("GetStreamAsync", (uri, credentials, proxy, cachePolicy))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (uri, credentials, proxy, cachePolicy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -138,21 +214,37 @@ impl crate::System::Xml::XmlDownloadManager {
         &mut self,
         host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (host))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Remove")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Remove", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (host))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

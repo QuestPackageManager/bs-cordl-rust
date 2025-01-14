@@ -42,16 +42,42 @@ impl crate::System::Threading::Interlocked {
         location1: quest_hook::libil2cpp::ByRefMut<i32>,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i32>, i32),
+                i32,
+                2usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (location1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_i64_1(
         location1: quest_hook::libil2cpp::ByRefMut<i64>,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i64>, i64),
+                i64,
+                2usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (location1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_ByRefMut_ByRefMut_ByRefMut2(
@@ -68,8 +94,34 @@ impl crate::System::Threading::Interlocked {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_Il2CppObject_Il2CppObject3(
@@ -81,10 +133,27 @@ impl crate::System::Threading::Interlocked {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand))?;
+        > = unsafe { method.invoke_unchecked((), (location1, value, comparand)) };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_IntPtr_IntPtr6(
@@ -92,8 +161,25 @@ impl crate::System::Threading::Interlocked {
         value: crate::System::IntPtr,
         comparand: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_T_T8<T>(
@@ -105,8 +191,21 @@ impl crate::System::Threading::Interlocked {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, T, T),
+                T,
+                3usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 3usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_f32_f32_4(
@@ -114,8 +213,21 @@ impl crate::System::Threading::Interlocked {
         value: f32,
         comparand: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<f32>, f32, f32),
+                f32,
+                3usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_f64_f64_7(
@@ -123,8 +235,21 @@ impl crate::System::Threading::Interlocked {
         value: f64,
         comparand: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<f64>, f64, f64),
+                f64,
+                3usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 3usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_i32_i32_0(
@@ -132,8 +257,21 @@ impl crate::System::Threading::Interlocked {
         value: i32,
         comparand: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i32>, i32, i32),
+                i32,
+                3usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_i32_i32_ByRefMut1(
@@ -142,8 +280,26 @@ impl crate::System::Threading::Interlocked {
         comparand: i32,
         succeeded: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand, succeeded))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                i32,
+                4usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand, succeeded))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CompareExchange_i64_i64_5(
@@ -151,22 +307,57 @@ impl crate::System::Threading::Interlocked {
         value: i64,
         comparand: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CompareExchange", (location1, value, comparand))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i64>, i64, i64),
+                i64,
+                3usize,
+            >("CompareExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareExchange", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (location1, value, comparand))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Decrement_ByRefMut0(
         location: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Decrement", (location))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i32>),
+                i32,
+                1usize,
+            >("Decrement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decrement", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (location)) };
         Ok(__cordl_ret.into())
     }
     pub fn Decrement_ByRefMut1(
         location: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Decrement", (location))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i64>),
+                i64,
+                1usize,
+            >("Decrement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Decrement", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (location)) };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_ByRefMut_ByRefMut1(
@@ -180,8 +371,31 @@ impl crate::System::Threading::Interlocked {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (location1, value, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_Il2CppObject2(
@@ -192,18 +406,50 @@ impl crate::System::Threading::Interlocked {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value))?;
+        > = unsafe { method.invoke_unchecked((), (location1, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_IntPtr5(
         location1: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
         value: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    crate::System::IntPtr,
+                ),
+                crate::System::IntPtr,
+                2usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (location1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_T7<T>(
@@ -214,68 +460,177 @@ impl crate::System::Threading::Interlocked {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, T),
+                T,
+                2usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 2usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (location1, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_f32_3(
         location1: quest_hook::libil2cpp::ByRefMut<f32>,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<f32>, f32),
+                f32,
+                2usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (location1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_f64_6(
         location1: quest_hook::libil2cpp::ByRefMut<f64>,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<f64>, f64),
+                f64,
+                2usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 2usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (location1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_i32_0(
         location1: quest_hook::libil2cpp::ByRefMut<i32>,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i32>, i32),
+                i32,
+                2usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (location1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Exchange_i64_4(
         location1: quest_hook::libil2cpp::ByRefMut<i64>,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Exchange", (location1, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i64>, i64),
+                i64,
+                2usize,
+            >("Exchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Exchange", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (location1, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Increment_ByRefMut0(
         location: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Increment", (location))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i32>),
+                i32,
+                1usize,
+            >("Increment")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Increment", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (location)) };
         Ok(__cordl_ret.into())
     }
     pub fn Increment_ByRefMut1(
         location: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Increment", (location))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i64>),
+                i64,
+                1usize,
+            >("Increment")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Increment", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (location)) };
         Ok(__cordl_ret.into())
     }
     pub fn MemoryBarrier() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MemoryBarrier", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("MemoryBarrier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MemoryBarrier", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Read(
         location: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Read", (location))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<i64>),
+                i64,
+                1usize,
+            >("Read")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Read", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (location)) };
         Ok(__cordl_ret.into())
     }
 }

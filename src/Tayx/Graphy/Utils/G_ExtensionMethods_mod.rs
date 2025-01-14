@@ -53,12 +53,34 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                        >,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    >,
+                >,
+                2usize,
+            >("SetAllActive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAllActive", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetAllActive", (gameObjects, active))?;
+        > = unsafe { method.invoke_unchecked((), (gameObjects, active)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetAllActive_List_1__cordl_bool1(
@@ -75,12 +97,34 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                        >,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                    >,
+                >,
+                2usize,
+            >("SetAllActive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAllActive", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetAllActive", (images, active))?;
+        > = unsafe { method.invoke_unchecked((), (images, active)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetOneActive(
@@ -97,12 +141,34 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                    >,
+                >,
+                2usize,
+            >("SetOneActive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetOneActive", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetOneActive", (images, active))?;
+        > = unsafe { method.invoke_unchecked((), (images, active)) };
         Ok(__cordl_ret.into())
     }
 }

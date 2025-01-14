@@ -53,11 +53,30 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValues: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AppendListWithCapacity",
-                (array, length, values, capacityIncrement),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    TValues,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("AppendListWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AppendListWithCapacity", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, length, values, capacityIncrement))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AppendToImmutable<TValue>(
@@ -70,8 +89,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AppendToImmutable", (array, values))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                ),
+                i32,
+                2usize,
+            >("AppendToImmutable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AppendToImmutable", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, values)) };
         Ok(__cordl_ret.into())
     }
     pub fn AppendWithCapacity_Allocator1<TValue>(
@@ -87,11 +124,33 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AppendWithCapacity",
-                (array, count, value, capacityIncrement, allocator),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::NativeArray_1<TValue>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    TValue,
+                    i32,
+                    crate::Unity::Collections::Allocator,
+                ),
+                i32,
+                5usize,
+            >("AppendWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AppendWithCapacity", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (array, count, value, capacityIncrement, allocator),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AppendWithCapacity_ByRefMut_ByRefMut_TValue_i32_0<TValue>(
@@ -106,8 +165,30 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AppendWithCapacity", (array, count, value, capacityIncrement))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    TValue,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("AppendWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AppendWithCapacity", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, count, value, capacityIncrement))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Append_IEnumerable_1_1<TValue>(
@@ -122,8 +203,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Append", (array, values))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                    >,
+                ),
+                i32,
+                2usize,
+            >("Append")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Append", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, values)) };
         Ok(__cordl_ret.into())
     }
     pub fn Append_TValue0<TValue>(
@@ -136,8 +237,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Append", (array, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    TValue,
+                ),
+                i32,
+                2usize,
+            >("Append")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Append", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn Clear_ByRefMut2<TValue>(
@@ -148,8 +267,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Clear", (array, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clear_Il2CppArray0<TValue>(
@@ -159,8 +296,21 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Clear", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clear_i32_1<TValue>(
@@ -171,8 +321,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Clear", (array, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clone<TValue>(
@@ -184,9 +352,21 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                1usize,
+            >("Clone")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clone", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Clone", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn Contains<TValue>(
@@ -197,8 +377,24 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Contains", (array, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    TValue,
+                ),
+                bool,
+                2usize,
+            >("Contains")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Contains", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsReference_TValue0<TValue>(
@@ -209,8 +405,24 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ContainsReference", (array, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    TValue,
+                ),
+                bool,
+                2usize,
+            >("ContainsReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ContainsReference", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsReference_i32_TSecond1<TFirst, TSecond>(
@@ -224,8 +436,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TSecond: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ContainsReference", (array, count, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TFirst>,
+                    >,
+                    i32,
+                    TSecond,
+                ),
+                bool,
+                3usize,
+            >("ContainsReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ContainsReference", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (array, count, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsReference_i32_i32_TSecond2<TFirst, TSecond>(
@@ -240,8 +471,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TSecond: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ContainsReference", (array, startIndex, count, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TFirst>,
+                    >,
+                    i32,
+                    i32,
+                    TSecond,
+                ),
+                bool,
+                4usize,
+            >("ContainsReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ContainsReference", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (array, startIndex, count, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Copy<TValue>(
@@ -253,9 +504,21 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                1usize,
+            >("Copy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Copy", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn DuplicateWithCapacity<TValue>(
@@ -270,11 +533,30 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "DuplicateWithCapacity",
-                (array, count, capacity, capacityIncrement),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("DuplicateWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DuplicateWithCapacity", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count, capacity, capacityIncrement))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureCapacity<TValue>(
@@ -289,8 +571,30 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EnsureCapacity", (array, count, capacity, capacityIncrement))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("EnsureCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureCapacity", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count, capacity, capacityIncrement))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Erase<TValue>(
@@ -303,8 +607,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Erase", (array, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    TValue,
+                ),
+                bool,
+                2usize,
+            >("Erase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Erase", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn EraseAt<TValue>(
@@ -317,8 +639,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EraseAt", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("EraseAt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EraseAt", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EraseAtByMovingTail<TValue>(
@@ -330,8 +672,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EraseAtByMovingTail", (array, count, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("EraseAtByMovingTail")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EraseAtByMovingTail", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EraseAtWithCapacity_Il2CppArray0<TValue>(
@@ -343,8 +704,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EraseAtWithCapacity", (array, count, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("EraseAtWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EraseAtWithCapacity", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EraseAtWithCapacity_NativeArray_1_1<TValue>(
@@ -356,8 +736,25 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EraseAtWithCapacity", (array, count, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<TValue>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("EraseAtWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EraseAtWithCapacity", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EraseSliceWithCapacity<TValue>(
@@ -372,8 +769,30 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EraseSliceWithCapacity", (array, length, index, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("EraseSliceWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EraseSliceWithCapacity", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, length, index, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GrowBy_Allocator1<TValue>(
@@ -387,8 +806,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GrowBy", (array, count, allocator))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::NativeArray_1<TValue>,
+                    >,
+                    i32,
+                    crate::Unity::Collections::Allocator,
+                ),
+                i32,
+                3usize,
+            >("GrowBy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GrowBy", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, count, allocator))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GrowBy_ByRefMut_i32_0<TValue>(
@@ -401,8 +839,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GrowBy", (array, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    i32,
+                ),
+                i32,
+                2usize,
+            >("GrowBy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GrowBy", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, count)) };
         Ok(__cordl_ret.into())
     }
     pub fn GrowWithCapacity_Allocator1<TValue>(
@@ -418,11 +874,33 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GrowWithCapacity",
-                (array, count, growBy, capacityIncrement, allocator),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::NativeArray_1<TValue>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                    i32,
+                    crate::Unity::Collections::Allocator,
+                ),
+                i32,
+                5usize,
+            >("GrowWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GrowWithCapacity", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (array, count, growBy, capacityIncrement, allocator),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GrowWithCapacity_ByRefMut_ByRefMut_i32_i32_0<TValue>(
@@ -437,8 +915,30 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GrowWithCapacity", (array, count, growBy, capacityIncrement))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("GrowWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GrowWithCapacity", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, count, growBy, capacityIncrement))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HaveDuplicateReferences<TFirst>(
@@ -450,8 +950,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TFirst: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HaveDuplicateReferences", (first, index, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TFirst>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                bool,
+                3usize,
+            >("HaveDuplicateReferences")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HaveDuplicateReferences", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (first, index, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HaveEqualElements<TValue>(
@@ -463,8 +982,29 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HaveEqualElements", (first, second, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    i32,
+                ),
+                bool,
+                3usize,
+            >("HaveEqualElements")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HaveEqualElements", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (first, second, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfReference_Il2CppArray_TSecond_i32_0<TFirst, TSecond>(
@@ -478,8 +1018,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TSecond: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOfReference", (array, value, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TFirst>,
+                    >,
+                    TSecond,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("IndexOfReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOfReference", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, value, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfReference_i32_1<TFirst, TSecond>(
@@ -494,8 +1053,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TSecond: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOfReference", (array, value, startIndex, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TFirst>,
+                    >,
+                    TSecond,
+                    i32,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("IndexOfReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOfReference", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, value, startIndex, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfValue<TValue>(
@@ -508,8 +1087,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOfValue", (array, value, startIndex, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    TValue,
+                    i32,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("IndexOfValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOfValue", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, value, startIndex, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf_Predicate_1_1<TValue>(
@@ -520,8 +1119,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOf", (array, predicate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Predicate_1<TValue>>,
+                ),
+                i32,
+                2usize,
+            >("IndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOf", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, predicate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf_Predicate_1_i32_i32_2<TValue>(
@@ -534,8 +1151,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOf", (array, predicate, startIndex, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Predicate_1<TValue>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("IndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOf", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, predicate, startIndex, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf_TValue_i32_i32_0<TValue>(
@@ -548,8 +1185,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IndexOf", (array, value, startIndex, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    TValue,
+                    i32,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("IndexOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IndexOf", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (array, value, startIndex, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InsertAt<TValue>(
@@ -563,8 +1220,29 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InsertAt", (array, index, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    i32,
+                    TValue,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InsertAt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InsertAt", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InsertAtWithCapacity<TValue>(
@@ -580,11 +1258,31 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InsertAtWithCapacity",
-                (array, count, index, value, capacityIncrement),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                    TValue,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("InsertAtWithCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InsertAtWithCapacity", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, count, index, value, capacityIncrement))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Join<TValue>(
@@ -597,10 +1295,24 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    TValue,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                2usize,
+            >("Join")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Join", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Join", (value, values))?;
+        > = unsafe { method.invoke_unchecked((), (value, values)) };
         Ok(__cordl_ret.into())
     }
     pub fn LengthSafe<TValue>(
@@ -610,8 +1322,19 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LengthSafe", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>),
+                i32,
+                1usize,
+            >("LengthSafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LengthSafe", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn Merge_IEqualityComparer_1_1<TValue>(
@@ -627,10 +1350,31 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEqualityComparer_1<TValue>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                3usize,
+            >("Merge")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Merge", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Merge", (first, second, comparer))?;
+        > = unsafe { method.invoke_unchecked((), (first, second, comparer)) };
         Ok(__cordl_ret.into())
     }
     pub fn Merge_Il2CppArray_Il2CppArray0<TValue>(
@@ -643,10 +1387,26 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+                2usize,
+            >("Merge")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Merge", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TValue>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Merge", (first, second))?;
+        > = unsafe { method.invoke_unchecked((), (first, second)) };
         Ok(__cordl_ret.into())
     }
     pub fn MoveSlice<TValue>(
@@ -659,8 +1419,28 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MoveSlice", (array, sourceIndex, destinationIndex, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("MoveSlice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveSlice", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, sourceIndex, destinationIndex, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PutAtIfNotSet<TValue>(
@@ -674,8 +1454,29 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PutAtIfNotSet", (array, index, valueFn))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<TValue>,
+                        >,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_1<TValue>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("PutAtIfNotSet")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PutAtIfNotSet", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, valueFn))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Resize<TValue>(
@@ -689,8 +1490,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Resize", (array, newSize, allocator))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::NativeArray_1<TValue>,
+                    >,
+                    i32,
+                    crate::Unity::Collections::Allocator,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Resize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Resize", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, newSize, allocator))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Select<TOld, TNew>(
@@ -705,10 +1525,24 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TNew: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TOld>>,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<TOld, TNew>>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TNew>>,
+                2usize,
+            >("Select")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Select", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TNew>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Select", (array, converter))?;
+        > = unsafe { method.invoke_unchecked((), (array, converter)) };
         Ok(__cordl_ret.into())
     }
     pub fn Swap<TValue>(
@@ -719,8 +1553,24 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Swap", (first, second))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<TValue>,
+                    quest_hook::libil2cpp::ByRefMut<TValue>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Swap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Swap", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (first, second))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwapElements_Il2CppArray0<TValue>(
@@ -732,8 +1582,27 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SwapElements", (array, index1, index2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<TValue>,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SwapElements")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SwapElements", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index1, index2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwapElements_NativeArray_1_1<TValue>(
@@ -745,8 +1614,21 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SwapElements", (array, index1, index2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeArray_1<TValue>, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SwapElements")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SwapElements", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index1, index2))
+        };
         Ok(__cordl_ret.into())
     }
 }

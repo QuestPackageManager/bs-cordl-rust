@@ -44,9 +44,23 @@ impl crate::UnityEngine::Networking::UnityWebRequestTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Networking::UnityWebRequest,
+                >,
+                1usize,
+            >("GetTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTexture", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetTexture", (uri))?;
+        > = unsafe { method.invoke_unchecked((), (uri)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetTexture__cordl_bool1(
@@ -55,10 +69,23 @@ impl crate::UnityEngine::Networking::UnityWebRequestTexture {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Networking::UnityWebRequest,
+                >,
+                2usize,
+            >("GetTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTexture", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequest,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTexture", (uri, nonReadable))?;
+        > = unsafe { method.invoke_unchecked((), (uri, nonReadable)) };
         Ok(__cordl_ret.into())
     }
 }

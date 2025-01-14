@@ -85,23 +85,43 @@ impl crate::GlobalNamespace::LightColorBaseData {
         strobeBrightness: f32,
         strobeFade: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    beat,
-                    usePreviousValue,
-                    easeType,
-                    colorType,
-                    brightness,
-                    strobeBeatFrequency,
-                    strobeBrightness,
-                    strobeFade,
+                    f32,
+                    bool,
+                    crate::GlobalNamespace::EaseType,
+                    crate::GlobalNamespace::EnvironmentColorType,
+                    f32,
+                    i32,
+                    f32,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        beat,
+                        usePreviousValue,
+                        easeType,
+                        colorType,
+                        brightness,
+                        strobeBeatFrequency,
+                        strobeBrightness,
+                        strobeFade,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

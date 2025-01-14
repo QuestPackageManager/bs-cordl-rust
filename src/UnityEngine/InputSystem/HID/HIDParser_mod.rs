@@ -53,8 +53,26 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
             crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseReportDescriptor", (buffer, deviceDescriptor))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("ParseReportDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseReportDescriptor", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (buffer, deviceDescriptor))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseReportDescriptor_Il2CppObject_i32_ByRefMut1(
@@ -64,11 +82,27 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
             crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ParseReportDescriptor",
-                (bufferPtr, bufferLength, deviceDescriptor),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("ParseReportDescriptor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseReportDescriptor", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (bufferPtr, bufferLength, deviceDescriptor))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadData(
@@ -76,8 +110,25 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
         currentPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         endPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadData", (itemSize, currentPtr, endPtr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                3usize,
+            >("ReadData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadData", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (itemSize, currentPtr, endPtr))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -204,19 +255,27 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateGlobal")]
 impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     pub fn GetPhysicalMax(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetPhysicalMax",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetPhysicalMax")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPhysicalMax", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPhysicalMin(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetPhysicalMin",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetPhysicalMin")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPhysicalMin", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetUsagePage(
@@ -228,11 +287,26 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateGlobal {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::HID::HID_UsagePage,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_UsagePage = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetUsagePage",
-            (index, localItemState),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal,
+                    >,
+                ),
+                crate::UnityEngine::InputSystem::HID::HID_UsagePage,
+                2usize,
+            >("GetUsagePage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUsagePage", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_UsagePage = unsafe {
+            method.invoke_unchecked(self, (index, localItemState))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -351,11 +425,15 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
     pub fn GetUsage(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetUsage",
-            (index),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), i32, 1usize>("GetUsage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUsage", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (index)) };
         Ok(__cordl_ret.into())
     }
     pub fn Reset(
@@ -363,19 +441,40 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
             crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Reset", (state))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Reset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Reset", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (state))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetUsage(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetUsage",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("SetUsage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetUsage", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -610,8 +709,29 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindOrAddReport", (reportId, reportType, reports))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Nullable_1<i32>,
+                    crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
+                        >,
+                    >,
+                ),
+                i32,
+                3usize,
+            >("FindOrAddReport")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindOrAddReport", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (reportId, reportType, reports))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -115,11 +115,25 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Subscribe",
-            (observer),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::IObserver_1<
+                        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+                1usize,
+            >("Subscribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subscribe", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = unsafe {
+            method.invoke_unchecked(self, (observer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Addition(
@@ -133,8 +147,31 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventListener = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Addition", (_cordl__, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        >,
+                    >,
+                ),
+                crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+                2usize,
+            >("op_Addition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Addition", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventListener = unsafe {
+            method.invoke_unchecked((), (_cordl__, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Subtraction(
@@ -148,8 +185,31 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventListener = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Subtraction", (_cordl__, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Action_2<
+                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputDevice,
+                            >,
+                        >,
+                    >,
+                ),
+                crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+                2usize,
+            >("op_Subtraction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Subtraction", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventListener = unsafe {
+            method.invoke_unchecked((), (_cordl__, callback))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -242,11 +302,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObs
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -259,11 +325,17 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObs
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -365,21 +437,42 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState
         eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<.ctor>b__2_0", (eventPtr, device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::InputDevice,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("<.ctor>b__2_0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<.ctor>b__2_0", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (eventPtr, device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

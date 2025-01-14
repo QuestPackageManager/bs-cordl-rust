@@ -43,8 +43,24 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         destination: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyMaterialPresetProperties", (source, destination))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CopyMaterialPresetProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyMaterialPresetProperties", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (source, destination))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFallbackMaterial_FontAsset_i32_1(
@@ -56,8 +72,27 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFallbackMaterial", (fontAsset, sourceMaterial, atlasIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::FontAsset,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                3usize,
+            >("GetFallbackMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFallbackMaterial", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (fontAsset, sourceMaterial, atlasIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFallbackMaterial_Material0(
@@ -66,8 +101,24 @@ impl crate::UnityEngine::TextCore::Text::MaterialManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFallbackMaterial", (sourceMaterial, targetMaterial))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                2usize,
+            >("GetFallbackMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFallbackMaterial", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (sourceMaterial, targetMaterial))
+        };
         Ok(__cordl_ret.into())
     }
 }

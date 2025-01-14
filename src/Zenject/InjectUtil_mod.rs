@@ -49,10 +49,29 @@ impl crate::Zenject::InjectUtil {
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                1usize,
+            >("CreateArgList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateArgList", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateArgList", (args))?;
+        > = unsafe { method.invoke_unchecked((), (args)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgListExplicit_T0<T>(
@@ -66,10 +85,25 @@ impl crate::Zenject::InjectUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                1usize,
+            >("CreateArgListExplicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateArgListExplicit", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateArgListExplicit", (param))?;
+        > = unsafe { method.invoke_unchecked((), (param)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgListExplicit_TParam1_TParam2_1<TParam1, TParam2>(
@@ -86,10 +120,25 @@ impl crate::Zenject::InjectUtil {
         TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (TParam1, TParam2),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                2usize,
+            >("CreateArgListExplicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateArgListExplicit", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateArgListExplicit", (param1, param2))?;
+        > = unsafe { method.invoke_unchecked((), (param1, param2)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgListExplicit_TParam1_TParam2_TParam3_2<TParam1, TParam2, TParam3>(
@@ -109,10 +158,25 @@ impl crate::Zenject::InjectUtil {
         TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (TParam1, TParam2, TParam3),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                3usize,
+            >("CreateArgListExplicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateArgListExplicit", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateArgListExplicit", (param1, param2, param3))?;
+        > = unsafe { method.invoke_unchecked((), (param1, param2, param3)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgListExplicit_TParam1_TParam2_TParam3_TParam4_3<
@@ -140,10 +204,25 @@ impl crate::Zenject::InjectUtil {
         TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (TParam1, TParam2, TParam3, TParam4),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                4usize,
+            >("CreateArgListExplicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateArgListExplicit", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateArgListExplicit", (param1, param2, param3, param4))?;
+        > = unsafe { method.invoke_unchecked((), (param1, param2, param3, param4)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgListExplicit_TParam1_TParam2_TParam3_TParam4_TParam5_4<
@@ -175,10 +254,27 @@ impl crate::Zenject::InjectUtil {
         TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (TParam1, TParam2, TParam3, TParam4, TParam5),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                5usize,
+            >("CreateArgListExplicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateArgListExplicit", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateArgListExplicit", (param1, param2, param3, param4, param5))?;
+        > = unsafe {
+            method.invoke_unchecked((), (param1, param2, param3, param4, param5))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateArgListExplicit_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_5<
@@ -214,13 +310,27 @@ impl crate::Zenject::InjectUtil {
         TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (TParam1, TParam2, TParam3, TParam4, TParam5, TParam6),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                6usize,
+            >("CreateArgListExplicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateArgListExplicit", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateArgListExplicit",
-                (param1, param2, param3, param4, param5, param6),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (param1, param2, param3, param4, param5, param6))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTypePair<T>(
@@ -230,8 +340,21 @@ impl crate::Zenject::InjectUtil {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Zenject::TypeValuePair = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateTypePair", (param))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (T),
+                crate::Zenject::TypeValuePair,
+                1usize,
+            >("CreateTypePair")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateTypePair", 1usize
+                )
+            });
+        let __cordl_ret: crate::Zenject::TypeValuePair = unsafe {
+            method.invoke_unchecked((), (param))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopValueWithType(
@@ -243,8 +366,31 @@ impl crate::Zenject::InjectUtil {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PopValueWithType", (extraArgMap, injectedFieldType, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::Zenject::TypeValuePair,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("PopValueWithType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopValueWithType", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (extraArgMap, injectedFieldType, value))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -41,8 +41,21 @@ impl crate::Oculus::Platform::GroupPresence {
     pub fn Clear() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Clear", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                0usize,
+            >("Clear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clear", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetInvitableUsers(
@@ -54,12 +67,29 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::InviteOptions>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::UserList,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetInvitableUsers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInvitableUsers", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInvitableUsers", (options))?;
+        > = unsafe { method.invoke_unchecked((), (options)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextApplicationInviteListPage(
@@ -75,14 +105,33 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ApplicationInviteList,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::ApplicationInviteList,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetNextApplicationInviteListPage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNextApplicationInviteListPage", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::ApplicationInviteList,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNextApplicationInviteListPage", (list))?;
+        > = unsafe { method.invoke_unchecked((), (list)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSentInvites() -> quest_hook::libil2cpp::Result<
@@ -94,13 +143,31 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::ApplicationInviteList,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetSentInvites")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSentInvites", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::ApplicationInviteList,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSentInvites", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchInvitePanel(
@@ -114,14 +181,31 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::InviteOptions>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::InvitePanelResultInfo,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("LaunchInvitePanel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LaunchInvitePanel", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::InvitePanelResultInfo,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LaunchInvitePanel", (options))?;
+        > = unsafe { method.invoke_unchecked((), (options)) };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchMultiplayerErrorDialog(
@@ -131,8 +215,23 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LaunchMultiplayerErrorDialog", (options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::MultiplayerErrorOptions,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("LaunchMultiplayerErrorDialog")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LaunchMultiplayerErrorDialog", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchRejoinDialog(
@@ -150,17 +249,41 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::RejoinDialogResult,
+                        >,
+                    >,
+                >,
+                3usize,
+            >("LaunchRejoinDialog")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LaunchRejoinDialog", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::RejoinDialogResult,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "LaunchRejoinDialog",
-                (lobby_session_id, match_session_id, destination_api_name),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (lobby_session_id, match_session_id, destination_api_name),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LaunchRosterPanel(
@@ -168,8 +291,21 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LaunchRosterPanel", (options))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::Oculus::Platform::RosterOptions>),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("LaunchRosterPanel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LaunchRosterPanel", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (options))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendInvites(
@@ -183,14 +319,31 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::SendInvitesResult,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("SendInvites")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendInvites", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::SendInvitesResult,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SendInvites", (userIDs))?;
+        > = unsafe { method.invoke_unchecked((), (userIDs)) };
         Ok(__cordl_ret.into())
     }
     pub fn Set(
@@ -200,8 +353,23 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Set", (groupPresenceOptions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::GroupPresenceOptions,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("Set")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Set", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (groupPresenceOptions))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetDeeplinkMessageOverride(
@@ -209,8 +377,21 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetDeeplinkMessageOverride", (deeplink_message))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("SetDeeplinkMessageOverride")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetDeeplinkMessageOverride", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (deeplink_message))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetDestination(
@@ -218,8 +399,21 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetDestination", (api_name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("SetDestination")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetDestination", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (api_name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetInvitationsSentNotificationCallback(
@@ -231,8 +425,27 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetInvitationsSentNotificationCallback", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Message_1_Callback<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetInvitationsSentNotificationCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetInvitationsSentNotificationCallback", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIsJoinable(
@@ -240,8 +453,21 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetIsJoinable", (is_joinable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (bool),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("SetIsJoinable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIsJoinable", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (is_joinable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetJoinIntentReceivedNotificationCallback(
@@ -253,8 +479,27 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetJoinIntentReceivedNotificationCallback", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Message_1_Callback<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetJoinIntentReceivedNotificationCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetJoinIntentReceivedNotificationCallback", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetLeaveIntentReceivedNotificationCallback(
@@ -266,8 +511,27 @@ impl crate::Oculus::Platform::GroupPresence {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetLeaveIntentReceivedNotificationCallback", (callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Message_1_Callback<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetLeaveIntentReceivedNotificationCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetLeaveIntentReceivedNotificationCallback", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetLobbySession(
@@ -275,8 +539,21 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetLobbySession", (id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("SetLobbySession")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetLobbySession", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (id))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMatchSession(
@@ -284,8 +561,21 @@ impl crate::Oculus::Platform::GroupPresence {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetMatchSession", (id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+                1usize,
+            >("SetMatchSession")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMatchSession", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = unsafe {
+            method.invoke_unchecked((), (id))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -49,13 +49,29 @@ impl crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::IReadonlyBeatmapData,
+                    >,
+                    crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+                3usize,
+            >("CreateTransformedData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateTransformedData", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateTransformedData",
-                (beatmapData, enabledObstaclesType, noBombs),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (beatmapData, enabledObstaclesType, noBombs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldUseBeatmapDataItem(
@@ -65,11 +81,25 @@ impl crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
         enabledObstaclesType: crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType,
         noBombs: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ShouldUseBeatmapDataItem",
-                (beatmapDataItem, enabledObstaclesType, noBombs),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+                    crate::GlobalNamespace::GameplayModifiers_EnabledObstacleType,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("ShouldUseBeatmapDataItem")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldUseBeatmapDataItem", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (beatmapDataItem, enabledObstaclesType, noBombs))
+        };
         Ok(__cordl_ret.into())
     }
 }

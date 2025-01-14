@@ -48,14 +48,35 @@ impl crate::OVR::OpenVR::CVRResources {
         pchPathBuffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         unBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke(
-                "GetResourceFullPath",
-                (pchResourceName, pchResourceTypeDirectory, pchPathBuffer, unBufferLen),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                    u32,
+                ),
+                u32,
+                4usize,
+            >("GetResourceFullPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetResourceFullPath", 4usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        pchResourceName,
+                        pchResourceTypeDirectory,
+                        pchPathBuffer,
+                        unBufferLen,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSharedResource(
@@ -64,11 +85,25 @@ impl crate::OVR::OpenVR::CVRResources {
         pchBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         unBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: u32 = __cordl_object
-            .invoke("LoadSharedResource", (pchResourceName, pchBuffer, unBufferLen))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u32,
+                ),
+                u32,
+                3usize,
+            >("LoadSharedResource")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadSharedResource", 3usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe {
+            method.invoke_unchecked(self, (pchResourceName, pchBuffer, unBufferLen))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -84,11 +119,21 @@ impl crate::OVR::OpenVR::CVRResources {
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pInterface))
+        };
         Ok(__cordl_ret.into())
     }
 }

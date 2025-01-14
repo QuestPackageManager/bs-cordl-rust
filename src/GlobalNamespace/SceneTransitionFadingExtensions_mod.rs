@@ -42,8 +42,21 @@ impl crate::GlobalNamespace::SceneTransitionFadingExtensions {
     pub fn ShouldFadeOnSceneTransition(
         sceneTransitionType: crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldFadeOnSceneTransition", (sceneTransitionType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::GameScenesManager_SceneTransitionType),
+                bool,
+                1usize,
+            >("ShouldFadeOnSceneTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldFadeOnSceneTransition", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (sceneTransitionType))
+        };
         Ok(__cordl_ret.into())
     }
 }

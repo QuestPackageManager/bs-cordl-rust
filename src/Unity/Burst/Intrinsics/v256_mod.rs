@@ -100,11 +100,17 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         &mut self,
         f: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (f),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (f))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_f32_f32_f32_f32_f32_f32_f32_13(
@@ -118,22 +124,38 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         g: f32,
         h: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f32, f32, f32, f32, f32, f32, f32, f32),
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_14(
         &mut self,
         f: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (f),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (f))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_f64_f64_f64_15(
@@ -143,22 +165,38 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         c: f64,
         d: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (f64, f64, f64, f64),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (a, b, c, d))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i16_4(
         &mut self,
         v: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i16), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_i16_5(
@@ -180,22 +218,56 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         o: i16,
         p: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                    i16,
+                ),
+                quest_hook::libil2cpp::Void,
+                16usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 16usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_8(
         &mut self,
         v: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_i32_i32_i32_i32_i32_9(
@@ -209,22 +281,38 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         g: i32,
         h: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, i32, i32, i32, i32, i32, i32, i32),
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_16(
         &mut self,
         f: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (f),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (f))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i64_i64_i64_i64_17(
@@ -234,22 +322,38 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         c: i64,
         d: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i64, i64, i64, i64),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (a, b, c, d))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i8_2(
         &mut self,
         b: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (b),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i8), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (b))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_i8_3(
@@ -287,55 +391,108 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         E: i8,
         F: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (
-                a,
-                b,
-                c,
-                d,
-                e,
-                f,
-                g,
-                h,
-                i,
-                j,
-                k,
-                l,
-                m,
-                n,
-                o,
-                p,
-                q,
-                r,
-                s,
-                t,
-                u,
-                v,
-                w,
-                x,
-                y,
-                z,
-                A,
-                B,
-                C,
-                D,
-                E,
-                F,
-            ),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                    i8,
+                ),
+                quest_hook::libil2cpp::Void,
+                32usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 32usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        a,
+                        b,
+                        c,
+                        d,
+                        e,
+                        f,
+                        g,
+                        h,
+                        i,
+                        j,
+                        k,
+                        l,
+                        m,
+                        n,
+                        o,
+                        p,
+                        q,
+                        r,
+                        s,
+                        t,
+                        u,
+                        v,
+                        w,
+                        x,
+                        y,
+                        z,
+                        A,
+                        B,
+                        C,
+                        D,
+                        E,
+                        F,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u16_6(
         &mut self,
         v: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u16), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u16_u16_u16_u16_u16_u16_u16_u16_u16_u16_u16_u16_u16_u16_u16_u16_7(
@@ -357,22 +514,56 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         o: u16,
         p: u16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                    u16,
+                ),
+                quest_hook::libil2cpp::Void,
+                16usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 16usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(self, (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_10(
         &mut self,
         v: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u32_u32_u32_u32_u32_u32_u32_u32_11(
@@ -386,22 +577,38 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         g: u32,
         h: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d, e, f, g, h),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u32, u32, u32, u32, u32, u32, u32, u32),
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (a, b, c, d, e, f, g, h))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u64_18(
         &mut self,
         f: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (f),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (f))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u64_u64_u64_u64_19(
@@ -411,22 +618,38 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         c: u64,
         d: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (a, b, c, d),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u64, u64, u64, u64),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (a, b, c, d))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_0(
         &mut self,
         b: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (b),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(u8), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (b))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_u8_1(
@@ -464,44 +687,91 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         E: u8,
         F: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (
-                a,
-                b,
-                c,
-                d,
-                e,
-                f,
-                g,
-                h,
-                i,
-                j,
-                k,
-                l,
-                m,
-                n,
-                o,
-                p,
-                q,
-                r,
-                s,
-                t,
-                u,
-                v,
-                w,
-                x,
-                y,
-                z,
-                A,
-                B,
-                C,
-                D,
-                E,
-                F,
-            ),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                    u8,
+                ),
+                quest_hook::libil2cpp::Void,
+                32usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 32usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        a,
+                        b,
+                        c,
+                        d,
+                        e,
+                        f,
+                        g,
+                        h,
+                        i,
+                        j,
+                        k,
+                        l,
+                        m,
+                        n,
+                        o,
+                        p,
+                        q,
+                        r,
+                        s,
+                        t,
+                        u,
+                        v,
+                        w,
+                        x,
+                        y,
+                        z,
+                        A,
+                        B,
+                        C,
+                        D,
+                        E,
+                        F,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_v128_v128_20(
@@ -509,11 +779,24 @@ impl crate::Unity::Burst::Intrinsics::v256 {
         lo: crate::Unity::Burst::Intrinsics::v128,
         hi: crate::Unity::Burst::Intrinsics::v128,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (lo, hi),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Burst::Intrinsics::v128,
+                    crate::Unity::Burst::Intrinsics::v128,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (lo, hi))
+        };
         Ok(__cordl_ret.into())
     }
 }

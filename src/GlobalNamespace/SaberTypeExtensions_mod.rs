@@ -41,37 +41,102 @@ impl crate::GlobalNamespace::SaberTypeExtensions {
     pub fn MainSaber(
         leftHanded: bool,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
-        let __cordl_ret: crate::GlobalNamespace::SaberType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MainSaber", (leftHanded))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (bool),
+                crate::GlobalNamespace::SaberType,
+                1usize,
+            >("MainSaber")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MainSaber", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::SaberType = unsafe {
+            method.invoke_unchecked((), (leftHanded))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchesColorType(
         saberType: crate::GlobalNamespace::SaberType,
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MatchesColorType", (saberType, colorType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::SaberType, crate::GlobalNamespace::ColorType),
+                bool,
+                2usize,
+            >("MatchesColorType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchesColorType", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (saberType, colorType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Node(
         saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::XRNode> {
-        let __cordl_ret: crate::UnityEngine::XR::XRNode = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Node", (saberType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::SaberType),
+                crate::UnityEngine::XR::XRNode,
+                1usize,
+            >("Node")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Node", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::XR::XRNode = unsafe {
+            method.invoke_unchecked((), (saberType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToColorType(
         saberType: crate::GlobalNamespace::SaberType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
-        let __cordl_ret: crate::GlobalNamespace::ColorType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToColorType", (saberType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::SaberType),
+                crate::GlobalNamespace::ColorType,
+                1usize,
+            >("ToColorType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToColorType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
+            method.invoke_unchecked((), (saberType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToSaberType(
         colorType: crate::GlobalNamespace::ColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
-        let __cordl_ret: crate::GlobalNamespace::SaberType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToSaberType", (colorType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::ColorType),
+                crate::GlobalNamespace::SaberType,
+                1usize,
+            >("ToSaberType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToSaberType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::SaberType = unsafe {
+            method.invoke_unchecked((), (colorType))
+        };
         Ok(__cordl_ret.into())
     }
 }

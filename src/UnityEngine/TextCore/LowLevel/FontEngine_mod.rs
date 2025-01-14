@@ -51,27 +51,82 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenericListToMarshallingArray", (srcList, dstArray))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GenericListToMarshallingArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenericListToMarshallingArray", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (srcList, dstArray))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceInfo() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::FaceInfo,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::FaceInfo = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceInfo", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::TextCore::FaceInfo,
+                0usize,
+            >("GetFaceInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFaceInfo", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::FaceInfo = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFaceInfo_Internal(
         faceInfo: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::TextCore::FaceInfo>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFaceInfo_Internal", (faceInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::UnityEngine::TextCore::FaceInfo,
+                >),
+                i32,
+                1usize,
+            >("GetFaceInfo_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFaceInfo_Internal", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (faceInfo)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlyphIndex(unicode: u32) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetGlyphIndex", (unicode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(u32), u32, 1usize>("GetGlyphIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetGlyphIndex", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (unicode)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlyphPairAdjustmentRecords(
@@ -86,12 +141,32 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u32>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+                    >,
+                >,
+                2usize,
+            >("GetGlyphPairAdjustmentRecords")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetGlyphPairAdjustmentRecords", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetGlyphPairAdjustmentRecords", (glyphIndexes, recordCount))?;
+        > = unsafe { method.invoke_unchecked((), (glyphIndexes, recordCount)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetGlyphPairAdjustmentTable(
@@ -103,12 +178,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+                    >,
+                >,
+                1usize,
+            >("GetGlyphPairAdjustmentTable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetGlyphPairAdjustmentTable", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetGlyphPairAdjustmentTable", (glyphIndexes))?;
+        > = unsafe { method.invoke_unchecked((), (glyphIndexes)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPairAdjustmentRecordsFromMarshallingArray(
@@ -120,23 +210,59 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetPairAdjustmentRecordsFromMarshallingArray",
-                (glyphPairAdjustmentRecords),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
+                        >,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("GetPairAdjustmentRecordsFromMarshallingArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPairAdjustmentRecordsFromMarshallingArray", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (glyphPairAdjustmentRecords))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeFontEngine() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitializeFontEngine", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+                0usize,
+            >("InitializeFontEngine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitializeFontEngine", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeFontEngine_Internal() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitializeFontEngine_Internal", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("InitializeFontEngine_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitializeFontEngine_Internal", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_Font_i32_1(
@@ -145,8 +271,21 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace", (font, pointSize))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32),
+                crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+                2usize,
+            >("LoadFontFace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = unsafe {
+            method.invoke_unchecked((), (font, pointSize))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_Font_i32_i32_2(
@@ -156,8 +295,21 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace", (font, pointSize, faceIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32, i32),
+                crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+                3usize,
+            >("LoadFontFace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = unsafe {
+            method.invoke_unchecked((), (font, pointSize, faceIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_Il2CppString_Il2CppString_i32_3(
@@ -167,8 +319,25 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace", (familyName, styleName, pointSize))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+                3usize,
+            >("LoadFontFace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = unsafe {
+            method.invoke_unchecked((), (familyName, styleName, pointSize))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_Il2CppString_i32_i32_0(
@@ -178,8 +347,25 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextCore::LowLevel::FontEngineError,
     > {
-        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace", (filePath, pointSize, faceIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                crate::UnityEngine::TextCore::LowLevel::FontEngineError,
+                3usize,
+            >("LoadFontFace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::FontEngineError = unsafe {
+            method.invoke_unchecked((), (filePath, pointSize, faceIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_With_Size_And_FaceIndex_Internal(
@@ -187,19 +373,44 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         pointSize: i32,
         faceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "LoadFontFace_With_Size_And_FaceIndex_Internal",
-                (filePath, pointSize, faceIndex),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("LoadFontFace_With_Size_And_FaceIndex_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace_With_Size_And_FaceIndex_Internal", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (filePath, pointSize, faceIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_With_Size_FromFont_Internal(
         font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         pointSize: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFontFace_With_Size_FromFont_Internal", (font, pointSize))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32),
+                i32,
+                2usize,
+            >("LoadFontFace_With_Size_FromFont_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace_With_Size_FromFont_Internal", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (font, pointSize)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal(
@@ -207,11 +418,22 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         pointSize: i32,
         faceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal",
-                (font, pointSize, faceIndex),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>, i32, i32),
+                i32,
+                3usize,
+            >("LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal",
+                    3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (font, pointSize, faceIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal(
@@ -219,29 +441,71 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         pointSize: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal",
-                (familyName, styleName, pointSize),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                i32,
+                3usize,
+            >("LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal",
+                    3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (familyName, styleName, pointSize))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopulatePairAdjustmentRecordMarshallingArray_from_KernTable(
         glyphIndexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         recordCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PopulatePairAdjustmentRecordMarshallingArray_from_KernTable",
-                (glyphIndexes, recordCount),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                i32,
+                2usize,
+            >("PopulatePairAdjustmentRecordMarshallingArray_from_KernTable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopulatePairAdjustmentRecordMarshallingArray_from_KernTable",
+                    2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (glyphIndexes, recordCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResetAtlasTexture(
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ResetAtlasTexture", (texture))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ResetAtlasTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResetAtlasTexture", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (texture))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMarshallingArraySize<T>(
@@ -254,15 +518,46 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetMarshallingArraySize", (marshallingArray, recordCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetMarshallingArraySize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMarshallingArraySize", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (marshallingArray, recordCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTextureUploadMode(
         shouldUploadImmediately: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetTextureUploadMode", (shouldUploadImmediately))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetTextureUploadMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTextureUploadMode", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (shouldUploadImmediately))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryAddGlyphToTexture(
@@ -285,20 +580,53 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryAddGlyphToTexture",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    glyphIndex,
-                    padding,
-                    packingMode,
-                    freeGlyphRects,
-                    usedGlyphRects,
-                    renderMode,
-                    texture,
-                    glyph,
+                    u32,
+                    i32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::TextCore::GlyphRect,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::TextCore::GlyphRect,
+                        >,
+                    >,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+                    >,
                 ),
-            )?;
+                bool,
+                8usize,
+            >("TryAddGlyphToTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryAddGlyphToTexture", 8usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        glyphIndex,
+                        padding,
+                        packingMode,
+                        freeGlyphRects,
+                        usedGlyphRects,
+                        renderMode,
+                        texture,
+                        glyph,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryAddGlyphToTexture_Internal(
@@ -327,22 +655,61 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryAddGlyphToTexture_Internal",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    glyphIndex,
-                    padding,
-                    packingMode,
-                    freeGlyphRects,
-                    freeGlyphRectCount,
-                    usedGlyphRects,
-                    usedGlyphRectCount,
-                    renderMode,
-                    texture,
-                    glyph,
+                    u32,
+                    i32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
+                    >,
                 ),
-            )?;
+                bool,
+                10usize,
+            >("TryAddGlyphToTexture_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryAddGlyphToTexture_Internal", 10usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        glyphIndex,
+                        padding,
+                        packingMode,
+                        freeGlyphRects,
+                        freeGlyphRectCount,
+                        usedGlyphRects,
+                        usedGlyphRectCount,
+                        renderMode,
+                        texture,
+                        glyph,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryAddGlyphsToTexture(
@@ -371,20 +738,61 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryAddGlyphsToTexture",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    glyphIndexes,
-                    padding,
-                    packingMode,
-                    freeGlyphRects,
-                    usedGlyphRects,
-                    renderMode,
-                    texture,
-                    glyphs,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<u32>,
+                    >,
+                    i32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::TextCore::GlyphRect,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::TextCore::GlyphRect,
+                        >,
+                    >,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Glyph,
+                                >,
+                            >,
+                        >,
+                    >,
                 ),
-            )?;
+                bool,
+                8usize,
+            >("TryAddGlyphsToTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryAddGlyphsToTexture", 8usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        glyphIndexes,
+                        padding,
+                        packingMode,
+                        freeGlyphRects,
+                        usedGlyphRects,
+                        renderMode,
+                        texture,
+                        glyphs,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryAddGlyphsToTexture_Internal(
@@ -418,23 +826,67 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         >,
         glyphCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryAddGlyphsToTexture_Internal",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    glyphIndex,
-                    padding,
-                    packingMode,
-                    freeGlyphRects,
-                    freeGlyphRectCount,
-                    usedGlyphRects,
-                    usedGlyphRectCount,
-                    renderMode,
-                    texture,
-                    glyphs,
-                    glyphCount,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+                    i32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
                 ),
-            )?;
+                bool,
+                11usize,
+            >("TryAddGlyphsToTexture_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryAddGlyphsToTexture_Internal", 11usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        glyphIndex,
+                        padding,
+                        packingMode,
+                        freeGlyphRects,
+                        freeGlyphRectCount,
+                        usedGlyphRects,
+                        usedGlyphRectCount,
+                        renderMode,
+                        texture,
+                        glyphs,
+                        glyphCount,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetGlyphWithIndexValue(
@@ -444,8 +896,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetGlyphWithIndexValue", (glyphIndex, flags, glyph))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryGetGlyphWithIndexValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetGlyphWithIndexValue", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (glyphIndex, flags, glyph))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetGlyphWithIndexValue_Internal(
@@ -455,11 +926,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryGetGlyphWithIndexValue_Internal",
-                (glyphIndex, loadFlags, glyphStruct),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryGetGlyphWithIndexValue_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetGlyphWithIndexValue_Internal", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (glyphIndex, loadFlags, glyphStruct))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetGlyphWithUnicodeValue(
@@ -469,8 +956,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetGlyphWithUnicodeValue", (unicode, flags, glyph))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryGetGlyphWithUnicodeValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetGlyphWithUnicodeValue", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (unicode, flags, glyph))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetGlyphWithUnicodeValue_Internal(
@@ -480,11 +986,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryGetGlyphWithUnicodeValue_Internal",
-                (unicode, loadFlags, glyphStruct),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    crate::UnityEngine::TextCore::LowLevel::GlyphLoadFlags,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::TextCore::LowLevel::GlyphMarshallingStruct,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryGetGlyphWithUnicodeValue_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetGlyphWithUnicodeValue_Internal", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (unicode, loadFlags, glyphStruct))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSystemFontReference(
@@ -494,8 +1016,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             crate::UnityEngine::TextCore::LowLevel::FontReference,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetSystemFontReference", (familyName, styleName, fontRef))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::TextCore::LowLevel::FontReference,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryGetSystemFontReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetSystemFontReference", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (familyName, styleName, fontRef))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetSystemFontReference_Internal(
@@ -505,11 +1046,27 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
             crate::UnityEngine::TextCore::LowLevel::FontReference,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryGetSystemFontReference_Internal",
-                (familyName, styleName, fontRef),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::TextCore::LowLevel::FontReference,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryGetSystemFontReference_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetSystemFontReference_Internal", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (familyName, styleName, fontRef))
+        };
         Ok(__cordl_ret.into())
     }
 }

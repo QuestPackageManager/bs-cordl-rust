@@ -43,16 +43,45 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         dheGroups: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddNegotiatedDheGroupsClientExtension", (extensions, dheGroups))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddNegotiatedDheGroupsClientExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddNegotiatedDheGroupsClientExtension", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (extensions, dheGroups))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddNegotiatedDheGroupsServerExtension(
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
         dheGroup: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddNegotiatedDheGroupsServerExtension", (extensions, dheGroup))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>, u8),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AddNegotiatedDheGroupsServerExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddNegotiatedDheGroupsServerExtension", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (extensions, dheGroup))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AreCompatibleParameters(
@@ -63,8 +92,26 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AreCompatibleParameters", (a, b))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("AreCompatibleParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AreCompatibleParameters", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (a, b)) };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateDHBasicAgreement(
@@ -77,17 +124,46 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                2usize,
+            >("CalculateDHBasicAgreement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CalculateDHBasicAgreement", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CalculateDHBasicAgreement", (publicKey, privateKey))?;
+        > = unsafe { method.invoke_unchecked((), (publicKey, privateKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn ContainsDheCipherSuites(
         cipherSuites: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ContainsDheCipherSuites", (cipherSuites))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
+                bool,
+                1usize,
+            >("ContainsDheCipherSuites")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ContainsDheCipherSuites", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cipherSuites)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNegotiatedDheGroupsClientExtension(
@@ -95,10 +171,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("CreateNegotiatedDheGroupsClientExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNegotiatedDheGroupsClientExtension", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateNegotiatedDheGroupsClientExtension", (dheGroups))?;
+        > = unsafe { method.invoke_unchecked((), (dheGroups)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateNegotiatedDheGroupsServerExtension(
@@ -106,10 +193,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u8),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("CreateNegotiatedDheGroupsServerExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNegotiatedDheGroupsServerExtension", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateNegotiatedDheGroupsServerExtension", (dheGroup))?;
+        > = unsafe { method.invoke_unchecked((), (dheGroup)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromHex(
@@ -117,9 +215,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                1usize,
+            >("FromHex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromHex", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromHex", (hex))?;
+        > = unsafe { method.invoke_unchecked((), (hex)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromSafeP(
@@ -129,9 +239,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                >,
+                1usize,
+            >("FromSafeP")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromSafeP", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromSafeP", (hexP))?;
+        > = unsafe { method.invoke_unchecked((), (hexP)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateDHKeyPair(
@@ -146,10 +270,30 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Security::SecureRandom,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
+                >,
+                2usize,
+            >("GenerateDHKeyPair")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateDHKeyPair", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateDHKeyPair", (random, dhParams))?;
+        > = unsafe { method.invoke_unchecked((), (random, dhParams)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateEphemeralClientKeyExchange(
@@ -165,10 +309,31 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Security::SecureRandom,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+                >,
+                3usize,
+            >("GenerateEphemeralClientKeyExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateEphemeralClientKeyExchange", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateEphemeralClientKeyExchange", (random, dhParams, output))?;
+        > = unsafe { method.invoke_unchecked((), (random, dhParams, output)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateEphemeralServerKeyExchange(
@@ -184,10 +349,31 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Security::SecureRandom,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
+                >,
+                3usize,
+            >("GenerateEphemeralServerKeyExchange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateEphemeralServerKeyExchange", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DHPrivateKeyParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateEphemeralServerKeyExchange", (random, dhParams, output))?;
+        > = unsafe { method.invoke_unchecked((), (random, dhParams, output)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNegotiatedDheGroupsClientExtension(
@@ -195,17 +381,39 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("GetNegotiatedDheGroupsClientExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNegotiatedDheGroupsClientExtension", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNegotiatedDheGroupsClientExtension", (extensions))?;
+        > = unsafe { method.invoke_unchecked((), (extensions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNegotiatedDheGroupsServerExtension(
         extensions: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNegotiatedDheGroupsServerExtension", (extensions))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>),
+                i16,
+                1usize,
+            >("GetNegotiatedDheGroupsServerExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNegotiatedDheGroupsServerExtension", 1usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (extensions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetParametersForDHEGroup(
@@ -215,15 +423,35 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i16),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                >,
+                1usize,
+            >("GetParametersForDHEGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParametersForDHEGroup", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParametersForDHEGroup", (dheGroup))?;
+        > = unsafe { method.invoke_unchecked((), (dheGroup)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsDheCipherSuite(cipherSuite: i32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsDheCipherSuite", (cipherSuite))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), bool, 1usize>("IsDheCipherSuite")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsDheCipherSuite", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cipherSuite)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -238,10 +466,21 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+                1usize,
+            >("ReadDHParameter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadDHParameter", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Math::BigInteger,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadDHParameter", (input))?;
+        > = unsafe { method.invoke_unchecked((), (input)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadDHParameters(
@@ -251,10 +490,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                >,
+                1usize,
+            >("ReadDHParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadDHParameters", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadDHParameters", (input))?;
+        > = unsafe { method.invoke_unchecked((), (input)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadNegotiatedDheGroupsClientExtension(
@@ -262,17 +514,39 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("ReadNegotiatedDheGroupsClientExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadNegotiatedDheGroupsClientExtension", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadNegotiatedDheGroupsClientExtension", (extensionData))?;
+        > = unsafe { method.invoke_unchecked((), (extensionData)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadNegotiatedDheGroupsServerExtension(
         extensionData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadNegotiatedDheGroupsServerExtension", (extensionData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                u8,
+                1usize,
+            >("ReadNegotiatedDheGroupsServerExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadNegotiatedDheGroupsServerExtension", 1usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (extensionData)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReceiveDHParameters(
@@ -285,18 +559,54 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Tls::TlsDHVerifier,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                >,
+                2usize,
+            >("ReceiveDHParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReceiveDHParameters", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReceiveDHParameters", (dhVerifier, input))?;
+        > = unsafe { method.invoke_unchecked((), (dhVerifier, input)) };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDHParameter(
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteDHParameter", (x, output))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Math::BigInteger,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WriteDHParameter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteDHParameter", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (x, output))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDHParameters(
@@ -305,18 +615,42 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsDHUtilities {
         >,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteDHParameters", (dhParameters, output))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WriteDHParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteDHParameters", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (dhParameters, output))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

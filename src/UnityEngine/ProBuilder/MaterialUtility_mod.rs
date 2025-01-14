@@ -42,8 +42,19 @@ impl crate::UnityEngine::ProBuilder::MaterialUtility {
     pub fn GetMaterialCount(
         renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMaterialCount", (renderer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>),
+                i32,
+                1usize,
+            >("GetMaterialCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMaterialCount", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (renderer)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSharedMaterial(
@@ -52,8 +63,21 @@ impl crate::UnityEngine::ProBuilder::MaterialUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSharedMaterial", (renderer, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>, i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                2usize,
+            >("GetSharedMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSharedMaterial", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (renderer, index))
+        };
         Ok(__cordl_ret.into())
     }
 }

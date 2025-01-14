@@ -131,25 +131,39 @@ impl crate::GlobalNamespace::NetworkStatisticsState {
         encryptionProcessingTime: i64,
         decryptionProcessingTime: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (
-                packetsSent,
-                packetsReceived,
-                bytesSent,
-                bytesReceived,
-                packetsLost,
-                packetsSentEncrypted,
-                packetsSentPlaintext,
-                packetsSentRejected,
-                packetsReceivedEncrypted,
-                packetsReceivedPlaintext,
-                packetsReceivedRejected,
-                encryptionProcessingTime,
-                decryptionProcessingTime,
-            ),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i64, i64, i64, i64, i64, i64, i64, i64, i64, i64, i64, i64, i64),
+                quest_hook::libil2cpp::Void,
+                13usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 13usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        packetsSent,
+                        packetsReceived,
+                        bytesSent,
+                        bytesReceived,
+                        packetsLost,
+                        packetsSentEncrypted,
+                        packetsSentPlaintext,
+                        packetsSentRejected,
+                        packetsReceivedEncrypted,
+                        packetsReceivedPlaintext,
+                        packetsReceivedRejected,
+                        encryptionProcessingTime,
+                        decryptionProcessingTime,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Subtraction(
@@ -160,8 +174,28 @@ impl crate::GlobalNamespace::NetworkStatisticsState {
             crate::GlobalNamespace::NetworkStatisticsState,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NetworkStatisticsDelta> {
-        let __cordl_ret: crate::GlobalNamespace::NetworkStatisticsDelta = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Subtraction", (a, b))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::NetworkStatisticsState,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::NetworkStatisticsState,
+                    >,
+                ),
+                crate::GlobalNamespace::NetworkStatisticsDelta,
+                2usize,
+            >("op_Subtraction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Subtraction", 2usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::NetworkStatisticsDelta = unsafe {
+            method.invoke_unchecked((), (a, b))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -218,11 +252,27 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (statisticsState, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::NetworkStatisticsState,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                3usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (statisticsState, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -232,11 +282,26 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
         >,
         result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (statisticsState, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::NetworkStatisticsState,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (statisticsState, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -245,11 +310,23 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
             crate::GlobalNamespace::NetworkStatisticsState,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (statisticsState))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::GlobalNamespace::NetworkStatisticsState,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (statisticsState))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -267,11 +344,24 @@ impl crate::GlobalNamespace::NetworkStatisticsState_NetworkStatisticsUpdateDeleg
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }

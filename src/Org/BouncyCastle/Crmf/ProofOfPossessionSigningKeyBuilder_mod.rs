@@ -61,12 +61,25 @@ impl crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKey>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::ISignatureFactory,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKey,
+                >,
+                1usize,
+            >("Build")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Build", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Crmf::PopoSigningKey,
-        > = __cordl_object.invoke("Build", (signer))?;
+        > = unsafe { method.invoke_unchecked(self, (signer)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_CertRequest0(
@@ -102,12 +115,28 @@ impl crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
             crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crmf::PKMacBuilder,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder,
+                >,
+                2usize,
+            >("SetPublicKeyMac")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetPublicKeyMac", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder,
-        > = __cordl_object.invoke("SetPublicKeyMac", (generator, password))?;
+        > = unsafe { method.invoke_unchecked(self, (generator, password)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetSender(
@@ -120,12 +149,25 @@ impl crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
             crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder,
+                >,
+                1usize,
+            >("SetSender")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSender", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder,
-        > = __cordl_object.invoke("SetSender", (name))?;
+        > = unsafe { method.invoke_unchecked(self, (name)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_CertRequest0(
@@ -134,11 +176,23 @@ impl crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
             crate::Org::BouncyCastle::Asn1::Crmf::CertRequest,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (certRequest))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Crmf::CertRequest,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (certRequest))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_SubjectPublicKeyInfo1(
@@ -147,11 +201,23 @@ impl crate::Org::BouncyCastle::Crmf::ProofOfPossessionSigningKeyBuilder {
             crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pubKeyInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pubKeyInfo))
+        };
         Ok(__cordl_ret.into())
     }
 }

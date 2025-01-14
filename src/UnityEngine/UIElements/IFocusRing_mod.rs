@@ -47,12 +47,26 @@ impl crate::UnityEngine::UIElements::IFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::FocusChangeDirection,
+                >,
+                2usize,
+            >("GetFocusChangeDirection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFocusChangeDirection", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::FocusChangeDirection,
-        > = __cordl_object.invoke("GetFocusChangeDirection", (currentFocusable, e))?;
+        > = unsafe { method.invoke_unchecked(self, (currentFocusable, e)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNextFocusable(
@@ -66,12 +80,26 @@ impl crate::UnityEngine::UIElements::IFocusRing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::FocusChangeDirection,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+                2usize,
+            >("GetNextFocusable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNextFocusable", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,
-        > = __cordl_object.invoke("GetNextFocusable", (currentFocusable, direction))?;
+        > = unsafe { method.invoke_unchecked(self, (currentFocusable, direction)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

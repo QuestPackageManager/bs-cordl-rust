@@ -53,12 +53,38 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                2usize,
+            >("Subdivide")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subdivide", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Subdivide", (pb, faces))?;
+        > = unsafe { method.invoke_unchecked((), (pb, faces)) };
         Ok(__cordl_ret.into())
     }
     pub fn Subdivide_ProBuilderMesh0(
@@ -66,9 +92,23 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+                1usize,
+            >("Subdivide")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Subdivide", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Subdivide", (pb))?;
+        > = unsafe { method.invoke_unchecked((), (pb)) };
         Ok(__cordl_ret.into())
     }
 }

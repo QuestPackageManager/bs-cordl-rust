@@ -73,16 +73,26 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingSettings>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,
+                2usize,
+            >("CreateMenuDestinationFromConfiguration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateMenuDestinationFromConfiguration", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MenuDestination,
-        > = __cordl_object
-            .invoke(
-                "CreateMenuDestinationFromConfiguration",
-                (recordingSettings, quitAppAfterRun),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked(self, (recordingSettings, quitAppAfterRun))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateObjectsMovementRecorderInitDataFromConfiguration(
@@ -95,16 +105,24 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
             crate::GlobalNamespace::ObjectsMovementRecorder_InitData,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingSettings>),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ObjectsMovementRecorder_InitData,
+                >,
+                1usize,
+            >("CreateObjectsMovementRecorderInitDataFromConfiguration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateObjectsMovementRecorderInitDataFromConfiguration",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ObjectsMovementRecorder_InitData,
-        > = __cordl_object
-            .invoke(
-                "CreateObjectsMovementRecorderInitDataFromConfiguration",
-                (recordingSettings),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (recordingSettings)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateRecordingToolSettingsFromConfiguration(
@@ -118,16 +136,34 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingToolSettings>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecordingToolSettings>,
+                2usize,
+            >("CreateRecordingToolSettingsFromConfiguration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateRecordingToolSettingsFromConfiguration", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::RecordingToolSettings,
-        > = __cordl_object
-            .invoke(
-                "CreateRecordingToolSettingsFromConfiguration",
-                (recordingToolConfiguration, beatmapCharacteristicCollection),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (recordingToolConfiguration, beatmapCharacteristicCollection),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeConfigurationFile(
@@ -138,12 +174,23 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
             crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
+                >,
+                1usize,
+            >("DeserializeConfigurationFile")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeserializeConfigurationFile", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
-        > = __cordl_object.invoke("DeserializeConfigurationFile", (jsonData))?;
+        > = unsafe { method.invoke_unchecked(self, (jsonData)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetConfigFilePath(
@@ -151,30 +198,62 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("GetConfigFilePath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetConfigFilePath", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("GetConfigFilePath", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultMrcLayersMask() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::LayerMask,
     > {
-        let __cordl_ret: crate::UnityEngine::LayerMask = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDefaultMrcLayersMask", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::LayerMask,
+                0usize,
+            >("GetDefaultMrcLayersMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDefaultMrcLayersMask", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::LayerMask = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLayerMask(
         &mut self,
         layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
-            .invoke("GetLayerMask", (layerName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::UnityEngine::LayerMask,
+                1usize,
+            >("GetLayerMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLayerMask", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::LayerMask = unsafe {
+            method.invoke_unchecked(self, (layerName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLayersMask(
@@ -185,11 +264,25 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
-            .invoke("GetLayersMask", (layerNames))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >),
+                crate::UnityEngine::LayerMask,
+                1usize,
+            >("GetLayersMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLayersMask", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::LayerMask = unsafe {
+            method.invoke_unchecked(self, (layerNames))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelPackAndLevelPreviewForLevelId(
@@ -204,21 +297,43 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsModel>,
+                ),
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                >,
+                3usize,
+            >("GetLevelPackAndLevelPreviewForLevelId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelPackAndLevelPreviewForLevelId", 3usize
+                )
+            });
         let __cordl_ret: crate::System::ValueTuple_2<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetLevelPackAndLevelPreviewForLevelId",
-                (packId, levelId, beatmapLevelsModel),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (packId, levelId, beatmapLevelsModel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsRecordingToolEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsRecordingToolEnabled", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("IsRecordingToolEnabled")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsRecordingToolEnabled", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadConfiguration(
@@ -229,12 +344,23 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
             crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
+                >,
+                1usize,
+            >("LoadConfiguration")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadConfiguration", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
-        > = __cordl_object.invoke("LoadConfiguration", (filePath))?;
+        > = unsafe { method.invoke_unchecked(self, (filePath)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadConfigurationFile(
@@ -243,12 +369,21 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("LoadConfigurationFile")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadConfigurationFile", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("LoadConfigurationFile", (filePath))?;
+        > = unsafe { method.invoke_unchecked(self, (filePath)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -293,20 +428,39 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
             crate::GlobalNamespace::BeatmapLevelsModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    commandLineParserResult,
-                    logger,
-                    posesSerializer,
-                    environmentListModel,
-                    beatmapLevelsModel,
+                    crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberLogger>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPosesSerializer>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::EnvironmentsListModel,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelsModel>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        commandLineParserResult,
+                        logger,
+                        posesSerializer,
+                        environmentListModel,
+                        beatmapLevelsModel,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -376,11 +530,17 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -462,11 +622,17 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreens
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -562,11 +728,17 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfig
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -640,11 +812,17 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolCo
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,8 +50,25 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertExistingDataToNativeSlice", (dataPointer, stride, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    i32,
+                ),
+                crate::Unity::Collections::NativeSlice_1<T>,
+                3usize,
+            >("ConvertExistingDataToNativeSlice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertExistingDataToNativeSlice", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = unsafe {
+            method.invoke_unchecked((), (dataPointer, stride, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnsafePtr<T>(
@@ -63,10 +80,21 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeSlice_1<T>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetUnsafePtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUnsafePtr", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUnsafePtr", (nativeSlice))?;
+        > = unsafe { method.invoke_unchecked((), (nativeSlice)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnsafeReadOnlyPtr<T>(
@@ -78,10 +106,21 @@ impl crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeSlice_1<T>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetUnsafeReadOnlyPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUnsafeReadOnlyPtr", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUnsafeReadOnlyPtr", (nativeSlice))?;
+        > = unsafe { method.invoke_unchecked((), (nativeSlice)) };
         Ok(__cordl_ret.into())
     }
 }

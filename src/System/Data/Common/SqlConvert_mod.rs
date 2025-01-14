@@ -46,10 +46,28 @@ impl crate::System::Data::Common::SqlConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::Data::Common::StorageType,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                4usize,
+            >("ChangeType2")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ChangeType2", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ChangeType2", (value, stype, _cordl_type, formatProvider))?;
+        > = unsafe {
+            method.invoke_unchecked((), (value, stype, _cordl_type, formatProvider))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ChangeTypeForDefaultValue(
@@ -59,10 +77,25 @@ impl crate::System::Data::Common::SqlConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("ChangeTypeForDefaultValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ChangeTypeForDefaultValue", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ChangeTypeForDefaultValue", (value, _cordl_type, formatProvider))?;
+        > = unsafe { method.invoke_unchecked((), (value, _cordl_type, formatProvider)) };
         Ok(__cordl_ret.into())
     }
     pub fn ChangeTypeForXML(
@@ -71,39 +104,108 @@ impl crate::System::Data::Common::SqlConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                2usize,
+            >("ChangeTypeForXML")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ChangeTypeForXML", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ChangeTypeForXML", (value, _cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (value, _cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertStringToDateTimeOffset(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
-        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertStringToDateTimeOffset", (value, formatProvider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                ),
+                crate::System::DateTimeOffset,
+                2usize,
+            >("ConvertStringToDateTimeOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertStringToDateTimeOffset", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTimeOffset = unsafe {
+            method.invoke_unchecked((), (value, formatProvider))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlBinary(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBinary> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlBinary = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlBinary", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlBinary,
+                1usize,
+            >("ConvertToSqlBinary")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlBinary", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBinary = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlBoolean(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlBoolean", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlBoolean,
+                1usize,
+            >("ConvertToSqlBoolean")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlBoolean", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlByte(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlByte> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlByte = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlByte", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlByte,
+                1usize,
+            >("ConvertToSqlByte")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlByte", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlByte = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlBytes(
@@ -111,10 +213,21 @@ impl crate::System::Data::Common::SqlConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::SqlBytes>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::SqlBytes>,
+                1usize,
+            >("ConvertToSqlBytes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlBytes", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::SqlTypes::SqlBytes,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlBytes", (value))?;
+        > = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlChars(
@@ -122,80 +235,221 @@ impl crate::System::Data::Common::SqlConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::SqlChars>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::SqlChars>,
+                1usize,
+            >("ConvertToSqlChars")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlChars", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Data::SqlTypes::SqlChars,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlChars", (value))?;
+        > = unsafe { method.invoke_unchecked((), (value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlDateTime(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDateTime> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlDateTime = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlDateTime", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlDateTime,
+                1usize,
+            >("ConvertToSqlDateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlDateTime", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDateTime = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlDecimal(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlDecimal", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlDecimal,
+                1usize,
+            >("ConvertToSqlDecimal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlDecimal", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlDouble(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDouble> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlDouble = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlDouble", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlDouble,
+                1usize,
+            >("ConvertToSqlDouble")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlDouble", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDouble = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlGuid(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlGuid> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlGuid = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlGuid", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlGuid,
+                1usize,
+            >("ConvertToSqlGuid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlGuid", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlGuid = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlInt16(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt16> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlInt16", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlInt16,
+                1usize,
+            >("ConvertToSqlInt16")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlInt16", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt16 = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlInt32(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt32> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlInt32", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlInt32,
+                1usize,
+            >("ConvertToSqlInt32")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlInt32", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt32 = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlInt64(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlInt64> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlInt64", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlInt64,
+                1usize,
+            >("ConvertToSqlInt64")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlInt64", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlInt64 = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlMoney(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlMoney> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlMoney = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlMoney", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlMoney,
+                1usize,
+            >("ConvertToSqlMoney")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlMoney", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlMoney = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlSingle(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlSingle", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlSingle,
+                1usize,
+            >("ConvertToSqlSingle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlSingle", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertToSqlString(
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlString> {
-        let __cordl_ret: crate::System::Data::SqlTypes::SqlString = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertToSqlString", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                crate::System::Data::SqlTypes::SqlString,
+                1usize,
+            >("ConvertToSqlString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertToSqlString", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlString = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

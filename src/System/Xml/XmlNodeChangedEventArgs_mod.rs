@@ -70,21 +70,52 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
         newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         action: crate::System::Xml::XmlNodeChangedAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (node, oldParent, newParent, oldValue, newValue, action))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+                    quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Xml::XmlNodeChangedAction,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (node, oldParent, newParent, oldValue, newValue, action),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Action(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XmlNodeChangedAction> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Xml::XmlNodeChangedAction = __cordl_object
-            .invoke("get_Action", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Xml::XmlNodeChangedAction,
+                0usize,
+            >("get_Action")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Action", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Xml::XmlNodeChangedAction = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

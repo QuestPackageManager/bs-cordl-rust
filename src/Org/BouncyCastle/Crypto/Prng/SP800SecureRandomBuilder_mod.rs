@@ -77,13 +77,36 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
+                >,
+                4usize,
+            >("BuildCtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildCtr", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
-        > = __cordl_object
-            .invoke("BuildCtr", (cipher, keySizeInBits, nonce, predictionResistant))?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (cipher, keySizeInBits, nonce, predictionResistant),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildHMac(
@@ -96,12 +119,27 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
+                >,
+                3usize,
+            >("BuildHMac")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildHMac", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
-        > = __cordl_object.invoke("BuildHMac", (hMac, nonce, predictionResistant))?;
+        > = unsafe { method.invoke_unchecked(self, (hMac, nonce, predictionResistant)) };
         Ok(__cordl_ret.into())
     }
     pub fn BuildHash(
@@ -114,12 +152,29 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
+                >,
+                3usize,
+            >("BuildHash")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildHash", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom,
-        > = __cordl_object.invoke("BuildHash", (digest, nonce, predictionResistant))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (digest, nonce, predictionResistant))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -160,12 +215,23 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
+                >,
+                1usize,
+            >("SetEntropyBitsRequired")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetEntropyBitsRequired", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
-        > = __cordl_object.invoke("SetEntropyBitsRequired", (entropyBitsRequired))?;
+        > = unsafe { method.invoke_unchecked(self, (entropyBitsRequired)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetPersonalizationString(
@@ -178,12 +244,23 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
+                >,
+                1usize,
+            >("SetPersonalizationString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetPersonalizationString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
-        > = __cordl_object.invoke("SetPersonalizationString", (personalizationString))?;
+        > = unsafe { method.invoke_unchecked(self, (personalizationString)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetSecurityStrength(
@@ -194,22 +271,39 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
+                >,
+                1usize,
+            >("SetSecurityStrength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSecurityStrength", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder,
-        > = __cordl_object.invoke("SetSecurityStrength", (securityStrength))?;
+        > = unsafe { method.invoke_unchecked(self, (securityStrength)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEntropySourceProvider2(
@@ -218,11 +312,23 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
             crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (entropySourceProvider))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::IEntropySourceProvider,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (entropySourceProvider))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_SecureRandom__cordl_bool1(
@@ -232,11 +338,26 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
         >,
         predictionResistant: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (entropySource, predictionResistant))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Security::SecureRandom,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (entropySource, predictionResistant))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -312,12 +433,25 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgPro
             crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::IEntropySource,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+                >,
+                1usize,
+            >("Get")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Get", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
-        > = __cordl_object.invoke("Get", (entropySource))?;
+        > = unsafe { method.invoke_unchecked(self, (entropySource)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -358,20 +492,39 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgPro
         >,
         securityStrength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    blockCipher,
-                    keySizeInBits,
-                    nonce,
-                    personalizationString,
-                    securityStrength,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Org::BouncyCastle::Crypto::IBlockCipher,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        blockCipher,
+                        keySizeInBits,
+                        nonce,
+                        personalizationString,
+                        securityStrength,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -468,12 +621,25 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPr
             crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::IEntropySource,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+                >,
+                1usize,
+            >("Get")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Get", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
-        > = __cordl_object.invoke("Get", (entropySource))?;
+        > = unsafe { method.invoke_unchecked(self, (entropySource)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -502,11 +668,30 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPr
         >,
         securityStrength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (hMac, nonce, personalizationString, securityStrength))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (hMac, nonce, personalizationString, securityStrength),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -609,12 +794,25 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPr
             crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::IEntropySource,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
+                >,
+                1usize,
+            >("Get")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Get", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Prng::Drbg::ISP80090Drbg,
-        > = __cordl_object.invoke("Get", (entropySource))?;
+        > = unsafe { method.invoke_unchecked(self, (entropySource)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -643,11 +841,30 @@ impl crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPr
         >,
         securityStrength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (digest, nonce, personalizationString, securityStrength))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (digest, nonce, personalizationString, securityStrength),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

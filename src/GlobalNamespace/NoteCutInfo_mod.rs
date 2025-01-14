@@ -141,57 +141,109 @@ impl crate::GlobalNamespace::NoteCutInfo {
             crate::GlobalNamespace::ISaberMovementData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (
-                noteData,
-                speedOK,
-                directionOK,
-                saberTypeOK,
-                wasCutTooSoon,
-                saberSpeed,
-                saberDir,
-                saberType,
-                timeDeviation,
-                cutDirDeviation,
-                cutPoint,
-                cutNormal,
-                cutDistanceToCenter,
-                cutAngle,
-                worldRotation,
-                inverseWorldRotation,
-                noteRotation,
-                notePosition,
-                saberMovementData,
-            ),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                    bool,
+                    bool,
+                    bool,
+                    bool,
+                    f32,
+                    crate::UnityEngine::Vector3,
+                    crate::GlobalNamespace::SaberType,
+                    f32,
+                    f32,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                    f32,
+                    f32,
+                    crate::UnityEngine::Quaternion,
+                    crate::UnityEngine::Quaternion,
+                    crate::UnityEngine::Quaternion,
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementData>,
+                ),
+                quest_hook::libil2cpp::Void,
+                19usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 19usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        noteData,
+                        speedOK,
+                        directionOK,
+                        saberTypeOK,
+                        wasCutTooSoon,
+                        saberSpeed,
+                        saberDir,
+                        saberType,
+                        timeDeviation,
+                        cutDirDeviation,
+                        cutPoint,
+                        cutNormal,
+                        cutDistanceToCenter,
+                        cutAngle,
+                        worldRotation,
+                        inverseWorldRotation,
+                        noteRotation,
+                        notePosition,
+                        saberMovementData,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_allExceptSaberTypeIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_allExceptSaberTypeIsOK",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_allExceptSaberTypeIsOK")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_allExceptSaberTypeIsOK", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_allIsOK(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_allIsOK",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_allIsOK")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_allIsOK", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_failReason(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutInfo_FailReason> {
-        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo_FailReason = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_failReason",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::NoteCutInfo_FailReason,
+                0usize,
+            >("get_failReason")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_failReason", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::NoteCutInfo_FailReason = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

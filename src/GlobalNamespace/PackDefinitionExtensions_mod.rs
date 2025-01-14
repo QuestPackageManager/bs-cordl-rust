@@ -54,14 +54,37 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OculusLevelProductPacksSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetOculusLevelProductPacks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetOculusLevelProductPacks", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::OculusLevelProductPacksSO,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetOculusLevelProductPacks", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS4LeaderboardIds(
@@ -77,12 +100,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::SonyLeaderboardIdsSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetPS4LeaderboardIds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPS4LeaderboardIds", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPS4LeaderboardIds", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS4LevelProductPacks(
@@ -98,12 +144,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PS4LevelProductPacksSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetPS4LevelProductPacks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPS4LevelProductPacks", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS4LevelProductPacksSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPS4LevelProductPacks", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS5LeaderboardIds(
@@ -119,12 +188,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::SonyLeaderboardIdsSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetPS5LeaderboardIds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPS5LeaderboardIds", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPS5LeaderboardIds", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPS5LevelProductPacks(
@@ -140,12 +232,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PS5LevelProductPacksSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetPS5LevelProductPacks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPS5LevelProductPacks", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PS5LevelProductPacksSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPS5LevelProductPacks", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPerceivedLoudnessSOs(
@@ -161,12 +276,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PerceivedLoudnessSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetPerceivedLoudnessSOs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPerceivedLoudnessSOs", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPerceivedLoudnessSOs", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetQuestLeaderboardIds(
@@ -182,12 +320,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LeaderboardIdsSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetQuestLeaderboardIds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetQuestLeaderboardIds", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetQuestLeaderboardIds", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRiftLeaderboardIds(
@@ -203,12 +364,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LeaderboardIdsSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetRiftLeaderboardIds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRiftLeaderboardIds", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRiftLeaderboardIds", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSteamLeaderboardIds(
@@ -224,12 +408,35 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LeaderboardIdsSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetSteamLeaderboardIds")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSteamLeaderboardIds", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSteamLeaderboardIds", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSteamLevelProductPacks(
@@ -247,14 +454,37 @@ impl crate::GlobalNamespace::PackDefinitionExtensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PackDefinitionSO,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::SteamLevelProductPacksSO,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("GetSteamLevelProductPacks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSteamLevelProductPacks", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::SteamLevelProductPacksSO,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSteamLevelProductPacks", (packDefinitions))?;
+        > = unsafe { method.invoke_unchecked((), (packDefinitions)) };
         Ok(__cordl_ret.into())
     }
 }

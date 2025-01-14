@@ -47,25 +47,67 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32, f32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
+                4usize,
+            >("CIELabFromRGB")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CIELabFromRGB", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::CIELabColor,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CIELabFromRGB", (R, G, B, Scale))?;
+        > = unsafe { method.invoke_unchecked((), (R, G, B, Scale)) };
         Ok(__cordl_ret.into())
     }
     pub fn DeltaE(
         lhs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
         rhs: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeltaE", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::CIELabColor,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::CIELabColor,
+                    >,
+                ),
+                f32,
+                2usize,
+            >("DeltaE")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeltaE", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetColor(
         vec: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetColor", (vec))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector3),
+                crate::UnityEngine::Color,
+                1usize,
+            >("GetColor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColor", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked((), (vec))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetColorName(
@@ -73,17 +115,41 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetColorName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColorName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetColorName", (InColor))?;
+        > = unsafe { method.invoke_unchecked((), (InColor)) };
         Ok(__cordl_ret.into())
     }
     pub fn HSVtoRGB_HSVColor0(
         hsv: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HSVColor>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HSVtoRGB", (hsv))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HSVColor>),
+                crate::UnityEngine::Color,
+                1usize,
+            >("HSVtoRGB")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HSVtoRGB", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked((), (hsv))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HSVtoRGB_f32_f32_f32_1(
@@ -91,8 +157,21 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
         s: f32,
         v: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HSVtoRGB", (h, s, v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                crate::UnityEngine::Color,
+                3usize,
+            >("HSVtoRGB")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HSVtoRGB", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked((), (h, s, v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RGBToXYZ_Color0(
@@ -100,9 +179,21 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>,
+                1usize,
+            >("RGBToXYZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RGBToXYZ", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::XYZColor,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("RGBToXYZ", (col))?;
+        > = unsafe { method.invoke_unchecked((), (col)) };
         Ok(__cordl_ret.into())
     }
     pub fn RGBToXYZ_f32_f32_f32_1(
@@ -112,10 +203,21 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>,
+                3usize,
+            >("RGBToXYZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RGBToXYZ", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::XYZColor,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RGBToXYZ", (r, g, b))?;
+        > = unsafe { method.invoke_unchecked((), (r, g, b)) };
         Ok(__cordl_ret.into())
     }
     pub fn RGBtoHSV(
@@ -123,9 +225,21 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HSVColor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Color),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HSVColor>,
+                1usize,
+            >("RGBtoHSV")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RGBtoHSV", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::HSVColor,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("RGBtoHSV", (color))?;
+        > = unsafe { method.invoke_unchecked((), (color)) };
         Ok(__cordl_ret.into())
     }
     pub fn XYZToCIE_Lab(
@@ -133,15 +247,33 @@ impl crate::UnityEngine::ProBuilder::ColorUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
+                1usize,
+            >("XYZToCIE_Lab")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "XYZToCIE_Lab", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::CIELabColor,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("XYZToCIE_Lab", (xyz))?;
+        > = unsafe { method.invoke_unchecked((), (xyz)) };
         Ok(__cordl_ret.into())
     }
     pub fn approx(lhs: f32, rhs: f32) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("approx", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32), bool, 2usize>("approx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "approx", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (lhs, rhs)) };
         Ok(__cordl_ret.into())
     }
 }

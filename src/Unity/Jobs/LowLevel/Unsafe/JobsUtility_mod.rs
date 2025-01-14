@@ -55,16 +55,35 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
             quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateJobReflectionData",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    _cordl_type,
-                    managedJobFunction0,
-                    managedJobFunction1,
-                    managedJobFunction2,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                crate::System::IntPtr,
+                4usize,
+            >("CreateJobReflectionData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateJobReflectionData", 4usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        _cordl_type,
+                        managedJobFunction0,
+                        managedJobFunction1,
+                        managedJobFunction2,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateJobReflectionData_Type_Il2CppObject0(
@@ -80,17 +99,37 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
             quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateJobReflectionData",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    wrapperJobType,
-                    userJobType,
-                    managedJobFunction0,
-                    managedJobFunction1,
-                    managedJobFunction2,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 ),
-            )?;
+                crate::System::IntPtr,
+                5usize,
+            >("CreateJobReflectionData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateJobReflectionData", 5usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        wrapperJobType,
+                        userJobType,
+                        managedJobFunction0,
+                        managedJobFunction1,
+                        managedJobFunction2,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetWorkStealingRange(
@@ -101,15 +140,48 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         beginIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         endIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetWorkStealingRange", (ranges, jobIndex, beginIndex, endIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Jobs::LowLevel::Unsafe::JobRanges,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                bool,
+                4usize,
+            >("GetWorkStealingRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetWorkStealingRange", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (ranges, jobIndex, beginIndex, endIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvokePanicFunction() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InvokePanicFunction", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("InvokePanicFunction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvokePanicFunction", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Schedule(
@@ -117,8 +189,23 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
             crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Schedule", (parameters))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+                >),
+                crate::Unity::Jobs::JobHandle,
+                1usize,
+            >("Schedule")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Schedule", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
+            method.invoke_unchecked((), (parameters))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ScheduleParallelFor(
@@ -128,11 +215,27 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         arrayLength: i32,
         innerloopBatchCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ScheduleParallelFor",
-                (parameters, arrayLength, innerloopBatchCount),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+                    >,
+                    i32,
+                    i32,
+                ),
+                crate::Unity::Jobs::JobHandle,
+                3usize,
+            >("ScheduleParallelFor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ScheduleParallelFor", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
+            method.invoke_unchecked((), (parameters, arrayLength, innerloopBatchCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ScheduleParallelFor_Injected(
@@ -143,11 +246,32 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         innerloopBatchCount: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ScheduleParallelFor_Injected",
-                (parameters, arrayLength, innerloopBatchCount, ret),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ScheduleParallelFor_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ScheduleParallelFor_Injected", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (parameters, arrayLength, innerloopBatchCount, ret),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Schedule_Injected(
@@ -156,15 +280,46 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
         >,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Schedule_Injected", (parameters, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Schedule_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Schedule_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (parameters, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_JobCompilerEnabled(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_JobCompilerEnabled", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_JobCompilerEnabled")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_JobCompilerEnabled", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -291,11 +446,30 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters {
         i_dependency: crate::Unity::Jobs::JobHandle,
         i_scheduleMode: crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (i_jobData, i_reflectionData, i_dependency, i_scheduleMode),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                    crate::Unity::Jobs::JobHandle,
+                    crate::Unity::Jobs::LowLevel::Unsafe::ScheduleMode,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (i_jobData, i_reflectionData, i_dependency, i_scheduleMode),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -345,11 +519,17 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
     pub fn Invoke(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -367,11 +547,24 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }

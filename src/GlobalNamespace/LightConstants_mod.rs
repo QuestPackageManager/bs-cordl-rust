@@ -46,22 +46,55 @@ impl crate::GlobalNamespace::LightConstants {
     pub fn GetComputeFieldPropertyId(
         fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetComputeFieldPropertyId", (fieldName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                i32,
+                1usize,
+            >("GetComputeFieldPropertyId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetComputeFieldPropertyId", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (fieldName)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLightProbeLightBakeIdPropertyId(
         bakeId: crate::GlobalNamespace::LightConstants_BakeId,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLightProbeLightBakeIdPropertyId", (bakeId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::LightConstants_BakeId),
+                i32,
+                1usize,
+            >("GetLightProbeLightBakeIdPropertyId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLightProbeLightBakeIdPropertyId", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bakeId)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLightmapLightBakeIdPropertyId(
         bakeId: crate::GlobalNamespace::LightConstants_BakeId,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLightmapLightBakeIdPropertyId", (bakeId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::LightConstants_BakeId),
+                i32,
+                1usize,
+            >("GetLightmapLightBakeIdPropertyId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLightmapLightBakeIdPropertyId", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bakeId)) };
         Ok(__cordl_ret.into())
     }
 }

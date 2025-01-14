@@ -50,11 +50,37 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetMeshDetailAttribute",
-                (session, geoID, partID, attrName, tupleSize, data, partInfo),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_PartInfo,
+                    >,
+                ),
+                bool,
+                7usize,
+            >("SetMeshDetailAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMeshDetailAttribute", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (session, geoID, partID, attrName, tupleSize, data, partInfo),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMeshPointAttribute_Il2CppArray_ByRefMut3(
@@ -71,11 +97,39 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetMeshPointAttribute",
-                (session, geoID, partID, attrName, data, partInfo),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_PartInfo,
+                    >,
+                ),
+                bool,
+                6usize,
+            >("SetMeshPointAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMeshPointAttribute", 6usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked((), (session, geoID, partID, attrName, data, partInfo))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMeshPointAttribute_i32_Il2CppArray_ByRefMut1(
@@ -89,11 +143,37 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetMeshPointAttribute",
-                (session, geoID, partID, attrName, tupleSize, data, partInfo),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_PartInfo,
+                    >,
+                ),
+                bool,
+                7usize,
+            >("SetMeshPointAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMeshPointAttribute", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (session, geoID, partID, attrName, tupleSize, data, partInfo),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMeshPointAttribute_i32_Il2CppArray_ByRefMut2(
@@ -109,11 +189,41 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetMeshPointAttribute",
-                (session, geoID, partID, attrName, tupleSize, data, partInfo),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::Vector3Int,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_PartInfo,
+                    >,
+                ),
+                bool,
+                7usize,
+            >("SetMeshPointAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMeshPointAttribute", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (session, geoID, partID, attrName, tupleSize, data, partInfo),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMeshPointAttribute_i32_Il2CppArray_ByRefMut__cordl_bool0(
@@ -130,20 +240,49 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
         >,
         bConvertToHoudiniCoordinateSystem: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetMeshPointAttribute",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    session,
-                    geoID,
-                    partID,
-                    attrName,
-                    tupleSize,
-                    data,
-                    partInfo,
-                    bConvertToHoudiniCoordinateSystem,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_PartInfo,
+                    >,
+                    bool,
                 ),
-            )?;
+                bool,
+                8usize,
+            >("SetMeshPointAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMeshPointAttribute", 8usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        session,
+                        geoID,
+                        partID,
+                        attrName,
+                        tupleSize,
+                        data,
+                        partInfo,
+                        bConvertToHoudiniCoordinateSystem,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMeshVertexAttribute(
@@ -161,21 +300,51 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
         >,
         bConvertToHoudiniCoordinateSystem: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetMeshVertexAttribute",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    session,
-                    geoID,
-                    partID,
-                    attrName,
-                    tupleSize,
-                    data,
-                    indices,
-                    partInfo,
-                    bConvertToHoudiniCoordinateSystem,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_PartInfo,
+                    >,
+                    bool,
                 ),
-            )?;
+                bool,
+                9usize,
+            >("SetMeshVertexAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMeshVertexAttribute", 9usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        session,
+                        geoID,
+                        partID,
+                        attrName,
+                        tupleSize,
+                        data,
+                        indices,
+                        partInfo,
+                        bConvertToHoudiniCoordinateSystem,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMeshVertexFloatAttribute(
@@ -190,11 +359,47 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SetMeshVertexFloatAttribute",
-                (session, geoID, partID, attrName, tupleSize, data, indices, partInfo),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_PartInfo,
+                    >,
+                ),
+                bool,
+                8usize,
+            >("SetMeshVertexFloatAttribute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMeshVertexFloatAttribute", 8usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        session,
+                        geoID,
+                        partID,
+                        attrName,
+                        tupleSize,
+                        data,
+                        indices,
+                        partInfo,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadMeshIntoHoudiniNode(
@@ -206,11 +411,31 @@ impl crate::HoudiniEngineUnity::HEU_InputMeshUtility {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "UploadMeshIntoHoudiniNode",
-                (session, assetNodeID, objectID, geoID, mesh),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                    >,
+                ),
+                bool,
+                5usize,
+            >("UploadMeshIntoHoudiniNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadMeshIntoHoudiniNode", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (session, assetNodeID, objectID, geoID, mesh))
+        };
         Ok(__cordl_ret.into())
     }
 }

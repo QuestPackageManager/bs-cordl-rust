@@ -45,11 +45,25 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Trace", (level, message, ex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::System::Diagnostics::TraceLevel,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Trace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Trace", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (level, message, ex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -60,11 +74,21 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
     pub fn get_LevelFilter(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Diagnostics::TraceLevel> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Diagnostics::TraceLevel = __cordl_object
-            .invoke("get_LevelFilter", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Diagnostics::TraceLevel,
+                0usize,
+            >("get_LevelFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_LevelFilter", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Diagnostics::TraceLevel = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

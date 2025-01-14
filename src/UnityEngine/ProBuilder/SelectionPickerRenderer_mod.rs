@@ -73,8 +73,37 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("BuildEdgeMesh", (pb, map, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            u32,
+                            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                crate::UnityEngine::ProBuilder::Edge,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                3usize,
+            >("BuildEdgeMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildEdgeMesh", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
+            method.invoke_unchecked((), (pb, map, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BuildVertexMesh(
@@ -94,22 +123,75 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("BuildVertexMesh", (pb, map, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            u32,
+                            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                i32,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                3usize,
+            >("BuildVertexMesh")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BuildVertexMesh", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
+            method.invoke_unchecked((), (pb, map, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DecodeRGBA(
         color: crate::UnityEngine::Color32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DecodeRGBA", (color))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Color32),
+                u32,
+                1usize,
+            >("DecodeRGBA")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DecodeRGBA", 1usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (color)) };
         Ok(__cordl_ret.into())
     }
     pub fn EncodeRGBA(
         hash: u32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        let __cordl_ret: crate::UnityEngine::Color32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EncodeRGBA", (hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32),
+                crate::UnityEngine::Color32,
+                1usize,
+            >("EncodeRGBA")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EncodeRGBA", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
+            method.invoke_unchecked((), (hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateEdgePickingObjects(
@@ -147,11 +229,61 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateEdgePickingObjects",
-                (selection, doDepthTest, map, depthObjects, pickerObjects),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                    crate::UnityEngine::ProBuilder::Edge,
+                                >,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("GenerateEdgePickingObjects")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateEdgePickingObjects", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (selection, doDepthTest, map, depthObjects, pickerObjects),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateFacePickingObjects(
@@ -180,12 +312,50 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    >,
+                >,
+                2usize,
+            >("GenerateFacePickingObjects")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateFacePickingObjects", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GenerateFacePickingObjects", (selection, map))?;
+        > = unsafe { method.invoke_unchecked((), (selection, map)) };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateVertexPickingObjects(
@@ -223,11 +393,61 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GenerateVertexPickingObjects",
-                (selection, doDepthTest, map, depthObjects, pickerObjects),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                    i32,
+                                >,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("GenerateVertexPickingObjects")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateVertexPickingObjects", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (selection, doDepthTest, map, depthObjects, pickerObjects),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PickEdgesInRect(
@@ -255,6 +475,42 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                crate::UnityEngine::ProBuilder::Edge,
+                            >,
+                        >,
+                    >,
+                >,
+                6usize,
+            >("PickEdgesInRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickEdgesInRect", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<
@@ -266,18 +522,20 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PickEdgesInRect",
-                (
-                    camera,
-                    pickerRect,
-                    selection,
-                    doDepthTest,
-                    renderTextureWidth,
-                    renderTextureHeight,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        camera,
+                        pickerRect,
+                        selection,
+                        doDepthTest,
+                        renderTextureWidth,
+                        renderTextureHeight,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PickFacesInRect(
@@ -304,6 +562,43 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
+                                >,
+                            >,
+                        >,
+                    >,
+                >,
+                5usize,
+            >("PickFacesInRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickFacesInRect", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<
@@ -315,11 +610,19 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PickFacesInRect",
-                (camera, pickerRect, selection, renderTextureWidth, renderTextureHeight),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        camera,
+                        pickerRect,
+                        selection,
+                        renderTextureWidth,
+                        renderTextureHeight,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PickVerticesInRect(
@@ -345,6 +648,40 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<i32>,
+                        >,
+                    >,
+                >,
+                6usize,
+            >("PickVerticesInRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickVerticesInRect", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<
@@ -354,18 +691,20 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
                     crate::System::Collections::Generic::HashSet_1<i32>,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PickVerticesInRect",
-                (
-                    camera,
-                    pickerRect,
-                    selection,
-                    doDepthTest,
-                    renderTextureWidth,
-                    renderTextureHeight,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        camera,
+                        pickerRect,
+                        selection,
+                        doDepthTest,
+                        renderTextureWidth,
+                        renderTextureHeight,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RenderSelectionPickerTexture_ByRefMut_i32_0(
@@ -393,11 +732,47 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "RenderSelectionPickerTexture",
-                (camera, selection, map, width, height),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
+                                >,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                5usize,
+            >("RenderSelectionPickerTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RenderSelectionPickerTexture", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
+            method.invoke_unchecked((), (camera, selection, map, width, height))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RenderSelectionPickerTexture__cordl_bool_ByRefMut_i32_1(
@@ -426,11 +801,50 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "RenderSelectionPickerTexture",
-                (camera, selection, doDepthTest, map, width, height),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                    i32,
+                                >,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                6usize,
+            >("RenderSelectionPickerTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RenderSelectionPickerTexture", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (camera, selection, doDepthTest, map, width, height),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RenderSelectionPickerTexture__cordl_bool_ByRefMut_i32_2(
@@ -459,16 +873,62 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "RenderSelectionPickerTexture",
-                (camera, selection, doDepthTest, map, width, height),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
+                                    crate::UnityEngine::ProBuilder::Edge,
+                                >,
+                            >,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                6usize,
+            >("RenderSelectionPickerTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RenderSelectionPickerTexture", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (camera, selection, doDepthTest, map, width, height),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldUseHDRP() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldUseHDRP", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("ShouldUseHDRP")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldUseHDRP", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_pickerRenderer() -> quest_hook::libil2cpp::Result<
@@ -476,24 +936,63 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
             crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
+                >,
+                0usize,
+            >("get_pickerRenderer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_pickerRenderer", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_pickerRenderer", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_renderTextureFormat() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::RenderTextureFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::RenderTextureFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_renderTextureFormat", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::RenderTextureFormat,
+                0usize,
+            >("get_renderTextureFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_renderTextureFormat", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RenderTextureFormat = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_textureFormat() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::TextureFormat,
     > {
-        let __cordl_ret: crate::UnityEngine::TextureFormat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_textureFormat", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::TextureFormat,
+                0usize,
+            >("get_textureFormat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_textureFormat", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::TextureFormat = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -570,11 +1069,27 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRen
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
-            .invoke("RenderLookupTexture", (camera, shader, tag, width, height))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                5usize,
+            >("RenderLookupTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RenderLookupTexture", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
+            method.invoke_unchecked(self, (camera, shader, tag, width, height))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -665,21 +1180,43 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
-            .invoke("RenderLookupTexture", (camera, shader, tag, width, height))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                5usize,
+            >("RenderLookupTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RenderLookupTexture", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
+            method.invoke_unchecked(self, (camera, shader, tag, width, height))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -791,21 +1328,43 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = __cordl_object
-            .invoke("RenderLookupTexture", (camera, shader, tag, width, height))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                5usize,
+            >("RenderLookupTexture")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RenderLookupTexture", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
+            method.invoke_unchecked(self, (camera, shader, tag, width, height))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

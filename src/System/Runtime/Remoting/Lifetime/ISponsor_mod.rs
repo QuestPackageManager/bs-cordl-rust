@@ -45,11 +45,23 @@ impl crate::System::Runtime::Remoting::Lifetime::ISponsor {
             crate::System::Runtime::Remoting::Lifetime::ILease,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::TimeSpan = __cordl_object
-            .invoke("Renewal", (lease))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Remoting::Lifetime::ILease,
+                >),
+                crate::System::TimeSpan,
+                1usize,
+            >("Renewal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Renewal", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::TimeSpan = unsafe {
+            method.invoke_unchecked(self, (lease))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

@@ -44,8 +44,23 @@ impl crate::UnityEngine::EventSystems::RaycasterManager {
             crate::UnityEngine::EventSystems::BaseRaycaster,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddRaycaster", (baseRaycaster))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::BaseRaycaster,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddRaycaster")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddRaycaster", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (baseRaycaster))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRaycasters() -> quest_hook::libil2cpp::Result<
@@ -57,13 +72,31 @@ impl crate::UnityEngine::EventSystems::RaycasterManager {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::BaseRaycaster,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetRaycasters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRaycasters", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::BaseRaycaster,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetRaycasters", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn RemoveRaycasters(
@@ -71,8 +104,23 @@ impl crate::UnityEngine::EventSystems::RaycasterManager {
             crate::UnityEngine::EventSystems::BaseRaycaster,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RemoveRaycasters", (baseRaycaster))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::BaseRaycaster,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RemoveRaycasters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveRaycasters", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (baseRaycaster))
+        };
         Ok(__cordl_ret.into())
     }
 }

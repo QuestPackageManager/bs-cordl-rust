@@ -45,8 +45,29 @@ impl crate::UnityEngine::UINumericFieldsUtils {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::ExpressionEvaluator_Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToDouble", (str, value, expr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<f64>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ExpressionEvaluator_Expression,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToDouble")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToDouble", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, value, expr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToDouble_Il2CppString1(
@@ -56,8 +77,25 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         >,
         value: quest_hook::libil2cpp::ByRefMut<f64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToDouble", (str, initialValueAsString, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<f64>,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToDouble")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToDouble", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, initialValueAsString, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToFloat(
@@ -67,8 +105,25 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         >,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToFloat", (str, initialValueAsString, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToFloat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToFloat", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, initialValueAsString, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToInt(
@@ -78,8 +133,25 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         >,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToInt", (str, initialValueAsString, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToInt", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, initialValueAsString, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToLong_ByRefMut0(
@@ -89,8 +161,29 @@ impl crate::UnityEngine::UINumericFieldsUtils {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::ExpressionEvaluator_Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToLong", (str, value, expr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<i64>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ExpressionEvaluator_Expression,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToLong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToLong", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, value, expr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToLong_Il2CppString1(
@@ -100,8 +193,25 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         >,
         value: quest_hook::libil2cpp::ByRefMut<i64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToLong", (str, initialValueAsString, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<i64>,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToLong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToLong", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, initialValueAsString, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToUInt(
@@ -111,8 +221,25 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         >,
         value: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToUInt", (str, initialValueAsString, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToUInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToUInt", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, initialValueAsString, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToULong_ByRefMut0(
@@ -122,8 +249,29 @@ impl crate::UnityEngine::UINumericFieldsUtils {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::ExpressionEvaluator_Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToULong", (str, value, expr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ExpressionEvaluator_Expression,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToULong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToULong", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, value, expr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryConvertStringToULong_Il2CppString1(
@@ -133,8 +281,25 @@ impl crate::UnityEngine::UINumericFieldsUtils {
         >,
         value: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryConvertStringToULong", (str, initialValueAsString, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<u64>,
+                ),
+                bool,
+                3usize,
+            >("TryConvertStringToULong")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryConvertStringToULong", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (str, initialValueAsString, value))
+        };
         Ok(__cordl_ret.into())
     }
 }

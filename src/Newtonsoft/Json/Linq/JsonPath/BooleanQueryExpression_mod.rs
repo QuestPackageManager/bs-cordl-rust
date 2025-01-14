@@ -47,16 +47,48 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
         queryValue: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EqualsWithStrictMatch", (value, queryValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                ),
+                bool,
+                2usize,
+            >("EqualsWithStrictMatch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EqualsWithStrictMatch", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (value, queryValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EqualsWithStringCoercion(
         value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
         queryValue: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EqualsWithStringCoercion", (value, queryValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                ),
+                bool,
+                2usize,
+            >("EqualsWithStringCoercion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EqualsWithStringCoercion", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (value, queryValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetResult(
@@ -71,14 +103,31 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                3usize,
+            >("GetResult")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetResult", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = __cordl_object.invoke("GetResult", (root, t, o))?;
+        > = unsafe { method.invoke_unchecked(self, (root, t, o)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsMatch(
@@ -89,10 +138,27 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsMatch", (root, t, settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("IsMatch")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsMatch", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (root, t, settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchTokens(
@@ -103,11 +169,27 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("MatchTokens", (leftResult, rightResult, settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("MatchTokens")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchTokens", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (leftResult, rightResult, settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -128,8 +210,27 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegexEquals", (input, pattern, settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("RegexEquals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegexEquals", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (input, pattern, settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -138,11 +239,25 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         left: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         right: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (_cordl_operator, left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (_cordl_operator, left, right))
+        };
         Ok(__cordl_ret.into())
     }
 }

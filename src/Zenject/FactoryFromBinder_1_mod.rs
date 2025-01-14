@@ -70,12 +70,21 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
+                1usize,
+            >("FromComponentInHierarchy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromComponentInHierarchy", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("FromComponentInHierarchy", (includeInactive))?;
+        > = unsafe { method.invoke_unchecked(self, (includeInactive)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromFactory<TSubFactory>(
@@ -89,12 +98,21 @@ impl<
         TSubFactory: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::ArgConditionCopyNonLazyBinder>,
+                0usize,
+            >("FromFactory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromFactory", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ArgConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("FromFactory", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn FromMethod(
@@ -112,12 +130,26 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Func_2<
+                        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        TContract,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
+                1usize,
+            >("FromMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromMethod", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("FromMethod", (method))?;
+        > = unsafe { method.invoke_unchecked(self, (method)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromResolveGetter_Func_2_0<TObj>(
@@ -132,12 +164,21 @@ impl<
         TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>),
+                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
+                1usize,
+            >("FromResolveGetter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromResolveGetter", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("FromResolveGetter", (method))?;
+        > = unsafe { method.invoke_unchecked(self, (method)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromResolveGetter_Il2CppObject_Func_2_1<TObj>(
@@ -153,12 +194,24 @@ impl<
         TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
+                2usize,
+            >("FromResolveGetter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromResolveGetter", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("FromResolveGetter", (subIdentifier, method))?;
+        > = unsafe { method.invoke_unchecked(self, (subIdentifier, method)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromResolveGetter_Il2CppObject_Func_2_InjectSources2<TObj>(
@@ -175,12 +228,25 @@ impl<
         TObj: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TContract>>,
+                    crate::Zenject::InjectSources,
+                ),
+                quest_hook::libil2cpp::Gc<crate::Zenject::ConditionCopyNonLazyBinder>,
+                3usize,
+            >("FromResolveGetter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromResolveGetter", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConditionCopyNonLazyBinder,
-        > = __cordl_object.invoke("FromResolveGetter", (subIdentifier, method, source))?;
+        > = unsafe { method.invoke_unchecked(self, (subIdentifier, method, source)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromSubContainerResolve_0(
@@ -192,12 +258,23 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::FactorySubContainerBinder_1<TContract>,
+                >,
+                0usize,
+            >("FromSubContainerResolve")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromSubContainerResolve", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactorySubContainerBinder_1<TContract>,
-        > = __cordl_object.invoke("FromSubContainerResolve", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn FromSubContainerResolve_Il2CppObject1(
@@ -210,12 +287,23 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::FactorySubContainerBinder_1<TContract>,
+                >,
+                1usize,
+            >("FromSubContainerResolve")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromSubContainerResolve", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactorySubContainerBinder_1<TContract>,
-        > = __cordl_object.invoke("FromSubContainerResolve", (subIdentifier))?;
+        > = unsafe { method.invoke_unchecked(self, (subIdentifier)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -243,11 +331,25 @@ impl<
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (container, bindInfo, factoryBindInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::FactoryBindInfo>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (container, bindInfo, factoryBindInfo))
+        };
         Ok(__cordl_ret.into())
     }
 }

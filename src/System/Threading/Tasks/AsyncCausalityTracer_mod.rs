@@ -44,8 +44,25 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
         taskId: i32,
         status: crate::System::Threading::Tasks::AsyncCausalityStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TraceOperationCompletion", (traceLevel, taskId, status))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Threading::Tasks::CausalityTraceLevel,
+                    i32,
+                    crate::System::Threading::Tasks::AsyncCausalityStatus,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TraceOperationCompletion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TraceOperationCompletion", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (traceLevel, taskId, status))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TraceOperationCreation(
@@ -54,19 +71,54 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
         operationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         relatedContext: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TraceOperationCreation",
-                (traceLevel, taskId, operationName, relatedContext),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Threading::Tasks::CausalityTraceLevel,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    u64,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("TraceOperationCreation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TraceOperationCreation", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (traceLevel, taskId, operationName, relatedContext),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TraceSynchronousWorkCompletion(
         traceLevel: crate::System::Threading::Tasks::CausalityTraceLevel,
         work: crate::System::Threading::Tasks::CausalitySynchronousWork,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TraceSynchronousWorkCompletion", (traceLevel, work))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Threading::Tasks::CausalityTraceLevel,
+                    crate::System::Threading::Tasks::CausalitySynchronousWork,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("TraceSynchronousWorkCompletion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TraceSynchronousWorkCompletion", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (traceLevel, work))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TraceSynchronousWorkStart(
@@ -74,13 +126,37 @@ impl crate::System::Threading::Tasks::AsyncCausalityTracer {
         taskId: i32,
         work: crate::System::Threading::Tasks::CausalitySynchronousWork,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TraceSynchronousWorkStart", (traceLevel, taskId, work))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Threading::Tasks::CausalityTraceLevel,
+                    i32,
+                    crate::System::Threading::Tasks::CausalitySynchronousWork,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TraceSynchronousWorkStart")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TraceSynchronousWorkStart", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (traceLevel, taskId, work))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_LoggingOn() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_LoggingOn", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_LoggingOn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_LoggingOn", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

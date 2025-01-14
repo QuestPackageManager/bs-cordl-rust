@@ -51,8 +51,29 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TValue = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetValueOrDefault", (dictionary, key))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                            TKey,
+                            TValue,
+                        >,
+                    >,
+                    TKey,
+                ),
+                TValue,
+                2usize,
+            >("GetValueOrDefault")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetValueOrDefault", 2usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked((), (dictionary, key))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault_TValue1<TKey, TValue>(
@@ -68,8 +89,30 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: TValue = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetValueOrDefault", (dictionary, key, defaultValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                            TKey,
+                            TValue,
+                        >,
+                    >,
+                    TKey,
+                    TValue,
+                ),
+                TValue,
+                3usize,
+            >("GetValueOrDefault")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetValueOrDefault", 3usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked((), (dictionary, key, defaultValue))
+        };
         Ok(__cordl_ret.into())
     }
 }

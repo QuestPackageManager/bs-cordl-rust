@@ -49,14 +49,30 @@ impl crate::GlobalNamespace::IEntitlementModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::BeatmapLevelDataVersion,
+                    >,
+                >,
+                2usize,
+            >("GetLevelDataVersionAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelDataVersionAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::BeatmapLevelDataVersion,
             >,
-        > = __cordl_object.invoke("GetLevelDataVersionAsync", (levelId, token))?;
+        > = unsafe { method.invoke_unchecked(self, (levelId, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelEntitlementStatusAsync(
@@ -70,14 +86,30 @@ impl crate::GlobalNamespace::IEntitlementModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::EntitlementStatus,
+                    >,
+                >,
+                2usize,
+            >("GetLevelEntitlementStatusAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelEntitlementStatusAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = __cordl_object.invoke("GetLevelEntitlementStatusAsync", (levelId, token))?;
+        > = unsafe { method.invoke_unchecked(self, (levelId, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPackEntitlementStatusAsync(
@@ -91,15 +123,30 @@ impl crate::GlobalNamespace::IEntitlementModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        crate::GlobalNamespace::EntitlementStatus,
+                    >,
+                >,
+                2usize,
+            >("GetPackEntitlementStatusAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPackEntitlementStatusAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 crate::GlobalNamespace::EntitlementStatus,
             >,
-        > = __cordl_object
-            .invoke("GetPackEntitlementStatusAsync", (levelPackId, token))?;
+        > = unsafe { method.invoke_unchecked(self, (levelPackId, token)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

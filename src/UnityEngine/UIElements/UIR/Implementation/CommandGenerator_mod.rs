@@ -51,8 +51,32 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClosePaintElement", (ve, closingInfo, renderChain, stats))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ClosePaintElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClosePaintElement", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, closingInfo, renderChain, stats))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeTransformMatrix(
@@ -62,8 +86,29 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
         result: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ComputeTransformMatrix", (ve, ancestor, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ComputeTransformMatrix")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ComputeTransformMatrix", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, ancestor, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateBlitShader(
@@ -71,8 +116,21 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateBlitShader", (colorConversion))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                1usize,
+            >("CreateBlitShader")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateBlitShader", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (colorConversion))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DoUpdateOpacityId(
@@ -82,8 +140,31 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DoUpdateOpacityId", (ve, renderChain, mesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::MeshHandle,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("DoUpdateOpacityId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DoUpdateOpacityId", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, renderChain, mesh))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindClosingCommandInsertionPoint(
@@ -99,8 +180,35 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindClosingCommandInsertionPoint", (ve, prev, next))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("FindClosingCommandInsertionPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindClosingCommandInsertionPoint", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, prev, next))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindCommandInsertionPoint(
@@ -116,8 +224,35 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindCommandInsertionPoint", (ve, prev, next))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("FindCommandInsertionPoint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindCommandInsertionPoint", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, prev, next))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlitMaterial(
@@ -125,16 +260,47 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBlitMaterial", (mode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::VisualElement_RenderTargetMode),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                1usize,
+            >("GetBlitMaterial")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBlitMaterial", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = unsafe {
+            method.invoke_unchecked((), (mode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVerticesTransformInfo(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         transform: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVerticesTransformInfo", (ve, transform))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetVerticesTransformInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVerticesTransformInfo", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, transform))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InjectClosingCommandInBetween(
@@ -155,8 +321,38 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InjectClosingCommandInBetween", (renderChain, cmd, prev, next))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("InjectClosingCommandInBetween")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InjectClosingCommandInBetween", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (renderChain, cmd, prev, next))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InjectClosingMeshDrawCommand(
@@ -185,24 +381,65 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::MeshHandle,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    crate::UnityEngine::UIElements::TextureId,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                >,
+                10usize,
+            >("InjectClosingMeshDrawCommand")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InjectClosingMeshDrawCommand", 10usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InjectClosingMeshDrawCommand",
-                (
-                    renderChain,
-                    ve,
-                    cmdPrev,
-                    cmdNext,
-                    mesh,
-                    indexCount,
-                    indexOffset,
-                    material,
-                    texture,
-                    stencilRef,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        renderChain,
+                        ve,
+                        cmdPrev,
+                        cmdNext,
+                        mesh,
+                        indexCount,
+                        indexOffset,
+                        material,
+                        texture,
+                        stencilRef,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InjectCommandInBetween(
@@ -223,8 +460,38 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InjectCommandInBetween", (renderChain, cmd, prev, next))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("InjectCommandInBetween")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InjectCommandInBetween", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (renderChain, cmd, prev, next))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InjectMeshDrawCommand(
@@ -253,24 +520,65 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::MeshHandle,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+                    crate::UnityEngine::UIElements::TextureId,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                >,
+                10usize,
+            >("InjectMeshDrawCommand")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InjectMeshDrawCommand", 10usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "InjectMeshDrawCommand",
-                (
-                    renderChain,
-                    ve,
-                    cmdPrev,
-                    cmdNext,
-                    mesh,
-                    indexCount,
-                    indexOffset,
-                    material,
-                    texture,
-                    stencilRef,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        renderChain,
+                        ve,
+                        cmdPrev,
+                        cmdNext,
+                        mesh,
+                        indexCount,
+                        indexOffset,
+                        material,
+                        texture,
+                        stencilRef,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeGenerateVisualContent(
@@ -279,16 +587,54 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::MeshGenerationContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InvokeGenerateVisualContent", (ve, ctx))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::MeshGenerationContext,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("InvokeGenerateVisualContent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvokeGenerateVisualContent", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, ctx))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsParentOrAncestorOf(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         child: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsParentOrAncestorOf", (ve, child))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("IsParentOrAncestorOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsParentOrAncestorOf", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ve, child)) };
         Ok(__cordl_ret.into())
     }
     pub fn NudgeVerticesToNewSpace(
@@ -300,8 +646,31 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::UIRenderDevice,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NudgeVerticesToNewSpace", (ve, renderChain, device))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::UIRenderDevice,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("NudgeVerticesToNewSpace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NudgeVerticesToNewSpace", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (ve, renderChain, device))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PaintElement(
@@ -315,8 +684,31 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PaintElement", (renderChain, ve, stats))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
+                    >,
+                ),
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo,
+                3usize,
+            >("PaintElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PaintElement", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_ClosingInfo = unsafe {
+            method.invoke_unchecked((), (renderChain, ve, stats))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PrepareNudgeVertices(
@@ -329,8 +721,34 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         dst: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
         count: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PrepareNudgeVertices", (ve, device, mesh, src, dst, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::UIRenderDevice,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::MeshHandle,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("PrepareNudgeVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PrepareNudgeVertices", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, device, mesh, src, dst, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResetCommands(
@@ -339,8 +757,28 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
         >,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ResetCommands", (renderChain, ve))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ResetCommands")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResetCommands", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (renderChain, ve))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateOpacityId(
@@ -349,8 +787,28 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::RenderChain,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UpdateOpacityId", (ve, renderChain))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::RenderChain,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UpdateOpacityId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateOpacityId", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ve, renderChain))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateOrAllocate(
@@ -375,20 +833,57 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::CommandGenerator {
             crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "UpdateOrAllocate",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    data,
-                    vertexCount,
-                    indexCount,
-                    device,
-                    verts,
-                    indices,
-                    indexOffset,
-                    stats,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::MeshHandle,
+                        >,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::UIRenderDevice,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::NativeSlice_1<
+                            crate::UnityEngine::UIElements::Vertex,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Collections::NativeSlice_1<u16>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<u16>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::UIR::ChainBuilderStats,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("UpdateOrAllocate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateOrAllocate", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        data,
+                        vertexCount,
+                        indexCount,
+                        device,
+                        verts,
+                        indices,
+                        indexOffset,
+                        stats,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

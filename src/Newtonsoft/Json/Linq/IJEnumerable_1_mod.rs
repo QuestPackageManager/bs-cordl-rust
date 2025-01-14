@@ -77,14 +77,27 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::IJEnumerable
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    >,
+                >,
+                1usize,
+            >("get_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Item", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::IJEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
             >,
-        > = __cordl_object.invoke("get_Item", (key))?;
+        > = unsafe { method.invoke_unchecked(self, (key)) };
         Ok(__cordl_ret.into())
     }
 }

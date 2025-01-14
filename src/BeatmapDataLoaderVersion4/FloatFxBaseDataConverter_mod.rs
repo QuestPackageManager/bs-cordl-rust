@@ -45,10 +45,21 @@ impl crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, crate::BeatmapSaveDataVersion4::FloatFxEvent),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+                2usize,
+            >("Convert")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Convert", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::FloatFxBaseData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Convert", (beat, floatFxEvent))?;
+        > = unsafe { method.invoke_unchecked((), (beat, floatFxEvent)) };
         Ok(__cordl_ret.into())
     }
 }

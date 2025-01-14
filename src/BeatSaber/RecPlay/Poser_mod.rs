@@ -43,22 +43,65 @@ impl crate::BeatSaber::RecPlay::Poser {
         b: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InterpolatePose", (a, b, t))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+                    f32,
+                ),
+                crate::UnityEngine::Pose,
+                3usize,
+            >("InterpolatePose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InterpolatePose", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
+            method.invoke_unchecked((), (a, b, t))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InvertPose(
         pose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InvertPose", (pose))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Pose),
+                crate::UnityEngine::Pose,
+                1usize,
+            >("InvertPose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvertPose", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
+            method.invoke_unchecked((), (pose))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MirrorPoseYZ(
         pose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MirrorPoseYZ", (pose))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Pose),
+                crate::UnityEngine::Pose,
+                1usize,
+            >("MirrorPoseYZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MirrorPoseYZ", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
+            method.invoke_unchecked((), (pose))
+        };
         Ok(__cordl_ret.into())
     }
 }

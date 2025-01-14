@@ -49,12 +49,23 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+                >,
+                0usize,
+            >("GetCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCertificate", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-        > = __cordl_object.invoke("GetCertificate", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -72,12 +83,23 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+                >,
+                1usize,
+            >("ReadAttrCert")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAttrCert", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-        > = __cordl_object.invoke("ReadAttrCert", (input))?;
+        > = unsafe { method.invoke_unchecked(self, (input)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAttrCert_Stream1(
@@ -88,12 +110,23 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+                >,
+                1usize,
+            >("ReadAttrCert")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAttrCert", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-        > = __cordl_object.invoke("ReadAttrCert", (inStream))?;
+        > = unsafe { method.invoke_unchecked(self, (inStream)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAttrCerts_Il2CppArray0(
@@ -102,12 +135,21 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                1usize,
+            >("ReadAttrCerts")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAttrCerts", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = __cordl_object.invoke("ReadAttrCerts", (input))?;
+        > = unsafe { method.invoke_unchecked(self, (input)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAttrCerts_Stream1(
@@ -116,12 +158,21 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+                1usize,
+            >("ReadAttrCerts")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAttrCerts", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
-        > = __cordl_object.invoke("ReadAttrCerts", (inStream))?;
+        > = unsafe { method.invoke_unchecked(self, (inStream)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadDerCertificate(
@@ -132,12 +183,25 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Asn1::Asn1InputStream,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+                >,
+                1usize,
+            >("ReadDerCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadDerCertificate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-        > = __cordl_object.invoke("ReadDerCertificate", (dIn))?;
+        > = unsafe { method.invoke_unchecked(self, (dIn)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadPemCertificate(
@@ -148,22 +212,39 @@ impl crate::Org::BouncyCastle::X509::X509AttrCertParser {
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+                >,
+                1usize,
+            >("ReadPemCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadPemCertificate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
-        > = __cordl_object.invoke("ReadPemCertificate", (inStream))?;
+        > = unsafe { method.invoke_unchecked(self, (inStream)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -49,24 +49,85 @@ impl crate::Newtonsoft::Json::Schema::Extensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsValid", (source, schema, errorMessages))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Schema::JsonSchema,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("IsValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValid", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (source, schema, errorMessages))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid_JToken_JsonSchema0(
         source: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsValid", (source, schema))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Schema::JsonSchema,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("IsValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValid", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (source, schema)) };
         Ok(__cordl_ret.into())
     }
     pub fn Validate_JToken_JsonSchema0(
         source: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Validate", (source, schema))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Schema::JsonSchema,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Validate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Validate", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (source, schema))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Validate_ValidationEventHandler1(
@@ -76,8 +137,29 @@ impl crate::Newtonsoft::Json::Schema::Extensions {
             crate::Newtonsoft::Json::Schema::ValidationEventHandler,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Validate", (source, schema, validationEventHandler))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Schema::JsonSchema,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::Schema::ValidationEventHandler,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Validate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Validate", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (source, schema, validationEventHandler))
+        };
         Ok(__cordl_ret.into())
     }
 }

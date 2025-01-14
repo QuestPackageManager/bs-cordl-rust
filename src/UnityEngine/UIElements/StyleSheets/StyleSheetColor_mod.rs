@@ -43,16 +43,43 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetColor {
     pub fn HexToColor32(
         color: u32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
-        let __cordl_ret: crate::UnityEngine::Color32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HexToColor32", (color))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u32),
+                crate::UnityEngine::Color32,
+                1usize,
+            >("HexToColor32")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HexToColor32", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
+            method.invoke_unchecked((), (color))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetColor(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetColor", (name, color))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                ),
+                bool,
+                2usize,
+            >("TryGetColor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetColor", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (name, color)) };
         Ok(__cordl_ret.into())
     }
 }

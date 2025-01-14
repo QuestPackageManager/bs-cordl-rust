@@ -69,10 +69,33 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::ChainValidationHelper>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Net::Security::MobileTlsProvider,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Mono::Security::Interface::MonoTlsSettings,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Net::Security::ChainValidationHelper,
+                >,
+                3usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::ChainValidationHelper,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (provider, settings, stream))?;
+        > = unsafe { method.invoke_unchecked((), (provider, settings, stream)) };
         Ok(__cordl_ret.into())
     }
     pub fn DefaultSelectionCallback(
@@ -93,13 +116,44 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                >,
+                4usize,
+            >("DefaultSelectionCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DefaultSelectionCallback", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "DefaultSelectionCallback",
-                (targetHost, localCertificates, remoteCertificate, acceptableIssuers),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (targetHost, localCertificates, remoteCertificate, acceptableIssuers),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetInternalValidator(
@@ -113,10 +167,31 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::ChainValidationHelper>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Net::Security::MobileTlsProvider,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Security::Interface::MonoTlsSettings,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Net::Security::ChainValidationHelper,
+                >,
+                3usize,
+            >("GetInternalValidator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInternalValidator", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::ChainValidationHelper,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInternalValidator", (owner, provider, settings))?;
+        > = unsafe { method.invoke_unchecked((), (owner, provider, settings)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetValidationCallback(
@@ -126,10 +201,25 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::ServerCertValidationCallback>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Mono::Security::Interface::MonoTlsSettings,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::ServerCertValidationCallback,
+                >,
+                1usize,
+            >("GetValidationCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetValidationCallback", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::ServerCertValidationCallback,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetValidationCallback", (settings))?;
+        > = unsafe { method.invoke_unchecked((), (settings)) };
         Ok(__cordl_ret.into())
     }
     pub fn InvokeCallback(
@@ -142,11 +232,29 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         >,
         errors: crate::System::Net::Security::SslPolicyErrors,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("InvokeCallback", (leaf, chain, errors))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Chain,
+                    >,
+                    crate::System::Net::Security::SslPolicyErrors,
+                ),
+                bool,
+                3usize,
+            >("InvokeCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InvokeCallback", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (leaf, chain, errors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -186,20 +294,51 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "SelectClientCertificate",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    targetHost,
-                    localCertificates,
-                    remoteCertificate,
-                    acceptableIssuers,
-                    clientCertificate,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                        >,
+                    >,
                 ),
-            )?;
+                bool,
+                5usize,
+            >("SelectClientCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SelectClientCertificate", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        targetHost,
+                        localCertificates,
+                        remoteCertificate,
+                        acceptableIssuers,
+                        clientCertificate,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateCertificate(
@@ -215,13 +354,32 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ValidationResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Chain,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Security::Interface::ValidationResult,
+                >,
+                4usize,
+            >("ValidateCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateCertificate", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::ValidationResult,
-        > = __cordl_object
-            .invoke("ValidateCertificate", (host, serverMode, leaf, chain))?;
+        > = unsafe { method.invoke_unchecked(self, (host, serverMode, leaf, chain)) };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateChain_ByRefMut1(
@@ -243,13 +401,40 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ValidationResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Security::Cryptography::X509Certificates::X509Chain,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+                    >,
+                    crate::System::Net::Security::SslPolicyErrors,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Security::Interface::ValidationResult,
+                >,
+                6usize,
+            >("ValidateChain")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateChain", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::ValidationResult,
-        > = __cordl_object
-            .invoke("ValidateChain", (host, server, leaf, chain, certs, errors))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (host, server, leaf, chain, certs, errors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateChain_X509Chain0(
@@ -269,13 +454,38 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::ValidationResult>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Chain,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+                    >,
+                    crate::System::Net::Security::SslPolicyErrors,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Security::Interface::ValidationResult,
+                >,
+                6usize,
+            >("ValidateChain")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateChain", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::ValidationResult,
-        > = __cordl_object
-            .invoke("ValidateChain", (host, server, leaf, chain, certs, errors))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (host, server, leaf, chain, certs, errors))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -290,11 +500,35 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
         cloneSettings: bool,
         stream: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (owner, provider, settings, cloneSettings, stream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Net::Security::MobileTlsProvider,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Mono::Security::Interface::MonoTlsSettings,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, provider, settings, cloneSettings, stream),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Settings(
@@ -302,12 +536,23 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Security::Interface::MonoTlsSettings,
+                >,
+                0usize,
+            >("get_Settings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Settings", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoTlsSettings,
-        > = __cordl_object.invoke("get_Settings", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

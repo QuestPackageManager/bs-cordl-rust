@@ -53,22 +53,41 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseRestriction {
             crate::UnityEngine::Vector3,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "RestrictPose",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    headRotation,
-                    headPosition,
-                    leftHandPosition,
-                    rightHandPosition,
-                    newHeadPosition,
-                    newLeftHandPosition,
-                    newRightHandPosition,
+                    crate::UnityEngine::Quaternion,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("RestrictPose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RestrictPose", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        headRotation,
+                        headPosition,
+                        leftHandPosition,
+                        rightHandPosition,
+                        newHeadPosition,
+                        newLeftHandPosition,
+                        newRightHandPosition,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

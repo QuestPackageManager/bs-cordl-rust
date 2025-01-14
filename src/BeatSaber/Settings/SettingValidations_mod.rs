@@ -45,8 +45,26 @@ impl crate::BeatSaber::Settings::SettingValidations {
         >,
         presetLatency: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustAudioSettings", (settings, presetLatency))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::BeatSaber::Settings::AudioSettings,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AdjustAudioSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustAudioSettings", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings, presetLatency))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustControllerSettings(
@@ -54,57 +72,163 @@ impl crate::BeatSaber::Settings::SettingValidations {
             crate::BeatSaber::Settings::ControllerSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustControllerSettings", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::BeatSaber::Settings::ControllerSettings,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustControllerSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustControllerSettings", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustPlayStation4(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustPlayStation4", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustPlayStation4")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustPlayStation4", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustPlayStation4Pro(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustPlayStation4Pro", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustPlayStation4Pro")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustPlayStation4Pro", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustPlayStation5(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustPlayStation5", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustPlayStation5")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustPlayStation5", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustQuest1(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustQuest1", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustQuest1")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustQuest1", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustQuest2(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustQuest2", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustQuest2")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustQuest2", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustQuest3(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustQuest3", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustQuest3")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustQuest3", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustQuestPro(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustQuestPro", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustQuestPro")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustQuestPro", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustRoomSettings(
@@ -112,16 +236,49 @@ impl crate::BeatSaber::Settings::SettingValidations {
             crate::BeatSaber::Settings::RoomSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustRoomSettings", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::BeatSaber::Settings::RoomSettings,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustRoomSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustRoomSettings", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustSettings(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         presetLatency: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustSettings", (settings, presetLatency))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::BeatSaber::Settings::Settings,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AdjustSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustSettings", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings, presetLatency))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustSmoothCameraSettings(
@@ -129,16 +286,49 @@ impl crate::BeatSaber::Settings::SettingValidations {
             crate::BeatSaber::Settings::SmoothCameraSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustSmoothCameraSettings", (settings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::BeatSaber::Settings::SmoothCameraSettings,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AdjustSmoothCameraSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustSmoothCameraSettings", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AdjustStandalone(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         forceApplyQualityAll: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AdjustStandalone", (settings, forceApplyQualityAll))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::BeatSaber::Settings::Settings,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("AdjustStandalone")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AdjustStandalone", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (settings, forceApplyQualityAll))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Clamp(
@@ -146,13 +336,33 @@ impl crate::BeatSaber::Settings::SettingValidations {
         min: f32,
         max: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
-        let __cordl_ret: crate::Unity::Mathematics::float3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Clamp", (value, min, max))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3, f32, f32),
+                crate::Unity::Mathematics::float3,
+                3usize,
+            >("Clamp")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Clamp", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::float3 = unsafe {
+            method.invoke_unchecked((), (value, min, max))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Pick(value: i32, min: i32, max: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Pick", (value, min, max))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32, i32), i32, 3usize>("Pick")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Pick", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (value, min, max)) };
         Ok(__cordl_ret.into())
     }
     pub fn Wrap_f32_1(
@@ -160,8 +370,15 @@ impl crate::BeatSaber::Settings::SettingValidations {
         min: f32,
         max: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Wrap", (value, min, max))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32, f32), f32, 3usize>("Wrap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Wrap", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (value, min, max)) };
         Ok(__cordl_ret.into())
     }
     pub fn Wrap_float3_0(
@@ -169,8 +386,21 @@ impl crate::BeatSaber::Settings::SettingValidations {
         min: f32,
         max: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3> {
-        let __cordl_ret: crate::Unity::Mathematics::float3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Wrap", (value, min, max))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3, f32, f32),
+                crate::Unity::Mathematics::float3,
+                3usize,
+            >("Wrap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Wrap", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::float3 = unsafe {
+            method.invoke_unchecked((), (value, min, max))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -108,11 +108,17 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
         &mut self,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Evaluate",
-            (t),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32), crate::UnityEngine::Vector3, 1usize>("Evaluate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Evaluate", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, (t))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RotatePointAroundPivot(
@@ -120,8 +126,25 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
         pivot: crate::UnityEngine::Vector3,
         rot: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RotatePointAroundPivot", (point, pivot, rot))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Quaternion,
+                ),
+                crate::UnityEngine::Vector3,
+                3usize,
+            >("RotatePointAroundPivot")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RotatePointAroundPivot", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (point, pivot, rot))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RotatePointsAroundPivot(
@@ -131,11 +154,21 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveData {
     ) -> quest_hook::libil2cpp::Result<
         crate::BGLib::UnityExtension::BezierCurves::CurveData,
     > {
-        let __cordl_ret: crate::BGLib::UnityExtension::BezierCurves::CurveData = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "RotatePointsAroundPivot",
-            (pivot, rot),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Vector3, crate::UnityEngine::Quaternion),
+                crate::BGLib::UnityExtension::BezierCurves::CurveData,
+                2usize,
+            >("RotatePointsAroundPivot")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RotatePointsAroundPivot", 2usize
+                )
+            });
+        let __cordl_ret: crate::BGLib::UnityExtension::BezierCurves::CurveData = unsafe {
+            method.invoke_unchecked(self, (pivot, rot))
+        };
         Ok(__cordl_ret.into())
     }
 }

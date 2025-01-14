@@ -53,12 +53,31 @@ impl crate::System::Runtime::Serialization::ISurrogateSelector {
             crate::System::Runtime::Serialization::ISerializationSurrogate,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    crate::System::Runtime::Serialization::StreamingContext,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Serialization::ISurrogateSelector,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::ISerializationSurrogate,
+                >,
+                3usize,
+            >("GetSurrogate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSurrogate", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::ISerializationSurrogate,
-        > = __cordl_object.invoke("GetSurrogate", (_cordl_type, context, selector))?;
+        > = unsafe { method.invoke_unchecked(self, (_cordl_type, context, selector)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

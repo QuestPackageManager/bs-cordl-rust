@@ -52,23 +52,45 @@ impl crate::System::Security::AccessControl::FileSystemSecurity {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::AccessRule>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Principal::IdentityReference,
+                    >,
+                    i32,
+                    bool,
+                    crate::System::Security::AccessControl::InheritanceFlags,
+                    crate::System::Security::AccessControl::PropagationFlags,
+                    crate::System::Security::AccessControl::AccessControlType,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::AccessControl::AccessRule,
+                >,
+                6usize,
+            >("AccessRuleFactory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AccessRuleFactory", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::AccessControl::AccessRule,
-        > = __cordl_object
-            .invoke(
-                "AccessRuleFactory",
-                (
-                    identityReference,
-                    accessMask,
-                    isInherited,
-                    inheritanceFlags,
-                    propagationFlags,
-                    _cordl_type,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        identityReference,
+                        accessMask,
+                        isInherited,
+                        inheritanceFlags,
+                        propagationFlags,
+                        _cordl_type,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -88,11 +110,25 @@ impl crate::System::Security::AccessControl::FileSystemSecurity {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (isContainer, name, includeSections))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    bool,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Security::AccessControl::AccessControlSections,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (isContainer, name, includeSections))
+        };
         Ok(__cordl_ret.into())
     }
 }

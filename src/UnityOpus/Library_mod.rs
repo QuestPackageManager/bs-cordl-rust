@@ -55,8 +55,28 @@ impl crate::UnityOpus::Library {
         frameSize: i32,
         decodeFec: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusDecode", (decoder, data, len, pcm, frameSize, decodeFec))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                6usize,
+            >("OpusDecode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusDecode", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (decoder, data, len, pcm, frameSize, decodeFec))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusDecodeFloat(
@@ -67,8 +87,28 @@ impl crate::UnityOpus::Library {
         frameSize: i32,
         decodeFec: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusDecodeFloat", (decoder, data, len, pcm, frameSize, decodeFec))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    i32,
+                    i32,
+                ),
+                i32,
+                6usize,
+            >("OpusDecodeFloat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusDecodeFloat", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (decoder, data, len, pcm, frameSize, decodeFec))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusDecoderCreate(
@@ -76,15 +116,45 @@ impl crate::UnityOpus::Library {
         channels: crate::UnityOpus::NumChannels,
         error: quest_hook::libil2cpp::ByRefMut<crate::UnityOpus::ErrorCode>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusDecoderCreate", (samplingFrequency, channels, error))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityOpus::SamplingFrequency,
+                    crate::UnityOpus::NumChannels,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityOpus::ErrorCode>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("OpusDecoderCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusDecoderCreate", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (samplingFrequency, channels, error))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusDecoderDestroy(
         decoder: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusDecoderDestroy", (decoder))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OpusDecoderDestroy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusDecoderDestroy", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (decoder))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusEncode(
@@ -94,8 +164,27 @@ impl crate::UnityOpus::Library {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         maxDataBytes: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusEncode", (encoder, pcm, frameSize, data, maxDataBytes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                ),
+                i32,
+                5usize,
+            >("OpusEncode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusEncode", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (encoder, pcm, frameSize, data, maxDataBytes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusEncodeFloat(
@@ -105,8 +194,27 @@ impl crate::UnityOpus::Library {
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         maxDataBytes: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusEncodeFloat", (encoder, pcm, frameSize, data, maxDataBytes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                ),
+                i32,
+                5usize,
+            >("OpusEncodeFloat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusEncodeFloat", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (encoder, pcm, frameSize, data, maxDataBytes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusEncoderCreate(
@@ -115,42 +223,108 @@ impl crate::UnityOpus::Library {
         application: crate::UnityOpus::OpusApplication,
         error: quest_hook::libil2cpp::ByRefMut<crate::UnityOpus::ErrorCode>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "OpusEncoderCreate",
-                (samplingFrequency, channels, application, error),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityOpus::SamplingFrequency,
+                    crate::UnityOpus::NumChannels,
+                    crate::UnityOpus::OpusApplication,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityOpus::ErrorCode>,
+                ),
+                crate::System::IntPtr,
+                4usize,
+            >("OpusEncoderCreate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusEncoderCreate", 4usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method
+                .invoke_unchecked((), (samplingFrequency, channels, application, error))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusEncoderDestroy(
         encoder: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusEncoderDestroy", (encoder))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OpusEncoderDestroy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusEncoderDestroy", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (encoder))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusEncoderSetBitrate(
         encoder: crate::System::IntPtr,
         bitrate: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusEncoderSetBitrate", (encoder, bitrate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                i32,
+                2usize,
+            >("OpusEncoderSetBitrate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusEncoderSetBitrate", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (encoder, bitrate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusEncoderSetComplexity(
         encoder: crate::System::IntPtr,
         complexity: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusEncoderSetComplexity", (encoder, complexity))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                i32,
+                2usize,
+            >("OpusEncoderSetComplexity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusEncoderSetComplexity", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (encoder, complexity))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OpusEncoderSetSignal(
         encoder: crate::System::IntPtr,
         signal: crate::UnityOpus::OpusSignal,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusEncoderSetSignal", (encoder, signal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::UnityOpus::OpusSignal),
+                i32,
+                2usize,
+            >("OpusEncoderSetSignal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusEncoderSetSignal", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (encoder, signal)) };
         Ok(__cordl_ret.into())
     }
     pub fn OpusPcmSoftClip(
@@ -159,18 +333,42 @@ impl crate::UnityOpus::Library {
         channels: crate::UnityOpus::NumChannels,
         softclipMem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OpusPcmSoftClip", (pcm, frameSize, channels, softclipMem))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    i32,
+                    crate::UnityOpus::NumChannels,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("OpusPcmSoftClip")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OpusPcmSoftClip", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (pcm, frameSize, channels, softclipMem))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

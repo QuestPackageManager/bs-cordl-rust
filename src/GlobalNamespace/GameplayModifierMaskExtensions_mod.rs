@@ -43,16 +43,44 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
         mask: crate::GlobalNamespace::GameplayModifierMask,
         other: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Contains", (mask, other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::GlobalNamespace::GameplayModifierMask,
+                    crate::GlobalNamespace::GameplayModifierMask,
+                ),
+                bool,
+                2usize,
+            >("Contains")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Contains", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mask, other)) };
         Ok(__cordl_ret.into())
     }
     pub fn DifferenceFrom(
         mask: crate::GlobalNamespace::GameplayModifierMask,
         other: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DifferenceFrom", (mask, other))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::GlobalNamespace::GameplayModifierMask,
+                    crate::GlobalNamespace::GameplayModifierMask,
+                ),
+                i32,
+                2usize,
+            >("DifferenceFrom")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DifferenceFrom", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (mask, other)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToGameplayModifierMask(
@@ -60,8 +88,21 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
             crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::GameplayModifierMask> {
-        let __cordl_ret: crate::GlobalNamespace::GameplayModifierMask = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToGameplayModifierMask", (gameplayModifiers))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>),
+                crate::GlobalNamespace::GameplayModifierMask,
+                1usize,
+            >("ToGameplayModifierMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToGameplayModifierMask", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::GameplayModifierMask = unsafe {
+            method.invoke_unchecked((), (gameplayModifiers))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToHexString(
@@ -69,10 +110,21 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::GameplayModifierMask),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToHexString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToHexString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToHexString", (mask))?;
+        > = unsafe { method.invoke_unchecked((), (mask)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToMask(
@@ -80,8 +132,21 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
             crate::GlobalNamespace::GameplayModifiers,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::GameplayModifierMask> {
-        let __cordl_ret: crate::GlobalNamespace::GameplayModifierMask = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToMask", (gameplayModifiers))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>),
+                crate::GlobalNamespace::GameplayModifierMask,
+                1usize,
+            >("ToMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToMask", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::GameplayModifierMask = unsafe {
+            method.invoke_unchecked((), (gameplayModifiers))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToModifiers(
@@ -89,10 +154,21 @@ impl crate::GlobalNamespace::GameplayModifierMaskExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::GameplayModifierMask),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                1usize,
+            >("ToModifiers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToModifiers", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToModifiers", (gameplayModifierMask))?;
+        > = unsafe { method.invoke_unchecked((), (gameplayModifierMask)) };
         Ok(__cordl_ret.into())
     }
 }

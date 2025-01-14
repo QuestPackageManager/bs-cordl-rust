@@ -50,11 +50,37 @@ impl crate::UnityEngine::UIElements::EnumFieldHelpers {
         >,
         resIncludeObsoleteValues: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ExtractValue",
-                (bag, cc, resEnumType, resEnumValue, resIncludeObsoleteValues),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::IUxmlAttributes,
+                    >,
+                    crate::UnityEngine::UIElements::CreationContext,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Enum>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                bool,
+                5usize,
+            >("ExtractValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExtractValue", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (bag, cc, resEnumType, resEnumValue, resIncludeObsoleteValues),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

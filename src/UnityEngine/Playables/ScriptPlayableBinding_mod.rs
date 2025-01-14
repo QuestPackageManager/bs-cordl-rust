@@ -44,16 +44,49 @@ impl crate::UnityEngine::Playables::ScriptPlayableBinding {
         key: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableBinding> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableBinding = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (name, key, _cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                ),
+                crate::UnityEngine::Playables::PlayableBinding,
+                3usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableBinding = unsafe {
+            method.invoke_unchecked((), (name, key, _cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateScriptOutput(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateScriptOutput", (graph, name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Playables::PlayableGraph,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::UnityEngine::Playables::PlayableOutput,
+                2usize,
+            >("CreateScriptOutput")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateScriptOutput", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = unsafe {
+            method.invoke_unchecked((), (graph, name))
+        };
         Ok(__cordl_ret.into())
     }
 }

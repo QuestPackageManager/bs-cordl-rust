@@ -116,9 +116,21 @@ impl crate::GlobalNamespace::LevelFilter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("CleanText")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CleanText", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CleanText", (s))?;
+        > = unsafe { method.invoke_unchecked((), (s)) };
         Ok(__cordl_ret.into())
     }
     pub fn FilterLevelByText(
@@ -139,12 +151,42 @@ impl crate::GlobalNamespace::LevelFilter {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    >,
+                >,
+                2usize,
+            >("FilterLevelByText")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FilterLevelByText", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FilterLevelByText", (levels, searchTerms))?;
+        > = unsafe { method.invoke_unchecked((), (levels, searchTerms)) };
         Ok(__cordl_ret.into())
     }
     pub fn FilterLevelsAsync_IEnumerable_1_1(
@@ -172,6 +214,40 @@ impl crate::GlobalNamespace::LevelFilter {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
+                            >,
+                        >,
+                    >,
+                    crate::GlobalNamespace::LevelFilter,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEntitlementModel>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
+                            >,
+                        >,
+                    >,
+                >,
+                5usize,
+            >("FilterLevelsAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FilterLevelsAsync", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
@@ -180,11 +256,19 @@ impl crate::GlobalNamespace::LevelFilter {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FilterLevelsAsync",
-                (beatmapLevels, filter, playerDataModel, levelsModel, cancellationToken),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        beatmapLevels,
+                        filter,
+                        playerDataModel,
+                        levelsModel,
+                        cancellationToken,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FilterLevelsAsync_Il2CppArray0(
@@ -212,6 +296,40 @@ impl crate::GlobalNamespace::LevelFilter {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevelPack,
+                            >,
+                        >,
+                    >,
+                    crate::GlobalNamespace::LevelFilter,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEntitlementModel>,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
+                            >,
+                        >,
+                    >,
+                >,
+                5usize,
+            >("FilterLevelsAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FilterLevelsAsync", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
@@ -220,19 +338,37 @@ impl crate::GlobalNamespace::LevelFilter {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FilterLevelsAsync",
-                (packs, filter, playerDataModel, levelsModel, cancellationToken),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (packs, filter, playerDataModel, levelsModel, cancellationToken),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsWithoutFilter(
         filter: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::LevelFilter>,
         ignoreFilterBySongs: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsWithoutFilter", (filter, ignoreFilterBySongs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::LevelFilter>,
+                    bool,
+                ),
+                bool,
+                2usize,
+            >("IsWithoutFilter")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsWithoutFilter", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (filter, ignoreFilterBySongs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _FilterLevelByText_g__CalculateMatchScore_15_1(
@@ -243,11 +379,30 @@ impl crate::GlobalNamespace::LevelFilter {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "<FilterLevelByText>g__CalculateMatchScore|15_1",
-                (levelString, searchTerms),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                ),
+                i32,
+                2usize,
+            >("<FilterLevelByText>g__CalculateMatchScore|15_1")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<FilterLevelByText>g__CalculateMatchScore|15_1", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (levelString, searchTerms))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _FilterLevelsAsync_g__HasPlayedAnyDifficulty_14_0(
@@ -256,11 +411,24 @@ impl crate::GlobalNamespace::LevelFilter {
             crate::GlobalNamespace::PlayerDataModel,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "<FilterLevelsAsync>g__HasPlayedAnyDifficulty|14_0",
-                (level, playerDataModel),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+                ),
+                bool,
+                2usize,
+            >("<FilterLevelsAsync>g__HasPlayedAnyDifficulty|14_0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<FilterLevelsAsync>g__HasPlayedAnyDifficulty|14_0", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (level, playerDataModel))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _FilterLevelsAsync_g__MatchesCharacteristic_14_1(
@@ -269,11 +437,24 @@ impl crate::GlobalNamespace::LevelFilter {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "<FilterLevelsAsync>g__MatchesCharacteristic|14_1",
-                (beatmapLevel, characteristicFilter),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                bool,
+                2usize,
+            >("<FilterLevelsAsync>g__MatchesCharacteristic|14_1")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<FilterLevelsAsync>g__MatchesCharacteristic|14_1", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (beatmapLevel, characteristicFilter))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _FilterLevelsAsync_g__MatchesDifficulty_14_2(
@@ -283,11 +464,29 @@ impl crate::GlobalNamespace::LevelFilter {
             quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "<FilterLevelsAsync>g__MatchesDifficulty|14_2",
-                (beatmapLevel, difficultyFilter, characteristicFilter),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    crate::GlobalNamespace::BeatmapDifficultyMask,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                bool,
+                3usize,
+            >("<FilterLevelsAsync>g__MatchesDifficulty|14_2")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<FilterLevelsAsync>g__MatchesDifficulty|14_2", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (beatmapLevel, difficultyFilter, characteristicFilter),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

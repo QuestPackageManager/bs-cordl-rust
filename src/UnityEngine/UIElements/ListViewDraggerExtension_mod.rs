@@ -47,10 +47,28 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
+                2usize,
+            >("GetRecycledItemFromId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRecycledItemFromId", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ReusableCollectionItem,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRecycledItemFromId", (listView, id))?;
+        > = unsafe { method.invoke_unchecked((), (listView, id)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRecycledItemFromIndex(
@@ -61,10 +79,28 @@ impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
+                2usize,
+            >("GetRecycledItemFromIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRecycledItemFromIndex", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ReusableCollectionItem,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRecycledItemFromIndex", (listView, index))?;
+        > = unsafe { method.invoke_unchecked((), (listView, index)) };
         Ok(__cordl_ret.into())
     }
 }

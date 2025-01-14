@@ -100,8 +100,24 @@ impl crate::Unity::Jobs::JobHandle {
         job0: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
         job1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineDependenciesInternal2", (job0, job1))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                ),
+                crate::Unity::Jobs::JobHandle,
+                2usize,
+            >("CombineDependenciesInternal2")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineDependenciesInternal2", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
+            method.invoke_unchecked((), (job0, job1))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineDependenciesInternal2_Injected(
@@ -109,16 +125,46 @@ impl crate::Unity::Jobs::JobHandle {
         job1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineDependenciesInternal2_Injected", (job0, job1, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CombineDependenciesInternal2_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineDependenciesInternal2_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (job0, job1, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineDependenciesInternalPtr(
         jobs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineDependenciesInternalPtr", (jobs, count))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::Unity::Jobs::JobHandle,
+                2usize,
+            >("CombineDependenciesInternalPtr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineDependenciesInternalPtr", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
+            method.invoke_unchecked((), (jobs, count))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineDependenciesInternalPtr_Injected(
@@ -126,80 +172,191 @@ impl crate::Unity::Jobs::JobHandle {
         count: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineDependenciesInternalPtr_Injected", (jobs, count, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CombineDependenciesInternalPtr_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineDependenciesInternalPtr_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (jobs, count, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineDependencies_JobHandle_JobHandle0(
         job0: crate::Unity::Jobs::JobHandle,
         job1: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineDependencies", (job0, job1))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Jobs::JobHandle, crate::Unity::Jobs::JobHandle),
+                crate::Unity::Jobs::JobHandle,
+                2usize,
+            >("CombineDependencies")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineDependencies", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
+            method.invoke_unchecked((), (job0, job1))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineDependencies_NativeArray_1_1(
         jobs: crate::Unity::Collections::NativeArray_1<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineDependencies", (jobs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeArray_1<
+                    crate::Unity::Jobs::JobHandle,
+                >),
+                crate::Unity::Jobs::JobHandle,
+                1usize,
+            >("CombineDependencies")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineDependencies", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
+            method.invoke_unchecked((), (jobs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CombineDependencies_NativeSlice_1_2(
         jobs: crate::Unity::Collections::NativeSlice_1<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
-        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CombineDependencies", (jobs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeSlice_1<
+                    crate::Unity::Jobs::JobHandle,
+                >),
+                crate::Unity::Jobs::JobHandle,
+                1usize,
+            >("CombineDependencies")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CombineDependencies", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = unsafe {
+            method.invoke_unchecked((), (jobs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Complete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Complete",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Complete")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Complete", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals(
         &mut self,
         other: crate::Unity::Jobs::JobHandle,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(crate::Unity::Jobs::JobHandle), bool, 1usize>("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn ScheduleBatchedJobs() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ScheduleBatchedJobs", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ScheduleBatchedJobs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ScheduleBatchedJobs", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ScheduleBatchedJobsAndComplete(
         job: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ScheduleBatchedJobsAndComplete", (job))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ScheduleBatchedJobsAndComplete")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ScheduleBatchedJobsAndComplete", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (job))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ScheduleBatchedJobsAndIsCompleted(
         job: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ScheduleBatchedJobsAndIsCompleted", (job))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>),
+                bool,
+                1usize,
+            >("ScheduleBatchedJobsAndIsCompleted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ScheduleBatchedJobsAndIsCompleted", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (job)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_IsCompleted",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_IsCompleted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_IsCompleted", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

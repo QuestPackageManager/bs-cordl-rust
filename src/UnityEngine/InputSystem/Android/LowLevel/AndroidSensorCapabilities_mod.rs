@@ -106,8 +106,21 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabiliti
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilities,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilities = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromJson", (json))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilities,
+                1usize,
+            >("FromJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromJson", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilities = unsafe {
+            method.invoke_unchecked((), (json))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToJson(
@@ -115,9 +128,21 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabiliti
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToJson")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToJson", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToJson", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -125,9 +150,21 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabiliti
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

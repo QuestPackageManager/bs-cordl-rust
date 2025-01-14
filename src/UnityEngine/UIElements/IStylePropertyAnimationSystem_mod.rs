@@ -43,22 +43,44 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
     pub fn CancelAllAnimations_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelAllAnimations", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("CancelAllAnimations")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CancelAllAnimations", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CancelAllAnimations_VisualElement1(
         &mut self,
         owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelAllAnimations", (owner))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElement,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CancelAllAnimations")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CancelAllAnimations", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (owner))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CancelAnimation(
@@ -66,11 +88,26 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("CancelAnimation", (owner, id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("CancelAnimation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CancelAnimation", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (owner, id))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllAnimations(
@@ -82,11 +119,30 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("GetAllAnimations", (owner, propertyIds))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetAllAnimations")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAllAnimations", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (owner, propertyIds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_BackgroundPosition_BackgroundPosition12(
@@ -99,14 +155,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::BackgroundPosition,
+                    crate::UnityEngine::UIElements::BackgroundPosition,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_BackgroundRepeat_BackgroundRepeat13(
@@ -119,14 +196,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::BackgroundRepeat,
+                    crate::UnityEngine::UIElements::BackgroundRepeat,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_BackgroundSize_BackgroundSize14(
@@ -139,14 +237,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::BackgroundSize,
+                    crate::UnityEngine::UIElements::BackgroundSize,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Background_Background4(
@@ -159,14 +278,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::Background,
+                    crate::UnityEngine::UIElements::Background,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Color_Color3(
@@ -179,14 +319,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_FontDefinition_FontDefinition5(
@@ -199,14 +360,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::FontDefinition,
+                    crate::UnityEngine::UIElements::FontDefinition,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Font_Font6(
@@ -219,14 +401,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Length_Length2(
@@ -239,14 +442,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::Length,
+                    crate::UnityEngine::UIElements::Length,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Rotate_Rotate11(
@@ -259,14 +483,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::Rotate,
+                    crate::UnityEngine::UIElements::Rotate,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Scale_Scale8(
@@ -279,14 +524,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::Scale,
+                    crate::UnityEngine::UIElements::Scale,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_TextShadow_TextShadow7(
@@ -299,14 +565,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::TextShadow,
+                    crate::UnityEngine::UIElements::TextShadow,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_TransformOrigin_TransformOrigin9(
@@ -319,14 +606,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::TransformOrigin,
+                    crate::UnityEngine::UIElements::TransformOrigin,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_Translate_Translate10(
@@ -339,14 +647,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::Translate,
+                    crate::UnityEngine::UIElements::Translate,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_f32_f32_0(
@@ -359,14 +688,35 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    f32,
+                    f32,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartTransition_i32_i32_1(
@@ -379,24 +729,51 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         delayMs: i32,
         easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "StartTransition",
-                (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                ),
+                bool,
+                7usize,
+            >("StartTransition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartTransition", 7usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (owner, prop, startValue, endValue, durationMs, delayMs, easingCurve),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Update", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Update", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateAnimation(
@@ -404,11 +781,26 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimationSystem {
         owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateAnimation", (owner, id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UpdateAnimation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateAnimation", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (owner, id))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

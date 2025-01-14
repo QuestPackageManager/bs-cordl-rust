@@ -42,8 +42,21 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
     pub fn ConvertBasicBeatmapEventType(
         beatmapEventType: crate::BeatmapSaveDataCommon::BeatmapEventType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BasicBeatmapEventType> {
-        let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertBasicBeatmapEventType", (beatmapEventType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::BeatmapEventType),
+                crate::GlobalNamespace::BasicBeatmapEventType,
+                1usize,
+            >("ConvertBasicBeatmapEventType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertBasicBeatmapEventType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::BasicBeatmapEventType = unsafe {
+            method.invoke_unchecked((), (beatmapEventType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertDistributionParamType(
@@ -51,106 +64,299 @@ impl crate::GlobalNamespace::BeatmapTypeConverters {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
     > {
-        let __cordl_ret: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertDistributionParamType", (distributionParamType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::DistributionParamType),
+                crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+                1usize,
+            >("ConvertDistributionParamType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertDistributionParamType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType = unsafe {
+            method.invoke_unchecked((), (distributionParamType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertEaseType(
         easeType: crate::BeatmapSaveDataCommon::EaseType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
-        let __cordl_ret: crate::GlobalNamespace::EaseType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertEaseType", (easeType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::EaseType),
+                crate::GlobalNamespace::EaseType,
+                1usize,
+            >("ConvertEaseType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertEaseType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EaseType = unsafe {
+            method.invoke_unchecked((), (easeType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertEnvironmentColorType(
         environmentColorType: crate::BeatmapSaveDataCommon::EnvironmentColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertEnvironmentColorType", (environmentColorType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::EnvironmentColorType),
+                crate::GlobalNamespace::EnvironmentColorType,
+                1usize,
+            >("ConvertEnvironmentColorType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertEnvironmentColorType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = unsafe {
+            method.invoke_unchecked((), (environmentColorType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertLightAxis(
         axis: crate::BeatmapSaveDataCommon::Axis,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightAxis> {
-        let __cordl_ret: crate::GlobalNamespace::LightAxis = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertLightAxis", (axis))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::Axis),
+                crate::GlobalNamespace::LightAxis,
+                1usize,
+            >("ConvertLightAxis")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertLightAxis", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::LightAxis = unsafe {
+            method.invoke_unchecked((), (axis))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertLightRotationDirection(
         rotationDirection: crate::BeatmapSaveDataCommon::RotationDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::LightRotationDirection> {
-        let __cordl_ret: crate::GlobalNamespace::LightRotationDirection = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertLightRotationDirection", (rotationDirection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::RotationDirection),
+                crate::GlobalNamespace::LightRotationDirection,
+                1usize,
+            >("ConvertLightRotationDirection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertLightRotationDirection", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::LightRotationDirection = unsafe {
+            method.invoke_unchecked((), (rotationDirection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertNoteColorType_ColorType0(
         noteType: crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
-        let __cordl_ret: crate::GlobalNamespace::ColorType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertNoteColorType", (noteType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataVersion2_6_0AndEarlier::ColorType),
+                crate::GlobalNamespace::ColorType,
+                1usize,
+            >("ConvertNoteColorType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertNoteColorType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
+            method.invoke_unchecked((), (noteType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertNoteColorType_NoteColorType1(
         noteType: crate::BeatmapSaveDataCommon::NoteColorType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
-        let __cordl_ret: crate::GlobalNamespace::ColorType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertNoteColorType", (noteType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::NoteColorType),
+                crate::GlobalNamespace::ColorType,
+                1usize,
+            >("ConvertNoteColorType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertNoteColorType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::ColorType = unsafe {
+            method.invoke_unchecked((), (noteType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertNoteCutDirection(
         noteCutDirection: crate::BeatmapSaveDataCommon::NoteCutDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
-        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertNoteCutDirection", (noteCutDirection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::NoteCutDirection),
+                crate::GlobalNamespace::NoteCutDirection,
+                1usize,
+            >("ConvertNoteCutDirection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertNoteCutDirection", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = unsafe {
+            method.invoke_unchecked((), (noteCutDirection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertNoteLineLayer_NoteLineLayer1(
         layer: crate::BeatmapSaveDataCommon::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
-        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertNoteLineLayer", (layer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::NoteLineLayer),
+                crate::GlobalNamespace::NoteLineLayer,
+                1usize,
+            >("ConvertNoteLineLayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertNoteLineLayer", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = unsafe {
+            method.invoke_unchecked((), (layer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertNoteLineLayer_i32_0(
         layer: i32,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
-        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertNoteLineLayer", (layer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                crate::GlobalNamespace::NoteLineLayer,
+                1usize,
+            >("ConvertNoteLineLayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertNoteLineLayer", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = unsafe {
+            method.invoke_unchecked((), (layer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertOffsetDirection(
         offsetDirection: crate::BeatmapSaveDataCommon::OffsetDirection,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OffsetDirection> {
-        let __cordl_ret: crate::GlobalNamespace::OffsetDirection = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertOffsetDirection", (offsetDirection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::OffsetDirection),
+                crate::GlobalNamespace::OffsetDirection,
+                1usize,
+            >("ConvertOffsetDirection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertOffsetDirection", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::OffsetDirection = unsafe {
+            method.invoke_unchecked((), (offsetDirection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertSliderDataType(
         sliderType: crate::BeatmapSaveDataVersion3::SliderType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderData_Type> {
-        let __cordl_ret: crate::GlobalNamespace::SliderData_Type = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertSliderDataType", (sliderType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataVersion3::SliderType),
+                crate::GlobalNamespace::SliderData_Type,
+                1usize,
+            >("ConvertSliderDataType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertSliderDataType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::SliderData_Type = unsafe {
+            method.invoke_unchecked((), (sliderType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertSliderMidAnchorMode(
         sliderMidAnchorMode: crate::BeatmapSaveDataCommon::SliderMidAnchorMode,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderMidAnchorMode> {
-        let __cordl_ret: crate::GlobalNamespace::SliderMidAnchorMode = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertSliderMidAnchorMode", (sliderMidAnchorMode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataCommon::SliderMidAnchorMode),
+                crate::GlobalNamespace::SliderMidAnchorMode,
+                1usize,
+            >("ConvertSliderMidAnchorMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertSliderMidAnchorMode", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::SliderMidAnchorMode = unsafe {
+            method.invoke_unchecked((), (sliderMidAnchorMode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertTransitionTypeToEaseType(
         transitionType: crate::BeatmapSaveDataVersion3::TransitionType,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EaseType> {
-        let __cordl_ret: crate::GlobalNamespace::EaseType = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertTransitionTypeToEaseType", (transitionType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataVersion3::TransitionType),
+                crate::GlobalNamespace::EaseType,
+                1usize,
+            >("ConvertTransitionTypeToEaseType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertTransitionTypeToEaseType", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EaseType = unsafe {
+            method.invoke_unchecked((), (transitionType))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertTransitionTypeToExtension(
         transitionType: crate::BeatmapSaveDataVersion3::TransitionType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertTransitionTypeToExtension", (transitionType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BeatmapSaveDataVersion3::TransitionType),
+                bool,
+                1usize,
+            >("ConvertTransitionTypeToExtension")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertTransitionTypeToExtension", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (transitionType)) };
         Ok(__cordl_ret.into())
     }
 }

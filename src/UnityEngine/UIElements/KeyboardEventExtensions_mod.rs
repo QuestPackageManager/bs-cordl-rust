@@ -42,15 +42,39 @@ impl crate::UnityEngine::UIElements::KeyboardEventExtensions {
     pub fn ShouldSendNavigationMoveEvent(
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::KeyDownEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldSendNavigationMoveEvent", (e))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::KeyDownEvent,
+                >),
+                bool,
+                1usize,
+            >("ShouldSendNavigationMoveEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldSendNavigationMoveEvent", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (e)) };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldSendNavigationMoveEventRuntime(
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldSendNavigationMoveEventRuntime", (e))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>),
+                bool,
+                1usize,
+            >("ShouldSendNavigationMoveEventRuntime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldSendNavigationMoveEventRuntime", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (e)) };
         Ok(__cordl_ret.into())
     }
 }

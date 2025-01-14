@@ -39,8 +39,17 @@ impl std::ops::DerefMut for crate::Unity::Burst::Intrinsics::Common {
 #[cfg(feature = "Unity+Burst+Intrinsics+Common")]
 impl crate::Unity::Burst::Intrinsics::Common {
     pub fn Pause() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Pause", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Pause")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Pause", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn umul128(
@@ -48,8 +57,19 @@ impl crate::Unity::Burst::Intrinsics::Common {
         y: u64,
         high: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<u64> {
-        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("umul128", (x, y, high))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (u64, u64, quest_hook::libil2cpp::ByRefMut<u64>),
+                u64,
+                3usize,
+            >("umul128")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "umul128", 3usize
+                )
+            });
+        let __cordl_ret: u64 = unsafe { method.invoke_unchecked((), (x, y, high)) };
         Ok(__cordl_ret.into())
     }
 }

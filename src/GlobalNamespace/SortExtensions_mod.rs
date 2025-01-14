@@ -47,8 +47,27 @@ impl crate::GlobalNamespace::SortExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InsertSorted", (list, item, getSortIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    T,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("InsertSorted")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InsertSorted", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (list, item, getSortIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Sort<T>(
@@ -59,8 +78,26 @@ impl crate::GlobalNamespace::SortExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Sort", (list, getSortIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Sort")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Sort", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (list, getSortIndex))
+        };
         Ok(__cordl_ret.into())
     }
 }

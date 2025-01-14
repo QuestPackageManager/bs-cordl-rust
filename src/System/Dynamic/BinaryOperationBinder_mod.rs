@@ -51,12 +51,30 @@ impl crate::System::Dynamic::BinaryOperationBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::DynamicMetaObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                2usize,
+            >("Bind")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Bind", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object.invoke("Bind", (target, args))?;
+        > = unsafe { method.invoke_unchecked(self, (target, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn FallbackBinaryOperation_DynamicMetaObject1(
@@ -69,13 +87,25 @@ impl crate::System::Dynamic::BinaryOperationBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                3usize,
+            >("FallbackBinaryOperation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FallbackBinaryOperation", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object
-            .invoke("FallbackBinaryOperation", (target, arg, errorSuggestion))?;
+        > = unsafe { method.invoke_unchecked(self, (target, arg, errorSuggestion)) };
         Ok(__cordl_ret.into())
     }
     pub fn FallbackBinaryOperation_DynamicMetaObject_DynamicMetaObject0(
@@ -85,12 +115,24 @@ impl crate::System::Dynamic::BinaryOperationBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                2usize,
+            >("FallbackBinaryOperation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FallbackBinaryOperation", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object.invoke("FallbackBinaryOperation", (target, arg))?;
+        > = unsafe { method.invoke_unchecked(self, (target, arg)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_Operation(
@@ -98,11 +140,21 @@ impl crate::System::Dynamic::BinaryOperationBinder {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Linq::Expressions::ExpressionType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = __cordl_object
-            .invoke("get_Operation", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::System::Linq::Expressions::ExpressionType,
+                0usize,
+            >("get_Operation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Operation", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

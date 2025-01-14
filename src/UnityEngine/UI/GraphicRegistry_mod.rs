@@ -62,16 +62,48 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DisableGraphicForCanvas", (c, graphic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("DisableGraphicForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DisableGraphicForCanvas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (c, graphic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DisableRaycastGraphicForCanvas(
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DisableRaycastGraphicForCanvas", (c, graphic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("DisableRaycastGraphicForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DisableRaycastGraphicForCanvas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (c, graphic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetGraphicsForCanvas(
@@ -83,12 +115,27 @@ impl crate::UnityEngine::UI::GraphicRegistry {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                    >,
+                >,
+                1usize,
+            >("GetGraphicsForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetGraphicsForCanvas", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetGraphicsForCanvas", (canvas))?;
+        > = unsafe { method.invoke_unchecked((), (canvas)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRaycastableGraphicsForCanvas(
@@ -100,12 +147,27 @@ impl crate::UnityEngine::UI::GraphicRegistry {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                    >,
+                >,
+                1usize,
+            >("GetRaycastableGraphicsForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRaycastableGraphicsForCanvas", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRaycastableGraphicsForCanvas", (canvas))?;
+        > = unsafe { method.invoke_unchecked((), (canvas)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -119,50 +181,132 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterGraphicForCanvas", (c, graphic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RegisterGraphicForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterGraphicForCanvas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (c, graphic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterRaycastGraphicForCanvas(
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterRaycastGraphicForCanvas", (c, graphic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RegisterRaycastGraphicForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterRaycastGraphicForCanvas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (c, graphic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterGraphicForCanvas(
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnregisterGraphicForCanvas", (c, graphic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UnregisterGraphicForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnregisterGraphicForCanvas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (c, graphic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterRaycastGraphicForCanvas(
         c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnregisterRaycastGraphicForCanvas", (c, graphic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("UnregisterRaycastGraphicForCanvas")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnregisterRaycastGraphicForCanvas", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (c, graphic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_instance() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::GraphicRegistry>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::GraphicRegistry>,
+                0usize,
+            >("get_instance")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_instance", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UI::GraphicRegistry,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

@@ -39,16 +39,32 @@ impl std::ops::DerefMut for crate::System::Threading::TimeoutHelper {
 #[cfg(feature = "System+Threading+TimeoutHelper")]
 impl crate::System::Threading::TimeoutHelper {
     pub fn GetTime() -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetTime", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), u32, 0usize>("GetTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTime", 0usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateTimeOut(
         startTime: u32,
         originalWaitMillisecondsTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UpdateTimeOut", (startTime, originalWaitMillisecondsTimeout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(u32, i32), i32, 2usize>("UpdateTimeOut")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateTimeOut", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (startTime, originalWaitMillisecondsTimeout))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -54,11 +54,21 @@ impl crate::Zenject::DisposeBlock {
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Add", (disposable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IDisposable>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (disposable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddRange<T>(
@@ -71,31 +81,59 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("AddRange", (disposables))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<T>,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddRange")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddRange", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (disposables))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Dispose", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Dispose", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LazyInitializeDisposableList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LazyInitializeDisposableList", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("LazyInitializeDisposableList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LazyInitializeDisposableList", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -108,26 +146,62 @@ impl crate::Zenject::DisposeBlock {
     pub fn OnDespawned(
         that: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnDespawned", (that))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnDespawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnDespawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (that))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnSpawned(
         that: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnSpawned", (that))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnSpawned")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnSpawned", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (that))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Remove", (disposable))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IDisposable>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Remove")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Remove", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (disposable))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnList_1<T>(
@@ -139,12 +213,23 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<T>,
+                >,
+                0usize,
+            >("SpawnList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SpawnList", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
-        > = __cordl_object.invoke("SpawnList", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnList_IEnumerable_1_0<T>(
@@ -159,19 +244,45 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<T>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<T>,
+                >,
+                1usize,
+            >("SpawnList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SpawnList", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
-        > = __cordl_object.invoke("SpawnList", (elements))?;
+        > = unsafe { method.invoke_unchecked(self, (elements)) };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_8() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Spawn", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
+                0usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_1_0<T>(
@@ -182,10 +293,19 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: T = __cordl_object.invoke("Spawn", (pool))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>),
+                T,
+                1usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked(self, (pool)) };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_2_TParam1_1<TValue, TParam1>(
@@ -199,10 +319,24 @@ impl crate::Zenject::DisposeBlock {
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (pool, p1))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IMemoryPool_2<TParam1, TValue>,
+                    >,
+                    TParam1,
+                ),
+                TValue,
+                2usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 2usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe { method.invoke_unchecked(self, (pool, p1)) };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_3_TParam1_TParam2_2<TValue, TParam1, TParam2>(
@@ -221,10 +355,27 @@ impl crate::Zenject::DisposeBlock {
         TParam2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (pool, p1, p2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IMemoryPool_3<TParam1, TParam2, TValue>,
+                    >,
+                    TParam1,
+                    TParam2,
+                ),
+                TValue,
+                3usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 3usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked(self, (pool, p1, p2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_4_TParam1_TParam2_TParam3_3<
@@ -251,10 +402,28 @@ impl crate::Zenject::DisposeBlock {
         TParam3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object.invoke("Spawn", (pool, p1, p2, p3))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IMemoryPool_4<TParam1, TParam2, TParam3, TValue>,
+                    >,
+                    TParam1,
+                    TParam2,
+                    TParam3,
+                ),
+                TValue,
+                4usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 4usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked(self, (pool, p1, p2, p3))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_5_TParam1_TParam2_TParam3_TParam4_4<
@@ -285,11 +454,35 @@ impl crate::Zenject::DisposeBlock {
         TParam4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object
-            .invoke("Spawn", (pool, p1, p2, p3, p4))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IMemoryPool_5<
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TValue,
+                        >,
+                    >,
+                    TParam1,
+                    TParam2,
+                    TParam3,
+                    TParam4,
+                ),
+                TValue,
+                5usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 5usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_6_TParam1_TParam2_TParam3_TParam4_TParam5_5<
@@ -331,11 +524,37 @@ impl crate::Zenject::DisposeBlock {
         TParam5: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object
-            .invoke("Spawn", (pool, p1, p2, p3, p4, p5))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IMemoryPool_6<
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TValue,
+                        >,
+                    >,
+                    TParam1,
+                    TParam2,
+                    TParam3,
+                    TParam4,
+                    TParam5,
+                ),
+                TValue,
+                6usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 6usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_7_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_6<
@@ -382,11 +601,39 @@ impl crate::Zenject::DisposeBlock {
         TParam6: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object
-            .invoke("Spawn", (pool, p1, p2, p3, p4, p5, p6))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IMemoryPool_7<
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TValue,
+                        >,
+                    >,
+                    TParam1,
+                    TParam2,
+                    TParam3,
+                    TParam4,
+                    TParam5,
+                    TParam6,
+                ),
+                TValue,
+                7usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 7usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5, p6))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_8_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_TParam7_7<
@@ -438,11 +685,41 @@ impl crate::Zenject::DisposeBlock {
         TParam7: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: TValue = __cordl_object
-            .invoke("Spawn", (pool, p1, p2, p3, p4, p5, p6, p7))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IMemoryPool_8<
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TValue,
+                        >,
+                    >,
+                    TParam1,
+                    TParam2,
+                    TParam3,
+                    TParam4,
+                    TParam5,
+                    TParam6,
+                    TParam7,
+                ),
+                TValue,
+                8usize,
+            >("Spawn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Spawn", 8usize
+                )
+            });
+        let __cordl_ret: TValue = unsafe {
+            method.invoke_unchecked(self, (pool, p1, p2, p3, p4, p5, p6, p7))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StoreSpawnedObject<T>(
@@ -454,21 +731,42 @@ impl crate::Zenject::DisposeBlock {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("StoreSpawnedObject", (obj, pool))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    T,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Zenject::IDespawnableMemoryPool_1<T>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("StoreSpawnedObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StoreSpawnedObject", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (obj, pool))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

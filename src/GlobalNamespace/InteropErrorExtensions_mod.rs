@@ -42,8 +42,21 @@ impl crate::GlobalNamespace::InteropErrorExtensions {
     pub fn Info(
         error: crate::GlobalNamespace::Interop_Error,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Interop_ErrorInfo> {
-        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Info", (error))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::Interop_Error),
+                crate::GlobalNamespace::Interop_ErrorInfo,
+                1usize,
+            >("Info")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Info", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo = unsafe {
+            method.invoke_unchecked((), (error))
+        };
         Ok(__cordl_ret.into())
     }
 }

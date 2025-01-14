@@ -43,8 +43,21 @@ impl crate::UnityEngine::Physics2D {
         distance: f32,
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
-        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRayIntersection", (ray, distance, layerMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Ray, f32, i32),
+                crate::UnityEngine::RaycastHit2D,
+                3usize,
+            >("GetRayIntersection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersection", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = unsafe {
+            method.invoke_unchecked((), (ray, distance, layerMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionAll_Internal(
@@ -58,13 +71,35 @@ impl crate::UnityEngine::Physics2D {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::PhysicsScene2D,
+                    crate::UnityEngine::Vector3,
+                    crate::UnityEngine::Vector3,
+                    f32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+                >,
+                5usize,
+            >("GetRayIntersectionAll_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionAll_Internal", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetRayIntersectionAll_Internal",
-                (physicsScene, origin, direction, distance, layerMask),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (physicsScene, origin, direction, distance, layerMask),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionAll_Internal_Injected(
@@ -80,13 +115,35 @@ impl crate::UnityEngine::Physics2D {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene2D>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                    f32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+                >,
+                5usize,
+            >("GetRayIntersectionAll_Internal_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionAll_Internal_Injected", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetRayIntersectionAll_Internal_Injected",
-                (physicsScene, origin, direction, distance, layerMask),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (physicsScene, origin, direction, distance, layerMask),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionAll_Ray0(
@@ -96,10 +153,23 @@ impl crate::UnityEngine::Physics2D {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Ray),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+                >,
+                1usize,
+            >("GetRayIntersectionAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionAll", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRayIntersectionAll", (ray))?;
+        > = unsafe { method.invoke_unchecked((), (ray)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionAll_f32_1(
@@ -110,10 +180,23 @@ impl crate::UnityEngine::Physics2D {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Ray, f32),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+                >,
+                2usize,
+            >("GetRayIntersectionAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionAll", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRayIntersectionAll", (ray, distance))?;
+        > = unsafe { method.invoke_unchecked((), (ray, distance)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionAll_f32_i32_2(
@@ -125,10 +208,23 @@ impl crate::UnityEngine::Physics2D {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Ray, f32, i32),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+                >,
+                3usize,
+            >("GetRayIntersectionAll")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionAll", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRayIntersectionAll", (ray, distance, layerMask))?;
+        > = unsafe { method.invoke_unchecked((), (ray, distance, layerMask)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionNonAlloc_Ray_Il2CppArray0(
@@ -137,8 +233,26 @@ impl crate::UnityEngine::Physics2D {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRayIntersectionNonAlloc", (ray, results))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::RaycastHit2D,
+                        >,
+                    >,
+                ),
+                i32,
+                2usize,
+            >("GetRayIntersectionNonAlloc")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionNonAlloc", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (ray, results)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionNonAlloc_f32_1(
@@ -148,8 +262,29 @@ impl crate::UnityEngine::Physics2D {
         >,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRayIntersectionNonAlloc", (ray, results, distance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::RaycastHit2D,
+                        >,
+                    >,
+                    f32,
+                ),
+                i32,
+                3usize,
+            >("GetRayIntersectionNonAlloc")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionNonAlloc", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (ray, results, distance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRayIntersectionNonAlloc_f32_i32_2(
@@ -160,8 +295,30 @@ impl crate::UnityEngine::Physics2D {
         distance: f32,
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRayIntersectionNonAlloc", (ray, results, distance, layerMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Ray,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::RaycastHit2D,
+                        >,
+                    >,
+                    f32,
+                    i32,
+                ),
+                i32,
+                4usize,
+            >("GetRayIntersectionNonAlloc")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRayIntersectionNonAlloc", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (ray, results, distance, layerMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_ContactFilter2D_Il2CppArray5(
@@ -172,8 +329,30 @@ impl crate::UnityEngine::Physics2D {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Raycast", (origin, direction, contactFilter, results))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::ContactFilter2D,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::RaycastHit2D,
+                        >,
+                    >,
+                ),
+                i32,
+                4usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (origin, direction, contactFilter, results))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_ContactFilter2D_Il2CppArray_f32_6(
@@ -185,8 +364,35 @@ impl crate::UnityEngine::Physics2D {
         >,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Raycast", (origin, direction, contactFilter, results, distance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::ContactFilter2D,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::RaycastHit2D,
+                        >,
+                    >,
+                    f32,
+                ),
+                i32,
+                5usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (origin, direction, contactFilter, results, distance),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_ContactFilter2D_List_1_f32_7(
@@ -198,16 +404,56 @@ impl crate::UnityEngine::Physics2D {
         >,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Raycast", (origin, direction, contactFilter, results, distance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::ContactFilter2D,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::RaycastHit2D,
+                        >,
+                    >,
+                    f32,
+                ),
+                i32,
+                5usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 5usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (origin, direction, contactFilter, results, distance),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_Vector2_Vector2_0(
         origin: crate::UnityEngine::Vector2,
         direction: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
-        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Raycast", (origin, direction))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2),
+                crate::UnityEngine::RaycastHit2D,
+                2usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = unsafe {
+            method.invoke_unchecked((), (origin, direction))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_f32_1(
@@ -215,8 +461,21 @@ impl crate::UnityEngine::Physics2D {
         direction: crate::UnityEngine::Vector2,
         distance: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
-        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Raycast", (origin, direction, distance))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2, f32),
+                crate::UnityEngine::RaycastHit2D,
+                3usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = unsafe {
+            method.invoke_unchecked((), (origin, direction, distance))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_f32_i32_2(
@@ -225,8 +484,21 @@ impl crate::UnityEngine::Physics2D {
         distance: f32,
         layerMask: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
-        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Raycast", (origin, direction, distance, layerMask))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Vector2, crate::UnityEngine::Vector2, f32, i32),
+                crate::UnityEngine::RaycastHit2D,
+                4usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = unsafe {
+            method.invoke_unchecked((), (origin, direction, distance, layerMask))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_f32_i32_f32_3(
@@ -236,8 +508,28 @@ impl crate::UnityEngine::Physics2D {
         layerMask: i32,
         minDepth: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
-        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Raycast", (origin, direction, distance, layerMask, minDepth))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    f32,
+                    i32,
+                    f32,
+                ),
+                crate::UnityEngine::RaycastHit2D,
+                5usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 5usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = unsafe {
+            method
+                .invoke_unchecked((), (origin, direction, distance, layerMask, minDepth))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_f32_i32_f32_f32_4(
@@ -248,23 +540,64 @@ impl crate::UnityEngine::Physics2D {
         minDepth: f32,
         maxDepth: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
-        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Raycast",
-                (origin, direction, distance, layerMask, minDepth, maxDepth),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Vector2,
+                    crate::UnityEngine::Vector2,
+                    f32,
+                    i32,
+                    f32,
+                    f32,
+                ),
+                crate::UnityEngine::RaycastHit2D,
+                6usize,
+            >("Raycast")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Raycast", 6usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (origin, direction, distance, layerMask, minDepth, maxDepth),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultPhysicsScene() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::PhysicsScene2D,
     > {
-        let __cordl_ret: crate::UnityEngine::PhysicsScene2D = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_defaultPhysicsScene", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::PhysicsScene2D,
+                0usize,
+            >("get_defaultPhysicsScene")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_defaultPhysicsScene", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::PhysicsScene2D = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_queriesHitTriggers() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_queriesHitTriggers", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_queriesHitTriggers")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_queriesHitTriggers", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

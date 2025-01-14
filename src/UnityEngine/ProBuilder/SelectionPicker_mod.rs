@@ -63,6 +63,41 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    crate::UnityEngine::ProBuilder::PickerOptions,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                crate::UnityEngine::ProBuilder::Edge,
+                            >,
+                        >,
+                    >,
+                >,
+                5usize,
+            >("PickEdgesInRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickEdgesInRect", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<
@@ -74,11 +109,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PickEdgesInRect",
-                (cam, rect, selectable, options, pixelsPerPoint),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PickFace(
@@ -90,10 +123,27 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Vector3,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                3usize,
+            >("PickFace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickFace", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Face,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PickFace", (camera, mousePosition, pickable))?;
+        > = unsafe { method.invoke_unchecked((), (camera, mousePosition, pickable)) };
         Ok(__cordl_ret.into())
     }
     pub fn PickFacesInRect(
@@ -120,6 +170,43 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    crate::UnityEngine::ProBuilder::PickerOptions,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
+                                >,
+                            >,
+                        >,
+                    >,
+                >,
+                5usize,
+            >("PickFacesInRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickFacesInRect", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<
@@ -131,11 +218,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                     >,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PickFacesInRect",
-                (cam, rect, selectable, options, pixelsPerPoint),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PickVerticesInRect(
@@ -160,6 +245,39 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            >,
+                        >,
+                    >,
+                    crate::UnityEngine::ProBuilder::PickerOptions,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::Dictionary_2<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                        >,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<i32>,
+                        >,
+                    >,
+                >,
+                5usize,
+            >("PickVerticesInRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PickVerticesInRect", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<
                 quest_hook::libil2cpp::Gc<
@@ -169,11 +287,9 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                     crate::System::Collections::Generic::HashSet_1<i32>,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "PickVerticesInRect",
-                (cam, rect, selectable, options, pixelsPerPoint),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))
+        };
         Ok(__cordl_ret.into())
     }
 }

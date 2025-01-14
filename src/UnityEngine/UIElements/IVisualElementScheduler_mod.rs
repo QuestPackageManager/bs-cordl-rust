@@ -47,12 +47,23 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduler {
             crate::UnityEngine::UIElements::IVisualElementScheduledItem,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+                >,
+                1usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-        > = __cordl_object.invoke("Execute", (updateEvent))?;
+        > = unsafe { method.invoke_unchecked(self, (updateEvent)) };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_Action_1_0(
@@ -65,12 +76,25 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduler {
             crate::UnityEngine::UIElements::IVisualElementScheduledItem,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<crate::UnityEngine::UIElements::TimerState>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+                >,
+                1usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IVisualElementScheduledItem,
-        > = __cordl_object.invoke("Execute", (timerUpdateEvent))?;
+        > = unsafe { method.invoke_unchecked(self, (timerUpdateEvent)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

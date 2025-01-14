@@ -45,11 +45,29 @@ impl crate::Oculus::Platform::LanguagePack {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::AssetDetails,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("GetCurrent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCurrent", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetCurrent", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurrent(
@@ -63,13 +81,31 @@ impl crate::Oculus::Platform::LanguagePack {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("SetCurrent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCurrent", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::AssetFileDownloadResult,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("SetCurrent", (tag))?;
+        > = unsafe { method.invoke_unchecked((), (tag)) };
         Ok(__cordl_ret.into())
     }
 }

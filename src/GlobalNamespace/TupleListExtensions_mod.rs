@@ -53,8 +53,29 @@ impl crate::GlobalNamespace::TupleListExtensions {
         T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (list, item1, item2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>>,
+                        >,
+                    >,
+                    T1,
+                    T2,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (list, item1, item2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_T3_1<T1, T2, T3>(
@@ -75,8 +96,30 @@ impl crate::GlobalNamespace::TupleListExtensions {
         T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (list, item1, item2, item3))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<crate::System::Tuple_3<T1, T2, T3>>,
+                        >,
+                    >,
+                    T1,
+                    T2,
+                    T3,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (list, item1, item2, item3))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Add_T3_T4_2<T1, T2, T3, T4>(
@@ -100,8 +143,33 @@ impl crate::GlobalNamespace::TupleListExtensions {
         T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Add", (list, item1, item2, item3, item4))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Tuple_4<T1, T2, T3, T4>,
+                            >,
+                        >,
+                    >,
+                    T1,
+                    T2,
+                    T3,
+                    T4,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("Add")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Add", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (list, item1, item2, item3, item4))
+        };
         Ok(__cordl_ret.into())
     }
 }

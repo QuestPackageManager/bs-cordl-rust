@@ -46,9 +46,21 @@ impl crate::GlobalNamespace::StaticPacketPoolProvider {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PacketPool_1<T>>,
+                0usize,
+            >("GetPacketPool")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPacketPool", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PacketPool_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPacketPool", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetPacketPool(
@@ -57,8 +69,24 @@ impl crate::GlobalNamespace::StaticPacketPoolProvider {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetPacketPool", (t, pool))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPacketPool>,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetPacketPool")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetPacketPool", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (t, pool)) };
         Ok(__cordl_ret.into())
     }
 }

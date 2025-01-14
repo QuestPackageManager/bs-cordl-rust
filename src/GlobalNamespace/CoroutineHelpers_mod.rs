@@ -44,10 +44,21 @@ impl crate::GlobalNamespace::CoroutineHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>, f32),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                2usize,
+            >("ExecuteAfterDelayCoroutine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteAfterDelayCoroutine", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExecuteAfterDelayCoroutine", (action, timeSeconds))?;
+        > = unsafe { method.invoke_unchecked((), (action, timeSeconds)) };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteAfterFrameEnd(
@@ -55,10 +66,21 @@ impl crate::GlobalNamespace::CoroutineHelpers {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                1usize,
+            >("ExecuteAfterFrameEnd")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteAfterFrameEnd", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExecuteAfterFrameEnd", (action))?;
+        > = unsafe { method.invoke_unchecked((), (action)) };
         Ok(__cordl_ret.into())
     }
     pub fn StartSingleCoroutine(
@@ -70,8 +92,27 @@ impl crate::GlobalNamespace::CoroutineHelpers {
         >,
         routine: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("StartSingleCoroutine", (coroutineStarter, handle, routine))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICoroutineStarter>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("StartSingleCoroutine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StartSingleCoroutine", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (coroutineStarter, handle, routine))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StopSingleCoroutine(
@@ -82,8 +123,26 @@ impl crate::GlobalNamespace::CoroutineHelpers {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("StopSingleCoroutine", (coroutineStarter, handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICoroutineStarter>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("StopSingleCoroutine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "StopSingleCoroutine", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (coroutineStarter, handle))
+        };
         Ok(__cordl_ret.into())
     }
 }

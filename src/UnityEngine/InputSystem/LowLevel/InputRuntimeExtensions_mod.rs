@@ -52,8 +52,27 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
         TCommand: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeviceCommand", (runtime, deviceId, command))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::InputSystem::LowLevel::IInputRuntime,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<TCommand>,
+                ),
+                i64,
+                3usize,
+            >("DeviceCommand")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeviceCommand", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (runtime, deviceId, command))
+        };
         Ok(__cordl_ret.into())
     }
 }

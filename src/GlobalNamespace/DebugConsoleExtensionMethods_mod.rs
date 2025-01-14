@@ -45,8 +45,24 @@ impl crate::GlobalNamespace::DebugConsoleExtensionMethods {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
     > {
-        let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToConsoleMessage", (message, _cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::LogType,
+                ),
+                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+                2usize,
+            >("ToConsoleMessage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToConsoleMessage", 2usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = unsafe {
+            method.invoke_unchecked((), (message, _cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
 }

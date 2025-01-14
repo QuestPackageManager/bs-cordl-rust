@@ -74,10 +74,19 @@ impl crate::GlobalNamespace::LevelCompletionResults {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                i32,
+                1usize,
+            >("CompareTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CompareTo", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateFromSerializedData(
@@ -85,10 +94,23 @@ impl crate::GlobalNamespace::LevelCompletionResults {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCompletionResults,
+                >,
+                1usize,
+            >("CreateFromSerializedData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateFromSerializedData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LevelCompletionResults,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateFromSerializedData", (reader))?;
+        > = unsafe { method.invoke_unchecked((), (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn LiteNetLib_Utils_INetImmutableSerializable_LevelCompletionResults__CreateFromSerializedData(
@@ -97,16 +119,27 @@ impl crate::GlobalNamespace::LevelCompletionResults {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCompletionResults,
+                >,
+                1usize,
+            >(
+                "LiteNetLib.Utils.INetImmutableSerializable<LevelCompletionResults>.CreateFromSerializedData",
+            )
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self,
+                    "LiteNetLib.Utils.INetImmutableSerializable<LevelCompletionResults>.CreateFromSerializedData",
+                    1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LevelCompletionResults,
-        > = __cordl_object
-            .invoke(
-                "LiteNetLib.Utils.INetImmutableSerializable<LevelCompletionResults>.CreateFromSerializedData",
-                (reader),
-            )?;
+        > = unsafe { method.invoke_unchecked(self, (reader)) };
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -184,21 +217,37 @@ impl crate::GlobalNamespace::LevelCompletionResults {
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Serialize", (writer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Serialize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Serialize", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (writer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_GameplayModifiers_i32_i32_RankModel_Rank__cordl_bool_f32_f32_f32_f32_LevelCompletionResults_LevelEndStateType_LevelCompletionResults_LevelEndAction_f32_i32_i32_i32_i32_i32_i32_i32_i32_f32_f32_i32_f32__cordl_bool1(
@@ -231,47 +280,89 @@ impl crate::GlobalNamespace::LevelCompletionResults {
         endSongTime: f32,
         invalidated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    gameplayModifiers,
-                    modifiedScore,
-                    multipliedScore,
-                    rank,
-                    fullCombo,
-                    leftSaberMovementDistance,
-                    rightSaberMovementDistance,
-                    leftHandMovementDistance,
-                    rightHandMovementDistance,
-                    levelEndStateType,
-                    levelEndAction,
-                    energy,
-                    goodCutsCount,
-                    badCutsCount,
-                    missedCount,
-                    notGoodCount,
-                    okCount,
-                    maxCutScore,
-                    totalCutScore,
-                    goodCutsCountForNotesWithFullScoreScoringType,
-                    averageCenterDistanceCutScoreForNotesWithFullScoreScoringType,
-                    averageCutScoreForNotesWithFullScoreScoringType,
-                    maxCombo,
-                    endSongTime,
-                    invalidated,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                    i32,
+                    i32,
+                    crate::GlobalNamespace::RankModel_Rank,
+                    bool,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
+                    crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
+                    crate::GlobalNamespace::LevelCompletionResults_LevelEndAction,
+                    f32,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    i32,
+                    f32,
+                    f32,
+                    i32,
+                    f32,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                25usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 25usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        gameplayModifiers,
+                        modifiedScore,
+                        multipliedScore,
+                        rank,
+                        fullCombo,
+                        leftSaberMovementDistance,
+                        rightSaberMovementDistance,
+                        leftHandMovementDistance,
+                        rightHandMovementDistance,
+                        levelEndStateType,
+                        levelEndAction,
+                        energy,
+                        goodCutsCount,
+                        badCutsCount,
+                        missedCount,
+                        notGoodCount,
+                        okCount,
+                        maxCutScore,
+                        totalCutScore,
+                        goodCutsCountForNotesWithFullScoreScoringType,
+                        averageCenterDistanceCutScoreForNotesWithFullScoreScoringType,
+                        averageCutScoreForNotesWithFullScoreScoringType,
+                        maxCombo,
+                        endSongTime,
+                        invalidated,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_cumulativeScore(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_cumulativeScore", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_cumulativeScore")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_cumulativeScore", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

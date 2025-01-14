@@ -46,8 +46,23 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddFontAsset", (fontAsset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::FontAsset,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("AddFontAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddFontAsset", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (fontAsset))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -179,11 +194,32 @@ impl crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (nameHashCode, familyNameHashCode, styleNameHashCode, fontAsset),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    i32,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::FontAsset,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (nameHashCode, familyNameHashCode, styleNameHashCode, fontAsset),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

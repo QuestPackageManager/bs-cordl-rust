@@ -51,8 +51,24 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MakeBorder", (borderParams, posZ))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
+                    f32,
+                ),
+                crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                2usize,
+            >("MakeBorder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeBorder", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
+            method.invoke_unchecked((), (borderParams, posZ))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeBorder_Injected(
@@ -64,8 +80,29 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MakeBorder_Injected", (borderParams, posZ, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
+                    >,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("MakeBorder_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeBorder_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (borderParams, posZ, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeSolidRect(
@@ -74,8 +111,24 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MakeSolidRect", (rectParams, posZ))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                    f32,
+                ),
+                crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                2usize,
+            >("MakeSolidRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeSolidRect", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
+            method.invoke_unchecked((), (rectParams, posZ))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeSolidRect_Injected(
@@ -87,8 +140,29 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MakeSolidRect_Injected", (rectParams, posZ, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                    >,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("MakeSolidRect_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeSolidRect_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (rectParams, posZ, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeTexturedRect(
@@ -97,8 +171,24 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MakeTexturedRect", (rectParams, posZ))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                    f32,
+                ),
+                crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                2usize,
+            >("MakeTexturedRect")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeTexturedRect", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
+            method.invoke_unchecked((), (rectParams, posZ))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeTexturedRect_Injected(
@@ -110,8 +200,29 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MakeTexturedRect_Injected", (rectParams, posZ, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+                    >,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("MakeTexturedRect_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeTexturedRect_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (rectParams, posZ, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphics9SliceBackground(
@@ -129,21 +240,49 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MakeVectorGraphics9SliceBackground",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    svgVertices,
-                    svgIndices,
-                    svgWidth,
-                    svgHeight,
-                    targetRect,
-                    sliceLTRB,
-                    tint,
-                    colorPage,
-                    settingIndexOffset,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::UIElements::Vertex,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    f32,
+                    f32,
+                    crate::UnityEngine::Rect,
+                    crate::UnityEngine::Vector4,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                    i32,
                 ),
-            )?;
+                crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                9usize,
+            >("MakeVectorGraphics9SliceBackground")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeVectorGraphics9SliceBackground", 9usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        svgVertices,
+                        svgIndices,
+                        svgWidth,
+                        svgHeight,
+                        targetRect,
+                        sliceLTRB,
+                        tint,
+                        colorPage,
+                        settingIndexOffset,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphics9SliceBackground_Injected(
@@ -164,22 +303,55 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MakeVectorGraphics9SliceBackground_Injected",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    svgVertices,
-                    svgIndices,
-                    svgWidth,
-                    svgHeight,
-                    targetRect,
-                    sliceLTRB,
-                    tint,
-                    colorPage,
-                    settingIndexOffset,
-                    ret,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::UIElements::Vertex,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    f32,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                10usize,
+            >("MakeVectorGraphics9SliceBackground_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeVectorGraphics9SliceBackground_Injected", 10usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        svgVertices,
+                        svgIndices,
+                        svgWidth,
+                        svgHeight,
+                        targetRect,
+                        sliceLTRB,
+                        tint,
+                        colorPage,
+                        settingIndexOffset,
+                        ret,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphicsStretchBackground(
@@ -200,24 +372,55 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MakeVectorGraphicsStretchBackground",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    svgVertices,
-                    svgIndices,
-                    svgWidth,
-                    svgHeight,
-                    targetRect,
-                    sourceUV,
-                    scaleMode,
-                    tint,
-                    colorPage,
-                    settingIndexOffset,
-                    finalVertexCount,
-                    finalIndexCount,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::UIElements::Vertex,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    f32,
+                    f32,
+                    crate::UnityEngine::Rect,
+                    crate::UnityEngine::Rect,
+                    crate::UnityEngine::ScaleMode,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
                 ),
-            )?;
+                crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                12usize,
+            >("MakeVectorGraphicsStretchBackground")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeVectorGraphicsStretchBackground", 12usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        svgVertices,
+                        svgIndices,
+                        svgWidth,
+                        svgHeight,
+                        targetRect,
+                        sourceUV,
+                        scaleMode,
+                        tint,
+                        colorPage,
+                        settingIndexOffset,
+                        finalVertexCount,
+                        finalIndexCount,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphicsStretchBackground_Injected(
@@ -241,25 +444,61 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MakeVectorGraphicsStretchBackground_Injected",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    svgVertices,
-                    svgIndices,
-                    svgWidth,
-                    svgHeight,
-                    targetRect,
-                    sourceUV,
-                    scaleMode,
-                    tint,
-                    colorPage,
-                    settingIndexOffset,
-                    finalVertexCount,
-                    finalIndexCount,
-                    ret,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::UIElements::Vertex,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+                    f32,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+                    crate::UnityEngine::ScaleMode,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                13usize,
+            >("MakeVectorGraphicsStretchBackground_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MakeVectorGraphicsStretchBackground_Injected", 13usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        svgVertices,
+                        svgIndices,
+                        svgWidth,
+                        svgHeight,
+                        targetRect,
+                        sourceUV,
+                        scaleMode,
+                        tint,
+                        colorPage,
+                        settingIndexOffset,
+                        finalVertexCount,
+                        finalIndexCount,
+                        ret,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

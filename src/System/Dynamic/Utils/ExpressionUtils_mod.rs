@@ -49,12 +49,32 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+                    crate::System::Linq::Expressions::ExpressionType,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Reflection::ParameterInfo,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("GetParametersForValidation")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParametersForValidation", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParametersForValidation", (method, nodeKind))?;
+        > = unsafe { method.invoke_unchecked((), (method, nodeKind)) };
         Ok(__cordl_ret.into())
     }
     pub fn RequiresCanRead_Expression_Il2CppString0(
@@ -63,8 +83,26 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         >,
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RequiresCanRead", (expression, paramName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RequiresCanRead")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RequiresCanRead", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (expression, paramName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RequiresCanRead_i32_1(
@@ -74,8 +112,27 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RequiresCanRead", (expression, paramName, idx))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("RequiresCanRead")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RequiresCanRead", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (expression, paramName, idx))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReturnObject<T>(
@@ -85,8 +142,19 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReturnObject", (collectionOrT))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                T,
+                1usize,
+            >("ReturnObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReturnObject", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (collectionOrT)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReturnReadOnly<T>(
@@ -104,10 +172,27 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+                >,
+                1usize,
+            >("ReturnReadOnly")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReturnReadOnly", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReturnReadOnly", (collection))?;
+        > = unsafe { method.invoke_unchecked((), (collection)) };
         Ok(__cordl_ret.into())
     }
     pub fn SameElements<T>(
@@ -124,8 +209,30 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SameElements", (replacement, current))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("SameElements")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SameElements", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (replacement, current))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SameElementsInCollection<T>(
@@ -140,8 +247,28 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SameElementsInCollection", (replacement, current))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::ICollection_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("SameElementsInCollection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SameElementsInCollection", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (replacement, current))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryQuote(
@@ -150,8 +277,28 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
             quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryQuote", (parameterType, argument))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryQuote")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryQuote", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (parameterType, argument))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateArgumentCount_LambdaExpression1(
@@ -159,8 +306,23 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
             crate::System::Linq::Expressions::LambdaExpression,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValidateArgumentCount", (lambda))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::LambdaExpression,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ValidateArgumentCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateArgumentCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (lambda))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateArgumentCount_MethodBase_ExpressionType_i32_Il2CppArray0(
@@ -173,8 +335,32 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValidateArgumentCount", (method, nodeKind, count, pis))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+                    crate::System::Linq::Expressions::ExpressionType,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::ParameterInfo,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ValidateArgumentCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateArgumentCount", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (method, nodeKind, count, pis))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateArgumentTypes(
@@ -191,11 +377,34 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         >,
         methodParamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ValidateArgumentTypes",
-                (method, nodeKind, arguments, methodParamName),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+                    crate::System::Linq::Expressions::ExpressionType,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
+                                >,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ValidateArgumentTypes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateArgumentTypes", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (method, nodeKind, arguments, methodParamName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateOneArgument(
@@ -213,21 +422,45 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+                    crate::System::Linq::Expressions::ExpressionType,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::Expression,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+                7usize,
+            >("ValidateOneArgument")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateOneArgument", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ValidateOneArgument",
-                (
-                    method,
-                    nodeKind,
-                    arguments,
-                    pi,
-                    methodParamName,
-                    argumentParamName,
-                    index,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        method,
+                        nodeKind,
+                        arguments,
+                        pi,
+                        methodParamName,
+                        argumentParamName,
+                        index,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

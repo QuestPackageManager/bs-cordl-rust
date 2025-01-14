@@ -53,10 +53,28 @@ impl crate::BGLib::AsyncInitialization::AddressablesLoader {
         TReturn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TReturn>,
+                >,
+                2usize,
+            >("InstantiateFromAddressableToContainer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InstantiateFromAddressableToContainer", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<TReturn>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InstantiateFromAddressableToContainer", (prefab, container))?;
+        > = unsafe { method.invoke_unchecked((), (prefab, container)) };
         Ok(__cordl_ret.into())
     }
 }

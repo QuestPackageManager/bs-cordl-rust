@@ -45,15 +45,41 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AuthenticationToken_Platform,
     > {
-        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToAuthenticationTokenPlatform", (platform))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::UserInfo_Platform),
+                crate::GlobalNamespace::AuthenticationToken_Platform,
+                1usize,
+            >("ToAuthenticationTokenPlatform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToAuthenticationTokenPlatform", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = unsafe {
+            method.invoke_unchecked((), (platform))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToUserInfoPlatform(
         platform: crate::GlobalNamespace::AuthenticationToken_Platform,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::UserInfo_Platform> {
-        let __cordl_ret: crate::GlobalNamespace::UserInfo_Platform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToUserInfoPlatform", (platform))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::AuthenticationToken_Platform),
+                crate::GlobalNamespace::UserInfo_Platform,
+                1usize,
+            >("ToUserInfoPlatform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToUserInfoPlatform", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::UserInfo_Platform = unsafe {
+            method.invoke_unchecked((), (platform))
+        };
         Ok(__cordl_ret.into())
     }
 }

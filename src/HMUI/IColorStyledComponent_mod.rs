@@ -47,21 +47,39 @@ impl crate::HMUI::IColorStyledComponent {
         color0: crate::UnityEngine::Color,
         color1: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                "UpdateColorStyle",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    color,
-                    globalLightTintIntensity,
-                    gradient,
-                    gradientDirection,
-                    color0,
-                    color1,
+                    crate::UnityEngine::Color,
+                    f32,
+                    bool,
+                    crate::GlobalNamespace::GradientDirection,
+                    crate::UnityEngine::Color,
+                    crate::UnityEngine::Color,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("UpdateColorStyle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateColorStyle", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        color,
+                        globalLightTintIntensity,
+                        gradient,
+                        gradientDirection,
+                        color0,
+                        color1,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpdateColorStyle_IReadOnlyColorStyle0(
@@ -70,11 +88,21 @@ impl crate::HMUI::IColorStyledComponent {
             crate::GlobalNamespace::IReadOnlyColorStyle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("UpdateColorStyle", (colorStyle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UpdateColorStyle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpdateColorStyle", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (colorStyle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -87,12 +115,21 @@ impl crate::HMUI::IColorStyledComponent {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle>,
+                0usize,
+            >("get_colorStyle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_colorStyle", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadOnlyColorStyle,
-        > = __cordl_object.invoke("get_colorStyle", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

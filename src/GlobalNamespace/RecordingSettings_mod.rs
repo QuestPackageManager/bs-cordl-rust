@@ -148,12 +148,21 @@ impl crate::GlobalNamespace::RecordingSettings {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -194,38 +203,81 @@ impl crate::GlobalNamespace::RecordingSettings {
         >,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    gameMode,
-                    pack,
-                    level,
-                    difficulty,
-                    characteristic,
-                    runLevel,
-                    recordPerformance,
-                    recordingMode,
-                    recordingPath,
-                    cameraView,
-                    addDateTimeSuffixToRecordingName,
-                    screenshotRecording,
-                    screenshotWidth,
-                    screenshotHeight,
-                    framerate,
-                    playbackScreenshots,
-                    practice,
-                    startSongTime,
-                    songSpeedMultiplier,
-                    overrideEnvironments,
-                    environmentType,
-                    environmentInfo,
-                    saveToOldFormat,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                    crate::GlobalNamespace::BeatmapDifficulty,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCharacteristicSO,
+                    >,
+                    bool,
+                    bool,
+                    crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
+                    bool,
+                    bool,
+                    i32,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    f32,
+                    f32,
+                    bool,
+                    crate::System::Nullable_1<crate::GlobalNamespace::EnvironmentType>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                23usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 23usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        gameMode,
+                        pack,
+                        level,
+                        difficulty,
+                        characteristic,
+                        runLevel,
+                        recordPerformance,
+                        recordingMode,
+                        recordingPath,
+                        cameraView,
+                        addDateTimeSuffixToRecordingName,
+                        screenshotRecording,
+                        screenshotWidth,
+                        screenshotHeight,
+                        framerate,
+                        playbackScreenshots,
+                        practice,
+                        startSongTime,
+                        songSpeedMultiplier,
+                        overrideEnvironments,
+                        environmentType,
+                        environmentInfo,
+                        saveToOldFormat,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

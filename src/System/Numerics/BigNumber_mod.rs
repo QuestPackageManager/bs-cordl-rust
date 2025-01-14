@@ -52,22 +52,47 @@ impl crate::System::Numerics::BigNumber {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    bool,
+                    crate::System::Numerics::BigInteger,
+                    char,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    crate::System::Span_1<char>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                8usize,
+            >("FormatBigIntegerToHex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatBigIntegerToHex", 8usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FormatBigIntegerToHex",
-                (
-                    targetSpan,
-                    value,
-                    format,
-                    digits,
-                    info,
-                    destination,
-                    charsWritten,
-                    spanSuccess,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        targetSpan,
+                        value,
+                        format,
+                        digits,
+                        info,
+                        destination,
+                        charsWritten,
+                        spanSuccess,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FormatBigInteger_BigInteger_Il2CppString_NumberFormatInfo0(
@@ -77,10 +102,27 @@ impl crate::System::Numerics::BigNumber {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Numerics::BigInteger,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("FormatBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatBigInteger", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FormatBigInteger", (value, format, info))?;
+        > = unsafe { method.invoke_unchecked((), (value, format, info)) };
         Ok(__cordl_ret.into())
     }
     pub fn FormatBigInteger__cordl_bool_BigInteger_Il2CppString_ReadOnlySpan_1_NumberFormatInfo_Span_1_ByRefMut_ByRefMut1(
@@ -95,22 +137,47 @@ impl crate::System::Numerics::BigNumber {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    bool,
+                    crate::System::Numerics::BigInteger,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    crate::System::Span_1<char>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                8usize,
+            >("FormatBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FormatBigInteger", 8usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "FormatBigInteger",
-                (
-                    targetSpan,
-                    value,
-                    formatString,
-                    formatSpan,
-                    info,
-                    destination,
-                    charsWritten,
-                    spanSuccess,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        targetSpan,
+                        value,
+                        formatString,
+                        formatSpan,
+                        info,
+                        destination,
+                        charsWritten,
+                        spanSuccess,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn HexNumberToBigInteger(
@@ -119,8 +186,24 @@ impl crate::System::Numerics::BigNumber {
         >,
         value: quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("HexNumberToBigInteger", (number, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Numerics::BigNumber_BigNumberBuffer,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
+                ),
+                bool,
+                2usize,
+            >("HexNumberToBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "HexNumberToBigInteger", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn NumberToBigInteger(
@@ -129,8 +212,24 @@ impl crate::System::Numerics::BigNumber {
         >,
         value: quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NumberToBigInteger", (number, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Numerics::BigNumber_BigNumberBuffer,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
+                ),
+                bool,
+                2usize,
+            >("NumberToBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NumberToBigInteger", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (number, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseBigInteger_Il2CppString0(
@@ -138,8 +237,27 @@ impl crate::System::Numerics::BigNumber {
         style: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
-        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseBigInteger", (value, style, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::Globalization::NumberStyles,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                ),
+                crate::System::Numerics::BigInteger,
+                3usize,
+            >("ParseBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseBigInteger", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::Numerics::BigInteger = unsafe {
+            method.invoke_unchecked((), (value, style, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseBigInteger_ReadOnlySpan_1_1(
@@ -147,16 +265,49 @@ impl crate::System::Numerics::BigNumber {
         style: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
     ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
-        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseBigInteger", (value, style, info))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Globalization::NumberStyles,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                ),
+                crate::System::Numerics::BigInteger,
+                3usize,
+            >("ParseBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseBigInteger", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::Numerics::BigInteger = unsafe {
+            method.invoke_unchecked((), (value, style, info))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseFormatSpecifier(
         format: crate::System::ReadOnlySpan_1<char>,
         digits: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseFormatSpecifier", (format, digits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                char,
+                2usize,
+            >("ParseFormatSpecifier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseFormatSpecifier", 2usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (format, digits)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseBigInteger(
@@ -165,8 +316,28 @@ impl crate::System::Numerics::BigNumber {
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseBigInteger", (value, style, info, result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlySpan_1<char>,
+                    crate::System::Globalization::NumberStyles,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Globalization::NumberFormatInfo,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
+                ),
+                bool,
+                4usize,
+            >("TryParseBigInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseBigInteger", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (value, style, info, result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryValidateParseStyleInteger(
@@ -175,8 +346,24 @@ impl crate::System::Numerics::BigNumber {
             quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryValidateParseStyleInteger", (style, e))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Globalization::NumberStyles,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::ArgumentException>,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryValidateParseStyleInteger")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryValidateParseStyleInteger", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (style, e)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -298,8 +485,21 @@ impl crate::System::Numerics::BigNumber_BigNumberBuffer {
     pub fn Create() -> quest_hook::libil2cpp::Result<
         crate::System::Numerics::BigNumber_BigNumberBuffer,
     > {
-        let __cordl_ret: crate::System::Numerics::BigNumber_BigNumberBuffer = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::System::Numerics::BigNumber_BigNumberBuffer,
+                0usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::Numerics::BigNumber_BigNumberBuffer = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }

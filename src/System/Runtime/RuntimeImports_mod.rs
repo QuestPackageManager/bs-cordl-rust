@@ -43,8 +43,25 @@ impl crate::System::Runtime::RuntimeImports {
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         len: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Memmove", (dest, src, len))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u32,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Memmove")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Memmove", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (dest, src, len))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Memmove_wbarrier(
@@ -53,24 +70,68 @@ impl crate::System::Runtime::RuntimeImports {
         len: u32,
         type_handle: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Memmove_wbarrier", (dest, src, len, type_handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u32,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("Memmove_wbarrier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Memmove_wbarrier", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (dest, src, len, type_handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RhZeroMemory(
         b: quest_hook::libil2cpp::ByRefMut<u8>,
         byteLength: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RhZeroMemory", (b, byteLength))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<u8>, u64),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("RhZeroMemory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RhZeroMemory", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (b, byteLength))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ZeroMemory(
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         byteLength: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ZeroMemory", (p, byteLength))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, u32),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ZeroMemory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ZeroMemory", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (p, byteLength))
+        };
         Ok(__cordl_ret.into())
     }
 }

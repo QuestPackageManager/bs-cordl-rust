@@ -44,8 +44,21 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
     pub fn GetInvalidContextException() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInvalidContextException", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                0usize,
+            >("GetInvalidContextException")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInvalidContextException", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Import_Il2CppArray0(
@@ -55,9 +68,23 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >,
+                1usize,
+            >("Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Import", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Import", (rawData))?;
+        > = unsafe { method.invoke_unchecked((), (rawData)) };
         Ok(__cordl_ret.into())
     }
     pub fn Import_SafePasswordHandle_X509KeyStorageFlags1(
@@ -71,10 +98,29 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+                    >,
+                    crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >,
+                3usize,
+            >("Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Import", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Import", (rawData, password, keyStorageFlags))?;
+        > = unsafe { method.invoke_unchecked((), (rawData, password, keyStorageFlags)) };
         Ok(__cordl_ret.into())
     }
     pub fn InitFromCertificate_X509Certificate0(
@@ -86,10 +132,25 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >,
+                1usize,
+            >("InitFromCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitFromCertificate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitFromCertificate", (cert))?;
+        > = unsafe { method.invoke_unchecked((), (cert)) };
         Ok(__cordl_ret.into())
     }
     pub fn InitFromCertificate_X509CertificateImpl1(
@@ -101,10 +162,25 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >,
+                1usize,
+            >("InitFromCertificate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InitFromCertificate", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InitFromCertificate", (_cordl_impl))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_impl)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsValid(
@@ -112,8 +188,21 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsValid", (_cordl_impl))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >),
+                bool,
+                1usize,
+            >("IsValid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValid", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (_cordl_impl)) };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfContextInvalid(
@@ -121,17 +210,43 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Helper {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ThrowIfContextInvalid", (_cordl_impl))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ThrowIfContextInvalid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowIfContextInvalid", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (_cordl_impl))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_CertificateProvider() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::ISystemCertificateProvider>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Mono::ISystemCertificateProvider>,
+                0usize,
+            >("get_CertificateProvider")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_CertificateProvider", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::ISystemCertificateProvider,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_CertificateProvider", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

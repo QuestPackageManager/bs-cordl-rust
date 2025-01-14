@@ -42,8 +42,21 @@ impl crate::Mono::Security::Protocol::Ntlm::NtlmSettings {
     pub fn get_DefaultAuthLevel() -> quest_hook::libil2cpp::Result<
         crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel,
     > {
-        let __cordl_ret: crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_DefaultAuthLevel", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel,
+                0usize,
+            >("get_DefaultAuthLevel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_DefaultAuthLevel", 0usize
+                )
+            });
+        let __cordl_ret: crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }

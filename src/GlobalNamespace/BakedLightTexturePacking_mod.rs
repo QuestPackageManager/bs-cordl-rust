@@ -50,8 +50,28 @@ impl crate::GlobalNamespace::BakedLightTexturePacking {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PackTextures", (textures, descriptor))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                        >,
+                    >,
+                    crate::UnityEngine::RenderTextureDescriptor,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                2usize,
+            >("PackTextures")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PackTextures", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = unsafe {
+            method.invoke_unchecked((), (textures, descriptor))
+        };
         Ok(__cordl_ret.into())
     }
 }

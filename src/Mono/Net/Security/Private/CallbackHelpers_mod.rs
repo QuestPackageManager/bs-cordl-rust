@@ -48,10 +48,25 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             crate::System::Net::Security::LocalCertSelectionCallback,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Security::LocalCertSelectionCallback,
+                >,
+                1usize,
+            >("MonoToInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MonoToInternal", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Net::Security::LocalCertSelectionCallback,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MonoToInternal", (callback))?;
+        > = unsafe { method.invoke_unchecked((), (callback)) };
         Ok(__cordl_ret.into())
     }
     pub fn PublicToMono(
@@ -63,10 +78,25 @@ impl crate::Mono::Net::Security::Private::CallbackHelpers {
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Security::RemoteCertificateValidationCallback,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
+                >,
+                1usize,
+            >("PublicToMono")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PublicToMono", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PublicToMono", (callback))?;
+        > = unsafe { method.invoke_unchecked((), (callback)) };
         Ok(__cordl_ret.into())
     }
 }

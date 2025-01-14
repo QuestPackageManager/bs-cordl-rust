@@ -44,8 +44,21 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         end: crate::UnityEngine::Color,
         ratio: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Interpolate", (start, end, ratio))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Color, crate::UnityEngine::Color, f32),
+                crate::UnityEngine::Color,
+                3usize,
+            >("Interpolate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Interpolate", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked((), (start, end, ratio))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Interpolate_StyleValues_StyleValues2(
@@ -55,8 +68,25 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::Experimental::StyleValues,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::Experimental::StyleValues = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Interpolate", (start, end, ratio))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::Experimental::StyleValues,
+                    crate::UnityEngine::UIElements::Experimental::StyleValues,
+                    f32,
+                ),
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+                3usize,
+            >("Interpolate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Interpolate", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Experimental::StyleValues = unsafe {
+            method.invoke_unchecked((), (start, end, ratio))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Interpolate_f32_f32_0(
@@ -64,8 +94,17 @@ impl crate::UnityEngine::UIElements::Experimental::Lerp {
         end: f32,
         ratio: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Interpolate", (start, end, ratio))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(f32, f32, f32), f32, 3usize>("Interpolate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Interpolate", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (start, end, ratio))
+        };
         Ok(__cordl_ret.into())
     }
 }

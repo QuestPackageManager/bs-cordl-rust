@@ -44,11 +44,25 @@ impl crate::UnityEngine::Timeline::ILayerable {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Playables::Playable = __cordl_object
-            .invoke("CreateLayerMixer", (graph, go, inputCount))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Playables::PlayableGraph,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    i32,
+                ),
+                crate::UnityEngine::Playables::Playable,
+                3usize,
+            >("CreateLayerMixer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateLayerMixer", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = unsafe {
+            method.invoke_unchecked(self, (graph, go, inputCount))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

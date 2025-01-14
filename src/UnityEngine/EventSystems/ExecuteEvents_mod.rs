@@ -50,8 +50,19 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CanHandleEvent", (go))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                bool,
+                1usize,
+            >("CanHandleEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CanHandleEvent", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (go)) };
         Ok(__cordl_ret.into())
     }
     pub fn ExecuteHierarchy<T>(
@@ -69,8 +80,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExecuteHierarchy", (root, eventData, callbackFunction))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                            T,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                3usize,
+            >("ExecuteHierarchy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExecuteHierarchy", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
+            method.invoke_unchecked((), (root, eventData, callbackFunction))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_GameObject_ExecuteEvents_EventFunction_1_18<T>(
@@ -86,8 +120,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (target, eventData, functor))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                            T,
+                        >,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (target, eventData, functor))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IBeginDragHandler7(
@@ -98,8 +155,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IBeginDragHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_ICancelHandler17(
@@ -110,8 +187,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::ICancelHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IDeselectHandler14(
@@ -122,8 +219,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IDeselectHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IDragHandler8(
@@ -134,8 +251,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IDragHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IDropHandler10(
@@ -146,8 +283,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IDropHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IEndDragHandler9(
@@ -158,8 +315,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IEndDragHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IInitializePotentialDragHandler6(
@@ -170,8 +347,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IMoveHandler15(
@@ -182,8 +379,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IMoveHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IPointerClickHandler5(
@@ -194,8 +411,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IPointerClickHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IPointerDownHandler3(
@@ -206,8 +443,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IPointerDownHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IPointerEnterHandler1(
@@ -218,8 +475,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IPointerEnterHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IPointerExitHandler2(
@@ -230,8 +507,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IPointerExitHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IPointerMoveHandler0(
@@ -242,8 +539,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IPointerMoveHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IPointerUpHandler4(
@@ -254,8 +571,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IPointerUpHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IScrollHandler11(
@@ -266,8 +603,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IScrollHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_ISelectHandler13(
@@ -278,8 +635,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::ISelectHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_ISubmitHandler16(
@@ -290,8 +667,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::ISubmitHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute_IUpdateSelectedHandler12(
@@ -302,8 +699,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Execute", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEventChain(
@@ -314,8 +731,28 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEventChain", (root, eventChain))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetEventChain")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEventChain", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (root, eventChain))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEventHandler<T>(
@@ -327,8 +764,21 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEventHandler", (root))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                1usize,
+            >("GetEventHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEventHandler", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = unsafe {
+            method.invoke_unchecked((), (root))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEventList<T>(
@@ -345,8 +795,30 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetEventList", (go, results))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IEventSystemHandler,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetEventList")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEventList", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (go, results))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShouldSendToComponent<T>(
@@ -356,8 +828,19 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShouldSendToComponent", (component))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>),
+                bool,
+                1usize,
+            >("ShouldSendToComponent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShouldSendToComponent", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (component)) };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateEventData<T>(
@@ -367,8 +850,21 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValidateEventData", (data))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::BaseEventData,
+                >),
+                T,
+                1usize,
+            >("ValidateEventData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateEventData", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (data)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_beginDragHandler() -> quest_hook::libil2cpp::Result<
@@ -380,14 +876,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IBeginDragHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_beginDragHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_beginDragHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IBeginDragHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_beginDragHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_cancelHandler() -> quest_hook::libil2cpp::Result<
@@ -399,14 +912,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::ICancelHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_cancelHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_cancelHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::ICancelHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_cancelHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_deselectHandler() -> quest_hook::libil2cpp::Result<
@@ -418,14 +948,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IDeselectHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_deselectHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_deselectHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IDeselectHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_deselectHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_dragHandler() -> quest_hook::libil2cpp::Result<
@@ -435,12 +982,29 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IDragHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_dragHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_dragHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_dragHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_dropHandler() -> quest_hook::libil2cpp::Result<
@@ -450,12 +1014,29 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IDropHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_dropHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_dropHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_dropHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_endDragHandler() -> quest_hook::libil2cpp::Result<
@@ -467,14 +1048,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IEndDragHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_endDragHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_endDragHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IEndDragHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_endDragHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_initializePotentialDrag() -> quest_hook::libil2cpp::Result<
@@ -486,14 +1084,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_initializePotentialDrag")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_initializePotentialDrag", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_initializePotentialDrag", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_moveHandler() -> quest_hook::libil2cpp::Result<
@@ -503,12 +1118,29 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IMoveHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_moveHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_moveHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_moveHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerClickHandler() -> quest_hook::libil2cpp::Result<
@@ -520,14 +1152,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IPointerClickHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_pointerClickHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_pointerClickHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IPointerClickHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_pointerClickHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerDownHandler() -> quest_hook::libil2cpp::Result<
@@ -539,14 +1188,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IPointerDownHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_pointerDownHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_pointerDownHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IPointerDownHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_pointerDownHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerEnterHandler() -> quest_hook::libil2cpp::Result<
@@ -558,14 +1224,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IPointerEnterHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_pointerEnterHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_pointerEnterHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IPointerEnterHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_pointerEnterHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerExitHandler() -> quest_hook::libil2cpp::Result<
@@ -577,14 +1260,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IPointerExitHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_pointerExitHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_pointerExitHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IPointerExitHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_pointerExitHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerMoveHandler() -> quest_hook::libil2cpp::Result<
@@ -596,14 +1296,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IPointerMoveHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_pointerMoveHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_pointerMoveHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IPointerMoveHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_pointerMoveHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerUpHandler() -> quest_hook::libil2cpp::Result<
@@ -615,14 +1332,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IPointerUpHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_pointerUpHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_pointerUpHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IPointerUpHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_pointerUpHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_scrollHandler() -> quest_hook::libil2cpp::Result<
@@ -634,14 +1368,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IScrollHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_scrollHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_scrollHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IScrollHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_scrollHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectHandler() -> quest_hook::libil2cpp::Result<
@@ -653,14 +1404,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::ISelectHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_selectHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_selectHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::ISelectHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_selectHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_submitHandler() -> quest_hook::libil2cpp::Result<
@@ -672,14 +1440,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::ISubmitHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_submitHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_submitHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::ISubmitHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_submitHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_updateSelectedHandler() -> quest_hook::libil2cpp::Result<
@@ -691,14 +1476,31 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_updateSelectedHandler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_updateSelectedHandler", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_updateSelectedHandler", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }
@@ -789,11 +1591,28 @@ impl<
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = __cordl_object
-            .invoke("BeginInvoke", (handler, eventData, callback, object))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    T1,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                4usize,
+            >("BeginInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginInvoke", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            method.invoke_unchecked(self, (handler, eventData, callback, object))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EndInvoke(
@@ -804,11 +1623,21 @@ impl<
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("EndInvoke", (result))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("EndInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EndInvoke", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (result))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(
@@ -822,11 +1651,26 @@ impl<
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Invoke", (handler, eventData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    T1,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::EventSystems::BaseEventData,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (handler, eventData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -852,11 +1696,24 @@ impl<
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }

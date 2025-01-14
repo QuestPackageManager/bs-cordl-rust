@@ -49,8 +49,28 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
             crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyTo", (dest, source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ApplyTo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyTo", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (dest, source))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFrom(
@@ -61,8 +81,28 @@ impl crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
             crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadFrom", (dest, source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReadFrom")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadFrom", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (dest, source))
+        };
         Ok(__cordl_ret.into())
     }
 }

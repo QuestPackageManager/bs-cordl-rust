@@ -44,10 +44,21 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+                1usize,
+            >("FromCapiPrivateKeyBlob")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromCapiPrivateKeyBlob", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromCapiPrivateKeyBlob", (blob))?;
+        > = unsafe { method.invoke_unchecked((), (blob)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromCapiPrivateKeyBlob_i32_1(
@@ -56,10 +67,21 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
+                quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+                2usize,
+            >("FromCapiPrivateKeyBlob")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromCapiPrivateKeyBlob", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromCapiPrivateKeyBlob", (blob, offset))?;
+        > = unsafe { method.invoke_unchecked((), (blob, offset)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetParametersFromCapiPrivateKeyBlob(
@@ -68,8 +90,21 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Security::Cryptography::RSAParameters,
     > {
-        let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParametersFromCapiPrivateKeyBlob", (blob, offset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
+                crate::System::Security::Cryptography::RSAParameters,
+                2usize,
+            >("GetParametersFromCapiPrivateKeyBlob")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParametersFromCapiPrivateKeyBlob", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::Security::Cryptography::RSAParameters = unsafe {
+            method.invoke_unchecked((), (blob, offset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToHex(
@@ -77,25 +112,59 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToHex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToHex", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToHex", (input))?;
+        > = unsafe { method.invoke_unchecked((), (input)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToInt32LE(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToInt32LE", (bytes, offset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
+                i32,
+                2usize,
+            >("ToInt32LE")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToInt32LE", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (bytes, offset)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToUInt32LE(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToUInt32LE", (bytes, offset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>, i32),
+                u32,
+                2usize,
+            >("ToUInt32LE")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToUInt32LE", 2usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bytes, offset)) };
         Ok(__cordl_ret.into())
     }
     pub fn Trim(
@@ -103,9 +172,21 @@ impl crate::Mono::Security::Cryptography::CryptoConvert {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("Trim")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Trim", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Trim", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
 }

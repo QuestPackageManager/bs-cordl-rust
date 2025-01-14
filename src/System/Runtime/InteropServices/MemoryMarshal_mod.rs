@@ -46,8 +46,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsBytes", (span))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::ReadOnlySpan_1<T>),
+                crate::System::ReadOnlySpan_1<u8>,
+                1usize,
+            >("AsBytes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsBytes", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
+            method.invoke_unchecked((), (span))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AsBytes_Span_1_0<T>(
@@ -57,8 +70,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::Span_1<u8> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsBytes", (span))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::Span_1<T>),
+                crate::System::Span_1<u8>,
+                1usize,
+            >("AsBytes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsBytes", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Span_1<u8> = unsafe {
+            method.invoke_unchecked((), (span))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AsMemory<T>(
@@ -68,8 +94,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::Memory_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsMemory", (memory))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::ReadOnlyMemory_1<T>),
+                crate::System::Memory_1<T>,
+                1usize,
+            >("AsMemory")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsMemory", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Memory_1<T> = unsafe {
+            method.invoke_unchecked((), (memory))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateReadOnlySpan<T>(
@@ -80,8 +119,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::ReadOnlySpan_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateReadOnlySpan", (reference, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<T>, i32),
+                crate::System::ReadOnlySpan_1<T>,
+                2usize,
+            >("CreateReadOnlySpan")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateReadOnlySpan", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::ReadOnlySpan_1<T> = unsafe {
+            method.invoke_unchecked((), (reference, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNonNullPinnableReference_ReadOnlySpan_1_1<T>(
@@ -91,8 +143,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNonNullPinnableReference", (span))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::ReadOnlySpan_1<T>),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                1usize,
+            >("GetNonNullPinnableReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNonNullPinnableReference", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (span))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetNonNullPinnableReference_Span_1_0<T>(
@@ -102,8 +167,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNonNullPinnableReference", (span))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::Span_1<T>),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                1usize,
+            >("GetNonNullPinnableReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNonNullPinnableReference", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (span))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetReference_ReadOnlySpan_1_1<T>(
@@ -113,8 +191,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetReference", (span))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::ReadOnlySpan_1<T>),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                1usize,
+            >("GetReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetReference", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (span))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetReference_Span_1_0<T>(
@@ -124,8 +215,21 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetReference", (span))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::Span_1<T>),
+                quest_hook::libil2cpp::ByRefMut<T>,
+                1usize,
+            >("GetReference")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetReference", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<T> = unsafe {
+            method.invoke_unchecked((), (span))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetArray<T>(
@@ -136,8 +240,24 @@ impl crate::System::Runtime::InteropServices::MemoryMarshal {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetArray", (memory, segment))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::ReadOnlyMemory_1<T>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::ArraySegment_1<T>>,
+                ),
+                bool,
+                2usize,
+            >("TryGetArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetArray", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (memory, segment))
+        };
         Ok(__cordl_ret.into())
     }
 }

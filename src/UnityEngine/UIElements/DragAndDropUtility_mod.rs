@@ -44,10 +44,21 @@ impl crate::UnityEngine::UIElements::DragAndDropUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IDragAndDrop>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IDragAndDrop>,
+                1usize,
+            >("GetDragAndDrop")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDragAndDrop", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IDragAndDrop,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDragAndDrop", (panel))?;
+        > = unsafe { method.invoke_unchecked((), (panel)) };
         Ok(__cordl_ret.into())
     }
 }

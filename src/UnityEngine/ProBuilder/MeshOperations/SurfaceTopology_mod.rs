@@ -60,14 +60,43 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Vertex,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::FaceRebuildData,
+                        >,
+                    >,
+                >,
+                3usize,
+            >("BreakFaceIntoTris")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BreakFaceIntoTris", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
                     crate::UnityEngine::ProBuilder::FaceRebuildData,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("BreakFaceIntoTris", (face, vertices, lookup))?;
+        > = unsafe { method.invoke_unchecked((), (face, vertices, lookup)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConformNormals(
@@ -80,10 +109,32 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+                2usize,
+            >("ConformNormals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConformNormals", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConformNormals", (mesh, faces))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConformOppositeNormal(
@@ -91,25 +142,65 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+                1usize,
+            >("ConformOppositeNormal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConformOppositeNormal", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ActionResult,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConformOppositeNormal", (source))?;
+        > = unsafe { method.invoke_unchecked((), (source)) };
         Ok(__cordl_ret.into())
     }
     pub fn FlipEdge(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FlipEdge", (mesh, face))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                ),
+                bool,
+                2usize,
+            >("FlipEdge")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FlipEdge", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (mesh, face)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCommonEdgeInWindingOrder(
         wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCommonEdgeInWindingOrder", (wing))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>),
+                crate::UnityEngine::ProBuilder::Edge,
+                1usize,
+            >("GetCommonEdgeInWindingOrder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCommonEdgeInWindingOrder", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = unsafe {
+            method.invoke_unchecked((), (wing))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetWindingFlags(
@@ -122,8 +213,34 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetWindingFlags", (edge, flag, flags))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::WingedEdge,
+                    >,
+                    bool,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                            bool,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("GetWindingFlags")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetWindingFlags", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (edge, flag, flags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetWindingOrder_IList_1_2(
@@ -131,8 +248,25 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::WindingOrder> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::WindingOrder = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetWindingOrder", (points))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<
+                        crate::UnityEngine::Vector2,
+                    >,
+                >),
+                crate::UnityEngine::ProBuilder::WindingOrder,
+                1usize,
+            >("GetWindingOrder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetWindingOrder", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::WindingOrder = unsafe {
+            method.invoke_unchecked((), (points))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetWindingOrder_IList_1_IList_1_1(
@@ -145,16 +279,58 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
             crate::System::Collections::Generic::IList_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::WindingOrder> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::WindingOrder = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetWindingOrder", (vertices, indexes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Vertex,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                ),
+                crate::UnityEngine::ProBuilder::WindingOrder,
+                2usize,
+            >("GetWindingOrder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetWindingOrder", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::WindingOrder = unsafe {
+            method.invoke_unchecked((), (vertices, indexes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetWindingOrder_ProBuilderMesh_Face0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::WindingOrder> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::WindingOrder = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetWindingOrder", (mesh, face))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                ),
+                crate::UnityEngine::ProBuilder::WindingOrder,
+                2usize,
+            >("GetWindingOrder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetWindingOrder", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::WindingOrder = unsafe {
+            method.invoke_unchecked((), (mesh, face))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchNormal(
@@ -164,8 +340,27 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
             crate::System::Collections::Generic::Dictionary_2<i32, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MatchNormal", (source, target, lookup))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("MatchNormal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchNormal", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (source, target, lookup))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToTriangles(
@@ -182,12 +377,38 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
+                2usize,
+            >("ToTriangles")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToTriangles", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToTriangles", (mesh, faces))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, faces)) };
         Ok(__cordl_ret.into())
     }
 }

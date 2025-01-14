@@ -43,16 +43,41 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
     pub fn IsAnimatable(
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsAnimatable", (id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                bool,
+                1usize,
+            >("IsAnimatable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsAnimatable", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (id)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsMatchingShorthand(
         shorthand: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsMatchingShorthand", (shorthand, id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                ),
+                bool,
+                2usize,
+            >("IsMatchingShorthand")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsMatchingShorthand", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (shorthand, id)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetEnumIntValue(
@@ -60,8 +85,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         intValue: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetEnumIntValue", (enumType, value, intValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                bool,
+                3usize,
+            >("TryGetEnumIntValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetEnumIntValue", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (enumType, value, intValue))
+        };
         Ok(__cordl_ret.into())
     }
 }

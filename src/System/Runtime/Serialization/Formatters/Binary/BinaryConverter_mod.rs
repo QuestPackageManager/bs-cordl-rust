@@ -57,18 +57,45 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
     > {
-        let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetBinaryTypeInfo",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    _cordl_type,
-                    objectInfo,
-                    typeName,
-                    objectWriter,
-                    typeInformation,
-                    assemId,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::WriteObjectInfo,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::ObjectWriter,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
                 ),
-            )?;
+                crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+                6usize,
+            >("GetBinaryTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBinaryTypeInfo", 6usize
+                )
+            });
+        let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        _cordl_type,
+                        objectInfo,
+                        typeName,
+                        objectWriter,
+                        typeInformation,
+                        assemId,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetParserBinaryTypeInfo(
@@ -79,8 +106,26 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
     > {
-        let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetParserBinaryTypeInfo", (_cordl_type, typeInformation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                ),
+                crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+                2usize,
+            >("GetParserBinaryTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetParserBinaryTypeInfo", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum = unsafe {
+            method.invoke_unchecked((), (_cordl_type, typeInformation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTypeInfo(
@@ -92,10 +137,27 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                3usize,
+            >("ReadTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTypeInfo", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadTypeInfo", (binaryTypeEnum, input, assemId))?;
+        > = unsafe { method.invoke_unchecked((), (binaryTypeEnum, input, assemId)) };
         Ok(__cordl_ret.into())
     }
     pub fn TypeFromInfo(
@@ -118,20 +180,53 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
         >,
         isVariant: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TypeFromInfo",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    binaryTypeEnum,
-                    typeInformation,
-                    objectReader,
-                    assemblyInfo,
-                    primitiveTypeEnum,
-                    typeString,
-                    _cordl_type,
-                    isVariant,
+                    crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                8usize,
+            >("TypeFromInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TypeFromInfo", 8usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        binaryTypeEnum,
+                        typeInformation,
+                        objectReader,
+                        assemblyInfo,
+                        primitiveTypeEnum,
+                        typeString,
+                        _cordl_type,
+                        isVariant,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteTypeInfo(
@@ -142,8 +237,28 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryConverter 
             crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteTypeInfo", (binaryTypeEnum, typeInformation, assemId, sout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::__BinaryWriter,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("WriteTypeInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteTypeInfo", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (binaryTypeEnum, typeInformation, assemId, sout))
+        };
         Ok(__cordl_ret.into())
     }
 }

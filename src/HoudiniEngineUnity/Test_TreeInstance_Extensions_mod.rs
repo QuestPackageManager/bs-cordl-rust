@@ -50,12 +50,31 @@ impl crate::HoudiniEngineUnity::Test_TreeInstance_Extensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::TreeInstance>,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::Test_TreeInstance,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("ToTestObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToTestObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToTestObject", (_cordl_self))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToTestObject_List_1_2(
@@ -69,12 +88,33 @@ impl crate::HoudiniEngineUnity::Test_TreeInstance_Extensions {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::TreeInstance,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::Test_TreeInstance,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("ToTestObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToTestObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToTestObject", (_cordl_self))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToTestObject_TreeInstance0(
@@ -82,10 +122,21 @@ impl crate::HoudiniEngineUnity::Test_TreeInstance_Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::TreeInstance),
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
+                1usize,
+            >("ToTestObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToTestObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::Test_TreeInstance,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToTestObject", (_cordl_self))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
         Ok(__cordl_ret.into())
     }
 }

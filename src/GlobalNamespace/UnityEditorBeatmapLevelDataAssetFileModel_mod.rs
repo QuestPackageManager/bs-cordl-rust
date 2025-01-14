@@ -48,10 +48,21 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+                0usize,
+            >("LoadAllAssetsFromAssetDatabase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadAllAssetsFromAssetDatabase", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadAllAssetsFromAssetDatabase", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapLevelDataFromAssetDatabase(
@@ -59,10 +70,21 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataSO>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataSO>,
+                1usize,
+            >("LoadBeatmapLevelDataFromAssetDatabase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBeatmapLevelDataFromAssetDatabase", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelDataSO,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadBeatmapLevelDataFromAssetDatabase", (levelId))?;
+        > = unsafe { method.invoke_unchecked((), (levelId)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapLevelFromAssetDatabase(
@@ -70,10 +92,21 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+                1usize,
+            >("LoadBeatmapLevelFromAssetDatabase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBeatmapLevelFromAssetDatabase", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelSO,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadBeatmapLevelFromAssetDatabase", (levelId))?;
+        > = unsafe { method.invoke_unchecked((), (levelId)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapLevelPackFromAssetDatabase(
@@ -81,10 +114,21 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
+                1usize,
+            >("LoadBeatmapLevelPackFromAssetDatabase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBeatmapLevelPackFromAssetDatabase", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPackSO,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadBeatmapLevelPackFromAssetDatabase", (packId))?;
+        > = unsafe { method.invoke_unchecked((), (packId)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadUniqueAssetFromAssetDatabase<T>(
@@ -94,8 +138,19 @@ impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadUniqueAssetFromAssetDatabase", (filename))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                T,
+                1usize,
+            >("LoadUniqueAssetFromAssetDatabase")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadUniqueAssetFromAssetDatabase", 1usize
+                )
+            });
+        let __cordl_ret: T = unsafe { method.invoke_unchecked((), (filename)) };
         Ok(__cordl_ret.into())
     }
 }

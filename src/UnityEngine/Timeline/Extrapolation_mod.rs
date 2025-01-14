@@ -41,8 +41,21 @@ impl crate::UnityEngine::Timeline::Extrapolation {
     pub fn CalculateExtrapolationTimes(
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CalculateExtrapolationTimes", (asset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("CalculateExtrapolationTimes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CalculateExtrapolationTimes", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (asset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SortClipsByStartTime(
@@ -58,12 +71,35 @@ impl crate::UnityEngine::Timeline::Extrapolation {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimelineClip,
+                        >,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Timeline::TimelineClip,
+                        >,
+                    >,
+                >,
+                1usize,
+            >("SortClipsByStartTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SortClipsByStartTime", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SortClipsByStartTime", (clips))?;
+        > = unsafe { method.invoke_unchecked((), (clips)) };
         Ok(__cordl_ret.into())
     }
 }

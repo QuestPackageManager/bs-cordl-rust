@@ -56,11 +56,17 @@ impl crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_compressExpand(
@@ -68,11 +74,21 @@ impl crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType = __cordl_object
-            .invoke("get_compressExpand", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType,
+                0usize,
+            >("get_compressExpand")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_compressExpand", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentIntensityReductionOptions_CompressExpandReductionType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_rotateRings(
@@ -80,11 +96,21 @@ impl crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType = __cordl_object
-            .invoke("get_rotateRings", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType,
+                0usize,
+            >("get_rotateRings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_rotateRings", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentIntensityReductionOptions_RotateRingsReductionType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

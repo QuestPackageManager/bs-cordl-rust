@@ -43,11 +43,21 @@ impl crate::Tayx::Graphy::UI::IModifiableState {
         newState: crate::Tayx::Graphy::GraphyManager_ModuleState,
         silentUpdate: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetState", (newState, silentUpdate))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Tayx::Graphy::GraphyManager_ModuleState, bool),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetState")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetState", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (newState, silentUpdate))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

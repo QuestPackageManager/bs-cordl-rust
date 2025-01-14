@@ -55,13 +55,37 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider2 
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ResourceManagement::ResourceManager,
+                    >,
+                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                        crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+                    >,
+                    crate::UnityEngine::SceneManagement::UnloadSceneOptions,
+                ),
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                    crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+                >,
+                3usize,
+            >("ReleaseScene")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReleaseScene", 3usize
+                )
+            });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
-        > = __cordl_object
-            .invoke("ReleaseScene", (resourceManager, sceneLoadHandle, unloadOptions))?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (resourceManager, sceneLoadHandle, unloadOptions),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

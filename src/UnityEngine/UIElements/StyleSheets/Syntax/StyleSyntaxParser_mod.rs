@@ -73,29 +73,77 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EatSpace", (tokenizer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("EatSpace")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EatSpace", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (tokenizer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsCombinator(
         token: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsCombinator", (token))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken),
+                bool,
+                1usize,
+            >("IsCombinator")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsCombinator", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsExpressionEnd(
         token: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsExpressionEnd", (token))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken),
+                bool,
+                1usize,
+            >("IsExpressionEnd")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsExpressionEnd", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsMultiplier(
         token: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsMultiplier", (token))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken),
+                bool,
+                1usize,
+            >("IsMultiplier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsMultiplier", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (token)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -113,12 +161,23 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+                >,
+                1usize,
+            >("Parse")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Parse", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
-        > = __cordl_object.invoke("Parse", (syntax))?;
+        > = unsafe { method.invoke_unchecked(self, (syntax)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseCombinatorType(
@@ -129,11 +188,23 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator = __cordl_object
-            .invoke("ParseCombinatorType", (tokenizer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                >),
+                crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
+                1usize,
+            >("ParseCombinatorType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseCombinatorType", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator = unsafe {
+            method.invoke_unchecked(self, (tokenizer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseDataType(
@@ -146,12 +217,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+                >,
+                1usize,
+            >("ParseDataType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseDataType", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
-        > = __cordl_object.invoke("ParseDataType", (tokenizer))?;
+        > = unsafe { method.invoke_unchecked(self, (tokenizer)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseExpression(
@@ -164,12 +248,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+                >,
+                1usize,
+            >("ParseExpression")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseExpression", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
-        > = __cordl_object.invoke("ParseExpression", (tokenizer))?;
+        > = unsafe { method.invoke_unchecked(self, (tokenizer)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseGroup(
@@ -182,12 +279,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+                >,
+                1usize,
+            >("ParseGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseGroup", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
-        > = __cordl_object.invoke("ParseGroup", (tokenizer))?;
+        > = unsafe { method.invoke_unchecked(self, (tokenizer)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseMultiplier(
@@ -199,11 +309,28 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParseMultiplier", (tokenizer, multiplier))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ParseMultiplier")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseMultiplier", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (tokenizer, multiplier))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseNonTerminalValue(
@@ -214,12 +341,23 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+                >,
+                1usize,
+            >("ParseNonTerminalValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseNonTerminalValue", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
-        > = __cordl_object.invoke("ParseNonTerminalValue", (syntax))?;
+        > = unsafe { method.invoke_unchecked(self, (syntax)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseProperty(
@@ -232,12 +370,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+                >,
+                1usize,
+            >("ParseProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseProperty", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
-        > = __cordl_object.invoke("ParseProperty", (tokenizer))?;
+        > = unsafe { method.invoke_unchecked(self, (tokenizer)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseRanges(
@@ -248,11 +399,27 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
         min: quest_hook::libil2cpp::ByRefMut<i32>,
         max: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ParseRanges", (tokenizer, min, max))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ParseRanges")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseRanges", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (tokenizer, min, max))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ParseTerm(
@@ -265,32 +432,61 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+                >,
+                1usize,
+            >("ParseTerm")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseTerm", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
-        > = __cordl_object.invoke("ParseTerm", (tokenizer))?;
+        > = unsafe { method.invoke_unchecked(self, (tokenizer)) };
         Ok(__cordl_ret.into())
     }
     pub fn ProcessCombinatorStack(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessCombinatorStack", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ProcessCombinatorStack")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessCombinatorStack", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

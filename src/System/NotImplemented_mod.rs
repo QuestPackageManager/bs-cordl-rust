@@ -38,13 +38,24 @@ impl std::ops::DerefMut for crate::System::NotImplemented {
 }
 #[cfg(feature = "System+NotImplemented")]
 impl crate::System::NotImplemented {
-    pub fn ByDesignWithMessage(
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
+    pub fn get_ByDesign() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Exception>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ByDesignWithMessage", (message))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                0usize,
+            >("get_ByDesign")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ByDesign", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -62,11 +62,29 @@ impl crate::BeatSaber::GameSettings::ControllerProfileSaveData {
         leftController: crate::BeatSaber::GameSettings::Controller,
         rightController: crate::BeatSaber::GameSettings::Controller,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (alternativeHandling, leftController, rightController))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    bool,
+                    crate::BeatSaber::GameSettings::Controller,
+                    crate::BeatSaber::GameSettings::Controller,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (alternativeHandling, leftController, rightController),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -46,10 +46,23 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+                >,
+                1usize,
+            >("CreateContext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateContext", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateContext", (algorithm))?;
+        > = unsafe { method.invoke_unchecked((), (algorithm)) };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_ConstrainedPointSet2(
@@ -57,22 +70,67 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
             crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (cps))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (cps))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_PointSet3(
         ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::PointSet>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (ps))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::PointSet,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ps))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_Polygon1(
         p: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Poly2Tri::Polygon>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (p))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::Polygon,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (p))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_PolygonSet0(
@@ -80,8 +138,23 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
             crate::UnityEngine::ProBuilder::Poly2Tri::PolygonSet,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (ps))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::PolygonSet,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ps))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_TriangulationAlgorithm_Triangulatable4(
@@ -90,8 +163,26 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
             crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (algorithm, t))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationAlgorithm,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::Poly2Tri::Triangulatable,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (algorithm, t))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_TriangulationContext5(
@@ -99,13 +190,37 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::P2T {
             crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Triangulate", (tcx))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Triangulate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Triangulate", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (tcx))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Warmup() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Warmup", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), quest_hook::libil2cpp::Void, 0usize>("Warmup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Warmup", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
 }

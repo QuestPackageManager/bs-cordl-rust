@@ -44,8 +44,21 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundPosition,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertScaleModeToBackgroundPosition", (scaleMode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ScaleMode),
+                crate::UnityEngine::UIElements::BackgroundPosition,
+                1usize,
+            >("ConvertScaleModeToBackgroundPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertScaleModeToBackgroundPosition", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = unsafe {
+            method.invoke_unchecked((), (scaleMode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertScaleModeToBackgroundRepeat(
@@ -53,15 +66,41 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundRepeat,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertScaleModeToBackgroundRepeat", (scaleMode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ScaleMode),
+                crate::UnityEngine::UIElements::BackgroundRepeat,
+                1usize,
+            >("ConvertScaleModeToBackgroundRepeat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertScaleModeToBackgroundRepeat", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = unsafe {
+            method.invoke_unchecked((), (scaleMode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertScaleModeToBackgroundSize(
         scaleMode: crate::UnityEngine::ScaleMode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertScaleModeToBackgroundSize", (scaleMode))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ScaleMode),
+                crate::UnityEngine::UIElements::BackgroundSize,
+                1usize,
+            >("ConvertScaleModeToBackgroundSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertScaleModeToBackgroundSize", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = unsafe {
+            method.invoke_unchecked((), (scaleMode))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveUnityBackgroundScaleMode(
@@ -71,17 +110,37 @@ impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
         backgroundSize: crate::UnityEngine::UIElements::BackgroundSize,
         valid: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ScaleMode> {
-        let __cordl_ret: crate::UnityEngine::ScaleMode = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ResolveUnityBackgroundScaleMode",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    backgroundPositionX,
-                    backgroundPositionY,
-                    backgroundRepeat,
-                    backgroundSize,
-                    valid,
+                    crate::UnityEngine::UIElements::BackgroundPosition,
+                    crate::UnityEngine::UIElements::BackgroundPosition,
+                    crate::UnityEngine::UIElements::BackgroundRepeat,
+                    crate::UnityEngine::UIElements::BackgroundSize,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
                 ),
-            )?;
+                crate::UnityEngine::ScaleMode,
+                5usize,
+            >("ResolveUnityBackgroundScaleMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ResolveUnityBackgroundScaleMode", 5usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ScaleMode = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        backgroundPositionX,
+                        backgroundPositionY,
+                        backgroundRepeat,
+                        backgroundSize,
+                        valid,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -51,20 +51,43 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::FontAsset,
+                    >,
+                    bool,
+                    crate::UnityEngine::TextCore::Text::FontStyles,
+                    crate::UnityEngine::TextCore::Text::TextFontWeight,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
+                6usize,
+            >("GetCharacterFromFontAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharacterFromFontAsset", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::Character,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetCharacterFromFontAsset",
-                (
-                    unicode,
-                    sourceFontAsset,
-                    includeFallbacks,
-                    fontStyle,
-                    fontWeight,
-                    isAlternativeTypeface,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        sourceFontAsset,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacterFromFontAsset_Internal(
@@ -79,20 +102,43 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::FontAsset,
+                    >,
+                    bool,
+                    crate::UnityEngine::TextCore::Text::FontStyles,
+                    crate::UnityEngine::TextCore::Text::TextFontWeight,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
+                6usize,
+            >("GetCharacterFromFontAsset_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharacterFromFontAsset_Internal", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::Character,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetCharacterFromFontAsset_Internal",
-                (
-                    unicode,
-                    sourceFontAsset,
-                    includeFallbacks,
-                    fontStyle,
-                    fontWeight,
-                    isAlternativeTypeface,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        sourceFontAsset,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharacterFromFontAssets(
@@ -112,21 +158,51 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::FontAsset,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::FontAsset,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    crate::UnityEngine::TextCore::Text::FontStyles,
+                    crate::UnityEngine::TextCore::Text::TextFontWeight,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
+                7usize,
+            >("GetCharacterFromFontAssets")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharacterFromFontAssets", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::Character,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetCharacterFromFontAssets",
-                (
-                    unicode,
-                    sourceFontAsset,
-                    fontAssets,
-                    includeFallbacks,
-                    fontStyle,
-                    fontWeight,
-                    isAlternativeTypeface,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        sourceFontAsset,
+                        fontAssets,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpriteCharacterFromSpriteAsset(
@@ -138,13 +214,31 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteCharacter>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::SpriteAsset,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
+                >,
+                3usize,
+            >("GetSpriteCharacterFromSpriteAsset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSpriteCharacterFromSpriteAsset", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::SpriteCharacter,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetSpriteCharacterFromSpriteAsset",
-                (unicode, spriteAsset, includeFallbacks),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (unicode, spriteAsset, includeFallbacks))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSpriteCharacterFromSpriteAsset_Internal(
@@ -156,13 +250,31 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteCharacter>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    u32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::TextCore::Text::SpriteAsset,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
+                >,
+                3usize,
+            >("GetSpriteCharacterFromSpriteAsset_Internal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSpriteCharacterFromSpriteAsset_Internal", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::SpriteCharacter,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetSpriteCharacterFromSpriteAsset_Internal",
-                (unicode, spriteAsset, includeFallbacks),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (unicode, spriteAsset, includeFallbacks))
+        };
         Ok(__cordl_ret.into())
     }
 }

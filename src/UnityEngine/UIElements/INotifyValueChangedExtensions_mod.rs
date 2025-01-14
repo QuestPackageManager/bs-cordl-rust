@@ -56,8 +56,32 @@ impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterValueChangedCallback", (control, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::EventCallback_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::ChangeEvent_1<T>,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("RegisterValueChangedCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterValueChangedCallback", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (control, callback))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterValueChangedCallback<T>(
@@ -76,8 +100,32 @@ impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnregisterValueChangedCallback", (control, callback))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::EventCallback_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::ChangeEvent_1<T>,
+                            >,
+                        >,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("UnregisterValueChangedCallback")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnregisterValueChangedCallback", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (control, callback))
+        };
         Ok(__cordl_ret.into())
     }
 }

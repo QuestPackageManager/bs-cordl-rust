@@ -58,11 +58,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType = __cordl_object
-            .invoke("ColorOverrideTypeFromSaveData", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::PlayerSaveData_ColorOverrideType),
+                crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
+                1usize,
+            >("ColorOverrideTypeFromSaveData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ColorOverrideTypeFromSaveData", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType = unsafe {
+            method.invoke_unchecked(self, (c))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ColorOverrideTypeToSaveData(
@@ -71,11 +81,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType = __cordl_object
-            .invoke("ColorOverrideTypeToSaveData", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType),
+                crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
+                1usize,
+            >("ColorOverrideTypeToSaveData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ColorOverrideTypeToSaveData", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType = unsafe {
+            method.invoke_unchecked(self, (c))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDefaultOverrideEnvironmentSettings(
@@ -83,12 +103,23 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OverrideEnvironmentSettings>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OverrideEnvironmentSettings,
+                >,
+                0usize,
+            >("CreateDefaultOverrideEnvironmentSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDefaultOverrideEnvironmentSettings", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OverrideEnvironmentSettings,
-        > = __cordl_object.invoke("CreateDefaultOverrideEnvironmentSettings", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDefaultPlayerData(
@@ -96,11 +127,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = __cordl_object
-            .invoke("CreateDefaultPlayerData", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+                0usize,
+            >("CreateDefaultPlayerData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDefaultPlayerData", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapCharacteristicFromV_1_0_1LevelId(
@@ -111,13 +152,30 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+                2usize,
+            >("GetBeatmapCharacteristicFromV_1_0_1LevelId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatmapCharacteristicFromV_1_0_1LevelId", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicSO,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetBeatmapCharacteristicFromV_1_0_1LevelId",
-                (beatmapCharacteristicCollection, levelId),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (beatmapCharacteristicCollection, levelId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentInfoBySerializedName(
@@ -126,13 +184,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                1usize,
+            >("GetEnvironmentInfoBySerializedName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEnvironmentInfoBySerializedName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentInfoSO,
-        > = __cordl_object
-            .invoke("GetEnvironmentInfoBySerializedName", (environmentName))?;
+        > = unsafe { method.invoke_unchecked(self, (environmentName)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelIdFromV_1_0_1LevelId(
@@ -143,13 +209,26 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCharacteristicSO,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GetLevelIdFromV_1_0_1LevelId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLevelIdFromV_1_0_1LevelId", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetLevelIdFromV_1_0_1LevelId",
-                (oldLevelId, beatmapCharacteristic),
-            )?;
+        > = unsafe { method.invoke_unchecked((), (oldLevelId, beatmapCharacteristic)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayerSaveData(
@@ -158,12 +237,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData>,
+                1usize,
+            >("GetPlayerSaveData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPlayerSaveData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSaveData,
-        > = __cordl_object.invoke("GetPlayerSaveData", (playerData))?;
+        > = unsafe { method.invoke_unchecked(self, (playerData)) };
         Ok(__cordl_ret.into())
     }
     pub fn Load(
@@ -171,11 +259,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = __cordl_object
-            .invoke("Load", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+                0usize,
+            >("Load")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Load", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadAsync(
@@ -187,14 +285,27 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+                    >,
+                >,
+                0usize,
+            >("LoadAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadAsync", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
             >,
-        > = __cordl_object.invoke("LoadAsync", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadCorrectedSongPackMask(
@@ -205,12 +316,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("LoadCorrectedSongPackMask")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadCorrectedSongPackMask", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("LoadCorrectedSongPackMask", (songMaskPackBytes))?;
+        > = unsafe { method.invoke_unchecked(self, (songMaskPackBytes)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromCurrentVersion(
@@ -219,11 +339,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = __cordl_object
-            .invoke("LoadFromCurrentVersion", (playerSaveData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+                1usize,
+            >("LoadFromCurrentVersion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFromCurrentVersion", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = unsafe {
+            method.invoke_unchecked(self, (playerSaveData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromJSONString(
@@ -232,11 +362,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = __cordl_object
-            .invoke("LoadFromJSONString", (jsonString))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+                1usize,
+            >("LoadFromJSONString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFromJSONString", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = unsafe {
+            method.invoke_unchecked(self, (jsonString))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromVersionV1_0_1(
@@ -247,11 +387,23 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = __cordl_object
-            .invoke("LoadFromVersionV1_0_1", (playerDataModelSaveData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayerSaveDataV1_0_1,
+                >),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+                1usize,
+            >("LoadFromVersionV1_0_1")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFromVersionV1_0_1", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = unsafe {
+            method.invoke_unchecked(self, (playerDataModelSaveData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadOrCreateFromJsonString(
@@ -260,11 +412,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = __cordl_object
-            .invoke("LoadOrCreateFromJsonString", (jsonString))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
+                1usize,
+            >("LoadOrCreateFromJsonString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadOrCreateFromJsonString", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData> = unsafe {
+            method.invoke_unchecked(self, (jsonString))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -301,11 +463,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
         &mut self,
         playerData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Save", (playerData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("Save")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Save", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (playerData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SaveAsync(
@@ -314,12 +486,21 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerData>),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                1usize,
+            >("SaveAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SaveAsync", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = __cordl_object.invoke("SaveAsync", (playerData))?;
+        > = unsafe { method.invoke_unchecked(self, (playerData)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -338,20 +519,45 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
             crate::GlobalNamespace::EnvironmentsListModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    playerDataFileManager,
-                    fileStorage,
-                    beatmapCharacteristicCollection,
-                    colorSchemesSettings,
-                    environmentsListModel,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::PlayerDataFileManagerSO,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCharacteristicCollection,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::ColorSchemesSettings,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::EnvironmentsListModel,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        playerDataFileManager,
+                        fileStorage,
+                        beatmapCharacteristicCollection,
+                        colorSchemesSettings,
+                        environmentsListModel,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

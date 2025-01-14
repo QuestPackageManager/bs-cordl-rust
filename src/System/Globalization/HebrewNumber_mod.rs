@@ -45,8 +45,15 @@ impl crate::System::Globalization::HebrewNumber {
     #[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
     pub type HebrewValue = crate::System::Globalization::HebrewNumber_HebrewValue;
     pub fn IsDigit(ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsDigit", (ch))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char), bool, 1usize>("IsDigit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsDigit", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ch)) };
         Ok(__cordl_ret.into())
     }
     pub fn ParseByChar(
@@ -57,8 +64,26 @@ impl crate::System::Globalization::HebrewNumber {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Globalization::HebrewNumberParsingState,
     > {
-        let __cordl_ret: crate::System::Globalization::HebrewNumberParsingState = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ParseByChar", (ch, context))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    char,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::System::Globalization::HebrewNumberParsingContext,
+                    >,
+                ),
+                crate::System::Globalization::HebrewNumberParsingState,
+                2usize,
+            >("ParseByChar")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ParseByChar", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::Globalization::HebrewNumberParsingState = unsafe {
+            method.invoke_unchecked((), (ch, context))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -66,9 +91,21 @@ impl crate::System::Globalization::HebrewNumber {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (Number))?;
+        > = unsafe { method.invoke_unchecked((), (Number)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -400,11 +437,21 @@ impl crate::System::Globalization::HebrewNumber_HebrewValue {
         token: crate::System::Globalization::HebrewNumber_HebrewToken,
         value: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (token, value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Globalization::HebrewNumber_HebrewToken, i16),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (token, value))
+        };
         Ok(__cordl_ret.into())
     }
 }

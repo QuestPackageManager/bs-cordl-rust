@@ -109,8 +109,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (deviceId, hardReset, _cordl_time))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, bool, f64),
+                crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent,
+                3usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent = unsafe {
+            method.invoke_unchecked((), (deviceId, hardReset, _cordl_time))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_typeStatic(
@@ -118,11 +131,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_typeStatic",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::Utilities::FourCC,
+                0usize,
+            >("get_typeStatic")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_typeStatic", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

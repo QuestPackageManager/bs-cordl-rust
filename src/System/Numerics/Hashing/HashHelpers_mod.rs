@@ -40,8 +40,15 @@ impl std::ops::DerefMut for crate::System::Numerics::Hashing::HashHelpers {
 #[cfg(feature = "System+Numerics+Hashing+HashHelpers")]
 impl crate::System::Numerics::Hashing::HashHelpers {
     pub fn Combine(h1: i32, h2: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Combine", (h1, h2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32, i32), i32, 2usize>("Combine")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Combine", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (h1, h2)) };
         Ok(__cordl_ret.into())
     }
 }

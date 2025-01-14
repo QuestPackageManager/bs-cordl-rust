@@ -49,12 +49,30 @@ impl crate::System::Dynamic::InvokeBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::DynamicMetaObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                2usize,
+            >("Bind")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Bind", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object.invoke("Bind", (target, args))?;
+        > = unsafe { method.invoke_unchecked(self, (target, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn FallbackInvoke_DynamicMetaObject1(
@@ -71,12 +89,31 @@ impl crate::System::Dynamic::InvokeBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::DynamicMetaObject,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                3usize,
+            >("FallbackInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FallbackInvoke", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object.invoke("FallbackInvoke", (target, args, errorSuggestion))?;
+        > = unsafe { method.invoke_unchecked(self, (target, args, errorSuggestion)) };
         Ok(__cordl_ret.into())
     }
     pub fn FallbackInvoke_DynamicMetaObject_Il2CppArray0(
@@ -90,12 +127,30 @@ impl crate::System::Dynamic::InvokeBinder {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Dynamic::DynamicMetaObject,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                2usize,
+            >("FallbackInvoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FallbackInvoke", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
-        > = __cordl_object.invoke("FallbackInvoke", (target, args))?;
+        > = unsafe { method.invoke_unchecked(self, (target, args)) };
         Ok(__cordl_ret.into())
     }
 }

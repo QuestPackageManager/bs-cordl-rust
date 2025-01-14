@@ -49,10 +49,29 @@ impl crate::Zenject::ValidationUtil {
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    >,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Zenject::TypeValuePair,
+                    >,
+                >,
+                1usize,
+            >("CreateDefaultArgs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDefaultArgs", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateDefaultArgs", (argTypes))?;
+        > = unsafe { method.invoke_unchecked((), (argTypes)) };
         Ok(__cordl_ret.into())
     }
 }

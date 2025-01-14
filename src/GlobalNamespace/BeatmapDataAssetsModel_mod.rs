@@ -44,13 +44,21 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("AssetBundleStreamingAssetsPathForAssetBundleName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AssetBundleStreamingAssetsPathForAssetBundleName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AssetBundleStreamingAssetsPathForAssetBundleName",
-                (assetBundleName),
-            )?;
+        > = unsafe { method.invoke_unchecked((), (assetBundleName)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundleNameForBeatmapLevel(
@@ -59,10 +67,24 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::BeatmapLevelDataVersion,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GetAssetBundleNameForBeatmapLevel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAssetBundleNameForBeatmapLevel", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAssetBundleNameForBeatmapLevel", (levelID, version))?;
+        > = unsafe { method.invoke_unchecked((), (levelID, version)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundleNameWithVersionForBeatmapLevelData(
@@ -72,13 +94,27 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::BeatmapLevelDataVersion,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("GetAssetBundleNameWithVersionForBeatmapLevelData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAssetBundleNameWithVersionForBeatmapLevelData", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetAssetBundleNameWithVersionForBeatmapLevelData",
-                (levelId, dataVersion, bundleVersion),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked((), (levelId, dataVersion, bundleVersion))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAssetBundleStreamingAssetsPathForBeatmapLevelId(
@@ -87,13 +123,24 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::BeatmapLevelDataVersion,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GetAssetBundleStreamingAssetsPathForBeatmapLevelId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAssetBundleStreamingAssetsPathForBeatmapLevelId", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetAssetBundleStreamingAssetsPathForBeatmapLevelId",
-                (levelID, version),
-            )?;
+        > = unsafe { method.invoke_unchecked((), (levelID, version)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapLevelAssetFilenameForBeatmapLevel(
@@ -101,10 +148,21 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetBeatmapLevelAssetFilenameForBeatmapLevel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatmapLevelAssetFilenameForBeatmapLevel", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBeatmapLevelAssetFilenameForBeatmapLevel", (levelID))?;
+        > = unsafe { method.invoke_unchecked((), (levelID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapLevelDataAssetFilenameForBeatmapLevel(
@@ -112,10 +170,21 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetBeatmapLevelDataAssetFilenameForBeatmapLevel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatmapLevelDataAssetFilenameForBeatmapLevel", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBeatmapLevelDataAssetFilenameForBeatmapLevel", (levelID))?;
+        > = unsafe { method.invoke_unchecked((), (levelID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapLevelDataAssetNameForBeatmapLevel(
@@ -123,10 +192,21 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetBeatmapLevelDataAssetNameForBeatmapLevel")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatmapLevelDataAssetNameForBeatmapLevel", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBeatmapLevelDataAssetNameForBeatmapLevel", (levelID))?;
+        > = unsafe { method.invoke_unchecked((), (levelID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapLevelPackAssetFilename(
@@ -134,10 +214,21 @@ impl crate::GlobalNamespace::BeatmapDataAssetsModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetBeatmapLevelPackAssetFilename")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatmapLevelPackAssetFilename", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBeatmapLevelPackAssetFilename", (packId))?;
+        > = unsafe { method.invoke_unchecked((), (packId)) };
         Ok(__cordl_ret.into())
     }
 }

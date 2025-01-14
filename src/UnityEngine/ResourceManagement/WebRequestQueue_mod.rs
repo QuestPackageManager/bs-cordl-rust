@@ -44,8 +44,23 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
             crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("BeginWebRequest", (queueOperation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("BeginWebRequest")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "BeginWebRequest", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (queueOperation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DequeueRequest(
@@ -53,15 +68,43 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DequeueRequest", (operation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DequeueRequest")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DequeueRequest", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (operation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnWebAsyncOpComplete_AsyncOperation0(
         operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnWebAsyncOpComplete", (operation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnWebAsyncOpComplete")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnWebAsyncOpComplete", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (operation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn OnWebAsyncOpComplete_UnityWebRequestAsyncOperation1(
@@ -69,8 +112,23 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("OnWebAsyncOpComplete", (operation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("OnWebAsyncOpComplete")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "OnWebAsyncOpComplete", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (operation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn QueueRequest(
@@ -82,17 +140,45 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
             crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Networking::UnityWebRequest,
+                >),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+                >,
+                1usize,
+            >("QueueRequest")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "QueueRequest", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("QueueRequest", (request))?;
+        > = unsafe { method.invoke_unchecked((), (request)) };
         Ok(__cordl_ret.into())
     }
     pub fn SetMaxConcurrentRequests(
         maxRequests: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetMaxConcurrentRequests", (maxRequests))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetMaxConcurrentRequests")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMaxConcurrentRequests", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (maxRequests))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WaitForRequestToBeActive(
@@ -101,8 +187,26 @@ impl crate::UnityEngine::ResourceManagement::WebRequestQueue {
         >,
         millisecondsTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WaitForRequestToBeActive", (request, millisecondsTimeout))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("WaitForRequestToBeActive")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WaitForRequestToBeActive", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (request, millisecondsTimeout))
+        };
         Ok(__cordl_ret.into())
     }
 }

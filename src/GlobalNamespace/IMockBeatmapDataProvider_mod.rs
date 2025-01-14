@@ -52,14 +52,34 @@ impl crate::GlobalNamespace::IMockBeatmapDataProvider {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapKeyNetSerializable,
+                    >,
+                    crate::System::Threading::CancellationToken,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MockBeatmapData,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("GetBeatmapData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBeatmapData", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
             >,
-        > = __cordl_object.invoke("GetBeatmapData", (beatmap, cancellationToken))?;
+        > = unsafe { method.invoke_unchecked(self, (beatmap, cancellationToken)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

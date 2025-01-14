@@ -46,10 +46,23 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IReadonlyBeatmapData,
+                >),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
+                1usize,
+            >("ToMockBeatmapData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToMockBeatmapData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockBeatmapData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToMockBeatmapData", (beatmapData))?;
+        > = unsafe { method.invoke_unchecked((), (beatmapData)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToMockNoteData(
@@ -57,10 +70,21 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+                1usize,
+            >("ToMockNoteData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToMockNoteData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockNoteData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToMockNoteData", (noteData))?;
+        > = unsafe { method.invoke_unchecked((), (noteData)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToMockObstacleData(
@@ -68,10 +92,21 @@ impl crate::GlobalNamespace::MockBeatmapDataConverter {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
+                1usize,
+            >("ToMockObstacleData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToMockObstacleData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockObstacleData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToMockObstacleData", (obstacleData))?;
+        > = unsafe { method.invoke_unchecked((), (obstacleData)) };
         Ok(__cordl_ret.into())
     }
 }

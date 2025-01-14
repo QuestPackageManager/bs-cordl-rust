@@ -42,8 +42,24 @@ impl crate::UnityEngine::ManagedStreamHelpers {
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         returnValueAddress: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ManagedStreamLength", (stream, returnValueAddress))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ManagedStreamLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ManagedStreamLength", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (stream, returnValueAddress))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ManagedStreamRead(
@@ -53,11 +69,31 @@ impl crate::UnityEngine::ManagedStreamHelpers {
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         returnValueAddress: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ManagedStreamRead",
-                (buffer, offset, count, stream, returnValueAddress),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("ManagedStreamRead")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ManagedStreamRead", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (buffer, offset, count, stream, returnValueAddress),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ManagedStreamSeek(
@@ -66,15 +102,46 @@ impl crate::UnityEngine::ManagedStreamHelpers {
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         returnValueAddress: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ManagedStreamSeek", (offset, origin, stream, returnValueAddress))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i64,
+                    u32,
+                    quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ManagedStreamSeek")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ManagedStreamSeek", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (offset, origin, stream, returnValueAddress))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValidateLoadFromStream(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ValidateLoadFromStream", (stream))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::IO::Stream>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("ValidateLoadFromStream")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ValidateLoadFromStream", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (stream))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -114,22 +114,38 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_InputDeviceMatcher0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (other)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromDeviceDescription(
@@ -137,42 +153,94 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromDeviceDescription", (deviceDescription))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                1usize,
+            >("FromDeviceDescription")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromDeviceDescription", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked((), (deviceDescription))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetNumPropertiesIn(
         description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNumPropertiesIn", (description))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription),
+                i32,
+                1usize,
+            >("GetNumPropertiesIn")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNumPropertiesIn", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (description)) };
         Ok(__cordl_ret.into())
     }
     pub fn MatchPercentage(
         &mut self,
         deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "MatchPercentage",
-            (deviceDescription),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription),
+                f32,
+                1usize,
+            >("MatchPercentage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchPercentage", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked(self, (deviceDescription))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MatchSingleProperty(
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MatchSingleProperty", (pattern, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                bool,
+                2usize,
+            >("MatchSingleProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchSingleProperty", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (pattern, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -180,9 +248,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn With(
@@ -193,11 +273,25 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "With",
-            (key, value, supportRegex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::InputSystem::Utilities::InternedString,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    bool,
+                ),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                3usize,
+            >("With")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "With", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, (key, value, supportRegex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithCapability<TValue>(
@@ -211,11 +305,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithCapability",
-            (path, value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, TValue),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                2usize,
+            >("WithCapability")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithCapability", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, (path, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithDeviceClass(
@@ -225,11 +329,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithDeviceClass",
-            (pattern, supportRegex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                2usize,
+            >("WithDeviceClass")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithDeviceClass", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, (pattern, supportRegex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithInterface(
@@ -239,11 +353,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithInterface",
-            (pattern, supportRegex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                2usize,
+            >("WithInterface")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithInterface", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, (pattern, supportRegex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithManufacturer(
@@ -253,11 +377,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithManufacturer",
-            (pattern, supportRegex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                2usize,
+            >("WithManufacturer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithManufacturer", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, (pattern, supportRegex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithProduct(
@@ -267,11 +401,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithProduct",
-            (pattern, supportRegex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                2usize,
+            >("WithProduct")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithProduct", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, (pattern, supportRegex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WithVersion(
@@ -281,19 +425,33 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "WithVersion",
-            (pattern, supportRegex),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                2usize,
+            >("WithVersion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WithVersion", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, (pattern, supportRegex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_empty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_empty",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_empty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_empty", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_patterns(
@@ -308,6 +466,29 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IEnumerable_1<
+                        crate::System::Collections::Generic::KeyValuePair_2<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                >,
+                0usize,
+            >("get_patterns")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_patterns", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
                 crate::System::Collections::Generic::KeyValuePair_2<
@@ -315,23 +496,51 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
                     quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                 >,
             >,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_patterns", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality(
         left: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
         right: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Equality", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                    crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                ),
+                bool,
+                2usize,
+            >("op_Equality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Equality", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (left, right)) };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality(
         left: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
         right: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Inequality", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                    crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                ),
+                bool,
+                2usize,
+            >("op_Inequality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Inequality", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (left, right)) };
         Ok(__cordl_ret.into())
     }
 }
@@ -509,8 +718,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromMatcher", (matcher))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson,
+                1usize,
+            >("FromMatcher")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromMatcher", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson = unsafe {
+            method.invoke_unchecked((), (matcher))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToMatcher(
@@ -518,11 +740,21 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToMatcher",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+                0usize,
+            >("ToMatcher")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToMatcher", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

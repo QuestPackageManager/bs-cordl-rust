@@ -93,12 +93,38 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::Serialization::SerializationInfo,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+                >,
+                2usize,
+            >("CreateObjectInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateObjectInfo", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
-        > = __cordl_object.invoke("CreateObjectInfo", (si, memberData))?;
+        > = unsafe { method.invoke_unchecked(self, (si, memberData)) };
         Ok(__cordl_ret.into())
     }
     pub fn Create_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
@@ -136,23 +162,71 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
+                >,
+                9usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 9usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Create",
-                (
-                    name,
-                    memberNames,
-                    binaryTypeEnumA,
-                    typeInformationA,
-                    memberAssemIds,
-                    objectReader,
-                    objectId,
-                    assemblyInfo,
-                    assemIdToAssemblyTable,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        name,
+                        memberNames,
+                        binaryTypeEnumA,
+                        typeInformationA,
+                        memberAssemIds,
+                        objectReader,
+                        objectId,
+                        assemblyInfo,
+                        assemIdToAssemblyTable,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create_Type_ObjectReader_i32_BinaryAssemblyInfo0(
@@ -175,13 +249,46 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
+                >,
+                6usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 6usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "Create",
-                (name, objectType, memberNames, objectReader, objectId, assemblyInfo),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (name, objectType, memberNames, objectReader, objectId, assemblyInfo),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
@@ -298,24 +405,67 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    objectName,
-                    memberNames,
-                    binaryTypeEnumA,
-                    typeInformationA,
-                    memberAssemIds,
-                    objectReader,
-                    objectId,
-                    assemblyInfo,
-                    assemIdToAssemblyTable,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                9usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        objectName,
+                        memberNames,
+                        binaryTypeEnumA,
+                        typeInformationA,
+                        memberAssemIds,
+                        objectReader,
+                        objectId,
+                        assemblyInfo,
+                        assemIdToAssemblyTable,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Type_ObjectReader_i32_BinaryAssemblyInfo0(
@@ -335,21 +485,49 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    objectName,
-                    objectType,
-                    memberNames,
-                    objectReader,
-                    objectId,
-                    assemblyInfo,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        objectName,
+                        objectType,
+                        memberNames,
+                        objectReader,
+                        objectId,
+                        assemblyInfo,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -57,11 +57,21 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
     pub fn GetCurrentPathPosition(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
-            .invoke("GetCurrentPathPosition", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Vector3,
+                0usize,
+            >("GetCurrentPathPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCurrentPathPosition", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -118,24 +128,47 @@ impl crate::GlobalNamespace::BeatmapObjectAvoidancePathEvaluator {
         noteJumpSeed: f32,
         moveToPlayerHeadTParam: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    audioTimeSource,
-                    playerTransforms,
-                    pathBezierCurveEvaluator,
-                    jumpStartZ,
-                    jumpEndZ,
-                    yOffset,
-                    zOffset,
-                    noteJumpSeed,
-                    moveToPlayerHeadTParam,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IAudioTimeSource>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerTransforms>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BezierSplineEvaluator,
+                    >,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
+                    f32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                9usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        audioTimeSource,
+                        playerTransforms,
+                        pathBezierCurveEvaluator,
+                        jumpStartZ,
+                        jumpEndZ,
+                        yOffset,
+                        zOffset,
+                        noteJumpSeed,
+                        moveToPlayerHeadTParam,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

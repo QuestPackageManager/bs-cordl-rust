@@ -46,15 +46,37 @@ impl crate::GlobalNamespace::BeatmapDifficultyMethods {
     pub fn DefaultNoteJumpMovementSpeed(
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DefaultNoteJumpMovementSpeed", (difficulty))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BeatmapDifficulty),
+                f32,
+                1usize,
+            >("DefaultNoteJumpMovementSpeed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DefaultNoteJumpMovementSpeed", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (difficulty)) };
         Ok(__cordl_ret.into())
     }
     pub fn DefaultRating(
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DefaultRating", (difficulty))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BeatmapDifficulty),
+                i32,
+                1usize,
+            >("DefaultRating")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DefaultRating", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (difficulty)) };
         Ok(__cordl_ret.into())
     }
     pub fn Name(
@@ -62,9 +84,21 @@ impl crate::GlobalNamespace::BeatmapDifficultyMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BeatmapDifficulty),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("Name")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Name", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Name", (difficulty))?;
+        > = unsafe { method.invoke_unchecked((), (difficulty)) };
         Ok(__cordl_ret.into())
     }
     pub fn NoteJumpMovementSpeed(
@@ -72,11 +106,21 @@ impl crate::GlobalNamespace::BeatmapDifficultyMethods {
         noteJumpMovementSpeed: f32,
         fastNotes: bool,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "NoteJumpMovementSpeed",
-                (difficulty, noteJumpMovementSpeed, fastNotes),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BeatmapDifficulty, f32, bool),
+                f32,
+                3usize,
+            >("NoteJumpMovementSpeed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NoteJumpMovementSpeed", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (difficulty, noteJumpMovementSpeed, fastNotes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShortName(
@@ -84,10 +128,21 @@ impl crate::GlobalNamespace::BeatmapDifficultyMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BeatmapDifficulty),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ShortName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShortName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShortName", (difficulty))?;
+        > = unsafe { method.invoke_unchecked((), (difficulty)) };
         Ok(__cordl_ret.into())
     }
 }

@@ -109,11 +109,25 @@ impl crate::BeatSaber::AvatarCore::AvatarPoseData {
         leftHandPose: crate::UnityEngine::Pose,
         rightHandPose: crate::UnityEngine::Pose,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (headPose, leftHandPose, rightHandPose),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::UnityEngine::Pose,
+                    crate::UnityEngine::Pose,
+                    crate::UnityEngine::Pose,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (headPose, leftHandPose, rightHandPose))
+        };
         Ok(__cordl_ret.into())
     }
 }

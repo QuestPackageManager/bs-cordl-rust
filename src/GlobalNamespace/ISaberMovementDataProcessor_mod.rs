@@ -45,11 +45,25 @@ impl crate::GlobalNamespace::ISaberMovementDataProcessor {
         prevData: crate::GlobalNamespace::BladeMovementDataElement,
         prevDataAreValid: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ProcessNewData", (newData, prevData, prevDataAreValid))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::GlobalNamespace::BladeMovementDataElement,
+                    crate::GlobalNamespace::BladeMovementDataElement,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProcessNewData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProcessNewData", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (newData, prevData, prevDataAreValid))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

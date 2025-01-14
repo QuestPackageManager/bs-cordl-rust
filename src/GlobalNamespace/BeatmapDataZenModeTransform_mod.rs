@@ -46,10 +46,23 @@ impl crate::GlobalNamespace::BeatmapDataZenModeTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IReadonlyBeatmapData,
+                >),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+                1usize,
+            >("CreateTransformedData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateTransformedData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateTransformedData", (beatmapData))?;
+        > = unsafe { method.invoke_unchecked((), (beatmapData)) };
         Ok(__cordl_ret.into())
     }
     pub fn _CreateTransformedData_g__ProcessData_0_0(
@@ -59,10 +72,21 @@ impl crate::GlobalNamespace::BeatmapDataZenModeTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+                1usize,
+            >("<CreateTransformedData>g__ProcessData|0_0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<CreateTransformedData>g__ProcessData|0_0", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataItem,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("<CreateTransformedData>g__ProcessData|0_0", (beatmapDataItem))?;
+        > = unsafe { method.invoke_unchecked((), (beatmapDataItem)) };
         Ok(__cordl_ret.into())
     }
 }

@@ -49,21 +49,43 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
+                    i16,
+                    i16,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                7usize,
+            >("EnsureDestinationSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureDestinationSize", 7usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "EnsureDestinationSize",
-                (
-                    pStr,
-                    dest,
-                    currentInputPos,
-                    charsToAdd,
-                    minReallocateChars,
-                    destPos,
-                    prevInputPos,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        pStr,
+                        dest,
+                        currentInputPos,
+                        charsToAdd,
+                        minReallocateChars,
+                        destPos,
+                        prevInputPos,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EscapeAsciiChar(
@@ -71,8 +93,25 @@ impl crate::System::UriHelper {
         to: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         pos: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EscapeAsciiChar", (ch, to, pos))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    char,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("EscapeAsciiChar")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EscapeAsciiChar", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ch, to, pos))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EscapeString(
@@ -88,38 +127,97 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    bool,
+                    char,
+                    char,
+                    char,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                9usize,
+            >("EscapeString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EscapeString", 9usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "EscapeString",
-                (input, start, end, dest, destPos, isUriString, force1, force2, rsvd),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (input, start, end, dest, destPos, isUriString, force1, force2, rsvd),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EscapedAscii(digit: char, next: char) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EscapedAscii", (digit, next))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char, char), char, 2usize>("EscapedAscii")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EscapedAscii", 2usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (digit, next)) };
         Ok(__cordl_ret.into())
     }
     pub fn Is3986Unreserved(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Is3986Unreserved", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char), bool, 1usize>("Is3986Unreserved")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Is3986Unreserved", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsNotSafeForUnescape(ch: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsNotSafeForUnescape", (ch))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char), bool, 1usize>("IsNotSafeForUnescape")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsNotSafeForUnescape", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (ch)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsReservedUnreservedOrHash(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsReservedUnreservedOrHash", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char), bool, 1usize>("IsReservedUnreservedOrHash")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsReservedUnreservedOrHash", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsUnreserved(c: char) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsUnreserved", (c))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(char), bool, 1usize>("IsUnreserved")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsUnreserved", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (c)) };
         Ok(__cordl_ret.into())
     }
     pub fn MatchUTF8Sequence(
@@ -135,21 +233,45 @@ impl crate::System::UriHelper {
         isQuery: bool,
         iriParsing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "MatchUTF8Sequence",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    pDest,
-                    dest,
-                    destOffset,
-                    unescapedChars,
-                    charCount,
-                    bytes,
-                    byteCount,
-                    isQuery,
-                    iriParsing,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    i32,
+                    bool,
+                    bool,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                9usize,
+            >("MatchUTF8Sequence")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MatchUTF8Sequence", 9usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        pDest,
+                        dest,
+                        destOffset,
+                        unescapedChars,
+                        charCount,
+                        bytes,
+                        byteCount,
+                        isQuery,
+                        iriParsing,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TestForSubPath(
@@ -159,8 +281,27 @@ impl crate::System::UriHelper {
         sheLength: u16,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TestForSubPath", (pMe, meLength, pShe, sheLength, ignoreCase))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u16,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    u16,
+                    bool,
+                ),
+                bool,
+                5usize,
+            >("TestForSubPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TestForSubPath", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (pMe, meLength, pShe, sheLength, ignoreCase))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnescapeString_Il2CppObject1(
@@ -178,25 +319,51 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    char,
+                    char,
+                    char,
+                    crate::System::UnescapeMode,
+                    quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                11usize,
+            >("UnescapeString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnescapeString", 11usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "UnescapeString",
-                (
-                    pStr,
-                    start,
-                    end,
-                    dest,
-                    destPosition,
-                    rsvd1,
-                    rsvd2,
-                    rsvd3,
-                    unescapeMode,
-                    syntax,
-                    isQuery,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        pStr,
+                        start,
+                        end,
+                        dest,
+                        destPosition,
+                        rsvd1,
+                        rsvd2,
+                        rsvd3,
+                        unescapeMode,
+                        syntax,
+                        isQuery,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnescapeString_Il2CppString0(
@@ -214,25 +381,51 @@ impl crate::System::UriHelper {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    char,
+                    char,
+                    char,
+                    crate::System::UnescapeMode,
+                    quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                11usize,
+            >("UnescapeString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnescapeString", 11usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "UnescapeString",
-                (
-                    input,
-                    start,
-                    end,
-                    dest,
-                    destPosition,
-                    rsvd1,
-                    rsvd2,
-                    rsvd3,
-                    unescapeMode,
-                    syntax,
-                    isQuery,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        input,
+                        start,
+                        end,
+                        dest,
+                        destPosition,
+                        rsvd1,
+                        rsvd2,
+                        rsvd3,
+                        unescapeMode,
+                        syntax,
+                        isQuery,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

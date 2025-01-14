@@ -108,8 +108,25 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAvailable", (outRecorderHandleList))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                    >,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("GetAvailable")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAvailable", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (outRecorderHandleList))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetByName(
@@ -119,8 +136,25 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
     > {
-        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByName", (category, name, nameLen))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Unity::Profiling::ProfilerCategory,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                ),
+                crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                3usize,
+            >("GetByName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetByName", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle = unsafe {
+            method.invoke_unchecked((), (category, name, nameLen))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetByName_Unsafe(
@@ -130,8 +164,25 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
     > {
-        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByName_Unsafe", (category, name, nameLen))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Unity::Profiling::ProfilerCategory,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                ),
+                crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                3usize,
+            >("GetByName_Unsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetByName_Unsafe", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle = unsafe {
+            method.invoke_unchecked((), (category, name, nameLen))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetByName_Unsafe_Injected(
@@ -144,8 +195,30 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
             crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByName_Unsafe_Injected", (category, name, nameLen, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Profiling::ProfilerCategory,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("GetByName_Unsafe_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetByName_Unsafe_Injected", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (category, name, nameLen, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetByName__Unmanaged(
@@ -155,8 +228,25 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
     > {
-        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByName__Unmanaged", (category, name, nameLen))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Unity::Profiling::ProfilerCategory,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                ),
+                crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                3usize,
+            >("GetByName__Unmanaged")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetByName__Unmanaged", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle = unsafe {
+            method.invoke_unchecked((), (category, name, nameLen))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetByName__Unmanaged_Injected(
@@ -169,8 +259,30 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
             crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByName__Unmanaged_Injected", (category, name, nameLen, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Profiling::ProfilerCategory,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("GetByName__Unmanaged_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetByName__Unmanaged_Injected", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (category, name, nameLen, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescription(
@@ -178,8 +290,21 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription,
     > {
-        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDescription", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle),
+                crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription,
+                1usize,
+            >("GetDescription")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDescription", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescriptionInternal(
@@ -187,8 +312,21 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
     ) -> quest_hook::libil2cpp::Result<
         crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription,
     > {
-        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDescriptionInternal", (handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle),
+                crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription,
+                1usize,
+            >("GetDescriptionInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDescriptionInternal", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription = unsafe {
+            method.invoke_unchecked((), (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDescriptionInternal_Injected(
@@ -199,16 +337,40 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle {
             crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDescriptionInternal_Injected", (handle, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetDescriptionInternal_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDescriptionInternal_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (handle, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Valid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Valid",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_Valid")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Valid", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

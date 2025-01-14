@@ -111,8 +111,21 @@ impl crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::LoadBeatmapLevelDataResult,
     > {
-        let __cordl_ret: crate::GlobalNamespace::LoadBeatmapLevelDataResult = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromValue", (beatmapLevelData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>),
+                crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+                1usize,
+            >("FromValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromValue", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::LoadBeatmapLevelDataResult = unsafe {
+            method.invoke_unchecked((), (beatmapLevelData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Success(
@@ -122,8 +135,21 @@ impl crate::GlobalNamespace::LoadBeatmapLevelDataResult {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::LoadBeatmapLevelDataResult,
     > {
-        let __cordl_ret: crate::GlobalNamespace::LoadBeatmapLevelDataResult = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Success", (beatmapLevelData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>),
+                crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+                1usize,
+            >("Success")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Success", 1usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::LoadBeatmapLevelDataResult = unsafe {
+            method.invoke_unchecked((), (beatmapLevelData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -133,11 +159,24 @@ impl crate::GlobalNamespace::LoadBeatmapLevelDataResult {
             crate::GlobalNamespace::IBeatmapLevelData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (isError, beatmapLevelData),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (isError, beatmapLevelData))
+        };
         Ok(__cordl_ret.into())
     }
 }

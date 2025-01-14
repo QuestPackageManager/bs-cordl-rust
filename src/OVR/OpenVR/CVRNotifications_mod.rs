@@ -51,22 +51,43 @@ impl crate::OVR::OpenVR::CVRNotifications {
         >,
         pNotificationId: quest_hook::libil2cpp::ByRefMut<u32>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRNotificationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRNotificationError = __cordl_object
-            .invoke(
-                "CreateNotification",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    ulOverlayHandle,
-                    ulUserValue,
-                    _cordl_type,
-                    pchText,
-                    style,
-                    pImage,
-                    pNotificationId,
+                    u64,
+                    u64,
+                    crate::OVR::OpenVR::EVRNotificationType,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::OVR::OpenVR::EVRNotificationStyle,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::OVR::OpenVR::NotificationBitmap_t,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<u32>,
                 ),
-            )?;
+                crate::OVR::OpenVR::EVRNotificationError,
+                7usize,
+            >("CreateNotification")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateNotification", 7usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVRNotificationError = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        ulOverlayHandle,
+                        ulUserValue,
+                        _cordl_type,
+                        pchText,
+                        style,
+                        pImage,
+                        pNotificationId,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -82,22 +103,42 @@ impl crate::OVR::OpenVR::CVRNotifications {
         &mut self,
         notificationId: u32,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRNotificationError> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::OVR::OpenVR::EVRNotificationError = __cordl_object
-            .invoke("RemoveNotification", (notificationId))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (u32),
+                crate::OVR::OpenVR::EVRNotificationError,
+                1usize,
+            >("RemoveNotification")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RemoveNotification", 1usize
+                )
+            });
+        let __cordl_ret: crate::OVR::OpenVR::EVRNotificationError = unsafe {
+            method.invoke_unchecked(self, (notificationId))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         pInterface: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (pInterface))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (pInterface))
+        };
         Ok(__cordl_ret.into())
     }
 }

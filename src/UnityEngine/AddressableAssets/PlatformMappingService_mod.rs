@@ -45,8 +45,21 @@ impl crate::UnityEngine::AddressableAssets::PlatformMappingService {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::AddressableAssets::AddressablesPlatform,
     > {
-        let __cordl_ret: crate::UnityEngine::AddressableAssets::AddressablesPlatform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAddressablesPlatformInternal", (platform))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::RuntimePlatform),
+                crate::UnityEngine::AddressableAssets::AddressablesPlatform,
+                1usize,
+            >("GetAddressablesPlatformInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAddressablesPlatformInternal", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::AddressableAssets::AddressablesPlatform = unsafe {
+            method.invoke_unchecked((), (platform))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAddressablesPlatformPathInternal(
@@ -54,26 +67,61 @@ impl crate::UnityEngine::AddressableAssets::PlatformMappingService {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::RuntimePlatform),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetAddressablesPlatformPathInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAddressablesPlatformPathInternal", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAddressablesPlatformPathInternal", (platform))?;
+        > = unsafe { method.invoke_unchecked((), (platform)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlatform() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::AddressableAssets::AddressablesPlatform,
     > {
-        let __cordl_ret: crate::UnityEngine::AddressableAssets::AddressablesPlatform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPlatform", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::AddressableAssets::AddressablesPlatform,
+                0usize,
+            >("GetPlatform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPlatform", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::AddressableAssets::AddressablesPlatform = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPlatformPathSubFolder() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("GetPlatformPathSubFolder")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetPlatformPathSubFolder", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetPlatformPathSubFolder", ())?;
+        > = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -86,11 +134,17 @@ impl crate::UnityEngine::AddressableAssets::PlatformMappingService {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -48,12 +48,23 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpIdentityManager {
             crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                quest_hook::libil2cpp::Gc<
+                    crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
+                >,
+                1usize,
+            >("GetLoginParameters")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLoginParameters", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Tls::TlsSrpLoginParameters,
-        > = __cordl_object.invoke("GetLoginParameters", (identity))?;
+        > = unsafe { method.invoke_unchecked(self, (identity)) };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

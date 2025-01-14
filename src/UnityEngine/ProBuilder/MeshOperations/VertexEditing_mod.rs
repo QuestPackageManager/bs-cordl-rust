@@ -44,8 +44,21 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
         edge: crate::UnityEngine::ProBuilder::EdgeLookup,
         commonIndex: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AlignEdgeWithDirection", (edge, commonIndex))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::ProBuilder::EdgeLookup, i32),
+                crate::UnityEngine::ProBuilder::Edge,
+                2usize,
+            >("AlignEdgeWithDirection")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AlignEdgeWithDirection", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = unsafe {
+            method.invoke_unchecked((), (edge, commonIndex))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExplodeVertex(
@@ -78,13 +91,58 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Vertex,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::WingedEdge,
+                                >,
+                                i32,
+                            >,
+                        >,
+                    >,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<i32>,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::FaceRebuildData,
+                >,
+                4usize,
+            >("ExplodeVertex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExplodeVertex", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::FaceRebuildData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ExplodeVertex",
-                (vertices, edgeAndCommonIndex, distance, appendedVertices),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (vertices, edgeAndCommonIndex, distance, appendedVertices),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MergeVertices(
@@ -92,16 +150,53 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
         indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         collapseToFirst: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("MergeVertices", (mesh, indexes, collapseToFirst))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                    bool,
+                ),
+                i32,
+                3usize,
+            >("MergeVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MergeVertices", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (mesh, indexes, collapseToFirst))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SplitVertices_Edge0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SplitVertices", (mesh, edge))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    crate::UnityEngine::ProBuilder::Edge,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SplitVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SplitVertices", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, edge))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SplitVertices_IEnumerable_1_1(
@@ -110,8 +205,28 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
             crate::System::Collections::Generic::IEnumerable_1<i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SplitVertices", (mesh, vertices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<i32>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SplitVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SplitVertices", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, vertices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WeldVertices(
@@ -123,10 +238,29 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<i32>,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                3usize,
+            >("WeldVertices")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WeldVertices", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WeldVertices", (mesh, indexes, neighborRadius))?;
+        > = unsafe { method.invoke_unchecked((), (mesh, indexes, neighborRadius)) };
         Ok(__cordl_ret.into())
     }
 }

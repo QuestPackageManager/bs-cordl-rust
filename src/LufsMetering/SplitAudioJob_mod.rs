@@ -104,19 +104,47 @@ impl crate::LufsMetering::SplitAudioJob {
         numChannels: i32,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::SplitAudioJob> {
-        let __cordl_ret: crate::LufsMetering::SplitAudioJob = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (interleavedData, channelData, numChannels, channel))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Unity::Collections::NativeArray_1<f32>,
+                    crate::Unity::Collections::NativeArray_1<f32>,
+                    i32,
+                    i32,
+                ),
+                crate::LufsMetering::SplitAudioJob,
+                4usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 4usize
+                )
+            });
+        let __cordl_ret: crate::LufsMetering::SplitAudioJob = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (interleavedData, channelData, numChannels, channel),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Execute(
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Execute",
-            (i),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Execute")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Execute", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (i))
+        };
         Ok(__cordl_ret.into())
     }
 }

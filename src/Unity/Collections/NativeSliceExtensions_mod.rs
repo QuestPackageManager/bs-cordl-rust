@@ -48,8 +48,21 @@ impl crate::Unity::Collections::NativeSliceExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Slice", (thisArray, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeArray_1<T>, i32, i32),
+                crate::Unity::Collections::NativeSlice_1<T>,
+                3usize,
+            >("Slice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Slice", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = unsafe {
+            method.invoke_unchecked((), (thisArray, start, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Slice_NativeSlice_1_1<T>(
@@ -61,8 +74,21 @@ impl crate::Unity::Collections::NativeSliceExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Slice", (thisSlice, start, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeSlice_1<T>, i32, i32),
+                crate::Unity::Collections::NativeSlice_1<T>,
+                3usize,
+            >("Slice")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Slice", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = unsafe {
+            method.invoke_unchecked((), (thisSlice, start, length))
+        };
         Ok(__cordl_ret.into())
     }
 }

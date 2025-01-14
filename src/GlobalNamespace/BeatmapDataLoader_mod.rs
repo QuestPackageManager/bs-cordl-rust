@@ -52,15 +52,32 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+                    crate::GlobalNamespace::BeatmapKey,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapDataBasicInfo,
+                        >,
+                    >,
+                >,
+                2usize,
+            >("LoadBasicBeatmapDataAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBasicBeatmapDataAsync", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
             >,
-        > = __cordl_object
-            .invoke("LoadBasicBeatmapDataAsync", (beatmapLevelData, beatmapKey))?;
+        > = unsafe { method.invoke_unchecked(self, (beatmapLevelData, beatmapKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBasicBeatmapData_IBeatmapLevelData_ByRefMut0(
@@ -72,13 +89,24 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+                    quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+                ),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
+                2usize,
+            >("LoadBasicBeatmapData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBasicBeatmapData", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataBasicInfo,
-        > = __cordl_object
-            .invoke("LoadBasicBeatmapData", (beatmapLevelData, beatmapKey))?;
+        > = unsafe { method.invoke_unchecked(self, (beatmapLevelData, beatmapKey)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBasicBeatmapData_Il2CppString1(
@@ -87,12 +115,21 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
+                1usize,
+            >("LoadBasicBeatmapData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBasicBeatmapData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataBasicInfo,
-        > = __cordl_object.invoke("LoadBasicBeatmapData", (beatmapJson))?;
+        > = unsafe { method.invoke_unchecked(self, (beatmapJson)) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapData(
@@ -119,26 +156,49 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+                    crate::GlobalNamespace::BeatmapKey,
+                    f32,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+                    crate::GlobalNamespace::BeatmapLevelDataVersion,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::PlayerSpecificSettings,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+                9usize,
+            >("LoadBeatmapData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBeatmapData", 9usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,
-        > = __cordl_object
-            .invoke(
-                "LoadBeatmapData",
-                (
-                    beatmapLevelData,
-                    beatmapKey,
-                    startBpm,
-                    loadingForDesignatedEnvironment,
-                    environmentInfo,
-                    lightshowEnvironmentInfo,
-                    beatmapLevelDataVersion,
-                    gameplayModifiers,
-                    playerSpecificSettings,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        beatmapLevelData,
+                        beatmapKey,
+                        startBpm,
+                        loadingForDesignatedEnvironment,
+                        environmentInfo,
+                        lightshowEnvironmentInfo,
+                        beatmapLevelDataVersion,
+                        gameplayModifiers,
+                        playerSpecificSettings,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadBeatmapDataAsync(
@@ -170,29 +230,59 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
             >,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+                    crate::GlobalNamespace::BeatmapKey,
+                    f32,
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentInfo>,
+                    crate::GlobalNamespace::BeatmapLevelDataVersion,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::PlayerSpecificSettings,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IReadonlyBeatmapData,
+                        >,
+                    >,
+                >,
+                10usize,
+            >("LoadBeatmapDataAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadBeatmapDataAsync", 10usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
             >,
-        > = __cordl_object
-            .invoke(
-                "LoadBeatmapDataAsync",
-                (
-                    beatmapLevelData,
-                    beatmapKey,
-                    startBpm,
-                    loadingForDesignatedEnvironment,
-                    targetEnvironmentInfo,
-                    originalEnvironmentInfo,
-                    beatmapLevelDataVersion,
-                    gameplayModifiers,
-                    playerSpecificSettings,
-                    enableBeatmapDataCaching,
-                ),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        beatmapLevelData,
+                        beatmapKey,
+                        startBpm,
+                        loadingForDesignatedEnvironment,
+                        targetEnvironmentInfo,
+                        originalEnvironmentInfo,
+                        beatmapLevelDataVersion,
+                        gameplayModifiers,
+                        playerSpecificSettings,
+                        enableBeatmapDataCaching,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -205,11 +295,17 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

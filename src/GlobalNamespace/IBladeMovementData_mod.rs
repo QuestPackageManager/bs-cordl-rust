@@ -44,10 +44,15 @@ impl crate::GlobalNamespace::IBladeMovementData {
         unsafe { (object_param as *mut Self) }
     }
     pub fn get_bladeSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_bladeSpeed", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_bladeSpeed")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_bladeSpeed", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_lastAddedData(
@@ -55,11 +60,21 @@ impl crate::GlobalNamespace::IBladeMovementData {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BladeMovementDataElement,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = __cordl_object
-            .invoke("get_lastAddedData", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::BladeMovementDataElement,
+                0usize,
+            >("get_lastAddedData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_lastAddedData", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_prevAddedData(
@@ -67,11 +82,21 @@ impl crate::GlobalNamespace::IBladeMovementData {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BladeMovementDataElement,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = __cordl_object
-            .invoke("get_prevAddedData", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::BladeMovementDataElement,
+                0usize,
+            >("get_prevAddedData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_prevAddedData", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::BladeMovementDataElement = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -50,8 +50,29 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         >,
         anchor: crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyUVAnchor", (uvs, indexes, anchor))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyUVAnchor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyUVAnchor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (uvs, indexes, anchor))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ApplyUVSettings(
@@ -63,8 +84,29 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         >,
         uvSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ApplyUVSettings", (uvs, indexes, uvSettings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ApplyUVSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ApplyUVSettings", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (uvs, indexes, uvSettings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CalculateDelta(
@@ -83,8 +125,38 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform,
     > {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CalculateDelta", (src, srcIndices, dst, dstIndices))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                ),
+                crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform,
+                4usize,
+            >("CalculateDelta")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CalculateDelta", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform = unsafe {
+            method.invoke_unchecked((), (src, srcIndices, dst, dstIndices))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyUVs(
@@ -92,8 +164,27 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         dest: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyUVs", (mesh, source, dest))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CopyUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyUVs", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, source, dest))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetAutoUnwrapSettings(
@@ -102,8 +193,26 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     > {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetAutoUnwrapSettings", (mesh, face))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                ),
+                crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+                2usize,
+            >("GetAutoUnwrapSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetAutoUnwrapSettings", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = unsafe {
+            method.invoke_unchecked((), (mesh, face))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetIndex(
@@ -112,8 +221,26 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetIndex", (collection, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    i32,
+                ),
+                i32,
+                2usize,
+            >("GetIndex")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIndex", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (collection, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetRotatedSize(
@@ -126,8 +253,32 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         center: crate::UnityEngine::Vector2,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRotatedSize", (points, indices, center, rotation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<
+                            crate::UnityEngine::Vector2,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    crate::UnityEngine::Vector2,
+                    f32,
+                ),
+                crate::UnityEngine::Vector2,
+                4usize,
+            >("GetRotatedSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRotatedSize", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            method.invoke_unchecked((), (points, indices, center, rotation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUVTransform(
@@ -136,8 +287,26 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform,
     > {
-        let __cordl_ret: crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUVTransform", (mesh, face))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                ),
+                crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform,
+                2usize,
+            >("GetUVTransform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUVTransform", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform = unsafe {
+            method.invoke_unchecked((), (mesh, face))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ProjectTextureGroup(
@@ -145,8 +314,27 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         group: i32,
         unwrapSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ProjectTextureGroup", (mesh, group, unwrapSettings))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    i32,
+                    crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("ProjectTextureGroup")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ProjectTextureGroup", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, group, unwrapSettings))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ScaleUVs(
@@ -159,8 +347,30 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         scale: crate::UnityEngine::Vector2,
         bounds: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Bounds2D>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ScaleUVs", (uvs, indexes, scale, bounds))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IList_1<i32>,
+                    >,
+                    crate::UnityEngine::Vector2,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Bounds2D>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("ScaleUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ScaleUVs", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (uvs, indexes, scale, bounds))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetAutoAndAlignUnwrapParamsToUVs(
@@ -171,8 +381,32 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetAutoAndAlignUnwrapParamsToUVs", (mesh, facesToConvert))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IEnumerable_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetAutoAndAlignUnwrapParamsToUVs")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAutoAndAlignUnwrapParamsToUVs", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, facesToConvert))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetAutoUV(
@@ -184,8 +418,33 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         >,
         _cordl_auto: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetAutoUV", (mesh, faces, _cordl_auto))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
+                            >,
+                        >,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetAutoUV")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAutoUV", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, faces, _cordl_auto))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Unwrap(
@@ -193,15 +452,49 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         projection: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Unwrap", (mesh, face, projection))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    crate::UnityEngine::Vector3,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("Unwrap")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Unwrap", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh, face, projection))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UpgradeAutoUVScaleOffset(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UpgradeAutoUVScaleOffset", (mesh))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UpgradeAutoUVScaleOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UpgradeAutoUVScaleOffset", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (mesh))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -324,9 +617,21 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

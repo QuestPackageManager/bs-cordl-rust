@@ -106,16 +106,37 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioPlayableOutput> {
-        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", (graph, name, target))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::Playables::PlayableGraph,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+                ),
+                crate::UnityEngine::Audio::AudioPlayableOutput,
+                3usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = unsafe {
+            method.invoke_unchecked((), (graph, name, target))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetEvaluateOnSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetEvaluateOnSeek",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("GetEvaluateOnSeek")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetEvaluateOnSeek", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHandle(
@@ -123,11 +144,21 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Playables::PlayableOutputHandle,
     > {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutputHandle = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHandle",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::Playables::PlayableOutputHandle,
+                0usize,
+            >("GetHandle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHandle", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutputHandle = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTarget(
@@ -135,11 +166,21 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource> = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetTarget",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+                0usize,
+            >("GetTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetTarget", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetEvaluateOnSeek(
@@ -147,8 +188,21 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             crate::UnityEngine::Playables::PlayableOutputHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalGetEvaluateOnSeek", (output))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::UnityEngine::Playables::PlayableOutputHandle,
+                >),
+                bool,
+                1usize,
+            >("InternalGetEvaluateOnSeek")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalGetEvaluateOnSeek", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (output)) };
         Ok(__cordl_ret.into())
     }
     pub fn InternalGetTarget(
@@ -158,8 +212,23 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalGetTarget", (output))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::UnityEngine::Playables::PlayableOutputHandle,
+                >),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+                1usize,
+            >("InternalGetTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalGetTarget", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource> = unsafe {
+            method.invoke_unchecked((), (output))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetEvaluateOnSeek(
@@ -168,8 +237,26 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
         >,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalSetEvaluateOnSeek", (output, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Playables::PlayableOutputHandle,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("InternalSetEvaluateOnSeek")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalSetEvaluateOnSeek", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (output, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalSetTarget(
@@ -178,62 +265,149 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
         >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InternalSetTarget", (output, target))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Playables::PlayableOutputHandle,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("InternalSetTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InternalSetTarget", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (output, target))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetEvaluateOnSeek(
         &mut self,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetEvaluateOnSeek",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetEvaluateOnSeek")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetEvaluateOnSeek", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTarget(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "SetTarget",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetTarget")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTarget", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableOutputHandle,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (handle),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::Playables::PlayableOutputHandle),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (handle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Null() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Audio::AudioPlayableOutput,
     > {
-        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_Null", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::Audio::AudioPlayableOutput,
+                0usize,
+            >("get_Null")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Null", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit(
         output: crate::UnityEngine::Playables::PlayableOutput,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioPlayableOutput> {
-        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Explicit", (output))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Playables::PlayableOutput),
+                crate::UnityEngine::Audio::AudioPlayableOutput,
+                1usize,
+            >("op_Explicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Explicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = unsafe {
+            method.invoke_unchecked((), (output))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         output: crate::UnityEngine::Audio::AudioPlayableOutput,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
-        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (output))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Audio::AudioPlayableOutput),
+                crate::UnityEngine::Playables::PlayableOutput,
+                1usize,
+            >("op_Implicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Implicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = unsafe {
+            method.invoke_unchecked((), (output))
+        };
         Ok(__cordl_ret.into())
     }
 }

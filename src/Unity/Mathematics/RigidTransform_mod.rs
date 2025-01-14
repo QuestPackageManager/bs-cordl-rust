@@ -104,30 +104,59 @@ impl crate::Unity::Mathematics::RigidTransform {
         axis: crate::Unity::Mathematics::float3,
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AxisAngle", (axis, angle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3, f32),
+                crate::Unity::Mathematics::RigidTransform,
+                2usize,
+            >("AxisAngle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AxisAngle", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (axis, angle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
         &mut self,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (x),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_RigidTransform0(
         &mut self,
         x: crate::Unity::Mathematics::RigidTransform,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (x),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::RigidTransform),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (x)) };
         Ok(__cordl_ret.into())
     }
     pub fn EulerXYZ_f32_f32_f32_1(
@@ -135,15 +164,41 @@ impl crate::Unity::Mathematics::RigidTransform {
         y: f32,
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerXYZ", (x, y, z))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                crate::Unity::Mathematics::RigidTransform,
+                3usize,
+            >("EulerXYZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerXYZ", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (x, y, z))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerXYZ_float3_0(
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerXYZ", (xyz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("EulerXYZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerXYZ", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (xyz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerXZY_f32_f32_f32_1(
@@ -151,15 +206,41 @@ impl crate::Unity::Mathematics::RigidTransform {
         y: f32,
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerXZY", (x, y, z))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                crate::Unity::Mathematics::RigidTransform,
+                3usize,
+            >("EulerXZY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerXZY", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (x, y, z))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerXZY_float3_0(
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerXZY", (xyz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("EulerXZY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerXZY", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (xyz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerYXZ_f32_f32_f32_1(
@@ -167,15 +248,41 @@ impl crate::Unity::Mathematics::RigidTransform {
         y: f32,
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerYXZ", (x, y, z))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                crate::Unity::Mathematics::RigidTransform,
+                3usize,
+            >("EulerYXZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerYXZ", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (x, y, z))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerYXZ_float3_0(
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerYXZ", (xyz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("EulerYXZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerYXZ", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (xyz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerYZX_f32_f32_f32_1(
@@ -183,15 +290,41 @@ impl crate::Unity::Mathematics::RigidTransform {
         y: f32,
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerYZX", (x, y, z))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                crate::Unity::Mathematics::RigidTransform,
+                3usize,
+            >("EulerYZX")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerYZX", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (x, y, z))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerYZX_float3_0(
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerYZX", (xyz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("EulerYZX")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerYZX", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (xyz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerZXY_f32_f32_f32_1(
@@ -199,15 +332,41 @@ impl crate::Unity::Mathematics::RigidTransform {
         y: f32,
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerZXY", (x, y, z))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                crate::Unity::Mathematics::RigidTransform,
+                3usize,
+            >("EulerZXY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerZXY", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (x, y, z))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerZXY_float3_0(
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerZXY", (xyz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("EulerZXY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerZXY", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (xyz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerZYX_f32_f32_f32_1(
@@ -215,15 +374,41 @@ impl crate::Unity::Mathematics::RigidTransform {
         y: f32,
         z: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerZYX", (x, y, z))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32),
+                crate::Unity::Mathematics::RigidTransform,
+                3usize,
+            >("EulerZYX")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerZYX", 3usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (x, y, z))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EulerZYX_float3_0(
         xyz: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EulerZYX", (xyz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("EulerZYX")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EulerZYX", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (xyz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Euler_f32_f32_f32_math_RotationOrder1(
@@ -232,45 +417,117 @@ impl crate::Unity::Mathematics::RigidTransform {
         z: f32,
         order: crate::Unity::Mathematics::math_RotationOrder,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Euler", (x, y, z, order))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32, f32, f32, crate::Unity::Mathematics::math_RotationOrder),
+                crate::Unity::Mathematics::RigidTransform,
+                4usize,
+            >("Euler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Euler", 4usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (x, y, z, order))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Euler_float3_math_RotationOrder0(
         xyz: crate::Unity::Mathematics::float3,
         order: crate::Unity::Mathematics::math_RotationOrder,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Euler", (xyz, order))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Unity::Mathematics::float3,
+                    crate::Unity::Mathematics::math_RotationOrder,
+                ),
+                crate::Unity::Mathematics::RigidTransform,
+                2usize,
+            >("Euler")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Euler", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (xyz, order))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn RotateX(
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RotateX", (angle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("RotateX")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RotateX", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (angle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RotateY(
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RotateY", (angle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("RotateY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RotateY", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (angle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RotateZ(
         angle: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RotateZ", (angle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("RotateZ")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RotateZ", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (angle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -278,9 +535,21 @@ impl crate::Unity::Mathematics::RigidTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
@@ -290,20 +559,44 @@ impl crate::Unity::Mathematics::RigidTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (format, formatProvider),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (format, formatProvider)) };
         Ok(__cordl_ret.into())
     }
     pub fn Translate(
         vector: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::RigidTransform> {
-        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Translate", (vector))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float3),
+                crate::Unity::Mathematics::RigidTransform,
+                1usize,
+            >("Translate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Translate", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::RigidTransform = unsafe {
+            method.invoke_unchecked((), (vector))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_float3x3_float3_1(
@@ -311,22 +604,42 @@ impl crate::Unity::Mathematics::RigidTransform {
         rotation: crate::Unity::Mathematics::float3x3,
         translation: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (rotation, translation),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::float3x3, crate::Unity::Mathematics::float3),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rotation, translation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_float4x4_2(
         &mut self,
         transform: crate::Unity::Mathematics::float4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (transform),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::float4x4),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (transform))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_quaternion_float3_0(
@@ -334,11 +647,24 @@ impl crate::Unity::Mathematics::RigidTransform {
         rotation: crate::Unity::Mathematics::quaternion,
         translation: crate::Unity::Mathematics::float3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (rotation, translation),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    crate::Unity::Mathematics::quaternion,
+                    crate::Unity::Mathematics::float3,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rotation, translation))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -53,14 +53,37 @@ impl crate::Oculus::Platform::Media {
             >,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::Oculus::Platform::MediaContentType,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Request_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::ShareMediaResult,
+                        >,
+                    >,
+                >,
+                3usize,
+            >("ShareToFacebook")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ShareToFacebook", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Request_1<
                 quest_hook::libil2cpp::Gc<
                     crate::Oculus::Platform::Models::ShareMediaResult,
                 >,
             >,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ShareToFacebook", (postTextSuggestion, filePath, contentType))?;
+        > = unsafe {
+            method.invoke_unchecked((), (postTextSuggestion, filePath, contentType))
+        };
         Ok(__cordl_ret.into())
     }
 }

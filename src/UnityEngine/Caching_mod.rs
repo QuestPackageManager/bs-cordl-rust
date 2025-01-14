@@ -41,8 +41,21 @@ impl crate::UnityEngine::Caching {
     pub fn AddCache_Il2CppString0(
         cachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Cache> {
-        let __cordl_ret: crate::UnityEngine::Cache = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddCache", (cachePath))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::UnityEngine::Cache,
+                1usize,
+            >("AddCache")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCache", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Cache = unsafe {
+            method.invoke_unchecked((), (cachePath))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddCache_Injected(
@@ -50,47 +63,138 @@ impl crate::UnityEngine::Caching {
         isReadonly: bool,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddCache_Injected", (cachePath, isReadonly, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    bool,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("AddCache_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCache_Injected", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (cachePath, isReadonly, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddCache__cordl_bool1(
         cachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isReadonly: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Cache> {
-        let __cordl_ret: crate::UnityEngine::Cache = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AddCache", (cachePath, isReadonly))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>, bool),
+                crate::UnityEngine::Cache,
+                2usize,
+            >("AddCache")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddCache", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Cache = unsafe {
+            method.invoke_unchecked((), (cachePath, isReadonly))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearAllCachedVersions(
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearAllCachedVersions", (assetBundleName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                bool,
+                1usize,
+            >("ClearAllCachedVersions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearAllCachedVersions", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assetBundleName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearCachedVersion(
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hash: crate::UnityEngine::Hash128,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearCachedVersion", (assetBundleName, hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::Hash128,
+                ),
+                bool,
+                2usize,
+            >("ClearCachedVersion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearCachedVersion", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assetBundleName, hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearCachedVersionInternal(
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hash: crate::UnityEngine::Hash128,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearCachedVersionInternal", (assetBundleName, hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::Hash128,
+                ),
+                bool,
+                2usize,
+            >("ClearCachedVersionInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearCachedVersionInternal", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assetBundleName, hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearCachedVersionInternal_Injected(
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearCachedVersionInternal_Injected", (assetBundleName, hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
+                ),
+                bool,
+                2usize,
+            >("ClearCachedVersionInternal_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearCachedVersionInternal_Injected", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assetBundleName, hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearCachedVersions(
@@ -98,8 +202,25 @@ impl crate::UnityEngine::Caching {
         hash: crate::UnityEngine::Hash128,
         keepInputVersion: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearCachedVersions", (assetBundleName, hash, keepInputVersion))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::Hash128,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("ClearCachedVersions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearCachedVersions", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assetBundleName, hash, keepInputVersion))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearCachedVersions_Injected(
@@ -107,41 +228,111 @@ impl crate::UnityEngine::Caching {
         hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
         keepInputVersion: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "ClearCachedVersions_Injected",
-                (assetBundleName, hash, keepInputVersion),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
+                    bool,
+                ),
+                bool,
+                3usize,
+            >("ClearCachedVersions_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearCachedVersions_Injected", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assetBundleName, hash, keepInputVersion))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClearOtherCachedVersions(
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hash: crate::UnityEngine::Hash128,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ClearOtherCachedVersions", (assetBundleName, hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::Hash128,
+                ),
+                bool,
+                2usize,
+            >("ClearOtherCachedVersions")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ClearOtherCachedVersions", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (assetBundleName, hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCacheByPath(
         cachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Cache> {
-        let __cordl_ret: crate::UnityEngine::Cache = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCacheByPath", (cachePath))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::UnityEngine::Cache,
+                1usize,
+            >("GetCacheByPath")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCacheByPath", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Cache = unsafe {
+            method.invoke_unchecked((), (cachePath))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetCacheByPath_Injected(
         cachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCacheByPath_Injected", (cachePath, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("GetCacheByPath_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCacheByPath_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (cachePath, ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsVersionCached_CachedAssetBundle0(
         cachedBundle: crate::UnityEngine::CachedAssetBundle,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsVersionCached", (cachedBundle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::CachedAssetBundle),
+                bool,
+                1usize,
+            >("IsVersionCached")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsVersionCached", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (cachedBundle)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsVersionCached_Il2CppString_Il2CppString_Hash128_1(
@@ -149,8 +340,25 @@ impl crate::UnityEngine::Caching {
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hash: crate::UnityEngine::Hash128,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsVersionCached", (url, assetBundleName, hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::UnityEngine::Hash128,
+                ),
+                bool,
+                3usize,
+            >("IsVersionCached")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsVersionCached", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (url, assetBundleName, hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsVersionCached_Injected(
@@ -158,62 +366,177 @@ impl crate::UnityEngine::Caching {
         assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsVersionCached_Injected", (url, assetBundleName, hash))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
+                ),
+                bool,
+                3usize,
+            >("IsVersionCached_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsVersionCached_Injected", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (url, assetBundleName, hash))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentCacheForWriting() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Cache,
     > {
-        let __cordl_ret: crate::UnityEngine::Cache = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_currentCacheForWriting", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::Cache,
+                0usize,
+            >("get_currentCacheForWriting")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_currentCacheForWriting", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Cache = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_currentCacheForWriting_Injected(
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_currentCacheForWriting_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("get_currentCacheForWriting_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_currentCacheForWriting_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultCache() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Cache,
     > {
-        let __cordl_ret: crate::UnityEngine::Cache = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_defaultCache", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::Cache,
+                0usize,
+            >("get_defaultCache")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_defaultCache", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Cache = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_defaultCache_Injected(
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_defaultCache_Injected", (ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("get_defaultCache_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_defaultCache_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (ret))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_ready() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_ready", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_ready")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ready", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_compressionEnabled(
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_compressionEnabled", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (bool),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_compressionEnabled")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_compressionEnabled", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_currentCacheForWriting(
         value: crate::UnityEngine::Cache,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_currentCacheForWriting", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::Cache),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_currentCacheForWriting")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_currentCacheForWriting", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_currentCacheForWriting_Injected(
         value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("set_currentCacheForWriting_Injected", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_currentCacheForWriting_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_currentCacheForWriting_Injected", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
 }

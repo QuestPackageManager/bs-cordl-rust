@@ -43,25 +43,62 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BGLib::Polyglot::Language),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToCultureInfoName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToCultureInfoName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToCultureInfoName", (lang))?;
+        > = unsafe { method.invoke_unchecked((), (lang)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToLanguage_Il2CppString0(
         serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
-        let __cordl_ret: crate::BGLib::Polyglot::Language = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToLanguage", (serializedName))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::BGLib::Polyglot::Language,
+                1usize,
+            >("ToLanguage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToLanguage", 1usize
+                )
+            });
+        let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
+            method.invoke_unchecked((), (serializedName))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToLanguage_SystemLanguage__cordl_bool1(
         systemLanguage: crate::UnityEngine::SystemLanguage,
         useFallbackLanguage: bool,
     ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
-        let __cordl_ret: crate::BGLib::Polyglot::Language = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToLanguage", (systemLanguage, useFallbackLanguage))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::SystemLanguage, bool),
+                crate::BGLib::Polyglot::Language,
+                2usize,
+            >("ToLanguage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToLanguage", 2usize
+                )
+            });
+        let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
+            method.invoke_unchecked((), (systemLanguage, useFallbackLanguage))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToSerializedName(
@@ -69,10 +106,21 @@ impl crate::BGLib::Polyglot::LanguageExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::BGLib::Polyglot::Language),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ToSerializedName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToSerializedName", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToSerializedName", (lang))?;
+        > = unsafe { method.invoke_unchecked((), (lang)) };
         Ok(__cordl_ret.into())
     }
 }

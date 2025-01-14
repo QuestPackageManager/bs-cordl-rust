@@ -48,11 +48,26 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
             crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("CreateHeightFieldInputNode", (session, idt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("CreateHeightFieldInputNode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateHeightFieldInputNode", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (session, idt)) };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInputNodeWithDataUpload(
@@ -62,14 +77,32 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         inputNodeID: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "CreateInputNodeWithDataUpload",
-                (session, connectNodeID, inputObject, inputNodeID),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                bool,
+                4usize,
+            >("CreateInputNodeWithDataUpload")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateInputNodeWithDataUpload", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (session, connectNodeID, inputObject, inputNodeID),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GenerateTerrainDataFromGameObject(
@@ -80,23 +113,42 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
             crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+                >,
+                1usize,
+            >("GenerateTerrainDataFromGameObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GenerateTerrainDataFromGameObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
-        > = __cordl_object.invoke("GenerateTerrainDataFromGameObject", (inputObject))?;
+        > = unsafe { method.invoke_unchecked(self, (inputObject)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsThisInputObjectSupported(
         &mut self,
         inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsThisInputObjectSupported", (inputObject))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                bool,
+                1usize,
+            >("IsThisInputObjectSupported")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsThisInputObjectSupported", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (inputObject)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -117,21 +169,43 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "SetHeightFieldData",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    session,
-                    volumeNodeID,
-                    partID,
-                    heightValues,
-                    heightFieldName,
-                    baseVolumeInfo,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_VolumeInfo,
+                    >,
                 ),
-            )?;
+                bool,
+                6usize,
+            >("SetHeightFieldData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetHeightFieldData", 6usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        session,
+                        volumeNodeID,
+                        partID,
+                        heightValues,
+                        heightFieldName,
+                        baseVolumeInfo,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetMaskLayer(
@@ -144,11 +218,31 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("SetMaskLayer", (session, idt, baseVolumeInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_VolumeInfo,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("SetMaskLayer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetMaskLayer", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (session, idt, baseVolumeInfo))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTerrainDataAttributesToHeightField(
@@ -158,14 +252,28 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         partID: i32,
         terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "SetTerrainDataAttributesToHeightField",
-                (session, geoNodeID, partID, terrainData),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
+                ),
+                bool,
+                4usize,
+            >("SetTerrainDataAttributesToHeightField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTerrainDataAttributesToHeightField", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (session, geoNodeID, partID, terrainData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTerrainLayerAttributesToHeightField(
@@ -175,14 +283,28 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         partID: i32,
         terrainLayer: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke(
-                "SetTerrainLayerAttributesToHeightField",
-                (session, geoNodeID, partID, terrainLayer),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainLayer>,
+                ),
+                bool,
+                4usize,
+            >("SetTerrainLayerAttributesToHeightField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTerrainLayerAttributesToHeightField", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (session, geoNodeID, partID, terrainLayer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTreeInstances(
@@ -192,11 +314,28 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         partID: i32,
         terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTreeInstances", (session, geoNodeID, partID, terrainData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTreeInstances")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTreeInstances", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, geoNodeID, partID, terrainData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetTreePrototypes(
@@ -206,11 +345,28 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         partID: i32,
         terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetTreePrototypes", (session, geoNodeID, partID, terrainData))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetTreePrototypes")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetTreePrototypes", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (session, geoNodeID, partID, terrainData))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadAlphaMaps(
@@ -224,11 +380,32 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         >,
         bMaskSet: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("UploadAlphaMaps", (session, idt, baseVolumeInfo, bMaskSet))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_VolumeInfo,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                bool,
+                4usize,
+            >("UploadAlphaMaps")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadAlphaMaps", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (session, idt, baseVolumeInfo, bMaskSet))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadHeightValuesWithTransform(
@@ -241,21 +418,47 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("UploadHeightValuesWithTransform", (session, idt, volumeInfo))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::HoudiniEngineUnity::HAPI_VolumeInfo,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("UploadHeightValuesWithTransform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadHeightValuesWithTransform", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (session, idt, volumeInfo))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -335,11 +538,17 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -105,15 +105,41 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand 
     pub fn Create() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Create", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand,
+                0usize,
+            >("Create")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Create", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Type() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_Type", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                crate::UnityEngine::InputSystem::Utilities::FourCC,
+                0usize,
+            >("get_Type")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Type", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_capabilities(
@@ -121,11 +147,21 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand 
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_capabilities",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities,
+                0usize,
+            >("get_capabilities")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_capabilities", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_typeStatic(
@@ -133,11 +169,21 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand 
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_typeStatic",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::InputSystem::Utilities::FourCC,
+                0usize,
+            >("get_typeStatic")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_typeStatic", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -47,8 +47,21 @@ impl crate::UnityEngine::Animations::AnimationPlayableExtensions {
         U: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetAnimatedProperties", (playable, clip))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (U, quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetAnimatedProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAnimatedProperties", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (playable, clip))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetAnimatedPropertiesInternal(
@@ -57,8 +70,26 @@ impl crate::UnityEngine::Animations::AnimationPlayableExtensions {
         >,
         animatedProperties: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetAnimatedPropertiesInternal", (playable, animatedProperties))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::Playables::PlayableHandle,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("SetAnimatedPropertiesInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetAnimatedPropertiesInternal", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (playable, animatedProperties))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -54,24 +54,51 @@ impl crate::GlobalNamespace::NoteBasicCutInfoHelper {
         cutDirDeviation: quest_hook::libil2cpp::ByRefMut<f32>,
         cutDirAngle: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "GetBasicCutInfo",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    noteTransform,
-                    colorType,
-                    cutDirection,
-                    saberType,
-                    saberBladeSpeed,
-                    cutDirVec,
-                    cutAngleTolerance,
-                    directionOK,
-                    speedOK,
-                    saberTypeOK,
-                    cutDirDeviation,
-                    cutDirAngle,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                    crate::GlobalNamespace::ColorType,
+                    crate::GlobalNamespace::NoteCutDirection,
+                    crate::GlobalNamespace::SaberType,
+                    f32,
+                    crate::UnityEngine::Vector3,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
+                    quest_hook::libil2cpp::ByRefMut<f32>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                12usize,
+            >("GetBasicCutInfo")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBasicCutInfo", 12usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        noteTransform,
+                        colorType,
+                        cutDirection,
+                        saberType,
+                        saberBladeSpeed,
+                        cutDirVec,
+                        cutAngleTolerance,
+                        directionOK,
+                        speedOK,
+                        saberTypeOK,
+                        cutDirDeviation,
+                        cutDirAngle,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

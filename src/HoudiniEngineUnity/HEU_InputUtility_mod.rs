@@ -56,18 +56,51 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
         bKeepWorldTransform: bool,
         mergeParentID: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateInputNodeWithMultiAssets",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    session,
-                    parentAsset,
-                    connectMergeID,
-                    inputAssetInfos,
-                    bKeepWorldTransform,
-                    mergeParentID,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_InputHDAInfo,
+                                >,
+                            >,
+                        >,
+                    >,
+                    bool,
+                    i32,
                 ),
-            )?;
+                bool,
+                6usize,
+            >("CreateInputNodeWithMultiAssets")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateInputNodeWithMultiAssets", 6usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        session,
+                        parentAsset,
+                        connectMergeID,
+                        inputAssetInfos,
+                        bKeepWorldTransform,
+                        mergeParentID,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInputNodeWithMultiObjects(
@@ -88,23 +121,65 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
         >,
         inputNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "CreateInputNodeWithMultiObjects",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    session,
-                    assetID,
-                    connectMergeID,
-                    inputObjects,
-                    inputObjectsConnectedAssetIDs,
-                    inputNode,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_InputObjectInfo,
+                                >,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
                 ),
-            )?;
+                bool,
+                6usize,
+            >("CreateInputNodeWithMultiObjects")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateInputNodeWithMultiObjects", 6usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        session,
+                        assetID,
+                        connectMergeID,
+                        inputObjects,
+                        inputObjectsConnectedAssetIDs,
+                        inputNode,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHighestPriority() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetHighestPriority", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("GetHighestPriority")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHighestPriority", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInputInterfaceByType(
@@ -112,10 +187,21 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputInterface>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Type>),
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputInterface>,
+                1usize,
+            >("GetInputInterfaceByType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInputInterfaceByType", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_InputInterface,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInputInterfaceByType", (_cordl_type))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_type)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInputInterface_GameObject0(
@@ -123,10 +209,21 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputInterface>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputInterface>,
+                1usize,
+            >("GetInputInterface")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInputInterface", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_InputInterface,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInputInterface", (inputObject))?;
+        > = unsafe { method.invoke_unchecked((), (inputObject)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetInputInterface_HEU_InputObjectInfo1(
@@ -136,10 +233,23 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputInterface>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_InputObjectInfo,
+                >),
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputInterface>,
+                1usize,
+            >("GetInputInterface")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetInputInterface", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_InputInterface,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetInputInterface", (inputObjectInfo))?;
+        > = unsafe { method.invoke_unchecked((), (inputObjectInfo)) };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterInputInterface(
@@ -147,8 +257,23 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
             crate::HoudiniEngineUnity::HEU_InputInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterInputInterface", (inputInterface))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_InputInterface,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("RegisterInputInterface")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterInputInterface", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (inputInterface))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterInputInterface(
@@ -156,8 +281,23 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
             crate::HoudiniEngineUnity::HEU_InputInterface,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnregisterInputInterface", (inputInterface))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_InputInterface,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("UnregisterInputInterface")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnregisterInputInterface", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (inputInterface))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UploadInputObjectTransform(
@@ -168,11 +308,34 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
         inputNodeID: i32,
         bKeepWorldTransform: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "UploadInputObjectTransform",
-                (session, inputObject, inputNodeID, bKeepWorldTransform),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_SessionBase,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_InputObjectInfo,
+                    >,
+                    i32,
+                    bool,
+                ),
+                bool,
+                4usize,
+            >("UploadInputObjectTransform")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UploadInputObjectTransform", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (session, inputObject, inputNodeID, bKeepWorldTransform),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

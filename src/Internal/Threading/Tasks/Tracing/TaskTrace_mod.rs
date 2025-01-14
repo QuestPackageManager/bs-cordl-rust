@@ -46,17 +46,31 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         CreatingTaskID: i32,
         TaskCreationOptions: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TaskScheduled",
-                (
-                    OriginatingTaskSchedulerID,
-                    OriginatingTaskID,
-                    TaskID,
-                    CreatingTaskID,
-                    TaskCreationOptions,
-                ),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, i32, i32, i32),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("TaskScheduled")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TaskScheduled", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        OriginatingTaskSchedulerID,
+                        OriginatingTaskID,
+                        TaskID,
+                        CreatingTaskID,
+                        TaskCreationOptions,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TaskWaitBegin_Asynchronous(
@@ -64,11 +78,25 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TaskWaitBegin_Asynchronous",
-                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TaskWaitBegin_Asynchronous")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TaskWaitBegin_Asynchronous", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TaskWaitBegin_Synchronous(
@@ -76,11 +104,25 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TaskWaitBegin_Synchronous",
-                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TaskWaitBegin_Synchronous")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TaskWaitBegin_Synchronous", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TaskWaitEnd(
@@ -88,16 +130,37 @@ impl crate::Internal::Threading::Tasks::Tracing::TaskTrace {
         OriginatingTaskID: i32,
         TaskID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TaskWaitEnd",
-                (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("TaskWaitEnd")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TaskWaitEnd", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (OriginatingTaskSchedulerID, OriginatingTaskID, TaskID),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Enabled() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_Enabled", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_Enabled")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Enabled", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

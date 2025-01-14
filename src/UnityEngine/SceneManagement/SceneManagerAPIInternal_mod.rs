@@ -41,8 +41,15 @@ for crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
 #[cfg(feature = "UnityEngine+SceneManagement+SceneManagerAPIInternal")]
 impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
     pub fn GetNumScenesInBuildSettings() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetNumScenesInBuildSettings", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("GetNumScenesInBuildSettings")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetNumScenesInBuildSettings", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSceneAsyncNameIndexInternal(
@@ -53,11 +60,30 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "LoadSceneAsyncNameIndexInternal",
-                (sceneName, sceneBuildIndex, parameters, mustCompleteNextFrame),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    crate::UnityEngine::SceneManagement::LoadSceneParameters,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
+                4usize,
+            >("LoadSceneAsyncNameIndexInternal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadSceneAsyncNameIndexInternal", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (sceneName, sceneBuildIndex, parameters, mustCompleteNextFrame),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadSceneAsyncNameIndexInternal_Injected(
@@ -70,11 +96,32 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "LoadSceneAsyncNameIndexInternal_Injected",
-                (sceneName, sceneBuildIndex, parameters, mustCompleteNextFrame),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::SceneManagement::LoadSceneParameters,
+                    >,
+                    bool,
+                ),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
+                4usize,
+            >("LoadSceneAsyncNameIndexInternal_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadSceneAsyncNameIndexInternal_Injected", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (sceneName, sceneBuildIndex, parameters, mustCompleteNextFrame),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

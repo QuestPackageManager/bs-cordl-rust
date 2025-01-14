@@ -42,11 +42,17 @@ impl crate::System::IConsoleDriver {
         &mut self,
         intercept: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::ConsoleKeyInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::System::ConsoleKeyInfo = __cordl_object
-            .invoke("ReadKey", (intercept))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(bool), crate::System::ConsoleKeyInfo, 1usize>("ReadKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadKey", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::ConsoleKeyInfo = unsafe {
+            method.invoke_unchecked(self, (intercept))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

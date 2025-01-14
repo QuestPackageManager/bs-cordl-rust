@@ -48,31 +48,81 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
     pub fn ConvertDateTimeToJavaScriptTicks_DateTime1(
         dateTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertDateTimeToJavaScriptTicks", (dateTime))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime),
+                i64,
+                1usize,
+            >("ConvertDateTimeToJavaScriptTicks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertDateTimeToJavaScriptTicks", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (dateTime)) };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertDateTimeToJavaScriptTicks_TimeSpan0(
         dateTime: crate::System::DateTime,
         offset: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertDateTimeToJavaScriptTicks", (dateTime, offset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime, crate::System::TimeSpan),
+                i64,
+                2usize,
+            >("ConvertDateTimeToJavaScriptTicks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertDateTimeToJavaScriptTicks", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (dateTime, offset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertDateTimeToJavaScriptTicks__cordl_bool2(
         dateTime: crate::System::DateTime,
         convertToUtc: bool,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertDateTimeToJavaScriptTicks", (dateTime, convertToUtc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime, bool),
+                i64,
+                2usize,
+            >("ConvertDateTimeToJavaScriptTicks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertDateTimeToJavaScriptTicks", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (dateTime, convertToUtc))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertJavaScriptTicksToDateTime(
         javaScriptTicks: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ConvertJavaScriptTicksToDateTime", (javaScriptTicks))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i64),
+                crate::System::DateTime,
+                1usize,
+            >("ConvertJavaScriptTicksToDateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ConvertJavaScriptTicksToDateTime", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            method.invoke_unchecked((), (javaScriptTicks))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyIntToCharArray(
@@ -81,23 +131,67 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         value: i32,
         digits: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CopyIntToCharArray", (chars, start, value, digits))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
+                    i32,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("CopyIntToCharArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyIntToCharArray", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (chars, start, value, digits))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDateTime(
         dateTimeParser: crate::Newtonsoft::Json::Utilities::DateTimeParser,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateDateTime", (dateTimeParser))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Newtonsoft::Json::Utilities::DateTimeParser),
+                crate::System::DateTime,
+                1usize,
+            >("CreateDateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateDateTime", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            method.invoke_unchecked((), (dateTimeParser))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureDateTime(
         value: crate::System::DateTime,
         timeZone: crate::Newtonsoft::Json::DateTimeZoneHandling,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EnsureDateTime", (value, timeZone))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime, crate::Newtonsoft::Json::DateTimeZoneHandling),
+                crate::System::DateTime,
+                2usize,
+            >("EnsureDateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureDateTime", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            method.invoke_unchecked((), (value, timeZone))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDateValues(
@@ -106,29 +200,86 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         month: quest_hook::libil2cpp::ByRefMut<i32>,
         day: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDateValues", (td, year, month, day))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::DateTime,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("GetDateValues")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDateValues", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (td, year, month, day))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUtcOffset(
         d: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
-        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetUtcOffset", (d))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime),
+                crate::System::TimeSpan,
+                1usize,
+            >("GetUtcOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetUtcOffset", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::TimeSpan = unsafe {
+            method.invoke_unchecked((), (d))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwitchToLocalTime(
         value: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SwitchToLocalTime", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime),
+                crate::System::DateTime,
+                1usize,
+            >("SwitchToLocalTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SwitchToLocalTime", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SwitchToUtcTime(
         value: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
-        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SwitchToUtcTime", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime),
+                crate::System::DateTime,
+                1usize,
+            >("SwitchToUtcTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SwitchToUtcTime", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToSerializationMode(
@@ -136,23 +287,60 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Xml::XmlDateTimeSerializationMode,
     > {
-        let __cordl_ret: crate::System::Xml::XmlDateTimeSerializationMode = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToSerializationMode", (kind))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTimeKind),
+                crate::System::Xml::XmlDateTimeSerializationMode,
+                1usize,
+            >("ToSerializationMode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToSerializationMode", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Xml::XmlDateTimeSerializationMode = unsafe {
+            method.invoke_unchecked((), (kind))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToUniversalTicks_DateTime0(
         dateTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToUniversalTicks", (dateTime))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime),
+                i64,
+                1usize,
+            >("ToUniversalTicks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToUniversalTicks", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (dateTime)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToUniversalTicks_TimeSpan1(
         dateTime: crate::System::DateTime,
         offset: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToUniversalTicks", (dateTime, offset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::DateTime, crate::System::TimeSpan),
+                i64,
+                2usize,
+            >("ToUniversalTicks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToUniversalTicks", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (dateTime, offset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeExact(
@@ -162,11 +350,31 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryParseDateTimeExact",
-                (text, dateTimeZoneHandling, dateFormatString, culture, dt),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::Newtonsoft::Json::DateTimeZoneHandling,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
+                ),
+                bool,
+                5usize,
+            >("TryParseDateTimeExact")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeExact", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (text, dateTimeZoneHandling, dateFormatString, culture, dt),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeIso(
@@ -174,8 +382,25 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         dateTimeZoneHandling: crate::Newtonsoft::Json::DateTimeZoneHandling,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseDateTimeIso", (text, dateTimeZoneHandling, dt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    crate::Newtonsoft::Json::DateTimeZoneHandling,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
+                ),
+                bool,
+                3usize,
+            >("TryParseDateTimeIso")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeIso", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (text, dateTimeZoneHandling, dt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeMicrosoft(
@@ -183,8 +408,25 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         dateTimeZoneHandling: crate::Newtonsoft::Json::DateTimeZoneHandling,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseDateTimeMicrosoft", (text, dateTimeZoneHandling, dt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    crate::Newtonsoft::Json::DateTimeZoneHandling,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
+                ),
+                bool,
+                3usize,
+            >("TryParseDateTimeMicrosoft")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeMicrosoft", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (text, dateTimeZoneHandling, dt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeOffsetExact(
@@ -193,27 +435,70 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryParseDateTimeOffsetExact",
-                (text, dateFormatString, culture, dt),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+                ),
+                bool,
+                4usize,
+            >("TryParseDateTimeOffsetExact")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeOffsetExact", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (text, dateFormatString, culture, dt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeOffsetIso(
         text: crate::Newtonsoft::Json::Utilities::StringReference,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseDateTimeOffsetIso", (text, dt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+                ),
+                bool,
+                2usize,
+            >("TryParseDateTimeOffsetIso")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeOffsetIso", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, dt)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeOffsetMicrosoft(
         text: crate::Newtonsoft::Json::Utilities::StringReference,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseDateTimeOffsetMicrosoft", (text, dt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+                ),
+                bool,
+                2usize,
+            >("TryParseDateTimeOffsetMicrosoft")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeOffsetMicrosoft", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (text, dt)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeOffset_Il2CppString1(
@@ -222,8 +507,26 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseDateTimeOffset", (s, dateFormatString, culture, dt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+                ),
+                bool,
+                4usize,
+            >("TryParseDateTimeOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeOffset", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (s, dateFormatString, culture, dt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTimeOffset_StringReference0(
@@ -232,8 +535,26 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseDateTimeOffset", (s, dateFormatString, culture, dt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+                ),
+                bool,
+                4usize,
+            >("TryParseDateTimeOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTimeOffset", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (s, dateFormatString, culture, dt))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTime_Il2CppString1(
@@ -243,11 +564,31 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryParseDateTime",
-                (s, dateTimeZoneHandling, dateFormatString, culture, dt),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::Newtonsoft::Json::DateTimeZoneHandling,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
+                ),
+                bool,
+                5usize,
+            >("TryParseDateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTime", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (s, dateTimeZoneHandling, dateFormatString, culture, dt),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseDateTime_StringReference0(
@@ -257,11 +598,31 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         dt: quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "TryParseDateTime",
-                (s, dateTimeZoneHandling, dateFormatString, culture, dt),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    crate::Newtonsoft::Json::DateTimeZoneHandling,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTime>,
+                ),
+                bool,
+                5usize,
+            >("TryParseDateTime")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseDateTime", 5usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (s, dateTimeZoneHandling, dateFormatString, culture, dt),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryParseMicrosoftDate(
@@ -270,8 +631,26 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         offset: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
         kind: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeKind>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryParseMicrosoftDate", (text, ticks, offset, kind))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    quest_hook::libil2cpp::ByRefMut<i64>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeKind>,
+                ),
+                bool,
+                4usize,
+            >("TryParseMicrosoftDate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryParseMicrosoftDate", 4usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (text, ticks, offset, kind))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryReadOffset(
@@ -279,15 +658,39 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         startIndex: i32,
         offset: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryReadOffset", (offsetText, startIndex, offset))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::Newtonsoft::Json::Utilities::StringReference,
+                    i32,
+                    quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
+                ),
+                bool,
+                3usize,
+            >("TryReadOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryReadOffset", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (offsetText, startIndex, offset))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UniversalTicksToJavaScriptTicks(
         universalTicks: i64,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UniversalTicksToJavaScriptTicks", (universalTicks))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i64), i64, 1usize>("UniversalTicksToJavaScriptTicks")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UniversalTicksToJavaScriptTicks", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (universalTicks)) };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDateTimeOffset(
@@ -296,8 +699,26 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         offset: crate::System::TimeSpan,
         format: crate::Newtonsoft::Json::DateFormatHandling,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteDateTimeOffset", (chars, start, offset, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
+                    crate::System::TimeSpan,
+                    crate::Newtonsoft::Json::DateFormatHandling,
+                ),
+                i32,
+                4usize,
+            >("WriteDateTimeOffset")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteDateTimeOffset", 4usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (chars, start, offset, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDateTimeOffsetString(
@@ -307,11 +728,27 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         formatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "WriteDateTimeOffsetString",
-                (writer, value, format, formatString, culture),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+                    crate::System::DateTimeOffset,
+                    crate::Newtonsoft::Json::DateFormatHandling,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("WriteDateTimeOffsetString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteDateTimeOffsetString", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (writer, value, format, formatString, culture))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDateTimeString_Il2CppArray_i32_DateTime_Nullable_1_DateTimeKind_DateFormatHandling1(
@@ -322,8 +759,28 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         kind: crate::System::DateTimeKind,
         format: crate::Newtonsoft::Json::DateFormatHandling,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteDateTimeString", (chars, start, value, offset, kind, format))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
+                    crate::System::DateTime,
+                    crate::System::Nullable_1<crate::System::TimeSpan>,
+                    crate::System::DateTimeKind,
+                    crate::Newtonsoft::Json::DateFormatHandling,
+                ),
+                i32,
+                6usize,
+            >("WriteDateTimeString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteDateTimeString", 6usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (chars, start, value, offset, kind, format))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDateTimeString_TextWriter_DateTime_DateFormatHandling_Il2CppString_CultureInfo0(
@@ -333,11 +790,27 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         formatString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "WriteDateTimeString",
-                (writer, value, format, formatString, culture),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+                    crate::System::DateTime,
+                    crate::Newtonsoft::Json::DateFormatHandling,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("WriteDateTimeString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteDateTimeString", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (writer, value, format, formatString, culture))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WriteDefaultIsoDate(
@@ -345,8 +818,25 @@ impl crate::Newtonsoft::Json::Utilities::DateTimeUtils {
         start: i32,
         dt: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("WriteDefaultIsoDate", (chars, start, dt))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                    i32,
+                    crate::System::DateTime,
+                ),
+                i32,
+                3usize,
+            >("WriteDefaultIsoDate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "WriteDefaultIsoDate", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (chars, start, dt))
+        };
         Ok(__cordl_ret.into())
     }
 }

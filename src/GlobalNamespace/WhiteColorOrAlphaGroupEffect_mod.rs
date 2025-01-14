@@ -46,11 +46,21 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         colorBoost: bool,
         brightness: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("GetColor", (colorType, colorBoost, brightness))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::GlobalNamespace::EnvironmentColorType, bool, f32),
+                crate::UnityEngine::Color,
+                3usize,
+            >("GetColor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetColor", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, (colorType, colorBoost, brightness))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -105,22 +115,47 @@ impl crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect {
         >,
         bpmController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(
-                ".ctor",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
                 (
-                    initData,
-                    defaultColor,
-                    lightManager,
-                    tweeningManager,
-                    colorManager,
-                    beatmapCallbacksController,
-                    bpmController,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::LightColorGroupEffect_InitData,
+                    >,
+                    crate::UnityEngine::Color,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::LightWithIdManager,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::Tweening::SongTimeTweeningManager>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapCallbacksController,
+                    >,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBpmController>,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    self,
+                    (
+                        initData,
+                        defaultColor,
+                        lightManager,
+                        tweeningManager,
+                        colorManager,
+                        beatmapCallbacksController,
+                        bpmController,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

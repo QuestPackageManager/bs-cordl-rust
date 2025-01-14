@@ -168,25 +168,51 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainVEData {
     pub fn AllocatesID(
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AllocatesID", (alloc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::UIR::BMPAlloc),
+                bool,
+                1usize,
+            >("AllocatesID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AllocatesID", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alloc)) };
         Ok(__cordl_ret.into())
     }
     pub fn InheritsID(
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("InheritsID", (alloc))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::UIR::BMPAlloc),
+                bool,
+                1usize,
+            >("InheritsID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "InheritsID", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (alloc)) };
         Ok(__cordl_ret.into())
     }
     pub fn get_isIgnoringDynamicColorHint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_isIgnoringDynamicColorHint",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), bool, 0usize>("get_isIgnoringDynamicColorHint")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_isIgnoringDynamicColorHint", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_lastClosingOrLastCommand(
@@ -196,13 +222,23 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainVEData {
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+                >,
+                0usize,
+            >("get_lastClosingOrLastCommand")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_lastClosingOrLastCommand", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_lastClosingOrLastCommand",
-            (),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
 }

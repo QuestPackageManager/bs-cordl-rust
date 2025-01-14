@@ -58,10 +58,23 @@ impl crate::System::Security::Cryptography::X509Certificates::RSACertificateExte
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+                >),
+                quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+                1usize,
+            >("GetRSAPublicKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetRSAPublicKey", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::RSA,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetRSAPublicKey", (certificate))?;
+        > = unsafe { method.invoke_unchecked((), (certificate)) };
         Ok(__cordl_ret.into())
     }
 }

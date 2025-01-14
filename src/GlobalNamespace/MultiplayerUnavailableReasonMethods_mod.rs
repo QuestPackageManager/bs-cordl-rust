@@ -48,10 +48,21 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::MultiplayerUnavailableReason),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ErrorCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ErrorCode", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ErrorCode", (multiplayerUnavailableReason))?;
+        > = unsafe { method.invoke_unchecked((), (multiplayerUnavailableReason)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLocalizedMessage(
@@ -60,10 +71,26 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MultiplayerStatusData,
+                    >,
+                    crate::BGLib::Polyglot::Language,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GetLocalizedMessage")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLocalizedMessage", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLocalizedMessage", (data, language))?;
+        > = unsafe { method.invoke_unchecked((), (data, language)) };
         Ok(__cordl_ret.into())
     }
     pub fn LocalizedKey(
@@ -71,10 +98,21 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::MultiplayerUnavailableReason),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("LocalizedKey")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LocalizedKey", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LocalizedKey", (multiplayerUnavailableReason))?;
+        > = unsafe { method.invoke_unchecked((), (multiplayerUnavailableReason)) };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetMultiplayerUnavailableReason(
@@ -83,16 +121,50 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
             crate::GlobalNamespace::MultiplayerUnavailableReason,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetMultiplayerUnavailableReason", (data, reason))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::MultiplayerStatusData,
+                    >,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::GlobalNamespace::MultiplayerUnavailableReason,
+                    >,
+                ),
+                bool,
+                2usize,
+            >("TryGetMultiplayerUnavailableReason")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetMultiplayerUnavailableReason", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (data, reason)) };
         Ok(__cordl_ret.into())
     }
     pub fn VersionLessThan(
         currentVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         minVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("VersionLessThan", (currentVersion, minVersion))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                bool,
+                2usize,
+            >("VersionLessThan")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "VersionLessThan", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (currentVersion, minVersion))
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -57,11 +57,17 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_ceilingType(
@@ -69,11 +75,21 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentSizeData_CeilingType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_CeilingType = __cordl_object
-            .invoke("get_ceilingType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::EnvironmentSizeData_CeilingType,
+                0usize,
+            >("get_ceilingType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_ceilingType", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_CeilingType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_floorType(
@@ -81,11 +97,21 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentSizeData_FloorType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_FloorType = __cordl_object
-            .invoke("get_floorType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::EnvironmentSizeData_FloorType,
+                0usize,
+            >("get_floorType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_floorType", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_FloorType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_trackLaneType(
@@ -93,11 +119,21 @@ impl crate::GlobalNamespace::EnvironmentSizeData {
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType = __cordl_object
-            .invoke("get_trackLaneType", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType,
+                0usize,
+            >("get_trackLaneType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_trackLaneType", 0usize
+                )
+            });
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentSizeData_TrackLaneType = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

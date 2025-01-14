@@ -58,17 +58,43 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
         TEnterEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SendEnterLeave",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    previousTopElementUnderPointer,
-                    currentTopElementUnderPointer,
-                    triggerEvent,
-                    position,
-                    pointerId,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::IPointerEvent,
+                    >,
+                    crate::UnityEngine::Vector2,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SendEnterLeave")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendEnterLeave", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        previousTopElementUnderPointer,
+                        currentTopElementUnderPointer,
+                        triggerEvent,
+                        position,
+                        pointerId,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SendOverOut(
@@ -84,17 +110,43 @@ impl crate::UnityEngine::UIElements::PointerEventsHelper {
         position: crate::UnityEngine::Vector2,
         pointerId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SendOverOut",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    previousTopElementUnderPointer,
-                    currentTopElementUnderPointer,
-                    triggerEvent,
-                    position,
-                    pointerId,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::IPointerEvent,
+                    >,
+                    crate::UnityEngine::Vector2,
+                    i32,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SendOverOut")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SendOverOut", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        previousTopElementUnderPointer,
+                        currentTopElementUnderPointer,
+                        triggerEvent,
+                        position,
+                        pointerId,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -44,8 +44,21 @@ impl crate::System::Threading::Tasks::TaskAwaiters {
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::Tasks::ForceAsyncAwaiter,
     > {
-        let __cordl_ret: crate::System::Threading::Tasks::ForceAsyncAwaiter = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ForceAsync", (task))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>),
+                crate::System::Threading::Tasks::ForceAsyncAwaiter,
+                1usize,
+            >("ForceAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ForceAsync", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Threading::Tasks::ForceAsyncAwaiter = unsafe {
+            method.invoke_unchecked((), (task))
+        };
         Ok(__cordl_ret.into())
     }
 }

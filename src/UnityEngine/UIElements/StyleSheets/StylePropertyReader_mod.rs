@@ -81,22 +81,42 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue = __cordl_object
-            .invoke("GetValue", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                1usize,
+            >("GetValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetValue", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueType(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleValueType> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueType = __cordl_object
-            .invoke("GetValueType", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::StyleValueType,
+                1usize,
+            >("GetValueType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetValueType", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleValueType = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsKeyword(
@@ -104,10 +124,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         index: i32,
         keyword: crate::UnityEngine::UIElements::StyleValueKeyword,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("IsKeyword", (index, keyword))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::UIElements::StyleValueKeyword),
+                bool,
+                2usize,
+            >("IsKeyword")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsKeyword", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (index, keyword))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsValueType(
@@ -115,21 +146,37 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         index: i32,
         _cordl_type: crate::UnityEngine::UIElements::StyleValueType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object
-            .invoke("IsValueType", (index, _cordl_type))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::UIElements::StyleValueType),
+                bool,
+                2usize,
+            >("IsValueType")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsValueType", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked(self, (index, _cordl_type))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadProperties(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadProperties", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LoadProperties")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadProperties", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MoveNextProperty(
@@ -137,11 +184,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = __cordl_object
-            .invoke("MoveNextProperty", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                0usize,
+            >("MoveNextProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "MoveNextProperty", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -154,8 +211,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     pub fn ReadAngle(
         value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Angle> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Angle = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadAngle", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue),
+                crate::UnityEngine::UIElements::Angle,
+                1usize,
+            >("ReadAngle")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAngle", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Angle = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsString(
@@ -164,23 +234,42 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("ReadAsString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadAsString", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = __cordl_object.invoke("ReadAsString", (index))?;
+        > = unsafe { method.invoke_unchecked(self, (index)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackground(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Background> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Background = __cordl_object
-            .invoke("ReadBackground", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::Background,
+                1usize,
+            >("ReadBackground")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackground", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Background = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPositionX(
@@ -189,11 +278,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundPosition,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
-            .invoke("ReadBackgroundPositionX", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::BackgroundPosition,
+                1usize,
+            >("ReadBackgroundPositionX")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundPositionX", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPositionY(
@@ -202,11 +301,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundPosition,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
-            .invoke("ReadBackgroundPositionY", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::BackgroundPosition,
+                1usize,
+            >("ReadBackgroundPositionY")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundPositionY", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPosition_BackgroundPositionKeyword0(
@@ -216,11 +325,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundPosition,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
-            .invoke("ReadBackgroundPosition", (index, keyword))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::UnityEngine::UIElements::BackgroundPositionKeyword),
+                crate::UnityEngine::UIElements::BackgroundPosition,
+                2usize,
+            >("ReadBackgroundPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundPosition", 2usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = unsafe {
+            method.invoke_unchecked(self, (index, keyword))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPosition_StylePropertyValue_StylePropertyValue_BackgroundPositionKeyword1(
@@ -231,8 +350,26 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundPosition,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadBackgroundPosition", (valCount, val1, val2, keyword))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::BackgroundPositionKeyword,
+                ),
+                crate::UnityEngine::UIElements::BackgroundPosition,
+                4usize,
+            >("ReadBackgroundPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundPosition", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = unsafe {
+            method.invoke_unchecked((), (valCount, val1, val2, keyword))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundRepeat_StylePropertyValue_StylePropertyValue1(
@@ -242,8 +379,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundRepeat,
     > {
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadBackgroundRepeat", (valCount, val1, val2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                ),
+                crate::UnityEngine::UIElements::BackgroundRepeat,
+                3usize,
+            >("ReadBackgroundRepeat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundRepeat", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = unsafe {
+            method.invoke_unchecked((), (valCount, val1, val2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundRepeat_i32_0(
@@ -252,11 +406,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::BackgroundRepeat,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = __cordl_object
-            .invoke("ReadBackgroundRepeat", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::BackgroundRepeat,
+                1usize,
+            >("ReadBackgroundRepeat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundRepeat", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundSize_StylePropertyValue_StylePropertyValue1(
@@ -264,49 +428,106 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadBackgroundSize", (valCount, val1, val2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                ),
+                crate::UnityEngine::UIElements::BackgroundSize,
+                3usize,
+            >("ReadBackgroundSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundSize", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = unsafe {
+            method.invoke_unchecked((), (valCount, val1, val2))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundSize_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = __cordl_object
-            .invoke("ReadBackgroundSize", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::BackgroundSize,
+                1usize,
+            >("ReadBackgroundSize")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadBackgroundSize", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadColor(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::Color = __cordl_object
-            .invoke("ReadColor", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), crate::UnityEngine::Color, 1usize>("ReadColor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadColor", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadCursor(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Cursor> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Cursor = __cordl_object
-            .invoke("ReadCursor", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::Cursor,
+                1usize,
+            >("ReadCursor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadCursor", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Cursor = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadEnum_StylePropertyValue1(
         enumType: crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
         value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadEnum", (enumType, value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                ),
+                i32,
+                2usize,
+            >("ReadEnum")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadEnum", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (enumType, value)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadEnum_i32_0(
@@ -314,17 +535,33 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         enumType: crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadEnum", (enumType, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::StyleSheets::StyleEnumType, i32),
+                i32,
+                2usize,
+            >("ReadEnum")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadEnum", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked(self, (enumType, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFloat(&mut self, index: i32) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("ReadFloat", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), f32, 1usize>("ReadFloat")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadFloat", 1usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, (index)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFont(
@@ -333,40 +570,75 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font> = __cordl_object
-            .invoke("ReadFont", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+                1usize,
+            >("ReadFont")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadFont", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font> = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadFontDefinition(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::FontDefinition> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::FontDefinition = __cordl_object
-            .invoke("ReadFontDefinition", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::FontDefinition,
+                1usize,
+            >("ReadFontDefinition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadFontDefinition", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::FontDefinition = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadInt(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("ReadInt", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), i32, 1usize>("ReadInt")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadInt", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (index)) };
         Ok(__cordl_ret.into())
     }
     pub fn ReadLength(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Length = __cordl_object
-            .invoke("ReadLength", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::Length,
+                1usize,
+            >("ReadLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadLength", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadListEasingFunction(
@@ -378,11 +650,28 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadListEasingFunction", (list, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::EasingFunction,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReadListEasingFunction")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadListEasingFunction", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (list, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadListStylePropertyName(
@@ -394,11 +683,28 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadListStylePropertyName", (list, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::StylePropertyName,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReadListStylePropertyName")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadListStylePropertyName", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (list, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadListTimeValue(
@@ -410,11 +716,28 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadListTimeValue", (list, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            crate::UnityEngine::UIElements::TimeValue,
+                        >,
+                    >,
+                    i32,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("ReadListTimeValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadListTimeValue", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (list, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadRotate_StylePropertyValue_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
@@ -424,19 +747,48 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         val3: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         val4: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadRotate", (valCount, val1, val2, val3, val4))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                ),
+                crate::UnityEngine::UIElements::Rotate,
+                5usize,
+            >("ReadRotate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadRotate", 5usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = unsafe {
+            method.invoke_unchecked((), (valCount, val1, val2, val3, val4))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadRotate_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = __cordl_object
-            .invoke("ReadRotate", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::Rotate,
+                1usize,
+            >("ReadRotate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadRotate", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadScale_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
@@ -445,41 +797,89 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         val3: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Scale = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadScale", (valCount, val1, val2, val3))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                ),
+                crate::UnityEngine::UIElements::Scale,
+                4usize,
+            >("ReadScale")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadScale", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Scale = unsafe {
+            method.invoke_unchecked((), (valCount, val1, val2, val3))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadScale_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Scale = __cordl_object
-            .invoke("ReadScale", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::Scale,
+                1usize,
+            >("ReadScale")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadScale", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Scale = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTextShadow(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextShadow> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::TextShadow = __cordl_object
-            .invoke("ReadTextShadow", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::TextShadow,
+                1usize,
+            >("ReadTextShadow")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTextShadow", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::TextShadow = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTimeValue(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TimeValue> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::TimeValue = __cordl_object
-            .invoke("ReadTimeValue", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::TimeValue,
+                1usize,
+            >("ReadTimeValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTimeValue", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::TimeValue = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTransformOriginEnum(
@@ -487,8 +887,25 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         isVertical: quest_hook::libil2cpp::ByRefMut<bool>,
         isHorizontal: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadTransformOriginEnum", (value, isVertical, isHorizontal))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                    quest_hook::libil2cpp::ByRefMut<bool>,
+                ),
+                crate::UnityEngine::UIElements::Length,
+                3usize,
+            >("ReadTransformOriginEnum")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTransformOriginEnum", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = unsafe {
+            method.invoke_unchecked((), (value, isVertical, isHorizontal))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTransformOrigin_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
@@ -497,19 +914,47 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         zVvalue: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TransformOrigin> {
-        let __cordl_ret: crate::UnityEngine::UIElements::TransformOrigin = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadTransformOrigin", (valCount, val1, val2, zVvalue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                ),
+                crate::UnityEngine::UIElements::TransformOrigin,
+                4usize,
+            >("ReadTransformOrigin")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTransformOrigin", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::TransformOrigin = unsafe {
+            method.invoke_unchecked((), (valCount, val1, val2, zVvalue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTransformOrigin_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TransformOrigin> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::TransformOrigin = __cordl_object
-            .invoke("ReadTransformOrigin", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::TransformOrigin,
+                1usize,
+            >("ReadTransformOrigin")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTransformOrigin", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::TransformOrigin = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTranslate_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
@@ -518,19 +963,47 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         val3: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
-        let __cordl_ret: crate::UnityEngine::UIElements::Translate = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ReadTranslate", (valCount, val1, val2, val3))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    i32,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                ),
+                crate::UnityEngine::UIElements::Translate,
+                4usize,
+            >("ReadTranslate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTranslate", 4usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Translate = unsafe {
+            method.invoke_unchecked((), (valCount, val1, val2, val3))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadTranslate_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::Translate = __cordl_object
-            .invoke("ReadTranslate", (index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32),
+                crate::UnityEngine::UIElements::Translate,
+                1usize,
+            >("ReadTranslate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ReadTranslate", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Translate = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetContext(
@@ -544,21 +1017,48 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         >,
         dpiScaling: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetContext", (sheet, selector, varContext, dpiScaling))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleSheet,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleComplexSelector,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleVariableContext,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetContext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetContext", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (sheet, selector, varContext, dpiScaling))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCurrentProperty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCurrentProperty", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("SetCurrentProperty")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCurrentProperty", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetInlineContext(
@@ -576,11 +1076,38 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         >,
         dpiScaling: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetInlineContext", (sheet, properties, propertyIds, dpiScaling))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleSheet,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::StyleProperty,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                        >,
+                    >,
+                    f32,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SetInlineContext")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetInlineContext", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (sheet, properties, propertyIds, dpiScaling))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryGetImageSourceFromValue(
@@ -590,8 +1117,27 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             crate::UnityEngine::UIElements::StyleSheets::ImageSource,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryGetImageSourceFromValue", (propertyValue, dpiScaling, source))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    f32,
+                    quest_hook::libil2cpp::ByRefMut<
+                        crate::UnityEngine::UIElements::StyleSheets::ImageSource,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("TryGetImageSourceFromValue")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryGetImageSourceFromValue", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (propertyValue, dpiScaling, source))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn TryReadEnum(
@@ -599,25 +1145,53 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         intValue: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("TryReadEnum", (enumType, value, intValue))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
+                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+                    quest_hook::libil2cpp::ByRefMut<i32>,
+                ),
+                bool,
+                3usize,
+            >("TryReadEnum")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "TryReadEnum", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (enumType, value, intValue))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_dpiScaling(&mut self) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: f32 = __cordl_object.invoke("get_dpiScaling", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), f32, 0usize>("get_dpiScaling")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_dpiScaling", 0usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_property(
@@ -625,12 +1199,21 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
+                0usize,
+            >("get_property")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_property", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::StyleProperty,
-        > = __cordl_object.invoke("get_property", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn get_propertyId(
@@ -638,62 +1221,111 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = __cordl_object
-            .invoke("get_propertyId", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                0usize,
+            >("get_propertyId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_propertyId", 0usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_valueCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("get_valueCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("get_valueCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_valueCount", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn set_dpiScaling(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_dpiScaling", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>("set_dpiScaling")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_dpiScaling", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_property(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_property", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::StyleProperty,
+                >),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_property")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_property", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_propertyId(
         &mut self,
         value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_propertyId", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_propertyId")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_propertyId", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_valueCount(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("set_valueCount", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("set_valueCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_valueCount", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -765,10 +1397,24 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorI
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: i32 = __cordl_object.invoke("Invoke", (sheet, handle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleSheet,
+                    >,
+                    crate::UnityEngine::UIElements::StyleValueHandle,
+                ),
+                i32,
+                2usize,
+            >("Invoke")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Invoke", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, (sheet, handle)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -786,11 +1432,24 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader_GetCursorI
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (object, method))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (object, method))
+        };
         Ok(__cordl_ret.into())
     }
 }

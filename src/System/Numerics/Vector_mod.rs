@@ -45,8 +45,21 @@ impl crate::System::Numerics::Vector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::Numerics::Vector_1<u64> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AsVectorUInt64", (value))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::Numerics::Vector_1<T>),
+                crate::System::Numerics::Vector_1<u64>,
+                1usize,
+            >("AsVectorUInt64")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AsVectorUInt64", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::Numerics::Vector_1<u64> = unsafe {
+            method.invoke_unchecked((), (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Equals<T>(
@@ -57,13 +70,36 @@ impl crate::System::Numerics::Vector {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::Numerics::Vector_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Equals", (left, right))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::Numerics::Vector_1<T>,
+                    crate::System::Numerics::Vector_1<T>,
+                ),
+                crate::System::Numerics::Vector_1<T>,
+                2usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::Numerics::Vector_1<T> = unsafe {
+            method.invoke_unchecked((), (left, right))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_IsHardwareAccelerated() -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("get_IsHardwareAccelerated", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), bool, 0usize>("get_IsHardwareAccelerated")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_IsHardwareAccelerated", 0usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
 }

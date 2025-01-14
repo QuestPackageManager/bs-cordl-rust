@@ -44,8 +44,24 @@ impl crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
         firstObstacle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
         secondObstacle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CanBeMerged", (firstObstacle, secondObstacle))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+                ),
+                bool,
+                2usize,
+            >("CanBeMerged")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CanBeMerged", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (firstObstacle, secondObstacle))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTransformedData(
@@ -55,10 +71,23 @@ impl crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IReadonlyBeatmapData,
+                >),
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+                1usize,
+            >("CreateTransformedData")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreateTransformedData", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreateTransformedData", (beatmapData))?;
+        > = unsafe { method.invoke_unchecked((), (beatmapData)) };
         Ok(__cordl_ret.into())
     }
 }

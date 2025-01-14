@@ -45,8 +45,25 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeleteFile", (fileStorage, fileName, storageLocation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("DeleteFile")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeleteFile", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (fileStorage, fileName, storageLocation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FileExists(
@@ -54,8 +71,25 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FileExists", (fileStorage, fileName, storageLocation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                ),
+                bool,
+                3usize,
+            >("FileExists")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FileExists", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (fileStorage, fileName, storageLocation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFile(
@@ -65,10 +99,27 @@ impl crate::GlobalNamespace::FileStorageExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("LoadFile")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFile", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFile", (fileStorage, fileName, storageLocation))?;
+        > = unsafe {
+            method.invoke_unchecked((), (fileStorage, fileName, storageLocation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromJSONFile<T>(
@@ -80,8 +131,25 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFromJSONFile", (fileStorage, fileName, storageLocation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                ),
+                T,
+                3usize,
+            >("LoadFromJSONFile")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFromJSONFile", 3usize
+                )
+            });
+        let __cordl_ret: T = unsafe {
+            method.invoke_unchecked((), (fileStorage, fileName, storageLocation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadFromJSONFileAsync<T>(
@@ -95,10 +163,27 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+                3usize,
+            >("LoadFromJSONFileAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LoadFromJSONFileAsync", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<T>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LoadFromJSONFileAsync", (fileStorage, fileName, storageLocation))?;
+        > = unsafe {
+            method.invoke_unchecked((), (fileStorage, fileName, storageLocation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SaveFile(
@@ -107,8 +192,26 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SaveFile", (fileStorage, fileName, value, storageLocation))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                ),
+                quest_hook::libil2cpp::Void,
+                4usize,
+            >("SaveFile")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SaveFile", 4usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (fileStorage, fileName, value, storageLocation))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SaveToJSONFile(
@@ -120,11 +223,39 @@ impl crate::GlobalNamespace::FileStorageExtensions {
             crate::Newtonsoft::Json::JsonSerializerSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SaveToJSONFile",
-                (fileStorage, obj, fileName, storageLocation, overrideSerializerSettings),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::JsonSerializerSettings,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("SaveToJSONFile")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SaveToJSONFile", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        fileStorage,
+                        obj,
+                        fileName,
+                        storageLocation,
+                        overrideSerializerSettings,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SaveToJSONFileAsync(
@@ -138,13 +269,41 @@ impl crate::GlobalNamespace::FileStorageExtensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::GlobalNamespace::StoragePreference,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Newtonsoft::Json::JsonSerializerSettings,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                5usize,
+            >("SaveToJSONFileAsync")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SaveToJSONFileAsync", 5usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "SaveToJSONFileAsync",
-                (fileStorage, obj, fileName, storageLocation, overrideSerializerSettings),
-            )?;
+        > = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        fileStorage,
+                        obj,
+                        fileName,
+                        storageLocation,
+                        overrideSerializerSettings,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
 }

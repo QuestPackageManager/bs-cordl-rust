@@ -59,19 +59,53 @@ impl crate::GlobalNamespace::AutoRecord {
             quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::NoteCutDirection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AddNoteHandFrames",
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
                 (
-                    note,
-                    noteLineCount,
-                    cutStart,
-                    cutEnd,
-                    trackOrientation,
-                    handFrames,
-                    lastCutDirections,
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                    i32,
+                    f32,
+                    f32,
+                    crate::UnityEngine::Quaternion,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::BeatSaber::RecPlay::PoseFrame,
+                                >,
+                            >,
+                        >,
+                    >,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::GlobalNamespace::NoteCutDirection,
+                        >,
+                    >,
                 ),
-            )?;
+                quest_hook::libil2cpp::Void,
+                7usize,
+            >("AddNoteHandFrames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddNoteHandFrames", 7usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        note,
+                        noteLineCount,
+                        cutStart,
+                        cutEnd,
+                        trackOrientation,
+                        handFrames,
+                        lastCutDirections,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AddSliderHandFrames(
@@ -90,11 +124,47 @@ impl crate::GlobalNamespace::AutoRecord {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke(
-                "AddSliderHandFrames",
-                (slider, noteLineCount, cutStart, cutEnd, trackOrientation, handFrames),
-            )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+                    i32,
+                    f32,
+                    f32,
+                    crate::UnityEngine::Quaternion,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::BeatSaber::RecPlay::PoseFrame,
+                                >,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                6usize,
+            >("AddSliderHandFrames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AddSliderHandFrames", 6usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method
+                .invoke_unchecked(
+                    (),
+                    (
+                        slider,
+                        noteLineCount,
+                        cutStart,
+                        cutEnd,
+                        trackOrientation,
+                        handFrames,
+                    ),
+                )
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePlayerPoseFrames(
@@ -102,8 +172,23 @@ impl crate::GlobalNamespace::AutoRecord {
             crate::GlobalNamespace::AutoRecord_Beatmap,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::PlayerPoseFrames> {
-        let __cordl_ret: crate::BeatSaber::RecPlay::PlayerPoseFrames = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CreatePlayerPoseFrames", (beatmap))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::ByRefMut<
+                    crate::GlobalNamespace::AutoRecord_Beatmap,
+                >),
+                crate::BeatSaber::RecPlay::PlayerPoseFrames,
+                1usize,
+            >("CreatePlayerPoseFrames")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CreatePlayerPoseFrames", 1usize
+                )
+            });
+        let __cordl_ret: crate::BeatSaber::RecPlay::PlayerPoseFrames = unsafe {
+            method.invoke_unchecked((), (beatmap))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LocateCutPosition(
@@ -111,8 +196,21 @@ impl crate::GlobalNamespace::AutoRecord {
         line: i32,
         layer: crate::GlobalNamespace::NoteLineLayer,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("LocateCutPosition", (lineCount, line, layer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, i32, crate::GlobalNamespace::NoteLineLayer),
+                crate::UnityEngine::Vector3,
+                3usize,
+            >("LocateCutPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "LocateCutPosition", 3usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            method.invoke_unchecked((), (lineCount, line, layer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _CreatePlayerPoseFrames_g__FixFrames_1_0(
@@ -120,8 +218,23 @@ impl crate::GlobalNamespace::AutoRecord {
             quest_hook::libil2cpp::Il2CppArray<crate::BeatSaber::RecPlay::PoseFrame>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("<CreatePlayerPoseFrames>g__FixFrames|1_0", (frames))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::BeatSaber::RecPlay::PoseFrame,
+                    >,
+                >),
+                i32,
+                1usize,
+            >("<CreatePlayerPoseFrames>g__FixFrames|1_0")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "<CreatePlayerPoseFrames>g__FixFrames|1_0", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (frames)) };
         Ok(__cordl_ret.into())
     }
 }

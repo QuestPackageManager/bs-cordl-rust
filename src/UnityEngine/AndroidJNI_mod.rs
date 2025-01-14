@@ -41,13 +41,33 @@ impl crate::UnityEngine::AndroidJNI {
     pub fn AllocObject(
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AllocObject", (clazz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("AllocObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AllocObject", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn AttachCurrentThread() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("AttachCurrentThread", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("AttachCurrentThread")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "AttachCurrentThread", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn CallBooleanMethodUnsafe(
@@ -55,8 +75,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallBooleanMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                bool,
+                3usize,
+            >("CallBooleanMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallBooleanMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallBooleanMethod_Il2CppArray0(
@@ -66,8 +103,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallBooleanMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("CallBooleanMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallBooleanMethod", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallBooleanMethod_Span_1_1(
@@ -75,8 +131,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallBooleanMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                bool,
+                3usize,
+            >("CallBooleanMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallBooleanMethod", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallByteMethod(
@@ -86,8 +159,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallByteMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                u8,
+                3usize,
+            >("CallByteMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallByteMethod", 3usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallCharMethodUnsafe(
@@ -95,8 +187,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallCharMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                char,
+                3usize,
+            >("CallCharMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallCharMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: char = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallCharMethod_Il2CppArray0(
@@ -106,8 +215,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallCharMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                char,
+                3usize,
+            >("CallCharMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallCharMethod", 3usize
+                )
+            });
+        let __cordl_ret: char = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallCharMethod_Span_1_1(
@@ -115,8 +243,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallCharMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                char,
+                3usize,
+            >("CallCharMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallCharMethod", 3usize
+                )
+            });
+        let __cordl_ret: char = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallDoubleMethodUnsafe(
@@ -124,8 +269,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallDoubleMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                f64,
+                3usize,
+            >("CallDoubleMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallDoubleMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallDoubleMethod_Il2CppArray0(
@@ -135,8 +297,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallDoubleMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                f64,
+                3usize,
+            >("CallDoubleMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallDoubleMethod", 3usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallDoubleMethod_Span_1_1(
@@ -144,8 +325,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallDoubleMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                f64,
+                3usize,
+            >("CallDoubleMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallDoubleMethod", 3usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallFloatMethodUnsafe(
@@ -153,8 +351,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallFloatMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                f32,
+                3usize,
+            >("CallFloatMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallFloatMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallFloatMethod_Il2CppArray0(
@@ -164,8 +379,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallFloatMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                f32,
+                3usize,
+            >("CallFloatMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallFloatMethod", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallFloatMethod_Span_1_1(
@@ -173,8 +407,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallFloatMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                f32,
+                3usize,
+            >("CallFloatMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallFloatMethod", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallIntMethodUnsafe(
@@ -182,8 +433,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallIntMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                3usize,
+            >("CallIntMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallIntMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallIntMethod_Il2CppArray0(
@@ -193,8 +461,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallIntMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i32,
+                3usize,
+            >("CallIntMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallIntMethod", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallIntMethod_Span_1_1(
@@ -202,8 +489,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallIntMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i32,
+                3usize,
+            >("CallIntMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallIntMethod", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallLongMethodUnsafe(
@@ -211,8 +515,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallLongMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i64,
+                3usize,
+            >("CallLongMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallLongMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallLongMethod_Il2CppArray0(
@@ -222,8 +543,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallLongMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i64,
+                3usize,
+            >("CallLongMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallLongMethod", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallLongMethod_Span_1_1(
@@ -231,8 +571,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallLongMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i64,
+                3usize,
+            >("CallLongMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallLongMethod", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallObjectMethodUnsafe(
@@ -240,8 +597,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallObjectMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("CallObjectMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallObjectMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallObjectMethod_Il2CppArray0(
@@ -251,8 +625,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallObjectMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("CallObjectMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallObjectMethod", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallObjectMethod_Span_1_1(
@@ -260,8 +653,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallObjectMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("CallObjectMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallObjectMethod", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallSByteMethodUnsafe(
@@ -269,8 +679,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallSByteMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i8,
+                3usize,
+            >("CallSByteMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallSByteMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallSByteMethod_Il2CppArray0(
@@ -280,8 +707,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallSByteMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i8,
+                3usize,
+            >("CallSByteMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallSByteMethod", 3usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallSByteMethod_Span_1_1(
@@ -289,8 +735,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallSByteMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i8,
+                3usize,
+            >("CallSByteMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallSByteMethod", 3usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallShortMethodUnsafe(
@@ -298,8 +761,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallShortMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i16,
+                3usize,
+            >("CallShortMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallShortMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallShortMethod_Il2CppArray0(
@@ -309,8 +789,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallShortMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i16,
+                3usize,
+            >("CallShortMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallShortMethod", 3usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallShortMethod_Span_1_1(
@@ -318,8 +817,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallShortMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i16,
+                3usize,
+            >("CallShortMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallShortMethod", 3usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticBooleanMethodUnsafe(
@@ -327,8 +843,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticBooleanMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                bool,
+                3usize,
+            >("CallStaticBooleanMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticBooleanMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticBooleanMethod_Il2CppArray0(
@@ -338,8 +871,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticBooleanMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                bool,
+                3usize,
+            >("CallStaticBooleanMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticBooleanMethod", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticBooleanMethod_Span_1_1(
@@ -347,8 +899,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticBooleanMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                bool,
+                3usize,
+            >("CallStaticBooleanMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticBooleanMethod", 3usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticByteMethod(
@@ -358,8 +927,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticByteMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                u8,
+                3usize,
+            >("CallStaticByteMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticByteMethod", 3usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticCharMethodUnsafe(
@@ -367,8 +955,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticCharMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                char,
+                3usize,
+            >("CallStaticCharMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticCharMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: char = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticCharMethod_Il2CppArray0(
@@ -378,8 +983,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticCharMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                char,
+                3usize,
+            >("CallStaticCharMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticCharMethod", 3usize
+                )
+            });
+        let __cordl_ret: char = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticCharMethod_Span_1_1(
@@ -387,8 +1011,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticCharMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                char,
+                3usize,
+            >("CallStaticCharMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticCharMethod", 3usize
+                )
+            });
+        let __cordl_ret: char = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticDoubleMethodUnsafe(
@@ -396,8 +1037,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticDoubleMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                f64,
+                3usize,
+            >("CallStaticDoubleMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticDoubleMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticDoubleMethod_Il2CppArray0(
@@ -407,8 +1065,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticDoubleMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                f64,
+                3usize,
+            >("CallStaticDoubleMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticDoubleMethod", 3usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticDoubleMethod_Span_1_1(
@@ -416,8 +1093,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticDoubleMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                f64,
+                3usize,
+            >("CallStaticDoubleMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticDoubleMethod", 3usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticFloatMethodUnsafe(
@@ -425,8 +1119,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticFloatMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                f32,
+                3usize,
+            >("CallStaticFloatMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticFloatMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticFloatMethod_Il2CppArray0(
@@ -436,8 +1147,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticFloatMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                f32,
+                3usize,
+            >("CallStaticFloatMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticFloatMethod", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticFloatMethod_Span_1_1(
@@ -445,8 +1175,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticFloatMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                f32,
+                3usize,
+            >("CallStaticFloatMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticFloatMethod", 3usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticIntMethodUnsafe(
@@ -454,8 +1201,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticIntMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i32,
+                3usize,
+            >("CallStaticIntMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticIntMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticIntMethod_Il2CppArray0(
@@ -465,8 +1229,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticIntMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i32,
+                3usize,
+            >("CallStaticIntMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticIntMethod", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticIntMethod_Span_1_1(
@@ -474,8 +1257,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticIntMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i32,
+                3usize,
+            >("CallStaticIntMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticIntMethod", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticLongMethodUnsafe(
@@ -483,8 +1283,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticLongMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i64,
+                3usize,
+            >("CallStaticLongMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticLongMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticLongMethod_Il2CppArray0(
@@ -494,8 +1311,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticLongMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i64,
+                3usize,
+            >("CallStaticLongMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticLongMethod", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticLongMethod_Span_1_1(
@@ -503,8 +1339,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticLongMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i64,
+                3usize,
+            >("CallStaticLongMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticLongMethod", 3usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticObjectMethodUnsafe(
@@ -512,8 +1365,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticObjectMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("CallStaticObjectMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticObjectMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticObjectMethod_Il2CppArray0(
@@ -523,8 +1393,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticObjectMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("CallStaticObjectMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticObjectMethod", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticObjectMethod_Span_1_1(
@@ -532,8 +1421,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticObjectMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("CallStaticObjectMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticObjectMethod", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticSByteMethodUnsafe(
@@ -541,8 +1447,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticSByteMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i8,
+                3usize,
+            >("CallStaticSByteMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticSByteMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticSByteMethod_Il2CppArray0(
@@ -552,8 +1475,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticSByteMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i8,
+                3usize,
+            >("CallStaticSByteMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticSByteMethod", 3usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticSByteMethod_Span_1_1(
@@ -561,8 +1503,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticSByteMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i8,
+                3usize,
+            >("CallStaticSByteMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticSByteMethod", 3usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticShortMethodUnsafe(
@@ -570,8 +1529,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticShortMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                i16,
+                3usize,
+            >("CallStaticShortMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticShortMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticShortMethod_Il2CppArray0(
@@ -581,8 +1557,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticShortMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                i16,
+                3usize,
+            >("CallStaticShortMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticShortMethod", 3usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticShortMethod_Span_1_1(
@@ -590,8 +1585,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticShortMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                i16,
+                3usize,
+            >("CallStaticShortMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticShortMethod", 3usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticStringMethodUnsafe(
@@ -601,10 +1613,25 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("CallStaticStringMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticStringMethodUnsafe", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticStringMethodUnsafe", (clazz, methodID, args))?;
+        > = unsafe { method.invoke_unchecked((), (clazz, methodID, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticStringMethod_Il2CppArray0(
@@ -616,10 +1643,27 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("CallStaticStringMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticStringMethod", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticStringMethod", (clazz, methodID, args))?;
+        > = unsafe { method.invoke_unchecked((), (clazz, methodID, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticStringMethod_Span_1_1(
@@ -629,10 +1673,25 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("CallStaticStringMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticStringMethod", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticStringMethod", (clazz, methodID, args))?;
+        > = unsafe { method.invoke_unchecked((), (clazz, methodID, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticVoidMethodUnsafe(
@@ -640,8 +1699,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticVoidMethodUnsafe", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CallStaticVoidMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticVoidMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticVoidMethod_Il2CppArray0(
@@ -651,8 +1727,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticVoidMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CallStaticVoidMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticVoidMethod", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStaticVoidMethod_Span_1_1(
@@ -660,8 +1755,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStaticVoidMethod", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CallStaticVoidMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStaticVoidMethod", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallStringMethodUnsafe(
@@ -671,10 +1783,25 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("CallStringMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStringMethodUnsafe", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStringMethodUnsafe", (obj, methodID, args))?;
+        > = unsafe { method.invoke_unchecked((), (obj, methodID, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn CallStringMethod_Il2CppArray0(
@@ -686,10 +1813,27 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("CallStringMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStringMethod", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStringMethod", (obj, methodID, args))?;
+        > = unsafe { method.invoke_unchecked((), (obj, methodID, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn CallStringMethod_Span_1_1(
@@ -699,10 +1843,25 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                3usize,
+            >("CallStringMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallStringMethod", 3usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallStringMethod", (obj, methodID, args))?;
+        > = unsafe { method.invoke_unchecked((), (obj, methodID, args)) };
         Ok(__cordl_ret.into())
     }
     pub fn CallVoidMethodUnsafe(
@@ -710,8 +1869,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallVoidMethodUnsafe", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CallVoidMethodUnsafe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallVoidMethodUnsafe", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallVoidMethod_Il2CppArray0(
@@ -721,8 +1897,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallVoidMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CallVoidMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallVoidMethod", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CallVoidMethod_Span_1_1(
@@ -730,72 +1925,203 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("CallVoidMethod", (obj, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("CallVoidMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CallVoidMethod", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteGlobalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeleteGlobalRef", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DeleteGlobalRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeleteGlobalRef", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteLocalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeleteLocalRef", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DeleteLocalRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeleteLocalRef", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DeleteWeakGlobalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DeleteWeakGlobalRef", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("DeleteWeakGlobalRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DeleteWeakGlobalRef", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DetachCurrentThread() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("DetachCurrentThread", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("DetachCurrentThread")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "DetachCurrentThread", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn EnsureLocalCapacity(capacity: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EnsureLocalCapacity", (capacity))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("EnsureLocalCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureLocalCapacity", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (capacity)) };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptionClear() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExceptionClear", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ExceptionClear")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExceptionClear", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptionDescribe() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExceptionDescribe", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("ExceptionDescribe")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExceptionDescribe", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ExceptionOccurred() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ExceptionOccurred", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), crate::System::IntPtr, 0usize>("ExceptionOccurred")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ExceptionOccurred", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FatalError(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FatalError", (message))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("FatalError")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FatalError", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (message))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FindClass(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FindClass", (name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::System::IntPtr,
+                1usize,
+            >("FindClass")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FindClass", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FromBooleanArray(
@@ -803,10 +2129,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
+                1usize,
+            >("FromBooleanArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromBooleanArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<bool>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromBooleanArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromByteArray(
@@ -814,10 +2151,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                1usize,
+            >("FromByteArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromByteArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromByteArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromCharArray(
@@ -825,10 +2173,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+                1usize,
+            >("FromCharArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromCharArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromCharArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromDoubleArray(
@@ -836,10 +2195,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
+                1usize,
+            >("FromDoubleArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromDoubleArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f64>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromDoubleArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromFloatArray(
@@ -847,10 +2217,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+                1usize,
+            >("FromFloatArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromFloatArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromFloatArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromIntArray(
@@ -858,10 +2239,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+                1usize,
+            >("FromIntArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromIntArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromIntArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromLongArray(
@@ -869,10 +2261,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+                1usize,
+            >("FromLongArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromLongArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i64>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromLongArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromObjectArray(
@@ -882,24 +2285,63 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
         >,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+                >,
+                1usize,
+            >("FromObjectArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromObjectArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromObjectArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromReflectedField(
         refField: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromReflectedField", (refField))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("FromReflectedField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromReflectedField", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (refField))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FromReflectedMethod(
         refMethod: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromReflectedMethod", (refMethod))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("FromReflectedMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromReflectedMethod", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (refMethod))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn FromSByteArray(
@@ -907,10 +2349,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
+                1usize,
+            >("FromSByteArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromSByteArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i8>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromSByteArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn FromShortArray(
@@ -918,65 +2371,149 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+                1usize,
+            >("FromShortArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "FromShortArray", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i16>,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("FromShortArray", (array))?;
+        > = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetArrayLength(
         array: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetArrayLength", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(crate::System::IntPtr), i32, 1usize>("GetArrayLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetArrayLength", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBooleanArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBooleanArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                bool,
+                2usize,
+            >("GetBooleanArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBooleanArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetBooleanField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetBooleanField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                bool,
+                2usize,
+            >("GetBooleanField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetBooleanField", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetByteArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByteArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                u8,
+                2usize,
+            >("GetByteArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetByteArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetByteField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetByteField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                u8,
+                2usize,
+            >("GetByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetByteField", 2usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCharArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                char,
+                2usize,
+            >("GetCharArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetCharField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetCharField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                char,
+                2usize,
+            >("GetCharField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetCharField", 2usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectBuffer<T>(
@@ -986,8 +2523,21 @@ impl crate::UnityEngine::AndroidJNI {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDirectBuffer", (buffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::Unity::Collections::NativeArray_1<T>,
+                1usize,
+            >("GetDirectBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDirectBuffer", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<T> = unsafe {
+            method.invoke_unchecked((), (buffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectBufferAddress(
@@ -995,47 +2545,117 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                1usize,
+            >("GetDirectBufferAddress")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDirectBufferAddress", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDirectBufferAddress", (buffer))?;
+        > = unsafe { method.invoke_unchecked((), (buffer)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectBufferCapacity(
         buffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDirectBufferCapacity", (buffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                i64,
+                1usize,
+            >("GetDirectBufferCapacity")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDirectBufferCapacity", 1usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (buffer)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectByteBuffer(
         buffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDirectByteBuffer", (buffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::Unity::Collections::NativeArray_1<u8>,
+                1usize,
+            >("GetDirectByteBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDirectByteBuffer", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = unsafe {
+            method.invoke_unchecked((), (buffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDirectSByteBuffer(
         buffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<i8>> {
-        let __cordl_ret: crate::Unity::Collections::NativeArray_1<i8> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDirectSByteBuffer", (buffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::Unity::Collections::NativeArray_1<i8>,
+                1usize,
+            >("GetDirectSByteBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDirectSByteBuffer", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<i8> = unsafe {
+            method.invoke_unchecked((), (buffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetDoubleArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDoubleArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                f64,
+                2usize,
+            >("GetDoubleArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDoubleArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetDoubleField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetDoubleField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                f64,
+                2usize,
+            >("GetDoubleField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetDoubleField", 2usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFieldID(
@@ -1043,61 +2663,153 @@ impl crate::UnityEngine::AndroidJNI {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFieldID", (clazz, name, sig))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("GetFieldID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFieldID", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, name, sig))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFloatArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFloatArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                f32,
+                2usize,
+            >("GetFloatArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFloatArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetFloatField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetFloatField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                f32,
+                2usize,
+            >("GetFloatField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetFloatField", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIntArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetIntArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                i32,
+                2usize,
+            >("GetIntArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIntArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetIntField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetIntField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i32,
+                2usize,
+            >("GetIntField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetIntField", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetJavaVM() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetJavaVM", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), crate::System::IntPtr, 0usize>("GetJavaVM")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetJavaVM", 0usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLongArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLongArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                i64,
+                2usize,
+            >("GetLongArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLongArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetLongField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLongField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i64,
+                2usize,
+            >("GetLongField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLongField", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodID(
@@ -1105,100 +2817,251 @@ impl crate::UnityEngine::AndroidJNI {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetMethodID", (clazz, name, sig))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("GetMethodID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetMethodID", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, name, sig))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetObjectArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("GetObjectArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetObjectArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectClass(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetObjectClass", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("GetObjectClass")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetObjectClass", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetObjectField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                crate::System::IntPtr,
+                2usize,
+            >("GetObjectField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetObjectField", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj, fieldID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetQueueGlobalRefsCount() -> quest_hook::libil2cpp::Result<u32> {
-        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetQueueGlobalRefsCount", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), u32, 0usize>("GetQueueGlobalRefsCount")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetQueueGlobalRefsCount", 0usize
+                )
+            });
+        let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSByteArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSByteArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                i8,
+                2usize,
+            >("GetSByteArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSByteArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSByteField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSByteField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i8,
+                2usize,
+            >("GetSByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSByteField", 2usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetShortArrayElement(
         array: crate::System::IntPtr,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetShortArrayElement", (array, index))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32),
+                i16,
+                2usize,
+            >("GetShortArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetShortArrayElement", 2usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (array, index)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetShortField(
         obj: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetShortField", (obj, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i16,
+                2usize,
+            >("GetShortField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetShortField", 2usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticBooleanField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticBooleanField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                bool,
+                2usize,
+            >("GetStaticBooleanField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticBooleanField", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticByteField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u8> {
-        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticByteField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                u8,
+                2usize,
+            >("GetStaticByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticByteField", 2usize
+                )
+            });
+        let __cordl_ret: u8 = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticCharField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<char> {
-        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticCharField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                char,
+                2usize,
+            >("GetStaticCharField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticCharField", 2usize
+                )
+            });
+        let __cordl_ret: char = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticDoubleField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f64> {
-        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticDoubleField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                f64,
+                2usize,
+            >("GetStaticDoubleField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticDoubleField", 2usize
+                )
+            });
+        let __cordl_ret: f64 = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticFieldID(
@@ -1206,32 +3069,82 @@ impl crate::UnityEngine::AndroidJNI {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticFieldID", (clazz, name, sig))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("GetStaticFieldID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticFieldID", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, name, sig))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticFloatField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<f32> {
-        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticFloatField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                f32,
+                2usize,
+            >("GetStaticFloatField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticFloatField", 2usize
+                )
+            });
+        let __cordl_ret: f32 = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticIntField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticIntField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i32,
+                2usize,
+            >("GetStaticIntField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticIntField", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticLongField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i64> {
-        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticLongField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i64,
+                2usize,
+            >("GetStaticLongField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticLongField", 2usize
+                )
+            });
+        let __cordl_ret: i64 = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticMethodID(
@@ -1239,32 +3152,84 @@ impl crate::UnityEngine::AndroidJNI {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticMethodID", (clazz, name, sig))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("GetStaticMethodID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticMethodID", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, name, sig))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticObjectField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticObjectField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                crate::System::IntPtr,
+                2usize,
+            >("GetStaticObjectField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticObjectField", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticSByteField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i8> {
-        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticSByteField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i8,
+                2usize,
+            >("GetStaticSByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticSByteField", 2usize
+                )
+            });
+        let __cordl_ret: i8 = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticShortField(
         clazz: crate::System::IntPtr,
         fieldID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i16> {
-        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticShortField", (clazz, fieldID))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                i16,
+                2usize,
+            >("GetStaticShortField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticShortField", 2usize
+                )
+            });
+        let __cordl_ret: i16 = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStaticStringField(
@@ -1273,10 +3238,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GetStaticStringField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStaticStringField", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStaticStringField", (clazz, fieldID))?;
+        > = unsafe { method.invoke_unchecked((), (clazz, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringChars(
@@ -1284,10 +3260,21 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetStringChars")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStringChars", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStringChars", (str))?;
+        > = unsafe { method.invoke_unchecked((), (str)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringField(
@@ -1296,17 +3283,39 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("GetStringField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStringField", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStringField", (obj, fieldID))?;
+        > = unsafe { method.invoke_unchecked((), (obj, fieldID)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringLength(
         str: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStringLength", (str))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                i32,
+                1usize,
+            >("GetStringLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStringLength", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (str)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringUTFChars(
@@ -1314,74 +3323,180 @@ impl crate::UnityEngine::AndroidJNI {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                1usize,
+            >("GetStringUTFChars")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStringUTFChars", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStringUTFChars", (str))?;
+        > = unsafe { method.invoke_unchecked((), (str)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetStringUTFLength(
         str: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetStringUTFLength", (str))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                i32,
+                1usize,
+            >("GetStringUTFLength")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetStringUTFLength", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (str)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetSuperclass(
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetSuperclass", (clazz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("GetSuperclass")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetSuperclass", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetVersion() -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetVersion", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(), i32, 0usize>("GetVersion")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetVersion", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), ()) };
         Ok(__cordl_ret.into())
     }
     pub fn IsAssignableFrom(
         clazz1: crate::System::IntPtr,
         clazz2: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsAssignableFrom", (clazz1, clazz2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                bool,
+                2usize,
+            >("IsAssignableFrom")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsAssignableFrom", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (clazz1, clazz2)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsInstanceOf(
         obj: crate::System::IntPtr,
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsInstanceOf", (obj, clazz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                bool,
+                2usize,
+            >("IsInstanceOf")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsInstanceOf", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj, clazz)) };
         Ok(__cordl_ret.into())
     }
     pub fn IsSameObject(
         obj1: crate::System::IntPtr,
         obj2: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsSameObject", (obj1, obj2))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr),
+                bool,
+                2usize,
+            >("IsSameObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsSameObject", 2usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (obj1, obj2)) };
         Ok(__cordl_ret.into())
     }
     pub fn NewBooleanArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewBooleanArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                crate::System::IntPtr,
+                1usize,
+            >("NewBooleanArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewBooleanArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewByteArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewByteArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewByteArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewByteArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewCharArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewCharArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewCharArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewCharArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewDirectByteBufferFromNativeArray<T>(
@@ -1391,72 +3506,186 @@ impl crate::UnityEngine::AndroidJNI {
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewDirectByteBufferFromNativeArray", (buffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeArray_1<T>),
+                crate::System::IntPtr,
+                1usize,
+            >("NewDirectByteBufferFromNativeArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewDirectByteBufferFromNativeArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (buffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewDirectByteBuffer_Il2CppObject_i64_0(
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         capacity: i64,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewDirectByteBuffer", (buffer, capacity))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i64),
+                crate::System::IntPtr,
+                2usize,
+            >("NewDirectByteBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewDirectByteBuffer", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (buffer, capacity))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewDirectByteBuffer_NativeArray_1_1(
         buffer: crate::Unity::Collections::NativeArray_1<u8>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewDirectByteBuffer", (buffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeArray_1<u8>),
+                crate::System::IntPtr,
+                1usize,
+            >("NewDirectByteBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewDirectByteBuffer", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (buffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewDirectByteBuffer_NativeArray_1_2(
         buffer: crate::Unity::Collections::NativeArray_1<i8>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewDirectByteBuffer", (buffer))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Collections::NativeArray_1<i8>),
+                crate::System::IntPtr,
+                1usize,
+            >("NewDirectByteBuffer")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewDirectByteBuffer", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (buffer))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewDoubleArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewDoubleArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewDoubleArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewDoubleArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewFloatArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewFloatArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewFloatArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewFloatArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewGlobalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewGlobalRef", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("NewGlobalRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewGlobalRef", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewIntArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewIntArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewIntArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewIntArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewLocalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewLocalRef", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("NewLocalRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewLocalRef", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewLongArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewLongArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewLongArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewLongArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewObjectA(
@@ -1464,8 +3693,25 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewObjectA", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("NewObjectA")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewObjectA", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewObjectArray(
@@ -1473,8 +3719,21 @@ impl crate::UnityEngine::AndroidJNI {
         clazz: crate::System::IntPtr,
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewObjectArray", (_cordl_size, clazz, obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32, crate::System::IntPtr, crate::System::IntPtr),
+                crate::System::IntPtr,
+                3usize,
+            >("NewObjectArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewObjectArray", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size, clazz, obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewObject_Il2CppArray0(
@@ -1484,8 +3743,27 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewObject", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::jvalue>,
+                    >,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("NewObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewObject", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewObject_Span_1_1(
@@ -1493,76 +3771,209 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         args: crate::System::Span_1<crate::UnityEngine::jvalue>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewObject", (clazz, methodID, args))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    crate::System::Span_1<crate::UnityEngine::jvalue>,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("NewObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewObject", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, args))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewSByteArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewSByteArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewSByteArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewSByteArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewShortArray(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewShortArray", (_cordl_size))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), crate::System::IntPtr, 1usize>("NewShortArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewShortArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (_cordl_size))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewStringFromStr(
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewStringFromStr", (chars))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::System::IntPtr,
+                1usize,
+            >("NewStringFromStr")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewStringFromStr", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (chars))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewStringUTF(
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewStringUTF", (bytes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::System::IntPtr,
+                1usize,
+            >("NewStringUTF")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewStringUTF", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (bytes))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewString_Il2CppArray1(
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewString", (chars))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>),
+                crate::System::IntPtr,
+                1usize,
+            >("NewString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewString", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (chars))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewString_Il2CppString0(
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewString", (chars))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::System::IntPtr,
+                1usize,
+            >("NewString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewString", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (chars))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn NewWeakGlobalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("NewWeakGlobalRef", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("NewWeakGlobalRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "NewWeakGlobalRef", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PopLocalFrame(
         ptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PopLocalFrame", (ptr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                crate::System::IntPtr,
+                1usize,
+            >("PopLocalFrame")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PopLocalFrame", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (ptr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PushLocalFrame(capacity: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PushLocalFrame", (capacity))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("PushLocalFrame")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PushLocalFrame", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (capacity)) };
         Ok(__cordl_ret.into())
     }
     pub fn QueueDeleteGlobalRef(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("QueueDeleteGlobalRef", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("QueueDeleteGlobalRef")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "QueueDeleteGlobalRef", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterNatives(
@@ -1571,15 +3982,46 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::JNINativeMethod>,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterNatives", (clazz, methods))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<
+                            crate::UnityEngine::JNINativeMethod,
+                        >,
+                    >,
+                ),
+                i32,
+                2usize,
+            >("RegisterNatives")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterNatives", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz, methods)) };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterNativesAllocate(
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterNativesAllocate", (length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (i32),
+                crate::System::IntPtr,
+                1usize,
+            >("RegisterNativesAllocate")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterNativesAllocate", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterNativesAndFree(
@@ -1587,8 +4029,21 @@ impl crate::UnityEngine::AndroidJNI {
         natives: crate::System::IntPtr,
         n: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterNativesAndFree", (clazz, natives, n))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i32),
+                i32,
+                3usize,
+            >("RegisterNativesAndFree")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterNativesAndFree", 3usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe {
+            method.invoke_unchecked((), (clazz, natives, n))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterNativesSet(
@@ -1598,8 +4053,27 @@ impl crate::UnityEngine::AndroidJNI {
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         fnPtr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("RegisterNativesSet", (natives, idx, name, signature, fnPtr))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    crate::System::IntPtr,
+                ),
+                quest_hook::libil2cpp::Void,
+                5usize,
+            >("RegisterNativesSet")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "RegisterNativesSet", 5usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (natives, idx, name, signature, fnPtr))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetBooleanArrayElement__cordl_bool1(
@@ -1607,8 +4081,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetBooleanArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, bool),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetBooleanArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetBooleanArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetBooleanArrayElement_u8_0(
@@ -1616,8 +4103,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetBooleanArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, u8),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetBooleanArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetBooleanArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetBooleanField(
@@ -1625,8 +4125,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetBooleanField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, bool),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetBooleanField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetBooleanField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetByteArrayElement(
@@ -1634,8 +4147,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetByteArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, i8),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetByteArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetByteArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetByteField(
@@ -1643,8 +4169,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetByteField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, u8),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetByteField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCharArrayElement(
@@ -1652,8 +4191,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetCharArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, char),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetCharArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCharArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetCharField(
@@ -1661,8 +4213,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetCharField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, char),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetCharField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetCharField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetDoubleArrayElement(
@@ -1670,8 +4235,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetDoubleArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, f64),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetDoubleArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetDoubleArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetDoubleField(
@@ -1679,8 +4257,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetDoubleField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, f64),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetDoubleField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetDoubleField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetFloatArrayElement(
@@ -1688,8 +4279,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetFloatArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, f32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetFloatArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetFloatArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetFloatField(
@@ -1697,8 +4301,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetFloatField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, f32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetFloatField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetFloatField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIntArrayElement(
@@ -1706,8 +4323,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetIntArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetIntArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIntArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetIntField(
@@ -1715,8 +4345,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetIntField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetIntField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetIntField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetLongArrayElement(
@@ -1724,8 +4367,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetLongArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, i64),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetLongArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetLongArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetLongField(
@@ -1733,8 +4389,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetLongField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i64),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetLongField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetLongField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetObjectArrayElement(
@@ -1742,8 +4411,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetObjectArrayElement", (array, index, obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetObjectArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetObjectArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, obj))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetObjectField(
@@ -1751,8 +4433,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetObjectField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetObjectField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetObjectField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSByteArrayElement(
@@ -1760,8 +4455,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetSByteArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, i8),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetSByteArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSByteArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetSByteField(
@@ -1769,8 +4477,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetSByteField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i8),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetSByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetSByteField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetShortArrayElement(
@@ -1778,8 +4499,21 @@ impl crate::UnityEngine::AndroidJNI {
         index: i32,
         val: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetShortArrayElement", (array, index, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, i32, i16),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetShortArrayElement")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetShortArrayElement", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (array, index, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetShortField(
@@ -1787,8 +4521,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetShortField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i16),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetShortField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetShortField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticBooleanField(
@@ -1796,8 +4543,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticBooleanField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, bool),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticBooleanField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticBooleanField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticByteField(
@@ -1805,8 +4565,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: u8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticByteField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, u8),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticByteField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticCharField(
@@ -1814,8 +4587,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticCharField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, char),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticCharField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticCharField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticDoubleField(
@@ -1823,8 +4609,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticDoubleField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, f64),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticDoubleField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticDoubleField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticFloatField(
@@ -1832,8 +4631,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticFloatField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, f32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticFloatField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticFloatField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticIntField(
@@ -1841,8 +4653,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticIntField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i32),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticIntField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticIntField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticLongField(
@@ -1850,8 +4675,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticLongField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i64),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticLongField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticLongField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticObjectField(
@@ -1859,8 +4697,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticObjectField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, crate::System::IntPtr),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticObjectField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticObjectField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticSByteField(
@@ -1868,8 +4719,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i8,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticSByteField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i8),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticSByteField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticSByteField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticShortField(
@@ -1877,8 +4741,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticShortField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, i16),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticShortField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticShortField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStaticStringField(
@@ -1886,8 +4763,25 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStaticStringField", (clazz, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStaticStringField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStaticStringField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SetStringField(
@@ -1895,110 +4789,304 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("SetStringField", (obj, fieldID, val))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >("SetStringField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetStringField", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (obj, fieldID, val))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Throw(obj: crate::System::IntPtr) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("Throw", (obj))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(crate::System::IntPtr), i32, 1usize>("Throw")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Throw", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (obj)) };
         Ok(__cordl_ret.into())
     }
     pub fn ThrowNew(
         clazz: crate::System::IntPtr,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ThrowNew", (clazz, message))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    crate::System::IntPtr,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                ),
+                i32,
+                2usize,
+            >("ThrowNew")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ThrowNew", 2usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz, message)) };
         Ok(__cordl_ret.into())
     }
     pub fn ToBooleanArray(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToBooleanArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToBooleanArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToBooleanArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToByteArray(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToByteArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToByteArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToByteArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToCharArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToCharArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToCharArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToCharArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToCharArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToCharArray", (array, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("ToCharArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToCharArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToDoubleArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToDoubleArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToDoubleArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToDoubleArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToDoubleArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToDoubleArray", (array, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("ToDoubleArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToDoubleArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToFloatArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToFloatArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToFloatArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToFloatArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToFloatArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToFloatArray", (array, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("ToFloatArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToFloatArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToIntArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToIntArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToIntArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToIntArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToIntArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToIntArray", (array, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("ToIntArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToIntArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToLongArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToLongArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToLongArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToLongArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToLongArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToLongArray", (array, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("ToLongArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToLongArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToObjectArray_Il2CppArray2(
@@ -2006,8 +5094,23 @@ impl crate::UnityEngine::AndroidJNI {
             quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToObjectArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+                >),
+                crate::System::IntPtr,
+                1usize,
+            >("ToObjectArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToObjectArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToObjectArray_Il2CppArray_IntPtr1(
@@ -2016,8 +5119,26 @@ impl crate::UnityEngine::AndroidJNI {
         >,
         arrayClass: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToObjectArray", (array, arrayClass))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+                    >,
+                    crate::System::IntPtr,
+                ),
+                crate::System::IntPtr,
+                2usize,
+            >("ToObjectArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToObjectArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, arrayClass))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToObjectArray_Il2CppObject_i32_IntPtr0(
@@ -2025,8 +5146,25 @@ impl crate::UnityEngine::AndroidJNI {
         length: i32,
         arrayClass: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToObjectArray", (array, length, arrayClass))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    i32,
+                    crate::System::IntPtr,
+                ),
+                crate::System::IntPtr,
+                3usize,
+            >("ToObjectArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToObjectArray", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length, arrayClass))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToReflectedField(
@@ -2034,8 +5172,21 @@ impl crate::UnityEngine::AndroidJNI {
         fieldID: crate::System::IntPtr,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToReflectedField", (clazz, fieldID, isStatic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, bool),
+                crate::System::IntPtr,
+                3usize,
+            >("ToReflectedField")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToReflectedField", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, fieldID, isStatic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToReflectedMethod(
@@ -2043,45 +5194,121 @@ impl crate::UnityEngine::AndroidJNI {
         methodID: crate::System::IntPtr,
         isStatic: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToReflectedMethod", (clazz, methodID, isStatic))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr, crate::System::IntPtr, bool),
+                crate::System::IntPtr,
+                3usize,
+            >("ToReflectedMethod")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToReflectedMethod", 3usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (clazz, methodID, isStatic))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToSByteArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToSByteArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToSByteArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToSByteArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToSByteArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToSByteArray", (array, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("ToSByteArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToSByteArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToShortArray_Il2CppArray0(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToShortArray", (array))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>),
+                crate::System::IntPtr,
+                1usize,
+            >("ToShortArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToShortArray", 1usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToShortArray_Il2CppObject_i32_1(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
-        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToShortArray", (array, length))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>, i32),
+                crate::System::IntPtr,
+                2usize,
+            >("ToShortArray")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToShortArray", 2usize
+                )
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            method.invoke_unchecked((), (array, length))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterNatives(
         clazz: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("UnregisterNatives", (clazz))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::System::IntPtr),
+                i32,
+                1usize,
+            >("UnregisterNatives")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "UnregisterNatives", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (clazz)) };
         Ok(__cordl_ret.into())
     }
 }

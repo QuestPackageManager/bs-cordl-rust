@@ -42,11 +42,21 @@ impl crate::Tayx::Graphy::UI::IMovable {
         &mut self,
         newModulePosition: crate::Tayx::Graphy::GraphyManager_ModulePosition,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetPosition", (newModulePosition))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Tayx::Graphy::GraphyManager_ModulePosition),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("SetPosition")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "SetPosition", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (newModulePosition))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(

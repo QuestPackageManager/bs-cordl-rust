@@ -44,10 +44,23 @@ impl crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo_Extensions {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::HoudiniEngineUnity::HAPI_ObjectInfo),
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo,
+                >,
+                1usize,
+            >("ToTestObject")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToTestObject", 1usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo,
-        > = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("ToTestObject", (_cordl_self))?;
+        > = unsafe { method.invoke_unchecked((), (_cordl_self)) };
         Ok(__cordl_ret.into())
     }
 }

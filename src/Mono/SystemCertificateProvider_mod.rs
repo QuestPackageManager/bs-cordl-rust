@@ -41,15 +41,41 @@ impl crate::Mono::SystemCertificateProvider {
     pub fn EnsureInitialized() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("EnsureInitialized", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Void,
+                0usize,
+            >("EnsureInitialized")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "EnsureInitialized", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetX509Pal() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl>,
     > {
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl> = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetX509Pal", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl>,
+                0usize,
+            >("GetX509Pal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetX509Pal", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl> = unsafe {
+            method.invoke_unchecked((), ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Import_Il2CppArray_CertificateImportFlags0(
@@ -61,12 +87,26 @@ impl crate::Mono::SystemCertificateProvider {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    crate::Mono::CertificateImportFlags,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >,
+                2usize,
+            >("Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Import", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        > = __cordl_object.invoke("Import", (data, importFlags))?;
+        > = unsafe { method.invoke_unchecked(self, (data, importFlags)) };
         Ok(__cordl_ret.into())
     }
     pub fn Import_Il2CppArray_SafePasswordHandle_X509KeyStorageFlags_CertificateImportFlags1(
@@ -82,13 +122,32 @@ impl crate::Mono::SystemCertificateProvider {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+                    >,
+                    crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
+                    crate::Mono::CertificateImportFlags,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+                >,
+                4usize,
+            >("Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Import", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
-        > = __cordl_object
-            .invoke("Import", (data, password, keyStorageFlags, importFlags))?;
+        > = unsafe {
+            method.invoke_unchecked(self, (data, password, keyStorageFlags, importFlags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Import_X509Certificate_CertificateImportFlags2(
@@ -102,12 +161,28 @@ impl crate::Mono::SystemCertificateProvider {
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    crate::Mono::CertificateImportFlags,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
+                >,
+                2usize,
+            >("Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Import", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl,
-        > = __cordl_object.invoke("Import", (cert, importFlags))?;
+        > = unsafe { method.invoke_unchecked(self, (cert, importFlags)) };
         Ok(__cordl_ret.into())
     }
     pub fn Mono_ISystemCertificateProvider_Import_Il2CppArray_SafePasswordHandle_X509KeyStorageFlags_CertificateImportFlags0(
@@ -123,16 +198,32 @@ impl crate::Mono::SystemCertificateProvider {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+                    >,
+                    crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
+                    crate::Mono::CertificateImportFlags,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >,
+                4usize,
+            >("Mono.ISystemCertificateProvider.Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Mono.ISystemCertificateProvider.Import", 4usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        > = __cordl_object
-            .invoke(
-                "Mono.ISystemCertificateProvider.Import",
-                (data, password, keyStorageFlags, importFlags),
-            )?;
+        > = unsafe {
+            method.invoke_unchecked(self, (data, password, keyStorageFlags, importFlags))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Mono_ISystemCertificateProvider_Import_X509Certificate_CertificateImportFlags1(
@@ -146,13 +237,28 @@ impl crate::Mono::SystemCertificateProvider {
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+                    >,
+                    crate::Mono::CertificateImportFlags,
+                ),
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
+                >,
+                2usize,
+            >("Mono.ISystemCertificateProvider.Import")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Mono.ISystemCertificateProvider.Import", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-        > = __cordl_object
-            .invoke("Mono.ISystemCertificateProvider.Import", (cert, importFlags))?;
+        > = unsafe { method.invoke_unchecked(self, (cert, importFlags)) };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -165,11 +271,17 @@ impl crate::Mono::SystemCertificateProvider {
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_X509Pal(
@@ -177,11 +289,21 @@ impl crate::Mono::SystemCertificateProvider {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl>,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl> = __cordl_object
-            .invoke("get_X509Pal", ())?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl>,
+                0usize,
+            >("get_X509Pal")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_X509Pal", 0usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl> = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
 }

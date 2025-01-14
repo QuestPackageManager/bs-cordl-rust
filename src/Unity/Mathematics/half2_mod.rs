@@ -102,30 +102,46 @@ impl crate::Unity::Mathematics::half2 {
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                bool,
+                1usize,
+            >("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (o)) };
         Ok(__cordl_ret.into())
     }
     pub fn Equals_half2_0(
         &mut self,
         rhs: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (rhs),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(crate::Unity::Mathematics::half2), bool, 1usize>("Equals")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "Equals", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (rhs)) };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "GetHashCode",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), i32, 0usize>("GetHashCode")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetHashCode", 0usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -133,9 +149,21 @@ impl crate::Unity::Mathematics::half2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                0usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 0usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        > = unsafe { method.invoke_unchecked(self, ()) };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Il2CppString_IFormatProvider1(
@@ -145,79 +173,142 @@ impl crate::Unity::Mathematics::half2 {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+                ),
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                2usize,
+            >("ToString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "ToString", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ToString",
-            (format, formatProvider),
-        )?;
+        > = unsafe { method.invoke_unchecked(self, (format, formatProvider)) };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_double2_6(
         &mut self,
         v: crate::Unity::Mathematics::double2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::double2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f32_3(
         &mut self,
         v: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_f64_5(
         &mut self,
         v: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(f64), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_float2_4(
         &mut self,
         v: crate::Unity::Mathematics::float2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::float2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_half2(
         &mut self,
         v: crate::Unity::Mathematics::half,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (v),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::half),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_half2_1(
         &mut self,
         xy: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (xy),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::half2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (xy))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_half_half0(
@@ -225,385 +316,712 @@ impl crate::Unity::Mathematics::half2 {
         x: crate::Unity::Mathematics::half,
         y: crate::Unity::Mathematics::half,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (x, y),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::half, crate::Unity::Mathematics::half),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (x, y))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Item(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half> {
-        let __cordl_ret: crate::Unity::Mathematics::half = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_Item",
-            (index),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(i32), crate::Unity::Mathematics::half, 1usize>("get_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_Item", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half = unsafe {
+            method.invoke_unchecked(self, (index))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half2, 0usize>("get_xx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xxx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xxx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_xxx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xxx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xxxx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xxxx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xxxx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xxxx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xxxy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xxxy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xxxy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xxxy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xxy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xxy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_xxy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xxy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xxyx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xxyx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xxyx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xxyx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xxyy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xxyy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xxyy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xxyy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half2, 0usize>("get_xy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xyx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xyx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_xyx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xyx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xyxx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xyxx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xyxx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xyxx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xyxy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xyxy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xyxy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xyxy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xyy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xyy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_xyy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xyy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xyyx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xyyx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xyyx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xyyx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_xyyy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_xyyy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_xyyy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_xyyy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half2, 0usize>("get_yx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yxx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yxx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_yxx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yxx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yxxx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yxxx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yxxx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yxxx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yxxy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yxxy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yxxy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yxxy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yxy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yxy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_yxy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yxy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yxyx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yxyx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yxyx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yxyx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yxyy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yxyy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yxyy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yxyy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half2, 0usize>("get_yy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yyx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yyx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_yyx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yyx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yyxx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yyxx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yyxx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yyxx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yyxy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yyxy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yyxy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yyxy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yyy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half3> {
-        let __cordl_ret: crate::Unity::Mathematics::half3 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yyy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half3, 0usize>("get_yyy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yyy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half3 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yyyx(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yyyx",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yyyx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yyyx", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_yyyy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half4> {
-        let __cordl_ret: crate::Unity::Mathematics::half4 = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "get_yyyy",
-            (),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<(), crate::Unity::Mathematics::half4, 0usize>("get_yyyy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "get_yyyy", 0usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half4 = unsafe {
+            method.invoke_unchecked(self, ())
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality_half2_half1(
         lhs: crate::Unity::Mathematics::half2,
         rhs: crate::Unity::Mathematics::half,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
-        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Equality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::half2, crate::Unity::Mathematics::half),
+                crate::Unity::Mathematics::bool2,
+                2usize,
+            >("op_Equality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Equality", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = unsafe {
+            method.invoke_unchecked((), (lhs, rhs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality_half2_half2_0(
         lhs: crate::Unity::Mathematics::half2,
         rhs: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
-        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Equality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::half2, crate::Unity::Mathematics::half2),
+                crate::Unity::Mathematics::bool2,
+                2usize,
+            >("op_Equality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Equality", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = unsafe {
+            method.invoke_unchecked((), (lhs, rhs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality_half_half2_2(
         lhs: crate::Unity::Mathematics::half,
         rhs: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
-        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Equality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::half, crate::Unity::Mathematics::half2),
+                crate::Unity::Mathematics::bool2,
+                2usize,
+            >("op_Equality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Equality", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = unsafe {
+            method.invoke_unchecked((), (lhs, rhs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_double2_3(
         v: crate::Unity::Mathematics::double2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Explicit", (v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::double2),
+                crate::Unity::Mathematics::half2,
+                1usize,
+            >("op_Explicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Explicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked((), (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_f32_0(
         v: f32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Explicit", (v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f32),
+                crate::Unity::Mathematics::half2,
+                1usize,
+            >("op_Explicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Explicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked((), (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_f64_2(
         v: f64,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Explicit", (v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (f64),
+                crate::Unity::Mathematics::half2,
+                1usize,
+            >("op_Explicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Explicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked((), (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Explicit_float2_1(
         v: crate::Unity::Mathematics::float2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Explicit", (v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::float2),
+                crate::Unity::Mathematics::half2,
+                1usize,
+            >("op_Explicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Explicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked((), (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
         v: crate::Unity::Mathematics::half,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
-        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Implicit", (v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::half),
+                crate::Unity::Mathematics::half2,
+                1usize,
+            >("op_Implicit")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Implicit", 1usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::half2 = unsafe {
+            method.invoke_unchecked((), (v))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality_half2_half1(
         lhs: crate::Unity::Mathematics::half2,
         rhs: crate::Unity::Mathematics::half,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
-        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Inequality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::half2, crate::Unity::Mathematics::half),
+                crate::Unity::Mathematics::bool2,
+                2usize,
+            >("op_Inequality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Inequality", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = unsafe {
+            method.invoke_unchecked((), (lhs, rhs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality_half2_half2_0(
         lhs: crate::Unity::Mathematics::half2,
         rhs: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
-        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Inequality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::half2, crate::Unity::Mathematics::half2),
+                crate::Unity::Mathematics::bool2,
+                2usize,
+            >("op_Inequality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Inequality", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = unsafe {
+            method.invoke_unchecked((), (lhs, rhs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Inequality_half_half2_2(
         lhs: crate::Unity::Mathematics::half,
         rhs: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
-        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("op_Inequality", (lhs, rhs))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::Unity::Mathematics::half, crate::Unity::Mathematics::half2),
+                crate::Unity::Mathematics::bool2,
+                2usize,
+            >("op_Inequality")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "op_Inequality", 2usize
+                )
+            });
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = unsafe {
+            method.invoke_unchecked((), (lhs, rhs))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(
@@ -611,33 +1029,63 @@ impl crate::Unity::Mathematics::half2 {
         index: i32,
         value: crate::Unity::Mathematics::half,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_Item",
-            (index, value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (i32, crate::Unity::Mathematics::half),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("set_Item")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_Item", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (index, value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_xy(
         &mut self,
         value: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_xy",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::half2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_xy")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_xy", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_yx(
         &mut self,
         value: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "set_yx",
-            (value),
-        )?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::half2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >("set_yx")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "set_yx", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (value))
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -725,11 +1173,21 @@ impl crate::Unity::Mathematics::half2_DebuggerProxy {
         &mut self,
         v: crate::Unity::Mathematics::half2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (v))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::Unity::Mathematics::half2),
+                quest_hook::libil2cpp::Void,
+                1usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 1usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (v))
+        };
         Ok(__cordl_ret.into())
     }
 }

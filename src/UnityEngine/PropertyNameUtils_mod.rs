@@ -41,16 +41,45 @@ impl crate::UnityEngine::PropertyNameUtils {
     pub fn PropertyNameFromString(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PropertyName> {
-        let __cordl_ret: crate::UnityEngine::PropertyName = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PropertyNameFromString", (name))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                crate::UnityEngine::PropertyName,
+                1usize,
+            >("PropertyNameFromString")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PropertyNameFromString", 1usize
+                )
+            });
+        let __cordl_ret: crate::UnityEngine::PropertyName = unsafe {
+            method.invoke_unchecked((), (name))
+        };
         Ok(__cordl_ret.into())
     }
     pub fn PropertyNameFromString_Injected(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PropertyName>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("PropertyNameFromString_Injected", (name, ret))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PropertyName>,
+                ),
+                quest_hook::libil2cpp::Void,
+                2usize,
+            >("PropertyNameFromString_Injected")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "PropertyNameFromString_Injected", 2usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked((), (name, ret))
+        };
         Ok(__cordl_ret.into())
     }
 }

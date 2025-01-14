@@ -52,12 +52,23 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
             crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
         >,
     > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (crate::System::Nullable_1<f32>, crate::System::Nullable_1<i32>),
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+                >,
+                2usize,
+            >("CopyWith")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "CopyWith", 2usize
+                )
+            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
-        > = __cordl_object.invoke("CopyWith", (newBeat, newGroupId))?;
+        > = unsafe { method.invoke_unchecked(self, (newBeat, newGroupId)) };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -89,11 +100,31 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (beat, groupId, eventBoxes))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_method::<
+                (
+                    f32,
+                    i32,
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+                            >,
+                        >,
+                    >,
+                ),
+                quest_hook::libil2cpp::Void,
+                3usize,
+            >(".ctor")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, ".ctor", 3usize
+                )
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (beat, groupId, eventBoxes))
+        };
         Ok(__cordl_ret.into())
     }
 }

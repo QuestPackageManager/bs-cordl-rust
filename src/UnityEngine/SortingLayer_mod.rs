@@ -96,8 +96,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::SortingL
 #[cfg(feature = "UnityEngine+SortingLayer")]
 impl crate::UnityEngine::SortingLayer {
     pub fn GetLayerValueFromID(id: i32) -> quest_hook::libil2cpp::Result<i32> {
-        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("GetLayerValueFromID", (id))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<(i32), i32, 1usize>("GetLayerValueFromID")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "GetLayerValueFromID", 1usize
+                )
+            });
+        let __cordl_ret: i32 = unsafe { method.invoke_unchecked((), (id)) };
         Ok(__cordl_ret.into())
     }
 }

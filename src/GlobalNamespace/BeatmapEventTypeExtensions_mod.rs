@@ -42,8 +42,21 @@ impl crate::GlobalNamespace::BeatmapEventTypeExtensions {
     pub fn IsCoreLightIntensityChangeEvent(
         basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
-            .invoke("IsCoreLightIntensityChangeEvent", (basicBeatmapEventType))?;
+        static method: &'static quest_hook::libil2cpp::MethodInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .find_static_method::<
+                (crate::GlobalNamespace::BasicBeatmapEventType),
+                bool,
+                1usize,
+            >("IsCoreLightIntensityChangeEvent")
+            .unwrap_or_else(|e| {
+                panic!(
+                    "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                    self, "IsCoreLightIntensityChangeEvent", 1usize
+                )
+            });
+        let __cordl_ret: bool = unsafe {
+            method.invoke_unchecked((), (basicBeatmapEventType))
+        };
         Ok(__cordl_ret.into())
     }
 }
